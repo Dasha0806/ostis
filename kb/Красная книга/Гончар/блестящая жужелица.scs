@@ -1,0 +1,146 @@
+concept_carabus_nitens_linnaeus=> nrel_main_idtf:
+[блестящая жужелица](*<-lang_ru;;*);
+[carabus nitens linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_nitens_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_nitens_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_nitens_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_nitens_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Предпочитает песчаные почвы. Хвойные и лиственные леса, берега рек, других водоемов, болота, поля, луга .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Хищный жук, активен днем . Зимует в лесной и травяной подстилке. Жужелица с весенним типом размножения. Личинки и взрослые жуки питаются личинками почвенных беспозвоночных. Жуки не летают, так как задние крылья недоразвиты.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редок, численность невысокая и сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Факторы, лимитирующие численность, и тенденции ее изменения изучены слабо. Однако основными факторами все же остаются антропогенное воздействие, сокращение естественных мест обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). В Березинском биосферном заповеднике находится под охраной заповедного режима. Необходима пропаганда охраны вида и контроль за состоянием популяций, ограничение использования инсектицидов в местах обитания жужелиц, а также отлова жуков коллекционерами.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европейский мезоксерофильный вид. Южная и средняя части Европы. В Беларуси приурочен к центральной и северной частям, реже встречается в Полесье.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело длиной 14-18 мм, черное. Голова и переднеспинка золотисто-красные, надкрылья зеленые с 3 гладкими ребрышками. Вершинный наружный угол передних голеней оттянут в согнутый шип. Надкрылья с черным швом и золотисто-красным краем.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_nitens_linnaeus <= nrel_spread: ... 
+	(*
+	-> Orsha_district; Minsk_district; Vitebsk_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_nitens_linnaeus;;
+concept_carabus_nitens_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; red; gold;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; gold; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; gold; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; gold;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; gold; short;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; gold;;
+	*);;
+
+concept_carabus_nitens_linnaeus <= nrel_inclusion: 
+	14_18_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (14_mm => 18_mm);;	
+	*);;
+	14_mm <- length_of_body; exact_value;;
+	14_mm -> .millimeter: 14 (* <- number;;*);;
+	18_mm <- length_of_body; exact_value;;
+	18_mm -> .millimeter: 18 (* <- number;;*);;	
+
+concept_carabus_nitens_linnaeus <= nrel_inclusion: concept_3_protection_category;;

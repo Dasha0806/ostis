@@ -1,0 +1,44 @@
+month => nrel_main_idtf:
+[месяц](*<-lang_ru;;*);
+[month](*<-lang_en;;*);;
+
+//определение и пояснения
+month <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Единица исчисления времени, равная одной двенадцатой части года, представляющая собой промежуток времени, близкий к периоду обращения Луны вокруг Земли.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subjdomain_temporary_entity -> rrel_not_maximum_studied_object_class: month;;
+
+January=> nrel_main_idtf: [Январь](*<- lang_ru;;*); [January](*<- lang_lat;;*);;
+February=> nrel_main_idtf: [Февраль](*<- lang_ru;;*); [February](*<- lang_lat;;*);;
+March=> nrel_main_idtf: [Март](*<- lang_ru;;*); [March](*<- lang_lat;;*);;
+April=> nrel_main_idtf: [Апрель](*<- lang_ru;;*); [April](*<- lang_lat;;*);;
+May=> nrel_main_idtf: [Май](*<- lang_ru;;*); [May](*<- lang_lat;;*);;
+June=> nrel_main_idtf: [Июнь](*<- lang_ru;;*); [June](*<- lang_lat;;*);;
+July=> nrel_main_idtf: [Июль](*<- lang_ru;;*); [July](*<- lang_lat;;*);;
+August=> nrel_main_idtf: [Август](*<- lang_ru;;*); [August](*<- lang_lat;;*);;
+September=> nrel_main_idtf: [Сентябрь](*<- lang_ru;;*); [September](*<- lang_lat;;*);;
+October=> nrel_main_idtf: [Октябрь](*<- lang_ru;;*); [October](*<- lang_lat;;*);;
+November=> nrel_main_idtf: [Ноябрь](*<- lang_ru;;*); [November](*<- lang_lat;;*);;
+December=> nrel_main_idtf: [Декабрь](*<- lang_ru;;*); [December](*<- lang_lat;;*);;
+
+month => nrel_inclusion: January;
+			February;
+			March;
+			April;
+			May;
+			June;
+			July;
+			August;
+			September;
+			October;
+			November;
+			December;;

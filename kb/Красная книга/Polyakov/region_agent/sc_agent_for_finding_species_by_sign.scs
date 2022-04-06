@@ -1,0 +1,61 @@
+sc_agent_for_finding_species_by_region
+=> nrel_main_idtf:
+	[sc-агент нахождения вида по его территории] 
+		(* <- lang_ru;; *);
+	[sc-agent of finding species by region] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_finding_species_by_region_condition => ..sc_agent_for_finding_species_by_region_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_for_finding_species_by_region
+	};
+<-key_sc_element:
+	...
+	(*
+	<-sc_description_of_sc_agent_behavior;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Задачей sc-агента является поиск вида по заданной территории];;
+		*);;
+	*);
+=> nrel_inclusion: ...
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		proc_for_finding_species_by_region;
+		agent_proc_for_finding_species_by_region
+		
+		};;
+	-> sc_agent_for_finding_species_by_region_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_finding_species_by_region_condition
+= [*
+	action_for_finding_species_by_region _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._param;;
+*];;
+
+..sc_agent_for_finding_species_by_region_result
+= [*
+	action_for_finding_species_by_region _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._param;;
+*];;

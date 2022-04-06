@@ -1,0 +1,35 @@
+concept_apiaceae => nrel_main_idtf:
+[сельдереевые](*<-lang_ru;;*);
+[apiaceae](*<-lang_lat;;*);;
+concept_fabaceae => nrel_idtf:
+[зонтичные](*<-lang_ru;;*);
+[umbelliferae](*<-lang_lat;;*);;
+
+concept_family -> concept_apiaceae;;
+
+concept_apiaceae => nrel_inclusion: concept_astrantia_major_l; concept_berula_erecta; concept_conioselinum_tataricum_hoffm; concept_peucedanum_cervaria; concept_angelica_palustris; concept_cenolophium_denudatum; concept_pleurospermum_austriacum_hoffm;;
+
+//определение и пояснения
+concept_apiaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Как правило, зонтичные — многолетние (но часто монокарпические) травы, иногда двулетние или однолетние, некоторые - кустарники или небольшие деревья. Представители семейства легко узнаются по характерным соцветиям - сложным зонтикам, реже соцветия - простые зонтики или головки. Цветки мелкие, большей частью белые, реже жёлтые или голубые, обычно правильные, обоеполые, чашечка едва заметна, венчик с пятью лепестками, пестик один, завязь — полунижняя, двугнёздная. Плод — двураздельная семянка. Листья очередные, как правило перисто-рассечённые, часто с большим вздутым влагалищем. В семействе Зонтичные известно более четырёхсот родов и около трёх с половиной тысяч видов, распространённых по всему земному шару, преимущественно в умеренном климате Европы, Азии и Северной Америки. В Южном полушарии преобладают представители подсемейства Hydrocotyloideae.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+//subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_apiaceae;;
+
+concept_family => nrel_main_idtf: [семейство](*<-lang_ru;;*);;
+
+subject_domain_of_angular_angiosperm_plantae => nrel_main_idtf: 
+[Предметная область двудольных покрытосеменных растений](*<-lang_ru;;*);
+[Subject domain of angular angiosperm plants](*<-lang_eng;;*);;
+
+subject_domain_of_plantae => nrel_main_idtf: 
+[Предметная область Растения](*<-lang_ru;;*);
+[Subject domain of plants](*<-lang_eng;;*);;

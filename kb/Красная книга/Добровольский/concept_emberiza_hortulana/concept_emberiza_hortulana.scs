@@ -1,0 +1,178 @@
+concept_emberiza_hortulana=> nrel_main_idtf: [садовая овсянка](*<- lang_ru;;*); [emberiza hortulana linnaeus](*<- lang_lat;;*); [садовая стрынатка](*<- lang_bel;;*);;
+concept_emberiza_hortulana => nrel_idtf: [садовая аўсянка](*<- lang_bel;;*);;
+
+concept_emberiza_hortulana <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (садовая овсянка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_emberiza_hortulana.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_emberiza_hortulana;;
+concept_species -> concept_emberiza_hortulana;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_emberiza_hortulana;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_emberiza_hortulana;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_emberiza_hortulana <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Приложение III Бернской конвенции, отнесен к SPEC 2. Внесен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Мелкая птица. Длина тела 16-17 см, масса 20-23 г. У самцов голова, шея и грудь зеленовато-серые. Пятно на горле и «усы» сернисто-желтые. Крылья, хвост и спина коричневые с темными удлиненными пестринами, низ рыжевато-коричневый. Вокруг глаза светлое кольцо. Окраска самок и молодых бледноватая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Распространена широко в Евразии и северо-западной части Африки. Территория Беларуси полностью входит в область распространения вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет ландшафты лесостепного облика - открытые пространства с одиночными высокими деревьями, редким кустарником и не слишком густой травянистой растительностью. Предпочитает опушки, редколесья и кустарниковые заросли среди полей. Обитает также в садах, поймах рек и на значительных по площади огородах, в снегозащитных лесопосадках вдоль шоссейных дорог, на обширных пустырях, поросших куртинами различного кустарника и сорного разнотравья.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездящийся перелетный вид. Гнездится отдельными парами обычно далеко одна от другой и только в некоторых наиболее благоприятных местах изредка образует довольно плотные поселения. Гнездо строит на участках с разреженным травостоем, часто среди рудеральной растительности, на склонах взгорков, старых траншей и карьеров. Строительным материалом служат сухие стебельки и листья злаков, тонкие корешки, изредка сухие листья. Выстилка весьма обильная (до 1,5 см толщиной) и состоит из корешков, конского волоса, в отдельных случаях с примесью перьев. Кладка из 4-6 яиц со средними размерами 19,6 - 15,5 мм в конце апреля - первой половине мая. Скорлупа матовая, белая, с легким серым, пепельно-голубоватым оттенком. По ней довольно редко разбросаны пятнышки, точки, извитые линии. В июне - июле, возможно, бывает 2-й цикл гнездования. Самка насиживает кладку 11-12 суток. Кормится садовая овсянка семенами различных растений, но летом и при выкармливании птенцов употребляет много мелких насекомых и их личинок.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность заметно колеблется в пределах 2000-4000 пар.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Возможно, определенное негативное влияние на состояние популяции оказывает преобразование сельскохозяйственных территорий, особенно уничтожение перелесков и куртин среди полей и лугов, а также причины внутрипопуляционного характера.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид занесен в Красную книгу Республики Беларусь с 1993 г. Необходима охрана выявленных ключевых мест обитания, а также повышение мозаичности сельскохозяйственных угодий, создание лесополос.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_emberiza_hortulana <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_emberiza_hortulana => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_beak; brown; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; brown;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; red;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_tail; brown;;
+	*);;
+//размеры и вес
+concept_emberiza_hortulana <= nrel_inclusion: 
+	[16-17 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([16 см] => [17 см]);;	
+	*);
+	[0.020-0.023 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0.020 кг] => [0.023 кг]);;	
+	*);;
+	[16 см] <- length_of_body; exact_value;;
+	[16 см] -> .centimeter: 16 (* <- number;;*);;
+	[17 см] <- length_of_body; exact_value;;
+	[17 см] -> .centimeter: 17 (* <- number;;*);;
+	[0.020 кг] <- weight; exact_value;;
+	[0.020 кг] -> .kilogram:0.020 (* <- number;;*);;
+	[0.023 кг] <- weight; exact_value;;
+	[0.023 кг] -> .kilogram: 0.023 (* <- number;;*);;
+//категория охраны и количество
+concept_emberiza_hortulana <= nrel_inclusion: concept_2_protection_category;;
+concept_emberiza_hortulana <= nrel_strength: [6000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 6000 (* <- number;;*);;
+		*);;	
+	*);;
+

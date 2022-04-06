@@ -1,0 +1,146 @@
+concept_osmoderma_eremita=> nrel_main_idtf:
+[отшельник](*<-lang_ru;;*);
+[osmoderma eremita](*<-lang_lat;;*);;
+
+concept_species -> concept_osmoderma_eremita;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_osmoderma_eremita;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_osmoderma_eremita;;
+	-> rrel_number_of_year: 1763 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_osmoderma_eremita <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе (Приложение II Бернской конвенции). Включен в Красный список МСОП (VU, ver. 2.3, 1994); в Красные книги Литвы, Украины, России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Обитает в старых широколиственных лесах и парках. Для существования вида необходимо наличие старых дуплистых и трухлявых деревьев, преимущественно дуба, дикой яблони, груши, ивы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Лёт жуков наблюдается с конца июня до начала августа. Имаго питаются вытекающим соком на деревьях. Личинка развивается до 3 лет в трухлявой древесине в дуплах и пнях. Достигает в длину 100 мм. Окукливание происходит там же в коконе из кусочков древесины, склеенных экскрементами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Встречается редко и единично по всей территории Беларуси.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Омоложение лиственных лесов, в результате чего уменьшается количество дуплистых деревьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Сохранение отдельных старых дуплистых деревьев в лесах и парках и участков старовозрастных широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид распространен в Европе. Северная граница ареала доходит до Скандинавии, восточная - до южного Приуралья. Южная граница проходит по югу Молдовы и Украины. Изолированные популяции отмечены в лесах в предгорных районах Краснодарского края . В Беларуси распространен по всей территории .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Жук широкоовальной формы, уплощенный сверху. Длина тела 22-33 мм, ширина - 12-18 мм. Окраска черно-бурая с металлическим зеленым отливом. Переднеспинка с широким продольным вдавлением посередине.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_osmoderma_eremita <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_scarabaeidae => nrel_inclusion: concept_osmoderma_eremita;;
+concept_osmoderma_eremita => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; metallic; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; metallic; green; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; black; blrown;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black; short;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_osmoderma_eremita <= nrel_inclusion: 
+	22_33_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (22_mm => 33_mm);;	
+	*);;
+	22_mm <- length_of_body; exact_value;;
+	22_mm -> .millimeter: 22 (* <- number;;*);;
+	33_mm <- length_of_body; exact_value;;
+	33_mm -> .millimeter: 33 (* <- number;;*);;	
+
+concept_osmoderma_eremita <= nrel_inclusion: concept_3_protection_category;;

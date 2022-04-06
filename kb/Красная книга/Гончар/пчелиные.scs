@@ -1,0 +1,36 @@
+concept_apidae=> nrel_main_idtf:
+[пчелиные](*<-lang_ru;;*);
+[apidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_apidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(пчелиные)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_hymenoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Пчелиные - это одно из самых многочисленных семейств перепончатокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_hymenoptera =>nrel_inclusion: concept_apidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространенное всюду, где есть цветковые растения. Все представители этого семейства выкармливают своих личинок тестом из пыльцы и нектара цветков, содержащим не меньшее количество белков, чем мясная пища личинок большинства других перепончатокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;

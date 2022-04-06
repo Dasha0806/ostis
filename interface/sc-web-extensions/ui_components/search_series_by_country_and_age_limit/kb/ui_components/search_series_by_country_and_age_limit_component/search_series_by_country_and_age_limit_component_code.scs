@@ -1,0 +1,27 @@
+format_search_series_by_country_and_age_limit_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат series search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format series search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_series_by_country_and_age_limit_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск сериалов по стране и возрастному ограничению]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find series by country and age limit] 
+	(* 
+	<- lang_en;;
+	*);;

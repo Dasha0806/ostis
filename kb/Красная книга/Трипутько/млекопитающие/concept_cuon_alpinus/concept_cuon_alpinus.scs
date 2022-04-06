@@ -1,0 +1,125 @@
+concept_cuon_alpinus=> nrel_main_idtf: [красный волк](*<- lang_ru;;*); 
+[cuon alpinus](*<- lang_lat;;*); 
+[Чырвоны воўк](*<- lang_bel;;*);;
+
+concept_cuon_alpinus <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (красный волк)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cuon_alpinus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_cuon_alpinus;;
+concept_species -> concept_cuon_alpinus;;
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_cuon_alpinus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_cuon_alpinus;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1936 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cuon_alpinus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Значение: Красный волк еще недостаточно изучен учеными. Несмотря на то что он считается видом, практически исчезнувшим с территории России, однако надежных доказательств тому, что когда-либо раньше он постоянно обитал в пределах страны, нет.
+Особи, которые встречаются на юге Дальнего Востока, скорее всего, периодически приходят с прилегающих территорий Монголии и Китая. Предполагается, что если красный волк и обитал постоянно в России, то исчез из-за сильной конкуренции с серым волком, а также из-за уменьшения поголовья диких копытных, которые составляют основу рациона этого хищника. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Известен по очень редким встречам, главным образом в Приморье и Приамурье. Гораздо менее определенны сведения о былом обитании в горах юга Сибири. На Дальнем Востоке, возможно, проникал ранее до 54° с.ш. и несколько севернее: описание вида сделано Палласом по экземпляру, доставленному из окрестностей Удского острога. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Красные волки отлично знают все приемы правильной атаки, тактика их нападения безупречна. Растягиваясь на ходу цепочкой, они образуют дугу. Затем выгоняют добычу на открытое место летом либо на льдину зимой. Желанная цель достигается быстро. В отличие от других псовых, красные волки на охоте не хватают добычу за горло, а нападают на нее сзади. Крупной стае под силу одолеть леопарда, тигра или быка гаура.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Волк красный занесен в Красный список МСОП-96. Необходимость выработки специальных мер охраны может возникнуть лишь при получении надежной информации об обитании этого вида где-либо в пределах России. Хорошо размножается во многих зоопарках  ](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+
+//характеристики
+concept_cuon_alpinus <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_cuon_alpinus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; concept_wool; yellow; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; grey;;
+	*);;
+//размеры и вес
+concept_cuon_alpinus <= nrel_inclusion: 
+	[0-110 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [110 см]);;	
+	*);
+	[0-20 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [20 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[110 см] <- length_of_body; exact_value;;
+	[110 см] -> .centimeter: 110 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[20 кг] <- weight; exact_value;;
+	[20 кг] -> .kilogram: 20 (* <- number;;*);;
+//категория охраны и количество
+concept_cuon_alpinus <= nrel_inclusion: concept_1_protection_category;;
+concept_cuon_alpinus <= nrel_strength: [100 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 100 (* <- number;;*);;
+		*);;	
+	*);;
+

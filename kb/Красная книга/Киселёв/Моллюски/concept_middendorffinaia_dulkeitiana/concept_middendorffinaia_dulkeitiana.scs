@@ -1,0 +1,151 @@
+concept_middendorffinaia_dulkeitiana => nrel_main_idtf: [миддендорффиная дулькейт](*<- lang_ru;;*); [middendorffinaia dulkeitiana](*<- lang_lat;;*);;
+
+concept_middendorffinaia_dulkeitiana  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (миддендорффиная дулькейт)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_middendorffinaia_dulkeitiana.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_middendorffinaia_dulkeitiana <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_middendorffinaia_dulkeitiana ;;
+concept_species -> concept_middendorffinaia_dulkeitiana ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_middendorffinaia_dulkeitiana ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_middendorffinaia_dulkeitiana ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1987 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_middendorffinaia_dulkeitiana  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина овально-трапецевидная, сильно выпуклая, толстостенная. Самая задняя точка раковины лежит немного выше основания брюшного края. Задний край раковины узкий, в верхней части усеченный, брюшной край в средней части может быть слегка вогнутым. Макушки умеренно возвышаются над спинным краем, сильно сдвинуты вперед. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Юж. Приморье. Типовое местонахождение - один из притоков р. Комаровка. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает в реках, речных затонах и старицах на илистом или песчано-илистом грунте. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Численность вида очень низкая. Продолжает сокращаться. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Усиленное загрязнение нижних участков рр. Комаровкапривело к резкому сокращению численности вида и его ареала, т.к. произошла деградация местообитаний моллюсков и их локальная гибель. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Возможно обитание вида на территории Уссурийского заповедника. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_middendorffinaia_dulkeitiana  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_middendorffinaia_dulkeitiana  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; black;;
+	*);;
+//размеры и вес
+concept_middendorffinaia_dulkeitiana  <= nrel_inclusion: 
+	[4-8 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([4 см] => [8 см]);;	
+	*);
+	[0,045-0,065 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,045 кг] => [0,065 кг]);;	
+	*);;
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[8 см] <- length_of_body; exact_value;;
+	[8 см] -> .centimeter: 8 (* <- number;;*);;
+	[0,045 кг] <- weight; exact_value;;
+	[0,045 кг] -> .kilogram: 0.045 (* <- number;;*);;
+	[0,065 кг] <- weight; exact_value;;
+	[0,065 кг] -> .kilogram: 0.065 (* <- number;;*);;
+//категория охраны и количество
+concept_middendorffinaia_dulkeitiana  <= nrel_inclusion: concept_2_protection_category;;
+concept_middendorffinaia_dulkeitiana  <= nrel_strength: [1000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 1000 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

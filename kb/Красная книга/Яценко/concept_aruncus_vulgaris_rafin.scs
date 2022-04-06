@@ -1,0 +1,166 @@
+concept_aruncus_vulgaris_rafin => nrel_main_idtf: [волжанка обыкновенная](*<- lang_ru;;*); [aruncus vulgaris rafin. (=a. dioicus auct.)](*<- lang_lat;;*); [валжанка звычайная](*<- lang_bel;;*);;
+concept_aruncus_vulgaris_rafin => nrel_idtf: [валжанка звычайная](*<- lang_bel;;*);;
+
+concept_species -> concept_aruncus_vulgaris_rafin;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_aruncus_vulgaris_rafin;;
+
+concept_aruncus_vulgaris_rafin  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (волжанка обыкновенная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_aruncus_vulgaris_rafin.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_aruncus_vulgaris_rafin;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_aruncus_vulgaris_rafin <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 1го и 2го изданий (1981, 1993). Охраняется в Польше.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое двудомное растение с прямостоячим неветвистым стеблем высотой до 2 м, обычно лишь в соцветии разветвленным. Корневище толстое, деревянистое. Листья без прилистников, очередные, длинночерешковые, длиной до 1 м, 2-3-перистосложные. Листочки яйцевидные, оттянуто-заостренные, по краю двоякопильчатые, голые или с рассеянными волосками. Общее соцветие - верхушечная рыхлая метелка длиной до 50 см, состоящая из длинных, узких, позже повислых кистей. Цветки желто-белые, мелкие, диаметром 2,0-3,5 мм, на очень коротких цветоножках. Плоды - бурые листовки, длиной 1,5-2,0, мм голые или редкоопушенные.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: В основном горы Средней и Южной Европы, на европейских равнинах число местонахождений вида уменьшается . Известные в Беларуси островные сосредоточения популяций являются крайними на северо-восточной границе ареала. Местонахождения этого реликтового, по происхождению пребореального среднеевропейского вида выявлены в Беловежской пуще, на Новогрудской и Копыльской грядах и расположены на территориях Брестской (Барановичский, Каменецкий и Пружанский р-ны), Гродненской (Кореличский, Новогрудский и Свислочский р-ны) и Минской (Клецкий, Копыльский, Столбцовский и Червенский р-ны) обл. . Более ранний гербарный сбор подтверждает нахождение вида в окрестностях д. Няньков (Новогрудский р-н Гродненской обл.) . По литературным данным вид был известен в окрестностях д. Русотин (Кореличский р-н Гродненская обл.), Копыля, Несвижа, Новогрудка, Свислочи (бывшая Гродненская губерния)  и Минска .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Осветленные места в широколиственных (грабовые дубравы, грабняки, ясенники, липняки), широколиственно-еловых и широколиственно-черноольховых лесах кисличного, черничного, снытевого, папоротникового и крапивного типов.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет с середины июня до начала августа. Энтомофил. Плодоносит в августе. Анемохор. Размножение семенное.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Очень малочисленный вид, встречающийся рассеянно одиночными растениями и группами по 5-20 особей на небольших площадях (до 0,05 га). Наиболее многочисленная популяция, насчитывающая около 200 особей (из них более половины цветущих) и занимающая площадь около 300 м2, обнаружена в 2004 г. в окрестностях д. Цвирки Столбцовского р-на Минской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Может исчезнуть из известных местонахождений в результате рубок леса главного пользования. Сбор цветущих растений на букеты существенно ограничивает возможности вида расселяться семенами.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Беловежская пуща”, заказников “Морочанский” и “Тростяница”. Выращивается в ботанических садах НАН Беларуси  и Витебского университета , в Республиканском экологическом центре учащихся и молодежи в Минске и на приусадебных участках. Необходимо в местах произрастания волжанки обыкновенной запретить сплошные рубки главного пользования; периодически проводить эколого-биологический контроль состояния известных популяций; целенаправленно осуществлять поиск новых местонахождений; искусственно размножать и расселять в природные экотопы; среди населения проводить разъяснительную работу о недопустимости сбора соцветий, поскольку нарушается естественный ход возобновления популяций; рекомендовать населению более широко вводить вид в культуру как декоративное, лекарственное и медоносное растение.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_aruncus_vulgaris_rafin <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district;;->Kamenetsky_district;;->Pruzhany_district;;->Korelichi_district;;->Novogrudok_district;;->Svisloch_district;;->Kletsk_district;;->Kopyl_district;;->Stolbtsy_district;;->Czerwinski_district;;->Novogrudok_district;;->Korelichi_district;;->Kopyl_district;;->Nesvizh_district;;->Novogrudok_district;;->Svisloch_district;;
+		*);;
+*);;
+
+concept_aruncus_vulgaris_rafin => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;not_branched;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thick;woody ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; another;long;ovate;drawn_pointed;dvojakoperistye;naked;with_scattered_hairs;;
+*);
+...
+(*
+<= nrel_inclusion: flower; yellow_white;small;short_pedicel;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; apical;loose;panicle;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; naked;recoovery;brown;leaflet;;
+*);;
+
+concept_aruncus_vulgaris_rafin <= nrel_inclusion: 
+[120-200]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([120 см] => [200 см]);; 
+*);;
+
+concept_aruncus_vulgaris_rafin <= nrel_inclusion: 
+[0.2-0.35 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([0.2 см] => [0.35 см]);; 
+*);;
+
+[120 см] <- length_of_inflorscence; exact_value;;
+[120 см] -> .centimeter: 120 (* <- number;;*);;
+[200 см] <- length_of_inflorscence; exact_value;;
+[200 см] -> .centimeter: 200 (* <- number;;*);;
+[0.2 см] <- length_of_inflorscence; exact_value;;
+[0.2 см] -> .centimeter: 0.2 (* <- number;;*);;
+[0.35 см] <- length_of_inflorscence; exact_value;;
+[0.35 см] -> .centimeter: 0.35 (* <- number;;*);;
+ 
+
+concept_aruncus_vulgaris_rafin <= nrel_inclusion: concept_3_protection_category;;

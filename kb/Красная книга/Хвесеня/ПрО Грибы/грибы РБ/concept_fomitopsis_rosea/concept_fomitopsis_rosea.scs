@@ -1,0 +1,138 @@
+concept_fomitopsis_rosea=> nrel_main_idtf: [фомитопсис розовый ](*<- lang_ru;;*); [fomitopsis rosea](*<- lang_lat;;*); [фамітопсіс ружовы](*<- lang_bel;;*);;
+
+concept_fomitopsis_rosea<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (фомитопсис розовый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_fomitopsis_rosea.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_fomitopsis_rosea=>nrel_eat:concept_saprophytes;; 
+
+concept_plant -> concept_fomitopsis_rosea;;
+concept_species -> concept_fomitopsis_rosea;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_fomitopsis_rosea;;
+
+//пояснения
+concept_fomitopsis_rosea <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в старых тенистых ельниках. Растет на сухостойных и валежных стволах и пнях преимущественно хвойных пород (сосны, ели), в виде исключения - на тополе. Является индикатором старовозрастных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Время спорообразования июль - сентябрь . Вызывает бурую гниль. Гриб имеет декоративное плодовое тело.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречаются единичные экземпляры. Во всех местонахождениях численность вида невелика.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Низкая численность и плотность популяций, сбор плодовых тел, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков «Беловежская пуща» и «Припятский». Необходимы периодический контроль состояния известных популяций и поиск новых, создание в местах роста специализированных заказников с запрещением антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа, Северная Америка . Вид широко распространен в бореальной зоне. В Беларуси обнаружен в Брестской (Пружанский р-н), Витебской (Толочинский р-н), Гомельской (Житковичский р-н) и Могилевской (Осиповичский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовые тела многолетние, сидячие, копытообразные, от 3-5 до 9 см, одиночные, реже в небольших скоплениях. Поверхность шляпки концентрически бороздчатая, буровато-розовая, с возрастом чернеет. Край волнистый, ткань пробково-деревянистая, винно-розового цвета. Поверхность гименофора розового цвета, при высушивании становится более тусклой. Гифы с пряжками. Базидии булавовидные, 4-споровые. Споры цилиндрические, гиалиновые, прижатые с одной стороны, неамилоидные, размером 6-7 2-3 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_fomitopsis_rosea <= nrel_spread: ... 
+	(*
+	-> Pryjani_district; Osipovichi_district; Zhitkovichi_district; Tolochin_district;;
+	*);;
+
+concept_koriolovye => nrel_inclusion: concept_fomitopsis_rosea;;
+concept_fomitopsis_rosea => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; perennial; sedentary; hoofed;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; furrowed; pink;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; cylindrical; hyaline;;
+	*);;
+
+
+concept_fomitopsis_rosea <= nrel_inclusion: 
+	[3-9 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([3 см] => [9 см]);;	
+	*);;
+	
+	[3 см] <- length_of_body; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[9 см] <- length_of_body; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+
+concept_fomitopsis_rosea <= nrel_inclusion: concept_2_protection_category;;

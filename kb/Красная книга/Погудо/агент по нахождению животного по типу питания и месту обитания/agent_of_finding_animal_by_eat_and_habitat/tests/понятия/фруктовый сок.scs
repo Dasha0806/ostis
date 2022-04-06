@@ -1,0 +1,24 @@
+concept_fruit_juice=> nrel_main_idtf:
+[фруктовый сок](*<-lang_ru;;*);
+[fruit juice](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_fruit_juice<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(фруктовый сок)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Фруктовый сок- сок, полученный из доброкачественных спелых, свежих или сохраненных свежими благодаря охлаждению фруктов, несброженный, но способный к брожению, предназначенный для непосредственного употребления в пищу или для промышленной переработки.](* <- lang_ru;;*);;
+		*);;
+*);;
+

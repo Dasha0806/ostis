@@ -1,0 +1,55 @@
+concept_lespedeza_cyrtobotrya_miq => nrel_main_idtf:
+[Леспедеца кривокистевая](*<-lang_ru;;*);
+[Lespedeza cyrtobotrya Miq.](*<-lang_lat;;*);;
+
+concept_species -> concept_lespedeza_cyrtobotrya_miq;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_lespedeza_cyrtobotrya_miq;;
+
+Red_list_ru -> concept_lespedeza_cyrtobotrya_miq;;
+
+//пояснения
+concept_lespedeza_cyrtobotrya_miq <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Один из распространенных кустарников в подлеске дубняков на юге Хасанского р-на. В сомкнутых лесах леспедеца встречается единичными кустами или группами, на открытых склонах образует густые заросли.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978,1984) и РСФСР (1988). Вид включен в Перечень объектов, занесенных в Красную книгу Приморского края (2002). Вид растет в Хасанском р-не на узкой (около 500 м шир.) прибрежной полосе, относящейся к Дальневосточному морскому заповеднику и в заказнике «Хасанский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России распространен в Приморском крае на юге Хасанского р-на, с крайними северными точками в басс. р. Поймы. Основной ареал охватывает Северо-Восточный Китай, п-ов Корея и Японию.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Кустарник до 1,5 м выс. с раскидистыми, повислыми или вверх направленными ветвями. Цветет в августе, плоды созревают в сентябре. Размножается семенами, которые сохраняют всхожесть продолжительное время (до 10 и более лет).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

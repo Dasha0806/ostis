@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_sistotremovye;;
+concept_sistotremovye => nrel_main_idtf:
+[систотремовые](*<-lang_ru;;*);
+[sistotremovye](*<-lang_en;;*);;
+
+//
+concept_sistotremovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(систотремовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка стереальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_sterealnye;;
+	*);;	
+*);;
+
+//
+concept_sistotremovye => nrel_inclusion:
+    concept_sistotrema_terkovidnaya;;

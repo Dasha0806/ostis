@@ -1,0 +1,78 @@
+sc_node_not_relation -> kopysh;;
+
+kopysh => nrel_main_idtf: [заказник Копыш] (* <- lang_ru;; *);
+				     [Kopysh] (* <- lang_en;; *);;
+concept_territorry->kopysh;;
+kopysh <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Копыш)](*<-lang_ru;;*);
+		[Pic. (Kopysh)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+kopysh<-concept_sanctuary;;
+
+kopysh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Копыш, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Копыш был создан в 2007 году и занимается охраной местных болотных комплексов и лесных массивов.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							kopysh=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2007(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+kopysh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Копыш, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Копыш составляет 1222,34 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							kopysh=>nrel_square:[1222,34 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[1222,34](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+kopysh => nrel_area_location: Minsk_area;;
+kopysh => nrel_flora: ...(*
+<-concept_festuca_altissima_all;Oxycoccus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: kopysh;;
+

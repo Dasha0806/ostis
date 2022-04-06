@@ -1,0 +1,45 @@
+concept_dioscorea_caucasica => nrel_main_idtf:
+[Диоскорея кавказская](*<-lang_ru;;*);
+[Dioscorea caucasica](*<-lang_lat;;*);;
+
+concept_species -> concept_dioscorea_caucasica;;
+
+
+Red_list_ru -> concept_dioscorea_caucasica;;
+
+//пояснения
+concept_dioscorea_caucasica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984), РСФСР (1988). Вид включен в Красные книги Краснодарского края (1994, 2007) и Большого Сочи (2002). Растет в Кавказском биосферном заповеднике и Сочинском НП.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается в основном на южном склоне Большого Кавказа - в Адлерском р-не Краснодарского края от басс. рек Ац, Хоста, Ачипсе до Псоу; на сев. склоне отмечена пока только по Гуамскому ущелью в басс. р. Курджипс и в ущелье р. Бешенки.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетняя травянистая двудомная лиана длиной до 3(5) м с толстым сочным корневищем до 15 см дл. Размножение семенное, отчасти вегетативное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_dioscorea_caucasica <= nrel_inclusion: concept_1_protection_category;;

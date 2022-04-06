@@ -1,0 +1,126 @@
+uromyces_keratinized => nrel_main_idtf:
+[уснея ороговевшая](*<-lang_ru;;*);
+[uromyces keratinized](*<-lang_lat;;*);
+[уснея арагавелая](*<-lang_bel;;*);;
+uromyces_keratinized => nrel_idtf:[уснея арагавелая](*<-lang_bel;;*);;
+
+plants -> uromyces_keratinized;;
+concept_species -> uromyces_keratinized;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: uromyces_keratinized;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: uromyces_keratinized;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+uromyces_keratinized <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет в местах с высокой влажностью воздуха. В Национальном парке "Беловежская пуща" произрастает в приручейно-травяном черноольшанике на стволах ольхи черной; в Березинском биосферном заповеднике отмечен на стволе старой березы на квартальной просеке в черноольшанике.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: В Беларуси известен только в стерильном состоянии (апотеции не известны). Размножается вегетативно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается одиночными экземплярами и небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительно-мелиоративные работы, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка "Беловежская пуща" и Березинского биосферного заповедника. Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евразия, Америка и Австралия. В Беларуси встречается в Брестской (Пружанский р-н), Витебской (Лепельский р-н) и Гродненской (Свислочский р-н) обл. . Ранее упоминалось местонахождение в Слонимском р-не Гродненской обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище кустистое, свисающее, длиной до 40 см, серо-пепельное или сине-зеленое, жесткое, почти ороговевшее, имеющее толстое, темнеющее или черное основание. Веточки у основания грубоватые, дуговидно и неравномерно изогнутые, почти по всей длине одинаково утолщенные, только на концах утончающиеся, слегка деформированные, с короткими, широкими, большей частью тупыми бородавками и корой с поперечными трещинами. На довольно крупных бородавках образуются мучнистые соредии, которые на главных и боковых веточках иногда прорастают в дополнительные веточки .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+uromyces_keratinized <= nrel_spread: ... 
+	(*
+	-> Grodno_district; Vitebsk_district;;
+	*);;
+
+concept_parmeliaceae => nrel_inclusion: uromyces_keratinized;;
+uromyces_keratinized => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; bushy; grey; green; blue;;
+	*);;
+
+uromyces_keratinized <= nrel_inclusion: 
+	5_40_cm
+	(*
+	<- interval_value;;
+	<- length_of_thallus;;
+	=> nrel_measurement: (5_cm => 40_cm);;	
+	*);;
+	5_cm <- length_of_thallus; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;
+	40_cm <- length_of_thallus; exact_value;;
+	40_cm -> .centimeter: 40 (* <- number;;*);;				
+
+uromyces_keratinized <= nrel_inclusion: concept_2_protection_category;;
+

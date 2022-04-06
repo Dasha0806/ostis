@@ -1,0 +1,163 @@
+concept_palmaria_moniliformis => nrel_main_idtf:
+[пальмария четковидная](*<-lang_ru;;*);
+[palmaria moniliformis](*<-lang_lat;;*);;
+
+
+concept_species -> concept_palmaria_moniliformis;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_palmaria_moniliformis;;
+
+//пояснения
+concept_palmaria_moniliformis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 а - вид, сокращающийся в численности в результате разрушения местообитаний, эндемик Охотского моря.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище пластинчатое, широкоовальное, грубопленчатое или тонкокожистое, пролиферирующее по краю, прикрепляется подошвой на коротком плоском стволике. Пролификации 1-2-го порядков, широкоовальные, с широким округлым основанием или овальные удлиненные с клиновидным основанием и коротким плоским стволиком. Пластина и пролификации 5-9,5 см шир. и 13-16 см дл. Обычно пролификации крупнее пластины. Слоевище состоит из крупных клеток сердцевины, покрытых мелкими клетками коры. Тетраспорангии развиваются в локальных разрастаниях коры - в небольших неправильной формы сорусах, сливающихся и приобретающих ажурный вид наподобие морской пены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Охотское море: губы Пенжинская, Гижигинская, Матуга, Тауйская, бух. Гертнера, заливы Александры, Екатерины, о. Ионы, о. Птичий (3, 4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный, пацифический приазиатский вид. В сублиторальной зоне на глубине 2-8 м на каменистом грунте у открытых и полузащищенных берегов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Встречается спорадически, с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_palmaria_moniliformis <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_palmaria_moniliformis;;
+						concept_palmaria_moniliformis => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_palmaria_moniliformis <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_palmaria_moniliformis <= nrel_inclusion: concept_2_protection_category;;

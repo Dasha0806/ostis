@@ -1,0 +1,148 @@
+concept_cantharellus_cinereus=> nrel_main_idtf: [лисичка серая](*<- lang_ru;;*); [cantharellus cinereus](*<- lang_lat;;*); [лісічка шэрая](*<- lang_bel;;*);;
+
+concept_cantharellus_cinereus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лисичка серая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cantharellus_cinereus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_cantharellus_cinereus;;
+
+
+
+concept_species -> concept_cantharellus_cinereus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_cantharellus_cinereus;;
+
+//пояснения
+concept_cantharellus_cinereus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в лиственных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела периодически образуются в сентябре - октябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречаются единичные экземпляры.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Интенсивная лесоэксплуатация, вырубка лесов и изменение условий роста под воздействием рекреационных факторов (уплотнение и загрязнение почвы и т.д.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Охраняется в составе природных комплексов Березинского биосферного заповедника, национальных парков «Нарочанский» и «Беловежская пуща». Необходимо создание специализированных микологических заказников в местах, не охваченных охранными мероприятиями. Следует проводить периодический контроль состояния известных популяций, осуществлять поиск новых и, при необходимости, организовывать их охрану с запрещением или ограничением антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Неморальный лесной вид. Ареал охватывает Европу . В Беларуси найден в Брестской (Каменецкий, Пружанский р-ны), Гродненской (Свислочский р-н), Витебской (Докшицкий, Лепельский и Россонский р-ны), Минской (Борисовский, Минский и Мядельский р-ны) и Могилевской (Осиповичский р-н, Жорновская лесная опытная станция) обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Шляпка диаметром 3-5 см, воронковидная, лопастная, серо-буро-чёрная, с возрастом выцветающая, край опущен. Мякоть тонкая, с пресным вкусом, без особого запаха. Пластинки нисходящие, серые, неровной длины, частые, тонкие. Ножка цилиндрическая, полая, окрашена на тон светлее шляпки, размером 4,0 0,5-0,2 см. Споры эллипсоидальные, размером 8-10 5-6 мкм, бесцветные .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cantharellus_cinereus <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Kamenetsky_district; Pruzhany_district; Svisloch_district; Dokshytsy_district; Lyepyel_district; Rasony_district; Borisovsky_district; Myadzyel_district; Asipovichy_district ;;
+	*);;
+
+concept_cantharellaceae => nrel_inclusion: concept_cantharellus_cinereus;;
+concept_cantharellus_cinereus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; grey; black; funnel_shaped;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; grey; thin;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; cylindrical; hollow;;
+	*);;
+
+concept_cantharellus_cinereus <= nrel_inclusion: 
+	[3-5 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([3 см] => [5 см]);;	
+	*);
+[4-6 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([3 см] => [8 см]);;	
+	*);;
+	
+	[3 см] <- cap_diameter; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[5 см] <- cap_diameter; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[3 см] <- lenght_of_leg; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[8 см] <- lenght_of_leg; exact_value;;
+	[8 см] -> .centimeter: 8 (* <- number;;*);;
+
+concept_cantharellus_cinereus <= nrel_inclusion: concept_3_protection_category;;

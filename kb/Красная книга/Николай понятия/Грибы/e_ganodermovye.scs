@@ -1,0 +1,25 @@
+sc_node_not_relation ->  concept_ganodermovye;;
+concept_ganodermovye => nrel_main_idtf:
+[ганодермовые](*<-lang_ru;;*);
+[ganodermovye](*<-lang_en;;*);;
+
+//
+concept_ganodermovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(ганодермовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка ганодермальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_ganodermalnye;;
+	*);;	
+*);;
+
+//

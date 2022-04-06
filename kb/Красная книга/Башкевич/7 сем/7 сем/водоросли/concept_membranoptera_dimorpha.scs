@@ -1,0 +1,163 @@
+concept_membranoptera_dimorpha => nrel_main_idtf:
+[мембраноптера диморфная](*<-lang_ru;;*);
+[membranoptera dimorpha](*<-lang_lat;;*);;
+
+
+concept_species -> concept_membranoptera_dimorpha;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_membranoptera_dimorpha;;
+
+//пояснения
+concept_membranoptera_dimorpha <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, в России находится на западной границе ареала. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, 412 см дл., неправильно поочередно разветвленное. Прикрепляется подошвой. Ветви линейные, до 10 мм шир. , из одного слоя клеток, с центральным многослойным ребром и боковыми жилками, мелкореснитчатым и мелковолнистым краем, суживаются к верхушке. Поверхность ветвей гладкая или крупноскладчатая, складки идут от ребра. Пролификации, выросты на слоевище, мелкие и крупные, вырастают преи- мущественно у ребра. Пластина с возрастом разрушается, и тогда ребро приобретает вид стволика и ветвей, из которых развиваются пролификации. Органы бесполого размножения, тетраспорангии, рассеяны по пластине между жилками (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается у Курильских о-вов (Чиринкотан, Шиашкотан) (2), Камчатки: Командорские о-ва (2, 3, 5, 7), Камчатский залив (4, 6), Авачинский залив (5). Вне России: о-ва Прибылова, Алеутские: Амчитка (США), Британская Колумбия (Канада) - Калифорния (США) (2).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Бореальный пацифический вид. Произрастает в нижнем горизонте литорали и сублиторали (сборы с глубин 5-25 м) на скалистом грунте и как эпифит на других водорослях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Полагают, что вид постепенно исчезает из флоры восточной Камчатки и Командор (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Лимитирующие факторы. Малочисленность и чувствительность к загрязнению.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Принятые меры охраны. Вид встречается на Командорских о-вах и южной части Камчатского залива, где организованы государственные заповедники (Командорский и Кроноцкий), включающие прибрежную морскую акваторию. Вид включен в Красную книгу Камчатки (2). Необходимые меры охраны. Сохранение естественной среды обитания.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_membranoptera_dimorpha <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_membranoptera_dimorpha;;
+						concept_membranoptera_dimorpha => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_membranoptera_dimorpha <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_membranoptera_dimorpha <= nrel_inclusion: concept_3_protection_category;;

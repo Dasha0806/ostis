@@ -1,0 +1,30 @@
+concept_nitellaceae => nrel_main_idtf:
+[нителловые](*<-lang_ru;;*);
+[nitellaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_nitellaceae;;
+
+concept_nitellaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_nitella_gracilis;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_nitellaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У водорослей семейства нителловые таллом всегда без прилистников и без коры. Листья членисто-вильчатого строения, иногда неправильного, и тогда с более или менее обособленной основной осью члеников и многоклеточными листочками в ее узлах, реже простые, без листочков. Оогонии в поперечном сечении округлые или эллиптические, с коронкой из 10 клеток, расположенных в два яруса.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_nitellaceae;;

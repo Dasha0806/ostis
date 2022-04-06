@@ -1,0 +1,34 @@
+concept_thallus
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[слоевище]
+	(*<-lang_ru;;*);
+	[thallus]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[слоевище]
+	(*<-lang_ru;;*);
+	[thallus]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (слоевище) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[слоевище - ботанический термин, применяемый для обозначения одноклеточного, многоклеточного или не дифференцированного на клетки (многоядерного) тела. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о слоевище) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[ Хотя по форме таллом может напоминать тело сосудистых растений и листостебельных мхов, клетки, составляющие его, однообразны и не образуют сложных мозаик ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+	

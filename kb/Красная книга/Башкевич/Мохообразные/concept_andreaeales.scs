@@ -1,0 +1,28 @@
+concept_andreaeales => nrel_main_idtf:
+[андреевые](*<-lang_ru;;*);
+[andreaeales](*<-lang_lat;;*);;
+
+concept_order -> concept_andreaeales;;
+
+concept_andreaeales <= nrel_subdividing:
+	...
+ (*
+	-> concept_andreaeaceae;; 
+	
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_andreaeales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Порядок  андреевые - являются мелкими жесткими и хрупкими мхами, от красно-бурого до черно-бурого цвета, растущими подушечками на камнях и скалах. Их многолетний стебель симподиально разветвлен, многорядно облиствен, не имеет центрального пучка и образован почти однородными толстостенными клетками. Ризоиды в нижней части стебля многоклеточные, цилиндрические, внедряющиеся в каменистый субстрат, и пластинчатые, стелющиеся по поверхности камней. Листья андреевых мхов мелкие, без жилки или с жилкой, разнообразные по форме.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_andreaeales;;

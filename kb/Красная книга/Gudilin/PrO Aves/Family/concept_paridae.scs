@@ -1,0 +1,22 @@
+concept_paridae => nrel_main_idtf:
+[синицевые](*<-lang_ru;;*);
+[paridae](*<-lang_lat;;*);;
+
+concept_family -> concept_paridae;;
+
+concept_paridae => nrel_inclusion: concept_parus_cyanus;;
+
+//определение и пояснения
+concept_paridae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сини́цевые (лат. Paridae) — семейство певчих воробьинообразных птиц с острым коротким клювом и контрастной окраской головы, иногда с хохолком, встречающихся в северном полушарии и Африке.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_paridae;;

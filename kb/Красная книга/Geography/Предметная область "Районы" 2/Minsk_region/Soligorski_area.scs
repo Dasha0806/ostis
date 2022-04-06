@@ -1,0 +1,75 @@
+Soligorski_area<-concept_area;;
+Soligorski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Soligorski_area=>nrel_administrative_center_of_the_area:Soligorsk;;
+Soligorsk<-concept_city;;
+
+//самая высокая точка
+Soligorski_area=>nrel_highest_point:183_m;;
+183_m<-concept_number;;
+
+//площадь района
+Soligorski_area=>nrel_area_of_the_district:2499_km;;
+2499_km<-concept_number;;
+
+//население района
+Soligorski_area=>nrel_population_of_region:134309_m;;
+134309_m<-concept_number;;
+
+//используемые константы
+Soligorski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Солигорский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Солигорский район — административная единица на юге Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Soligorski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, территория)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Свято-Покровский храм.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Soligorski_area;;
+Soligorski_area => nrel_main_idtf:
+[Солигорский район](* <-lang_ru;; *);
+[Soligorski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Soligorsk;;
+Soligorsk=> nrel_main_idtf:
+[Солигорск](* <-lang_ru;; *);
+[Soligorsk](* <- lang_en;; *);;
+
+sc_node_not_relation ->183_m;;
+183_m=> nrel_main_idtf:
+[183 м](* <-lang_ru;; *);
+[183 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->2499_km;;
+2499_km=> nrel_main_idtf:
+[2499 км^2](* <-lang_ru;; *);
+[2499 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->134309_m;;
+134309_m=> nrel_main_idtf:
+[134309 человек](* <-lang_ru;; *);
+[134309 m](* <- lang_en;; *);;

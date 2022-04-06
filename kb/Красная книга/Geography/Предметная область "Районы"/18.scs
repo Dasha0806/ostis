@@ -1,0 +1,59 @@
+//синонимы
+concept_human_development_index<-concept_index;;
+concept_human_development_index=>nrel_main_idtf:[индекс человеческого развития] (* <- lang_ru;; *);;
+concept_human_development_index=>nrel_identifier:[множество индексов человеческого развития] (* <- lang_ru;; *);;
+concept_human_development_index=>nrel_identifier:[human development index] (* <- lang_en;; *);;
+
+//используемые константы
+concept_human_development_index<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_index;;
+->nrel_comparison;;
+->nrel_measurement;;
+->nrel_standard_of_living;;
+->nrel_literacy;;
+->nrel_education;;
+->nrel_longevity;;
+->concept_characteristic;;
+->nrel_potential;;
+->concept_territory;;
+*);;
+*);;
+concept_human_development_index=> nrel_main_idtf: [Опр.(индекс человеческого развития)]  (* <- lang_ru;; *);;
+concept_human_development_index<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Индекс человеческого развития - интегральный показатель, рассчитываемый ежегодно для межстранового сравнения и измерения уровня жизни, грамотности, образованности и долголетия как основных характеристик человеческого потенциала исследуемой территории.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+
+concept_human_development_index<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(подсчёт*,индекс человеческого развития,продолжительность*,жизнь,уровень грамотности*,урвоень жизни*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[При подсчёте индекса человеческого развития учитывается ожидаемая продолжительность жизни, уровень грамотности,уровень жизни.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_human_development_index<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(индекс человеческого развития,страна,уровень*,уровень развития*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[В зависимости от индекса человеческого развития страны принято классифицировать по уровню развития:очень высокий, высокий,средний,низкий уровень.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

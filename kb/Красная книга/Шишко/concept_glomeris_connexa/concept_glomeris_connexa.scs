@@ -1,0 +1,144 @@
+concept_glomeris_connexa => nrel_main_idtf: [связанный броненосец](*<- lang_ru;;*); [glomeris connexa](*<- lang_lat;;*); [звязаны браняносец](*<- lang_bel;;*);;
+concept_glomeris_connexa => nrel_idtf: [звязаны браняносец](*<- lang_bel;;*);;
+
+concept_glomeris_connexa <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (связанный броненосец)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_glomeris_connexa.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_glomeris_connexa;;
+concept_species -> concept_glomeris_connexa;;
+subject_domain_of_two_legged_millipedes -> rrel_maximum_studied_object_class: concept_glomeris_connexa;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_glomeris_connexa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_glomeris_connexa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Неморальный вид. В Беларуси единственный представитель рода. Тело покрыто 12 щитками с 17 -19 парами ног. Длина тела 5 -17 мм, ширина 2,5 -8 мм, расцветка от светло - до темно -коричневой.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Европейский вид, самым вост. пунктом нахождения которого являются грабовые леса окрестностей Киева. Встречается в юж. и зап. частях Беларуси . Встречен только в 2 областях республики.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Живет в бурых лесных почвах и отдает предпочтение более влажным лесам, дубравам, черноольшаникам, сложным ельникам. Встречается в подстилке, трухлявых пнях, в почве до глубины 20 см.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Изучен недостаточно. Охотно поедает различные органические остатки: опавшие листья граба, дуба, березы, осины, сгнившую древесину и помет оленей. Яйца откладывает в трещины почвы и кору деревьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В отдельных биогеоценозах численность достигает 39 -96 экз/м2 . Иногда она сравнительно высока, но сильно снижается.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственное освоение участков бурых лесных почв.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: вид включен во 2 -е издание Красной книги Республики Беларусь (II категория). В Беловежской пуще находится под охраной заповедного режима.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_glomeris_connexa <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_glomeris_connexa => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown;;
+	*);;
+	
+//размеры
+concept_glomeris_connexa <= nrel_inclusion: 
+	[0.05-0.17 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.05 см] => [0.17 см]);;	
+	*);;
+	
+	[0.05 см] <- length_of_body; exact_value;;
+	[0.05 см] -> .centimeter: 0.05 (* <- number;;*);;
+	[0.17 см] <- length_of_body; exact_value;;
+	[0.17 см] -> .centimeter: 0.17 (* <- number;;*);;
+
+//категория охраны и количество
+concept_glomeris_connexa <= nrel_inclusion: concept_2_protection_category;;
+
+

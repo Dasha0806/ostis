@@ -1,0 +1,137 @@
+concept_maculinea_nausithous => nrel_main_idtf:
+[черноватая голубянка](*<-lang_ru;;*);
+[maculinea nausithous](*<-lang_lat;;*);
+[чарнаватая блакітніца](*<-lang_bel;;*);;
+concept_maculinea_nausithous => nrel_idtf:[чарнаватая блакітніца](*<-lang_bel;;*);;
+
+concept_species -> concept_maculinea_nausithous;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: maculinea_nausithous;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_maculinea_nausithous;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1779 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_maculinea_nausithous <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красный Список МСОП (категория - LR/nt, ver. 2.3, 1994), в Красные книги Европейских дневных бабочек (SPEC 3, категория - VU) и Московской области России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Сырые луга, окраины, поляны, разреженные участки под пологом лиственных лесов с наличием кормовой базы для гусениц. Селится исключительно вблизи воды. За пределами подходящих для размножения участков полностью исчезает.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается 1 генерация. Лёт длится с конца первой декады июля до середины августа. Бабочки держатся вблизи кормового растения гусениц, в соцветия которого самки откладывают яйца. Вначале гусеницы развиваются на кровохлебке, а в более старших возрастах - в гнездах муравьев Myrmica rubra и Formica rufa, где поедают их личинок. Зимует в фазе гусеницы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В настоящее время сокращения численности не выявлено. В большинстве мест бабочки встречаются отдельными особями. В некоторых узко ограниченных местах вид обычен.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, рубка леса, интенсивное сенокошение, выпас скота, застройка территорий, расширение сельскохозяйственных угодий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (IV категория). Необходимо ограничение осушительной мелиорации; ограждение известных местообитаний от работ, влекущих уничтожение или деградацию подходящих для вида биотопов; введение повышенных штрафных санкций за причинение вреда основным стациям вида; создание в окрестностях пос. Пхов Гомельской области биологического заказника, охраняющего комплекс редких видов членистоногих животных; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От северной Испании по зоне широколиственных лесов до Саян. Встречается крайне локально в Полесье, которое является северной границей распространения вида. Известен по 5 местообитаниям , вероятно, распространен гораздо шире.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Голубянка средних размеров, длина переднего крыла 15-20 мм. Верхняя сторона крыльев темно-бурая с рядом удлиненных поперечных темных пятен. Как правило, большая часть площади крыльев самца опылена сине-фиолетовыми чешуйками. Бахрома бурая. Снизу крылья бурые, в центральной части с 1 неровным рядом черных точек на светлом фоне и слабо заметным удлиненным пятном в центре каждого крыла.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_maculinea_nausithous <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Gomel_district; Brest_district;;
+	*);;
+
+concept_lycaenidae => nrel_inclusion: concept_maculinea_nausithous;;
+concept_maculinea_nausithous => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; blue; brown; bronze;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; blue; brown; bronze;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; bronze;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; blue; brown; bronze;;
+*);;
+
+
+concept_maculinea_nausithous <= nrel_inclusion: 
+	15_20_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (15_mm => 20_mm);;
+*);;
+15_mm <- length_of_body; exact_value;;
+15_mm -> .millimeter: 15 (* <- number;;*);;
+20_mm <- length_of_body; exact_value;;
+20_mm -> .millimeter: 20 (* <- number;;*);;				
+
+concept_maculinea_nausithous <= nrel_inclusion: concept_3_protection_category;;

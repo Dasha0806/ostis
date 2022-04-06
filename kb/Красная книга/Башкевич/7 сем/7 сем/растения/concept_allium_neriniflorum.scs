@@ -1,0 +1,163 @@
+concept_allium_neriniflorum => nrel_main_idtf:
+[лук нереидоцветный](*<-lang_ru;;*);
+[allium neriniflorum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_allium_neriniflorum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_allium_neriniflorum;;
+
+//пояснения
+concept_allium_neriniflorum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 a — вид, сокращающийся в численности. В России на северном пределе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Луковичный геофит до 40 см выс. Луковицы одиночные, шаровидные, до 2 см в диам., с черноватыми бумагообразными чешуями. Цветет в конце июля и начале августа. Размножается семенами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается только в долине р. Онон в Забайкальском крае. Известно около десяти местонахождений: окр. г. Нерчинска, дер. Зубарево, Цугольская Степь, р. Аргалей, урочище «Гуновское», напротив устья р. Онон, окр. пос. Дацан, по р. Онон. Вне России распространен в северо-восточных районах Монголии (1) и Китая (2).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет преимущественно по плоским вершинам и южным склонам сопок в составе настоящих петрофитных и реже луговых, в том числе затопляемых, степей (3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В известных популяциях встречается до 8 экз. на 1 м2. Популяции занимают площадь от 2 до 10 га.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. При умереном выпасе скота, когда снижается обилие плотнодерновинных злаков, вид разрастается и играет существенную роль в сложении травостоя. При интенсивном выпасе состояние популяций неустойчивое.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Декоративное растение, страдает от сбора. Вытаптывание скотом при чрезмерном выпасе.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меря охраны. Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Читинской области и Агинского Бурятского автономного округа (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Регулирование выпаса скота в местах произрастания. Запрет сбора растений.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Вид интродуцирован в ботанических садах России: Москвы (МГУ), Новосибирска (ЦСБС СО РАН), Нальчика, Читы и Иркутска (4), а также в Оснабрюке (Германия).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_allium_neriniflorum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_allium_neriniflorum;;
+						concept_allium_neriniflorum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_allium_neriniflorum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_allium_neriniflorum <= nrel_inclusion: concept_2_protection_category;;

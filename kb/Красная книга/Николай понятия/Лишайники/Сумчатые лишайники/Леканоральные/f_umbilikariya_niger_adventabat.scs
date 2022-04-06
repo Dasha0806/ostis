@@ -1,0 +1,123 @@
+concept_umbilikariya_niger_adventabat => nrel_main_idtf:
+[умбиликария обугленная](*<-lang_ru;;*);
+[umbilikariya niger adventabat](*<-lang_lat;;*);
+[умбiлiкарыя апаленая](*<-lang_bel;;*);;
+concept_umbilikariya_niger_adventabat => nrel_idtf:[умбiлiкарыя апаленая](*<-lang_bel;;*);;
+
+plants -> concept_umbilikariya_niger_adventabat;;
+concept_species -> concept_umbilikariya_niger_adventabat;;
+type -> concept_umbilikariya_niger_adventabat;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_umbilikariya_niger_adventabat;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_umbilikariya_niger_adventabat;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_umbilikariya_niger_adventabat <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется в Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает у дороги на крупном наносном гранитном валуне (геологическом памятнике природы).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции пока не найдены. Размножается вегетативно (изидиями) или фрагментарно – кусочками слоевища.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Произрастает отдельными особями и небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Антропогенные воздействия – разрушение валунов, стаскивание их с основных месторасположений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: В единственном известном локалитете на территории республики охраняется совместно с геологическим памятником природы (в Глубокском р-не Витебской обл.). Требуется дополнительное обследование крупных валунов (особенно у границы их массового скопления на территориях Витебской, Минской и Гродненской обл.) с целью выявления новых мест произрастания вида и организации их охраны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Циркумполярно распространен в Арктике и в горах умеренной области по всей Голарктике . В Беларуси находится за пределами своего основного ареала. Известен только на территории Глубокского р-на Витебской обл. в окрестностях д. Плисса .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище молодое монофильное и округлое, позднее становится полифильным и неправильной формы, 2–3 см в диаметре, ломкое, по периферии разорванное, лопасти по краю завернуты вниз. Верхняя поверхность слоевища темно-бурая или буро-черная, покрыта зернистыми цилиндрическими или коралловидными изидиями, иногда разрастающимися в чешуйки или маленькие лопасти. Нижняя поверхность голая, с гомфом, более светло окрашенная, черновато-бурая, мелколакунозная, иногда с сетью жилок, отходящих от гомфа .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_umbilikariya_niger_adventabat <= nrel_spread: ... 
+	(*
+	-> Vitebsk_district;;
+	*);;
+
+concept_umbilikarievye => nrel_inclusion: concept_umbilikariya_niger_adventabat;;
+concept_umbilikariya_niger_adventabat => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; white; grey; green;;
+	*);;
+
+concept_umbilikariya_niger_adventabat <= nrel_inclusion: 
+	20_30_mm
+	(*
+	<- interval_value;;
+	<- diameter_of_thallus;;
+	=> nrel_measurement: (20_mm => 30_mm);;	
+	*);;			
+
+concept_umbilikariya_niger_adventabat <= nrel_inclusion: concept_1_protection_category;;
+

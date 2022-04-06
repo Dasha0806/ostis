@@ -1,0 +1,75 @@
+Starodorozhski_area<-concept_area;;
+Starodorozhski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Starodorozhski_area=>nrel_administrative_center_of_the_area:Starie_dorogi;;
+Starie_dorogi<-concept_city;;
+
+//самая высокая точка
+Starodorozhski_area=>nrel_highest_point:201_m;;
+201_m<-concept_number;;
+
+//площадь района
+Starodorozhski_area=>nrel_area_of_the_district:1370_km;;
+1370_km<-concept_number;;
+
+//население района
+Starodorozhski_area=>nrel_population_of_region:19199_m;;
+19199_m<-concept_number;;
+
+//используемые константы
+Starodorozhski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Стародорожский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Стародорожский район — административная единица на юго-востоке Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Starodorozhski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[В Стародорожском районе находятся древнерусские курганные могильники.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Starodorozhski_area;;
+Starodorozhski_area => nrel_main_idtf:
+[Стародорожский район](* <-lang_ru;; *);
+[Starodorozhski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Starie_dorogi;;
+Starie_dorogi=> nrel_main_idtf:
+[Старые дороги](* <-lang_ru;; *);
+[Starie dorogi](* <- lang_en;; *);;
+
+sc_node_not_relation ->201_m;;
+201_m=> nrel_main_idtf:
+[201 м](* <-lang_ru;; *);
+[201 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1370_km;;
+1370_km=> nrel_main_idtf:
+[1370 км^2](* <-lang_ru;; *);
+[1370 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->19199_m;;
+19199_m=> nrel_main_idtf:
+[19199 человек](* <-lang_ru;; *);
+[19199 m](* <- lang_en;; *);;

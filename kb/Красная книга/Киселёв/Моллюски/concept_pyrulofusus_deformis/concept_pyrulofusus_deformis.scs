@@ -1,0 +1,143 @@
+concept_pyrulofusus_deformis => nrel_main_idtf: [деформированный пирулофузус](*<- lang_ru;;*); [pyrulofusus deformis](*<- lang_lat;;*);;
+
+concept_pyrulofusus_deformis  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (деформированный пирулофузус)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_pyrulofusus_deformis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+concept_pyrulofusus_deformis <= nrel_inclusion: concept_gastropoda;;
+
+concept_animalia -> concept_pyrulofusus_deformis ;;
+concept_species -> concept_pyrulofusus_deformis ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_pyrulofusus_deformis ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_pyrulofusus_deformis ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1990 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_pyrulofusus_deformis  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина толстостенная, с 6 выпуклыми оборотами, разделенными вдавленным швом, обычно левозавитая, редко правозавитая, желтовато-коричневого или коричневого цвета. Скульптура представлена широкими, выпуклыми, изогнутыми осевыми складками и неодинаковыми по ширине и степени выступания спиральными ребрышками, которые часто группируются во вторичные ребра.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Бореально-тихоокеанский, арктический и бореально-атлантический вид. Отмечен в Тихом океане от о. Хоккайдо до сев. части Охотского моря и до Берингова моря, в арктических морях и в сев.-зап. Атлантике. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:	 Обитает на глубинах от 14 (Баренцево море у Новой Земли) до 170 м (Баренцево море к юго-зап. от Шпицбергена), на илисто-песчаных и илистых грунтах с галькой и камнями, при температурах от отрицательной (зимой) до +8°С (летом) и при солености 32.5-34%. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  По косвенным данным численность низкая.  ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Лимитирующие факторы не изучены. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Специальные меры охраны не разработаны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_pyrulofusus_deformis  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> japan; china; russia;;
+		*);;
+	*);;
+//части тела
+concept_pyrulofusus_deformis  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; grey; brown;;
+	*);;
+//размеры и вес
+concept_pyrulofusus_deformis  <= nrel_inclusion: 
+	[5-8 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [8 см]);;	
+	*);
+	[0,030-0,050 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,030 кг] => [0,050 кг]);;	
+	*);;
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[8 см] <- length_of_body; exact_value;;
+	[8 см] -> .centimeter: 8 (* <- number;;*);;
+	[0,030 кг] <- weight; exact_value;;
+	[0,030 кг] -> .kilogram: 0.030 (* <- number;;*);;
+	[0,050 кг] <- weight; exact_value;;
+	[0,050 кг] -> .kilogram: 0.050 (* <- number;;*);;
+//категория охраны и количество
+concept_pyrulofusus_deformis  <= nrel_inclusion: concept_3_protection_category;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

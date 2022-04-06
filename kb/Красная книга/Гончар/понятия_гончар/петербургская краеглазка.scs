@@ -1,0 +1,138 @@
+concept_lasiommata_petropolitana => nrel_main_idtf:
+[петербургская краеглазка](*<-lang_ru;;*);
+[lasiommata petropolitana](*<-lang_lat;;*);
+[пецярбургская краявочка](*<-lang_bel;;*);;
+concept_lasiommata_petropolitana => nrel_idtf:[пецярбургская краявочка](*<-lang_bel;;*);;
+
+concept_species -> concept_lasiommata_petropolitana;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: lasiommata_petropolitana;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lasiommata_petropolitana;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1787 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lasiommata_petropolitana <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Сухие сосняки на всхолмлениях около болот.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В год дает одно поколение. Лёт происходит с середины мая до конца июня, порой растягивается до августа. Гусеницы питаются на злаках из рода овсяниц. Зимуют куколки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Численность колеблется по годам. Ввиду очень ограниченного распространения и недавнего обнаружения вида в стране, тенденции не установлены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Уязвимость мест обитания в связи с осушительной мелиорацией.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Строгая консервация условий в местах обитания, недопущение изменения гидрологического режима на прилегающих территориях.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Лесная зона и горные области Евразии. В прибалтийской Европе на северной границе распространения. В Беларуси отмечен в Полесье .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 19-25 мм. Крылья сверху темно-коричневые, с рыжими просветами по краям, в которых расположены черные глазки, варьирующие по числу и размерам. Сквозь основной фон верха крыльев просвечивает черный рисунок из изогнутых полос. Снизу крылья светлее, покрыты линейным рисунком, а глазки окружены тонкими желтыми и черными кольцами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_lasiommata_petropolitana <= nrel_spread: ... 
+	(*
+	-> Brest_district; Gomel_district;;
+	*);;
+
+concept_satyridae => nrel_inclusion: concept_lasiommata_petropolitana;;
+concept_lasiommata_petropolitana => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; orange; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; orange; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; orange; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; orange; brown;;
+*);;
+
+
+concept_lasiommata_petropolitana <= nrel_inclusion: 
+	
+19_25_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (19_mm => 25_mm);;
+*);;
+19_mm <- length_of_body; exact_value;;
+19_mm -> .millimeter: 19 (* <- number;;*);;
+25_mm <- length_of_body; exact_value;;
+25_mm -> .millimeter: 25 (* <- number;;*);;				
+
+concept_lasiommata_petropolitana <= nrel_inclusion: concept_3_protection_category;;

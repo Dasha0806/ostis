@@ -1,0 +1,31 @@
+concept_fragilariaceae => nrel_main_idtf:
+[бесшовные](*<-lang_ru;;*);
+[fragilariaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_fragilariaceae;;
+
+concept_fragilariaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_fragilaria_reicheltii;;
+	-> concept_fragilaria_arcus;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_fragilariaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Клетки фрагилариевых одиночные или собраны в колонии разной формы. Панцирь с пояска линейный, таблитчатый или клиновидный. Створки от линейных до эллиптических, реже ромбические, булавовидные или слегка изогнутые.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_fragilariaceae;;

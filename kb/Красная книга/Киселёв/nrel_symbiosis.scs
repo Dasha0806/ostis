@@ -1,0 +1,53 @@
+
+nrel_symbiosis
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[symbiosis*](*<-lang_en;;*);
+                 [симбиоз*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(симбиоз)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_species;	
+	concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:
+[	<b>Симбиоз</b> - форма тесных взаимоотношений между <b><sc_element sys_idtf="concept_organism">организмами</b></sc_element> разных <b><sc_element sys_idtf="concept_species">видов</b></sc_element>, при которой хотя бы один из них получает для себя пользу.  ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(Симбиоз)](*<-lang_ru;;*);;
+
+=>nrel_using_constants:{
+
+        concept_organism;
+        relation
+
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:[ Раньше симбиозом называли взаимовыгодное сотрудничество. В настоящее время симбиоз это все типы <b><sc_element sys_idtf="relation">отношений</b></sc_element> между <b><sc_element sys_idtf="concept_organism">организмами</b></sc_element>, при которых хотя бы один <b><sc_element sys_idtf="concept_organism">организм</b></sc_element> извлекает выгоду для себя. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:...(*
+	<=nrel_combination:{ concept_animal(*<=nrel_first_domain:nrel_symbiosis;;*);
+ 	concept_animal(*<=nrel_second_domain:nrel_symbiosis;;*)
+};;
+*);;
+nrel_symbiosis<-symmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_symbiosis<-antitransitive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_symbiosis<-antireflexive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_symbiosis<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+
+
+arity->...(*=>nrel_measurement:2;;
+	->nrel_symbiosis;;
+*);;
+
+                          
+

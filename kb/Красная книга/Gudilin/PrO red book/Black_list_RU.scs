@@ -1,0 +1,24 @@
+Black_list_ru => nrel_main_idtf:
+[Черный список РФ](*<-lang_ru;;*);
+[Black list RF](*<-lang_en;;*);;
+
+concept_black_list -> Black_list_ru;;
+
+//определение и пояснения
+Black_list_ru <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Черный список РФ)]  (* <- lang_ru;; *);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+		-> Red_book_ru; concept_black_list;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Черный список РФ - черный список красной книги РФ.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: Black_list_ru;;

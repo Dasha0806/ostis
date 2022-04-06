@@ -1,0 +1,151 @@
+concept_anemina_buldowskii  => nrel_main_idtf: [анемина булдовского](*<- lang_ru;;*); [anemina buldowskii](*<- lang_lat;;*);;
+
+concept_anemina_buldowskii   <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (анемина булдовского)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_anemina_buldowskii.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_anemina_buldowskii <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_anemina_buldowskii  ;;
+concept_species -> concept_anemina_buldowskii  ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_anemina_buldowskii  ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_anemina_buldowskii  ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1973 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_anemina_buldowskii   <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина овальная, сильно вздутая, тонкостенная. Максимальная длина не превышает 7 см. Спинной край прямой или слабо выгнутый, параллелен продольной оси створки. Задний край в виде расширенного клюва. Брюшной край закругленный. Самая задняя точка раковины лежит против середины ее высоты. Задний килевой перегиб слабо выражен. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из басс. оз. Ханка и р. Уссури (Приморский край). Типовое местонахождение - р. Уссури. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают в стоячих и слабо проточных водоемах на заиленном или илистом грунте. Встречаются в оросительных каналах рисовых чеков и малых водохранилищах. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  В местах скопления моллюсков плотность особей составляет около 5 экз./м2. Наблюдается стойкая тенденция снижения численности анемин. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Распространение вида лимитируется чистотой воды, характером грунта и скоростью течения. Загрязнение или обмеление рек ведет к полному исчезновению моллюсков. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Моллюски охраняются в водоемах Ханкайского заповедника и его охранной зоны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_anemina_buldowskii   <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_anemina_buldowskii   => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; yellow; green;;
+	*);;
+//размеры и вес
+concept_anemina_buldowskii   <= nrel_inclusion: 
+	[4-7 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([4 см] => [7 см]);;	
+	*);
+	[0,020-0,035 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,020 кг] => [0,035 кг]);;	
+	*);;
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[7 см] <- length_of_body; exact_value;;
+	[7 см] -> .centimeter: 7 (* <- number;;*);;
+	[0,020 кг] <- weight; exact_value;;
+	[0,020 кг] -> .kilogram: 0.020 (* <- number;;*);;
+	[0,035 кг] <- weight; exact_value;;
+	[0,035 кг] -> .kilogram: 0.035 (* <- number;;*);;
+//категория охраны и количество
+concept_anemina_buldowskii   <= nrel_inclusion: concept_2_protection_category;;
+concept_anemina_buldowskii   <= nrel_strength: [2700 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 2700 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

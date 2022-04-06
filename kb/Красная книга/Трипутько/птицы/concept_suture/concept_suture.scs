@@ -1,0 +1,107 @@
+concept_suture
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[суторовые]
+	(*<-lang_ru;;*);
+	[suture]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[суторовые]
+	(*<-lang_ru;;*);
+	[suture]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (суторовые) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[суторовые — семейство птиц, мелкие, мельче воробья, преимущественно насекомоядные птицы с очень длинным ступенчатым хвостом и коротким толстым клювом.    ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о оленевых) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Все виды сутор хорошо приспособлены к обитанию в подлеске, в зарослях кустарников, в бамбуке, тростниках и разных формах высокотравья.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_family -> concept_suture;;
+concept_passerines -> concept_suture;;
+concept_suture => nrel_inclusion: concept_paradoxornis_polivanovi_stepanyan;;
+
+
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_suture;;
+
+
+
+//Рисунок
+concept_suture <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (семейство суторовые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_suture.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_suture <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Для большинства представителей этой группы характерен толстый, высокий, сжатый с боков клюв, позволяющий разгрызать твёрдые семена и вскрывать полые стебли трав в поисках насекомых.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Небольшая группа воробьиных птиц мелких и средних размеров, достигающая наибольшего видового разнообразия в субтропических лесах Гималаев и Восточной Азии. Филогенетически суторовые близки к тимелиям (Timaliidae), с которыми нередко обитают в одних и тех же биотопах.    ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_suture <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//питание
+concept_suture <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_insecta;;
+		*);;
+	*);;
+
+//описание длин
+concept_suture <= nrel_inclusion: 
+    [10-12 лет]
+    (*
+        <- interval_value;;
+        <- length_of_life;;
+        => nrel_measurement: ([10 лет] => [12 лет]);;
+    *);;
+    [10 лет] <- length_of_life; exact_value;;
+	[10 лет] -> .year: 10 (* <- number;;*);;
+	[12 лет] <- length_of_life; exact_value;;
+	[12 лет] -> .year: 12 (* <- number;;*);;

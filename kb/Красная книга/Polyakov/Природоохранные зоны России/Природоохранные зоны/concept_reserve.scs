@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_reserve;;
+concept_reserve => nrel_main_idtf:
+[заповедник](* <- lang_ru;; *);
+	[reserve](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_reserved_site;;
+concept_reserved_site => nrel_main_idtf:
+[заповедный участок](* <- lang_ru;; *);
+	[reserved site](* <- lang_en;; *);;
+concept_reserved_site<-concept_territory;;
+			
+concept_reserve<- rrel_key_sc_element:...
+	(*
+		<- definition;;
+		<= nrel_used_constants: concept_reserved_site;concept_plants;concept_animal;;
+		=> nrel_main_idtf: [Опр.(заповедник)](*<-lang_ru;;*);;
+		<= nrel_sc_text_translation:...(*-> [Заповедник - заповедный участок, где оберегаются и размножаются редкие и ценные растения, животные.](*<-lang_ru;;*);; *);; 
+	*);;
+
+concept_reserve->rrel_key_sc_element:...	
+	(*
+	<- statement;;
+	<- concept_statement_of_general_type;;
+	<- rrel_axiom: subject_domain_of_protected_areas;;
+	=> nrel_main_idtf: [Утв.(заповедник, Беларусь )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Всего в Беларуси находятся два заповедника.](* <- lang_ru;; *);;
+		*);;
+
+	<- rrel_key_sc_element: concept_Belarus ;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: concept_reserve;;

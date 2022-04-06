@@ -1,0 +1,149 @@
+concept_lepista_sordida=> nrel_main_idtf: [леписта грязная](*<- lang_ru;;*); [lepista sordida](*<- lang_lat;;*); [ляпіста брудная](*<- lang_bel;;*);;
+
+concept_lepista_sordida<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (леписта грязная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lepista_sordida.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_lepista_sordida;;
+concept_species -> concept_lepista_sordida;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_lepista_sordida;;
+
+//пояснения
+concept_lepista_sordida <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Литве.
+
+.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет в садах, на пашнях, полях и опушках лиственных лесов.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Биология: Плодовые тела развиваются в августе - сентябре. Гумусный сапротроф. Съедобный гриб.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречаются единичные экземпляры. Во всех местонахождениях численность вида невелика.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий - антропогенный: чрезмерные рекреационные нагрузки (уплотнение и загрязнение почвы, повреждение и сбор плодовых тел), вырубка лесов (все виды рубок), хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка «Нарочанский». Необходимо создание в местах роста вида специализированных микологических заказников с запрещением антропогенных воздействий и несанкционированного сбора плодовых тел. Следует периодически проводить ревизию и эколого-биологический контроль состояния известных популяций, осуществлять поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Вид с мультизональным ареалом (Европа, Азия, Африка, Северная и Южная Америка) . В Беларуси известны следующие местонахождения: Брестская обл. (Лунинецкий р-н, окрестности д. Крестуново) и Минская обл. (Минск, Центральный ботанический сад НАН Беларуси; Минский р-н, окрестности д. Сухорукие; Мядельский р-н; Узденский р-н, окрестности д. Озеро) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Шляпка диаметром 3-6 см, вначале округлая, позже плоско-распростертая, ширококолокольчатая, с закрученным, позже просто опущенным краем, серо-розово-фиолетовая, подсохшая - белая с серо-коричневым оттенком, по краю слегка фиолетовая. Мякоть мягкая, серо-лиловая, при подсыхании становится беловатой, с мягким вкусом, почти без запаха. Пластинки приросшие или коротко-нисходящие, частые, узкие, тонкие, грязно- или коричневато-лиловые, со временем выцветают и становятся более светлыми. Ножка 3-6 0,4-0,5 см, цилиндрическая, сплошная, грязно-коричневато-фиолетовая. Споры размером 6-7 3-4 мкм, овальные, мелко-бородавчатые; споровый порошок светло-кремовый .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_lepista_sordida <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Myadzel_district; Luninets_district; Uzda_district ;;
+	*);;
+
+concept_triholomovye => nrel_inclusion: concept_lepista_sordida;;
+concept_lepista_sordida => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; rounded; wide_bell; grey; pink; purple;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; thin; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; purple_brown;;
+	*);;
+
+concept_lepista_sordida <= nrel_inclusion: 
+	[3-8 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([3 см] => [8 см]);;	
+	*);
+[4-6 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([4 см] => [6 см]);;	
+	*);;
+	
+	[3 см] <- cap_diameter; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[8 см] <- cap_diameter; exact_value;;
+	[8 см] -> .centimeter: 8 (* <- number;;*);;
+	[4 см] <- lenght_of_leg; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[6 см] <- lenght_of_leg; exact_value;;
+	[6 см] -> .centimeter: 6 (* <- number;;*);;
+
+concept_lepista_sordida <= nrel_inclusion: concept_3_protection_category;;

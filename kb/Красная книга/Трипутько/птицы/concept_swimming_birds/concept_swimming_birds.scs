@@ -1,0 +1,73 @@
+concept_swimming_birds
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[птицы-пловцы]
+	(*<-lang_ru;;*);
+	[swimming-birds]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[птицы-пловцы]
+	(*<-lang_ru;;*);
+	[swimming-birds]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (птицы-пловцы) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[птицы-пловцы -  экологическая группа птиц, которые имеют возможность плавать  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о птицах-пловцах) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  У птиц-пловцов туловище широкое, вальковатое, широко расставленные конечности с хорошо развитыми перепонками. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_swimming_birds => nrel_inclusion: ... 
+    (*
+        <= nrel_combination: ... (*
+            -> concept_anseriform;;
+        *);;
+    *);;
+    
+
+concept_birds -> concept_swimming_birds;;
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_swimming_birds;;
+
+
+
+//Рисунок
+concept_swimming_birds <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (птицы-пловцы)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_swimming_birds.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+
+concept_swimming_birds <- rrel_key_sc_element:
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Эти водоплавающие птицы хорошо ныряют, добывая пищу в воде или на дне водоёма. Они имеют плотное оперение с развитым пухом, крупную копчиковую железу, плавательные перепонки между пальцами ног.   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+

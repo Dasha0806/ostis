@@ -1,0 +1,215 @@
+concept_arctium_nemorosum_lej=> nrel_main_idtf: [репейник дубравный](*<- lang_ru;;*); [arctium nemorosum lej](*<- lang_lat;;*);;
+
+//изображение
+concept_arctium_nemorosum_lej <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (репейник дубравный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_arctium_nemorosum_lej.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+//предметная область, вид
+subject_domain_of_plantae_vasculares-> rrel_not_maximum_studied_object_class: concept_arctium_nemorosum_lej;;
+concept_species -> concept_arctium_nemorosum_lej;;
+concept_plantae-> concept_arctium_nemorosum_lej;;
+
+//категория охраны
+concept_arctium_nemorosum_lej <= nrel_inclusion: concept_3_protection_category;;
+
+//дата включения в кк
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_arctium_nemorosum_lej;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//распространение
+concept_arctium_nemorosum_lej <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Svisloch_district;;->Grodno_district;;->Vitebsk_district;;->Pruzhany_district;;->Mstislavl_district;;
+		*);;
+*);;
+
+//описание
+concept_biennial_plant => nrel_inclusion:: concept_arctium_nemorosum_lej;;
+
+concept_arctium_nemorosum_lej => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; upright; branchy;; 
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; egg_formed;;*);
+							...
+							(*
+							<= nrel_inclusion:: flower; purple; tubular; small;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_inflorescence; basket;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; achene;;
+							*);;
+
+concept_arctium_nemorosum_lej <= nrel_inclusion: 
+[170-220 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([170 см] => [220 см]);; 
+*);
+[15-50 см]
+(*
+<- interval_value;;
+<- length_of_leaf;;
+=> nrel_measurement: ([15 см] => [50 см]);; 
+*);
+[0.7-0.8 см]
+(*
+<- interval_value;;
+<- length_of_fruit;;
+=> nrel_measurement: ([0.7 см] => [0.8 см]);; 
+*);;
+
+[170 см] <- length_of_stem; exact_value;;
+[170 см] -> .centimeter: 170 (* <- number;;*);;
+[220 см] <- length_of_stem; exact_value;;
+[220 см] -> .centimeter: 220 (* <- number;;*);;
+
+[15 см] <- length_of_leaf; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[50 см] <- length_of_leaf; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+
+[0.7 см] <- length_of_fruit; exact_value;;
+[0.7 см] -> .centimeter: 0.7 (* <- number;;*);;
+[0.8 см] <- length_of_fruit; exact_value;;
+[0.8 см] -> .centimeter: 0.8 (* <- number;;*);;
+
+//биология
+concept_arctium_nemorosum_lej => nrel_flowering_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		->July;;->August;;
+		*);;
+*);;
+
+concept_arctium_nemorosum_lej=> nrel_fruit_ripening_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		->August;;->September;;
+		*);;
+*);;
+
+concept_arctium_nemorosum_lej=> nrel_pollination_type: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_entomophilia;;
+		*);;
+*);;
+
+concept_arctium_nemorosum_lej=> nrel_dissemination_method: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_zoochory;;
+		*);;
+*);;
+
+concept_arctium_nemorosum_lej => nrel_propagation_type:{concept_seed_propagation};;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////пояснения
+concept_arctium_nemorosum_lej <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен во 2-е издание Красной книги Беларуси (1993). Находится под охраной в Литве и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Преимущественно двулетнее травянистое растение высотой 170-220 см с прямостоячим ветвистым стеблем. Листья простые, на длинных черешках, округло-яйцевидные, или яйцевидные, с сердцевидным или выемчатым основанием, нижние более крупные, длиной 50 см. Цветки трубчатые, пурпурные, мелкие, образуют соцветия корзинки. Корзинки диаметром 3,5-4 см, на коротких ножках или сидячие, собраны в общее кистевидное соцветие. Листочки обертки корзинок обычно голые. Плод - семянка, длиной 7-8 мм.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Скандинавия, Атлантическая, Средняя и Восточная Европа, Кавказ . В Беларуси находится в островных местах обитания за северо-восточной границей сплошного распространения. Известны местонахождения в Пружанском р-не Брестской обл. , Витебском р-не Витебской обл. , Гродненском и Свислочском р-нах Гродненской обл. и Мстиславском р-не Могилевской обл.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Опушки и поляны широколиственных и хвойно-широколиственных лесов (липовых, кленовых, елово-дубовых, ясенево-черноольховых и др.), обычно растет по склонам речных террас на плодородных почвах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июле - августе. Энтомофил. Семена созревают в августе - сентябре. Зоохор (эпизоохор). Размножается исключительно семенами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В известных местонахождениях произрастает небольшими группами (до десятка особей) и одиночными экземплярами.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Антропогенные - хозяйственная трансформация земель (рубки леса главного пользования, уничтожение напочвенного покрова, выжигание травы, чрезмерные рекреационные нагрузки); природные - гибридизация с синантропными видами рода, вытеснение более конкурентоспособными видами (вследствие сильного затенения).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка «Беловежская пуща», а также биологического заказника «Сопоцкинский» (Гродненский р-н) и ботанического заказника «Чертова борода» (Витебский р-н). Культивируется в Центральном ботаническом саду НАН Беларуси . Необходимы запрещение хозяйственной деятельности в местах произрастания (кроме выборочных санитарных и рубок ухода в зимнее время), контроль состояния известных популяций, искусственное разведение и расселение в подходящие экотопы, поиск новых местонахождений и, при необходимости, организация их охраны, ревизия местонахождения в Мстиславском р-не.](*<- lang_ru;;	*);;
+		*);;
+	*);;

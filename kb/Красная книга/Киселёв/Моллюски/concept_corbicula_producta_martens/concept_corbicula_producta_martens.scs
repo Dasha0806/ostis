@@ -1,0 +1,138 @@
+concept_corbicula_producta_martens=> nrel_main_idtf: [приморская корбикула](*<- lang_ru;;*); [corbicula producta Martens](*<- lang_lat;;*);;
+
+concept_corbicula_producta_martens <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (приморская корбикула)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_corbicula_producta_martens.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_corbicula_producta_martens <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_corbicula_producta_martens;;
+concept_species -> concept_corbicula_producta_martens;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_corbicula_producta_martens;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_corbicula_producta_martens;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1971 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_corbicula_producta_martens <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина овально-треугольная, умеренно вздутая, прочная, неравномерно и сильно ребристая, до 4 см длиной. Обычно высота раковины не превышает ее длину. Макушки широкие, сильно выступающие, у взрослых раковин могут быть корродированными. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из низовий р. Раздольная и из низовий рек басс. зал. Славянка Японского моря. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают в реках на участках, где не сказывается влияние моря. Способны переносить временное осолонение воды. Продолжительность жизни около 10 лет. Обитает совместно с японской корбикулой. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность вида возможно близка к критической [4]. На многих участках в басс. р. Раздольная, где ранее отмечали приморскую корбикулу, моллюски из-за сильного загрязнения среды исчезли. Вероятно отдельные популяции приморской корбикулы сохранились в эстуарных участках некоторых рек юж. Приморья. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Распространенный в последние годы промышленный сбор этих животных для экспорта в Японию может привести к полному уничтожению сохранившихся популяций. Распространение вида лимитируется чистотой воды. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Специальные меры охраны не разработаны.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_corbicula_producta_martens <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_corbicula_producta_martens => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; olive;;
+	*);;
+//размеры и вес
+concept_corbicula_producta_martens <= nrel_inclusion: 
+	[2-4 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([2 см] => [4 см]);;	
+	*);
+	[0,030-0,040 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,030 кг] => [0,040 кг]);;	
+	*);;
+	[2 см] <- length_of_body; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[0,030 кг] <- weight; exact_value;;
+	[0,030 кг] -> .kilogram: 0.030 (* <- number;;*);;
+	[0,040 кг] <- weight; exact_value;;
+	[0,040 кг] -> .kilogram: 0.040 (* <- number;;*);;
+//категория охраны и количество
+concept_corbicula_producta_martens <= nrel_inclusion: concept_1_protection_category;;
+concept_corbicula_producta_martens <= nrel_strength: [1500 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 1500 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+

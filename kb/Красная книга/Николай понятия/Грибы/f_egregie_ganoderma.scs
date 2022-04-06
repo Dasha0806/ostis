@@ -1,0 +1,140 @@
+concept_egregie_ganoderma => nrel_main_idtf:
+[ганодерма блестящая](*<-lang_ru;;*);
+[egregie ganoderma](*<-lang_lat;;*);
+[ганадэрма блiскучая](*<-lang_bel;;*);;
+concept_egregie_ganoderma => nrel_idtf:[ганадэрма блiскучая](*<-lang_bel;;*);;
+
+plants -> concept_egregie_ganoderma;;
+concept_species -> concept_egregie_ganoderma;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_egregie_ganoderma;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_egregie_ganoderma;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_egregie_ganoderma <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Польше и Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в смешанных лесах на отмершей древесине клёна, ольхи, березы, тополя, дуба, ели.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вызывает белую медленно развивающуюся гниль, которая проявляется в обесцвечивании древесины. Плодовые тела образуются в июле - октябре. Декоративный и лекарственный вид .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречаются единичные экземпляры. Во всех местонахождениях численность вида невелика. Наблюдается тенденция к сокращению.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сбор плодовых тел, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Национальном парке «Беловежская пуща». Необходимы периодический контроль состояния известных популяций, поиск новых популяций и организация их охраны с запретом в местах роста антропогенных воздействий, запрет сбора плодовых тел, разъяснительная работа среди населения.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная Африка и Северная Америка; возможно, космополит . В Беларуси обнаружен в Брестской (Пружанский р-н), Витебской (Россонский р-н), Гомельской (Речицкий р-н) и Минской (Дзержинский и Минский р-ны) обл..](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела однолетние, реже 2-3-летние, полукруглые, размером 3-8 10-25 2-3 см, с боковой цилиндрической ножкой длиной 5-10 см. Поверхность шляпки и ножки покрыта каштаново-бурой блестящей коркой. Ткань плодового тела губчато-пробковая. Поверхность гименофора табачного цвета, поры мелкие, округлые. Гифальная система тримитическая, гифы с пряжками. Споры яйцевидные, желтоватые, размером 7-13 6-8 мкм, с гладким гиалиновым эписпорием и бородавчатым буроватым эндоспорием .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_egregie_ganoderma <= nrel_spread: ... 
+	(*
+	-> Brest_district; Gomel_district; Vitebsk_district;;
+	*);;
+
+concept_ganodermovye => nrel_inclusion: concept_egregie_ganoderma;;
+concept_egregie_ganoderma => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_body; spherical; yellow; orange;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe;;
+	*);;
+
+concept_egregie_ganoderma <= nrel_inclusion: 
+	2_3_cm
+	(*
+	<- interval_value;;
+	<- body_diameter;;
+	=> nrel_measurement: (2_cm => 3_cm);;	
+	*);
+	5_10_cm
+	(*
+	<- interval_value;;
+	<- length_of_stipe;;
+	=> nrel_measurement: (5_cm => 10_cm);;	
+	*);;
+	2_cm <- body_diameter; exact_value;;
+	2_cm -> .centimeter: 2 (* <- number;;*);;
+	3_cm <- body_diameter; exact_value;;
+	3_cm -> .centimeter: 3 (* <- number;;*);;
+	5_cm <- length_of_stipe; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;
+	10_cm <- length_of_stipe; exact_value;;
+	10_cm -> .centimeter: 10 (* <- number;;*);;				
+
+concept_egregie_ganoderma <= nrel_inclusion: concept_3_protection_category;;
+

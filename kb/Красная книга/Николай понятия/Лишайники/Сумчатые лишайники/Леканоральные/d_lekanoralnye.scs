@@ -1,0 +1,31 @@
+sc_node_not_relation ->  concept_lekanoralnye;;
+concept_lekanoralnye => nrel_main_idtf:
+[леканоральные](*<-lang_ru;;*);
+[lekanoralnye](*<-lang_en;;*);;
+
+//
+concept_lekanoralnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(леканоральные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе сумчатые лишайники, представляющий собой слоевище в виде повисающих, достигающих 20 см длины, нитевидных лопастей](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lichenas_marsupialia;;
+	*);;	
+*);;
+
+//
+concept_lekanoralnye => nrel_inclusion:
+    concept_kollemovye;
+    concept_ramalinovye;
+    concept_cladoniaceae;
+    concept_parmeliaceae;
+    concept_umbilikarievye;;

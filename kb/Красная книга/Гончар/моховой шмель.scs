@@ -1,0 +1,138 @@
+concept_bombus_muscorum=> nrel_main_idtf:
+[моховой шмель](*<-lang_ru;;*);
+[bombus muscorum](*<-lang_lat;;*);;
+
+concept_species -> concept_bombus_muscorum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_bombus_muscorum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_bombus_muscorum;;
+	-> rrel_number_of_year: 1775 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_bombus_muscorum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красные книги Украины и России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Луга, преимущественно пойменные, лесные опушки и обширные поляны, агроценозы клевера.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Крупные перезимовавшие самки появляются с середины апреля, непродолжительное время питаются на цветущих растениях, после чего в сухой траве на поверхности земли или в кочках закладывают гнездо. Затем самка основательница заготавливает субстрат, состоящий из цветочной пыльцы и меда, на который откладывает несколько яиц и согревает телом. Появившиеся через 4 суток личинки сначала питаются заготовленной провизией, а затем самка систематически ее пополняет. Спустя 22-23 суток с момента откладки яиц появляются рабочие особи (недоразвитые самки). С этого момента самка только откладывает яйца, а рабочие особи летают за взятком, ухаживают за царицей и новым расплодом, охраняют, чистят и обогревают гнездо. К концу лета семья насчитывает 50-100 особей. К осени отрождаются молодые крупные самки и небольшие самцы, которые после спаривания вскоре погибают. С приходом первых заморозков погибает основательница гнезда и рабочие особи. Молодые оплодотворенные самки улетают с гнезда и зимуют подо мхом, травой или в норах грызунов. Пищевые связи шмелей разнообразные, однако, они отдают предпочтение растениям из семейств бобовых, сложноцветных и губоцветных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: На севере местами встречается в значительном количестве, в центр. и юж. частях страны редок. По мере освоения территории численность сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушение пойменных земель, использование пестицидов, сенокошение, выпас скота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Ограничение осушительной мелиорации и хоз. деятельности в поймах рек, сокращение хим. обработок почв.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: От Европы через Малую Азию, Казахстан, Западную Сибирь до побережья Тихого океана. В Беларуси распространен по всей территории.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Шмель средних размеров, длиной до 23-25 мм. Вверху грудь, брюшко, а также вся голова покрыты темно-рыжими волосками. Ноги в светло-желтых волосках. Длина хоботка самок около 13 мм.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_bombus_muscorum <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_apidae => nrel_inclusion: concept_bombus_muscorum;;
+concept_bombus_muscorum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_wings; light; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; hairly; ginger; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; ginger; brown;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; hairly; ginger; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; hairly; yellow;;
+	*);;
+
+concept_bombus_muscorum <= nrel_inclusion: 
+	23_25_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (23_mm => 25_mm);;	
+	*);;
+	23_mm <- length_of_body; exact_value;;
+	23_mm -> .millimeter: 23 (* <- number;;*);;
+	25_mm <- length_of_body; exact_value;;
+	25_mm -> .millimeter: 25 (* <- number;;*);;	
+
+concept_bombus_muscorum <= nrel_inclusion: concept_3_protection_category;;

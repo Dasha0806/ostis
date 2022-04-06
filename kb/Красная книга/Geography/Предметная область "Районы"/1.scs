@@ -1,0 +1,879 @@
+sc_node_not_relation ->Constitution_of_the_Republic_of_Belarus;;
+Constitution_of_the_Republic_of_Belarus => nrel_main_idtf:
+[Конституция РБ](* <-lang_ru;; *);
+[Constitution of the Republic of Belarus](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_constitution;;
+concept_constitution=> nrel_main_idtf:
+[конституция](* <-lang_ru;; *);
+[constitution](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_locality;;
+concept_locality=> nrel_main_idtf:
+[населённый пункт](* <-lang_ru;; *);
+[locality](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_township;;
+concept_township=> nrel_main_idtf:
+[городской посёлок](* <-lang_ru;; *);
+[township](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_legislative_document;;
+nrel_legislative_document=> nrel_main_idtf:
+[законодательный документ*](* <-lang_ru;; *);
+[legislative document*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_level_of_education;;
+nrel_level_of_education=> nrel_main_idtf:
+[уровень образования*](* <-lang_ru;; *);
+[level of education*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_standard_of_living;;
+nrel_standard_of_living=> nrel_main_idtf:
+[уровень жизни*](* <-lang_ru;; *);
+[standard of living*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_number;;
+concept_number=> nrel_main_idtf:
+[число](* <-lang_ru;; *);
+[number](* <- lang_en;; *);;
+
+sc_node_not_relation ->18600_dollars_per_person;;
+18600_dollars_per_person=> nrel_main_idtf:
+[18600 долларов на человека](* <-lang_ru;; *);
+[18600 dollars per person](* <- lang_en;; *);;
+
+sc_node_not_relation ->high;;
+high=> nrel_main_idtf:
+[высокий](* <-lang_ru;; *);
+[high](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_human_development_index;;
+concept_human_development_index=> nrel_main_idtf:
+[индекс человеческого развития](* <-lang_ru;; *);
+[human development index](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_level_of_ichr;;
+nrel_level_of_ichr=> nrel_main_idtf:
+[уровень индекса человеческого развития*](* <-lang_ru;; *);
+[level of ichr*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_gross_domestic_product;;
+concept_gross_domestic_product=> nrel_main_idtf:
+[ввп](* <-lang_ru;; *);
+[gross domestic product](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_level_of_GDP;;
+nrel_level_of_GDP=> nrel_main_idtf:
+[уровень ввп*](* <-lang_ru;; *);
+[level of GDP*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_height_above_sky_level;;
+nrel_height_above_sky_level=> nrel_main_idtf:
+[высота над уровнем моря*](* <-lang_ru;; *);
+[height above sky level*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_quantity;;
+concept_quantity=> nrel_main_idtf:
+[величина](* <-lang_ru;; *);
+[concept_quantity](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_prevailing_breed;;
+nrel_prevailing_breed=> nrel_main_idtf:
+[преобладающая порода*](* <-lang_ru;; *);
+[prevailing breed*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_pine;;
+concept_pine=> nrel_main_idtf:
+[сосна](* <-lang_ru;; *);	
+[pine](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_arboreal;;
+concept_arboreal=> nrel_main_idtf:
+[древесная порода](* <-lang_ru;; *);	
+[arboreal](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_climate;;
+concept_climate=> nrel_main_idtf:
+[климат](* <-lang_ru;; *);	
+[climate](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_temperate_continental_climate;;
+concept_temperate_continental_climate=> nrel_main_idtf:
+[умеренно-континентальный климат](* <-lang_ru;; *);	
+[temperate continental climate](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_type_of_climate;;
+nrel_type_of_climate=> nrel_main_idtf:
+[тип климата*](* <-lang_ru;; *);
+[type of climate*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_prime_minister;;
+concept_prime_minister=> nrel_main_idtf:
+[премьер-министр](* <-lang_ru;; *);	
+[prime minister](* <- lang_en;; *);;
+
+sc_node_not_relation ->Andrey_Kobyakov;;
+Andrey_Kobyakov => nrel_main_idtf:
+[Андрей Кобяков](* <-lang_ru;; *);
+[Andrey Kobyakov](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_be_prime_minister;;
+nrel_be_prime_minister=> nrel_main_idtf:
+[быть премьер-министром*](* <-lang_ru;; *);
+[be prime minister*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_House_of_Representatives;;
+concept_House_of_Representatives => nrel_main_idtf:
+[Палата представителей](* <-lang_ru;; *);	
+[House of Representatives](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_inclusion;;
+nrel_inclusion=> nrel_main_idtf:
+[включение*](* <-lang_ru;; *);
+[inclusion*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_House_of_Representatives;;
+concept_House_of_Representatives => nrel_main_idtf:
+[Палата представителей](* <-lang_ru;; *);	
+[House of Representatives](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_council_of_republic;;
+concept_council_of_republic => nrel_main_idtf:
+[Совет Республики](* <-lang_ru;; *);	
+[council of republic](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_parliament;;
+concept_parliament => nrel_main_idtf:
+[парламент](* <-lang_ru;; *);	
+[parliament](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_politic_system;;
+nrel_politic_system=> nrel_main_idtf:
+[политическая система*](* <-lang_ru;; *);
+[politic system*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_currency;;
+concept_currency => nrel_main_idtf:
+[валюта](* <-lang_ru;; *);	
+[currency](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_national_currency;;
+nrel_national_currency=> nrel_main_idtf:
+[национальная валюта*](* <-lang_ru;; *);
+[national currency*](* <- lang_en;; *);;
+
+sc_node_not_relation ->belarusian_ruble;;
+belarusian_ruble => nrel_main_idtf:
+[белорусский рубль](* <-lang_ru;; *);
+[belarusian ruble](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_president;;
+concept_president => nrel_main_idtf:
+[президент](* <-lang_ru;; *);	
+[president](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_be_president;;
+nrel_be_president=> nrel_main_idtf:
+[быть президентом*](* <-lang_ru;; *);
+[be president*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_rock_salt;;
+concept_rock_salt => nrel_main_idtf:
+[каменная соль](* <-lang_ru;; *);	
+[rock_salt](* <- lang_en;; *);;
+
+sc_node_not_relation ->Alexander_Lukashenko;;
+Alexander_Lukashenko => nrel_main_idtf:
+[Александр Лукашенко](* <-lang_ru;; *);	
+[Alexander_Lukashenko](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_potassium_salt;;
+concept_potassium_salt => nrel_main_idtf:
+[калийная соль](* <-lang_ru;; *);	
+[potassium_salt](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_oil;;
+concept_oil => nrel_main_idtf:
+[нефть](* <-lang_ru;; *);	
+[oil](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_minerals;;
+concept_minerals => nrel_main_idtf:
+[полезные ископаемые](* <-lang_ru;; *);	
+[minerals](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_be_mineral;;
+nrel_be_mineral=> nrel_main_idtf:
+[быть полезным ископаемым*](* <-lang_ru;; *);
+[be mineral*](* <- lang_en;; *);;
+
+sc_node_not_relation ->Poland;;
+Poland => nrel_main_idtf:
+[Польша](* <-lang_ru;; *);
+[Poland](* <- lang_en;; *);;
+
+sc_node_not_relation ->Russia;;
+Russia => nrel_main_idtf:
+[Россия](* <-lang_ru;; *);
+[Russia](* <- lang_en;; *);;
+
+sc_node_not_relation ->Minsk;;
+Minsk=> nrel_main_idtf:
+[Минск](* <-lang_ru;; *);
+[Minsk](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_neighbor_country;;
+nrel_neighbor_country=> nrel_main_idtf:
+[соседняя страна*](* <-lang_ru;; *);
+[neighbor country*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_capital;;
+nrel_capital=> nrel_main_idtf:
+[столица*](* <-lang_ru;; *);
+[nrel_capital*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_country;;
+concept_country => nrel_main_idtf:
+[страна](* <-lang_ru;; *);
+[country](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_population_of_country;;
+nrel_population_of_country=> nrel_main_idtf:
+[население страны*](* <-lang_ru;; *);
+[population of country*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_state;;
+concept_state => nrel_main_idtf:
+[государство](* <-lang_ru;; *);	
+[state](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition;;
+sc_definition => nrel_main_idtf:
+[sc-определение](* <-lang_ru;; *);	
+[definition](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition_statement;;
+sc_definition_statement=> nrel_main_idtf:
+[утверждение определяющего типа](* <-lang_ru;; *);	
+[ definition statement](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);	
+[ statement of general type ](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation=> nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element=> nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example=> nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem=> nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom=> nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation ->subject_domain_of_country_and_area;;
+subject_domain_of_country_and_area => nrel_main_idtf:
+[Предметная область страна и район](* <-lang_ru;; *);	
+[subject domain of country and area](* <- lang_en;; *);;
+
+sc_node_not_relation ->subject_domain;;
+subject_domain => nrel_main_idtf:
+[предметная область](* <-lang_ru;; *);	
+[subject domain](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_quantity;;
+concept_quantity => nrel_main_idtf:
+[величина](* <-lang_ru;; *);
+[quantity](* <- lang_en;; *);;
+
+sc_node_not_relation ->Belarus;;
+Belarus => nrel_main_idtf:
+[Беларусь](* <-lang_ru;; *);
+[Belarus](* <- lang_en;; *);;
+
+sc_node_not_relation ->9_6_mln;;
+9_6_mln => nrel_main_idtf:
+[9.6 млн](* <-lang_ru;; *);
+[9_6_mln](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_subdividing;;
+nrel_subdividing=> nrel_main_idtf:
+[разбиение*](* <-lang_ru;; *);
+[subdividing*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_value;;
+nrel_value=> nrel_main_idtf:
+[значение*](* <-lang_ru;; *);
+[value*](* <- lang_en;; *);;
+
+
+sc_node_not_relation -> concept_city_of_republican_significance;;
+concept_city_of_republican_significance => nrel_main_idtf:
+[город республиканского значения](* <-lang_ru;; *);
+[city of republican significance](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_territory;;
+concept_territory => nrel_main_idtf:
+[территория](* <-lang_ru;; *);	
+[territory](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_border;;
+nrel_border=> nrel_main_idtf:
+[граница*](* <-lang_ru;; *);
+[border*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_city;;
+concept_city => nrel_main_idtf:
+[город](* <-lang_ru;; *);
+[city](* <- lang_en;; *);;
+
+sc_node_not_relation ->oriented_relation;;
+oriented_relation=> nrel_main_idtf:
+[ориентированное отношение](* <-lang_ru;; *);
+[oriented relation](* <- lang_en;; *);;
+
+sc_node_not_relation ->binary_relation;;
+binary_relation=> nrel_main_idtf:
+[бинарное отношение](* <-lang_ru;; *);
+[binary relation](* <- lang_en;; *);;
+
+sc_node_not_relation ->antitransitive_relation;;
+antitransitive_relation=> nrel_main_idtf:
+[антитранзитивное отношение](* <-lang_ru;; *);
+[antitransitive relation](* <- lang_en;; *);;
+
+sc_node_not_relation ->relation;;
+relation=> nrel_main_idtf:
+[отношение](* <-lang_ru;; *);
+[relation](* <- lang_en;; *);;
+
+sc_node_not_relation ->antireflexive_relation;;
+antireflexive_relation=> nrel_main_idtf:
+[антирефлексивное отношение](* <-lang_ru;; *);
+[antireflexive relation](* <- lang_en;; *);;
+
+sc_node_not_relation ->antisymmetric_relation;;
+antisymmetric_relation=> nrel_main_idtf:
+[антисимметричное отношение](* <-lang_ru;; *);
+[antisymmetric relation](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_first_domain;;
+nrel_first_domain=> nrel_main_idtf:
+[первый домен*](* <-lang_ru;; *);
+[first domain*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_definitional_domain;;
+nrel_definitional_domain=> nrel_main_idtf:
+[область определения*](* <-lang_ru;; *);
+[definitional domain*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_union;;
+nrel_union=> nrel_main_idtf:
+[объединение*](* <-lang_ru;; *);
+[union*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_second_domain;;
+nrel_second_domain=> nrel_main_idtf:
+[второй домен*](* <-lang_ru;; *);
+[second domain*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_residence;;
+nrel_residence => nrel_main_idtf:
+[местопребывание*](* <-lang_ru;; *);
+[residence*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_government;;
+concept_government=> nrel_main_idtf:
+[правительство](* <-lang_ru;; *);
+[government](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_limb;;
+nrel_limb=> nrel_main_idtf:
+[орган*](* <-lang_ru;; *);
+[limb*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_governance;;
+concept_governance=> nrel_main_idtf:
+[власть](* <-lang_ru;; *);
+[governance](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_part;;
+nrel_part=> nrel_main_idtf:
+[часть*](* <-lang_ru;; *);
+[part*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_border;;
+nrel_border=> nrel_main_idtf:
+[граница*](* <-lang_ru;; *);
+[border*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_sphere_of_production;;
+concept_sphere_of_production=> nrel_main_idtf:
+[сфера производства](* <-lang_ru;; *);
+[sphere of production](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_forming;;
+nrel_forming=> nrel_main_idtf:
+[образование*](* <-lang_ru;; *);
+[forming*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_composition;;
+nrel_composition=> nrel_main_idtf:
+[состав*](* <-lang_ru;; *);
+[composition*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_earthly_crust;;
+concept_earthly_crust=> nrel_main_idtf:
+[земная кора](* <-lang_ru;; *);
+[earthly crust](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_symbol;;
+concept_symbol=> nrel_main_idtf:
+[символ](* <-lang_ru;; *);
+[symbol](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_state_symbol;;
+concept_state_symbol=> nrel_main_idtf:
+[государственный символ](* <-lang_ru;; *);
+[state symbol](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_emblem;;
+concept_emblem=> nrel_main_idtf:
+[эмблема](* <-lang_ru;; *);
+[emblem](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_coat_of_arms;;
+concept_coat_of_arms=> nrel_main_idtf:
+[герб](* <-lang_ru;; *);
+[coat of arms](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_man;;
+concept_man=> nrel_main_idtf:
+[человек](* <-lang_ru;; *);
+[man](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_head;;
+nrel_head=> nrel_main_idtf:
+[глава*](* <-lang_ru;; *);
+[head*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_form_of_government;;
+nrel_form_of_government=> nrel_main_idtf:
+[форма правления*](* <-lang_ru;; *);
+[form of government*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_using;;
+nrel_using=> nrel_main_idtf:
+[использование*](* <-lang_ru;; *);
+[using*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_currency_unit;;
+concept_currency_unit => nrel_main_idtf:
+[денежная единица](* <-lang_ru;; *);
+[currency unit](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_republic;;
+concept_republic=> nrel_main_idtf:
+[республика](* <-lang_ru;; *);
+[republic](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_house;;
+nrel_house=> nrel_main_idtf:
+[палата*](* <-lang_ru;; *);
+[house*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_executive_branch;;
+concept_executive_branch=> nrel_main_idtf:
+[испонительная власть](* <-lang_ru;; *);
+[executive branch](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_maritime_climate;;
+concept_maritime_climate=> nrel_main_idtf:
+[морской климат](* <-lang_ru;; *);
+[maritime climate](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_continental_climate;;
+concept_continental_climate=> nrel_main_idtf:
+[континентальный климат](* <-lang_ru;; *);
+[continental climate](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_monsoon_climate;;
+concept_monsoon_climate=> nrel_main_idtf:
+[мусонный климат](* <-lang_ru;; *);
+[monsoon climate](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_mode;;
+nrel_mode=> nrel_main_idtf:
+[режим*](* <-lang_ru;; *);
+[mode*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_weather;;
+concept_weather=> nrel_main_idtf:
+[погода](* <-lang_ru;; *);
+[weather](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_coniferous;;
+concept_coniferoust=> nrel_main_idtf:
+[хвойная порода](* <-lang_ru;; *);
+[coniferous](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_hardwood;;
+concept_hardwood=> nrel_main_idtf:
+[лиственная порода](* <-lang_ru;; *);
+[hardwood](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_plant;;
+concept_plant=> nrel_main_idtf:
+[растение](* <-lang_ru;; *);
+[plant](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_kind;;
+nrel_kind=> nrel_main_idtf:
+[вид*](* <-lang_ru;; *);
+[kind*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_clan;;
+concept_clan=> nrel_main_idtf:
+[род](* <-lang_ru;; *);
+[clan](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_ocean;;
+concept_ocean=> nrel_main_idtf:
+[океан](* <-lang_ru;; *);
+[ocean](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_surface;;
+concept_surface=> nrel_main_idtf:
+[поверхность](* <-lang_ru;; *);
+[surface](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_height;;
+nrel_height=> nrel_main_idtf:
+[высота*](* <-lang_ru;; *);
+[height*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_point;;
+nrel_point=> nrel_main_idtf:
+[точка*](* <-lang_ru;; *);
+[point*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_level;;
+nrel_level=> nrel_main_idtf:
+[уровень*](* <-lang_ru;; *);
+[level*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_index;;
+concept_index=> nrel_main_idtf:
+[показатель](* <-lang_ru;; *);
+[index](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_industry;;
+nrel_industry => nrel_main_idtf:
+[отрасль*](* <-lang_ru;; *);	
+[industry*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_value;;
+nrel_value => nrel_main_idtf:
+[стоимость*](* <-lang_ru;; *);	
+[value*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_addiction;;
+nrel_addiction => nrel_main_idtf:
+[зависимость*](* <-lang_ru;; *);	
+[addiction*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_accumulation;;
+nrel_accumulation => nrel_main_idtf:
+[накопление*](* <-lang_ru;; *);	
+[accumulation*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_factor_of_production;;
+nrel_factor_of_production=> nrel_main_idtf:
+[фактор произвоздства*](* <-lang_ru;; *);	
+[factor of production*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_export;;
+nrel_export=> nrel_main_idtf:
+[экспорт*](* <-lang_ru;; *);	
+[export*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_consumption;;
+nrel_consumption => nrel_main_idtf:
+[потребление*](* <-lang_ru;; *);	
+[consumption*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_belonging;;
+nrel_belonging => nrel_main_idtf:
+[принадлежность*](* <-lang_ru;; *);	
+[belonging*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_product;;
+concept_product=> nrel_main_idtf:
+[товар](* <-lang_ru;; *);
+[product](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_service;;
+concept_service=> nrel_main_idtf:
+[услуга](* <-lang_ru;; *);
+[service](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_year;;
+concept_year=> nrel_main_idtf:
+[год](* <-lang_ru;; *);
+[year](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_economy;;
+concept_economy=> nrel_main_idtf:
+[экономика](* <-lang_ru;; *);
+[economy](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_comparison;;
+nrel_comparison => nrel_main_idtf:
+[сравнение*](* <-lang_ru;; *);	
+[comparison*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_measurement;;
+nrel_measurement => nrel_main_idtf:
+[измерение*](* <-lang_ru;; *);	
+[measurement*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_literacy;;
+nrel_literacy=> nrel_main_idtf:
+[грамотность*](* <-lang_ru;; *);	
+[literacy*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_education;;
+nrel_education=> nrel_main_idtf:
+[образование*](* <-lang_ru;; *);	
+[education*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_longevity;;
+nrel_longevity=> nrel_main_idtf:
+[долголетие*](* <-lang_ru;; *);	
+[longevity*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_characteristic;;
+concept_characteristic=> nrel_main_idtf:
+[характеристика](* <-lang_ru;; *);
+[characteristic](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_potential;;
+nrel_potential=> nrel_main_idtf:
+[потенциал*](* <-lang_ru;; *);	
+[potential*](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_literacy_rate;;
+nrel_literacy_rate=> nrel_main_idtf:
+[уровень грамотности*](* <-lang_ru;; *);
+[literacy rate*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_proportion;;
+nrel_proportion=> nrel_main_idtf:
+[доля*](* <-lang_ru;; *);
+[proportion*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_age;;
+nrel_age=> nrel_main_idtf:
+[возраст*](* <-lang_ru;; *);
+[age*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_weight;;
+nrel_weight=> nrel_main_idtf:
+[масса*](* <-lang_ru;; *);
+[weight*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_degree_of_satisfaction;;
+nrel_degree_of_satisfaction=> nrel_main_idtf:
+[степень удовлетворения*](* <-lang_ru;; *);
+[degree of satisfaction*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_need;;
+concept_need=> nrel_main_idtf:
+[потребность](* <-lang_ru;; *);
+[need](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_unit_of_time;;
+concept_unit_of_time=> nrel_main_idtf:
+[единица времени](* <-lang_ru;; *);
+[ unit of time](* <- lang_en;; *);;
+
+sc_node_norole_relation ->nrel_population;;
+nrel_population=> nrel_main_idtf:
+[население*](* <-lang_ru;; *);
+[population*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_program;;
+concept_program=> nrel_main_idtf:
+[программа](* <-lang_ru;; *);
+[program](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_law;;
+concept_law=> nrel_main_idtf:
+[закон](* <-lang_ru;; *);
+[law](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_elections;;
+concept_elections=> nrel_main_idtf:
+[выборы](* <-lang_ru;; *);
+[elections](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_procedure;;
+concept_procedure=> nrel_main_idtf:
+[процедура](* <-lang_ru;; *);
+[procedure](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_election;;
+nrel_election=> nrel_main_idtf:
+[избрание*](* <-lang_ru;; *);
+[election*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_vote;;
+concept_vote=> nrel_main_idtf:
+[голосование](* <-lang_ru;; *);
+[vote](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_animal_world;;
+concept_animal_world=> nrel_main_idtf:
+[животный мир](* <-lang_ru;; *);
+[animal world](* <- lang_en;; *);;
+
+
+sc_node_not_relation ->concept_world;;
+concept_world=> nrel_main_idtf:
+[мир](* <-lang_ru;; *);
+[world](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_totality;;
+concept_totality=> nrel_main_idtf:
+[совокупность](* <-lang_ru;; *);
+[totality](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_animal;;
+concept_animal=> nrel_main_idtf:
+[животное](* <-lang_ru;; *);
+[animal](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_organism;;
+concept_organism=> nrel_main_idtf:
+[организм](* <-lang_ru;; *);
+[organism](* <- lang_en;; *);;
+
+
+sc_node_norole_relation -> nrel_separation;;
+nrel_separation=> nrel_main_idtf:
+[разделение*](* <-lang_ru;; *);
+[separation*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_industry;;
+concept_industry=> nrel_main_idtf:
+[промышленность](* <-lang_ru;; *);
+[industry](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_complex;;
+concept_complex=> nrel_main_idtf:
+[совокупность](* <-lang_ru;; *);
+[complex](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_company;;
+concept_company=> nrel_main_idtf:
+[предприятие](* <-lang_ru;; *);
+[company](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_extraction;;
+nrel_extraction=> nrel_main_idtf:
+[добыча*](* <-lang_ru;; *);
+[extraction*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_processing;;
+nrel_processing=> nrel_main_idtf:
+[обработка*](* <-lang_ru;; *);
+[processing*](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_production;;
+concept_production=> nrel_main_idtf:
+[производство](* <-lang_ru;; *);
+[production](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_tool;;
+concept_tool=> nrel_main_idtf:
+[орудие труда](* <-lang_ru;; *);
+[tool](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_raw;;
+concept_raw=> nrel_main_idtf:
+[сырьё](* <-lang_ru;; *);
+[raw](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_material;;
+concept_material=> nrel_main_idtf:
+[материал](* <-lang_ru;; *);
+[material](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_fuel;;
+concept_fuel=> nrel_main_idtf:
+[топливо](* <-lang_ru;; *);
+[fuel](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_product;;
+concept_product=> nrel_main_idtf:
+[продукт](* <-lang_ru;; *);
+[product](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_agriculture;;
+concept_agriculture=> nrel_main_idtf:
+[сельское хозяйство](* <-lang_ru;; *);
+[agriculture](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_administrative_unit;;
+concept_administrative_unit => nrel_main_idtf:
+[административная единица](* <-lang_ru;; *);
+[administrative unit](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_administrative_center_of_the_area;;
+nrel_administrative_center_of_the_area=> nrel_main_idtf:
+[административный центр района*](* <-lang_ru;; *);
+[administrative center of the area*](* <- lang_en;; *);;
+
+
+sc_node_norole_relation ->nrel_population_of_region;;
+nrel_population_of_region=> nrel_main_idtf:
+[население района*](* <-lang_ru;; *);
+[population of region*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_area_of_the_district;;
+nrel_area_of_the_district=> nrel_main_idtf:
+[площадь района*](* <-lang_ru;; *);
+[area of the district*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_highest_point;;
+nrel_highest_point=> nrel_main_idtf:
+[самая высокая точка*](* <-lang_ru;; *);
+[highest point*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_area;;
+concept_area => nrel_main_idtf:
+[район](* <-lang_ru;; *);
+[area](* <- lang_en;; *);;
+

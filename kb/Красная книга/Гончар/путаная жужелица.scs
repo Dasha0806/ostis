@@ -1,0 +1,146 @@
+concept_carabus_intricatus_linnaeus=> nrel_main_idtf:
+[путаная жужелица](*<-lang_ru;;*);
+[carabus intricatus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_intricatus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_intricatus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_intricatus_linnaeus;;
+	-> rrel_number_of_year: 1761 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_intricatus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красный список МСОП (LR/nt, ver. 2.3, 1994) и Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: В сосняках мшистых обычен, в других типах леса редок.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Единственный вид подрода Chaetocarabus в фауне Беларуси. Вид с весенне-летним типом размножения. Зимует имаго. Развитие личинок происходит в июне-августе, окукливание - в августе. Жуки живут несколько лет, размножаются каждый год. Личинки и имаго питаются личинками насекомых, сухопутными моллюсками, червями; активны преимущественно в сумерки и ночью. Теплолюбивый вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид. В Беловежской пуще численность его стабильная.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная деятельность в лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется в Беловежской пуще. Необходима пропаганда охраны вида и контроль за состоянием популяций. Выявление новых мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Западноевропейский мезофильный вид. По территории Беларуси проходит восточная граница распространения. Известен только с территории Беловежской пущи.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 24-36 мм. Тело уплощенное, верх синий или фиолетовый. Надкрылья с тремя рядами бугорков и тонкими промежутками. Скульптура надкрылий часто спутанная, нерегулярная. Низ, ноги, верхние челюсти и усики черные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_intricatus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pushcha_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_intricatus_linnaeus;;
+concept_carabus_intricatus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; blue; purple;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; blue;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_carabus_intricatus_linnaeus <= nrel_inclusion: 
+	24_36_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (24_mm => 36_mm);;	
+	*);;
+	24_mm <- length_of_body; exact_value;;
+	24_mm -> .millimeter: 24 (* <- number;;*);;
+	36_mm <- length_of_body; exact_value;;
+	36_mm -> .millimeter: 36 (* <- number;;*);;	
+
+concept_carabus_intricatus_linnaeus <= nrel_inclusion: concept_3_protection_category;;

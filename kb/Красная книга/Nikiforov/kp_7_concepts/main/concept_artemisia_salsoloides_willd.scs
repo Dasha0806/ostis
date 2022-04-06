@@ -1,0 +1,55 @@
+concept_artemisia_salsoloides_willd => nrel_main_idtf:
+[Полынь солянковидная](*<-lang_ru;;*);
+[Artemisia salsoloides Willd](*<-lang_lat;;*);;
+
+concept_species -> concept_artemisia_salsoloides_willd;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_artemisia_salsoloides_willd;;
+
+Red_list_ru -> concept_artemisia_salsoloides_willd;;
+
+//пояснения
+concept_artemisia_salsoloides_willd <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Оптимальные условия развития вида - в болотистой среде.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республик Башкортостан (2001), Дагестан (1998), Татарстан (1995, 2006), Краснодарского (1994, 2007) и Ставропольского (2002) краев, Астраханской (1998), Белгородской (2005), Волгоградской (2006), Оренбургской (1998), Ростовской обл. (2004), Саратовской (1996) и Улья- новской (2005) обл.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Восточно-европейско-южносибирский вид. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Голый рыхло-подушковидный кустарник 15-35 см выс., с хорошо выраженной деревянистой частью стебля. Нижние и средние стеблевые листья рассечены на 3-5 толстоватых темно-зеленых сегментов.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

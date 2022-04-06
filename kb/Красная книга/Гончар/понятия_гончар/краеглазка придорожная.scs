@@ -1,0 +1,136 @@
+concept_lopinga_achine => nrel_main_idtf:
+[краеглазка придорожная](*<-lang_ru;;*);
+[lopinga achine](*<-lang_lat;;*);
+[краявочка прыдарожная](*<-lang_bel;;*);;
+concept_lopinga_achine => nrel_idtf:[краявочка прыдарожная](*<-lang_bel;;*);;
+
+concept_species -> concept_lopinga_achine;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: lopinga_achine;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lopinga_achine;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1763 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lopinga_achine <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Европейских дневных бабочек (SPEC 3, категория - VU), Литвы, Восточной Фенноскандии для Финляндии, Германии, Швеции, в приложение II Бернской конвенции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Встречается в светлых, высокоствольных, с богатым подростом темнохвойно-мелколиственных лесах и ольшаниках под пологом, по сырым опушкам, вдоль полян, по обочинам лесных дорог, окраинам низинных болот.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается в одном поколении. Лёт длится с конца мая до конца июля. Бабочки тенелюбивы, обычно держатся вблизи прогалин под пологом леса, на стволах деревьев или на низком подросте; скапливаются на вытекающем из деревьев соке, сосут влагу из почвы. Гусеницы в конце лета и осенью, а после зимовки - весной, развиваются на многих видах злаков (мятлик, плевел, житняк и др.) и осоке.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Возможно, сокращается. Чаще встречается на севере и в центре страны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, сокращение площади старых лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется в Березинском заповеднике и в Национальном парке «Беловежская пуща». Необходимо ограничение осушительной мелиорации; ограждение известных мест обитания от работ, ведущих к трансформации подходящих для вида биотопов и введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Лесная и лесо-степная зоны Евразии, от северной Франции до Японии. Немногочисленные популяции обнаружены по всей территории Беларуси, за исключением Могилевской области .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 26-30 мм. Верхняя сторона крыльев бурая с небольшими просветами. Вдоль внешнего края проходит цепочка крупных темно-коричневых круглых пятен с грязно-желтым обрамлением. Снизу крылья светло-бурые, рисунок повторяет верхнюю сторону с дополнительными белыми «зрачками» в центре темных пятен, беловатыми перевязями вдоль их внутреннего края и светлым поперечным штрихом ближе к корню каждого крыла.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_lopinga_achine <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Grodno_district; Gomel_district; Vitebsk_district;;
+	*);;
+
+concept_satyridae => nrel_inclusion: concept_lopinga_achine;;
+concept_lopinga_achine => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; dark; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; dark; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; black; brown;;
+*);;
+
+concept_lopinga_achine <= nrel_inclusion: 
+	26_30_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (26_mm => 30_mm);;
+*);;
+26_mm <- length_of_body; exact_value;;
+26_mm -> .millimeter: 26 (* <- number;;*);;
+30_mm <- length_of_body; exact_value;;
+30_mm -> .millimeter: 30 (* <- number;;*);;				
+
+concept_lopinga_achine <= nrel_inclusion: concept_3_protection_category;;

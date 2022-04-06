@@ -1,0 +1,59 @@
+//синонимы,включение
+nrel_population_of_region =>nrel_main_idtf:[население района*] (* <- lang_ru;; *);;
+nrel_population_of_region =>nrel_system_identifier:[nrel_population_of_region] (* <- lang_en;; *);;
+nrel_population_of_region=>nrel_identifier:[population of region*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_population_of_region<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_area;;
+->concept_totality;;
+*);;
+
+=> nrel_main_idtf: [Опр.(население района*)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Население района - совокупность людей,живущих в районе.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+nrel_population_of_region<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(население района*,ход*,воспроизводство*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Население района непрерывно возобновляется в ходе воспроизводства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+//область определения
+nrel_population_of_region=>nrel_first_domain:concept_area;;
+nrel_population_of_region=>nrel_second_domain:concept_quantity;;
+nrel_population_of_region=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+->concept_area;;
+->concept_quantity;;
+*);;
+*);;
+
+//свойства отношения
+nrel_population_of_region<-oriented_relation;;
+nrel_population_of_region<-antitransitive_relation;;
+nrel_population_of_region<-antireflexive_relation;;
+nrel_population_of_region<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

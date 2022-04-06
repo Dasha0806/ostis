@@ -1,0 +1,167 @@
+concept_lithospermum_officinale_l => nrel_main_idtf: [воробейник лекарственный](*<- lang_ru;;*); [lithospermum officinale l.](*<- lang_lat;;*); [верабейнік лекавы](*<- lang_bel;;*);;
+concept_lithospermum_officinale_l => nrel_idtf: [верабейнік лекавы](*<- lang_bel;;*);;
+
+concept_species -> concept_lithospermum_officinale_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_lithospermum_officinale_l;;
+
+concept_lithospermum_officinale_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (воробейник лекарственный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_lithospermum_officinale_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lithospermum_officinale_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_lithospermum_officinale_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Считался исчезнувшим с 
+территории Беларуси. 
+Охраняется в Литве и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое стержнекорневое растение. Стебли высотой 50-100 см, прямостоячие, жестко шероховатые от щетинистых волосков, в верхней части разветвленные, густо олиственные. Листья ланцетовидные, шероховатые от коротких волосков. Цветки правильные, пятичленные, длиной 6-8 мм, с белым или желтовато-белым сростнолепестным венчиком (немного длиннее чашечки), собраны на верхушках стебля и его боковых ветвей в густые короткие, но при плодах сильно удлиняющиеся завитки. Плоды состоят из 1-4 совершенно гладких беловатых блестящих орешкообразных плодиков длиной около 3 мм, долго не выпадающих из чашечки .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Евразия:  большая часть Европы (кроме севера), Кавказ, Западная и Восточная Сибирь, Дальний Восток, Средняя и Малая Азия, Иран и Монголия; занесен в Северную Америку . В Беларуси находится в изолированных локалитетах в пределах ареала. Достоверно известен в Березовском , Дрогичинском , Кричевском , Мозырском  и Хойникском  
+р-нах. В литературе указывается для Березовского, Калинковичского и Речицкого р-нов . Имеются старые гербарные сборы из Могилевской губернии без точной привязки . Местонахождения в Минске и Витебске имеют заносный характер .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Мелколесье на месте широколист­венных лесов в долинах рек, заросли кустарников на минеральных «островах» среди низинных болот; на богатых карбонатами почвах.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне, плодоносит в июле. Энтомофил. Размножается семенами. Автобарохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Встречается одиночно или небольшими группами, насчитывающими от 5 до 10 генеративных экземпляров, на очень ограниченной площади от 40 до 3000 м2.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Сплошные рубки леса с последующей хозяйственной трансформацией земель, раскорчевка кустарников, выпас скота, чрезмерные рекреационные нагрузки (вытаптывание).](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Произрастает на территориях Полесского радиационно-экологического заповедника, биологических заказников «Званец» и «Споровский». Культивируется в Ботаническом саду БГУ. Необходимы периодический контроль состояния известных популяций, создание специализированных ботанических заказников в местах нахождения наиболее многочисленных популяций с запрещением или ограничением в них антропогенных воздействий, поиск новых мест произрастания, более широкое введение вида в культуру в качестве лекарственного и медоносного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_lithospermum_officinale_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Berezovsky_district;;->Drogichin_district_district;;->Krichevsky_district;;->Mozyr_district;;->Khoiniki_district;;
+		*);;
+*);;
+
+concept_lithospermum_officinale_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; a_few;erect;hard_rough;branched;thickly_covered_with_leaves;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; lanceolate;rough;short_hair;;
+*);
+...
+(*
+<= nrel_inclusion: flower; right;five_membered;white;yellowish_white;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; smooth;whitish;brilliant;ereskovsky;the_fruitlets;;
+*);;
+
+concept_lithospermum_officinale_l <= nrel_inclusion: 
+[50-100 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([50 см] => [100 см]);; 
+*); 
+[0.6-0.8 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([0.6 см] => [0.8 см]);; 
+*);;
+
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[0.6 см] <- length_of_inflorscence; exact_value;;
+[0.6 см] -> .centimeter: 0.6 (* <- number;;*);;
+[0.8 см] <- length_of_inflorscence; exact_value;;
+[0.8 см] -> .centimeter: 0.8 (* <- number;;*);;
+ 
+
+concept_lithospermum_officinale_l <= nrel_inclusion: concept_3_protection_category;;

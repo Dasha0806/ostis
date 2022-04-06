@@ -1,0 +1,22 @@
+concept_emberizidae => nrel_main_idtf:
+[овсянковые](*<-lang_ru;;*);
+[emberizidae](*<-lang_lat;;*);;
+
+concept_family -> concept_emberizidae;;
+
+concept_emberizidae => nrel_inclusion: concept_emberiza_hortulana;;
+
+//определение и пояснения
+concept_emberizidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Мелкого размера (примерно с воробья) сравнительно длиннохвостые птицы, систематически близкие к вьюрковым, от которых отличаются более тонким, сжатым с боков клювом, обычно не вздутым у основания. Населяют разнообразные ландшафты: степи, лесостепи, тундры, леса. В лесной зоне обитают по опушкам, вырубкам, гарям, лесным полянам. В горах поднимаются до субальпийских лугов. Часто селятся в измененном человеком ландшафте. Гнездятся на земле, в расщелинах скал или под камнями, изредка низко на кустах.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_emberizidae;;

@@ -1,0 +1,124 @@
+concept_unio_crassus => nrel_main_idtf: [толстая перловица](*<- lang_ru;;*); [unio crassus](*<- lang_lat;;*); [тоўстая перламутраўка](*<- lang_bel;;*);;
+concept_unio_crassus => nrel_idtf: [тоўстая перламутраўка](*<- lang_bel;;*);;
+
+concept_unio_crassus <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (толстая перловица)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_unio_crassus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_bivalve -> concept_unio_crassus;;
+concept_species -> concept_unio_crassus;;
+subject_domain_of_bivalve -> rrel_not_maximum_studied_object_class: concept_unio_crassus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_unio_crassus;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1788 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_unio_crassus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Обладает международным охранным статусом 00в соответствии с категорией LR/nt (IUCN). Вид включен в Красную книгу Польши (категория EN).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Обитает в чистых реках с прозрачной, быстро текущей водой на песчаных, песчано -илистом и галечном грунтах. В озерах и прудах, как правило, не встречается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Пресноводный двустворчатый моллюск. Моллюски данного вида локализуются в местах водоемов, где режим проточности и характер донных осадков обеспечивает необходимые условия для фильтрационного питания и развития моллюсков.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Необходима дополнительная информация о численности и распространении данного вида в Беларуси.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Один из наиболее чувствительных видов к загрязнению и эвтрофикации водоемов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Не допускать загрязнения водоемов и проведения мелиоративных мероприятий в местах обитания вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Общее распространение: Европа, кроме севера и северо -востока. На территории Беларуси в двух озерах Минской области (Мястро и Баторино) , р. Березина .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина коротко яйцевидная, макушка слабо выступает и смещена к задней стороне раковины. Передняя часть раковины в 3 -4 раза короче задней. Дорсальный край раковины и замочная площадка сильно изогнуты.  ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//размеры и вес
+concept_unio_crassus <= nrel_inclusion: 
+	[0.44-0.72 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.44 см] => [0.72 см]);;	
+	*);;
+	
+	[0.44 см] <- length_of_body; exact_value;;
+	[0.44 см] -> .centimeter: 0.44 (* <- number;;*);;
+	[0.72 см] <- length_of_body; exact_value;;
+	[0.72 см] -> .centimeter: 0.72 (* <- number;;*);;
+//категория охраны и количество
+concept_unio_crassus <= nrel_inclusion: concept_3_protection_category;;
+
+

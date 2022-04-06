@@ -1,0 +1,19 @@
+concept_3_protection_category => nrel_main_idtf:
+[III категория охраны](*<-lang_ru;;*);
+[III protection category](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_3_protection_category <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(III категория охраны)]  (* <- lang_ru;; *);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[III категория охраны включает таксоны, не находящиеся под прямой угрозой исчезновения, но подверженные риску вымирания в среднеотдаленном будущем в силу морфо-физиологических и/или поведенческих особенностей, делающих их уязвимыми для любых, даже незначительных изменений окружающей среды.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_3_protection_category;;

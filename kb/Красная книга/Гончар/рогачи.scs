@@ -1,0 +1,36 @@
+concept_lucanidae=> nrel_main_idtf:
+[рогачи](*<-lang_ru;;*);
+[lucanidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_lucanidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(рогачи)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Рогачи - семейство из отряда  жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_lucanidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупные жуки с уплощенным, реже цилиндрическим телом, большой головой и хорошо развитыми жвалами, которые у самцов нередко очень сильно удлиняются. Усики тонкие, в средней части изогнуты под углом (коленчатые), на конце с небольшой булавой. Личинки белые, мясистые, изогнутые полукольцом, развиваются в гнилой древесине.](* <- lang_ru;;*);;
+		*);;
+*);;

@@ -1,0 +1,36 @@
+concept_anthophoridae=> nrel_main_idtf:
+[антофориды](*<-lang_ru;;*);
+[anthophoridae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_anthophoridae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(антофориды)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_hymenoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Антофориды  - семейство отряда перепончатокрылые.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_hymenoptera =>nrel_inclusion: concept_anthophoridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[По образу жизни антофориды делятся на гнездостроящие и паразитические виды, причем преобладают последние. У гнездостроящих видов собирательные волоски размещаются на задней голени, не образуя корзиночек. По образу жизни антофориды делятся на гнездостроящие и паразитические виды, причем преобладают последние. У гнездостроящих видов собирательные волоски размещаются на задней голени, не образуя корзиночек.](* <- lang_ru;;*);;
+		*);;
+*);;

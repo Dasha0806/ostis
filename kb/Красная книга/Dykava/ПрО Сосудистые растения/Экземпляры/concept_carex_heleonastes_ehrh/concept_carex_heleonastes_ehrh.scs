@@ -1,0 +1,195 @@
+concept_carex_heleonastes_ehrh=> nrel_main_idtf: [осока болтолюбивая](*<- lang_ru;;*); [carex heleonastes ehrh](*<- lang_lat;;*);;
+
+//изображение
+concept_carex_heleonastes_ehrh <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (осока болотолюбивая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_carex_heleonastes_ehrh.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+//предметная область, вид
+subject_domain_of_plantae_vasculares-> rrel_not_maximum_studied_object_class: concept_carex_heleonastes_ehrh;;
+concept_species -> concept_carex_heleonastes_ehrh;;
+concept_plantae-> concept_carex_heleonastes_ehrh;;
+
+//категория охраны
+concept_carex_heleonastes_ehrh <= nrel_inclusion: concept_1_protection_category;;
+
+//дата включения в кк
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carex_heleonastes_ehrh;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2015 (*<- number;;*);;*);;
+	*);;
+
+//распространение
+concept_carex_heleonastes_ehrh <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Minsk_district;;-> Miory_district;;-> Dokshitsy_district;;-> Bobruisk_district;;-> Pruzhany_district;;
+		*);;
+*);;
+
+//описание
+concept_perennial => nrel_inclusion:: concept_carex_heleonastes_ehrh;;
+
+concept_carex_heleonastes_ehrh=> nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; upright;; //прямостоящий
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; narrow; grooved; sticking;; //узкий, желобчатый, торчащий
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_inflorescence; spica; apical; capitate;; //колос, верхушечный, головчатый
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; egg_formed; fulvous;; //бурый
+							*);;
+
+concept_carex_heleonastes_ehrh<= nrel_inclusion: 
+[15-30 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [30 см]);; 
+*);
+[0.3-0.35 см]
+(*
+<- interval_value;;
+<- length_of_flower;;
+=> nrel_measurement: ([0.3 см] => [0.35 см]);; 
+*);;
+
+[15 см] <- length_of_stem; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[30 см] <- length_of_stem; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+
+[0.3 см] <- length_of_flower; exact_value;;
+[0.3 см] -> .centimeter: 0.3 (* <- number;;*);;
+[0.35 см] <- length_of_flower; exact_value;;
+[0.35 см] -> .centimeter: 0.35 (* <- number;;*);;
+
+//биология
+concept_carex_heleonastes_ehrh => nrel_flowering_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> May;;->June;;
+		*);;
+*);;
+
+concept_carex_heleonastes_ehrh => nrel_fruit_ripening_period:{July};;
+
+concept_carex_heleonastes_ehrh => nrel_pollination_type: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_anemophilia;;
+		*);;
+*);;
+
+concept_carex_heleonastes_ehrh => nrel_dissemination_method: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_hydrochory;; -> concept_zoochory;;
+		*);;
+*);;
+
+concept_carex_heleonastes_ehrh => nrel_propagation_type:{concept_seed_propagation};;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////пояснения
+concept_carex_heleonastes_ehrh <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: В Красную книгу Беларуси включен впервые. Охраняется в Литве и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое довольно густодерновинное серо-зеленое растение с укороченным корневищем. Стебли высотой 15-30 см, у основания окружены светло-коричневыми или серыми чешуе­видными листьями. Срединные листья желобчатые, узкие, торчащие, при этом долго сохраняются прошлогодние. Колоски в числе 2-6 сближены на верхушке цветоносного побега в более или менее головчатое соцветие. Чешуи коричневые или рыжеватые с белопленчатыми краями. Мешочки яйцевидные, длиной 3-3,5 мм, буроватые, с ясными жилками, постепенно суженные в прямой шероховатый спереди более или менее глубоко расщепленный носик .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Скандинавия, Средняя (юг), Восточная (Прибалтика, север и средняя часть России) Европа, Кавказ, Западная и Восточная Сибирь, Дальний Восток, Северная Америка . Циркумбореальный вид, находящийся в Беларуси на южной границе ареала. По литературным данным приводится с начала 20-го в. для окрестностей Минска и д. Симоновичи Глусского р-на , а также д. Веретеи Миорского р-на . В последние годы обнаружен в Беловежской пуще (Пружанский р-н) и Глубокском р-не .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Открытые осоково-гипновые болота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в мае - июне, плодоносит в июле. Анемофил. Размножение преимущественно семенное. Гидрохор, реже зоохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Состояние обеих достоверно известных популяций критическое: их площади составляют не более нескольких десятков квадратных метров. Известные с начала века популяции, по всей вероятности, исчезли.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение гидрологического режима мест обитания в результате проведения осушительной мелиорации и торфоразработок, зарастание экотопов кустарником и подростом дре­­­­­­­вес­­­­­­­­­ных пород.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка «Беловежская пуща» и гидрологического заказника «Сервечь» (в Глубокском р-не). Необходимы периодический контроль состояния известных популяций и поиск новых мест произрастания, предотвращение антропогенных воздействий, проведение целенаправленной оптимизации мест обитания (периодическая расчистка участков с осокой болотолюбивой от древесно-кустарниковых пород).](*<- lang_ru;;	*);;
+		*);;
+	*);;

@@ -1,0 +1,76 @@
+sc_node_not_relation -> lebyazhiy;;
+
+lebyazhiy => nrel_main_idtf: [заказник Лебяжий] (* <- lang_ru;; *);
+				     [Lebyazhiy] (* <- lang_en;; *);;
+concept_territorry->lebyazhiy;;
+lebyazhiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Лебяжий)](*<-lang_ru;;*);
+		[Pic. (Lebyazhiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+lebyazhiy<-concept_sanctuary;;
+
+lebyazhiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лебяжий, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Лебяжий был создан в 1984 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							lebyazhiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1984(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+lebyazhiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лебяжий, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Лебяжий составляет 43,49 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							lebyazhiy=>nrel_square:[43,49 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[43,49](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+lebyazhiy => nrel_area_location: Minsk_area;;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: lebyazhiy;;
+

@@ -1,0 +1,36 @@
+concept_coenagrionidae=> nrel_main_idtf:
+[стрелки](*<-lang_ru;;*);
+[coenagrionidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_coenagrionidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(стрелки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_odonata;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Стрелки - семейство стрекоз из подотряда равнокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_odonata =>nrel_inclusion: concept_coenagrionidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Эти стрекозы во время отдыха держат свои крылья сложенными над телом. Крылья прозрачные, в основании стебельчатые. Крыловой глазок равен по длине одной ячейке.](* <- lang_ru;;*);;
+		*);;
+*);;

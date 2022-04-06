@@ -1,0 +1,136 @@
+concept_gagitodes_sagittata => nrel_main_idtf:
+[стрельчатая пяденица](*<-lang_ru;;*);
+[gagitodes sagittata](*<-lang_lat;;*);
+[стрэлкавы пядзенік](*<-lang_bel;;*);;
+concept_gagitodes_sagittata => nrel_idtf:[стрэлкавы пядзенік](*<-lang_bel;;*);;
+
+concept_species -> concept_gagitodes_sagittata;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: gagitodes_sagittata;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_gagitodes_sagittata;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1787 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_gagitodes_sagittata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Московской области России, Восточной Фенноскандии для Германии и Швеции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Сырые поляны, опушки и разреженные участки старых широколиственных и хвойно-широколиственных лесов, заболоченные луга.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Лёт длится с середины июня до середины августа. Гусеницы развиваются в августе-сентябре на цветках и плодах василистника. Зимует куколка, иногда дважды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:За последние 5 лет обнаружен лишь однажды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, спрямление русел малых рек, выпас скота, интенсивное сенокошение, застройка территорий, расширение сельскохозяйственных угодий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходимо ограничение осушительной мелиорации, сохранение старых лесов как резерватов редких коренных видов; запрещение рубки леса в местах обитания вида, выпаса скота, сплошного сенокошения, введение повышенных штрафных санкций за причинение вреда основным стациям вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Западной Европы (исключая крайний север) по юго-восточной Сибири через Китай до побережья Тихого океана, Японские острова. В Беларуси известен из 3-х удаленных друг от друга точек в Витебской и Брестской областях, причем первая находка относится к началу прошлого столетия](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Длина переднего крыла 12-15 мм. Тело бабочки коричневое. Основной тон верха переднего крыла от красновато-коричневого до темно-коричневого со светлыми разводами. Поперек крыла расположена черная, обрамленная четким белым цветом, выгнутая полоса, внешний край которой ближе к центру образует острый зубец. Напротив зубца у края крыла находится беловатый штрих. Прикорневая часть крыла черная. Задние крылья серые с темными дугообразной поперечной линией и срединной точкой. Бахрома крыльев с темными точками.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_gagitodes_sagittata <= nrel_spread: ... 
+	(*
+	-> Brest_district; Vitebsk_district;;
+	*);;
+
+concept_geometridae => nrel_inclusion: concept_gagitodes_sagittata;;
+concept_gagitodes_sagittata => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; bronze; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; bronze;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; bronze; brown; yellow;;
+*);;
+
+concept_gagitodes_sagittata <= nrel_inclusion: 
+	12_15_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (12_mm => 15_mm);;
+*);;
+12_mm <- length_of_body; exact_value;;
+12_mm -> .millimeter: 12 (* <- number;;*);;
+15_mm <- length_of_body; exact_value;;
+15_mm -> .millimeter: 15 (* <- number;;*);;				
+
+concept_gagitodes_sagittata <= nrel_inclusion: concept_2_protection_category;;

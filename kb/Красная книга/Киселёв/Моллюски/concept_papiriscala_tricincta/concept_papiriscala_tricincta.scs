@@ -1,0 +1,143 @@
+concept_papiriscala_tricincta => nrel_main_idtf: [трехпоясная папирискала](*<- lang_ru;;*); [papiriscala tricincta](*<- lang_lat;;*);;
+
+concept_papiriscala_tricincta  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (трехпоясная папирискала)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_papiriscala_tricincta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+concept_papiriscala_tricincta <= nrel_inclusion: concept_gastropoda;;
+
+concept_animalia -> concept_papiriscala_tricincta ;;
+concept_species -> concept_papiriscala_tricincta ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_papiriscala_tricincta ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_papiriscala_tricincta ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1976 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_papiriscala_tricincta  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина тонкостенная, с сильно выпуклыми, закругленными оборотами, разделенными прижатым швом. Окраска раковины - коричневые спиральные полосы на бледно-пепельном фоне. Скульптура состоит из тонких, невысоких, с завернутым краем осевых пластинок, у шва заходящих друг за друга. Устье с сомкнутым краем, с просвечивающими внутри коричневыми полосами.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Западно-тихоокеанский приазиатский субтропический вид. Распространен в зап. части Японского моря. В акватории России известен из зал. Посьета ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:	 Обитает на глубинах 8-19 м на песчаных и илисто-песчаных с гравием грунтах, при температурах от отрицательной (зимой) до +22°C (летом) и при солености 32-34%.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Известны единичные находки вида. Данные о численности отсутствуют. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Данные олимитирующих факторах отсутствуют ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в акватории Дальневосточного морского заповедника. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_papiriscala_tricincta  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> japan; china; russia;;
+		*);;
+	*);;
+//части тела
+concept_papiriscala_tricincta  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; striped; grey; brown;;
+	*);;
+//размеры и вес
+concept_papiriscala_tricincta  <= nrel_inclusion: 
+	[1-2 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([1 см] => [2 см]);;	
+	*);
+	[0,005-0,010 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,005 кг] => [0,010 кг]);;	
+	*);;
+	[1 см] <- length_of_body; exact_value;;
+	[1 см] -> .centimeter: 1 (* <- number;;*);;
+	[2 см] <- length_of_body; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[0,005 кг] <- weight; exact_value;;
+	[0,005 кг] -> .kilogram: 0.006 (* <- number;;*);;
+	[0,010 кг] <- weight; exact_value;;
+	[0,010 кг] -> .kilogram: 0.010 (* <- number;;*);;
+//категория охраны и количество
+concept_papiriscala_tricincta  <= nrel_inclusion: concept_4_protection_category;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

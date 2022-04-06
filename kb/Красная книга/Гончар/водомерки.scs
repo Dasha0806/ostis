@@ -1,0 +1,36 @@
+concept_gerridae=> nrel_main_idtf:
+[водомерки](*<-lang_ru;;*);
+[gerridae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_gerridae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(водомерки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_heteroptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Водомерки - семейство полужесткокрылых насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_heteroptera =>nrel_inclusion: concept_gerridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Тело и кончики ног покрыты жёсткими несмачиваемыми водой волосками, благодаря чему водомерки приспособлены к скольжению по воде. Существуют крылатые и бескрылые виды.](* <- lang_ru;;*);;
+		*);;
+*);;

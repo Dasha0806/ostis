@@ -1,0 +1,167 @@
+concept_trifolium_spryginii_belava_et_sipl => nrel_main_idtf: [клевер спрыгина, или люпинник белый](*<- lang_ru;;*); [trifolium spryginii belaёva et sipl. (=t. lupinaster l. var. albiflorum ser.; lupinaster albus link)](*<- lang_lat;;*); [канюшына спрыгiна, або лубiннiк белы](*<- lang_bel;;*);;
+concept_trifolium_spryginii_belava_et_sipl => nrel_idtf: [канюшына спрыгiна, або лубiннiк белы](*<- lang_bel;;*);;
+
+concept_species -> concept_trifolium_spryginii_belava_et_sipl;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_trifolium_spryginii_belava_et_sipl;;
+
+concept_trifolium_spryginii_belava_et_sipl  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (клевер спрыгина, или люпинник белый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_trifolium_spryginii_belava_et_sipl.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_trifolium_spryginii_belava_et_sipl;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_trifolium_spryginii_belava_et_sipl <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу 
+Беларуси 2го издания (1993) 
+как белоцветковая форма 
+клевера люпинового - Trifolium lupinaster L. Охраняется в Литве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение обычно с прямостоячими стеблями высотой 15-50 см. Листья на коротких прижатых к стеблю черешках, по всей длине сросшихся с прилистниками, пальчатосложные, с 5 ланцетными или узко-ланцетными листочками; листочки по всему краю острозубчатые, снизу с выдающимися утолщенными к краю боковыми жилками. Цветки неправильные (“мотыльковые”), желтовато-белые, собраны в рыхловатые зонтиковидные верхушечные и пазушные кисти. Плод - продолговато-линейный боб с 2-6 семенами.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Восточная Европа, Западная Сибирь, Средняя Азия (Казахстан) . В Беларуси находится в изолированных локалитетах за западной границей ареала. Достоверно известен в Минской (Логойский, Мядельский, Смолевичский, Столбцовский и Червенский р-ны) и Гродненской (Новогрудский и Ошмянский р-ны) обл. . Ранее указывался для окрестностей п. Щорс Новогрудского уезда .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Опушки, поляны, зарастающие вырубки в разреженных сосновых лесах верескового, брусничного и черничного типов.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне - июле, плодоносит в июле - августе (сентябре). Энтомофил. Размножение семенное. Автобарохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно растет небольшими группами, местами (в Логойском  и Ошмянском  р-нах) довольно многочисленными.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Сплошные рубки леса с последующей хозяйственной трансформацией земель, техногенные воздействия при рубке леса, повышенные рекреационные нагрузки (вытаптывание, сбор растений).](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Нарочанский”, заказника “Клевица” (Ошмянский р-н), проектируемого ландшафтного заказника “Налибокская пуща” (Столбцовский р-н). Необходимы периодический эколого-биологический контроль состояния известных популяций, предотвращение в местах роста антропогенных воздействий (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимний период), выявление новых мест произрастания и организация, при необходимости, их охраны, введение вида в культуру в качестве кормового и медоносного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_trifolium_spryginii_belava_et_sipl <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Logoysk_district;;->Myadel_district;;->Smolevichi_district;;->Stolbtsy_district;;->Czerwinski_district;;->Grodno_district;;->Novogrudok_district;;->Oshmyany_district;;->Novogrudok_district;;
+		*);;
+*);;
+
+concept_trifolium_spryginii_belava_et_sipl => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; short_petiole;appressed_to_the_stem_the_petiole;are_palmated;narrowly_lanceolate_leaf;sharp_toothed;thickened_veins;;
+*);
+...
+(*
+<= nrel_inclusion: flower; wrong;butterfly;yellowish_white;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; oblong_linear;Bob;;
+*);;
+
+concept_trifolium_spryginii_belava_et_sipl <= nrel_inclusion: 
+[15-50 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [50 см]);; 
+*); 
+[6-10 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([6 см] => [10 см]);; 
+*);;
+
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[6 см] <- length_of_inflorscence; exact_value;;
+[6 см] -> .centimeter: 6 (* <- number;;*);;
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+ 
+
+concept_trifolium_spryginii_belava_et_sipl <= nrel_inclusion: concept_3_protection_category;;

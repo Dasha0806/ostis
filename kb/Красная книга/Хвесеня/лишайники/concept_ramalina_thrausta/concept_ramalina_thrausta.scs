@@ -1,0 +1,127 @@
+concept_ramalina_thrausta=> nrel_main_idtf: [рамалина длинноволосатая](*<- lang_ru;;*); [ramalina thrausta](*<- lang_lat;;*); [рамаліна доўгаваласатая](*<- lang_bel;;*);;
+
+concept_ramalina_thrausta<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (рамалина длинноволосатая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_ramalina_thrausta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_ramalina_thrausta;;
+concept_species -> concept_ramalina_thrausta;;
+subject_domain_of_lichenas -> rrel_not_maximum_studied_object_class: concept_ramalina_thrausta;;
+
+//пояснения
+concept_ramalina_thrausta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Впервые включен в Красную книгу Беларуси. Охраняется в Польше и Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Произрастает преимущественно в еловых лесах на лиственных и хвойных деревьях (чаще на ветвях елей).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции отсутствуют. Размножается вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается отдельными особями, реже группами. Из 6 местонахождений, известных на территории Беларуси, 5 отмечено на охраняемых природных территориях .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительная мелиорация, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков "Беловежская пуща", "Нарочанский" и "Припятский". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых мест роста вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных работ вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа, Азия и Северная Америка. Редкий таежный реликт субатлантического периода , ареал которого простирается в зоне тайги на всем протяжении Голарктики. В Беларуси известен в Брестской (Пружанский р-н ), Витебской (Оршанский р-н ), Гомельской (Лельчицкий р-н ) и Минской (Минский и Мядельский р-ны) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище в виде повисающих, иногда достигающих 20 см длины, светло- или серовато-зеленоватых, радиально-кустистых или уплощенных, особенно в местах разветвлений у основания, ближе к вершине нитевидных лопастей. Веточки у основания до 1 мм толщины, постепенно утончающиеся, округлые в сечении, разветвлены по всей длине вильчато, с коралловидными утолщениями, представляющими мелкие беловатые сорали .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_ramalina_thrausta <= nrel_spread: ... 
+	(*
+	->Pruzhany_district; Orsha_district; Lelchitsky_distict; Minsk_district; Myadel_district;;
+	*);;
+
+concept_ramalinovye => nrel_inclusion: concept_ramalina_thrausta;;
+concept_ramalina_thrausta => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; green;;
+	*);; 
+
+concept_ramalina_thrausta <= nrel_inclusion: 
+	[0-20 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [20 см]);;	
+	*);;
+	
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[20 см] <- length_of_body; exact_value;;
+	[20 см] -> .centimeter: 20 (* <- number;;*);;
+
+concept_ramalina_thrausta <= nrel_inclusion: concept_3_protection_category;;

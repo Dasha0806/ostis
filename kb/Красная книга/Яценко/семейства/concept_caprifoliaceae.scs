@@ -1,0 +1,22 @@
+concept_caprifoliaceae => nrel_main_idtf:
+[жимолостные](*<-lang_ru;;*);
+[caprifoliaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_caprifoliaceae;;
+
+concept_caprifoliaceae => nrel_inclusion: concept_linnaea_borealis_l;;
+
+//определение и пояснения
+concept_caprifoliaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Довольно обширное семейство деревьев и кустарников из порядка ворсянкоцветных (Dipsacales), близкое к мареновым (Rubiaceae) и кизиловым (Corneae). Ареал распространения жимолостных охватывает умеренный пояс северного полушария; в южном их немного, а в тропическом поясе встречаются лишь по горам; травянистых форм очень мало. Листья всегда супротивные, то есть попарно расположенные, у большинства цельные, без прилистников (но у немногих они есть); цветы, как правильные, так и неправильные, — двусторонне симметричные; тычинок 5; из нижней завязи происходит плод — ягода или костянка.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+//subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_caprifoliaceae;;

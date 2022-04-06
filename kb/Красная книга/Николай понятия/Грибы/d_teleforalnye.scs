@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_teleforalnye;;
+concept_teleforalnye => nrel_main_idtf:
+[телефоральные](*<-lang_ru;;*);
+[teleforalnye](*<-lang_en;;*);;
+
+//
+concept_teleforalnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(телефоральные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий дифференцированные на шляпку и центральную ножку грибы, мясистые, одиночные или в сростках, гименофор снизу шляпки в виде шипов](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_teleforalnye => nrel_inclusion:
+    concept_bankeraceae;
+    concept_teleforovye;;

@@ -1,0 +1,91 @@
+concept_lekanomyrcetes
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[леканомирцеты]
+	(*<-lang_ru;;*);
+	[lekanomyrcetes]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[леканомирцеты]
+	(*<-lang_ru;;*);
+	[lekanomyrcetes]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (леканомирцеты) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[леканомирцеты — род лишайников, включающий в себя 13500 видов. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о леканомирцеты) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  На поверхности гомеомерного слоевища развивается крупноклеточный коровой слой, состоящий из одного или нескольких рядов клеток.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_anthem_carp -> concept_lekanomyrcetes;;
+concept_genus -> concept_lekanomyrcetes;;
+concept_lekanomyrcetes => nrel_inclusion: concept_umbilicaria_esculenta;;
+
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_lekanomyrcetes;;
+
+
+
+//Рисунок
+concept_lekanomyrcetes <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род леканомирцеты)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lekanomyrcetes.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_lekanomyrcetes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Слоевища темно-зеленые, оливково-коричневые.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Споры бесцветные, поперечно-многоклеточные до муральных   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_lekanomyrcetes <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//Части тела
+
+
+//описание длин
+

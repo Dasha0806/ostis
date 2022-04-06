@@ -1,0 +1,126 @@
+parmotrema_paklevidnaya => nrel_main_idtf:
+[пармотрема паклевидная](*<-lang_ru;;*);
+[parmotrema paklevidnaya](*<-lang_lat;;*);
+[парматрэма пакуллепадобная](*<-lang_bel;;*);;
+parmotrema_paklevidnaya => nrel_idtf:[парматрэма пакуллепадобная](*<-lang_bel;;*);;
+
+plants -> parmotrema_paklevidnaya;;
+concept_species -> parmotrema_paklevidnaya;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: parmotrema_paklevidnaya;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: parmotrema_paklevidnaya;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+parmotrema_paklevidnaya <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Растет в широколиственных лесах на стволах дуба, ясеня и других широколиственных деревьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Включен во 2-е издание Красной книги Беларуси (1993).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции не обнаружены. Размножается вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается локально одиночными особями или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительная мелиорация, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Находится под охраной в Национальном парке "Припятский". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых местонахождений вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого необходим запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Африка, Северная и Центральная Америка . Реликт широколиственных лесов субокеанической флоры третичного периода . Известен только в южной части Беларуси: в Брестской (Столинский р-н), Гомельской (Житковичский, Лельчицкий и Мозырский р-ны) и Могилевской (Осиповичский р-н) обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище неправильно розетковидное или неопределенной формы, диаметром до 7-12 см, с приподнятыми по краям соредиозными лопастями и слегка округлыми или острыми пазухами. Лопасти извилисто надрезанные, курчавые, с редкими небольшими ресничками по краям. Верхняя поверхность серовато-зеленоватая, оливково-сероватая, серая, матовая, ближе к краям блестящая, гладкая; нижняя - темная, почти черная, с черными ризинами, по краям более светлая. Соредии валикообразные, слегка вытянутые, иногда сливающиеся по несколько вместе .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+parmotrema_paklevidnaya <= nrel_spread: ... 
+	(*
+	-> Gomel_district; Brest_district; Mogilev_district;;
+	*);;
+
+concept_kollemovye => nrel_inclusion: parmotrema_paklevidnaya;;
+parmotrema_paklevidnaya => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; leafy; grey; green;;
+	*);;
+
+parmotrema_paklevidnaya <= nrel_inclusion: 
+	7_12_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_thallus;;
+	=> nrel_measurement: (7_cm => 12_cm);;	
+	*);;
+	7_cm <- diameter_of_thallus; exact_value;;
+	7_cm -> .centimeter: 7 (* <- number;;*);;
+	12_cm <- diameter_of_thallus; exact_value;;
+	12_cm -> .centimeter: 12 (* <- number;;*);;				
+
+parmotrema_paklevidnaya <= nrel_inclusion: concept_3_protection_category;;
+

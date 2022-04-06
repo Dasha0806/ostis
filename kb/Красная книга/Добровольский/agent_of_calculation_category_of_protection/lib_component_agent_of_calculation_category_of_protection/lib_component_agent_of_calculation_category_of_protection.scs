@@ -1,0 +1,33 @@
+lib_component_agent_of_calculation_category_of_protection
+=> nrel_main_idtf:
+	[Компонент библиотеки. Sc-агент расчета категории охраны]
+	(* <- lang_ru;; *);
+	[Library component. Sc-agent of calculation of protection]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_calculation_category_of_protection;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/agent_of_calculation_category_of_protection.html"
+				(* <- lang_ru;; *);; 
+		*);;
+*);;
+
+question_of_calculation_category_of_protection <- sc_node_not_relation;;
+
+question_of_calculation_category_of_protection => nrel_main_idtf: 
+	[действие. Расчитать категорию охраны] 
+	(* <- lang_ru;; *);
+	[action. Calculate the category of protection] 
+	(* <- lang_en;; *);;

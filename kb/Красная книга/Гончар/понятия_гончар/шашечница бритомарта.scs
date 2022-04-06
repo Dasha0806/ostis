@@ -1,0 +1,136 @@
+concept_melitaea_britomartis => nrel_main_idtf:
+[шашечница бритомарта](*<-lang_ru;;*);
+[melitaea britomartis](*<-lang_lat;;*);
+[шашачніца брытамарта](*<-lang_bel;;*);;
+concept_melitaea_britomartis => nrel_idtf:[шашачніца брытамарта](*<-lang_bel;;*);;
+
+concept_species -> concept_melitaea_britomartis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: melitaea_britomartis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_melitaea_britomartis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1847 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_melitaea_britomartis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Европейских дневных бабочек (SPEC 3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Приурочен к прогреваемым солнцем опушкам сосновых лесов в разнотравных умеренно увлажненных стациях, при этом предпочитают сухие всхолмления вблизи рек, ручьев, заболоченных территорий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:За год дает одно поколение. Бабочки вылетают в июне - начале июля, лёт продолжается порой до августа. Гусеницы питаются подорожником, верониками, льнянкой и некоторыми другими видами травянистых растений. Биология в условиях Беларуси изучена недостаточно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Наблюдаемая численность в местах обитания стабильна, но территория обитания и общее количество особей достаточно небольшие, что ставит популяции под угрозу исчезновения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Высокая требовательность к специфическому сочетанию условий обитания делает этот вид уязвимым. Любые вмешательства в структуру и характер мест обитания могут оказаться губительными для популяции вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Консервация мест обитания с особым контролем гидрологического режима на прилегающей территории.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Вид распространен в Евразии в степной и лесной зонах локальными участками. В Беларуси известны единичные места обитания вида .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 17-19 мм. Крылья сверху кирпично-красные, испещренные черными продольными (вдоль жилок) и поперечными полосками, что создает клетчатый рисунок. Низ крыльев более светлый охристо-желтый, покрытый рядами перевязей сложной конфигурации.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_melitaea_britomartis <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Brest_district;;
+	*);;
+
+concept_nymphalidae => nrel_inclusion: concept_melitaea_britomartis;;
+concept_melitaea_britomartis => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; orange; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; orange; brown; yellow;;
+*);;
+
+concept_melitaea_britomartis <= nrel_inclusion: 
+	17_19_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (17_mm => 19_mm);;
+*);;
+17_mm <- length_of_body; exact_value;;
+17_mm -> .millimeter: 17 (* <- number;;*);;
+19_mm <- length_of_body; exact_value;;
+19_mm -> .millimeter: 19 (* <- number;;*);;				
+
+concept_melitaea_britomartis <= nrel_inclusion: concept_3_protection_category;;

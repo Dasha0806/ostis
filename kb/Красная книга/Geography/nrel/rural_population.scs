@@ -1,0 +1,59 @@
+sc_node_norole_relation -> nrel_rural_population;;
+nrel_rural_population=>nrel_main_idtf:
+[сельское население*](* <-lang_ru;; *);
+	[rural population*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+//домены
+nrel_rural_population => nrel_first_domain: concept_population;;
+nrel_rural_population => nrel_second_domain: concept_value;;
+nrel_rural_population => nrel_definitional_domain: ...
+                              (*
+                               <-concept_population;;
+                               <-concept_value;;
+                              *);;
+
+//определение 
+nrel_rural_population <-rrel_key_sc_element:...
+(*
+    <-explanation;;
+    => nrel_main_idtf: 
+    [Опр.(сельское население*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Сельское население — население, проживающее в сельских населенных пунктах.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_population;;
+*);;
+*);;
+
+
+//свойства
+nrel_disjoint_union <- binary_relation;;
+nrel_disjoint_union <- antireflexive_relation;;
+nrel_disjoint_union <- antitransitive_relation;;
+nrel_disjoint_union <- antisymmetric_relation;;
+nrel_disjoint_union <- oriented_relation;;
+
+subject_domain_of_geography=>nrel_main_idtf:
+    [Предметная область географии](*<-lang_ru;;*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:nrel_rural_population;;
+	<= nrel_sc_text_translation: ...
+		(*
+		->"file://rural_population.jpg";;
+		*);;
+	*);;
+

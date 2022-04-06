@@ -1,0 +1,163 @@
+concept_lemanea_sudetica => nrel_main_idtf:
+[леманея судетская](*<-lang_ru;;*);
+[lemanea sudetica](*<-lang_lat;;*);;
+
+
+concept_species -> concept_lemanea_sudetica;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_lemanea_sudetica;;
+
+//пояснения
+concept_lemanea_sudetica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д - редкий вид, имеющий ограниченный ареал, часть которого находится на территории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище трубчатое, без оформленной ножки, от 2 до 9 см дл., до 1 мм шир., скудно разветвленное, жесткое, имеет бамбукообразный вид. В основании жесткое, темно-бурого цвета, вверху мягкое оливково-зеленое. Узлы несильно выступающие. Бугорки (собранные в группы сперматангии) беспорядочно расположены на слоевище.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. На территории России встречается в европейской части (1). За пределами России отмечали в Северной Америке (2), в Западной Европе (3, 4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет только в пресных водах, в потоках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид известен по нескольким гербарным сборам и литературным указаниям.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Не изучено.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Ухудшение состояния местообитания, не выносит органического загрязнения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Поддержание чистоты воды, выявление новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Вид не культивируется.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_lemanea_sudetica <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_lemanea_sudetica;;
+						concept_lemanea_sudetica => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_lemanea_sudetica <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_lemanea_sudetica <= nrel_inclusion: concept_3_protection_category;;

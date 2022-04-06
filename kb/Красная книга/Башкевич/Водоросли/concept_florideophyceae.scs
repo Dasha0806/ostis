@@ -1,0 +1,30 @@
+concept_florideophyceae => nrel_main_idtf:
+[флоридиевые](*<-lang_ru;;*);
+[florideophyceae](*<-lang_lat;;*);;
+
+concept_class -> concept_florideophyceae;;
+
+concept_florideophyceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_nemaliales;;
+	-> concept_cryptonemiales;;
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_florideophyceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Класс флоридиевые объединяют многоклеточные формы, преимущественно сложного анатомического строения. Их слоевище представляет собой систему разветвленных нитей. Рост апикальный за счет деления верхушечной клетки. Клетки их одно- или многоядерные, с постенными хроматофорами пластинчатой или линзовидной формы, без пиреноидов; реже хроматофор звездчатый, с пиреноидом. ](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_florideophyceae;;

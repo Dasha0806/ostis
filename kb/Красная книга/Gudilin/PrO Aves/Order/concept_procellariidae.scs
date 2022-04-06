@@ -1,0 +1,22 @@
+concept_procellariidae => nrel_main_idtf:
+[буревестниковые](*<-lang_ru;;*);
+[procellariidae](*<-lang_lat;;*);;
+
+concept_family -> concept_procellariidae;;
+
+concept_procellariidae => nrel_inclusion: concept_calonectris_leucomelas;;
+
+//определение и пояснения
+concept_procellariidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Буревестниковые — семейство новонёбных морских птиц из отряда буревестникообразных. К буревестниковым относятся многочисленные виды, в основном это птицы средней величины. Представители этого семейства встречаются у берегов всех океанов, но большей частью в Южном полушарии.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_procellariidae;;

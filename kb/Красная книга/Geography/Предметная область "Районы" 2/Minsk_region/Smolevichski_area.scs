@@ -1,0 +1,75 @@
+Smolevichski_area<-concept_area;;
+Smolevichski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Smolevichski_area=>nrel_administrative_center_of_the_area:Smolevichi;;
+Smolevichi<-concept_city;;
+
+//самая высокая точка
+Smolevichski_area=>nrel_highest_point:259_m;;
+259_m<-concept_number;;
+
+//площадь района
+Smolevichski_area=>nrel_area_of_the_district:1394_km;;
+1394_km<-concept_number;;
+
+//население района
+Smolevichski_area=>nrel_population_of_region:46225_m;;
+46225_m<-concept_number;;
+
+//используемые константы
+Smolevichski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Смолевичский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Смолевичский район — административная единица в центре Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Smolevichski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, территория)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Курган Славы — памятник Великой Отечественной войны.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Smolevichski_area;;
+Smolevichski_area => nrel_main_idtf:
+[Смолевичский](* <-lang_ru;; *);
+[Smolevichski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Smolevichi;;
+Smolevichi=> nrel_main_idtf:
+[Смолевичи](* <-lang_ru;; *);
+[Smolevichi](* <- lang_en;; *);;
+
+sc_node_not_relation ->259_m;;
+259_m=> nrel_main_idtf:
+[259 м](* <-lang_ru;; *);
+[259 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1394_km;;
+1394_km=> nrel_main_idtf:
+[1394 км^2](* <-lang_ru;; *);
+[1394 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->46225_m;;
+46225_m=> nrel_main_idtf:
+[46225 человек](* <-lang_ru;; *);
+[46225 m](* <- lang_en;; *);;

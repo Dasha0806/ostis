@@ -1,0 +1,163 @@
+concept_allium_pumilum => nrel_main_idtf:
+[лук низкий](*<-lang_ru;;*);
+[allium pumilum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_allium_pumilum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_allium_pumilum;;
+
+//пояснения
+concept_allium_pumilum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д — редкий вид. Имеет очень ограниченный ареал.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Многолетний травянистый луковичный геофит до 12 см выс. Луковицы одеты сетчатыми волокнистыми оболочками. Цветет в конце июня и начале июля. Размножение семенное.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается на юго-востоке Республики Алтай — Плато Укок (место описания вида) на перевале Тёплый Ключ, в верховье р. Ко-Кузек на Южно-Чуйском хр., в верховье р. Аксай на хр. Сайлюгем, в верховье р. Ярлыамры на Курайском хр., в верховье р. Костахта на Теректинском хр., в верховье р. Банной на хр. Холзун (1); а также в Республике Тыва — в верховье р. Барлык на хр. Цаган-Шибету, на хр. Перевальный и в верховье р. Шоон-Хем на Шапшальском хр. Вне России — произрастает в северо-западной Монголии (2,3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растение сухих высокогорных криофитных степей (преимущественно разнотравно-типчаковых). Встречается в составе щебнистых дриадовых тундр, а также в серийных петрофитных групировках криоксерофитных степных сообществ на высоте 2400-2700 м н. ур. м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Во всех известных популяциях встречается спорадически единичными экземплярами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Вид произрастает в труднодоступных высокогорьях, состояние популяций удовлетворительное.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Интенсивный выпас скота, особенно в районах разведения коз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Принятые меры охраны. Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республик Алтай (1996) и Тыва (1999), а также указывается для территории Катунского заповедника (3).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Необходимые меры охраны. Регулирование выпаса скота в местах произрастания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. В Новосибирске (ЦСБС СО РАН) в 1980-е гг. предпринимались попытки культивирования вида, которые не увенчались успехом. Основная проблема — выпревание луковиц зимой.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_allium_pumilum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_allium_pumilum;;
+						concept_allium_pumilum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_allium_pumilum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_allium_pumilum <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,166 @@
+concept_berula_erecta => nrel_main_idtf: [берула (сиелла) прямая](*<- lang_ru;;*); [berula erecta (huds.) cov. (=siella erecta (huds.) m. pimen.)](*<- lang_lat;;*); [берула (сіела) прамая](*<- lang_bel;;*);;
+concept_berula_erecta => nrel_idtf: [берула (сіела) прамая](*<- lang_bel;;*);;
+
+concept_species -> concept_berula_erecta;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_berula_erecta;;
+
+concept_berula_erecta  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (берула (сиелла) прямая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_berula_erecta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_berula_erecta;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_berula_erecta <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу Беларуси 
+2го издания (1993).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 80-90 см. Стебель восходящий, укореняющийся в нижних узлах и отходящих от них ползучих столонах. Листья непарноперистосложные с 5–9 парами листочков. Листочки продолговатые, по краю зубчатые, длиной до 7 см, верхушечный обычно трехлопастный. Цветки беловатые, мелкие (диаметром около 3 мм), собраны в соцветие сложный зонтик. Плод – вислоплодник.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Атлантическая, Средняя и Восточная Европа, Кавказ, Средиземноморье, Малая и Центральная Азия; отдельные местонахождения (преимущественно заносного происхождения) известны также в юго-западной Африке, Северной Америке и Австралии . В Беларуси находится на северо-восточной границе европейской части ареала. К настоящему времени известно более 20 местонахождений почти по всей территории Беларуси (кроме Гомельской обл.), большинство из которых приурочено к западным районам республики. Современными данными подверждаются местонахождения в Глубокском и Полоцком р-нах Витебской обл.; в Вороновском, Гродненском, Мостовском, Новогрудском, Ошмянском, Свислочском, Сморгонском и Щучинском р-нах Гродненской обл.; в Вилейском, Воложинском, Дзержинском, Логойском, Смолевичском и Столбцовском р-нах Минской обл.; Чериковском р-не Могилевской обл.; Барановичском, Брестском, Ганцевичском и Каменецком р-нах Брестской обл. . Ранее отмечался также для Могилевской губернии (без точного указания местонахождения) , окрестностей г. Могилева  и г. Зельва .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Берега и мелководья малых рек, ручьев, родников, ключевинные болота (обычно в местах выхода грунтовых вод).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июле - первой половине сентября. Энтомофил. Семена созревают в августе - сентябре. Баллист, гидрохор. Размножение преимущественно вегетативное, реже семенное.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В местах произрастания нередко образует заросли. Численность относительно стабильна. Генеративных растений в популяции обычно менее 10 %.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Нарушение гидрологического и гидрохимического режимов водотоков:  водозабор, осушительная мелиорация, загрязнение сточными водами, удобрениями, гербицидами, чрезмерные рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Охраняется на территориях Национального парка «Беловежская пуща» и ряда заказников в Брестском, Вилейском, Глубокском, Гродненском и Щучинском р-нах. Необходимо сохранение существующего гидрологического режима в местах произрастания; следует осуществлять целенаправленный поиск новых мест в подходящих местах обитания, проводить контроль состояния известных популяций (с изучением динамики популяций и их антропогенной устойчивости), рекомендовать вид для выращивания в условиях культуры в качестве декоративного, лекарственного и пищевого растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_berula_erecta <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Glubokoye_district;;->Polotsk_district;;->Voronovskiy_district;;->Grodno_district;;->Mosty_district;;->Novogrudok_district;;->Oshmyany_district;;->Svisloch_district;;->Smorgon_district;;->Shchuchin_district;;->Vileika_district;;->Volozhin_district;;->Dzerzhinsky_district;;->Logoysk_district;;->Smolevichi_district;;->Stolbtsy_district;;->Cherikov_district;;->Baranavichy_district;;->Brest_district;;->Gantsevichi_district;;->Kamenetsky_district;;
+		*);;
+*);;
+
+concept_berula_erecta => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; rising;rooting;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; creeping;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; neparnoperistoslozhnye;;
+*);
+...
+(*
+<= nrel_inclusion: flower; whitish;small;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; complex;umbrella;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; visioplaine;;
+*);;
+
+concept_berula_erecta <= nrel_inclusion: 
+[80-90 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([80 см] => [90 см]);; 
+*); 
+[4-7 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([4 см] => [7 см]);; 
+*);;
+
+[80 см] <- length_of_inflorscence; exact_value;;
+[80 см] -> .centimeter: 80 (* <- number;;*);;
+[90 см] <- length_of_inflorscence; exact_value;;
+[90 см] -> .centimeter: 90 (* <- number;;*);;
+[4 см] <- length_of_inflorscence; exact_value;;
+[4 см] -> .centimeter: 4 (* <- number;;*);;
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+ 
+
+concept_berula_erecta <= nrel_inclusion: concept_3_protection_category;;

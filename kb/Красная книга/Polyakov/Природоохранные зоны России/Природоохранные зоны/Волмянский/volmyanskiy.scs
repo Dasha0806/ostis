@@ -1,0 +1,80 @@
+sc_node_not_relation -> volmyanskiy;;
+
+volmyanskiy => nrel_main_idtf: [заказник Волмянский] (* <- lang_ru;; *);
+				     [Volmyanskiy] (* <- lang_en;; *);;
+ concept_territorry->volmyanskiy;;
+volmyanskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Волмянский)](*<-lang_ru;;*);
+		[Pic. (Volmyanskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://volm.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+volmyanskiy<-concept_sanctuary;;
+
+volmyanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Волмянский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Волмянский биологический заказник  создан в 2001 году для сохранения в естественном состоянии ценных лесных формаций с комплексом редких и исчезающих видов растений и животных, занесённых в Красную книгу Республики Беларусь.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							volmyanskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2001(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+volmyanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Волмянский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Волмянского заказника составляет 614,5 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							volmyanskiy=>nrel_square:[614,5 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[614,5](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+volmyanskiy => nrel_area_location: Brest_area;;
+volmyanskiy => nrel_flora: ...(*
+<-concept_lilium_martagon_l;concept_dactylorhiza_majalis_p_f_hunt_et_summerhayes;concept_gladiolus_imbricatus_l;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: volmyanskiy;;
+

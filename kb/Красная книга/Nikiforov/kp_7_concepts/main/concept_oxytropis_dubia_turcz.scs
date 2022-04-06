@@ -1,0 +1,45 @@
+concept_oxytropis_dubia_turcz => nrel_main_idtf:
+[Остролодочник сомнительный](*<-lang_ru;;*);
+[Oxytropis dubia Turcz](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_dubia_turcz;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_dubia_turcz;;
+
+Red_list_ru -> concept_oxytropis_dubia_turcz;;
+
+//пояснения
+concept_oxytropis_dubia_turcz <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России образцы были собраны около 170 лет назад только близ бывшего с. Погроменск в Хоринской степи Забайкалья (Республика Бурятия).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистое серовато-зеленое бесстебельное многолетнее растение со стержневым корнем, с розеткй мутовчато-перистых листьев, серовато-зеленых от опушения.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_4_protection_category;;

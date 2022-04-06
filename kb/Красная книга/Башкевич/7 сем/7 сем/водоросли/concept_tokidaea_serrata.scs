@@ -1,0 +1,163 @@
+concept_tokidaea_serrata => nrel_main_idtf:
+[токидея пильчатая](*<-lang_ru;;*);
+[tokidaea serrata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_tokidaea_serrata;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_tokidaea_serrata;;
+
+//пояснения
+concept_tokidaea_serrata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, находящийся в пределах России на западной границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище кустистое, 2-6(12) см дл., толстонитевидное, обильно поочередно разветвленное в одной плоскости, сдавленное, до 1 мм толщ. в главных побегах, прикрепляется подошвой. Ветви из одного ряда клеток. Веточки ограниченного роста образуют у верхнего конца клеток неограниченного роста мутовки. В мутовке 4 веточки в двух разно- великих парах. Веточки мутовки густо сближено разветвленные. Боковые веточки, располагаясь вдоль ветвей, имеют зубчатый контур. Ветви неограниченного роста покрыты плотной корой из ризоидообразных нитей, отходящих вниз от базальных клеток ветвей и веточек мутовки. Размножение половое и бесполое. На гаметофите закладывается прокарп. При бесполом размножении тетраспорангии развиваются на веточках мутовки. Тетраспоры расположены в углах тетраэдра (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известен только у Командорских о-вов [о. Беринга (2-7)]. Вне России: Алеутские о-ва (Амчитка, Кириллов, Уналашка) (1, 8).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный пацифический вид. Встречается в сублиторальной зоне, на глубинах 20, 30 м на скалистом грунте.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Единичные находки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Малочисленность вида и разрушение среды обитания в результате хозяйственной деятельно- сти человек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Включен в Красную книгу Камчатки (2).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_tokidaea_serrata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_tokidaea_serrata;;
+						concept_tokidaea_serrata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_tokidaea_serrata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_tokidaea_serrata <= nrel_inclusion: concept_3_protection_category;;

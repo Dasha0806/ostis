@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_pezizales;;
+concept_pezizales => nrel_main_idtf:
+[пецицевые](*<-lang_ru;;*);
+[pezizales](*<-lang_en;;*);;
+
+//
+concept_pezizales <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пецицевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе аскомицеты](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_ascomycetes;;
+	*);;	
+*);;
+

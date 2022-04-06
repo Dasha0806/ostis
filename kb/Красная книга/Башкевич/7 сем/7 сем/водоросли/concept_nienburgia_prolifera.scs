@@ -1,0 +1,163 @@
+concept_nienburgia_prolifera => nrel_main_idtf:
+[нинбургия пролиферирующая](*<-lang_ru;;*);
+[nienburgia prolifera](*<-lang_lat;;*);;
+
+
+concept_species -> concept_nienburgia_prolifera;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_nienburgia_prolifera;;
+
+//пояснения
+concept_nienburgia_prolifera <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д-редкий вид, имеющий ограниченный ареал, часть которого находится в акватории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, обильно разветвленное, полностью многослойное, имеющее кору и сердцевину, прикрепляется лопастной подошвой, обильно прорастающей ризоидами и столонами. Пластины 6-12(18) см дл., линейно-клиновидные или клиновидные, 1-7 мм шир., зубчатые по краю, без ребра и жилок, пролиферирующие. Зубцы двусторонне поочередные, нерегулярно чередуются по одной стороне с ветвями. Имеет бесполое и половое размножение. Группы спорангиев образуют удлиненные, неправильной формы пятна, расположенные ближе к краю пластины. Цистокарпы 1,2 мм в поперечнике, выпуклые, с валикообразным перистомом (околоустьем), редко рассеяны по обеим ее поверхностям (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается только у Командорских о-вов (2--7). Вне России: Алеутские о-ва (1).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный пацифический вид с небольшим островным ареалом. Произрастает на скалистом грунте в сублиторали на глубине 18-20 м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Находки единичные.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Неизвестно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Чувствительность к антропогенному загрязнению морской воды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Вид включен в Красную книгу Камчатки (7).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественного состояния местообитаний вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не изучена.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_nienburgia_prolifera <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_nienburgia_prolifera;;
+						concept_nienburgia_prolifera => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_nienburgia_prolifera <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_nienburgia_prolifera <= nrel_inclusion: concept_3_protection_category;;

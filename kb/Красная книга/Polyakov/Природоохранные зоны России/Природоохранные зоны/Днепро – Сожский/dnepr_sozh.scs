@@ -1,0 +1,75 @@
+sc_node_not_relation -> dnepr_sozh;;
+
+dnepr_sozh => nrel_main_idtf: [заказник Днепро-Сожский] (* <- lang_ru;; *);
+				     [Dnepr-Sozhskiy] (* <- lang_en;; *);;
+concept_territorry->dnepr_sozh;;
+dnepr_sozh <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Днепро-Сожский)](*<-lang_ru;;*);
+		[Pic. (Dnepr-Sozhskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://dnepr.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+dnepr_sozh<-concept_sanctuary;;
+
+dnepr_sozh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Днепро-Сожский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[заказник Днепро-Сожский создан в 2005 году для сохранения редких видов растений и животных]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							dnepr_sozh=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2005(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+dnepr_sozh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Днепро-Сожский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Днепро-Сожский составляет 14556 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							dnepr_sozh=>nrel_square:[14556 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[14556](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+dnepr_sozh => nrel_area_location: Gomel_area;;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: dnepr_sozh;;

@@ -1,0 +1,31 @@
+concept_propagation_type => nrel_main_idtf:
+[тип размножения](*<-lang_ru;;*);
+[propagation type](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_breeding_type <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Тип размножения - способ распространения растений.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_plantae_vasculares -> rrel_not_maximum_studied_object_class: concept_breeding_type;;
+                                                                                      
+concept_vegetative_propagation=> 				nrel_main_idtf: [вегетативное размножение](*<- lang_ru;;*); 				[vegetative propagation](*<- lang_lat;;*);;
+concept_actually_asexual_propagation=> 	nrel_main_idtf: [собственно бесполое размножение](*<- lang_ru;;*);	[actually asexual propagation](*<- lang_lat;;*);;
+concept_sexual_propagation=> 					nrel_main_idtf: [половое размножение](*<- lang_ru;;*); 						[sexual propagation](*<- lang_lat;;*);;
+concept_spore_propagation=> 		nrel_main_idtf: [споровое размножение](*<- lang_ru;;*); 			[spore propagation](*<- lang_lat;;*);;
+concept_seed_propagation=> 					nrel_main_idtf: [семенное размножение](*<- lang_ru;;*); 					[seed propagation](*<- lang_lat;;*);;
+//=> nrel_main_idtf: [](*<- lang_ru;;*); [](*<- lang_lat;;*);;
+
+concept_propagation_type => nrel_inclusion: concept_vegetative_propagation;
+			concept_actually_asexual_propagation;
+			concept_sexual_propagation;
+			concept_spore_propagation;
+			concept_seed_propagation;;

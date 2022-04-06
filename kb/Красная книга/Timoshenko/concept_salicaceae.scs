@@ -1,0 +1,27 @@
+concept_salicaceae => nrel_main_idtf:
+[ивовые](*<-lang_ru;;*);
+[salicaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_salicaceae;;
+
+concept_salicaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_salix_myrtilloides;;
+	*);;
+
+//определение и пояснения
+concept_salicaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ивовые - семейство растений порядка ивоцветные.Жизненная форма: деревья, кустарники. Листья цельные очерёдные черешковые. Растения однополые, двудомные. Соцветия — серёжки. Цветки сидят в пазухах прицветников. Цветки лишены околоцветника, тычинок 1—12 (у большинства — две), гинецей из двух-четырёх плодолистиков. Завязь верхняя.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_salicaceae;;

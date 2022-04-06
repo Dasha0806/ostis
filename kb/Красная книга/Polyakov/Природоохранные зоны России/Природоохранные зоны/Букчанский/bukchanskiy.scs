@@ -1,0 +1,79 @@
+
+sc_node_not_relation -> bukchanskiy;;
+
+bukchanskiy => nrel_main_idtf: [заказник Букчанский] (* <- lang_ru;; *);
+				     [Bukchanskiy] (* <- lang_en;; *);;
+ concept_territorry->bukchanskiy;;
+bukchanskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Букчанский)](*<-lang_ru;;*);
+		[Pic. (Bukchanskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://bukch.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+bukchanskiy<-concept_sanctuary;;
+
+bukchanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Букчанский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биологический заказник «Букчанский» был образован в 1979 году для сохранения крупных естественных плантаций клюквы. ]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							bukchanskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+bukchanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Букчанский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Букчанского заказника составляет 4990 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							bukchanskiy=>nrel_square:[4990 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[4990](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+bukchanskiy => nrel_area_location: Gomel_area;;
+bukchanskiy => nrel_flora: ...(*
+<-Oxycoccus;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: bukchanskiy;;

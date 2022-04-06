@@ -1,0 +1,55 @@
+concept_oxytropis_hippolyti_boriss => nrel_main_idtf:
+[Остролодочник Ипполита](*<-lang_ru;;*);
+[Oxytropis hippolyti Boriss.](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_hippolyti_boriss;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_hippolyti_boriss;;
+
+Red_list_ru -> concept_oxytropis_hippolyti_boriss;;
+
+//пояснения
+concept_oxytropis_hippolyti_boriss <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известно более 70 местонахождений, из них 49 — в Республике Башкортостан, 17 в Республике Татарстан, 2 — на центральной части Приволжской возвышенности, остальные — в Самарском Заволжье. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен в Красные книги Республик Башкортостан (2001) и Татарстан (2006), а также в Красную книгу Ульяновской обл. (2005). ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России. Основной ареал находится на Южном Урале и в Заволжье. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Травянистый стержнекорневой розеточный каудексообразующий поликарпик 20-40 см выс. Гемикриптофит. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

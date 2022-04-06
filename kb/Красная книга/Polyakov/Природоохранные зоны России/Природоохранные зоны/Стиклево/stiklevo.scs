@@ -1,0 +1,77 @@
+sc_node_not_relation -> stiklevo;;
+
+stiklevo => nrel_main_idtf: [заказник Стиклево] (* <- lang_ru;; *);
+				     [Stiklevo] (* <- lang_en;; *);;
+
+stiklevo <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Стиклево)](*<-lang_ru;;*);
+		[Pic. (Stiklevo)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+stiklevo<-concept_sanctuary;;
+
+stiklevo <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Стиклево, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Стиклево был создан в 2001 году для охраны местных лесных комплексов с проживающими в них редкими видами живых организмов.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							stiklevo=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2001(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+stiklevo <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Стиклево, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Стиклево составляет 412 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							stiklevo=>nrel_square:[412 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[412](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+stiklevo => nrel_area_location: Minsk_area;;
+stiklevo => nrel_flora: ...(*
+<-concept_lilium_martagon_l;concept_trollius_europaeus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: stiklevo;;

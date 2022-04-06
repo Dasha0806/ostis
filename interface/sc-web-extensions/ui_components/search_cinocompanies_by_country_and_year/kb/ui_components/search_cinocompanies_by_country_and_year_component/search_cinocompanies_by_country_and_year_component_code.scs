@@ -1,0 +1,27 @@
+format_search_cinocompanies_by_country_and_year_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат cinocompanies search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format cinocompanies search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_cinocompanies_by_country_and_year_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск кинокомпании по стране и году основания]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find cinocompanies by country and foundation year] 
+	(* 
+	<- lang_en;;
+	*);;

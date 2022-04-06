@@ -1,0 +1,130 @@
+concept_moehringia_lateriflora => nrel_main_idtf:
+[мерингия бокоцветковая](*<-lang_ru;;*);
+[moehringia lateriflora](*<-lang_lat;;*);
+[мерынгiя бакакветкавая](*<-lang_bel;;*);;
+
+concept_species -> concept_moehringia_lateriflora;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_moehringia_lateriflora;;
+
+//пояснения
+concept_moehringia_lateriflora <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Включен в Красную книгу Латвии (0 категория) и Приложение II к Директиве Европейского Союза о местах обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с тонким горизонтально-ползучим корневищем и многочисленными коротко опушенными, большей частью неветвящимися стеблями высотой 5-20 см. Листья светло-зеленые, сидячие, эллиптические или яйцевидно-эллиптические, с 3 жилками. Цветки в пазушных малоцветковых (1-3) дихазиях на верхушках стеблей, на длинных цветоножках. Плоды - яйцевидные коробочки, длиннее чашечки, раскрывающиеся шестью зубчиками .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Арктика, Скандинавия, Восточная Европа (Прибалтика, Украина, Россия), Западная и Восточная Сибирь, Средняя Азия (северо-восток), Дальний Восток, Монголия, Япония, Китай, Северная Америка . В Беларуси вид находится на юго-западной границе ареала. Достоверно известен в Гомельском и Мин­ском р-нах. Ранее приводился для Речицкого и Брагинского р-нов .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Растет в смешанных лесах с участием дуба.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в мае - июне. Энтомофил. Плодоносит в июле. Размножение семенное и вегетативное. Баллист.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет небольшими группами рассеянно по территории; площади локальных популяций не превышают 0,5-1,0 га. Изолированное местонахождение в окрестностях Минска занимает площадь в несколько квадратных метров.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, хозяйственное освоение территорий (прокладка дорог, застройка и др.), повышенные рекреационные нагрузки.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимы контроль состояния известных популяций и поиск новых, организация специализированных ботанических заказников в местах произрастания мерингии бокоцветковой с запрещением или ограничением в местах роста негативных антропогенных воздействий; целесообразно сохранение генофонда вида в условиях культуры.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_moehringia_lateriflora <= nrel_spread: ... 
+	(*
+	-> Gomelsky_district; Minsky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_moehringia_lateriflora;;
+						concept_moehringia_lateriflora => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; branched; hairy;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; thin; creeping;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; white; green; ellipsoid;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box;;
+							*);;
+
+concept_moehringia_lateriflora <= nrel_inclusion: 
+
+	5_20_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (5_cm => 20_cm);;
+	*);;
+	5_cm <- length_of_stem; exact_value;;
+	5_cm -> nrel_cm: 5 (* <- number;;*);;
+	20_cm <- length_of_stem; exact_value;;
+	20_cm -> nrel_cm: 20 (* <- number;;*);;					
+
+concept_moehringia_lateriflora <= nrel_inclusion: concept_2_protection_category;;

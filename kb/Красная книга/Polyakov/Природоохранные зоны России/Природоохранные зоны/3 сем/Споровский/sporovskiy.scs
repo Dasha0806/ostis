@@ -1,0 +1,77 @@
+sc_node_not_relation -> sporovskiy;;
+
+sporovskiy => nrel_main_idtf: [заказник Споровский] (* <- lang_ru;; *);
+				     [Sporovskiy] (* <- lang_en;; *);;
+
+sporovskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Споровский)](*<-lang_ru;;*);
+		[Pic. (Sporovskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+sporovskiy<-concept_sanctuary;;
+
+sporovskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Споровский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Споровский был создан в 1991 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							sporovskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1991(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+sporovskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Споровский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Споровский составляет 11288 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							sporovskiy=>nrel_square:[11288 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[11288](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+sporovskiy => nrel_area_location: Brest_area;;
+sporovskiy => nrel_flora: ...(*
+<-concept_cypripedium_calceolus_l;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: sporovskiy;;

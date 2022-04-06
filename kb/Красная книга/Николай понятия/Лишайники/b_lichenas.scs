@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_lichenas;;
+concept_lichenas => nrel_main_idtf:
+[лишайники](*<-lang_ru;;*);
+[lichenas](*<-lang_en;;*);;
+
+//
+concept_lichenas <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(лишайники)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[отдел в царстве грибов, представляющий собой симбиотическиеассоциации грибов и микроскопических зелёных водорослей](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_fungos;;
+	-> concept_zoophytorum_sistens;;
+	*);;	
+*);;
+
+//
+concept_lichenas => nrel_inclusion: concept_lichenas_marsupialia;;
+

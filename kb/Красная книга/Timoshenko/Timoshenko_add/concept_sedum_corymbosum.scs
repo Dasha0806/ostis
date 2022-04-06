@@ -1,0 +1,45 @@
+concept_sedum_corymbosum => nrel_main_idtf:
+[Очиток щитковый](*<-lang_ru;;*);
+[Sedum corymbosum](*<-lang_lat;;*);;
+
+concept_species -> concept_sedum_corymbosum;;
+
+
+Red_list_ru -> concept_sedum_corymbosum;;
+
+//пояснения
+concept_sedum_corymbosum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Меры для охраны вида не принимались.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России вид встречается только в Республике Дагестан. Известно одно местонахождение, оторванное от основного ареала. Оно расположено между селами Кумух и Акуша.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Суккулентный однолетник с ветвистыми от середины или от основания стеблями, 5-15 см выс., эфемер. Размножение семенное. Цветет с мая по июнь. Плодоносит с мая по июль.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_sedum_corymbosum <= nrel_inclusion: concept_1_protection_category;;

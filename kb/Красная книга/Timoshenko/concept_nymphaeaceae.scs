@@ -1,0 +1,27 @@
+concept_nymphaeaceae => nrel_main_idtf:
+[кувшинковые](*<-lang_ru;;*);
+[nymphaeaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_nymphaeaceae;;
+
+concept_nymphaeaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_nymphaea_alba; concept_nuphar_pumila;;
+	*);;
+
+//определение и пояснения
+concept_nymphaeaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Кувшинковые - семейство цветковых растений. Многолетние, редко однолетние водные травы с подводными сильно развитыми корневищами, укореняющиеся в илистое дно рек и стоячих вод. Листья цельные, на длинных черешках, подводные — тонкие и нежные, плавающие — более жёсткие, сверху блестящие, снизу ворсистые, часто крупные (до 2 м в диаметре).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_nymphaeaceae;;

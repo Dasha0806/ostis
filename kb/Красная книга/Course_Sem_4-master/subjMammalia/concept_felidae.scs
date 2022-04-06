@@ -1,0 +1,20 @@
+concept_felidae => nrel_main_idtf:
+[кошачьи](*<-lang_ru;;*);
+[felidae](*<-lang_lat;;*);;
+
+concept_family -> concept_felidae;;
+
+//определение и пояснения
+concept_felidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Кошачьи - семейство млекопитающих отряда хищных. Наиболее специализированные из хищников, приспособленные к добыванию животной пищи путём подкрадывания, подкарауливания, реже — преследования.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_felidae;;

@@ -1,0 +1,27 @@
+concept_fagaceae => nrel_main_idtf:
+[буковые](*<-lang_ru;;*);
+[fagaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_fagaceae;;
+
+concept_fagaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_quercus_petraea;;
+	*);;
+
+//определение и пояснения
+concept_fagaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Буковые - семейство однодомных растений, включающее в себя около 1105 видов деревьев, реже кустарников, разбитых на 10 родов (согласно системе классификации APG II). Наиболее известными родами этих растений являются дуб, каштан и бук.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_fagaceae;;

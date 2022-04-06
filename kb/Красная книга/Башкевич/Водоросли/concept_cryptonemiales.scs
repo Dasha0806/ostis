@@ -1,0 +1,30 @@
+concept_cryptonemiales => nrel_main_idtf:
+[криптонемиальные](*<-lang_ru;;*);
+[cryptonemiales](*<-lang_lat;;*);;
+
+concept_order -> concept_cryptonemiales;;
+
+concept_cryptonemiales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_hildenbrandtiaceae;;
+
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_cryptonemiales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Представители порядка криптонемиальные имеют ауксилярные клетки, которые развиваются до оплодотворения карпогона и обычно рассеяны по таллому на известном расстоянии от карпогона. Связь между ауксилярными клетками и карпогоном осуществляется с помощью более или менее длинных соединительных, спорогенных или ообластемных нитей.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_cryptonemiales;;

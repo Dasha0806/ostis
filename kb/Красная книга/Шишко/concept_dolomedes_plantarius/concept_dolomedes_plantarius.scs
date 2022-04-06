@@ -1,0 +1,146 @@
+concept_dolomedes_plantarius => nrel_main_idtf: [большой сплавной паук](*<- lang_ru;;*); [dolomedes plantarius](*<- lang_lat;;*); [вялікі сплаўны павук](*<- lang_bel;;*);;
+concept_dolomedes_plantarius => nrel_idtf: [вялікі сплаўны павук](*<- lang_bel;;*);;
+
+concept_dolomedes_plantarius <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (большой сплавной паук)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dolomedes_plantarius.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_dolomedes_plantarius;;
+concept_species -> concept_dolomedes_plantarius;;
+concept_arachnida -> rrel_maximum_studied_object_class: concept_dolomedes_plantarius;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_dolomedes_plantarius;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_dolomedes_plantarius <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красный список МСОП (VU, ver. 2.3, 1994); в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Самцы достигают размеров 10 -12 мм, самки - до 20 мм. У взрослых особей длина голово­груди больше ее ширины. Головогрудь коричневая, с широкой желтой полосой вдоль боковых краев. Глаза расположены в два ряда: передний - в виде прямой, а задний  - слабо изогнутой линии. Глаза заднего ряда значительно крупнее передних глаз. Хелицеры строго вертикальные с 4 зубцами. Брюшко овальное с 2 желтоватыми продольными линиями, расположенными с брюшной стороны. Длинные и толстые ноги с крупными шипами на бедрах, коленях, голенях и предлапках. Лапки и вершины предлапок снабжены скопулой (плотная щеточка волосков).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Европейский вид. Встречается в Березинском биосферном заповеднике и Национальном парке «Припятский» .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет пойменные луга и низинные болота, взрослые особи чаще обитают в литоральной зоне. Обычно они неподвижно сидят в ожидании добычи, при этом задние ноги находятся на прибрежной растительности, а передние на поверхности воды.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид тесно связан с водой, ведет амфибиотический образ жизни. На теле у него расположены гидрофобные волоски, обеспечивающие несмачиваемость покровов при погружении пауков под воду и позволяющие им быстро бегать по поверхностной пленке натяжения воды. Пауки становятся половозрелыми в возрасте 2 лет. Спаривание и размножение происходит в воде. Самки носят на себе желтовато -коричневый кокон с яйцами (1 кокон содержит 500 -600 яиц). Перед самым выведением молодых особей строят сеть на пучках растений диаметром до 25 см, находящуюся на высоте от 10 до 100 см над поверхностью воды. Молодые особи выводятся в этой сети и находятся в ней под охраной самки примерно в течение недели. Размножаются 2 раза в год.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известны единичные находки в Березинском биосферном заповеднике и Национальном парке «Припятский». Достоверные данные об изменении численности отсутствуют.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Нарушение естественных мест обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо более тщательное изучение распространения вида на территории республики. Сохранение естественных мест обитания.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_dolomedes_plantarius <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_dolomedes_plantarius => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; gray;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; gray;;
+	*);;
+	
+//размеры
+concept_dolomedes_plantarius <= nrel_inclusion: 
+	[0.1-0.2 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.1 см] => [0.2 см]);;	
+	*);;
+	
+	[0.1 см] <- length_of_body; exact_value;;
+	[0.1 см] -> .centimeter: 0.1 (* <- number;;*);;
+	[0.2 см] <- length_of_body; exact_value;;
+	[0.2 см] -> .centimeter: 0.2 (* <- number;;*);;
+
+//категория охраны и количество
+concept_siphonophanes_grubii <= nrel_inclusion: concept_3_protection_category;;
+
+

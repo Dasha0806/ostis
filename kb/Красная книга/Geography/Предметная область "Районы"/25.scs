@@ -1,0 +1,58 @@
+//синонимы
+concept_parliament<=nrel_subdividing:...
+(*
+->concept_House_of_Representatives;;
+->concept_Council_of_Republic;;
+=>nrel_main_idtf:[Разбиение по признаку разделение ветвей.] (* <- lang_ru;; *);;
+*);;
+concept_parliament=>nrel_main_idtf:[парламент] (* <- lang_ru;; *);;
+concept_parliament=>nrel_identifier:[множество парламентов] (* <- lang_ru;; *);;
+concept_parliament=>nrel_identifier:[parliament] (* <- lang_en;; *);;
+
+//используемые константы
+concept_parliament<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_limb;;
+->nrel_separation;;
+->concept_governance;;
+->concept_state;;
+*);;
+*);;
+concept_parliament=> nrel_main_idtf: [Опр.(парламент)]  (* <- lang_ru;; *);;
+concept_parliament<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Парламент— высший представительный и законодательный орган в государствах, где установлено разделение властей.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+
+concept_parliament<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(парламент,орган)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Парламент является представительным органом.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_parliament<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(выборы,парламент,индикатор*,настроение*,общество)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Выборы в парламент являются индикатором настроений в обществе.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

@@ -1,0 +1,105 @@
+concept_shrew
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[землеройковые]
+	(*<-lang_ru;;*);
+	[shrew]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[землеройковые]
+	(*<-lang_ru;;*);
+	[shrew]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (землеройковые) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Землеройковые - елкие и очень мелкие зверьки, внешне похожие на мышей, но с маленькими глазами, вытянутым в виде подвижного хоботка носом и покрытые бархатистым мехом.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о землеройковых) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  У семейства землеройковых в теле нижней челюсти постмандибулярного канала нет. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_family -> concept_shrew;;
+concept_shrew => nrel_inclusion: concept_sorex_mirabilis_ognev;;
+
+//предметная область
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_shrew;;
+
+
+
+//Рисунок
+concept_shrew <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (семейство землеройковые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_shrew.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_shrew <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Общее описание: Череп узкий, длинный, заострённый в носовом отделе. Мозговой отдел расширен, это уникальная особенность среди млекопитающих. Скуловые дуги отсутствуют (редкое явление среди млекопитающих). Передние резцы, особенно нижние, сильно увеличены. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Большинство видов предпочитает селиться во влажных местах; некоторые ведут полуводный образ жизни. Держатся поодиночке. Роют норы или занимают норы других животных (кротов, мышевидных грызунов); селятся также в пустотах пней и упавших древесных стволов, под валежником, реже — в постройках человека. Гнездо выстилают сухими листьями и травой. У каждой землеройки есть свой охотничий участок, размером в несколько десятков квадратных метров.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_shrew <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_forest;;
+		*);;
+	*);;
+
+concept_shrew <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+			-> concept_insecta;;
+			-> concept_rodentia;;
+		*);;
+	*);;
+
+//описание длин
+concept_shrew <= nrel_inclusion: 
+    [1-3 лет]
+    (*
+        <- interval_value;;
+        <- length_of_life;;
+        => nrel_measurement: ([1 лет] => [3 лет]);;
+    *);;
+    [1 лет] <- length_of_life; exact_value;;
+	[1 лет] -> .year: 1 (* <- number;;*);;
+	[3 лет] <- length_of_life; exact_value;;
+	[3 лет] -> .year: 3 (* <- number;;*);;

@@ -1,0 +1,109 @@
+concept_bushy
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[кустистые лишайники]
+	(*<-lang_ru;;*);
+	[bushy]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[кустистые лишайники]
+	(*<-lang_ru;;*);
+	[bushy]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (кустистые лишайники) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[кустистые лишайники -  отдел лишайников, слоевище которых имеет вид прямостоячего кустика  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о кустистые лишайники) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[    По организационному уровню кустистые лишайники представляют высший этап развития слоевища. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_division -> concept_bushy;;
+//concept_bushy => nrel_inclusion: concept_rangifer_tarandus;;
+
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_bushy;;
+
+
+
+//Рисунок
+
+concept_bushy <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (умбиликария съедобная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_bushy.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+
+concept_bushy <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ у кустистых лишайников наблюдается вертикально направленный рост гиф. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Эти лишайники имеют плодовые тела открытого типа ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//способ размножения
+concept_bushy <= nrel_reproduction: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> concept_vegetatively;;
+		*);;
+	*);;
+
+//питание
+concept_bushy <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_photosynthesis;;
+		*);;
+	*);;
+
+//описание длин
+concept_bushy <= nrel_inclusion: 
+    [0-50]
+    (*
+        <- interval_value;;
+        <- height;;
+        => nrel_measurement: ([0] => [50]);;
+    *);;
+    [0] <- height; exact_value;;
+	[0] -> .centimeter: 0 (* <- number;;*);;
+	[50] <- height; exact_value;;
+	[50] -> .centimeter: 50 (* <- number;;*);;

@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_auriskalpievye;;
+concept_auriskalpievye => nrel_main_idtf:
+[аурискальпиевые](*<-lang_en;;*);
+[auriskalpievye](*<-lang_en;;*);;
+
+//
+concept_auriskalpievye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аурискальпиевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка герициальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_geritsialnye;;
+	*);;	
+*);;
+
+//
+

@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_perennial;;
+concept_perennial   =>   nrel_main_idtf:   [многолетнее] (* <-lang_ru;; *);   [perennial] (* <- lang_en;; *);;
+
+sc_node_not_relation -> straight;;
+straight   =>   nrel_main_idtf:   [прямой] (* <-lang_ru;; *);   [straight] (* <- lang_en;; *);;

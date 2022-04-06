@@ -1,0 +1,31 @@
+sc_node_not_relation ->  concept_peridion;;
+concept_peridion => nrel_main_idtf:
+[перидий](*<-lang_ru;;*);
+[peridion](*<-lang_en;;*);;
+
+concept_peridion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(перидий)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [стенка плодового тела грибов аскомицетов (эуаскомицетов, дискомицетов) и базидиомицетов (гастеромицетов)](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_basidiomycetes;;
+     ->concept_ascomycetes;;
+    ->concept_fungos;;
+    ->concept_sporocarp;;
+          
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_sporocarp => nrel_inclusion: concept_peridion;;

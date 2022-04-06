@@ -1,0 +1,27 @@
+format_search_similar_films_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат film search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format film search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_similar_films_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск похожих фильмов]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find similar films] 
+	(* 
+	<- lang_en;;
+	*);;

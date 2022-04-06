@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="short" shapeColor="193" id="13489336" parent="0" left="0" top="0" right="50" bottom="28" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-88.5" y="215.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="concept_rhizome" shapeColor="193" id="13489032" parent="0" left="0" top="0" right="141" bottom="28" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-56" y="175" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="concept_biennial_plant" shapeColor="193" id="93628360" parent="0" left="0" top="0" right="185" bottom="28" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="25" y="26" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="concept_anthyllis_kuzenevae_juz" shapeColor="193" id="13489944" parent="0" left="0" top="0" right="265" bottom="28" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-63" y="117" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_part" shapeColor="193" id="13489792" parent="0" left="0" top="0" right="78" bottom="28" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-149.5" y="57.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="" shapeColor="193" id="13490552" parent="0" x="-199.5" y="118.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="193" id="94692920" parent="0" id_b="93628360" id_e="13489944" b_x="25" b_y="26" e_x="-63" e_y="117" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <pair type="pair/const/orient" idtf="" shapeColor="193" id="94692416" parent="0" id_b="13489336" id_e="13490552" b_x="-88.5" b_y="215.5" e_x="-199.5" e_y="118.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/orient" idtf="" shapeColor="193" id="94693424" parent="0" id_b="13489944" id_e="13490552" b_x="-63" b_y="117" e_x="-199.5" e_y="118.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/orient" idtf="" shapeColor="193" id="94689728" parent="0" id_b="13489032" id_e="13490552" b_x="-56" b_y="175" e_x="-199.5" e_y="118.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/const/pos" idtf="" shapeColor="193" id="12679304" parent="0" id_b="13489792" id_e="94693424" b_x="-149.5" b_y="57.5" e_x="-602" e_y="-35" dotBBalance="0" dotEBalance="0.624669">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>

@@ -1,0 +1,142 @@
+concept_calosoma_investigator=> nrel_main_idtf:
+[красотел исследователь](*<-lang_ru;;*);
+[calosoma investigator](*<-lang_lat;;*);;
+
+concept_species -> concept_calosoma_investigator;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_calosoma_investigator;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_calosoma_investigator;;
+	-> rrel_number_of_year: 1798 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_calosoma_investigator <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: На лугах и полях на песчаных почвах. Чаще всего на полях и лугах на песчаной и супесчаной почве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Мезоксерофил. Активен ночью. Днем прячется в укрытиях. Встречается с мая по октябрь. Питается в основном гусеницами лугового мотылька, коконо­прядов, совок и пядениц. Генерация одногодичная.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Встречается спорадически, но редко.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная деятельность на полях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Необходима пропаганда охраны вида и введение заповедного режима, а также ограничение применения инсектицидов в местах обитания.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Трансевразийский суббореальный вид. Северо-восточная Европа (Швеция), Сибирь. В Беларуси найден в южных районах (в Полесье) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 16-27 мм. Окраска черная, сверху часто бронзовая или зеленоватая. Между рядами крупных золотистых ямок на надкрыльях можно отметить 5-7 неправильных рядов мелких зернышек.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_calosoma_investigator <= nrel_spread: ... 
+	(*
+	-> Polesie_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_calosoma_investigator;;
+concept_calosoma_investigator => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; gold;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; black;;
+	*);;
+
+concept_calosoma_investigator <= nrel_inclusion: 
+	16_27_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (16_mm => 27_mm);;	
+	*);;
+	16_mm <- length_of_body; exact_value;;
+	16_mm -> .millimeter: 16 (* <- number;;*);;
+	27_mm <- length_of_body; exact_value;;
+	27_mm -> .millimeter: 27 (* <- number;;*);;	
+
+concept_calosoma_investigator <= nrel_inclusion: concept_4_protection_category;;

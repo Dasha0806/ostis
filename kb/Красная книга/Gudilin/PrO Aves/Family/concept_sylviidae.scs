@@ -1,0 +1,22 @@
+concept_sylviidae => nrel_main_idtf:
+[славковые](*<-lang_ru;;*);
+[sylviidae](*<-lang_lat;;*);;
+
+concept_family -> concept_sylviidae;;
+
+concept_sylviidae => nrel_inclusion: concept_acrocephalus_paludicola;;
+
+//определение и пояснения
+concept_sylviidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У славковых тонкий клюв, а оперение как правило серого, коричневого или оливкового цвета. Оба пола окрашены одинаково. Все славковые очень маленькие и питаются членистоногими и ягодами. Многие виды славковых хорошо различаются по звуковым сигналам. Предпочитают для обитания и гнездования густую вегетацию. Гнездятся невысоко от земли или на земле в лесных и полуоткрытых ландшафтах (некоторые славковые тяготеют к водоёмам).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_sylviidae;;

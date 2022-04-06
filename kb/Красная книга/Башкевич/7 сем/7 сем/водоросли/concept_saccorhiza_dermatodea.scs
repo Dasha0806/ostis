@@ -1,0 +1,163 @@
+concept_saccorhiza_dermatodea => nrel_main_idtf:
+[саккориза кожистая](*<-lang_ru;;*);
+[saccorhiza dermatodea](*<-lang_lat;;*);;
+
+
+concept_species -> concept_saccorhiza_dermatodea;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_saccorhiza_dermatodea;;
+
+//пояснения
+concept_saccorhiza_dermatodea <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Категория и статус: 2 a - вид, сокращающийся в численности в результате изменения условий существования или разрушения местообитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище 0,5-1(4) м дл., пластинчатое, на стволике, прикрепляется к грунту небольшой подошвой. Пластина 5-25(50) см шир., лентовидная или удлиненно овальная, цельная или рассеченная на верхушке, светло- или темно-бурая, с ровной поверхностью, покрытой пучками волосков, расположенных в специальных углублениях - крипто- стомах, хорошо заметных на молодых слоевищах. Стволик округлый или плоский, тонкий или грубый. Размножение бесполое и половое. Органы бесполого размножения - одногнездные спорангии формируются на поверхности пластины близ ее основания среди особых одноклеточных выростов - парафиз. Зооспоры с глазком. Гаметофиты микроскопические, в виде стелющихся нитей, однодомные. Половой процесс - оогамия (6).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России имеет ограниченный ареал. Баренцево море: побережье Кольского п-ова (Печенга, Кольский залив, о. Кильдин, губа Териберка, губа Дальнезеленецкая, Семь островов); о. Колгуев (1, 2); побережье Новой Земли (3). Белое море: о. Сосновец, Чапома, Три острова, Соловецкие о-ва, о. Жижгин (4). Вне территории России: Юж. Гренландия, Норвегия, Шпицберген, Северная Америка (6, 7).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет в сублиторали до 20 м глубины, преимущественно на глубине 3-6 м на скалисто-каменистых грунтах в местах с повышенной гидродинамикой - на мысах, открытых побережьях, в проливах с сильным течением. Приурочен к ассоциациям, образуемым видами Laminaria и Alaria, в которых как малочисленный вид, играет подчиненную роль. Североатлантическо-ледовитоморский вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Неизвестна.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Известно более 10 местонахождений вида, однако локальные популяции характери- зуются незначительными численностью и биомассой.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Нарушение зарослей ламинариевых в результате естественных процессов заиления, а также загрязнения и промысла.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид внесен в Приложение к Красной книге Ненецкого автономного округа (Перечень объектов животного и растительного мира, нуждающихся в особом внимании к их состоянию в природной среде) (8).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Соблюдение рационального промысла ламинариевых и создание заповедных акваторий.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Изучалось развитие в культуре (5).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_saccorhiza_dermatodea <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_saccorhiza_dermatodea;;
+						concept_saccorhiza_dermatodea => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_saccorhiza_dermatodea <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_saccorhiza_dermatodea <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,124 @@
+concept_peltigera_pupyrchatoy => nrel_main_idtf:
+[пелтигера пупырчатая](*<-lang_ru;;*);
+[concept pupyrchatoy](*<-lang_lat;;*);
+[пельтыгера пухiрыстая](*<-lang_bel;;*);;
+concept_peltigera_pupyrchatoy => nrel_idtf:[пельтыгера пухiрыстая](*<-lang_bel;;*);;
+
+plants -> concept_peltigera_pupyrchatoy;;
+concept_species -> concept_peltigera_pupyrchatoy;;
+type -> concept_peltigera_pupyrchatoy;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_peltigera_pupyrchatoy;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_peltigera_pupyrchatoy;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_peltigera_pupyrchatoy <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется в Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает на почве в сосновых и еловых лесах, на опушках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается аскоспорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается отдельными особями. Из пяти известных местонахождений за последние 50 лет отмечен лишь в двух.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, хозяйственная трансформация земель, низовые пожары.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка "Нарочанский" (на заповедной территории Голубых озер). Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого в местах роста требуется запрет любой лесохозяйственной деятельности, уменьшение нагрузки на живой напочвенный покров, предупреждение низовых пожаров и хозяйственной трансформации земель.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная и Центральная Америка, Гренландия и Австралия . В Беларуси отмечен в Мядельском р-не Минской обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище листоватое, широколопастное с приподнимающимися или плоскими краями. Верхняя сторона слоевища гладкая, серая, серовато-зеленая, во влажном состоянии ярко- или темно-зеленая, без войлочного налета. На поверхности разбросаны мелкозернистые приплюснутые цефалодии, которые по краям обычно мелкие. Нижняя поверхность слоевища черная с неясной сетью жилок, по краю розоватая. Прикрепляется к субстрату с помощью длинных рассеянных по слоевищу ризин. Апотеции развиваются на суженных вертикальных лопастях по краям слоевищ, почти плоские или желобчатые, с загнутыми назад краями, с красно-коричневым диском, без налета. Споры бесцветные, веретеновидные или игловидные .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_peltigera_pupyrchatoy <= nrel_spread: ... 
+	(*
+	-> Minsk_district;;
+	*);;
+
+concept_peltigerovye => nrel_inclusion: concept_peltigera_pupyrchatoy;;
+concept_peltigera_pupyrchatoy => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; grey; green;;
+	*);;
+
+
+concept_peltigera_pupyrchatoy <= nrel_inclusion: 
+	10_150_mm
+	(*
+	<- interval_value;;
+	<- length_of_thallus;;
+	=> nrel_measurement: (10_mm => 150_mm);;	
+	*);;			
+
+concept_peltigera_pupyrchatoy <= nrel_inclusion: concept_2_protection_category;;
+

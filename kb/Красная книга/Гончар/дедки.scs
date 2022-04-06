@@ -1,0 +1,36 @@
+concept_gomphidae=> nrel_main_idtf:
+[дедки](*<-lang_ru;;*);
+[gomphidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_gomphidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(дедки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_odonata;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Дедки - семейство из отряда стрекоз.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_odonata =>nrel_inclusion: concept_gomphidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Обычно от 40 до 70 мм в длине. Глаза разделены промежутком. Самка разбрасывает яйца поодиночке, ударяя в полете концом брюшка по воде.](* <- lang_ru;;*);;
+		*);;
+*);;

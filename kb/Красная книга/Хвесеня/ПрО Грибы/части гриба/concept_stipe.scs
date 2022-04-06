@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_stipe;;
+concept_stipe => nrel_main_idtf:
+[ ножка гриба](*<-lang_ru;;*);
+[stipe](*<-lang_en;;*);;
+
+concept_stipe <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(пластинка)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть плодового тела шляпконожечного гриба.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+	->concept_fungos;;
+	->concept_sporocarp;;
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_stipe => nrel_inclusion: concept_sporocarp;;

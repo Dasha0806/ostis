@@ -1,0 +1,166 @@
+concept_saxifraga_hirculus_l => nrel_main_idtf: [камнеломка болотная](*<- lang_ru;;*); [saxifraga hirculus l.](*<- lang_lat;;*); [каменяломнiк балотны](*<- lang_bel;;*);;
+concept_saxifraga_hirculus_l => nrel_idtf: [каменяломнiк балотны](*<- lang_bel;;*);;
+
+concept_species -> concept_saxifraga_hirculus_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_saxifraga_hirculus_l;;
+
+concept_saxifraga_hirculus_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (камнеломка болотная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_saxifraga_hirculus_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_saxifraga_hirculus_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_saxifraga_hirculus_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 1го и 2го изданий (1981, 1993). Охраняется в Литве, Латвии, Польше и Украине. Включен в Приложение I к Бернской Конвенции и в Приложение II к Директиве Европейского Союза о местах обитания.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с одиночными или несколькими прямостоячими стеблями высотой 10-15 (35) см и олиственными ползучими побегами, нередко образующее небольшие дерновинки. Стебель в нижней части почти голый, в верхней - опушен оттопыренными рыжеватыми волосками. Листья светло-зеленые, голые, очередные, удлиненно-ланцетные, сидячие; нижние - собраны в розетку и сужены в черешок. Цветки по 1-4 собраны на верхушке стебля. Лепестки ярко-желтые с оранжевыми точками и двумя бородавочками (нектарниками) у основания. Чашелистики в конце цветения вниз отогнутые. Плод - 2-гнездная двурогая продолговато-овальная коробочка .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Евразия (арктические и субарктические зоны Европы и Сибири, западные районы лесной зоны), Северная Америка (арктические и горные районы) . Арктобореальный реликтовый вид, находящийся в Беларуси в отдельных локалитетах на южной границе ареала . По литературным данным произрастал в Брагинском и Слуцком р-нах, в окрестностях Новогрудка, Гродно, Слонима, Гривды, а также в Могилевской губернии , Мядельском  и Верхнедвинском  р-нах. Имеются гербарные сборы из Быховского, Гомельского, Горецкого, Минского, Оршанского, Рогачевского и Сенненского р-нов . В последние годы отмечался только в Гродненском, Докшицком, Лепельском и Пружанском районах .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Переходные осоковые и осоково-гипновые болота, заболоченные березовые и сосново-березовые леса.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июле - августе, плодоносит в августе - сентябре. Энтомофил. Размножение семенное и вегетативное. Баллист-анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Растет небольшими группами и одиночными экземплярами на ограниченной площади.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Осушительная мелиорация с последующей хозяйственной трансформацией заболоченных земель, сенокошение.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Беловежская пуща” и Березинского биосферного заповедника. Необходимы ревизия известных местонахождений и постоянный контроль состояния популяций, организация в неохраняемых местах роста специализированных ботанических заказников, выявление новых мест произрастания и обеспечение их охраны, запрещение всех видов хозяйственной деятельности, испытание в культуре, искусственное расселение в естественные места обитания.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_saxifraga_hirculus_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Braginsky_district;;->Slutsky_district;;->Novogrudok_district;;->Grodno_district;;->Slonimsky_district;;->Gruzinski_district;;->Mogilev_district;;->Myadel_district;;->Verkhnedvinsk_district;;->Bykhov_district;;->Gomel_district;;->Gorki_district;;->Minsk_district;;->Orsha_district;;->Rogachev_district;;->Senno_district;;->Grodno_district;;->Dokshitsy_district;;->Lepel_district;;->Pruzhany_district;;
+		*);;
+*);;
+
+concept_saxifraga_hirculus_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; single;a_few;erect;creeping_escape;tufts;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; light_green;naked;another;oblong_lanceolate;sedentary;;
+*);
+...
+(*
+<= nrel_inclusion: flower; bright_yellow;orange_dots;warts;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; 2_alopecia;two_horns;oblong_oval;box;;
+*);;
+
+concept_saxifraga_hirculus_l <= nrel_inclusion: 
+[10-35]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([10 см] => [35 см]);; 
+*);;
+
+concept_saxifraga_hirculus_l <= nrel_inclusion: 
+[3-6 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [6 см]);; 
+*);;
+
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+[35 см] <- length_of_inflorscence; exact_value;;
+[35 см] -> .centimeter: 35 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[6 см] <- length_of_inflorscence; exact_value;;
+[6 см] -> .centimeter: 6 (* <- number;;*);;
+ 
+
+concept_saxifraga_hirculus_l <= nrel_inclusion: concept_1_protection_category;;

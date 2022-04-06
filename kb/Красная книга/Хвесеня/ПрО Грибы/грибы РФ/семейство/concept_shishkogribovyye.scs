@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_shishkogribovyye;;
+concept_shishkogribovyye=> nrel_main_idtf:
+[шишкогрибовые](*<-lang_ru;;*);
+[shishkogribovyye](*<-lang_en;;*);;
+
+//
+concept_shishkogribovyye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(шишкогрибовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка болетовые](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_boletales;;
+	*);;	
+*);;
+
+//
+concept_boletales => nrel_inclusion: concept_shishkogribovyye;;

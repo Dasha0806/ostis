@@ -1,0 +1,153 @@
+concept_arsenievinaia_zarjzaensis => nrel_main_idtf: [зарейская арсеньевиная](*<- lang_ru;;*); [arsenievinaia zarjzaensis](*<- lang_lat;;*);;
+
+concept_arsenievinaia_zarjzaensis  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (зарейская арсеньевиная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_arsenievinaia_zarjzaensis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_arsenievinaia_zarjzaensis <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_arsenievinaia_zarjzaensis ;;
+concept_species -> concept_arsenievinaia_zarjzaensis ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_arsenievinaia_zarjzaensis ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_arsenievinaia_zarjzaensis ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1988 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_arsenievinaia_zarjzaensis  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина удлиненно-овальная, вздутая, тонкостенная, до 10 см длиной. Спинной край наклонен вперед, немного изогнут, через невысокое крыло переходит в вытянутый и несколько угловатый задний край. Брюшной край слабо выгнутый, в средней части спрямленный. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна только из оз. Заря на территории Лазовского заповедника (Приморский край). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают на притопленных участках сплавины. На зиму "зарываются" внутрь сплавины. Глохидии развиваются в августе-сентябре. Продолжительность жизни около 10 лет. Обитает совместно с арсеньевинаями сихотэалиньской и Зимина. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Общая численность вида вероятно составляет несколько десятков особей. Плотность около 0.2 экз./м2. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Развитие популяции лимитируется чистотой воды, содержанием в ней кислорода и наличием плотных развитых участков сплавины
+
+ ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Охраняется в Лазовском гсударственном заповеднике. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_arsenievinaia_zarjzaensis  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_arsenievinaia_zarjzaensis  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; yellow; green;;
+	*);;
+//размеры и вес
+concept_arsenievinaia_zarjzaensis  <= nrel_inclusion: 
+	[6-10 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([6 см] => [10 см]);;	
+	*);
+	[0,055-0,075 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,055 кг] => [0,075 кг]);;	
+	*);;
+	[6 см] <- length_of_body; exact_value;;
+	[6 см] -> .centimeter: 6 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[0,055 кг] <- weight; exact_value;;
+	[0,055 кг] -> .kilogram: 0.055 (* <- number;;*);;
+	[0,075 кг] <- weight; exact_value;;
+	[0,075 кг] -> .kilogram: 0.075 (* <- number;;*);;
+//категория охраны и количество
+concept_arsenievinaia_zarjzaensis  <= nrel_inclusion: concept_1_protection_category;;
+concept_arsenievinaia_zarjzaensis  <= nrel_strength: [80 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 80 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

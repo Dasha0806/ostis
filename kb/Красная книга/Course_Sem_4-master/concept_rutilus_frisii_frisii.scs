@@ -1,0 +1,125 @@
+concept_rutilus_frisii_frisii=> nrel_main_idtf: [вырезуб](*<- lang_ru;;*); [rutilus frisii frisii](*<- lang_lat;;*);;
+
+concept_species -> concept_rutilus_frisii_frisii;;
+subject_domain_of_osteichthyes -> rrel_not_maximum_studied_object_class: concept_rutilus_frisii_frisii;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_rutilus_frisii_frisii;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+nrel_date_of_disappereance -> ...
+	(*
+	-> rrel_1: concept_black_list;; 
+	-> rrel_2: concept_rutilus_frisii_frisii;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1932 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_rutilus_frisii_frisii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Еще в начале ХХ века поднимался по Днепру до пределов Беларуси и отмечался в реках Припять, Стырь, Горынь, Сож, Ясельда, Ипуть, Березина. Плотина Днепровской ГЭС (1932 г.) преградила путь вырезубу, и с середины ХХ века этот вид в ихтиологических сводках не упоминался.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Достигает 75 см длины и более 6 кг веса. Спина тёмная, несколько зеленоватая, бока серебристые, брюхо — белое.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Во второй половине XX столетия в Беларуси вид в ихтиологических сводках не упоминался.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Вырезуб питается на опреснённых участках моря, для нереста заходит в реки. Начинает нереститься в возрасте 4—5 лет, при длине около 40 см.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Питается насекомыми, червями и моллюсками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденции изменения: Регионально исчезнувший (RE)](* <- lang_ru;; *);;
+		*);;
+*);;
+//характеристики
+concept_rutilus_frisii_frisii <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> RE;;
+		*);;
+	*);;
+//части тела
+concept_rutilus_frisii_frisii => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_stomack; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_swimmers; white; black;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_tail; black; white;;
+	*);;
+	
+//размеры и вес
+concept_rutilus_frisii_frisii <= nrel_inclusion: 
+	[34-43 см]
+	(*
+	<- interval_value;;
+	<- length_of_wing;;
+	=> nrel_measurement: ([34 см] => [43 см]);;
+	*);;
+	[34 см] <- length_of_wing; exact_value;;
+	[34 см] -> .centimeter: 34 (* <- number;;*);;
+	[43 см] <- length_of_wing; exact_value;;
+	[43 см] -> .centimeter: 43 (* <- number;;*);;
+//категория охраны и количество
+concept_rutilus_frisii_frisii <- concept_black_list;;

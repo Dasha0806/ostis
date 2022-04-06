@@ -1,0 +1,132 @@
+sc_node_not_relation -> Brest_region;;
+Brest_region=>nrel_main_idtf:
+[Брестская область](* <-lang_ru;; *);
+	[Brest region](* <- lang_en;; *);;
+
+sc_node_not_relation -> brest_region_flag;;
+brest_region_flag=>nrel_main_idtf:
+[флаг Брестской области](* <-lang_ru;; *);
+	[Brest region flag](* <- lang_en;; *);;
+
+sc_node_not_relation -> brest_region_coat_of_arms;;
+brest_region_coat_of_arms=>nrel_main_idtf:
+[герб ГБрестской области](* <-lang_ru;; *);
+	[Brest region coat of arms](* <- lang_en;; *);;
+
+sc_node_not_relation -> BY_BR;;
+BY_BR => nrel_main_idtf:
+[BY_BR](* <-lang_ru;; *);
+	[BY_BR](* <- lang_en;; *);;
+
+sc_node_not_relation -> 1;;
+1 => nrel_main_idtf:
+[1](* <-lang_ru;; *);
+	[1](* <- lang_en;; *);;
+
+sc_node_not_relation -> 225000;;
+225000 => nrel_main_idtf:
+[225000](* <-lang_ru;; *);
+	[225000](* <- lang_en;; *);;
+
+sc_node_not_relation -> 976440;;
+976440 => nrel_main_idtf:
+[976 440](* <-lang_ru;; *);
+	[976 440](* <- lang_en;; *);;
+
+sc_node_not_relation -> 408036;;
+408036 => nrel_main_idtf:
+[408 036](* <-lang_ru;; *);
+	[408 036](* <- lang_en;; *);;
+
+sc_node_not_relation -> brest_regional_council_of_deputies;;
+brest_regional_council_of_deputies =>nrel_main_idtf:
+[Брестский областной совет депутатов](* <-lang_ru;; *);
+	[Brest regional council of deputies](* <- lang_en;; *);;
+
+sc_node_not_relation -> brest_regional_executive_committee;;
+brest_regional_executive_committee =>nrel_main_idtf:
+[Брестский областной исполнительный комитет](* <-lang_ru;; *);
+	[Brest regional executive committee](* <- lang_en;; *);;
+
+sc_node_not_relation -> Les_Anatolii_Vasilevich;;
+Les_Anatolii_Vasilevich =>nrel_main_idtf:
+[Лес Анатолий Васильевич](* <-lang_ru;; *);
+	[Les_Anatolii_Vasilevich](* <- lang_en;; *);;
+
+sc_node_not_relation -> Narkevich_Yurii_Iosifovich;;
+Narkevich_Yurii_Iosifovich =>nrel_main_idtf:
+[Наркевич Юрий Иосифович](* <-lang_ru;; *);
+	[Narkevich_Yurii_Iosifovich](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+Brest_region => nrel_regional_council_of_deputies: brest_regional_council_of_deputies;;
+
+brest_regional_council_of_deputies => nrel_chairman_of_the_regional_council_of_deputies: Narkevich_Yurii_Iosifovich;;
+
+Brest_region => nrel_regional_executive_committee: brest_regional_executive_committee;;
+
+brest_regional_executive_committee => nrel_chairman_of_the_regional_executive_committee: Les_Anatolii_Vasilevich;;
+
+Brest_region => nrel_timezone:
+FET_UTC_PLUS_3;;
+
+Brest_region => nrel_code_iso_3166_2:
+BY_BR;;
+
+concept_code -> BY_BR;;
+
+Brest_region => nrel_car_number:
+1;;
+
+concept_number -> 1;;
+
+Brest_region => nrel_postcode:
+225000;;
+
+concept_number -> 225000;;
+
+Brest_region => nrel_administrative_center:
+Brest;;
+
+Brest_region => nrel_urban_population:
+976440;;
+
+concept_number -> 976440;;
+
+Brest_region => nrel_rural_population:
+408036;;
+
+concept_number -> 408036;;
+
+Brest_region => nrel_boundary_area: Gomel_region;;
+Brest_region => nrel_boundary_area: Minsk_region;;
+Brest_region => nrel_boundary_area: Grodno_region;;
+
+//определение 
+Brest_region <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Брестская область)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Брестская область - область РБ.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:Brest_region;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://Brest_region.png";;
+		*);;
+	*);;
+
+Brest_region <= nrel_intersection: ...(* -> berezinski_area;; -> borisovski_area;; -> vileiski_area;; -> volozhinski_area;; -> derzhinski_area;; -> kletski_area;; -> kopilski_area;; -> krupski_area;; -> logoiski_area;; -> lubanski_area;; -> minsk_area;; -> molodechno_area;; -> myadelski_area;; -> nesvizh_area;; -> puhovich_area;; -> slutski_area;; -> smolevichi_area;; -> soligorsk_area;; -> starodorozhski_area;; -> stolbcovski_area;; -> yzdenski_area;; -> chervenski;; => nrel_idtf: [Разбиение по территориальному признаку](* <- concept_russian_language;; *);; *);;
+

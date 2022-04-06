@@ -1,0 +1,163 @@
+concept_mazzaella_phyllocarpa => nrel_main_idtf:
+[мазелла листоплодная](*<-lang_ru;;*);
+[mazzaella phyllocarpa](*<-lang_lat;;*);;
+
+
+concept_species -> concept_mazzaella_phyllocarpa;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_mazzaella_phyllocarpa;;
+
+//пояснения
+concept_mazzaella_phyllocarpa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 1 - вид, находящейся под угрозой исчезновения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, линейно- или широклиновидное, неправильно дихотомически или пальчато разветвленное, хрящеватое, фиолетово карминового цвета, прикрепляется подошвой. Ветви последнего порядка клино- видные, широколанцетовидные или овальные, 0,5-3 см шир., 0,22-0,35 мм толщ., с округлым или городчатым верхним краем. Слоевище многоосевое, состоит из многоклеточных нитей, образующих сердцевину и кору. Органы размножения рас- сеяны по пластине. Тетраспорангии в сорусах (группах). Сорусы мелкие, неправильной формы, сливающиеся. Органы по- лового размножения развиваются в сердцевине и на границе с коровым слоем. Молодые цистокарпы мелкие, сфериче- ские, зрелые - крупные, уплощенные, 1-4 мм в поперечнике (1, 3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается: Берингово море (м. Африка, заливы Корфа (3, 12), Олюторский, Карагинский (12), о. Карагинский (11)), Командорские о-ва (2, 8, 10), восточная и западная Камчатка, о. Парамушир (5, 9), Татарский пролив, побережье Японского моря (4, 13). Вне России: Алеутские о-ва.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный пацифический вид, представлен малочисленными популяциями. У берегов Камчатки встречается в лужах среднего горизонта литоральной зоны и в сублиторальной зоне на глубине 5-8 м на скалистом с камнями и песком грунте. На Командорских о-вах растет в нижнем горизонте литорали на плоских рифах в лужах и в сублиторали.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Популяции малочисленные. Но для литорали и сублиторали о. Беринга отмечается как обычный вид (8, 10), в акватории побережья Японского моря и Татарском проливе как часто встречающийся (4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Чувствительность к загрязнению и обитание в промысловых зонах (оказывается в качестве прилова).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид встречается на Командорских о-вах и южной части Камчатского залива, где организованы государственные заповедники (Командорский и Кроноцкий), включающие прибрежную морскую акваторию. Внесен в Красную книгу Сахалинской обл. (13).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_mazzaella_phyllocarpa <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_mazzaella_phyllocarpa;;
+						concept_mazzaella_phyllocarpa => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_mazzaella_phyllocarpa <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_mazzaella_phyllocarpa <= nrel_inclusion: concept_1_protection_category;;

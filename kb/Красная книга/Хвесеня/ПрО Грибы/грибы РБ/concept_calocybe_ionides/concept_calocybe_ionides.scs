@@ -1,0 +1,143 @@
+concept_calocybe_ionides=> nrel_main_idtf: [калоцибе фиалковая](*<- lang_ru;;*); [calocybe ionides](*<- lang_lat;;*); [калоцібе фіялкавая](*<- lang_bel;;*);;
+
+concept_calocybe_ionides<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (калоцибе фиалковая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_calocybe_ionides.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_calocybe_ionides<-concept_plant;;
+
+
+
+
+concept_species -> concept_calocybe_ionides;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_calocybe_ionides;;
+
+//пояснения
+concept_calocybe_ionides <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: ВВ Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет в хвойных и смешанных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела развиваются в августе - сентябре. Подстилочный сапротроф. Несъедобный декоративный гриб.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречаются единичные экземпляры. Во всех местонахождениях численность вида крайне мала.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий - антропогенный: чрезмерные рекреационные нагрузки (уплотнение и загрязнение почвы, сбор и повреждение плодовых тел), вырубка лесов (все виды рубок), хозяйственная трансформация земель.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходимо создание в местах роста вида специализированных микологических заказников с запрещением антропогенных воздействий и несанкционированного сбора плодовых тел. Следует периодически проводить ревизию и эколого-биологический контроль состояния известных популяций, осуществлять поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Голарктический вид. Ареал охватывает Европу, Азию, Африку . В Беларуси известны местонахождения в Житковичском (окрестности д. Найда) и Лельчицком р-нах Гомельской обл. , а также в Минском р-не Минской обл. .
+
+](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Шляпка диаметром 3-5 см, вначале выпуклая, потом распростертая, с ровным или слегка согнутым краем, гладкая, фиолетово-коричневатая; мякоть тонкая, фиолетово-коричневатая, с мягким вкусом и мучным запахом. Пластинки свободные, тонкие, умеренной частоты и ширины, бело-кремовые или бледно-фиолетовые. Ножка 3-5 0,3-0,6 см, цилиндрическая, сплошная, одного цвета со шляпкой, удлиненная, с волокнистым покрытием. Споры размером 5-7 3-4 мкм, эллипсоидальные, гладкие .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+	
+
+concept_triholomovye => nrel_inclusion: concept_calocybe_ionides;;
+concept_calocybe_ionides => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; convex; purple_brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; thin; free;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; purple_brown;;
+	*);;
+
+concept_calocybe_ionides <= nrel_inclusion: 
+	[3-5 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([3 см] => [5 см]);;	
+	*);;
+	
+	[3 см] <- length_of_body; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+
+concept_calocybe_ionides <= nrel_inclusion: concept_2_protection_category;;

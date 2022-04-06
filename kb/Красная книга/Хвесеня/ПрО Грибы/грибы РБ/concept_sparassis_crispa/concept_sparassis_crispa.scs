@@ -1,0 +1,141 @@
+concept_sparassis_crispa=> nrel_main_idtf: [спарассис курчавый](*<- lang_ru;;*); [sparassis crispa](*<- lang_lat;;*); [спарасіс курчавы](*<- lang_bel;;*);;
+
+concept_sparassis_crispa<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (спарассис курчавый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_sparassis_crispa.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+
+
+	
+concept_plant -> concept_sparassis_crispa;;
+concept_species -> concept_sparassis_crispa;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_sparassis_crispa;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_sparassis_crispa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1984 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_sparassis_crispa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993) и Красную книгу СССР (1984). Охраняется в Литве, Латвии, Российской Федерации, Украине и Польше. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в сосновых лесах. В отдельных случаях способен заселять значительно антропогенно трансформированные сообщества, судя по находке в парке им. Челюскинцев в Минске. Произрастает и образует плодовые тела при основании стволов или свежих пней и на корнях сосны. Паразит , по другим данным, слабый паразит или сапротроф , вызывает желто-бурую или бурую кубическую гниль комлевой части ствола и корней .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Плодовые тела образуются в августе - сентябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречается в виде одиночных экземпляров. Поддается культивированию в лабораторных условиях, дает умеренную биомассу в погруженной культуре , однако в республике в коллекциях культур не поддерживается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Малая численность популяций, сбор населением как хорошего съедобного гриба.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Охраняется в составе природных комплексов Березинского биосферного заповедника, национальных парков «Беловежская пуща» и «Нарочанский». Необходимо выявление новых местонахождений, ревизия известных популяций, организация заказников местного значения, разъяснительная работа среди населения, запрет сбора плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа, Кавказ, Сибирь, Алтай, Дальний Восток, Северная Америка, имеет прерывистый ареал . На территории Беларуси встречается спорадически. Отмечен в Брестской (Брестский, Дрогичинский, Пинский и Пружанский р-ны), Витебской (Докшицкий р-н), Гомельской (Житковичский, Калинковичский, Мозырский и Петриковский р-ны), Гродненской (окрестности Волковыска) и Минской (Березинский, Дзержинский, Мядельский, Несвижский, Смолевичский, Столбцовский, Узденский р-ны, Минск) обл. . В Минском р-не наблюдался в окрестностях населенных пунктов Глебковичи, Крыжовка, Юхновка . Есть указания на спорадическое распространение вида в Белорусском Поозерье .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовое тело многократно коралловидно разветвленное, почти сферическое или эллиптическое, в поперечнике до 10–35 (50) см, иногда до 6 кг весом, мясистое, хрупкое, от беловатого до охряного и темно-желтого цвета, на короткой бесформенной ножке. Ветви плоские, тонкие, лопастевидные, как правило, с волнистыми, слегка зубчатыми краями. Гифы с пряжками и без них, светопреломляющие. Базидии узко-булавовидные, 30–48 ´ 5,5–7 мкм. Споры эллиптические или семечковидные, 4–6 ´ 2,5–4,5 мкм, с отчетливой оболочкой и преломляющим свет содержимым, часто с крупной каплей масла .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_sparassis_crispa <= nrel_spread: ... 
+	(*
+	-> Brest_district; Pinsk_district; Pruzhany_district; Zhitkovichy_district; Dokshytsy_district; Kalinkovichi_district; Mozyr_district; Petrikovsky_district; Myadzyel_district; Volkovysk_district; Minsk_district; Berezina_district; Dzerzhinsk_district; Nesvizh_district; Smolevichi_district; Stowbtsy_district; Uzda_district ;;
+	*);;
+
+concept_sparassisovye => nrel_inclusion: concept_sparassis_crispa;;
+concept_sparassis_crispa => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; white; dark_yellow; spherical; coral;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_hypha; light_refracting;;
+	*);;
+
+concept_sparassis_crispa <= nrel_inclusion: 
+	[10-50 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([10 см] => [50 см]);;	
+	*);;
+	
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[50 см] <- length_of_body; exact_value;;
+	[50 0см] -> .centimeter: 50 (* <- number;;*);;
+
+concept_sparassis_crispa <= nrel_inclusion: concept_3_protection_category;;

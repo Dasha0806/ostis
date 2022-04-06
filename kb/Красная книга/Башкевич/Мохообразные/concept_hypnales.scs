@@ -1,0 +1,32 @@
+concept_hypnales => nrel_main_idtf:
+[гипновые](*<-lang_ru;;*);
+[hypnales](*<-lang_lat;;*);;
+
+concept_order -> concept_hypnales;;
+
+concept_hypnales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_thuidiaceae;;  
+	-> concept_amblystegiaceae;; 
+	-> concept_brachytheciaceaee;; 
+	-> concept_entodontaceae;;	
+
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_hypnales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Порядок гипновые - исключительно бокоплодные напочвенные, скальные и эпифитные мхи, образующие дерновинки или ковры. Побеги почти всегда всесторонне облиственные. У уплощенно облиственных нет заметных различий между боковыми и центральными листьями. Перистом, за редким исключением редуцированного внутреннего перистома, двойной, в большинстве случаев хорошо развитый. Внутренний перистом на высокой основной перепонке; реснички длинные, чаще узловатые. Случаи частичной редукции внутреннего перистома нередки. ](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_hypnales;;

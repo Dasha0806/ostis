@@ -1,0 +1,17 @@
+ui_menu_find_the_largest_year_of_territory
+	<- ui_user_command_class_atom;
+   	   ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[В какой код территория стала природоохраняемой позже всех остальных?] (* <- lang_ru;; *);
+		[Which territory is the largest?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+			question_find_the_largest_year_of_territory _-> ._question_find_the_largest_year_of_territory_instance 
+			(*
+				_-> concept_territorry;;
+			*);;
+		._question_find_the_largest_year_of_territory_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template:
+		[Последний год, в который был добавлен заповедник, находящийся в базе.] (* <- lang_ru;; *);
+		[Request of the year] (* <- lang_en;; *);;

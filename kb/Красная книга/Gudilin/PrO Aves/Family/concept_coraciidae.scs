@@ -1,0 +1,22 @@
+concept_coraciidae => nrel_main_idtf:
+[сизоворонковые](*<-lang_ru;;*);
+[coraciidae](*<-lang_lat;;*);;
+
+concept_family -> concept_coraciidae;;
+
+concept_coraciidae => nrel_inclusion: concept_coracias_garrulus;;
+
+//определение и пояснения
+concept_coraciidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Птицы плотного телосложения с большой головой и короткой шеей. Клюв сильный, слегка изогнутый к низу. Крылья сильные, хвост умеренно длинный, прямо срезанный, у некоторых видов глубоко вырезанный. Короткие ноги, пальцы сильные. Расцветка яркая - зелёная, голубая, нередко каштановая. Различий в расцветке оперения между самцами и самкой либо вовсе нет, либо очень слабо выражены.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_coraciidae;;

@@ -1,0 +1,84 @@
+concept_water_air_birds
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[водно-воздушные птицы]
+	(*<-lang_ru;;*);
+	[water-air-birds]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[водно-воздушные птицы]
+	(*<-lang_ru;;*);
+	[water-air-birds]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (водно-воздушные птицы) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[водно-воздушные птицы -  экологическая группа птиц, которые могут как плавать, так и летать ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о птицах-пловцах) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Полет парящий или машущий, ноги без плавательных пере­понок, некоторые мо­гут нырять с разлета. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_water_air_birds => nrel_inclusion: ... 
+    (*
+        <= nrel_combination: ... (*
+            -> concept_laridae;;
+            -> concept_diomedeidae;;
+        *);;
+    *);;
+    
+
+concept_birds -> concept_water_air_birds;;
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_water_air_birds;;
+
+
+
+//Рисунок
+concept_water_air_birds <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (водно-воздушные птицы)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_water_air_birds.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+
+concept_water_air_birds <- rrel_key_sc_element:
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[При поисках пищи они используют исключительно зрение, которое у них развито лучше, чем у многих других птиц.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Они обладают превосходными летными качествами, они могут проводить на лету по многу часов. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+

@@ -1,0 +1,134 @@
+concept_prosopistoma_foliaceum=> nrel_main_idtf:
+[щитовидная поденка](*<-lang_ru;;*);
+[prosopistoma foliaceum](*<-lang_lat;;*);;
+
+concept_species -> concept_prosopistoma_foliaceum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_prosopistoma_foliaceum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_prosopistoma_foliaceum;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1785 (*<- number;;*);;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_prosopistoma_foliaceum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Личинки обитают в крупных реках, среди доломитовых россыпей на дне. Взрослые особи держатся вблизи водоемов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Характерно наличие двух крылатых стадий - субимаго (живут от нескольких секунд до нескольких часов) и имаго (от нескольких часов до нескольких суток). Крылатые стадии не питаются. Плодовитость - до нескольких тысяч яиц, откладываемых в воду. Развитие с неполным превращением. Личинки днем прячутся в расщелинах и под камнями, активны только ночью, живут 1-3 года и проходят 25 линек, питаются детритом и мелкими водорослями .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Данные устарели. Редкий вид, численность которого резко сокращается во многих странах Европы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Загрязнение речных вод бытовыми отходами и удобрениями с водосборных площадей.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Не проводились. Необходима организация охраняемых территорий на участках р. Зап. Двина, где обитают личинки, а также запрещение применения хим. средств и удобрений на водосборных площадях, прилегающих к этим территориям.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В Беларуси и странах СНГ личинки этого вида отмечены только в р. Зап. Двина и Кура. Ареал изучен недостаточно, многие данные устарели. Очень редкий европ. вид, личинки которого обитают в крупных реках Зап. и Средней Европы: Франция - Гаронна (г. Тулуза); Рейн (г. Авиньон); Сена (Париж, г. Нант); Германия - Рейн, Мозель, Таубер (г. Ротенбург), Чехия - Влтава, Латвия - Даугава, а также в Швеции .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело удлиненное (до 5 мм). Ротовой аппарат редуцирован. Крыльев 2 пары, передние немного длиннее задних. Брюшко удлиненное, состоит из 10 сегментов, на конце несет 3 членистых нитеобразных выроста, способных втягиваться. Характерная особенность личинки - слияние передне- и среднеспинки вместе с крыловыми зачатками в единый щит ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_prosopistoma_foliaceum <= nrel_spread: ... 
+	(*
+	-> Western_Dvina_river; Kyra_river;;
+	*);;
+
+concept_prosopistomatidae => nrel_inclusion: concept_prosopistoma_foliaceum;;
+concept_prosopistoma_foliaceum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; brown; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown; yellow;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; light; brown;;
+	*);;
+
+concept_prosopistoma_foliaceum <= nrel_inclusion: 
+	3_5_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (3_mm => 5_mm);;	
+	*);;
+	3_mm <- length_of_body; exact_value;;
+	3_mm -> .millimeter: 3 (* <- number;;*);;
+	5_mm <- length_of_body; exact_value;;
+	5_mm -> .millimeter: 5 (* <- number;;*);;	
+
+concept_prosopistoma_foliaceum <= nrel_inclusion: concept_2_protection_category;;

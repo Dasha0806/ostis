@@ -1,0 +1,22 @@
+concept_gruiformes => nrel_main_idtf:
+[журавлеобразные](*<-lang_ru;;*);
+[gruiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_gruiformes;;
+
+concept_gruiformes => nrel_inclusion: concept_rallidae; concept_gruidae;;
+
+//определение и пояснения
+concept_gruiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Журавлеобразные - отряд птиц.Представители журавлеобразных значительно различаются по величине, морфологическим и экологическим особенностям. Обычно ноги и шея у них длинные.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gruiformes;;

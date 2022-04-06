@@ -1,0 +1,22 @@
+concept_accipitridae => nrel_main_idtf:
+[ястребиные](*<-lang_ru;;*);
+[accipitridae](*<-lang_lat;;*);;
+
+concept_family -> concept_accipitridae;;
+
+concept_accipitridae => nrel_inclusion: concept_milvus_migrans; concept_milvus_milvus; concept_haliaeetus_albicilla; concept_circaetus_gallicus; concept_circus_cyaneus; concept_aquila_pomarina; concept_aquila_clanga; concept_aquila_chrysaetos; concept_hieraaetus_pennatus;;
+
+//определение и пояснения
+concept_accipitridae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Типичные хищники с внешним видом орла, канюка, коршуна, ястреба, грифа, с широким диапазоном варьирования морфологических признаков и особенностей образа жизни. Размеры значительно разнообразны.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_accipitridae;;

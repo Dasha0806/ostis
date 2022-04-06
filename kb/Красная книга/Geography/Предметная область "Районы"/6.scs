@@ -1,0 +1,64 @@
+concept_minerals=>nrel_main_idtf:[полезные ископаемые] (* <- lang_ru;; *);;
+concept_minerals=>nrel_identifier:[множество полезных ископаемых] (* <- lang_ru;; *);;
+concept_minerals=>nrel_identifier:[minerals] (* <- lang_en;; *);;
+
+//используемые константы
+concept_minerals<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->nrel_forming;;
+->concept_earthly_crust;;
+->nrel_composition;;
+->concept_sphere_of_production;;
+*);;
+*);;
+concept_minerals=> nrel_main_idtf: [Опр.(полезные ископаемые)]  (* <- lang_ru;; *);;
+concept_minerals<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Полезные ископаемые - минеральные и органические образования земной коры, химический состав.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_minerals<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(полезные ископаемые,земная кора,скопление*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Полезные ископаемые находятся в земной коре в виде скоплений.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_minerals<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(полезные ископаемые,месторождение*,скопление*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Скопления полезных ископаемых образуют месторождения.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_minerals<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(область*,наука,технология,добыча*,полезные ископаемые,горное дело)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Область науки и технологии, посвящённая добыче полезных ископаемых, именуется горным делом.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

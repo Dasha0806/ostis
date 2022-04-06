@@ -1,0 +1,30 @@
+concept_cladophorales => nrel_main_idtf:
+[кладофоровые](*<-lang_ru;;*);
+[cladophorales](*<-lang_lat;;*);;
+
+concept_order -> concept_cladophorales;;
+
+concept_cladophorales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_cladophoraceae;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_cladophorales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Порядок кладофоровые представлен нитчатыми, иногда сильноветвистыми формами. В отличие от многих других нитчатых они имеют круп­ные многоядерные клетки. Бесполое размножение осуществляется двужгутиковыми или четырехжгутиковыми зооспорами. Половой процесс изо­гамный или гетерогамный.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_cladophorales;;

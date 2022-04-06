@@ -1,0 +1,27 @@
+concept_salicales => nrel_main_idtf:
+[ивоцветные](*<-lang_ru;;*);
+[salicales](*<-lang_lat;;*);;
+
+concept_order -> concept_salicales;;
+
+concept_salicales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_salicaceae;;
+	*);;
+
+//определение и пояснения
+concept_salicales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ивоцветные - порядок двудольных растений.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_salicales;;

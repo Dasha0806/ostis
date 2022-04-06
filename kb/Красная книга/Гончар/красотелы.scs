@@ -1,0 +1,36 @@
+concept_calosoma=> nrel_main_idtf:
+[красотелы](*<-lang_ru;;*);
+[calosoma](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_calosoma<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(красотелы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Красотелы - семейство насекомых из отряда жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_calosoma;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупные красивые наземные жуки. Длина 15—35 мм. Как правило с чёрной и зеленоватой блестящей окраской. Бока надкрылий более или менее прямолинейные. Мандибулы сверху с косыми морщинками. Предпоследний сегмент губных щупиков с многочисленными щетинками. Усики с очень коротким вторым и очень длинным третьим сегментом; оба сплющены с боков, с ребровидным краем. Скульптура надкрылий часто ячеистая.](* <- lang_ru;;*);;
+		*);;
+*);;

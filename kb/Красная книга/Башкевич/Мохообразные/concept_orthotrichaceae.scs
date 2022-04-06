@@ -1,0 +1,28 @@
+concept_orthotrichaceae => nrel_main_idtf:
+[ортотриховые](*<-lang_ru;;*);
+[orthotrichaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_orthotrichaceae;;
+
+concept_orthotrichaceae <= nrel_subdividing:
+	...
+ (*
+	-> concept_orthotrichum_lyellii;; 
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_orthotrichaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Семейство ортотриховые - многолетние одно- и двудомные мхи, образующие от желтовато-зеленых до темно-коричневых коврики и дерновиики на коре деревьев и на скалах. Стебель многорядно густооблиственный, прямостоячий и разветвленный или лежачий с прямостоячими короткими либо длинными, простыми или разветвленными боковыми побегами. Листья непрозрачные, от прямоотстоящих до оттопыренных (в сухом состоянии — прилегающие или кудрявые), килеватые, от яйцевидно-ланцетных до линейно-ланцетных, реже языковидные, обычно цельнокрайние, с жилкой, оканчивающейся под верхушкой листа или выступающей из нее в виде острия.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_orthotrichaceae;;

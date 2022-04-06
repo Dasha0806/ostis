@@ -1,0 +1,163 @@
+concept_mastocarpus_papillatus => nrel_main_idtf:
+[мастокарпус с сосочками](*<-lang_ru;;*);
+[mastocarpus papillatus](*<-lang_lat;;*);;
+
+
+concept_species -> concept_mastocarpus_papillatus;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_mastocarpus_papillatus;;
+
+//пояснения
+concept_mastocarpus_papillatus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Категория и статус: 2 а - вид, сокращающийся в численности в результате разрушения местообитаний, в пределах России находится на западной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, хрящеватое, прикрепляется подошвой, от которой вырастает несколько по- бегов. Побеги 4-7 см дл., 1-5 раз дихотомически разветвленные, в основании сливового цвета, светлеющие в верхней части. Ветви 0,6-2 см шир., клиновидные, равномерно и густо покрытые мелкими сосочками, папиллами, 0,6-1,3 мм шир., 0,7-1 мм выс. Край без папилл. Слоевище многоосевое, образовано плотно сомкнутыми разветвленными клеточными нитями, слагающими сердцевину и наружный слой - кору (3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается у Командорских о-вов (3, 4). Вне России: о-ва Алеутские (Уналашка), Шумагина, заливы Кукак, Уяк, Якутат, Ситха, сев. Вашингтон- Пунта Баха (Баха Калифорния); Чили (1-3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Бореально-нотальный пацифический вид. Найден на о. Медном в среднем горизонте литорали на гребне рифа в бух. Корабельной. В 18-м веке был собран П. Палласом на Камчатке.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_mastocarpus_papillatus <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_mastocarpus_papillatus;;
+						concept_mastocarpus_papillatus => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_mastocarpus_papillatus <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_mastocarpus_papillatus <= nrel_inclusion: concept_2_protection_category;;

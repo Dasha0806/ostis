@@ -1,0 +1,137 @@
+concept_polyommatus_eroides => nrel_main_idtf:
+[голубянка эроидес](*<-lang_ru;;*);
+[polyommatus eroides](*<-lang_lat;;*);
+[блакітніца эроiдэс](*<-lang_bel;;*);;
+concept_polyommatus_eroides => nrel_idtf:[блакітніца эроiдэс](*<-lang_bel;;*);;
+
+concept_species -> concept_polyommatus_eroides;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: polyommatus_eroides;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_polyommatus_eroides;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1835 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_polyommatus_eroides <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Европейских дневных бабочек (SPEC 3) и Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Опушки сухих сосняков с молодой порослью сосны. Специфические условия мест обитания не до конца изучены. Вероятно, имеет значение связь гусениц вида в процессе жизнедеятельности с определенными муравьями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:За год дает одно поколение. Бабочки летают в июне. Гусеницы кормятся на астрагалах, выводятся из яиц в середине - конце лета, питаются и уходят на зимовку. После зимовки питаются и окукливаются до выхода очередного поколения бабочек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Не установлены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Любые виды деятельности, изменяющие состав растительности и характер древостоя, особенно лесозаготовки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Консервация мест обитания на значительном протяжении (не менее 300 м) вокруг обнаруженных мест лёта бабочек и кормления гусениц.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Вид распространен от Европы до восточной Азии в лесной и степной зонах, в горах. В Беларуси на юге республики .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка небольшая (30-34 мм в размахе крыльев), однако для сходных видов голубянок это довольно крупный размер. Крылья самцов сверху шелковисто-блестящие, светло-голубые, с очень легким лиловым оттенком. Краевая окантовка верхней стороны крыльев в виде тонкой черной линии почти незаметна. Снизу крылья светло-серые с округлыми мелкими пятнышками черного цвета в белой окантовке. Располагаются изогнутыми рядами. Вдоль внешнего края крыльев располагается двойной ряд пятен - внешние пятна округло-ромбовидные, на переднем крыле бледные. Внутренние пятна полулунные на переднем крыле и клиновидные на заднем, где между пятнами находятся оранжевые участки - так называемые лунки. Крылья самок сверху темно-бурые с рядами рыжих пятен вдоль внешнего края крыла, выраженными в разной степени. В основном проявляются пятна на заднем крыле. Низ крыльев также темнее, чем у самцов с характерным рисунком. В целом такой рисунок низа крыльев характерен для многих голубянок и его трудно отличить от сходных видов - голубянка икар (Polyommatus icarus), голубянка аманда (Polyomma­tus amandus).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_polyommatus_eroides <= nrel_spread: ... 
+	(*
+	-> Brest_district; Gomel_district;;
+	*);;
+
+concept_lycaenidae => nrel_inclusion: concept_polyommatus_eroides;;
+concept_polyommatus_eroides => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; green; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; bronze;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; bronze; blue;;
+*);;
+
+
+concept_polyommatus_eroides <= nrel_inclusion: 
+	30_34_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (30_mm => 34_mm);;
+*);;
+30_mm <- length_of_body; exact_value;;
+30_mm -> .millimeter: 30 (* <- number;;*);;
+34_mm <- length_of_body; exact_value;;
+34_mm -> .millimeter: 34 (* <- number;;*);;			
+
+concept_polyommatus_eroides <= nrel_inclusion: concept_3_protection_category;;

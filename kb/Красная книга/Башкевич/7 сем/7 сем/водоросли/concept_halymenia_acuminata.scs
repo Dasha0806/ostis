@@ -1,0 +1,163 @@
+concept_halymenia_acuminata => nrel_main_idtf:
+[халимения заостренная](*<-lang_ru;;*);
+[halymenia acuminata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_tokidaea_serrata;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_halymenia_acuminata;;
+
+//пояснения
+concept_halymenia_acuminata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 в - редкий вид, имеющий узкую экологическую приуроченность.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, узколанцетовидное, 6-20 см дл., 2-8 мм шир., вильчато разветвленное или неразветвленное на вершине, перисто пролиферирующее по краю, мягкохрящеватое, темно-пурпурное, прикрепляется подошвой. Пролификации (выросты) узколанцетовидные, линейные, от нескольких миллиметров до 10 см дл. и более. Слое- вище многоосевое, состоит многочисленных разветвленных и переплетенных нитей, образующих сердцевину и кору. Звездчатые клетки на границе коры и сердцевины и в сердцевине, обычно прозрачные. Органы размножения рассеяны по пластине. Крестообразно разделенные тетраспорангии 20-45 мкм.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Встречается на материковом побережье Японского моря (зал. Петра Великого - бух. Рудная Пристань) (1). В Сахалинской обл. обитает в Охотском и Японском морях (о. Сахалин, южные Курильские о-ва) (2, 3). Вне России: Японские о-ва (Садо, Хонсю), Филиппины, Индонезия.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Низкобореально-субтропический, пацифический приазиатской вид. Нижний горизонт литорали и верхняя сублитораль, на скалистом и каменистом грунтах в открытых местообитаниях, на глубинах до 2 м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрозненность небольших популяций и попадание в прилов при заготовках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу Сахалинской обл. (3).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_halymenia_acuminata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_halymenia_acuminata;;
+						concept_halymenia_acuminata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_halymenia_acuminata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_halymenia_acuminata <= nrel_inclusion: concept_3_protection_category;;

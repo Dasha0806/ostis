@@ -1,0 +1,156 @@
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm => nrel_main_idtf: [молодило русское](*<- lang_ru;;*); [sempervivum ruthenicum schnittsp. et c.b. lehm.](*<- lang_lat;;*); [скочкi рускiя](*<- lang_bel;;*);;
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm => nrel_idtf: [скочкi рускiя](*<- lang_bel;;*);;
+
+concept_species -> concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm;;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (молодило русское)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу Беларуси включен впервые.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с утолщенным веретеновидным корневищем. Стебель прямостоячий, высотой 20-35 см, бороздчатый, с редким опушением из коротких железистых волосков. Все листья суккулентные, прикорневые собраны в плотные полушаровидные розетки, обратнояйцевидные, расширенные в верхней трети, заостренные, с обеих сторон железисто-волосистые; стеблевые листья очередные, расставленные, продолговато-ланцетные, опушенные. Соцветия рыхлые, щитковидные, чашечка из 10-14 сросшихся при основании чашелистиков, лепестки зеленовато-желтые, в числе 10-14, линейные, снаружи длинно- железистые. Плодики – листовки, многосемянные, продолговато-яйцевидные, с длинным прямым носиком.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Основная часть ареала охватывает юго-восток Средней Европе, Средиземноморье (Балканский полуостров) и преимущественно юго-западные районы Восточной Европы . В сопредельных с республикой регионах встречается в Украине и Брянской области России . Представитель степного флористического комплекса. В Беларуси произрастает в отдельных локалитетах на северной границе ареала. Найден в 1999 г. в окрестностях д. Уласы Хойникского р-на Гомельской обл. . По гербарным данным (сборы 1927 г.) известен также в окрестностях д. Верхние Жары Брагинского р-на Гомельской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Опушки лишайниковых и мшистых сосняков (на сухих хорошо прогреваемых склонах и дюнах). Произрастает на легких песчаных почвах. Светлолюбивое растение, плохо переносит затенение.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июле - августе. Энтомофил. Семена созревают во второй половине августа - сентябре. В естественных популяциях размножается преимущественно вегетативно (за счет боковых розеток, формирующихся на ползучих побегах), реже семенами. Анемохор и, возможно, мирмекохор .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Численность вида в настоящее время в республике крайне мала и вызывает тревогу. Популяция в Хойникском р-не занимает площадь 2х3 м2. Генеративных (цветущих) растений не более 10%. Состояние популяции в Брагинском р-не неизвестно. В культуре вид высокоустойчив. При выращивании в благоприятных условиях на одном месте без пересадки может расти многие десятилетия. В культуре, как и в природе, размножается в основном вегетативно .](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Хозяйственная трансформация земель, чрезмерная пастьба скота, естественное или искусственное облесение территории, выкапывание растений населением.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Khoiniki_district;;->Braginsky_district;;
+		*);;
+*);;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;striated;with_sparse_pubescence;the_glandular_hairs;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thickened;fusiform;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; succulent;hemispherical_sockets;obovate;advanced;pointed;glandular_hairs;another;placed;oblong_lanceolate;pubescent;;
+*);
+...
+(*
+<= nrel_inclusion: flower;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; loose;corymbose;Cup;greenish_yellow_petals;linear;long_glandular;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; leaflet;polyspermous;oblong_ovate;a_long_straight_nose;;
+*);;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm <= nrel_inclusion: 
+[20-35]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([20 см] => [35 см]);; 
+*);;
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm <= nrel_inclusion: 
+[4-10 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([4 см] => [10 см]);; 
+*);;
+
+[20 см] <- length_of_inflorscence; exact_value;;
+[20 см] -> .centimeter: 20 (* <- number;;*);;
+[35 см] <- length_of_inflorscence; exact_value;;
+[35 см] -> .centimeter: 35 (* <- number;;*);;
+[4 см] <- length_of_inflorscence; exact_value;;
+[4 см] -> .centimeter: 4 (* <- number;;*);;
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+ 
+
+concept_sempervivum_ruthenicum_schnittsp_et_cb_lehm <= nrel_inclusion: concept_1_protection_category;;

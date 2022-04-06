@@ -1,0 +1,166 @@
+concept_pedicularis_sylvatica_l => nrel_main_idtf: [мытник лесной](*<- lang_ru;;*); [pedicularis sylvatica l.](*<- lang_lat;;*); [увярэднiк лясны](*<- lang_bel;;*);;
+concept_pedicularis_sylvatica_l => nrel_idtf: [увярэднiк лясны](*<- lang_bel;;*);;
+
+concept_species -> concept_pedicularis_sylvatica_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_pedicularis_sylvatica_l;;
+
+concept_pedicularis_sylvatica_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мытник лесной)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_pedicularis_sylvatica_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pedicularis_sylvatica_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_pedicularis_sylvatica_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу 
+Беларуси 2-го издания (1993). 
+Находится под государственной охраной в Литве и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее или двулетнее травянистое растение с разветвленным у основания прямостоячим или восходящим стеблем высотой до 15 см. Листья простые, продолговато-эллиптические или продолговатые, перисто-, двуперистораздельные или рассеченные, длиной до 2,5 см. Цветки двугубые, розовые, длиной около 2 см, собраны в соцветие кисть. Плод - коробочка.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Средиземноморье, Атлантическая, Средняя и Восточная (крайний запад) Европа, Северная Америка (остров Ньюфаундленд) . Реликтовый, по происхождению атлантическо-европейский вид в Беларуси находится в отдельных локалитетах за восточной границей ареала. Известны достоверные местонахождения в Докшицком р-не Витебской обл. , Мядельском, Вилейском и Минском р-нах Минской обл. , Брестском и Дрогичинском р-нах Брестской обл. . Указания на произрастание вида в Гродненском р-не Гродненской обл. (окрестности г. Гродно)  и Лепельском р-не Витебской обл. (Березинский биосферный заповедник)  ошибочны (неправильное определение видовой принадлежности образцов). По данным литературы приводится также для окрестностей г. Витебск  и Могилевской обл. (без точного указания местонахождения) , однако эти указания сомнительны.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Низкотравные влажные суходольные и низинные внепойменные луговые сообщества (преимущественно экотонные участки по краям низинных болот).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Факультативное полупаразитное растение. Цветет со второй декады мая до конца июня. Энтомофил. Размножается семенами. Семена созревают в июле. Баллист, зоохор (мирмекохор).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно произрастает небольшими группами, изредка в местах произрастания имеет высокую численность (в Вилейском, Докшицком и Мядельском р-нах). В некоторых ранее известных местонахождениях в Докшицком р-не вид исчез.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  нарушение водного режима рек и болот в результате проведения осушительно-мелиоративных работ, окультуривание лугов (распахивание, использование удобрений и гербицидов, выжигание травы), выпас и прогон скота. Природные:  зарастание лесом, чрезмерное задернение и замоховение мест произрастания.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территории Национального парка «Нарочанский». Необходимы предотвращение в местах произрастания негативных антропогенных воздействий (рекомендуется периодическое позднее сенокошение), целенаправленная оптимизация мест обитания (расчистка в зимнее время  от подроста древесно-кустарниковых пород), организация специализированных заказников в местах массового произрастания в Докшицком, Мядельском и Вилейском р-нах, регулярный контроль за состоянием и численностью известных популяций.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_pedicularis_sylvatica_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Dokshitsy_district;;->Myadel_district;;->Vileika_district;;->Minsk_district;;->Brest_district;;->Drogichin_district_district;;
+		*);;
+*);;
+
+concept_pedicularis_sylvatica_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; branched;erect;rising;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; simple;oblong_elliptic;oblong;pinnately;doperestroechnyj;split;;
+*);
+...
+(*
+<= nrel_inclusion: flower; bilabiate;pink;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; box;;
+*);;
+
+concept_pedicularis_sylvatica_l <= nrel_inclusion: 
+[7-15 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([7 см] => [15 см]);; 
+*); 
+[1.5-2.3 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1.5 см] => [2.3 см]);; 
+*);;
+
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[1.5 см] <- length_of_inflorscence; exact_value;;
+[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+[2.3 см] <- length_of_inflorscence; exact_value;;
+[2.3 см] -> .centimeter: 2.3 (* <- number;;*);;
+ 
+
+concept_pedicularis_sylvatica_l <= nrel_inclusion: concept_2_protection_category;;

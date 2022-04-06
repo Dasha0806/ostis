@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_fungos_parasite;;
+concept_fungos_parasite => nrel_main_idtf:
+[грибы паразиты](*<-lang_ru;;*);
+[fungos_parasite](*<-lang_en;;*);;
+
+concept_fungos_parasite <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Грибы-паразиты)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [это организмы,которые поселяются на живых растениях и питаются органическими веществами клеток растения-хозяина, сильно угнетая  его](* <- lang_ru;;*);;
+*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_organism;;
+    ->concept_organic;;
+    ->concept_plant;;
+*);;
+*);;
+

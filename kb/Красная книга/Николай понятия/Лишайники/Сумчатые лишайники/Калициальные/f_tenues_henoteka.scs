@@ -1,0 +1,130 @@
+concept_tenues_henoteka => nrel_main_idtf:
+[хенотека тонкая](*<-lang_ru;;*);
+[tenues henoteka](*<-lang_lat;;*);
+[хенатэка тонкая](*<-lang_bel;;*);;
+concept_tenues_henoteka => nrel_idtf:[хенатэка тонкая](*<-lang_bel;;*);;
+
+plants -> concept_tenues_henoteka;;
+concept_species -> concept_tenues_henoteka;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_tenues_henoteka;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_tenues_henoteka;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_tenues_henoteka <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет во влажных широколиственных и хвойно-широколиственных лесах на стволах и корневых лапах дубов, на коре сосны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается аскоспорами и вегетативно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается отдельными особями на небольших площадях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Уменьшение площадей старовозрастных лесов и нарушение экологического режима в местах произрастаний.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в Национальном парке "Беловежская пуща". Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания. Для этого требуется: запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия (Япония), Северная Америка (США, Канада), Австралия . В Беларуси известно только одно местонахождение в Каменецком р-не Брестской обл. . Ранее указывалось местонахождение в Слонимском р-не Гродненской обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище лепрозное, в виде зернистой пыли, серовато-зеленое. Апотеции на длинных (2-5 мм), тонких (толщина 0,1 мм), изогнутых и искривленных, голых, черноватых или сероватых, местами темно-коричневых ножках. Головки апотециев шаровидные, от сероватых до светло-коричневых, диаметром 0,5-1 мм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_tenues_henoteka <= nrel_spread: ... 
+	(*
+	-> Grodno_district; Brest_district;;
+	*);;
+
+concept_kalitsievye => nrel_inclusion: concept_tenues_henoteka;;
+concept_cladonia_turfy => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; green; grey; granular;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_apothecia; black; grey;;
+	*);;
+
+concept_tenues_henoteka <= nrel_inclusion: 
+	2_5_mm
+	(*
+	<- interval_value;;
+	<- length_of_apothecia;;
+	=> nrel_measurement: (2_mm => 5_mm);;	
+	*);;
+	2_mm <- length_of_apothecia; exact_value;;
+	2_mm -> .milimeter: 2 (* <- number;;*);;
+	5_mm <- length_of_apothecia; exact_value;;
+	5_mm -> .milimeter: 5 (* <- number;;*);;			
+
+concept_tenues_henoteka <= nrel_inclusion: concept_2_protection_category;;
+

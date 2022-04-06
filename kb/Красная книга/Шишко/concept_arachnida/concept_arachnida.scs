@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_arachnida;;
+concept_arachnida => nrel_main_idtf:
+[паукообразные](*<-lang_ru;;*);
+[arachnida](*<-lang_en;;*);;
+
+//
+concept_arachnida <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(паукообразные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[ Класс членистоногих из подтипа хелицеровых.Наиболее известные представители: пауки, скорпионы, клещи.](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_askomikota;;
+	*);;	
+*);;
+
+//
+concept_arachnida => nrel_inclusion: concept_arthropoda;;
+concept_ascomycetes => nrel_inclusion: concept_pezizales;;

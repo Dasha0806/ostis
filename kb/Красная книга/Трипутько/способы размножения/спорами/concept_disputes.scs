@@ -1,0 +1,66 @@
+concept_disputes
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[споры]
+	(*<-lang_ru;;*);
+	[disputes]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[споры]
+	(*<-lang_ru;;*);
+	[disputes]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (размножение спорами) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[размножение спорами -  это вид бесполого размножения.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о размножение спорами) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Похожим образом споры участвуют в процессе полового размножения у голосеменных и покрытосеменных, или цветковых, растений.
+. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_disputes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Совокупность оболочек споры — спородерма. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ У большинства растений поры достигают в диаметре 30-40 мкм и имеют сферическую форму. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_disputes <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (споры)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_disputes.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;

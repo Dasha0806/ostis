@@ -1,0 +1,138 @@
+concept_conocephalus_discolor=> nrel_main_idtf:
+[обыкновенный мечник](*<-lang_ru;;*);
+[conocephalus discolor](*<-lang_lat;;*);;
+
+concept_species -> concept_conocephalus_discolor;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_conocephalus_discolor;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_conocephalus_discolor;;
+	-> rrel_number_of_year: 1815 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_conocephalus_discolor <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Болота, заболоченные участки и пойменные луга.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Имаго появляется в конце июня и живет до октября. Гнездится колониями у воды в зарослях осоки и камышей. Изредка на пустошах можно встретить случайно залетевших особей. Мелкие беловатые яйца самка откладывает по одному в листья осоки. Иногда самка вначале делает отверстие в листе, а затем погружает яйце­клад в его пазуху. Стрекотание слышно на расстоянии до 3 км. Песня состоит из одинаковых серий звуков (цли, цли, цли…) с частотой 10 сигналов в секунду и может продолжаться без перерыва в течение длительного времени. Питается растительной пищей и мелкими насекомыми. Поедая тлю и гусениц чешуекрылых, оказывается весьма полезным для человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Наиболее высокая численность отмечена на территории Национального парка «Припятский» на заболоченных участках. В пойме р. Березина на территории Березинского биосферного заповедника найдены единичные экземпляры.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Усиление хоз. деятельности, сопровождающееся уменьшением естественных болотных и пойменных биогеоценозов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Сохранение заповедных пойменных лугов и болот.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Транспалеарктический, суббореальный и степной вид. Встречается в Центр. и Сев. Европе. В Беларуси распространен локально в бассейне р. Припять и Березина на территории Национального парка «Припятский» близ поселка Хвоенск и территории Березинского биосферного заповедника .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Сравнительно крупное (11-24 мм), стройное, с очень длинными усиками, бледно-зеленое, по краям с коричневатым отливом насекомое. Вдоль спины проходят бледные полосы. Голова конусовидная. Усики иногда длиннее тела почти в 3 раза. Надкрылья длиннее брюшка. Крылья длиннее надкрылий. Яйцеклад самки (9-19 мм) почти прямой, примерно такой же длины, как задние бедра. Церки самца на вершине не загнуты вверх. Задние бедра снизу обычно с шипиками. Личинки могут быть остроголовыми и с черными полосами на спине.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_conocephalus_discolor <= nrel_spread: ... 
+	(*
+	-> Pripyat_river; Berezina_river; Hvoensk_district; Pripyatskiu_national_park;;
+	*);;
+
+concept_tettigoniidae => nrel_inclusion: concept_conocephalus_discolor;;
+concept_conocephalus_discolor => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; conical; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; pale; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_legs; spiked; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_antennae; long; green;;
+	*);;
+
+concept_conocephalus_discolor <= nrel_inclusion: 
+	11_24_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (11_mm => 24_mm);;	
+	*);;
+	11_mm <- length_of_body; exact_value;;
+	11_mm -> .millimeter: 11 (* <- number;;*);;
+	24_mm <- length_of_body; exact_value;;
+	24_mm -> .millimeter: 24 (* <- number;;*);;	
+
+concept_conocephalus_discolor <= nrel_inclusion: concept_4_protection_category;;

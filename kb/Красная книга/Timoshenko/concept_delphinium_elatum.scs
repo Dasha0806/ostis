@@ -1,0 +1,157 @@
+concept_delphinium_elatum => nrel_main_idtf:
+[живокость белая](*<-lang_ru;;*);
+[anemone sylvestris](*<-lang_lat;;*);
+[рагулькi высокiя](*<-lang_bel;;*);;
+
+concept_species -> concept_delphinium_elatum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_delphinium_elatum;;
+
+//пояснения
+concept_delphinium_elatum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 1-го и 2-го изданий (1981, 1993). Охраняется в Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее растение с коротким разветвленным корневищем и голым или слегка покрытым короткими волосками, чаще неветвистым стеблем высотой 150-200 см. Листья крупные, лопастно-рассеченные, длиной до 10 см и шириной 15-16 см. Цветки сине-фиолетовые, крупные (диаметром 2-3 см), собраны в негустую длинную кисть. Верхняя доля околоцветника с длинным шпорцем. Плод - голая трех-, пяти- (реже одно-, дву-) листовка длиной 1,5 см, с носиком .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Восточная Европа, Западная и Восточная Сибирь, Средняя (горы) и Центральная (север) Азия . Реликтовый, по происхождению бореальный сибирско-таежный вид, находящийся в Беларуси в изолированных локалитетах на юго-западной границе ареала . Найден в северо-восточной части республики: в Бешенковичском, Витебском, Городокском, Лиозненском, Шумилинском р-нах Витебской обл. . Ранее отмечался для Оршанского р-на и окрестностей Витебска .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Кустарники и редколесье по береговым склонам и террасам в долинах рек и ручьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июле - августе. Зацветает на второй год. Энтомофил. Размножение семенное. Баллист-анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Обычно растет одиночными экземплярами и небольшими группами на общей малой площади. В культуре в погодно-климатических условиях Витебска регулярно плодоносит, морозоустойчив .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Антропогенные: хозяйственная трансформация земель в речных поймах, чрезмерные рекреационные нагрузки (сбор цветущих растений и вытаптывание).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Произрастает в ботаническом заказнике “Витебский”. Выращивается в Центральном ботаническом саду НАН Беларуси, ботанических садах БГУ и Витебского университета . Издавна культивируется населением Беларуси. Необходимы периодический контроль состояния известных популяций и поиск новых, организация ботанических заказников во всех местах произрастания, запрещение или ограничение в местах роста негативных антропогенных воздействий; рекомендуется более широкое введение живокости высокой в культуру в качестве декоративного растения.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_delphinium_elatum <= nrel_spread: ... 
+	(*
+	-> Beshenkovichsky_district; Vitebsky_district; Gorodoksky_district; Lioznensky_district; Shumilinsky_district;; 
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_delphinium_elatum;;
+						concept_delphinium_elatum => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; hairy; naked;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; short; branched ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; large; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; large; blue; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; leaflet;;
+							*);;
+
+concept_delphinium_elatum <= nrel_inclusion: 
+	0_10_cm
+	(*
+	<- interval_value;;
+	<- length_of_flower (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 10_cm);;
+	*);;
+concept_delphinium_elatum <= nrel_inclusion: 
+	15_16_cm
+	(*
+	<- interval_value;;
+	<- width_of_flower (*<-parameter;;*);;
+	=> nrel_measurement: (15_cm => 16_cm);;
+	*);;
+concept_delphinium_elatum <= nrel_inclusion: 
+
+	150_200_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (150_cm => 200_cm);;
+	*);;
+
+	0_cm <- length_of_flower; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	10_cm <- length_of_flower; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	16_cm <- width_of_flower; exact_value;;
+	16_cm -> nrel_cm: 16 (* <- number;;*);;
+	15_cm <- width_of_flower; exact_value;;
+	15_cm -> nrel_cm: 15 (* <- number;;*);;
+	150_cm <- length_of_stem; exact_value;;
+	150_cm -> nrel_cm: 150 (* <- number;;*);;
+	200_cm <- length_of_stem; exact_value;;
+	200_cm -> nrel_cm: 200 (* <- number;;*);;					
+
+concept_delphinium_elatum <= nrel_inclusion: concept_3_protection_category;;

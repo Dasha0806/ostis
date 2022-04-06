@@ -1,0 +1,55 @@
+concept_oxytropis_nitens_turcz => nrel_main_idtf:
+[Остролодочник блестящий](*<-lang_ru;;*);
+[Oxytropis nitens Turcz.](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_nitens_turcz;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_nitens_turcz;;
+
+Red_list_ru -> concept_oxytropis_nitens_turcz;;
+
+//пояснения
+concept_oxytropis_nitens_turcz <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: ид встречается одиночными куртинками, сплошных зарослей не образует. Численность популяций невелика (до 500 экз.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Бурятия (2002). Произрастает в пределах Тункинского национального парка.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: На территории России встречается только в Тункинском р-не Республики Бурятия.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Низкий стержнекорневой бесстебельный травянистый шелковистобеловолосистый многолетник с кистями розовых цветков (при сушке синеющих). Размножение только семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,32 @@
+concept_dissemination_method => nrel_main_idtf:
+[способ диссеминации](*<-lang_ru;;*);
+[dissemination method](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_dissemination_method <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Способ диссеминации - способ распространения семян растения в зависимости от агента и типа адаптации самого растения.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_plantae_vasculares -> rrel_not_maximum_studied_object_class: concept_dissemination_method;;
+                                                                                      
+concept_zoochory=> nrel_main_idtf: [зоохория](*<- lang_ru;;*); [zoochory](*<- lang_lat;;*);;
+concept_ballistochoria=> nrel_main_idtf: [баллистохория](*<- lang_ru;;*); [ballistochoria](*<- lang_lat;;*);;
+concept_hydrochory=> nrel_main_idtf: [гидрохория](*<- lang_ru;;*); [hydrochory](*<- lang_lat;;*);;
+concept_anthropochoria=> nrel_main_idtf: [антропохория](*<- lang_ru;;*); [anthropochoria](*<- lang_lat;;*);;
+concept_anemochoria=> nrel_main_idtf: [анемохория](*<- lang_ru;;*); [anemochoria](*<- lang_lat;;*);;
+concept_autochoria=> nrel_main_idtf: [автохория](*<- lang_ru;;*); [autochoria](*<- lang_lat;;*);;
+
+concept_dissemination_method => nrel_inclusion: concept_zoochory;
+			concept_ballistochoria;
+			concept_hydrochory;
+			concept_anthropochoria;
+			concept_anemochoria;
+			concept_autochoria;;

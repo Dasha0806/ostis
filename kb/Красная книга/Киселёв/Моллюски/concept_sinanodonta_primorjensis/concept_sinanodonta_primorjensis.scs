@@ -1,0 +1,151 @@
+concept_sinanodonta_primorjensis => nrel_main_idtf: [приморская синанодонта](*<- lang_ru;;*); [sinanodonta primorjensis](*<- lang_lat;;*);;
+
+concept_sinanodonta_primorjensis  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (приморская синанодонта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_sinanodonta_primorjensis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_sinanodonta_primorjensis <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_sinanodonta_primorjensis ;;
+concept_species -> concept_sinanodonta_primorjensis ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_sinanodonta_primorjensis ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_sinanodonta_primorjensis ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1988 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_sinanodonta_primorjensis  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина крупная, неправильно-овальная, уплощенная, умеренно толстостенная. Ее максимальная длина может достигать 20 см. Спинной край слегка выгнутый, заметно наклонен вперед. Задняя часть спинного края приподнята в виде невысокого крыла. Задний край в средней части угловатый. Брюшной край выгнутый. Лигамент у молодых особей обычно закрыт краями створки. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна по единичным находкам из басс. нижнего течения р. Раздольной и из стариц р. Гладкая (юг Приморского края).  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают в стоячих и слабо проточных водоемах на илистом грунте. Глохидии неизвестны. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Обычно встречаются единичные экземпляры. В оз. Солдатское плотность этой синандонты была 3-4 экз./1 км русла. В настоящее время из-за загрязнения среды популяция исчезла. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Загрязнение и обмеление водоёмов.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Охраняется в Уссурийском заповеднике.  ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_sinanodonta_primorjensis  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_sinanodonta_primorjensis  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; yellow; green;;
+	*);;
+//размеры и вес
+concept_sinanodonta_primorjensis  <= nrel_inclusion: 
+	[15-20 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([15 см] => [20 см]);;	
+	*);
+	[0,100-0,120 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,100 кг] => [0,120 кг]);;	
+	*);;
+	[15 см] <- length_of_body; exact_value;;
+	[15 см] -> .centimeter: 15 (* <- number;;*);;
+	[20 см] <- length_of_body; exact_value;;
+	[20 см] -> .centimeter: 20 (* <- number;;*);;
+	[0,100 кг] <- weight; exact_value;;
+	[0,100 кг] -> .kilogram: 0.100 (* <- number;;*);;
+	[0,120 кг] <- weight; exact_value;;
+	[0,120 кг] -> .kilogram: 0.120 (* <- number;;*);;
+//категория охраны и количество
+concept_sinanodonta_primorjensis  <= nrel_inclusion: concept_2_protection_category;;
+concept_sinanodonta_primorjensis  <= nrel_strength: [600 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 600 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

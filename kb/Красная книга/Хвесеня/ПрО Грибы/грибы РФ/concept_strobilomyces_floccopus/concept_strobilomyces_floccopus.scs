@@ -1,0 +1,151 @@
+concept_strobilomyces_floccopus=> nrel_main_idtf: [шишкогриб хлопьеножковый](*<- lang_ru;;*); [strobilomyces floccopus](*<- lang_lat;;*);;
+
+concept_strobilomyces_floccopus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (шишкогриб хлопьеножковый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_strobilomyces_floccopus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_strobilomyces_floccopus;;
+concept_species -> concept_strobilomyces_floccopus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_strobilomyces_floccopus;;
+
+//пояснения
+concept_strobilomyces_floccopus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Гриб со среднего размера трубчатыми плодовыми телами, развивающимися на почве. Шляпка 3,5- 10(15) см в диам., выпуклая, затем плоская, на бледном, серовато-буроватом фоне с оттопыренными крупными, коричнево- или черно-бурыми чешуйками. Гименофор беловато-сероватый, серовато-розоватый, от надавливания и с возрастом становится почти черным. Ножка 8-12(15) х 1-2(3) см, в основании слегка утолщенная, волокнистая, отрубисто-чешуйчатая, темно-серая, черно-коричневая, с рыхлым, волокнистым сероватым покрывалом - исчезающим или остающимся в виде хлопьев по краю шляпки. Мякоть беловато-сероватая, на разрезе сначала краснеет, затем чернеет. Споры 9-12(15) х 7- 10,5(12) мкм, округлые, широкоэллипсоидальные, сетчатые (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Республика Адыгея (2, 3); Краснодарский (4) и Ставропольский края (5, LE); Республики Кабардино-Балкария (6) и Северная Осетия-Алания (7); Калининградская (8) и Московская обл. (9); Еврейская АО (10); Приморский край (1, 11-13); Сахалинская обл. (14). Общее распространение: вне России распространен в Европе, Азии, Африке и Сев. Америке (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Микоризный симбионт дуба и бука. Спорадически встречается в широколиственных и смешанных лесах с участием этих древесных пород. Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка кавказских и дальневосточных лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красные книги Республик Адыгея (16), Кабардино-Балкария (7), Северная Осе- тия-Алания (7), Краснодарского (4), Приморского (16) и Ставропольского (17) краев и Сахалинской обл. (14). Охраняется в ряде заповедников России: Кавказском (2, 3, 15), «Бастак» (10), Уссурийском (11, 18), Лазовском (13), «Кедровая Падь» (12).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим контроль за состоянием популяций и поиск новых местонахождений вида.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Поскольку вид является микоризным, культивирование затруднено. Штамм, выделенный в заповеднике «Кедровая Падь» (0852), поддерживается в Коллекции культур ЛЕ(БИН).](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_strobilomyces_floccopus <= nrel_spread: ... 
+	(*
+	-> Krasnodarskiy_kray; Stavropolskiy_kray; Severnaja_Osetija; Kaliningradskaja_oblast; Moskovskaja_oblast; Primorskiy_kray; Sahalinskaja_oblast;;
+	*);;
+
+concept_shishkogribovyye => nrel_inclusion: concept_strobilomyces_floccopus;;
+concept_strobilomyces_floccopus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; convex; flat; pink;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; grey;;
+	*);;
+
+concept_strobilomyces_floccopus <= nrel_inclusion: 
+	[3.5-15 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([3.5 см] => [15 см]);;	
+	*);
+	[1-3 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1 см] => [3 см]);;	
+	*);;
+
+	[3.5 см] <- cap_diameter; exact_value;;
+	[3.5 см] -> .centimeter: 3.5 (* <- number;;*);;
+	[15 см] <- cap_diameter; exact_value;;
+	[15 см] -> .centimeter: 15(* <- number;;*);;
+	[1 см] <- lenght_of_leg; exact_value;;
+	[1 см] -> .centimeter: 1 (* <- number;;*);;
+	[3 см] <- lenght_of_leg; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	
+concept_strobilomyces_floccopus <= nrel_inclusion: concept_3_protection_category;;

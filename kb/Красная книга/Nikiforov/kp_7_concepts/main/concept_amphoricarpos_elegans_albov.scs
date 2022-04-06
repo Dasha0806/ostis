@@ -1,0 +1,45 @@
+concept_amphoricarpos_elegans_albov => nrel_main_idtf:
+[Амфорикарпос изящный](*<-lang_ru;;*);
+[Amphoricarpos elegans Albov](*<-lang_lat;;*);;
+
+concept_species -> concept_amphoricarpos_elegans_albov;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_amphoricarpos_elegans_albov;;
+
+Red_list_ru -> concept_amphoricarpos_elegans_albov;;
+
+//пояснения
+concept_amphoricarpos_elegans_albov <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984), РСФСР (1988). Включен в Красную книгу Краснодарского края (1994). Рекомендован к охране на территории Большого Сочи (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Для России указывался только для юга Краснодарского края в Адлерском р-не. Вне России - в Грузии (Абхазии).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение до 40 см выс. Цветет в июле-августе. Плодоносит в августе-сентябре. Размножение семенное. Всхожесть семян низкая.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_0_protection_category;;

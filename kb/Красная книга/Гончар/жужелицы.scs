@@ -1,0 +1,36 @@
+concept_carabidae=> nrel_main_idtf:
+[жужелицы](*<-lang_ru;;*);
+[carabidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_carabidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(жужелицы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Жужелицы - одно из самых больших и многочисленных семейств жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_carabidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Окрас жужелиц весьма разнообразен, в основном в тёмных тонах, часто с металлическим оттенком. Размеры от очень маленьких, едва превышающих 1 мм, до очень крупных, почти 10 см.](* <- lang_ru;;*);;
+		*);;
+*);;

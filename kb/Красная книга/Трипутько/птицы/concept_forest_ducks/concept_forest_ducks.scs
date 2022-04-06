@@ -1,0 +1,108 @@
+
+concept_forest_ducks
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[лесные утки]
+	(*<-lang_ru;;*);
+	[forest ducks]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[лесные утки]
+	(*<-lang_ru;;*);
+	[forest ducks]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (лесные утки) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[лесные утки — род водоплавающих птиц из семейства утиных. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о лесных утках) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  В прошлом численность лесных уток сильно сократилась вследствие уменьшения площади лесов и урбанизации.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_anatidae -> concept_forest_ducks;;
+concept_genus -> concept_forest_ducks;;
+concept_forest_ducks => nrel_inclusion: concept_aix_galericulata_linnaeus;;
+
+
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_forest_ducks;;
+
+
+
+//Рисунок
+concept_forest_ducks <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род лесные утки)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_forest_ducks.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_forest_ducks <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Корм добывают на воде и на суше, питаются небольшими прибрежными животными  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Другие отличительные признаки — относительно длинные ноги, расположенные ближе к переду, прямая походка и короткий клюв.   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_forest_ducks <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//питание
+concept_forest_ducks <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_insecta;;
+		*);;
+	*);;
+
+//описание длин
+concept_forest_ducks <= nrel_inclusion: 
+    [0-3.6 кг]
+    (*
+        <- interval_value;;
+        <- weight;;
+        => nrel_measurement: ([0 кг] => [3.6 кг]);;
+    *);;
+    [0 кг] <- length_of_life; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[3.6 кг] <- length_of_life; exact_value;;
+	[3.6 кг] -> .kilogram: 3.6 (* <- number;;*);;

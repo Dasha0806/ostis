@@ -1,0 +1,75 @@
+Chervenski_area<-concept_area;;
+Chervenski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Chervenski_area=>nrel_administrative_center_of_the_area:Cherven;;
+Cherven<-concept_city;;
+
+//самая высокая точка
+Chervenski_area=>nrel_highest_point:210_m;;
+210_m<-concept_number;;
+
+//площадь района
+Chervenski_area=>nrel_area_of_the_district:1630_km;;
+1630_km<-concept_number;;
+
+//население района
+Chervenski_area=>nrel_population_of_region:31870_m;;
+31870_m<-concept_number;;
+
+//используемые константы
+Chervenski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+=> nrel_main_idtf: [Опр.(Червенский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Червенский район — административная единица на востоке Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+//утверждения
+Chervenski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Смиловичский дворцово-парковый комплекс Монюшко XIX — начала XX вв.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Chervenski_area;;
+Chervenski_area => nrel_main_idtf:
+[Червенский район](* <-lang_ru;; *);
+[Chervenski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Cherven;;
+Cherven=> nrel_main_idtf:
+[Червень](* <-lang_ru;; *);
+[Cherven](* <- lang_en;; *);;
+
+sc_node_not_relation ->210_m;;
+210_m=> nrel_main_idtf:
+[210 м](* <-lang_ru;; *);
+[210 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1630_km;;
+1630_km=> nrel_main_idtf:
+[1630 км^2](* <-lang_ru;; *);
+[1630 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->31870_m;;
+31870_m=> nrel_main_idtf:
+[31870 человек](* <-lang_ru;; *);
+[31870 m](* <- lang_en;; *);;

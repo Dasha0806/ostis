@@ -1,0 +1,25 @@
+ui_menu_file_for_finding_species_by_region<-ui_user_command_class_atom;
+ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_species_by_region => nrel_main_idtf:
+[Поиск вида по заданной территории]
+(*<-lang_ru;;*);;
+
+ui_menu_file_for_finding_species_by_region => nrel_main_idtf:
+[Search species by territory]
+(*<-lang_en;;*);;
+
+ui_menu_file_for_finding_species_by_region =>ui_nrel_command_template:
+	[*
+	action_for_finding_species_by_region _-> ._action_for_finding_species_by_region_instance
+		(*
+			_-> ui_arg_1;;
+			*);;
+
+
+		._action_for_finding_species_by_region_instance _<- question;;
+
+	*];;
+
+ui_menu_file_for_finding_species_by_region => ui_nrel_command_lang_template: [Найти вид по территории $ui_arg_1](*<-lang_ru;; *);;
+ui_menu_file_for_finding_species_by_region => ui_nrel_command_lang_template: [Find species by region $ui_arg_1](*<-lang_en;; *);;

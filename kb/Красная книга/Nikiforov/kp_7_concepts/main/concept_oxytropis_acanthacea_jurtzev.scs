@@ -1,0 +1,55 @@
+concept_oxytropis_acanthacea_jurtzev => nrel_main_idtf:
+[Остролодочник колючий](*<-lang_ru;;*);
+[Oxytropis acanthacea Jurtzev](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_acanthacea_jurtzev;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_acanthacea_jurtzev;;
+
+Red_list_ru -> concept_oxytropis_acanthacea_jurtzev;;
+
+//пояснения
+concept_oxytropis_acanthacea_jurtzev <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известен из немногих местонахождений. Встречается спорадически в небольшом числе экземпляров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республик Алтай (1996) и Тыва (1999).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России вид встречается в Республике Тыва — хр. Цаган-Шибету на Тувинском нагорье и в Республике Алтай. Основной ареал вида находится в северо-западной Монголии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Колючее подушковидное растение. Черешки и оси листьев одревесневшие и колючие до 8 см длины. Междоузлия надземных побегов укороченные. Размножается семенами. Цветет в июле-августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

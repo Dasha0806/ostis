@@ -1,0 +1,149 @@
+concept_hypericum_tetrapterum_fries => nrel_main_idtf:
+[зверобой четырёхкрылый](*<-lang_ru;;*);
+[hypericum tetrapterum fries](*<-lang_lat;;*);
+[святаннiк чатырохкрылы](*<-lang_bel;;*);;
+
+concept_species -> concept_hypericum_tetrapterum_fries;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hypericum_tetrapterum_fries;;
+
+//пояснения
+concept_hypericum_tetrapterum_fries <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Во 2-м издании Красной книги Беларуси включен в Список растений, по-видимому, исчезнувших с территории республики.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение высотой до 80 см. Стебель прямостоячий, 4-гранный, с отчетливо крылатыми ребрами. Листья супротивные, сидячие, цельные, эллиптические, длиной до 2,5 см. Чашелистики ланцетные, острые. Цветки желтые, собраны в соцветие щитковидная метелка. Плод – коробочка. От морфологически сходного зверобоя пятнистого отличается крылатыми ребрами стебля и острыми чашелистиками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Скандинавия (юг), Атлантическая, Средняя и Восточная (запад) Европа, Средиземноморье, Кавказ, Малая Азия, Иран . В Беларуси находится в отдельных локалитетах за северо-восточной границей ареала. Единственное достоверное местонахождение выявлено в 2000 г. в Кобринском р-не (окрестности д. Доброе) Брестской обл. . По данным литературы ранее указывался для окрестностей городов Гродно, Минск, Свислочь .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Произрастает на внепойменном влажном осоково-разнотравном закустаренном лугу, расположенном среди крупного массива низинного болота; растет на карбонатных почвах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июле - августе. Энтомофил. Семена созревают в августе - сентябре. Баллист. Размножение семенное и вегетативное.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В достоверно известном местонахождении численность вида невелика, занимает площадь около 300 м2](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Численность вида может сократиться вследствие антропогенной трансформации земель и изменения существующего гидрологического режима при проведении осушительно-мелиоративных работ, распашке, улучшении культуртехнического состояния лугов, весенних и осенних палов травы, а также чрезмерной пастьбе и сенокошении.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется на территории биологического заказника “Званец” (Дрогичинский р-н). Культивировался в Центральном ботаническом саду НАН Беларуси . Необходимо строго соблюдать режим охраны в известном местонахождении, осуществлять регулярное наблюдение за состоянием и численностью популяции, предпринимать целенаправленный поиск в подходящих местах обитания в окрестностях пунктов, указанных по данным литературы.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hypericum_tetrapterum_fries <= nrel_spread: ... 
+	(*
+	-> Kobrinsky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_hypericum_tetrapterum_fries;;
+						concept_hypericum_tetrapterum_fries => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; straight;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; opposite; elliptical;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: sepal; pointy;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; yellow;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box;;
+							*);;
+
+concept_hypericum_tetrapterum_fries <= nrel_inclusion: 
+	0_80_cm
+	(*
+	<- interval_value;;
+	<- heigth_of_plant (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 80_cm);;
+	*);;
+concept_hypericum_tetrapterum_fries <= nrel_inclusion: 
+	0_3_cm
+	(*
+	<- interval_value;;
+	<- length_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 3_cm);;
+	*);;
+
+	0_cm <- heigth_of_plant; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	80_cm <- heigth_of_plant; exact_value;;
+	80_cm -> nrel_cm: 80 (* <- number;;*);;
+	0_cm <- length_of_leaf; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	3_cm <- length_of_leaf; exact_value;;
+	3_cm -> nrel_cm: 3 (* <- number;;*);;					
+
+concept_hypericum_tetrapterum_fries <= nrel_inclusion: concept_1_protection_category;;

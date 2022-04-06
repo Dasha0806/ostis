@@ -1,0 +1,139 @@
+concept_cladonia_macrophylla => nrel_main_idtf:
+[кладония крупнолистная](*<-lang_ru;;*);
+[cladonia macrophylla](*<-lang_lat;;*);
+[кладонiя крупналiстная](*<-lang_bel;;*);;
+concept_cladonia_macrophylla => nrel_idtf:[кладонiя крупналiстная](*<-lang_bel;;*);;
+plants -> concept_cladonia_macrophylla;;
+concept_species -> concept_cladonia_macrophylla;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_cladonia_macrophylla;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cladonia_macrophylla;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cladonia_macrophylla <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется на территории Польши.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет в лесах (преимущественно сосняках) в затененных и увлажненных местах на почве среди мхов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается спорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность невелика. Нуждается в дополнительном изучении.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительно-мелиоративные работы, чрезмерные рекреационные нагрузки на живой напочвенный покров, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка "Нарочанский". Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида, для чего необходимо ограничение воздействия на живой напочвенный покров, запрет любой лесохозяйственной деятельности.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Северная и Восточная Азия, Северная Америка, Грен-ландия . На территории Беларуси найден в Минской обл. (Мядельский р-н, окрестности оз. Белое) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Горизонтальный таллом состоит из щитовидных чешуек диаметром 3-10 мм, округлых, толстых, сероватых или оливково-зеленых, снизу белых, у основания несколько коричневатых. Подеции высотой 1-5 (6) см и диаметром 2-5 мм, пепельно-серые или коричневато-серые, цилиндрические, на концах шиловидные или тупые, простые или слегка разветвленные на 2-4 ветви, с бороздчато-щелистыми стенками, разорванным и рассеянным в виде бугорков коровым слоем, в верхней части с зернышками, напоминающими соредии, со щитовидными филлокладиями. Апотеции коричневые, на концах подециев, встречаются часто .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cladonia_macrophylla <= nrel_spread: ... 
+	(*
+	-> Minsk_district;;
+	*);;
+
+concept_cladoniaceae => nrel_inclusion: concept_cladonia_macrophylla;;
+concept_cladonia_macrophylla => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_scales; fat; rounded; white; grey; green; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_podecia; brown; grey;;
+	*);;
+
+concept_cladonia_macrophylla <= nrel_inclusion: 
+	3_10_mm
+	(*
+	<- interval_value;;
+	<- length_of_scales;;
+	=> nrel_measurement: (3_mm => 10_mm);;	
+	*);
+	1_5_cm
+	(*
+	<- interval_value;;
+	<- length_of_podecia;;
+	=> nrel_measurement: (1_cm => 5_cm);;	
+	*);;
+	3_mm <- length_of_scales; exact_value;;
+	3_mm -> .milimeter: 3 (* <- number;;*);;
+	10_mm <- length_of_scales; exact_value;;
+	10_mm -> .milimeter: 10 (* <- number;;*);;
+	1_cm <- length_of_podecia; exact_value;;
+	1_cm -> .centimeter: 1 (* <- number;;*);;
+	5_cm <- length_of_podecia; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;				
+
+concept_cladonia_macrophylla <= nrel_inclusion: concept_1_protection_category;;
+

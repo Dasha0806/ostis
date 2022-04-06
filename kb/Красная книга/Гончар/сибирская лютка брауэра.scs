@@ -1,0 +1,138 @@
+concept_sympecna_annulata_braueri=> nrel_main_idtf:
+[сибирская лютка брауэра](*<-lang_ru;;*);
+[sympecna annulata braueri](*<-lang_lat;;*);;
+
+concept_species -> concept_sympecna_annulata_braueri;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_sympecna_annulata_braueri;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_sympecna_annulata_braueri;;
+	-> rrel_number_of_year: 1877 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_sympecna_annulata_braueri <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе ( Приложение II Бернской конвенции).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается по берегам слабопроточных или стоячих водоемов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Летает в конце апреля-мае и в августе-сентябре. Зимуют имаго и яйца. Самка откладывает яйца в подводные части растений, хорошо прогреваемые солн­цем, в сопровождении самца, держащего ее за передне­спинку и придерживающегося субстрата. Личинки развиваются в слабопроточных или стоячих водоемах. Цикл развития длится меньше года. Полезные насекомые. Взрослые питаются двукрылыми, личинки - мелкими ракообразными и личинками водных насекомых. Личинки - хороший корм для рыб и птиц. Развитие с неполным превращением.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок, известны единичные находки. Данных по изменению численности нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Выявление мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Транспалеарктический вид. Единичные находки на территории Беларуси ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело небольшое с прозрачными крыльями. Брюшко тонкое, бронзово-зеленое с металлическим оттенком, состоит из 11 сегментов, его длина 27-29 мм. Сверху грудь буро-зеленая, слабо блестящая. Голова относительно большая, подвижная. Усики короткие, щетинковидные. Ротовые органы грызущие. Передние и задние крылья одинаковые по форме и размерам (размах 19-21 мм). Личинки имеют зачаточные крылья и 3 листообразные жабры. Нижний край доплечевой полосы в задней половине с более или менее прямоугольным выступом.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_sympecna_annulata_braueri <= nrel_spread: ... 
+	(*
+	-> Lida_district; Jitkovichi_district;;
+	*);;
+
+concept_lestidae => nrel_inclusion: concept_sympecna_annulata_braueri;;
+concept_sympecna_annulata_braueri => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; bronze; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; brown;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; bronze; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_antennae; short; bristle;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; transparent;;
+	*);;
+
+concept_sympecna_annulata_braueri <= nrel_inclusion: 
+	27_29_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (27_mm => 29_mm);;	
+	*);;
+	27_mm <- length_of_body; exact_value;;
+	27_mm -> .millimeter: 27 (* <- number;;*);;
+	29_mm <- length_of_body; exact_value;;
+	29_mm -> .millimeter: 29 (* <- number;;*);;	
+
+concept_sympecna_annulata_braueri <= nrel_inclusion: concept_3_protection_category;;

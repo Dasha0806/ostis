@@ -1,0 +1,55 @@
+concept_bupleurum_martjanovii_krylov => nrel_main_idtf:
+[Володушка Мартьянова](*<-lang_ru;;*);
+[Bupleurum martjanovii Krylov](*<-lang_lat;;*);;
+
+concept_species -> concept_bupleurum_martjanovii_krylov;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_bupleurum_martjanovii_krylov;;
+
+Red_list_ru -> concept_bupleurum_martjanovii_krylov;;
+
+//пояснения
+concept_bupleurum_martjanovii_krylov <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Зарослей не образует. В фитоценозах не отличается высоким обилием.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988). Вид внесен в Красные книги Республик Хакасия (2002), Тыва (1999), Алтай (1998). Охраняется в заповедниках: Алтайский и «Саяно-Шушенский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России. Основная часть ареала находится в Красноярском крае в Западном Саяне - хр. Алан, Алаш, Анзеркульский, Араданский, Ашпанский, Борус, Ери-Тайга, Итем, Кантегирский, Копен, Кохош, Куртушибинский, Моныш, Сабинский, Саянский, Тарлыганский Таскыл, Таскыл, Хансын, Хемчикский](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Стержнекорневой многолетник, монокарпик. Стебель 20---70 см выс., в основании 5-10 мм толщ. Цветет в июле. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

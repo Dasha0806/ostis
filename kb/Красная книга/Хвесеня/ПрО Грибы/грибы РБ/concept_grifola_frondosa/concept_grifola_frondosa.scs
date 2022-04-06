@@ -1,0 +1,176 @@
+concept_grifola_frondosa=> nrel_main_idtf: [грифола многошляпочная](*<- lang_ru;;*); [grifola frondosa](*<- lang_lat;;*); [грыфола мнагашапкавая](*<- lang_bel;;*);;
+
+concept_grifola_frondosa<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (грифола многошляпочная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_grifola_frondosa.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+
+
+
+concept_plant -> concept_grifola_frondosa;;
+concept_species -> concept_grifola_frondosa;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_grifola_frondosa;;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_grifola_frondosa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_grifola_frondosa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость:Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Украине, Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Широколиственные и хвойно-широколиственные леса. Растёт у основания старых лиственных деревьев, особенно дуба, граба, вяза, клёна, крайне редко - сосны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вызывает белую сердцевинную гниль, заражение происходит посредством мицелия, распространяющегося в почве от одного дерева к другому. Плодовые тела располагаются нередко на некотором расстоянии от ствола, с корнями которого они соединены мицелием, появляются в июле - сентябре . Гриб за 10 суток может достигнуть 1 м в диаметре и весить до 20 кг. Декоративный лекарственный малоизвестный съедобный (в молодом возрасте) гриб .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Во всех местонахождениях численность вида невелика и подвержена годичным колебаниям. Встречаются единичные экземпляры.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Сбор плодовых тел, низкая численность и плотность популяций, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на террриториях национальных парков «Беловежская пуща» и «Припятский». Необходимо создание в местах произрастания вида, не охваченных охранными мероприятиями, специализированных микологических заказников, периодический контроль состояния известных популяций и поиск новых мест произрастания, предупреждение антропогенных воздействий в местах роста.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Кавказ, Восточная Азия, Северная Америка, Австралия . В Беларуси найден в Брестской (Брестский и Пружанский р-ны), Гомельской (Житковичский р-н) и Минской (Борисовский, Столбцовский и Червенский р-ны; Минск; Несвижский дворцово-парковый ансамбль) обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовые тела однолетние, крупные, диаметром 10-40 см, весом до 10 кг. Шаровидное плодовое тело состоит из центрального пенька с отходящими от него многократно ветвящимися ножками, которые заканчиваются плоскими языковидными шляпками шириной 4-8 см. Поверхность шляпки радиально-морщинистая, шероховатая, ореховая, иногда охряно-бурая, по направлению к ножке всегда более светлая. Запах приятный, сохраняющийся при высушивании. Поверхность трубчатого гименофора низбегающая, белая, при высушивании кремовая. Поры округлые или слегка угловатые. Гифы широкие, с пряжками. Базидии булавовидные. Споры широкоэллипсоидальные, у основания косо оттянутые, толстостенные, гладкие, гиалиновые, размером 5-7 3,5-4,5 мкм, с зернистым содержимым .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+
+concept_grifola_frondosa <= nrel_spread: ... 
+	(*
+	-> Brest_district; Pryjani_district; Zhitkovichi_district; Borisov_district; Stolbci_district; Cherven_district; Minsk_district;;
+	*);;
+
+concept_koriolovye => nrel_inclusion: concept_grifola_frondosa;;
+concept_grifola_frondosa => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; rounded_tuberoid; annual;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; branching;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; thin; ocher_brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_hypha; wide;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; smooth; broadly_ellipsoidal;;
+	*);;
+
+concept_grifola_frondosa <= nrel_inclusion: 
+	10_40_sm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (10_sm => 40_sm);;	
+	*);
+
+	[4-8 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([4 см] => [8 см]);;	
+	*);
+
+	[0- 10 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [10 кг]);;	
+	*);;
+
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[25 см] <- length_of_body; exact_value;;
+	[25 см] -> .centimeter: 25 (* <- number;;*);;
+	[4 см] <- cap_diameter; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[8 см] <- cap_diameter; exact_value;;
+	[8 см] -> .centimeter: 8 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[10 кг] <- weight; exact_value;;
+	[10 кг] -> .kilogram: 10 (* <- number;;*);;
+
+concept_grifola_frondosa <= nrel_inclusion: concept_3_protection_category;;

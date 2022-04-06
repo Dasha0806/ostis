@@ -1,0 +1,136 @@
+concept_catocala_sponsa => nrel_main_idtf:
+[малиновая орденская лента](*<-lang_ru;;*);
+[catocala sponsa](*<-lang_lat;;*);
+[малінавая ордэнская стужка](*<-lang_bel;;*);;
+concept_catocala_sponsa => nrel_idtf:[малінавая ордэнская стужка](*<-lang_bel;;*);;
+
+concept_species -> concept_catocala_sponsa;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: catocala_sponsa;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_catocala_sponsa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1767 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_catocala_sponsa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Живет в дубравах и лесах с примесью дуба.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Генерация одногодичная. Лёт бабочек происходит в темное время суток с конца июля до сентября. Их притягивает бродящий сок деревьев и жидкость из разлагающихся ягод. Гусеницы развиваются в мае-июне на дубе, где они питаются листьями и здесь же окукливаются в коконе. Зимуют яйца.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Редкий по всей территории Беларуси вид, численность которого значительно сокращается из-за ухудшения состояния или сведения дубрав.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Ухудшение состояния и усыхание дубрав, особенно пойменных, в результате снижения уровня грунтовых вод, осушительная мелиорация в поймах рек; интенсивная вырубка лесов с примесью дуба - основного кормового растения вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Необходимо запрещение отлова бабочек, ограничение выпаса животных под пологом леса, учет допустимых уровней рекреационных нагрузок, охрана в заповедниках и выявление новых мест находок вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европейско-малоазиатский вид. Европа (кроме севера), Кавказ, Закавказье, северная Турция . В Беларуси встречается локально.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Крупная бабочка, размах крыльев 60-65 мм. Передние крылья со сложным рисунком из зазубренных линий и полос. Задние крылья малиново-красные с черной извилистой срединной перевязью, внешний край их также черный. Тело массивное, густо опушенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_catocala_sponsa <= nrel_spread: ... 
+	(*
+	-> Brest_district; Grodno_district;;
+	*);;
+
+concept_noctuidae => nrel_inclusion: concept_catocala_sponsa;;
+concept_catocala_sponsa => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; grey; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; grey; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; grey; brown; pink; red;;
+*);;
+
+concept_catocala_sponsa <= nrel_inclusion: 
+	60_65_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (60_mm => 65_mm);;
+*);;
+60_mm <- length_of_body; exact_value;;
+60_mm -> .millimeter: 60 (* <- number;;*);;
+65_mm <- length_of_body; exact_value;;
+65_mm -> .millimeter: 65 (* <- number;;*);;				
+
+concept_catocala_sponsa <= nrel_inclusion: concept_3_protection_category;;

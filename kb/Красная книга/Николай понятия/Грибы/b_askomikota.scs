@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_askomikota;;
+concept_askomikota => nrel_main_idtf:
+[аскомикота](*<-lang_ru;;*);
+[askomikota](*<-lang_en;;*);;
+
+//
+concept_askomikota <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аскомикота)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[отдел в царстве грибов, объединяющий организмы с септированным мицелием и специфическими органами полового спороношения — сумками (асками), содержащими чаще всего по 8 аскоспор](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_fungos;;
+	*);;	
+*);;
+
+//
+concept_askomikota => nrel_inclusion: concept_marsupialia_fungos;;
+

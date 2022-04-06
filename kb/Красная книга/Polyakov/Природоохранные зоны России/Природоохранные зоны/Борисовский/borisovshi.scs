@@ -1,0 +1,77 @@
+
+sc_node_not_relation -> borisovski;;
+concept_territorry->borisovski;;
+borisovski => nrel_main_idtf: [заказник Борисовский] (* <- lang_ru;; *);
+				     [Borisovskiy] (* <- lang_en;; *);;
+
+borisovski <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Борисовский)](*<-lang_ru;;*);
+		[Pic. (Borisovskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://index.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+borisovski<-concept_sanctuary;;
+borisovski <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Борисовский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ландшафтный заказник «Борисовский» был создан в 2015 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							borisovski=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2015(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+borisovski <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Борисовский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[площадь заказника Борисовский составляет 2731,4 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							borisovski=>nrel_square:[2731,4 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[2731,4](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+borisovski => nrel_flora: ...(*
+<-concept_listera_ovata_l_r_br;;
+*);;
+ subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: borisovski;;

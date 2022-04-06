@@ -1,0 +1,22 @@
+concept_anseriformes => nrel_main_idtf:
+[гусеобразные](*<-lang_ru;;*);
+[anseriformes](*<-lang_lat;;*);;
+
+concept_order -> concept_anseriformes;;
+
+concept_anseriformes => nrel_inclusion: concept_anatidae;;
+
+//определение и пояснения
+concept_anseriformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гусеобразные - отряд птиц. В основном крупные и средних размеров птицы, отличающиеся уплощённым клювом с утолщением на конце и поперечными роговыми пластинками, выполняющими роль цедильного аппарата. Ноги короткие, три пальца из четырёх направлены вперёд и соединены плавательной перепонкой. Тело плотное, вальковатое, шея и крылья длинные. Хвост короткий. Оперение плотное, с большим количеством пуха.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_anseriformes;;

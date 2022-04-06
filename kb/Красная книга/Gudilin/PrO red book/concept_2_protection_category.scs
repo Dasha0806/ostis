@@ -1,0 +1,19 @@
+concept_2_protection_category => nrel_main_idtf:
+[II категория охраны](*<-lang_ru;;*);
+[II protection category](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_2_protection_category <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(II категория охраны)]  (* <- lang_ru;; *);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[II категория охраны включает таксоны, в настоящее время не находящиеся под прямой угрозой исчезновения на территории страны, но имеющие неблагоприятный международный или европейский охранный статус, низкую численность, тенденцию к неуклонному сокращению численности и/или ареала и прогнозируемое в ближайшем будущем ухудшение статуса.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_2_protection_category;;

@@ -1,0 +1,52 @@
+sc_node_not_relation ->  concept_monoplacophora;;
+
+concept_monoplacophora=> nrel_main_idtf: 
+ [моноплакофоры](*<- lang_ru;;*); 
+ [monoplacophora](*<- lang_lat;;*);;
+
+concept_class -> concept_monoplacophora;;
+
+
+concept_monoplacophora <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса моноплакофоры)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_monoplacophora.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_monoplacophora <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Класс моллюсков, который до 1952 года был известен лишь по ископаемым раковинам из отложений кембрия, силура и девона и считался вымершим.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Тело со спины полностью покрыто тонкой округлой цельной, колпачковидной или плоскоспиральной раковиной с завитком, направленным вперёд. У многих современных видов раковина тонкая, полупрозрачная. Обычно развит периостракум. Голова слабо отграничена от туловища. Глаза отсутствуют. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+       
+
+
+
+

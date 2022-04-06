@@ -1,0 +1,137 @@
+concept_parnassius_mnemosine => nrel_main_idtf:
+[мнемозина](*<-lang_ru;;*);
+[parnassius mnemosine](*<-lang_lat;;*);
+[мнемазiна](*<-lang_bel;;*);;
+concept_parnassius_mnemosine => nrel_idtf:[мнемазiна](*<-lang_bel;;*);;
+
+concept_species -> concept_parnassius_mnemosine;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: parnassius_mnemosine;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_parnassius_mnemosine;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1758 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_parnassius_mnemosine <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Латвии, Литвы, Польши, Московской и Смоленской областей России, Украины, Восточной Фенноскандии для Дании, Финляндии, Германии, Карелии, Норвегии и Швеции, в приложение II Бернской конвенции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Строго ограничены произрастанием кормовых растений гусениц. Предпочитает лесные опушки, поляны по берегам небольших рек и ручьев, поросших густой травой с цветущей растительностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Развивается в одном поколении. Лёт происходит с начала мая до середины июня. Бабочки активны в основном в солнечную и безветренную погоду. Самцы появляются на неделю раньше самок. Самки откладывают около 40 яиц, которые перезимовывают со сформировавшимися внутри гусеницами. В апреле-мае следующего года появляются гусеницы. Днем они прячутся в подстилке или в прилегающих к почве листьях. Питаются ночью растениями рода хохлатка. Окукливание происходит в листьях на почве в довольно плотном коконе.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречается локально и в небольших количествах. Вместе с тем, поскольку бабочки летают в очень ограниченных стациях и имеют сжатые сроки лёта, в некоторые годы местами наблюдается их высокая плотность. В ряде мест исчез.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Изменение гидрологического режима в результате осушения и спрямления русел малых рек, перевыпас скота, интенсивное сенокошение и рекреация, распашка и застройка мест обитания, закустаривание лугов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид был включен в 1-е и 2-е издания Красной книги Республики Беларусь (III категория). Охраняется в ряде заказников. Необходимо ограничение осушительной мелиорации; запрещение рубки леса в местах обитания вида, выпаса скота, распашки и застройки лугов; снижение рекреационной нагрузки, сплошного сенокошения; проведение фрагментарной санитарной расчистки полян от древесно-кустарниковой растительности; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Пиренеев через Центральную и Северную Европу до Ирана и Центральной Азии. Распространен по всей территории Беларуси, однако крайне неравномерно, преимущественно по долинам мелких рек.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 31-31 мм. Крылья белые. На вершине и внешнем крае передних крыльев серое, полупрозрачное поле, в центре - 2 черных пятна. Туловище и внутренние края задних крыльев черные, c опушением.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_parnassius_mnemosine <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Gomel_district;;
+	*);;
+
+concept_papilionidae => nrel_inclusion: concept_parnassius_mnemosine;;
+concept_parnassius_mnemosine => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; grey;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; white; grey;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; white;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; transparent;;
+*);;
+
+concept_parnassius_mnemosine <= nrel_inclusion: 
+	
+26_31_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (26_mm => 31_mm);;
+*);;
+26_mm <- length_of_body; exact_value;;
+26_mm -> .millimeter: 26 (* <- number;;*);;
+31_mm <- length_of_body; exact_value;;
+31_mm -> .millimeter: 31 (* <- number;;*);;				
+
+concept_parnassius_mnemosine <= nrel_inclusion: concept_3_protection_category;;

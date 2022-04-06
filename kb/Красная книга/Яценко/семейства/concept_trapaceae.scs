@@ -1,0 +1,22 @@
+concept_trapaceae => nrel_main_idtf:
+[рогульниковые](*<-lang_ru;;*);
+[trapaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_trapaceae;;
+
+concept_trapaceae => nrel_inclusion: concept_trapa_natans_l_s_l;;
+
+//определение и пояснения
+concept_trapaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В семейство рогульниковых входит только один современный род водяной орех (Тгара), распространенный в Евразии и Африке от умеренной зоны до тропиков. Водяной орех насчитывает около 30 видов. Однако некоторые авторы сводят число видов этого рода до одного полиморфного вида, в то время как В. Н. Васильев, напротив, доводит их число до 200. Это семейство стоит ближе всего к семейству кипрейных, особенно к роду людвигия (Ludwigia).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+//subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_trapaceae;;

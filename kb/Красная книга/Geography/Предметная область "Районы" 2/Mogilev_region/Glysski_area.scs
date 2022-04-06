@@ -1,0 +1,60 @@
+Glysski_area<-concept_area;;
+Glysski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Glysski_area=>nrel_administrative_center_of_the_area:Glyssk;;
+Glyssk<-concept_city;;
+
+//самая высокая точка
+Glysski_area=>nrel_highest_point:203_m;;
+203_m<-concept_number;;
+
+//площадь района
+Glysski_area=>nrel_area_of_the_district:1335_km;;
+1335_km<-concept_number;;
+
+//население района
+Glysski_area=>nrel_population_of_region:13994_m;;
+13994_m<-concept_number;;
+
+//используемые константы
+Glysski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Глусский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Глусский район — административная единица на юго-западе Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+sc_node_not_relation -> Glysski_area;;
+Glysski_area => nrel_main_idtf:
+[Глусский район](* <-lang_ru;; *);
+[Glysski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Glyssk;;
+Glyssk=> nrel_main_idtf:
+[Глусск](* <-lang_ru;; *);
+[Glyssk](* <- lang_en;; *);;
+
+sc_node_not_relation ->203_m;;
+203_m=> nrel_main_idtf:
+[203 м](* <-lang_ru;; *);
+[203 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1335_km;;
+1335_km=> nrel_main_idtf:
+[1335 км^2](* <-lang_ru;; *);
+[1335 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->13994_m;;
+13994_m=> nrel_main_idtf:
+[13994 человек](* <-lang_ru;; *);
+[13994 m](* <- lang_en;; *);;

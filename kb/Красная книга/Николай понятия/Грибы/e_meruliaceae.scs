@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_meruliaceae;;
+concept_meruliaceae => nrel_main_idtf:
+[мерулиевые](*<-lang_ru;;*);
+[meruliaceae](*<-lang_en;;*);;
+
+//
+concept_meruliaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мерулиевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка стереальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_sterealnye;;
+	*);;	
+*);;
+
+//
+concept_meruliaceae => nrel_inclusion:
+    concept_phlebitis_et_mel_album;;

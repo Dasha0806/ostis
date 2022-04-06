@@ -1,0 +1,129 @@
+concept_cladonia_favillicola=> nrel_main_idtf: [кладония зольная](*<- lang_ru;;*); 
+[cladonia favillicola](*<- lang_lat;;*); 
+[кладония зольных](*<- lang_bel;;*);;
+
+concept_cladonia_favillicola <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (кладония зольная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cladonia_favillicola.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_lichenas -> concept_cladonia_favillicola;;
+concept_species -> concept_cladonia_favillicola;;
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_cladonia_favillicola;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_cladonia_favillicola;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1977 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cladonia_favillicola <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Кустистый лишайник. Горизонтальное слоевище состоит из пальчато-рассеченных чешуек . ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы: . Очень требователен к влажности. Чувствителен к нарушению естественных местообитаний. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны: Вид был занесен в Красную книгу СССР (1956), Красную книгу РСФСР (1977). Внесен в Красную книгу Сахалинской обл. (5). Охраняется на территориях заповедников: «Курильский», Кроноцкий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны:  Контроль за состоянием популяций и поиск новых местонахождений. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид был занесен в Красную книгу РСФСР (1977). Включен в региональные Красные книги: Кемеровской обл., Республики Алтай, Республики Башкортостан, Республики Тыва, Республики Хакасия, Читинской обл., Сахалинской обл. Охраняется на территориях заповедников: «Азас», Алтайский, «Байкало-Ленский», Байкальский, Башкирский (18), «Витимский», Дальневосточный морской (16), «Джергинский», Зейский, Кавказский, «Катунский», Лазовский (17), «Малая Сосьва», Сихотэ-Алинский (16), «Столбы», Тебердинский..](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_cladonia_favillicola <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+ concept_cladonia_favillicola => nrel_part: 
+	...
+ 	(*
+ 	<= nrel_inclusion: concept_thallus; green;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: apothecia; green;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: concept_disputes; grey;;
+ 	*);;
+
+
+concept_cladonia_favillicola <= nrel_reproduction: concept_vegetatively;;
+		
+
+//размеры и вес
+concept_cladonia_favillicola <= nrel_inclusion: 
+	[0-35 см]
+	(*
+	<- interval_value;;
+	<- length_of_diam;;
+	=> nrel_measurement: ([0 см] => [35 см]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[35 см] <- length_of_body; exact_value;;
+	[35 см] -> .centimeter: 35 (* <- number;;*);;
+
+//категория охраны и количество
+concept_cladonia_favillicola <= nrel_inclusion: concept_3_protection_category;;
+concept_cladonia_favillicola <= nrel_strength: [4000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 4000 (* <- number;;*);;
+		*);;	
+	*);;
+

@@ -1,0 +1,123 @@
+concept_dendrocopos_hyperythrus_vigors=> nrel_main_idtf: [рыжебрюхий дятел](*<- lang_ru;;*); 
+[dendrocopos hyperythrus vigors](*<- lang_lat;;*); 
+[рыжебрюхий дзяцел](*<- lang_bel;;*);;
+
+concept_dendrocopos_hyperythrus_vigors <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (Рыжебрюхий дятел)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dendrocopos_hyperythrus_vigors.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_dendrocopos_hyperythrus_vigors;;
+concept_species -> concept_dendrocopos_hyperythrus_vigors;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_dendrocopos_hyperythrus_vigors;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_dendrocopos_hyperythrus_vigors;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1831 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_dendrocopos_hyperythrus_vigors <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Существует в форме нескольких изолятов, описанных в качестве самостоятельных подвидов [1-4]. Дальний Восток России и Сев.-Вост. Китай населяет самый сев. и единственный перелетный подвид D. h. subrufinus. Точные сведения о гнездовом ареале к настоящему времени отсутствуют. В состав фауны России вид введен в 1966 г. [5], когда несколько пролетных птиц были обнаружены на о-вах зал. Петра Великого. С 1979 г. рыжебрюхий дятел регистрируется на крайнем юге Приморья практически ежегодно [6-10]. В 1985 г. найден на гнездовье значительно сев., в 60 км к сев.-вост. от г. Хабаровска (окрестности с. Малышево)   ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: В Китае и на Дальнем Востоке обитает во вторичных смешанно-широколиственных лесах низкогорий и предгорий. В Китае иногда встречается в хвойно-широколиственных лесах. Характерная особенность гнездовых биотопов в Хабаровском крае - наличие разреженных участков с осиной.    ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Вид не был обнаружен на территории Уссурийского края до 1966 г., хотя с начала его изучения здесь работало много опытных исследователей. Скорее всего рыжебрюхий дятел появился на Дальнем Востоке из Сев.-Вост. Китая в 60-х гг., когда повсеместно в приграничной полосе в басс. Уссури и Амура сформировались современные вторичные леса. Увеличивающееся за последние годы число встреч вида и расширяющаяся география находок свидетельствуют о том, что он расселяется, т.к. площадь подходящих для гнездования биотопов растет.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Специальные меры охраны не принимались. Необходимо детальное изучение распространения вида. Возможно создание заказника республиканского значения для охраны единственного известного в России места гнездования.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_dendrocopos_hyperythrus_vigors <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_dendrocopos_hyperythrus_vigors => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+//размеры и вес
+concept_dendrocopos_hyperythrus_vigors <= nrel_inclusion: 
+	[0-31 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [31 см]);;	
+	*);
+	[0-0.07 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.07 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[31 см] <- length_of_body; exact_value;;
+	[31 см] -> .centimeter: 31 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[0.07 кг] <- weight; exact_value;;
+	[0.07 кг] -> .kilogram: 0.07 (* <- number;;*);;
+//категория охраны и количество
+concept_dendrocopos_hyperythrus_vigors <= nrel_inclusion: concept_4_protection_category;;
+concept_dendrocopos_hyperythrus_vigors <= nrel_strength: [100 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 100 (* <- number;;*);;
+		*);;	
+	*);;
+

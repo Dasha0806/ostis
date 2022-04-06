@@ -1,0 +1,166 @@
+concept_rhododendron_luteum_sweet => nrel_main_idtf: [рододендрон жёлтый](*<- lang_ru;;*); [rhododendron luteum sweet](*<- lang_lat;;*); [рададэндран жоўты](*<- lang_bel;;*);;
+concept_rhododendron_luteum_sweet => nrel_idtf: [рададэндран жоўты](*<- lang_bel;;*);;
+
+concept_species -> concept_rhododendron_luteum_sweet;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_rhododendron_luteum_sweet;;
+
+concept_rhododendron_luteum_sweet  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (рододендрон жёлтый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_rhododendron_luteum_sweet.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_rhododendron_luteum_sweet;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_rhododendron_luteum_sweet <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Под государственную охрану в республике впервые взят в 1964 г. Включен в Красную книгу Беларуси 1-го и 2-го изданий (1981, 1993). Внесен в Приложение II к Директиве Европейского Союза о местах обитания.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Листопадный кустарник высотой до 2 м и более, со щетинисто-волосистыми молодыми побегами. Листья очередные, на коротких длиной 3-8 мм черешках; листовая пластинка цельнокрайняя, продолговато-ланцетная, длиной 5-15 см и шириной 1,5-6 см, с обеих сторон или только снизу по жилкам рассеянно-волосистая, по краю щетинисто-реснитчатая. Цветки крупные, воронковидные, оранжевые или желтые, с очень сильным запахом, собраны на концах веточек в малоцветковые зонтиковидные щитки. Цветоножки железисто-волосистые, почти равные трубке венчика. Чашечка до основания 5-раздельная, рано опадающая. Тычинок 5, нити их согнутые, от основания до середины волосистые, различной длины. Плод - продолговатая, при созревании сухая и растрескивающаяся коричневая коробочка длиной 1,5-2,2 см .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Горные районы Средней (Австрия, Югославия, Польша) и Восточной (Украина – Волынь) Европы, Малой Азии (Понтийский хребет) и Кавказа . Древнесредиземноморский реликтовый вид, находящийся в Беларуси в островных участках произрастания и отдельных локалитетах за северной границей волынского фрагмента ареала, находящегося на территории Украины. Известны местонахождения в Полесье:  в Ельском, Житковичском и Лельчицком р-нах Гомельской обл. . В 1983 г. в Ляховичском р-не Брестской обл. обнаружен одиночный, очевидно, интродуцированный куст рододендрона .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сосновые и сосново-широколиственные леса (преимущественно на  переходных полосах между черничным и багульниковым типами), опушки, окраины сфагновых болот.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - начале июня, плодоносит в июне - августе. Энтомофил, Размножение семенное и вегетативное. Анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Растет одиночными экземплярами и небольшими группами, нередко образует достаточно густой подлесок.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  рубки леса с уничтожением кустарниковой растительности, гидролесомелиоративные работы. Природные:  низкие зимние температуры, вызывающие отмерзание отдельных побегов и вымерзание некоторых особей.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Находится под охраной в Национальном парке “Припятский”. Насаждение в Житковичском р-не (Ветчинское лесничество) и уникальный экземпляр в Ляховичском р-не (Медведичское лесничество) объявлены памятниками природы республиканского значения. Выращивается в Центральном ботаническом саду НАН Беларуси , Ботаническом саду Витебского университета  и Республиканском экологическом центре учащихся и молодежи (Минск). Необходимы периодический контроль состояния популяций, запрещение в местах роста указанных видов негативных антропогенных воздействий, объявление насаждения в Ельском районе памятником природы республиканского значения, поиск новых мест произрастания, более широкое введение в культуру в качестве декоративного и лекарственного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_rhododendron_luteum_sweet <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Elsk_district;;->Zhitkovichi_district;;->Lelchitsy_district;;->Lyakhovichi_district;;
+		*);;
+*);;
+
+concept_rhododendron_luteum_sweet => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; bristly_hairy;young;escape;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; another;short_petiole;;
+*);
+...
+(*
+<= nrel_inclusion: flower; large;funnel;orange;yellow;a_strong_smell;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; few_flowered;umbel;flap;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; oblong;dry;cracked;brown;box;;
+*);;
+
+concept_rhododendron_luteum_sweet <= nrel_inclusion: 
+[60-200]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([60 см] => [200 см]);; 
+*);;
+
+concept_rhododendron_luteum_sweet <= nrel_inclusion: 
+[5-15 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([5 см] => [15 см]);; 
+*);;
+
+[60 см] <- length_of_inflorscence; exact_value;;
+[60 см] -> .centimeter: 60 (* <- number;;*);;
+[200 см] <- length_of_inflorscence; exact_value;;
+[200 см] -> .centimeter: 200 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+ 
+
+concept_rhododendron_luteum_sweet <= nrel_inclusion: concept_3_protection_category;;

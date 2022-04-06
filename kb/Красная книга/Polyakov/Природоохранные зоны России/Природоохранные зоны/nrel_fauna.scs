@@ -1,0 +1,47 @@
+sc_node_norole_relation -> nrel_fauna;;
+
+ nrel_fauna => nrel_main_idtf: [фауна*] (* <- lang_ru;; *);
+				     [fauna] (* <- lang_en;; *);;
+
+ nrel_fauna => nrel_first_domain: concept_protected_area;;
+ nrel_fauna => nrel_second_domain: concept_animal;;
+
+ nrel_fauna <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(фауна*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [фауна* - исторически сложившаяся совокупность видов животных, обитающих в данной природоохранной области.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_animal;
+                                concept_protected_area
+                            };;
+        *);;
+
+ nrel_fauna <- rrel_key_sc_element:
+        ...
+        (*
+            <- rrel_axiom:
+                subject_domain_of_protected_areas (*
+                    <-subject_domain;;
+                *);;
+            
+        *);;
+
+ nrel_fauna <- binary_relation;;
+ nrel_fauna <- antireflexive_relation;;
+ nrel_fauna <- antitransitive_relation;;
+ nrel_fauna <- antisymmetric_relation;;
+
+sc_node_not_relation->concept_animal;;
+concept_animal => nrel_main_idtf: [животное] (* <- lang_ru;; *);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: nrel_fauna;;			  

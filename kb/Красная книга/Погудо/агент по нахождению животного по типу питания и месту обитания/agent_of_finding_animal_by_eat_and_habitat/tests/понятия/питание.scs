@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_eat;;
+
+nrel_eat => nrel_main_idtf: [питание*] (* <- lang_ru;; *);
+				     [eat] (* <- lang_en;; *);;

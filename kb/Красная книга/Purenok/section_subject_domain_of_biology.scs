@@ -1,0 +1,5705 @@
+subject_domain_of_biology
+	=> nrel_main_idtf:[Предметная область Биологии](* <-lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of biology](* <-lang_en;; *);
+	<- subject_domain;
+	-> rrel_studied_object_class:
+    concept_biota;
+    concept_regio;
+    concept_regnum;
+    concept_phylum;
+    concept_divisio;
+    concept_classis;
+    concept_ordo_A;
+    concept_ordo_P;
+    concept_familia;
+    concept_genus;
+    concept_species;
+    concept_beak;
+    concept_animalia;
+    concept_claw;
+    concept_color;
+    concept_ear;
+    concept_eye;
+    concept_feather;
+    concept_fetus;
+    concept_finger;
+    concept_fish;
+    concept_flipper;
+    concept_flower;
+    concept_gills;
+    concept_head;
+    concept_leaf;
+    concept_legs;
+    concept_length;
+    concept_living_organism;
+    concept_membrane;
+    concept_mouth;
+    concept_neck;
+    concept_plantae;
+    concept_scale;
+    concept_seed;
+    concept_skin;
+    concept_stem;
+    concept_tail;
+    concept_tongue;
+    concept_tooth;
+    concept_tusk;
+    concept_waterfowl;
+    concept_weight;
+    concept_wing;
+    concept_regnum_animalia;
+    concept_heterotroph;
+    concept_movement;
+    concept_sound;
+    concept_organ;
+    concept_vision;
+    concept_zoology;
+    concept_monotype_genus;
+    concept_rank;
+    concept_politype_genus;
+    concept_oligotype_genus;
+    concept_body_part;
+    concept_brain;
+    concept_mammals;
+    concept_marine_mammals;
+    concept_taxon;
+    concept_sirens;
+    concept_cetaceans;
+    concept_walrus;
+    concept_desmostilia;
+    concept_true_seals;
+    concept_eared_seals;
+    concept_kolponomos;
+    concept_thalassocnus;
+    concept_polar_bear;
+    concept_sea_ape;
+    concept_cat_ape;
+    concept_first_beasts;
+    concept_beasts;
+    concept_monotremata;
+    concept_marsupials;
+    concept_placental;
+    concept_ornithorhynchidae;
+    concept_tachyglossidae;
+    concept_birds;
+    concept_ringless;
+    concept_newborn;
+    concept_ciconiiformes;
+    concept_petrelshaped;
+    concept_passerines;
+    concept_loons;
+    concept_pigeonshaped;
+    concept_anseriform;
+    concept_bustard;
+    concept_woodpeckers;
+    concept_cranelike;
+    concept_cuckoolike;
+    concept_galliformes;
+    concept_grebelike;
+    concept_coraciiformes;
+    concept_charadriiformes;
+    concept_pteroclidae;
+    concept_owls;
+    concept_falconiform;
+    concept_swinelike;
+    concept_hawkshaped;
+    green;
+    blue;
+    red;
+    black;
+    white;
+    grey;
+    yellow;
+    orange;
+    concept_sinew;
+    concept_living_body;
+    concept_food;
+    concept_breath;
+    concept_botanic;
+    concept_regnum_plantae;
+    concept_bryophyta;
+    concept_polypodiophyta;
+    concept_lycopodium;
+    concept_gymnospermae;
+    concept_magnoliophyta;
+    concept_mutation;
+    concept_familia_waterfowl;
+    concept_limb;
+    concept_flying;
+    concept_bird;
+    concept_reproduction;
+    concept_swimming;
+    concept_water;
+    concept_microbe;
+    concept_mushroom;
+    concept_mycelium;
+    concept_crossing;
+concept_biology;
+    concept_gene_pool;
+    concept_range;
+    concept_morphological_criterion;
+    concept_statement_of_general_form;
+    concept_physiological_biochemical_criterion;
+    concept_geographic_criterion;
+    concept_ecological_criterion;
+    concept_reproduction_criterion;
+    concept_root;
+    concept_bone;
+    concept_protection;;
+
+
+  
+
+sc_node_not_relation -> concept_animalia;;
+concept_animalia=>nrel_main_idtf:
+[животные](* <-lang_ru;; *);
+	[animalia](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_regnum_animalia;; 
+concept_regnum_animalia=>nrel_main_idtf:
+[царство животные](* <-lang_ru;; *);
+	[regnum animalia](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_heterotroph;;
+concept_heterotroph => nrel_main_idtf:
+[гетеротроф](* <-lang_ru;; *);
+	[heterotroph](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_movement;;
+concept_movement => nrel_main_idtf:
+[передвижение](* <-lang_ru;; *);
+	[movement](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_animalia <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(животные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [категория организмов, в настоящее время рассматривается в качестве биологического царства.Классическими признаками животных считаются: гетеротрофность (питание готовыми органическими соединениями) и способность активно передвигаться.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_animalia;;      
+    ->concept_regnum;;         
+    ->concept_heterotroph;;
+    ->concept_movement;;      
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_regnum -> concept_regnum_animalia;;
+concept_regnum_animalia => nrel_inclusion: concept_animalia;;
+
+//утверждения
+
+concept_animalia <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(царство животных, тип, животное)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[царство животных насчитывает около 35 типов животных](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_regnum_animalia;;
+	-> rrel_key_sc_element: concept_animalia;;
+        -> rrel_key_sc_element: concept_phylum;;
+	
+*);;
+
+
+sc_node_not_relation -> concept_beak;;
+concept_beak=>nrel_main_idtf:
+[клюв](* <-lang_ru;; *);
+	[beak](* <- lang_en;; *);;
+
+//определение 
+concept_beak <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(клюв)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [роговой видоизмененный рот у птиц](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_body_part;; 
+    ->concept_mouth;; 
+    ->concept_bird;; 
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body_part => nrel_inclusion: concept_beak;;
+
+//утверждения
+
+concept_beak <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(клюв, пища)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[клюв также может использоваться для добычи пищи](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_beak;;
+	-> rrel_key_sc_element: concept_food;;
+	
+*);;
+
+sc_node_not_relation -> concept_biota;; 
+concept_biota=>nrel_main_idtf:
+[жизнь](* <-lang_ru;; *);
+	[biota](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_biota <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(жизнь)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ термин, используемый в некоторых системах биологической классификации в качестве названия таксона, объединяющего все живые организмы нашей планеты](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    
+    ->concept_biology;;   
+    ->concept_living_organism;;
+        
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+//утверждения
+
+concept_biota <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(ранг, жизнь, домен)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Ранг этого таксона иногда определяют как наддомен](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_regio;;
+	-> rrel_key_sc_element: concept_rank;;
+        
+*);;
+
+sc_node_not_relation -> concept_classis;;
+concept_classis=>nrel_main_idtf:
+[класс](* <-lang_ru;; *);
+	[classis](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_classis <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(класс)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из основных рангов иерархической классификации в биологической систематике.В иерархии систематических категорий класс стоит ниже типа и выше отряда (в зоологической систематике) и ниже отдела и выше порядка (в ботанической систематике).](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_ordo_A;;  
+    ->concept_plylum;;
+    ->concept_ordo_P;;        
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_classis <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(класс, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Также иногда используеются производные ранги.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_rank;;
+	-> rrel_key_sc_element: concept_classis;;
+     
+*);;
+
+sc_node_not_relation -> concept_claw;;
+concept_claw=>nrel_main_idtf:
+[когонь](* <-lang_ru;; *);
+	[claw](* <- lang_en;; *);;
+
+//определение 
+concept_claw <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(коготь)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [роговое образование кожного происхождения на концевой фаланге пальца у животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_skin;; 
+    ->concept_finger;; 
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_finger => nrel_inclusion: concept_claw;;
+
+//утверждения
+
+concept_claw <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(передвижение, коготь)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[могут использовать при передвижении](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_claw;;
+	-> rrel_key_sc_element: concept_movement;;
+
+*);;
+
+sc_node_not_relation ->concept_color;;
+concept_color=>nrel_main_idtf:
+[окраска](* <-lang_ru;; *);
+	[color](* <- lang_en;; *);;
+
+sc_node_not_relation -> red;;
+red=>nrel_main_idtf:
+[красный](* <-lang_ru;; *);
+	[red](* <- lang_en;; *);;
+
+sc_node_not_relation -> green;;
+green=>nrel_main_idtf:
+[зеленый](* <-lang_ru;; *);
+	[green](* <- lang_en;; *);;
+
+sc_node_not_relation -> blue;;
+blue=>nrel_main_idtf:
+[голубой](* <-lang_ru;; *);
+	[blue](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_nature;;
+concept_nature=>nrel_main_idtf:
+[природа](* <-lang_ru;; *);
+	[nature](* <- lang_en;; *);;
+
+sc_node_not_relation -> pink;;
+pink =>nrel_main_idtf:
+[розовый](* <-lang_ru;; *);
+	[pink](* <- lang_en;; *);;
+
+sc_node_not_relation -> black;;
+black=>nrel_main_idtf:
+[черный](* <-lang_ru;; *);
+	[black](* <- lang_en;; *);;
+
+sc_node_not_relation -> white;;
+white=>nrel_main_idtf:
+[белый](* <-lang_ru;; *);
+	[white](* <- lang_en;; *);;
+
+sc_node_not_relation -> grey;;
+grey=>nrel_main_idtf:
+[серый](* <-lang_ru;; *);
+	[grey](* <- lang_en;; *);;
+
+sc_node_not_relation -> brown;;
+brown=>nrel_main_idtf:
+[коричневый](* <-lang_ru;; *);
+	[brown](* <- lang_en;; *);;
+
+sc_node_not_relation -> yellow;;
+yellow=>nrel_main_idtf:
+[желтый](* <-lang_ru;; *);
+	[yellow](* <- lang_en;; *);;
+
+sc_node_not_relation -> orange;;
+orange=>nrel_main_idtf:
+[оранжевый](* <-lang_ru;; *);
+	[orange](* <- lang_en;; *);;
+
+
+
+
+// 
+concept_color <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(окраска)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ свойство предметов отражать, переизлучать и рассеивать свет, определяющее их визуальное восприятие в определённых условиях](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_organism;;
+    ->concept_animalia;;
+    ->concept_plantae;;
+    ->concept_color;; 
+          
+         
+*);;
+*);;
+
+
+// / 
+
+concept_living_body => nrel_inclusion: concept_color;;
+concept_color -> red;;
+concept_color -> green;;
+concept_color -> blue;;
+concept_color -> black;;
+concept_color -> white;;
+concept_color -> grey;;
+concept_color -> yellow;;
+concept_color -> orange;;
+
+
+
+
+
+
+//
+
+concept_body_part <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(окраска, голубой, зеленый, красный, природа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[все окраски в природе состоят из голубого, красного и зеленого ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: red;;
+	-> rrel_key_sc_element: green;;
+        -> rrel_key_sc_element: blue;;
+	-> rrel_key_sc_element: concept_nature;;
+	-> rrel_key_sc_element: concept_color;;
+
+*);;
+
+sc_node_not_relation -> concept_divisio;;
+concept_divisio=>nrel_main_idtf:
+[отдел](* <-lang_ru;; *);
+	[divisio](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_divisio <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(отдел)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из высших рангов таксономической иерархии в ботанике.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_botanic;;       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_divisio <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(класс, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Также иногда используеются производные ранги.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_rank;;
+	-> rrel_key_sc_element: concept_divisio;;
+
+*);;
+
+sc_node_not_relation->concept_sound;;
+concept_sound=>nrel_main_idtf:
+[звук](* <-lang_ru;; *);
+	[sound](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_organ;;
+concept_organ=>nrel_main_idtf:
+[орган](* <-lang_ru;; *);
+	[organ](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_ear <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ухо)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [сложный орган животных, предназначенный для восприятия звуковых колебаний](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_organ;;
+    ->concept_sound;; 
+    ->concept_animalia;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_head => nrel_inclusion: concept_ear;;
+
+//утверждения
+
+concept_ear <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животное, ухо)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Практически все животные имеют по 2 уха](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_ear;;
+
+*);;
+
+sc_node_not_relation -> concept_vision;;
+concept_vision=>nrel_main_idtf:
+[зрение](* <-lang_ru;; *);
+	[vision](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_eye <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(глаз)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [сенсорный орган животных, обеспечивающий функцию зрения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_organ;;
+    ->concept_vision;; 
+    ->concept_animalia;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_head => nrel_inclusion: concept_eye;;
+
+//утверждения
+
+concept_eye <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животное, глаз)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Практически все животные имеют по 2 глаза (и более)](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_eye;;
+
+*);;
+
+sc_node_not_relation -> concept_familia;;
+concept_familia=>nrel_main_idtf:
+[семейcтво](* <-lang_ru;; *);
+	[familia](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ordo;;
+concept_ordo=>nrel_main_idtf:
+[порядок](* <-lang_ru;; *);
+	[ordo](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_zoology;;
+concept_zoology => nrel_main_idtf:
+[зоология](* <-lang_ru;; *);
+	[zoology](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_familia <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(семейство)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из основных рангов иерархической классификации в биологической систематике.
+
+В иерархии систематических категорий семейство стоит ниже отряда (порядка) и выше трибы и рода.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_ordo;;
+    ->concept_genus;;          
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_ordo => nrel_inclusion: concept_familia;;
+
+
+
+//утверждения
+
+concept_familia <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(род, семейство, зоология)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[В некоторых работах по зоологии семействами называли подразделения родов.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_genus;;
+	-> rrel_key_sc_element: concept_zoology;;
+
+*);;
+
+sc_node_not_relation -> concept_bird;;
+concept_bird=>nrel_main_idtf:
+[птица](* <-lang_ru;; *);
+	[bird](* <- lang_en;; *);;
+
+//определение 
+concept_feather <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(перо)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [роговой покров на коже птиц](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_skin;; 
+    ->concept_bird;; 
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_skin => nrel_inclusion: concept_feather;;
+
+//утверждения
+
+concept_feather <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(перо, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[перья также защищают от воды](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_water;;
+	-> rrel_key_sc_element: concept_feather;;
+
+*);;
+
+sc_node_not_relation -> concept_fetus;;
+concept_fetus=>nrel_main_idtf:
+[плод](* <-lang_ru;; *);
+	[fetus](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_flower;;
+concept_flower=>nrel_main_idtf:
+[цветок](* <-lang_ru;; *);
+	[flower](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_seed;;
+concept_seed=>nrel_main_idtf:
+[семя](* <-lang_ru;; *);
+	[seed](* <- lang_en;; *);;
+
+
+//определение 
+concept_fetus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плод)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть растения, развивающаяся из завязи цветка и содержащая семена](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_living_organism;;
+    ->concept_plantae;; 
+    ->concept_flower;; 
+    ->concept_seed;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_plantae => nrel_inclusion: concept_fetus;;
+
+//утверждения
+
+concept_fetus <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(цветок, орган, растение)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[плоды некоторых растений являются съедобными](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_fetus;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+*);;
+
+//определение 
+concept_finger <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(палец)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть тела на концах конечностей животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_body_part;; 
+    ->concept_finger;; 
+ 
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body_part => nrel_belonging: concept_finger;;
+
+//утверждения
+
+concept_finger <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(крыло, палец, птица)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[у птиц пальцы являются частью каркаса крыльев](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_bird;;
+	-> rrel_key_sc_element: concept_finger;;
+	-> rrel_key_sc_element: concept_wing;;
+
+*);;
+
+sc_node_not_relation -> concept_fish;;
+concept_fish=>nrel_main_idtf:
+[рыба](* <-lang_ru;; *);
+	[fish](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_flipper;;
+concept_flipper=>nrel_main_idtf:
+[плавник](* <-lang_ru;; *);
+	[flipper](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_gills;;
+concept_gills=>nrel_main_idtf:
+[жабры](* <-lang_ru;; *);
+	[gills](* <- lang_en;; *);;
+
+
+//определение 
+concept_fish <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(рыба)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Живущее в воде и дышащее жабрами позвоночное животное с конечностями в виде плавников](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_waterfowl;; 
+    ->concept_flipper;; 
+    ->concept_gills;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_animalia => nrel_belonging: concept_fish;;
+
+//утверждения
+
+concept_fish <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(рыба, вид, пища)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Многие виды рыб употребляются человеком в пищу](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_fish;;
+	-> rrel_key_sc_element: concept_species;;
+	-> rrel_key_sc_element: concept_food;;
+
+*);;
+
+sc_node_not_relation -> concept_swimming;;
+concept_swimming=>nrel_main_idtf:
+[плавание](* <-lang_ru;; *);
+	[swimming](* <- lang_en;; *);;
+
+
+//определение 
+concept_flipper <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плавник)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Орган плавания у водных животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_waterfowl;; 
+    ->concept_flipper;; 
+    ->concept_organ;; 
+    ->concept_body_part;;  
+    ->concept_swimming;;     
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_organ => nrel_belonging: concept_flipper;;
+
+//утверждения
+
+concept_flipper <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(рыба, пища, плавник)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[в некоторых кухнях жареные рыбные плавники считаются самостоятельным блюдом](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_fish;;
+	-> rrel_key_sc_element: concept_flipper;;
+	-> rrel_key_sc_element: concept_food;;
+
+*);;
+
+sc_node_not_relation -> concept_reproduction;;
+concept_reproduction=>nrel_main_idtf:
+[размножение](* <-lang_ru;; *);
+	[reproduction](* <- lang_en;; *);;
+
+
+//определение 
+concept_flower<-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(цветок)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Часть растения, обычно имеющая вид венчика из лепестков, являющаяся органом размножения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_living_organism;;
+    ->concept_plantae;; 
+    ->concept_organ;; 
+    ->concept_reproduction;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_plantae => nrel_inclusion: concept_flower;;
+
+//утверждения
+
+concept_flower <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(цветок)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[цветы в культуре играют декоративную роль и иногда используются в кулинарии и парфюмерии](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_flower;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+*);;
+
+sc_node_not_relation -> concept_genus;; 
+concept_genus=>nrel_main_idtf:
+[род](* <-lang_ru;; *);
+	[genus](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_monotype_genus;;
+concept_monotype_genus=>nrel_main_idtf:
+[монотипный род](* <-lang_ru;; *);
+	[monotype genus](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_rank;;
+concept_rank => nrel_main_idtf:
+[ранг](* <-lang_ru;; *);
+	[rank](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_politype_genus;;
+concept_politype_genus=>nrel_main_idtf:
+[политипный род](* <-lang_ru;; *);
+	[politype genus](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_oligotype_genus;;
+concept_oligotype_genus=>nrel_main_idtf:
+[олиготипный род](* <-lang_ru;; *);
+	[oligotype genus](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_genus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(род)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [основная надвидовая таксономическая категория (ранг) в биологической систематике. Объединяет близкие по происхождению виды. ](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_species;;          
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_familia => nrel_inclusion: concept_genus;;
+concept_genus <= nrel_subdividing: ...(* -> concept_monotype_genus;; -> concept_oligotype_genus;; -> concept_politype_genus;; => nrel_idtf: [Разбиение по количеству видов в роде](* <- concept_russian_language;; *);; *);;
+
+
+//утверждения
+
+concept_genus <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(род, вид, политипный род, монотипный род, олиготипный род)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[По количеству видов, которые в него входят, род может быть:
+политипным — содержащим большое число видов,
+олиготипным — содержащим небольшое число видов,
+монотипным — содержащим один вид.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_species;;
+	-> rrel_key_sc_element: concept_politype_genus;;
+        -> rrel_key_sc_element: concept_oligotype_genus;;
+        -> rrel_key_sc_element: concept_monotype_genus;;
+
+*);;
+
+sc_node_not_relation -> concept_water;;
+concept_water=>nrel_main_idtf:
+[вода](* <-lang_ru;; *);
+	[water](* <- lang_en;; *);;
+
+
+//определение 
+concept_gills <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(жабры)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Органы дыхания водных животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_waterfowl;; 
+    ->concept_gills;; 
+    ->concept_organ;; 
+    ->concept_body_part;;  
+    ->concept_breath;;     
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_organ => nrel_belonging: concept_gills;;
+
+//утверждения
+
+concept_gills <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(жабры, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[жабры поглощают кислород из воды (11 куб. см./литр - в воде, 210 куб. см./литр - в воздухе](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_gills;;
+	-> rrel_key_sc_element: concept_water;;
+
+*);;
+
+sc_node_not_relation -> concept_head;;
+concept_head=>nrel_main_idtf:
+[голова](* <-lang_ru;; *);
+	[head](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_body_part;;
+concept_body_part=>nrel_main_idtf:
+[часть тела](* <-lang_ru;; *);
+	[body part](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ear;;
+concept_ear=>nrel_main_idtf:
+[ухо](* <-lang_ru;; *);
+	[ear](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mouth;;
+concept_mouth=>nrel_main_idtf:
+[рот](* <-lang_ru;; *);
+	[mouth](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_eye;;
+concept_eye=>nrel_main_idtf:
+[глаз](* <-lang_ru;; *);
+	[eye](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_brain;;
+concept_brain=>nrel_main_idtf:
+[мозг](* <-lang_ru;; *);
+	[brain](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_neck;;
+concept_neck=>nrel_main_idtf:
+[шея](* <-lang_ru;; *);
+	[neck](* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+
+
+//определение 
+concept_head <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(голова)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть тела животного, в которой находятся мозг, уши, нос, глаза и рот](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_animalia;;
+    ->concept_mouth;; 
+    ->concept_ear;; 
+    ->concept_eye;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body_part => nrel_inclusion: concept_head;;
+
+//утверждения
+
+concept_head <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(голова, шея)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[началом головы принято считать область выше шеи.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_head;;
+	-> rrel_key_sc_element: concept_neck;;
+	
+*);;
+
+//определение 
+concept_leaf<-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(лист)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Орган воздушного питания растений в виде тонкой, обычно зелёной пластинки](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_living_organism;;
+    ->concept_plantae;; 
+    ->concept_organ;; 
+    ->green;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_plantae => nrel_inclusion: concept_leaf;;
+
+//утверждения
+
+concept_leaf <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(лист, растение, зеленый, красный)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[к осени листья растений средней полосы теряют зеленый пигмент и обычно краснеют перед тем, как опасть](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_leaf;;
+	-> rrel_key_sc_element: concept_plantae;;
+	-> rrel_key_sc_element: green;;
+	-> rrel_key_sc_element: red;;
+
+*);;
+
+sc_node_not_relation->concept_legs;;
+concept_legs=>nrel_main_idtf:
+[ноги](* <-lang_ru;; *);
+	[legs](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_sinew;;
+concept_sinew=>nrel_main_idtf:
+[опора](* <-lang_ru;; *);
+	[sinew](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_legs <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ноги)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [парный орган опоры и движения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_organ;;
+    ->concept_movement;; 
+    ->concept_sinew;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_living_body => nrel_inclusion: concept_legs;;
+
+//утверждения
+
+concept_legs <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животное, ноги)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[большиснтво животных имеют две и более ног](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_legs;;
+
+*);;
+
+sc_node_not_relation -> concept_length;;
+concept_length=>nrel_main_idtf:
+[длина](* <-lang_ru;; *);
+	[length](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_microbe;;
+concept_microbe=>nrel_main_idtf:
+[микроб](* <-lang_ru;; *);
+	[microbe](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mushroom;;
+concept_mushroom=>nrel_main_idtf:
+[гриб](* <-lang_ru;; *);
+	[mushroom](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mycelium;;
+concept_mycelium=>nrel_main_idtf:
+[грибница](* <-lang_ru;; *);
+	[mycelium](* <- lang_en;; *);;
+
+
+//определение 
+concept_length <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(длина)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [протяжение в том направлении, в котором две крайние точки тела лежат на наибольшем расстоянии друг от друга](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_organism;;
+    ->concept_living_body;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_living_body => nrel_inclusion: concept_length;;
+
+//утверждения
+
+concept_length <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(гриб, грибница, природа, микроб, длина, живой организм)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[длина живых организмов в природе колеблется от 200 нанометров (микробы) до сотен километров (грибы с грибницами)](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_mushroom;;
+	-> rrel_key_sc_element: concept_mycelium;;
+	-> rrel_key_sc_element: concept_nature;;
+	-> rrel_key_sc_element: concept_microbe;;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_length;;
+
+*);;
+
+sc_node_not_relation -> concept_living_body;;
+concept_living_body=>nrel_main_idtf:
+[живое тело](* <-lang_ru;; *);
+	[living body](* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+//определение 
+concept_living_organism <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(живой организм)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [живое тело, обладающее совокупностью свойств, отличающих его от неживой материи](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_body;;
+    ->concept_living_organism;;      
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_species => nrel_inclusion: concept_living_organism;;
+
+//утверждения
+
+concept_living_organism <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(живой организм, вид)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Может рассматриваться как отдельная особь, при этом входя в биологический вид](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_species;;
+
+*);;
+
+sc_node_not_relation -> concept_skin;;
+concept_skin=>nrel_main_idtf:
+[кожа](* <-lang_ru;; *);
+	[skin](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_finger;;
+concept_finger=>nrel_main_idtf:
+[палец](* <-lang_ru;; *);
+	[finger](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_membrane;;
+concept_membrane=>nrel_main_idtf:
+[перепонка](* <-lang_ru;; *);
+	[membrane](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_membrane <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(перепонка)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [кожа между пальцами у животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_skin;; 
+    ->concept_finger;; 
+    ->concept_membrane;; 
+    ->concept_body_part;;      
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body_part => nrel_belonging: concept_membrane;;
+
+//утверждения
+
+concept_membrane <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(перепонка, передвижение, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[служит для улучшения передвижения под водой](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_movement;;
+	-> rrel_key_sc_element: concept_water;;
+	-> rrel_key_sc_element: concept_membrane;;
+
+*);;
+
+sc_node_not_relation->concept_food;;
+concept_food=>nrel_main_idtf:
+[пища](* <-lang_ru;; *);
+	[food](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_breath;;
+concept_breath=>nrel_main_idtf:
+[дыхание](* <-lang_ru;; *);
+	[breath](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ear;;
+concept_ear=>nrel_main_idtf:
+[ухо](* <-lang_ru;; *);
+	[ear](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mouth;;
+concept_mouth=>nrel_main_idtf:
+[рот](* <-lang_ru;; *);
+	[mouth](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_eye;;
+concept_eye=>nrel_main_idtf:
+[глаз](* <-lang_ru;; *);
+	[eye](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_brain;;
+concept_brain=>nrel_main_idtf:
+[мозг](* <-lang_ru;; *);
+	[brain](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_neck;;
+concept_neck=>nrel_main_idtf:
+[шея](* <-lang_ru;; *);
+	[neck](* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+
+
+//определение 
+concept_mouth <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(рот)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [телесное отверстие у животных, через которое принимается пища и, во многих случаях, осуществляется дыхание](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_food;;
+    ->concept_breath;; 
+    ->concept_animalia;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_head => nrel_inclusion: concept_mouth;;
+
+//утверждения
+
+concept_mouth <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животное, рот)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[практически у всех развитых животных только один рот](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_mouth;;
+
+*);;
+
+//определение 
+concept_neck <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(шея)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть тела, соединяющая голову с туловищем](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_head;; 
+    ->concept_body;; 
+    ->concept_body_part;;    
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body_part => nrel_belonging: concept_neck;;
+
+//утверждения
+
+concept_neck <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(жабры, вода)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[некоторые животные не имеют шеи](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_neck;;
+
+*);;
+
+sc_node_not_relation -> concept_ordo_A;;
+concept_ordo_A =>nrel_main_idtf:
+[отряд](* <-lang_ru;; *);
+	[ordo of animals](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_ordo_A <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(отряд)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из основных рангов иерархической классификации в зоологической систематике.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_zoology;;          
+*);;
+*);;
+
+
+//включение / разбиение
+concept_classis <= nrel_subdividing: ...(* -> concept_ordo_A;; -> concept_ordo_P;; => nrel_idtf: [разбиение по типу живого организма](* <- concept_russian_language;; *);; *);;
+
+
+
+
+//утверждения
+
+concept_ordo_A <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(отряд, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Иногда используют производные от отряда ранги для более частной классификации.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_ordo_A;;
+	-> rrel_key_sc_element: concept_rank;;
+
+*);;
+
+sc_node_not_relation -> concept_ordo_P;;
+concept_ordo_P =>nrel_main_idtf:
+[порядок](* <-lang_ru;; *);
+	[ordo of plants](* <- lang_en;; *);;
+
+
+
+sc_node_not_relation -> concept_botanic ;; 
+concept_botanic =>nrel_main_idtf:
+[ботаника](* <-lang_ru;; *);
+	[botanic](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_ordo_P <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(порядок)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из основных рангов иерархической классификации в ботанической систематике.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_botanic;;          
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+
+//утверждения
+
+concept_ordo_P <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(порядок, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Иногда используют производные от порядка ранги для более частной классификации.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_ordo_P;;
+	-> rrel_key_sc_element: concept_rank;;
+  
+*);;
+
+sc_node_not_relation -> concept_phylum;; 
+concept_phylum=>nrel_main_idtf:
+[тип](* <-lang_ru;; *);
+	[phylum](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_phylum <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(тип)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из высших рангов таксономической иерархии в зоологии.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_zoology;;       
+*);;
+*);;
+
+
+//включение / разбиение
+concept_regnum <= nrel_subdividing: ...(* -> concept_phylum;; -> concept_divisio;; => nrel_idtf: [разбиение по типу живого организма](* <- lang_ru;; *);; *);;
+
+
+
+//утверждения
+
+concept_phyrum <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(тип, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Также иногда используеются производные ранги.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_rank;;
+	-> rrel_key_sc_element: concept_phyrum;;
+
+*);;
+
+sc_node_not_relation->concept_plantae;;
+concept_plantae=>nrel_main_idtf:
+[растения](* <-lang_ru;; *);
+	[plantae](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_regnum_plantae;; 
+concept_regnum_plantae=>nrel_main_idtf:
+[царство растений](* <-lang_ru;; *);
+	[regnum plantae](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_bryophyta;; 
+concept_bryophyta=>nrel_main_idtf:
+[мхи](* <-lang_ru;; *);
+	[bryophyta](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_polypodiophyta;; 
+concept_polypodiophyta=>nrel_main_idtf:
+[папоротники](* <-lang_ru;; *);
+	[polypodiophyta](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_equisetum;; 
+concept_equisetum =>nrel_main_idtf:
+[хвощи](* <-lang_ru;; *);
+	[equisetum](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_lycopodium;; 
+concept_lycopodium =>nrel_main_idtf:
+[плауны](* <-lang_ru;; *);
+	[lycopodium](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_gymnospermae;; 
+concept_gymnospermae =>nrel_main_idtf:
+[голосеменные растения](* <-lang_ru;; *);
+	[gymnospermae](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_magnoliophyta;; 
+concept_magnoliophyta =>nrel_main_idtf:
+[покрытосеменные растения](* <-lang_ru;; *);
+	[magnoliophyta](* <- lang_en;; *);;
+
+
+//определение 
+concept_plantae <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(растения)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [биологическое царство, одна из основных групп многоклеточных организмов, включающая в себя в том числе мхи, папоротники, хвощи, плауны, голосеменные и цветковые растения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_regnum;;
+    ->concept_living_organism;; 
+    ->concept_bryophyta;;   
+    ->concept_polypodiophyta;;  
+    ->concept_equisetum;;
+    ->concept_lycopodium;; 
+    ->concept_gymnospermae;;
+    ->concept_magnoliophyta;;
+*);;
+*);;
+
+
+//включение / разбиение
+concept_regnum -> concept_regnum_plantae;;
+concept_regnum_plantae => nrel_inclusion: concept_plantae;;
+concept_plantae <= nrel_subdividing: ...(* -> concept_bryophyta;; -> concept_polypodiophyta;; -> concept_equisetum;; -> concept_lycopodium;; -> concept_gymnospermae;; -> concept_magnoliophyta;; => nrel_idtf: [разбиение по типу живого организма](* <- concept_russian_language;; *);; *);;
+
+
+
+//утверждения
+
+concept_phyrum <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(отдел, растения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[растения включают в себя 9 отделов](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_plantae;;
+	-> rrel_key_sc_element: concept_divisio;;
+
+*);;
+
+sc_node_not_relation -> concept_regio;;
+concept_regio=>nrel_main_idtf:
+[домен](* <-lang_ru;; *);
+	[regio](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_regio <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(домен)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [в биологической систематике самый верхний уровень (ранг) группировки организмов в системе, включающий в себя одно или несколько царств.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_biology;;   
+    ->concept_living_organism;;
+    ->concept_regnum;;    
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_biota => nrel_inclusion: concept_regio;;
+
+
+
+
+//утверждения
+
+concept_regio <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(домен, живой организм)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[все живые организмы делятся на три домена](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_regio;;
+
+*);;
+
+sc_mode_not_relation -> concept_regnum;;
+concept_regnum=>nrel_main_idtf:
+[царство](* <-lang_ru;; *);
+	[regnum](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_regnum <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(царство)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [иерархический ранг научной классификации биологических видов. Таксон самого высокого уровня среди основных.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_rank;;
+    ->concept_species;;       
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_regio => nrel_inclusion: concept_regnum;;
+
+
+
+//утверждения
+
+concept_regnum <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(класс, ранг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Исторически различают пять царств живых организмов](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_regnum;;
+
+*);;
+
+//определение 
+concept_scale <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(чешуя)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [роговой пластинчатый покров на коже животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_skin;; 
+ 
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_skin => nrel_inclusion: concept_scale;;
+
+//утверждения
+
+concept_scale <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(чешуя, рыба, водоплавающие, растения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[преимущественно встречается у рыб, водоплавающих и иногда растений](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_fish;;
+	-> rrel_key_sc_element: concept_plantae;;
+	-> rrel_key_sc_element: concept_waterfowl;;
+	-> rrel_key_sc_element: concept_scale;;
+
+*);;
+
+//определение 
+concept_seed<-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(семя)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [зачаточное растение](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_living_organism;;
+    ->concept_plantae;; 
+    ->concept_reproduction;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_fetus => nrel_inclusion: concept_seed;;
+
+//утверждения
+
+concept_seed <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(семя, растение)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[семена растений широко используются в агрокультуре](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_seed;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+*);;
+
+sc_node_not_relation -> concept_feather;;
+concept_feather=>nrel_main_idtf:
+[перо](* <-lang_ru;; *);
+	[feather](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_scale;;
+concept_scale=>nrel_main_idtf:
+[чешуя](* <-lang_ru;; *);
+	[scale](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_wool;;
+concept_wool=>nrel_main_idtf:
+[шерсть](* <-lang_ru;; *);
+	[wool](* <- lang_en;; *);;
+
+//определение 
+concept_skin <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(кожа)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [наружный покров тела животного - орган](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_organ;; 
+    ->concept_body_part;;  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_organ => nrel_belonging: concept_skin;;
+
+//утверждения
+
+concept_skin <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(кожа, чешуя, перо, шерсть)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[кожа может быть покрыта чешуей, шерстью или перьями](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_skin;;
+	-> rrel_key_sc_element: concept_scale;;
+	-> rrel_key_sc_element: concept_feather;;
+	-> rrel_key_sc_element: concept_wool;;
+
+*);;
+
+sc_node_not_relation -> concept_species;;
+concept_species=>nrel_main_idtf:
+[вид](* <-lang_ru;; *);
+	[species](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_crossing;; 
+concept_crossing=>nrel_main_idtf:
+[скрещивание](* <-lang_ru;; *);
+	[crossing](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_biology;;
+concept_biology => nrel_main_idtf:
+[биология](* <-lang_ru;; *);
+	[biology](* <- lang_en;; *);;
+
+
+sc_node_not_relation -> concept_living_organism;;
+concept_living_organism=>nrel_main_idtf:
+[живой организм](* <-lang_ru;; *);
+	[living organism](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_range;;
+concept_range => nrel_main_idtf:
+[ареал](* <-lang_ru;; *);
+	[range](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_gene_pool;;
+concept_gene_pool=>nrel_main_idtf:
+[генофонд](* <-lang_ru;; *);
+	[gene pool](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_morphological_criterion;;
+concept_morphological_criterion=>nrel_main_idtf:
+[морфологический критерий](* <-lang_ru;; *);
+	[morphological criterion](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_physiological_biochemical_criterion;;
+concept_physiological_biochemical_criterion=>nrel_main_idtf:
+[физиолого-биохимический критерий](* <-lang_ru;; *);
+	[physiological biochemical criterion](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_geographic_criterion;;
+concept_geographic_criterion=>nrel_main_idtf:
+[географический критерий](* <-lang_ru;; *);
+	[geographic criterion](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ecological_criterion;;
+concept_ecological_criterion=>nrel_main_idtf:
+[экологический критерий](* <-lang_ru;; *);
+	[ecological criterion](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_reproduction_criterion;;
+concept_reproduction_criterion=>nrel_main_idtf:
+[репродуктивный критерий](* <-lang_ru;; *);
+	[reproduction criterion](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_species <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(вид)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Группа живых организмов, имеющих общий генофонд, населяющих определенный ареал и способных к скрещиванию.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_crossing;;      
+    ->concept_range;;         
+    ->concept_gene_pool;;     
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_genus => nrel_inclusion: concept_species;;
+
+//утверждения
+
+concept_species <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(вид, морфологический критерий,физиолого-биохимический критерий, географический критерий, репродуктивный критерий)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Один вид можно отделить от другого по морфологическому, физиолого-биохимическому, географическому, экологическому, репродуктивному критериям](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_species;;
+	-> rrel_key_sc_element: concept_morphological_criterion;;
+        -> rrel_key_sc_element: concept_physiological_biochemical_criterion;;
+        -> rrel_key_sc_element: concept_geographic_criterion;;
+        -> rrel_key_sc_element: concept_ecological_criterion;;
+        -> rrel_key_sc_element: concept_reproduction_criterion;;
+
+*);;
+
+sc_node_not_relation -> concept_stem;;
+concept_stem=>nrel_main_idtf:
+[стебель](* <-lang_ru;; *);
+	[stem](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_leaf;;
+concept_leaf=>nrel_main_idtf:
+[лист](* <-lang_ru;; *);
+	[leaf](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_root;;
+concept_root=>nrel_main_idtf:
+[корень](* <-lang_ru;; *);
+	[root](* <- lang_en;; *);;
+
+
+//определение 
+concept_stem <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(стебель)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ oсновная часть травянистого растения от корня до вершины, обычно цилиндрической формы, имеющая ответвления, несущая листья](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_body;;
+    ->concept_living_organism;;
+    ->concept_plantae;; 
+    ->concept_leaf;; 
+    ->concept_root;; 
+    ->concept_body_part;;       
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_plantae => nrel_inclusion: concept_stem;;
+
+//утверждения
+
+concept_stem <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(стебель, растение)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[стебель служит механической осью растения](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_stem;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+*);;
+
+sc_node_not_relation->concept_tail;;
+concept_tail=>nrel_main_idtf:
+[хвост](* <-lang_ru;; *);
+	[tail](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_mutation;;
+concept_mutation=>nrel_main_idtf:
+[мутация](* <-lang_ru;; *);
+	[mutation](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_tail <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(хвост)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [придаток на заднем конце тела или вообще задняя суженная часть тела.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_body_part;;
+    ->concept_living_body;; 
+     
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_living_body => nrel_inclusion: concept_tail;;
+
+//утверждения
+
+concept_tail <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животное, ноги)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[2 и более хвоста считаются мутацией у животных](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_tail;;
+	-> rrel_key_sc_element: concept_mutation;;
+
+*);;
+
+sc_node_not_relation->concept_tongue;;
+concept_tongue=>nrel_main_idtf:
+[язык](* <-lang_ru;; *);
+	[tongue](* <- lang_en;; *);;
+
+
+//определение 
+concept_body_part <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(часть тела)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [составной элемент организма животного, рассматриваемый как единый объект](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_organism;;
+    ->concept_animalia;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_organism => nrel_inclusion: concept_body_part;;
+
+//утверждения
+
+concept_body_part <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(часть тела, язык)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Самая быстро заживающая часть тела — язык](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_body_part;;
+	-> rrel_key_sc_element: concept_tongue;;
+
+*);;
+
+sc_node_not_relation -> concept_tooth;;
+concept_tooth=>nrel_main_idtf:
+[зуб](* <-lang_ru;; *);
+	[tooth](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_bone;;
+concept_bone=>nrel_main_idtf:
+[кость](* <-lang_ru;; *);
+	[bone](* <- lang_en;; *);;
+
+// 
+concept_tooth <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(зуб)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [костное образование, во множестве расположенное в ротовой полости большинства позвоночных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_bone;; 
+    ->concept_body_part;; 
+    ->concept_mouth;;  
+         
+*);;
+*);;
+
+
+// / 
+
+concept_mouth => nrel_inclusion: concept_tooth;;
+
+//
+
+concept_tooth <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(зуб, пища)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[зубы служат для перемалывания пищи](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_tooth;;
+	-> rrel_key_sc_element: concept_food;;
+
+*);;
+
+sc_node_not_relation -> concept_tusk;;
+concept_tusk=>nrel_main_idtf:
+[бивень](* <-lang_ru;; *);
+	[tusk](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_protection;;
+concept_protection=>nrel_main_idtf:
+[защита](* <-lang_ru;; *);
+	[protection](* <- lang_en;; *);;
+
+// 
+concept_tooth <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(бивень)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [видоизмененный зуб у некоторых животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_body_part;; 
+    ->concept_tooth;;  
+         
+*);;
+*);;
+
+
+// / 
+
+concept_tooth => nrel_belonging: concept_tusk;;
+
+//
+
+concept_tusk <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(защита, бивень, животные)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[бивень часто используется для защиты животного](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_tusk;;
+	-> rrel_key_sc_element: concept_protection;;
+	-> rrel_key_sc_element: concept_animalia;;
+
+*);;
+
+sc_node_not_relation->concept_waterfowl;;
+concept_waterfowl=>nrel_main_idtf:
+[водоплавающие](* <-lang_ru;; *);
+	[waterfowl](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_familia_waterfowl;; 
+concept_familia_waterfowl=>nrel_main_idtf:
+[семейство водоплавающих](* <-lang_ru;; *);
+	[familia waterfowl](* <- lang_en;; *);;
+
+
+sc_node_not_relation -> concept_limb;; 
+concept_limb=>nrel_main_idtf:
+[конечность](* <-lang_ru;; *);
+	[limb](* <- lang_en;; *);;
+
+
+
+
+
+
+//определение 
+concept_waterfowl <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(водоплавающие)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство живых организмов, обладающих способностью плавать.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_familia;;
+    ->concept_living_organism;;      
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_familia -> concept_familia_waterfowl;;
+concept_familia_waterfowl => nrel_inclusion: concept_waterfowl;;
+
+//утверждения
+
+concept_waterfowl <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(водоплавающие, конечность)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[водоплавающие имеют водоизмененные конечности](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_waterfowl;;
+	-> rrel_key_sc_element: concept_limb;;
+
+*);;
+
+sc_node_not_relation -> concept_weight;;
+concept_weight=>nrel_main_idtf:
+[вес](* <-lang_ru;; *);
+	[weight](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_weight <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(вес)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [тяжесть кого-чего-либо](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_living_organism;;
+    ->concept_living_body;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_living_body => nrel_inclusion: concept_weight;;
+
+//утверждения
+
+concept_weight <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(живой организм, вес)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[вес живых организмов может достигать нескольки тысяч тонн](* <-lang_ru;; *);;
+	*);;
+
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_weight;;
+
+*);;
+
+sc_node_not_relation->concept_wing;;
+concept_wing=>nrel_main_idtf:
+[крыло](* <-lang_ru;; *);
+	[wing](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_flying;;
+concept_flying=>nrel_main_idtf:
+[полет](* <-lang_ru;; *);
+	[flying](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_bird;;
+concept_bird=>nrel_main_idtf:
+[птица](* <-lang_ru;; *);
+	[bird](* <- lang_en;; *);;
+
+
+
+//определение 
+concept_wing <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(крыло)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [парная часть тела животных, обычно используемая для полёта](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_body_part;;
+    ->concept_flying;; 
+    ->concept_animalia;; 
+          
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_living_body => nrel_inclusion: concept_wing;;
+
+//утверждения
+
+concept_wing <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(крыло, птица)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[крылья в большинстве случае прерогатива птиц](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_bird;;
+	-> rrel_key_sc_element: concept_wing;;
+
+*);;
+
+//определение 
+concept_wool <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(шерсть)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [волосатый покров на коже животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_skin;; 
+
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_skin => nrel_inclusion: concept_wool;;
+
+//утверждения
+
+concept_wool <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(шерсть, животные)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[шерстьу животных может выпадать в теплое время года](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_wool;;
+	-> rrel_key_sc_element: concept_animalia;;
+
+*);;
+
+
+
+//определение 
+concept_heterotroph <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(гетеротрофы)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ организмы, которые не способны синтезировать органические вещества из неорганических путём фотосинтеза или хемосинтеза](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_animalia;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_heterotroph <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(гетеротрофы, животные, растения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Гетеротрофами являются почти все животные и некоторые растения](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_heterotroph;;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+
+*);;
+
+
+sc_node_not_relation -> concept_divisio;;
+concept_divisio=>nrel_main_idtf:
+[отдел](* <-lang_ru;; *);
+	[divisio](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_movement <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(передвижение)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ изменение положения тела в пространстве](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_body;;
+    ->concept_living_body;;
+
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_movement <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(гетеротрофы, животные, растения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Передвижение характерно практически для всех живых организмов в большей или меньшей степени, измеряемой скоростью](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_plantae;;
+
+
+*);;
+
+
+sc_node_not_relation -> concept_divisio;;
+concept_divisio=>nrel_main_idtf:
+[отдел](* <-lang_ru;; *);
+	[divisio](* <- lang_en;; *);;
+
+
+
+
+//определение 
+concept_sound <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(звук)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ Воспринимаемое слухом физическое явление, порождаемое колебательными движениями частиц воздуха или другой среды](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_ear;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_sound <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(звук, живой организм)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[звук характеризуется частотой. Живые оранизмы способны улавливать различные диапазоны этих частот](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_sound;;
+	-> rrel_key_sc_element: concept_living_organism;;
+
+
+*);;
+
+
+
+//определение 
+concept_organ <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(орган)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [обособленная совокупность различных типов клеток и тканей, выполняющая определённую функцию в живом организме](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//определение 
+concept_vision <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(зрение)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ одно из пяти внешних чувств, органом к-рого является глаз; способность видеть](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_eye;;
+    ->concept_organ;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_heterotroph <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(ухо, зрение, орган)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[при потере зрения, остальные органы чувств начинают работать интенсивнее, например, улучшается слух](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_ear;;
+	-> rrel_key_sc_element: concept_organ;;
+	-> rrel_key_sc_element: concept_vision;;
+
+
+*);;
+
+
+//определение 
+concept_zoology <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(зоология)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [наука о животном мире](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_animalia;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_zoology <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(защита, животные, зоология)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Зоология связана с другими биологическими науками, медициной, ветеринарией, сельским хозяйством, с производственной деятельностью человека и защитой животных](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_protection;;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_zoology;;
+
+
+*);;
+
+
+//определение 
+concept_monotype_genus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(монотипный род)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род, в состав которого входит только один вид](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_genus;;
+    ->concept_species;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_monotype_genus <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(гетеротрофы, животные, растения)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[род называется «монотипическим», или «монотипным» (в зоологии обычно используют первый термин, в ботанике — второй)](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_genus;;
+	-> rrel_key_sc_element: concept_monotype_genus;;
+	-> rrel_key_sc_element: concept_zoology;;
+	-> rrel_key_sc_element: concept_botanic;;
+
+
+*);;
+
+
+//определение 
+concept_rank <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ранг)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ уровень в иерархически организованной системе живых организмов](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+//определение 
+concept_politype_genus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(политипный род)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род, содержащий большое число видов ](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_genus;;
+    ->concept_species;;
+       
+*);;
+*);;
+
+
+
+
+//определение 
+concept_oligotype_genus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(олиготипный род)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род, содержащий небольшое число видов](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_genus;;
+    ->concept_species;;
+       
+*);;
+*);;
+
+
+
+
+//определение 
+concept_brain <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(мозг)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ центральный отдел нервной системы животных, обычно расположенный в головном (переднем) отделе тела и представляющий собой компактное скопление нервных клеток и их отростков-дендритов](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_body;;
+    ->concept_animalia;;
+    ->concept_body;;
+    ->concept_head;;
+       
+*);;
+*);;
+
+
+//включение / разбиение
+
+
+
+
+//утверждения
+
+concept_brain <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(ивой организм, орган, мозг)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[мозг - один из самых важных органов живого организма](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_living_organism;;
+	-> rrel_key_sc_element: concept_organ;;
+	-> rrel_key_sc_element: concept_brain;;
+
+
+*);;
+
+
+
+//определение 
+concept_sinew <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(опора)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ место, на к-ром можно утвердить, укрепить что-н. для придания прочного,постоянного положения,а также предмет,служащий для поддержки чего-н.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+
+
+//определение 
+concept_body <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(тело)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ физическая оболочка живого существа](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+       
+*);;
+*);;
+
+
+//определение 
+concept_food <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(пища)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [то, что едят, чем питаются живые организмы](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+       
+*);;
+*);;
+
+
+
+
+//определение 
+concept_breath <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(дыхание)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ втягивание и выпускание воздуха лёгкими (или, у нек-рых животных, иными соответствующими органами) как процесс поглощения кислорода и выделения углекислоты живыми организмами](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->concept_animalia;;
+    ->concept_organ;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_botanic <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ботаника)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [наука о растения, раздел биологии](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_biology;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_bryophyta <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(мхи)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отдел высших растений](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_divisio;;
+    ->concept_plantae;;
+       
+*);;
+*);;
+
+
+//определение 
+concept_polypodiophyta <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(папоротники)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отдел сосудистых растений, в который входят как современные папоротники, так и одни из древнейших высших растений](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_divisio;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_equisetum <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(хвощи)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род сосудистых растений, в силу своей уникальности в современной флоре иногда выделяемый в особый отдел Хвощевидные](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_divisio;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_lycopodium <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плауны)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род растений семейства Плауновые](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_genus;;
+    ->concept_plantae;;
+    ->concept_familia;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_gymnospermae <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(голосеменные растения)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [это наземные, обычно вечнозелёные деревья и кустарники](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_magnoliophyta <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(покрытосеменные растения)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отдел высших растений, отличительной особенностью которых является наличие цветка в качестве органа полового размножения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_divisio;;
+    ->concept_plantae;;
+    ->concept_flower;;
+    ->concept_organ;;
+    ->concept_reproduction;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_mutation <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(мутация)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [стойкое (то есть такое, которое может быть унаследовано потомками данной клетки или организма) изменение генома](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_waterfowl <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(водоплавающие)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [способный плавать в воде, имеющий перепонки на конечностях](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_water;;
+    ->concept_membrane;;
+    ->concept_limb;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_limb <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(конечность)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [рука, нога, а также отдельный орган движения у животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_hand;;
+    ->concept_legs;;
+    ->concept_organ;;
+    ->concept_movement;;
+    ->concept_animalia;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_flying <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(полет)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [движение, передвижение по воздуху](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_movement;;
+       
+*);;
+*);;
+
+
+//определение 
+concept_bird <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(птица)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [покрытое перьями и пухом позвоночное животное с крыльями, двумя конечностями и клювом](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_feather;;
+    ->concept_animalia;;
+    ->concept_wing;;
+    ->concept_limb;;
+    ->concept_beak;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_swimming <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плавание)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [передвижение по поверхности воды](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_movement;;
+    ->concept_water;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_reproduction <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(размножение)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [присущее всем живым организмам свойство воспроизведения себе подобных, обеспечивающее непрерывность и преемственность жизни](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_water <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(вода)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [прозрачнаябесцветнаяжидкость,представляющаясобой в чистом виде химическое соединение водорода и кислорода](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+
+
+//определение 
+concept_microbe <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(микроб)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [микроорганизм, бактерия](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;       
+*);;
+*);;
+
+
+
+//определение 
+concept_mushroom <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(гриб)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [низшее растение, не образующее цветков и семян и размножающееся спорами](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_seed;;
+    ->concept_flower;;
+    ->concept_reproduction;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_mycelium <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(грибница)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [подземная часть гриба, его корневище из тонких нитей](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_mushroom;;
+    ->concept_root;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_crossing <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(скрещивание)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из методов селекции растений и животных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_animalia;;
+    ->concept_reproduction;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_biology <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(биология)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [наука о живой природе, о закономерностях органической жизни](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_nature;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_gene_pool <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(генофонд)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [совокупность генов, которые имеются у особей, составляющих данную популяцию](* <- lang_ru;; 	*);;
+		*);;
+
+*);;
+
+
+
+//определение 
+concept_range <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ареал)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [область распространения, расселения кого-чего-н](* <- lang_ru;; 	*);;
+		*);;
+
+*);;
+
+
+
+//определение 
+concept_morphological_criterion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(морфологический критерий)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [критерий, который включает характеристики строения органов и тканей вида](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_species;;
+    ->concept_organ;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_physiological_biochemical_criterion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(физиолого-биохимический критерий)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [критерий, основанный на том,что разные виды могут различаться по аминокислотному составу белков](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_species;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_geographic_criterion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(географический критерий)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [критерий, основанный на том, что каждый вид занимает определенную территорию (или акваторию) – географический ареал](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_species;;
+    ->concept_range;;
+       
+*);;
+*);;
+
+
+
+//определение 
+concept_ecological_criterion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(экологический критерий)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [критерий, основанный на том, что два вида не могут занимать одну экологическую нишу](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_species;;
+       
+*);;
+*);;
+
+
+
+
+concept_reproduction_criterion <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(репродуктивный критерий )](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ критерий основанный на том, что особи одного вида могут скрещиваться между собой с образованием плодовитого потомства, похожего на родителей, а особи разных видов, обитающих совместно, не скрещиваются между собой, или их потомство бесплодно](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_species;;
+    ->concept_crossing;;
+    ->concept_reproduction;;
+       
+*);;
+*);;
+
+
+
+concept_root <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(корень)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ подземная часть растения, служащая для укрепления его в почве и всасывания из неё воды и питательных веществ](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_plantae;;
+    ->concept_water;;
+       
+*);;
+*);;
+
+
+
+concept_bone <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(кость)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ твёрдое образование в теле человека и животных, являющееся составной частью скелета](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_body_part;;
+    ->concept_body;;
+    ->concept_animalia;;
+       
+*);;
+*);;
+
+
+concept_protection <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(защита)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ то, что защищает, служит обороной](* <- lang_ru;; 	*);;
+		*);;
+
+*);;
+
+
+
+sc_node_not_relation -> concept_mammals;;
+concept_mammals=>nrel_main_idtf:
+[млекопитающие](* <-lang_ru;; *);
+	[mammals](* <- lang_en;; *);;
+
+//определение 
+concept_mammals <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(млекопитающие)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ класс позвоночных животных, основной отличительной особенностью которых является вскармливание детёнышей молоком](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_living_organism;;
+    ->concept_body;; 
+    ->concept_zoology;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_animalia => nrel_inclusion: concept_mammals;;
+
+//утверждения
+
+concept_mammals <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животные, класс, царство)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[класс млекопитающие относится к царству животные](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_regnum;;
+	-> rrel_key_sc_element: concept_divisio;;
+	
+*);;
+
+
+
+sc_node_not_relation -> concept_marine_mammals;;
+concept_marine_mammals=>nrel_main_idtf:
+[морские млекопитающие](* <-lang_ru;; *);
+	[marine mammals](* <- lang_en;; *);;
+
+//определение 
+concept_marine_mammals <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(морские млекопитающие)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [сборная группа водных и полуводных млекопитающих, чья жизнь полностью или существенную часть времени проходит в морской среде](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_mammals => nrel_inclusion: concept_marine_mammals;;
+
+//утверждения
+
+concept_marine_mammals <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животные, млекопитающие, таксон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[родительским таксоном для морских млекопитающих являются млекопитающие](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_mammals;;
+	-> rrel_key_sc_element: concept_taxon;;
+	
+*);;
+
+
+sc_node_not_relation -> concept_marine_mammals;;
+concept_marine_mammals=>nrel_main_idtf:
+[морские млекопитающие](* <-lang_ru;; *);
+	[marine mammals](* <- lang_en;; *);;
+
+//определение 
+concept_marine_mammals <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(морские млекопитающие)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [сборная группа водных и полуводных млекопитающих, чья жизнь полностью или существенную часть времени проходит в морской среде](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_mammals => nrel_inclusion: concept_marine_mammals;;
+
+//утверждения
+
+concept_marine_mammals <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(животные, млекопитающие, таксон)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[родительским таксоном для морских млекопитающих являются млекопитающие](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_animalia;;
+	-> rrel_key_sc_element: concept_mammals;;
+	-> rrel_key_sc_element: concept_taxon;;
+	
+*);;
+
+
+
+
+sc_node_not_relation -> concept_taxon;;
+concept_taxon=>nrel_main_idtf:
+[таксон](* <-lang_ru;; *);
+	[taxon](* <- lang_en;; *);;
+
+//определение 
+concept_taxon <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(таксон)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [группа в классификации, состоящая из дискретных объектов, объединяемых на основании общих свойств и признаков](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+
+//включение / разбиение
+
+concept_taxon => nrel_inclusion: concept_rank;;
+
+
+
+
+sc_node_not_relation -> concept_sirens;;
+concept_sirens=>nrel_main_idtf:
+[сирены](* <-lang_ru;; *);
+	[sirens](* <- lang_en;; *);;
+
+//определение 
+concept_sirens <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(сирены)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд растительноядных плацентарных млекопитающих, живущих в воде](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_sirens;;
+
+
+
+
+sc_node_not_relation -> concept_cetaceans;;
+concept_cetaceans=>nrel_main_idtf:
+[китообразные](* <-lang_ru;; *);
+	[cetaceans](* <- lang_en;; *);;
+
+//определение 
+concept_cetaceans <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(китообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отряд млекопитающих, полностью приспособленных к жизни в воде](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_cetaceans;;
+
+
+
+
+
+sc_node_not_relation -> concept_desmostilia;;
+concept_desmostilia=>nrel_main_idtf:
+[десмостилии](* <-lang_ru;; *);
+	[desmostilia](* <- lang_en;; *);;
+
+//определение 
+concept_desmostilia <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(десмостилии)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд вымерших морских млекопитающих, живших в олигоцене — миоцене](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_desmostilia;;
+
+
+
+sc_node_not_relation -> concept_walrus;;
+concept_walrus=>nrel_main_idtf:
+[моржовые](* <-lang_ru;; *);
+	[walrus](* <- lang_en;; *);;
+
+//определение 
+concept_walrus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(моржовые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство морских млекопитающих. Ранее его относили к отряду ластоногих](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_walrus;;
+
+
+
+
+
+sc_node_not_relation -> concept_true_seals;;
+concept_true_seals=>nrel_main_idtf:
+[настоящие тюлени](* <-lang_ru;; *);
+	[true seals](* <- lang_en;; *);;
+
+//определение 
+concept_true_seals <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(настоящие тюлени)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство хищных млекопитающих из подотряда псообразных, ранее относимое к ластоногим](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_true_seals;;
+
+
+
+
+
+
+sc_node_not_relation -> concept_eared_seals;;
+concept_eared_seals=>nrel_main_idtf:
+[ушастые тюлени](* <-lang_ru;; *);
+	[eared seals](* <- lang_en;; *);;
+
+//определение 
+concept_eared_seals <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ушастые тюлени)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство млекопитающих, относимое по современным представлениям к отряду хищных, и вместе с семействами моржовые и медвежьи образующее надсемейство псообразные](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_eared_seals;;
+
+
+
+
+sc_node_not_relation -> concept_kolponomos;;
+concept_kolponomos=>nrel_main_idtf:
+[колпономосы](* <-lang_ru;; *);
+	[kolponomos](* <- lang_en;; *);;
+
+//определение 
+concept_kolponomos <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(колпономосы)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род вымерших морских медведей, живших в Северной Америке в миоцене](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_kolponomos;;
+
+
+
+
+sc_node_not_relation -> concept_thalassocnus;;
+concept_thalassocnus=>nrel_main_idtf:
+[талассокнус](* <-lang_ru;; *);
+	[thalassocnus](* <- lang_en;; *);;
+
+//определение 
+concept_thalassocnus <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(талассокнус)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ вымерший род ленивцев, ведших водный или полуводный образ жизни](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_thalassocnus;;
+
+
+
+
+sc_node_not_relation -> concept_polar_bear;;
+concept_polar_bear=>nrel_main_idtf:
+[белый медведь](* <-lang_ru;; *);
+	[polar bear](* <- lang_en;; *);;
+
+//определение 
+concept_polar_bear <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(белый медведь)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [хищное млекопитающее семейства медвежьих, близкий родственник бурого медведя](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+    ->concept_brown_bear;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_polar_bear;;
+
+
+
+
+sc_node_not_relation -> concept_sea_ape;;
+concept_sea_ape=>nrel_main_idtf:
+[калан](* <-lang_ru;; *);
+	[sea ape](* <- lang_en;; *);;
+
+//определение 
+concept_sea_ape <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(калан)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [хищное морское млекопитающее семейства куньих, вид, близкий к выдрам](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+    ->concept_species;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_sea_ape;;
+
+
+
+
+sc_node_not_relation -> concept_cat_ape;;
+concept_cat_ape=>nrel_main_idtf:
+[кошачья выдра](* <-lang_ru;; *);
+	[cat ape](* <- lang_en;; *);;
+
+//определение 
+concept_cat_ape <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(кошачья выдра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [редкое и малоизученное хищное морское млекопитающее семейства куньих](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_marine_mammals;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_marine_mammals => nrel_inclusion: concept_cat_ape;;
+
+
+
+
+
+sc_node_not_relation -> concept_first_beasts;;
+concept_first_beasts=>nrel_main_idtf:
+[первозвери](* <-lang_ru;; *);
+	[first beasts](* <- lang_en;; *);;
+
+//определение 
+concept_first_beasts <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(первозвери)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [подкласс примитивных млекопитающих, соединяющих в себе черты млекопитающих и синапсид.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_mammals => nrel_inclusion: concept_first_beasts;;
+
+
+
+
+sc_node_not_relation -> concept_beasts;;
+concept_beasts=>nrel_main_idtf:
+[звери](* <-lang_ru;; *);
+	[beasts](* <- lang_en;; *);;
+
+//определение 
+concept_beasts <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(звери)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [подкласc млекопитающих, объединяющий всех современных живородящих млекопитающих, которые рожают детёнышей без откладывания яиц](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_mammals => nrel_inclusion: concept_beasts;;
+
+
+
+
+sc_node_not_relation -> concept_monotremata;;
+concept_monotremata=>nrel_main_idtf:
+[однопроходные](* <-lang_ru;; *);
+	[single pass](* <- lang_en;; *);;
+
+//определение 
+concept_monotremata <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(однопроходные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [единственный современный отряд в подклассе первозверей. Название обусловлено тем, что кишечник и мочеполовой синус впадают в клоаку (аналогично — у земноводных, рептилий и птиц), а не выходят наружу отдельными проходами.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_first_beasts => nrel_inclusion: concept_monotremata;;
+
+
+
+
+
+sc_node_not_relation -> concept_marsupials;;
+concept_marsupials=>nrel_main_idtf:
+[сумчатые](* <-lang_ru;; *);
+	[marsupials](* <- lang_en;; *);;
+
+//определение 
+concept_marsupials <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(сумчатые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [клада (инфракласс) млекопитающих, объединяемая вместе с плацентарными в подкласс звери](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_beasts => nrel_inclusion: concept_marsupials;;
+
+
+
+
+
+
+sc_node_not_relation -> concept_placental;;
+concept_placental=>nrel_main_idtf:
+[плацентарные](* <-lang_ru;; *);
+	[placental](* <- lang_en;; *);;
+
+//определение 
+concept_placental <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плацентарные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [наиболее обширная группа млекопитающих (включает примерно 94 % современных видов этого класса)](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_beasts => nrel_inclusion: concept_placental;;
+
+
+
+
+
+sc_node_not_relation -> concept_ornithorhynchidae;;
+concept_ornithorhynchidae=>nrel_main_idtf:
+[утконосые](* <-lang_ru;; *);
+	[platypuses](* <- lang_en;; *);;
+
+//определение 
+concept_ornithorhynchidae <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(утконосые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство водоплавающих млекопитающих отряда однопроходных, обитающих в Австралии](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_monotremata => nrel_inclusion: concept_ornithorhynchidae;;
+
+
+
+
+sc_node_not_relation -> concept_tachyglossidae;;
+concept_tachyglossidae=>nrel_main_idtf:
+[ехидновые](* <-lang_ru;; *);
+	[echidna](* <- lang_en;; *);;
+
+//определение 
+concept_tachyglossidae <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ехидновые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство млекопитающих из отряда однопроходных (Monotremata)](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_mammals;;
+    ->concept_ordo_A;;
+    ->concept_monotremata;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_monotremata => nrel_inclusion: concept_tachyglossidae;;
+
+
+
+
+sc_node_not_relation -> concept_birds;;
+concept_birds=>nrel_main_idtf:
+[птицы](* <-lang_ru;; *);
+	[birds](* <- lang_en;; *);;
+
+//определение 
+concept_birds <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(птицы)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [группа теплокровных яйцекладущих позвоночных животных, традиционно рассматриваемая в ранге отдельного класса](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_classis;;
+    ->concept_rank;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_animalia => nrel_inclusion: concept_birds;;
+
+
+
+
+sc_node_not_relation -> concept_ringless;;
+concept_ringless=>nrel_main_idtf:
+[бескилевые](* <-lang_ru;; *);
+	[ringless](* <- lang_en;; *);;
+
+//определение 
+concept_ringless <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(бескилевые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [одна из двух ныне существующих клад птиц, которой придают ранг ниже подкласса, от инфракласса до надотряда. Состоит из пяти современных отрядов: казуарообразных (Casuariiformes), кивиобразных (Apterygiformes), нандуобразных (Rheiformes), страусообразных (Struthioniformes), тинамуобразных (Tinamiformes), и как минимум трёх вымерших: эпиорнисообразных (Aepyornithiformes), литорнитообразных (Lithornithiformes) и моаобразных (Dinornithiformes)](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_rank;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_birds => nrel_inclusion: concept_ringless;;
+
+
+
+
+sc_node_not_relation -> concept_newborn;;
+concept_newborn=>nrel_main_idtf:
+[новонебные](* <-lang_ru;; *);
+	[newborn](* <- lang_en;; *);;
+
+//определение 
+concept_newborn <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(новонебные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [клада птиц, охватывающая более 9000 видов и подавляющее большинство современных птиц, которой придают ранг ниже подкласса, от инфракласса до надотряда. Противопоставлена кладе бескилевых (Paleognathae). Главной особенностью, отличающей новонёбных птиц от бескилевых, является структура нёба](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_rank;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_birds => nrel_inclusion: concept_newborn;;
+
+
+
+
+sc_node_not_relation -> concept_ciconiiformes;;
+concept_ciconiiformes=>nrel_main_idtf:
+[аистообразные](* <-lang_ru;; *);
+	[ciconiiformes](* <- lang_en;; *);;
+
+//определение 
+concept_ciconiiformes <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(аистообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отряд новонёбных птиц, охватывающий по разным классификациям одно или несколько семейств. Аистообразные являются длинноногими птицами](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+    ->concept_newborn;; 
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_ciconiiformes;;
+
+
+
+
+sc_node_not_relation -> concept_petrelshaped;;
+concept_petrelshaped=>nrel_main_idtf:
+[буревестникообразные](* <-lang_ru;; *);
+	[petrelshaped](* <- lang_en;; *);;
+
+//определение 
+concept_petrelshaped <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(буревестникообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд длиннокрылых и короткохвостых морских птиц. Название «трубконосые» птицы получили за особое строение клюва](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_beak;;
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_petrelshaped;;
+
+
+
+
+sc_node_not_relation -> concept_passerines;;
+concept_passerines=>nrel_main_idtf:
+[воробьинообразные](* <-lang_ru;; *);
+	[passerines](* <- lang_en;; *);;
+
+//определение 
+concept_passerines <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(воробьинообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [самый многочисленный отряд птиц (около 5400 видов). Преимущественно мелкие и средней величины птицы, значительно различающиеся по внешнему виду, образу жизни, условиям обитания и способам добывания пищи](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_passerines;;
+
+
+
+
+sc_node_not_relation -> concept_loons;;
+concept_loons=>nrel_main_idtf:
+[гагары](* <-lang_ru;; *);
+	[loons](* <- lang_en;; *);;
+
+//определение 
+concept_loons <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(гагары)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [род водоплавающих птиц, относящихся к монотипичному в настоящее время отряду гагарообразных](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_genus;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_loons;;
+
+
+
+
+sc_node_not_relation -> concept_pigeonshaped;;
+concept_pigeonshaped=>nrel_main_idtf:
+[голубеобразные](* <-lang_ru;; *);
+	[pigeonshaped](* <- lang_en;; *);;
+
+//определение 
+concept_pigeonshaped <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(голубеобразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд новонёбных птиц, охватывающий по разным классификациям одно или несколько семейств. Общий склад тела по типу повсеместно распространённого сизого и домашнего голубя](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+    ->concept_body;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_pigeonshaped;;
+
+
+
+
+sc_node_not_relation -> concept_anseriform;;
+concept_anseriform=>nrel_main_idtf:
+[гусеобразные](* <-lang_ru;; *);
+	[anseriform](* <- lang_en;; *);;
+
+//определение 
+concept_anseriform <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(гусеобразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отряд новонёбных птиц, в который наряду с такими птицами, как гуси, утки, лебеди, входят и более экзотические семейства](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_newborn;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_anseriform;;
+
+
+
+
+sc_node_not_relation -> concept_bustard;;
+concept_bustard=>nrel_main_idtf:
+[дрофиные](* <-lang_ru;; *);
+	[bustard](* <- lang_en;; *);;
+
+//определение 
+concept_bustard <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(дрофиные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство крупных наземных птиц родом из Старого Света, единственное в отряде дрофообра́зных. Включает 26 видов и 11 родов. Традиционно дрофиных относили к отряду журавлеобразных, а позже на основании молекулярных данных выделили в самостоятельный отряд](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+    ->concept_species;;
+    ->concept_genus;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_bustard;;
+
+
+
+
+sc_node_not_relation -> concept_woodpeckers;;
+concept_woodpeckers=>nrel_main_idtf:
+[дятлообразные](* <-lang_ru;; *);
+	[woodpeckers](* <- lang_en;; *);;
+
+//определение 
+concept_woodpeckers <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(дятлообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд новонёбных птиц. Весьма специализированные птицы мелкой и средней величины, обитающие (в подавляющем большинстве) в лесах. Обладают хорошо развитым клювом различной формы; с его помощью, в частности, представители наиболее крупного семейства дятловых долбят кору и сердцевину деревьев, извлекая оттуда пищу — насекомых и их личинок, а в брачный период самцы «барабанят» клювом по сухим деревьям, издавая характерную трель](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_newborn;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+    ->concept_beak;; 
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_woodpeckers;;
+
+
+
+
+sc_node_not_relation -> concept_cranelike;;
+concept_cranelike=>nrel_main_idtf:
+[журавлеобразные](* <-lang_ru;; *);
+	[cranelike](* <- lang_en;; *);;
+
+//определение 
+concept_cranelike <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(журавлеобразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [обширный отряд очень различных по внешнему виду, особенностям внутреннего строения и образу жизни птиц, в систематике Уэтмора включает девять живущих и 12 вымерших семейств.Преимущественно болотные и наземные птицы, реже гнездятся на деревьях](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_familia;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_cranelike;;
+
+
+
+sc_node_not_relation -> concept_cuckoolike;;
+concept_cuckoolike=>nrel_main_idtf:
+[кукушкообразные](* <-lang_ru;; *);
+	[cuckoolike](* <- lang_en;; *);;
+
+//определение 
+concept_cuckoolike <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(кукушкообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд новонёбных птиц, содержащий в настоящее время одно семейство кукушковых](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_familia;;
+    ->concept_newborn;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_cuckoolike;;
+
+
+
+
+sc_node_not_relation -> concept_galliformes;;
+concept_galliformes=>nrel_main_idtf:
+[курообразные](* <-lang_ru;; *);
+	[galliformes](* <- lang_en;; *);;
+
+//определение 
+concept_galliformes <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(курообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [широко распространённый отряд новонёбных птиц. Устаревшие русские названия — скребущие и роющие](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_newborn;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_galliformes;;
+
+
+
+sc_node_not_relation -> concept_grebelike;;
+concept_grebelike=>nrel_main_idtf:
+[поганкообразные](* <-lang_ru;; *);
+	[grebelike](* <- lang_en;; *);;
+
+//определение 
+concept_grebelike <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(поганкообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [семейство водоплавающих птиц, единственное в отряде поганкообразных. Включает 22 вида, из которых три вымерли. Русское название «поганка» происходит от отвратительного вкуса их мяса, которое имеет неприятный запах рыбы](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+    ->concept_species;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_grebelike;;
+
+
+sc_node_not_relation -> concept_coraciiformes;;
+concept_coraciiformes=>nrel_main_idtf:
+[ракшеобразные](* <-lang_ru;; *);
+	[coraciiformes](* <- lang_en;; *);;
+
+//определение 
+concept_coraciiformes <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ракшеобразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд новонёбных птиц. Птицы средних и мелких размеров с плотным жёстким оперением](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_coraciiformes;;
+
+
+
+sc_node_not_relation -> concept_charadriiformes;;
+concept_charadriiformes=>nrel_main_idtf:
+[ржанкообразные](* <-lang_ru;; *);
+	[charadriiformes](* <- lang_en;; *);;
+
+//определение 
+concept_charadriiformes <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ржанкообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [один из самых крупных отрядов водных и околоводных птиц, распространённых во всём мире и значительно различающихся как морфологически, так и по поведенческим характеристикам. Птицы от мелкого до среднего размера, их вес варьируют от 19—30 г у песочника-крошки до 1,3—2 кг у морской чайки](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_charadriiformes;;
+
+
+
+sc_node_not_relation -> concept_pteroclidae;;
+concept_pteroclidae=>nrel_main_idtf:
+[рябковые](* <-lang_ru;; *);
+	[pteroclidae](* <- lang_en;; *);;
+
+//определение 
+concept_pteroclidae <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(рябковые)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ семейство птиц, единственное в отряде рябкообразных. Представители этого семейства весьма похожи между собой по внешнему виду и поведению. Являются объектом охоты](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_pteroclidae;;
+
+
+
+sc_node_not_relation -> concept_owls;;
+concept_owls=>nrel_main_idtf:
+[совообразные](* <-lang_ru;; *);
+	[owls](* <- lang_en;; *);;
+
+//определение 
+concept_owls <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(совообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд хищных птиц, включающий более 200 крупных и средней величины видов, в основном ночных птиц, распространённых во всех странах мира](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_owls;;
+
+
+
+sc_node_not_relation -> concept_falconiform;;
+concept_falconiform=>nrel_main_idtf:
+[соколообразные](* <-lang_ru;; *);
+	[falconiform](* <- lang_en;; *);;
+
+//определение 
+concept_falconiform <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(соколообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [отряд птиц из подкласса новонёбных. Преимущественно хищные](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_newborn;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_falconiform;;
+
+
+
+sc_node_not_relation -> concept_swinelike;;
+concept_swinelike=>nrel_main_idtf:
+[стрижеобразные](* <-lang_ru;; *);
+	[swinelike](* <- lang_en;; *);;
+
+//определение 
+concept_swinelike <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(стрижеобразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отряд новонёбных птиц, в состав которого включают семейства совиных козодоев, стрижей, древесных стрижей и колибри](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_familia;;
+  
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_swinelike;;
+
+
+
+sc_node_not_relation -> concept_hawkshaped;;
+concept_hawkshaped=>nrel_main_idtf:
+[ястребообразные](* <-lang_ru;; *);
+	[hawkshaped](* <- lang_en;; *);;
+
+//определение 
+concept_hawkshaped <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(ястребообразные)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ отряд хищных птиц из подкласса новонёбных, объединяющий ястребов, коршунов, орлов и других птиц](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+
+    ->concept_animalia;;
+    ->concept_birds;;
+    ->concept_ordo_A;;
+    ->concept_newborn;;
+         
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_newborn => nrel_inclusion: concept_hawkshaped;;

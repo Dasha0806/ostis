@@ -1,0 +1,172 @@
+concept_pedicularis_sceptrum_carolinum_l => nrel_main_idtf: [мытник скипетровидный](*<- lang_ru;;*); [pedicularis sceptrum-carolinum l.](*<- lang_lat;;*); [увярэднiк скiпетрападобны](*<- lang_bel;;*);;
+concept_pedicularis_sceptrum_carolinum_l => nrel_idtf: [увярэднiк скiпетрападобны](*<- lang_bel;;*);;
+
+concept_species -> concept_pedicularis_sceptrum_carolinum_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_pedicularis_sceptrum_carolinum_l;;
+
+concept_pedicularis_sceptrum_carolinum_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мытник скипетровидный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_pedicularis_sceptrum_carolinum_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pedicularis_sceptrum_carolinum_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_pedicularis_sceptrum_carolinum_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу Беларуси 
+2-го издания (1993). Находится под государственной охраной 
+в Литве, Латвии 
+и Украине.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с прямостоячим стеблем высотой до 120 см. Листья расположены преимущественно в нижней части стебля, простые, продолговато-эллиптические или продолговатые, перистораздельные или перисторассеченные, длиной до 20 см. Цветки желтоватые, длиной 3-3,5 см, двугубые, c красноватой у верхушки нижней губой, собраны в соцветие кисть. Плод - округлая коробочка.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Евразия:  Скандинавия, Атлантиче­ская (Германия), Средняя (в некоторых странах исчез) и Восточная Европа, Западная и Восточная Сибирь, Дальний Восток, Монголия, Япония и Китай . Бореальный реликтовый вид в Беларуси произрастает вблизи юго-западной границы ареала. Встречается рассеянно по всей территории республики. Большая часть местонахождений известна по данным литературы и старым гербарным сборам (50 и более лет). Отмечен в Браслав­ском, Лепельском и Поставском р-нах Витебской обл. 
+, Гродненском, Сморгонском и Щучинском р-нах Гродненской обл. , Вилейском, Крупском, Минском, Мядельском, Пуховичском, Смолевичском, Солигорском р-нах Минской обл. , Бобруйском, Быховском, Глусском, Могилевском, Осиповичском, Славгородском 
+р-нах Могилевской обл. , Барановичском, Березовском, Брестском, Дрогичинском, Ивацевичском, Кобринском, Пинском, Пружанском р-нах Брестской обл. , Житковичском, Жлобинском, Лоевском, Мозырском, Речицком, Рогачевском р-нах Гомельской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Закустаренные низинные и переходные болота, влажные и заболоченные суходольные и пойменные луга, опушки и поляны лесов на низинных и переходных болотах, берега каналов, канав.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Факультативное полупаразитное растение. Цветет в июле - августе. Энтомофил. Размножается преимущественно семенами. Семена созревают в августе - сентябре. Баллист.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Произрастает преимущественно небольшими группами и единичными особями, изредка в местах произрастания имеет высокую численность (в Дрогичинском и Кобринском 
+р-нах). В некоторых известных ранее местонахождениях (в Бресте, Минске, окрестностях оз. Нарочь и др.) 
+исчез.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Преимущественно антропогенные:  окультуривание лугов (использование удобрений и гербицидов, выжигание травы и т. п.), нарушение водного режима рек и болот, осушительно-мелиоративные работы, раннее сенокошение, выпас скота, рекреационные нагрузки, коллекционирование растений.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Охраняется на территориях Березин­ского биосферного заповедника, национальных парков «Беловежская пуща», «Припятский», «Нарочанский», биологических заказников «Бусловка» (Березовский р-н) и «Званец» (Дрогичинский р-н) и др. Необходимо строгое соблюдение режима охраны на заповедных территориях, запрещение хозяйственной деятельности во всех достоверно известных местах произрастания (кроме позднего сенокошения), организация специализированных заказников в местах массового произрастания, контроль за состоянием известных популяций, ревизия ранее известных местонахождений и литературных указаний, целенаправленный поиск новых мест обитания. Следует выяснить возможность искусственного расселения вида в подходящие естественные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_pedicularis_sceptrum_carolinum_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Braslav_district;;->Lepel_district;;->Postavy_district;;->Grodno_district;;->Smorgon_district;;->Shchuchin_district;;->Vileika_district;;->Krupski_district;;->Minsk_district;;->Myadel_district;;->Pukhovichi_district;;->Smolevichi_district;;->Soligorsk_district;;->Bobruisk_district;;->Bykhov_district;;->Glusk_district;;->Mogilev_district;;->Osipovichi_district;;->Slavgorod_district;;->Baranavichy_district;;->Berezovsky_district;;->Brest_district;;->Drogichin_district_district;;->Ivatsevichi_district;;->Kobrin_district;;->Pinsky_district;;->Pruzhany_district;;->Zhitkovichi_district;;->Zhlobin_district;;->Loev_district;;->Mozyr_district;;->Rechitsa_district;;->Rogachev_district;;
+		*);;
+*);;
+
+concept_pedicularis_sceptrum_carolinum_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; simple;oblong_elliptic;oblong;pinnately;pinnate;;
+*);
+...
+(*
+<= nrel_inclusion: flower; yellowish;bilabiate;reddish_lip;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; rounded;box;;
+*);;
+
+concept_pedicularis_sceptrum_carolinum_l <= nrel_inclusion: 
+[65-120 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([65 см] => [120 см]);; 
+*); 
+[3-3.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [3.5 см]);; 
+*);;
+
+[65 см] <- length_of_inflorscence; exact_value;;
+[65 см] -> .centimeter: 65 (* <- number;;*);;
+[120 см] <- length_of_inflorscence; exact_value;;
+[120 см] -> .centimeter: 120 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[3.5 см] <- length_of_inflorscence; exact_value;;
+[3.5 см] -> .centimeter: 3.5 (* <- number;;*);;
+ 
+
+concept_pedicularis_sceptrum_carolinum_l <= nrel_inclusion: concept_2_protection_category;;

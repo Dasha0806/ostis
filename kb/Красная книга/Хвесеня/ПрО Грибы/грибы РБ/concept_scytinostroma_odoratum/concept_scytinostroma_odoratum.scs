@@ -1,0 +1,118 @@
+concept_scytinostroma_odoratum=> nrel_main_idtf: [сцитинострома душистая](*<- lang_ru;;*); [scytinostroma odoratum](*<- lang_lat;;*); [сцыцінастрома духмяная](*<- lang_bel;;*);;
+
+concept_scytinostroma_odoratum<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (сцитинострома душистая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_scytinostroma_odoratum.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_scytinostroma_odoratum;;
+concept_species -> concept_scytinostroma_odoratum;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_scytinostroma_odoratum;;
+
+//пояснения
+concept_scytinostroma_odoratum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: В Красную книгу Беларуси включен впервые. Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Дубовые, грабовые, сосновые леса. Произрастает и образует плодовые тела как сапротроф на валежной древесине лиственных пород деревьев (ольхи черной, березы, граба обыкновенного) и хвойных. В западной части Европы отмечается преимущественно на хвойных деревьях .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела появляются в июне - августе. Гриб вызывает белую гниль древесины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Численность популяций не установлена.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение широколиственных лесов, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов Березинского биосферного заповедника и Национального парка «Припятский». Необходимы запрещение антропогенных воздействий в местах роста вида, поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная Америка . В Беларуси отмечен в Витебской (Лепельский р-н) , Гомельской (Житковичский и Лельчицкий р-ны) и Могилевской (Кличевский р-н) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело распростертое, кремовое до бледно-бурого, край приросший. Гименофор гладкий или бугорчатый. В плодовом теле имеются вильчато ветвящиеся скелетные гифы шириной 0,8–2 мкм и цистиды размером 18–50 × 3–6 мкм с зернистым содержимым. Гифы без пряжек. Базидии 20–50 ´ 4–6 мкм. Споры эллиптические, 5,5–8,5 ´ 3–5 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_scytinostroma_odoratum <= nrel_spread: ... 
+	(*
+	->  Zhitkovichy_district; Lepelsky_district; Krichevsky_district; Lyelchytsy_district;;
+	*);;
+
+concept_lahnokladievye => nrel_inclusion: concept_scytinostroma_odoratum;;
+concept_scytinostroma_odoratum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; open; cream;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_hymenophore; smooth; lumpy;;
+	*);;
+
+concept_scytinostroma_odoratum <= nrel_inclusion: concept_2_protection_category;;

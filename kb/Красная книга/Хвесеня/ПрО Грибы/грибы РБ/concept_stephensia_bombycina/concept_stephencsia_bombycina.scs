@@ -1,0 +1,142 @@
+concept_stephencsia_bombycina=> nrel_main_idtf: [стефензия атласная ](*<- lang_ru;;*); [stephencsia bombycina](*<- lang_lat;;*); [стэфензія атласная](*<- lang_bel;;*);;
+
+concept_stephencsia_bombycina<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (стефензия атласная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_stephencsia_bombycina.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_stephencsia_bombycina;;
+concept_species -> concept_stephencsia_bombycina;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_stephencsia_bombycina;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_stephencsia_bombycina;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_stephencsia_bombycina <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает в смешанных и хвойных лесах с богатыми гумусом почвами. Растет и плодоносит в верхнем слое почвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Образует микоризу с широколиственными породами деревьев. Плодовые тела созревают в июле - сентябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются единичными экземплярами или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение условий роста под воздействием антропогенных факторов (уплотнение и загрязнение почвы, вырубка лесов и т.д.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо предупреждение изменения экологического режима в местах произрастания (запретить все виды рубок леса и хозяйственную трансформацию земель, ограничить рекреационные нагрузки). Следует проводить периодический контроль состояния известных популяций, осуществлять поиск новых мест роста и, при необходимости, организовывать их охрану.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Голарктический лесной недостаточно изученный вид с дизъюнктивным ареалом . В Беларуси известно два местонахождения: Минская обл., Минский район, окрестности д. Глебковичи и Могилевская обл., Осиповичский р-н, Жорновская лесная опытная станция .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовое тело округло-клубневидное, диаметром до 2 см. Перидий неотделимый, извилисто-складчатый, почти гладкий, короткоопушенный, с узким щелевидным отверстием, ведущим внутрь плодового тела, очень светлый, чуть буроватый. Глеба беловатая, с лабиринтовидными ходами, розовато-белесыми внутри. Сумки узкомешковидные или цилиндрические, выстилают ходы более или менее правильным гимениальным слоем, 8-споровые, не короче парафиз. Споры шаровидные, гладкие, почти бесцветные со светло-буроватым оттенком, диаметром 17-24 (26) мкм, в сумке лежат в два ряда .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_stephencsia_bombycina <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Asipovichi_district;;
+	*);;
+
+concept_otidievye => nrel_inclusion: concept_stephencsia_bombycina;;
+concept_stephencsia_bombycina => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; rounded_tuberoid;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_peridion; winding_folded; smooth;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_gleb; white; pink;;
+	*);;
+
+
+concept_stephencsia_bombycina <= nrel_inclusion: 
+	[2-2.5 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([2 см] => [2.5 см]);;	
+	*);;
+	
+	[2 см] <- length_of_body; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[2.5 см] <- length_of_body; exact_value;;
+	[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+
+concept_stephencsia_bombycina <= nrel_inclusion: concept_2_protection_category;;

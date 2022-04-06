@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_plates;;
+concept_plates => nrel_main_idtf:
+[ пластинка](*<-lang_ru;;*);
+[plates](*<-lang_en;;*);;
+
+concept_plates <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(пластинка)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [выросты ткани гриба на нижней поверхности шляпки, они расходятся радиально от ножки.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+	->concept_fungos;;
+    ->concept_cap;;
+	->concept_stipe;;
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_plates => nrel_inclusion: concept_sporocarp;;

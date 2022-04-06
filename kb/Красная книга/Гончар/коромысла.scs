@@ -1,0 +1,36 @@
+concept_aeschnidae=> nrel_main_idtf:
+[коромысла](*<-lang_ru;;*);
+[aeschnidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_aeschnidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(коромысла)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_odonata;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Коромысла - семейство крупных стрекоз из подотряда разнокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_odonata =>nrel_inclusion: concept_aeschnidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Очень крупные стрекозы с длиной тела до 70 мм, а в размахе крыльев до 95—115 мм. Глаза соприкасаются на небольшом отрезке. Лопасти нижней губы примерно одинаковые по своему размеру. Брюшко с боковыми рёбрышками.](* <- lang_ru;;*);;
+		*);;
+*);;

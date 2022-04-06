@@ -1,0 +1,163 @@
+concept_chandonantus_birmensis => nrel_main_idtf:
+[хандонантус бирманский](*<-lang_ru;;*);
+[chandonantus birmensis](*<-lang_lat;;*);;
+
+
+concept_species -> concept_chandonantus_birmensis;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_chandonantus_birmensis;;
+
+//пояснения
+concept_chandonantus_birmensis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Растения стелющиеся в рыхлых ковриках, зеленовато-коричневые с желтоватыми верхушками, до 20 мм дл. и 1--2 мм шир. , слабо ветвящиеся. Листья довольно густо расположенные, разделенные почти до основания на три очень неравные лопасти. Амфигастрии крупные, двухлопастные с растопыренными заостренными лопастями и немногочисленными зубцами. Двудомные. В России спорогоны, а также мужские и женские растения не обнаружены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известен только из Приморского края: Тернейский р-н, г. Пластун; Лазовский заповедник, г. Туманная (1); заповедник «Кедровая Падь», хр. Гаккелевский (2), Партизанский р-н, хр. Лозовый (3). За пределами России встречается в Японии (4); Корее (5) Гималаях, о.Тайвань, Бирме, о. Ява; в Африке в Малави (4) и на Мадагаскаре (6).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Встречается в Калининградской обл. на Куршской косе (1), в Ленинградской обл. на островах и побережье Финского залива Балтийского моря (2), на севере Карельского перешейка в окр. оз. Ястребиное и оз. Живица (3) и на территории Нижнесвирского заповедника (4); в Псковской обл. и в окр. д. Елизарово в долине р. Толбы (3), а также в Ростовской обл. в окр. ст. Митякинской Тарасовского р-на в долинах рр. Северского Донца и Деркула (5). Вне России встречается в Европе, Северной Африке, Турции, на Кавказе и в Америке (6).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. На затененных камнях в зарослях бадана тихоокеанского, в расщелинах в скалистых обнажениях и между камней на каменистых россыпях в поясе темнохвойной тайги и широколиственных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В России известно несколько популяций вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Удоволетворительное, Численность вида не сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Климатические, местонахождения в России находятся на северном пределе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Перечень объектов..., занесенных в Красную книгу Приморского края (2002). Два местонахождения вида в России расположены в заповедниках: Лазовский и «Кедровая Падь» (2).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Обследование известных и поиск новых местонахождений вида, выделение ключевых участков со строгим режимом охраны.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_chandonantus_birmensis <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_chandonantus_birmensis;;
+						concept_chandonantus_birmensis => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_chandonantus_birmensis <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_chandonantus_birmensis <= nrel_inclusion: concept_3_protection_category;;

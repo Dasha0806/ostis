@@ -1,0 +1,163 @@
+concept_leucodon_flagellaris => nrel_main_idtf:
+[леукодон флагелленосный](*<-lang_ru;;*);
+[leucodon flagellaris](*<-lang_lat;;*);;
+
+
+concept_species -> concept_leucodon_flagellaris;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_leucodon_flagellaris;;
+
+//пояснения
+concept_leucodon_flagellaris <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 1 - вид, находящийся под угрозой исчезновения; субэндемик с низкой Численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Бокоплодный мох, образующий рыхлые дерновинки на стволах деревьев. Первичный стебель столоновидный, стелящийся по субстрату, вторичные стебли приподнимающиеся и, отчасти, свисающие. Двудомный, спорофиты развиваются редко; споры крупные, 26--45 μm, что не способствует их дальнему переносу.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России вид встречен только на Северном Кавказе, где известны два местонахождения: в Республике Адыгея - басс. р. Белой, хр. Инженерный, долина р. Желобная (Майкопский р-н) (1); в Карачаево-Черкесской Республике - Тебердинский заповедник (2). За пределами России встречается в Грузии, Турции и в Греции на о. Корфу (2). Указания на находки в Кашмире (3) требуют подтверждения.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Эпифит, был обнаружен на стволах бука, а также на мертвом стволе и на мертвых нижних ветвях пихты. Встречается в лесном поясе от 700 до 1700 м н. ур. м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В Тебердинском заповеднике встречается в четырех урочищах по долине р. Аманауз и далее р. Теберда, на протяжении около 20 км, но в каждом из мест - на единичных стволах и ветвях, преимущественно пихты (4). В Адыгее известен только по одному гербарному образцу.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Местонахождения вида в Республике Адыгея известны только по сборам 1935 г. На территории Тебердинского заповедника вид был найден впервые в 1955 г., а затем в 2005 г. Во всех четырех местах, где вид рос, он был встречен на 1-2 пихтах, без спорофитов. В окр. пос. Домбай вид был обнаружен в кроновой части спиленных пихт. Активное строительство в данном районе на территории, непосредственно примыкающей к заповедной, может нанести значительный урон популяции вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Общая низкая численность популяции, а также интенсивные лесозаготовки в горно-лесной части Северного Кавказа, в связи с которыми вид совершенно отсутствует на незаповедных территориях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Охраняется на территории Тебердинского биосферного заповедника.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим специальный мониторинг состояния популяций данного вида, определение его численности в кронах деревьев, а также ограничение рубок пихтовых лесов на сопредельных с заповедной территориях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_leucodon_flagellaris <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_leucodon_flagellaris;;
+						concept_leucodon_flagellaris => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_leucodon_flagellaris <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_leucodon_flagellaris <= nrel_inclusion: concept_1_protection_category;;

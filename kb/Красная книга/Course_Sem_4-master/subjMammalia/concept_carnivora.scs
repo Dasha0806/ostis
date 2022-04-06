@@ -1,0 +1,22 @@
+concept_carnivora => nrel_main_idtf:
+[хищные](*<-lang_ru;;*);
+[carnivora](*<-lang_lat;;*);;
+
+concept_order -> concept_carnivora;;
+
+concept_carnivora => nrel_inclusion: concept_felidae;  concept_ursidae; concept_mustelidae;;
+
+//определение и пояснения
+concept_carnivora <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Хищные - отряд плацентарных млекопитающих (Mammalia), состоящий из подотрядов собакообразных (Caniformia) и кошкообразных (Feliformia). Подавляющее большинство представителей отряда являются классическими плотоядными животными, охотящимися главным образом на позвоночных.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_carnivora;;

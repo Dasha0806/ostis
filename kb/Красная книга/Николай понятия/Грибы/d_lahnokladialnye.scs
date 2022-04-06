@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_lahnokladialnye;;
+concept_lahnokladialnye => nrel_main_idtf:
+[лахнокладиальные](*<-lang_ru;;*);
+[lahnokladialnye](*<-lang_en;;*);;
+
+//
+concept_lahnokladialnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(лахнокладиальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий распростертые грибные тела с приросшим краем, гименофор гладкий или бугорчатый](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_lahnokladialnye => nrel_inclusion: concept_lahnokladievye;;

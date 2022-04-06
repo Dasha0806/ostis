@@ -1,0 +1,29 @@
+concept_chrysophyta => nrel_main_idtf:
+[золотистые водоросли](*<-lang_ru;;*);
+[chrysophyta](*<-lang_lat;;*);;
+
+concept_division -> concept_chrysophyta;;
+
+concept_chrysophyta <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_chrysophyceae;;
+
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_chrysophyta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отдел Золотистые водоросли - отдел охрофитовых водорослей. Включают в себя преимущественно микроскопические водоросли различных оттенков жёлтого цвета. Золотистые водоросли бывают одноклеточными, колониальными и многоклеточными. Известно около 800 видов.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_chrysophyta;;

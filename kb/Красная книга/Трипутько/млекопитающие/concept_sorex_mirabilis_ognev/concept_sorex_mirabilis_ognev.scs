@@ -1,0 +1,156 @@
+concept_sorex_mirabilis_ognev=> nrel_main_idtf: [гигантская бурозубка](*<- lang_ru;;*); 
+[sorex mirabilis ognev](*<- lang_lat;;*); 
+[гіганцкая бурозубка](*<- lang_bel;;*);;
+
+concept_sorex_mirabilis_ognev <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (гигантская бурозубка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_sorex_mirabilis_ognev.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_sorex_mirabilis_ognev;;
+concept_species -> concept_sorex_mirabilis_ognev;;
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_sorex_mirabilis_ognev;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_sorex_mirabilis_ognev;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1937 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_sorex_mirabilis_ognev <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Гигантская бурозубка — редкий реликтовый эндемичный вид, численность которого сокращается. Сокращение численности произошло буквально за последние 200 лет и особенно с началом хозяйственного освоения края и сведения широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Гигантская бурозубка отличается от своих сородичей размерами. Это одна из самых крупных бурозубок в мире.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Описан из долины р. Каменки Приморского края. Обитает в юж. части Приморского края, где проходит сев. граница локального ареала вида. Крайней сев. точкой отлова является долина р. Серебрянка (Сихотэ-Алинский заповедник, бух. Терней, 45° с.ш.)](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Предпочитаемыми биотопами являются незатронутые рубками и пожарами первичные широколиственные и хвойно-широколиственные леса долин с прилегающими к ним нижними частями склонов сопок и вторичные хвойно-широколиственные леса долин рек.
+Кроме того, гигантская бурозубка отлавливалась во вторичном смешанном широколиственном лесу долины р. Проселочная (Лазовский р-н) и во вторичных, в значительной степени восстановившихся, смешанных широколиственных лесах долины р. Кедровая (Хасанский р-н). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Образ жизни этой бурозубки мало изучен. Сложно представить, но за весь период развития зоологии ученые не нашли ни одного самца. Известно, что детеныши появляются один раз в году.
+Гигантская бурозубка — большая любительница плотно подкрепиться. В течение суток она съедает в 2,5 раза больше, чем весит. Ей по вкусу насекомые, дождевые черви и кивсяки. У всех бурозубок очень интенсивный обмен веществ.
+Зверек может продержаться без пищи не более суток. Пища и сон — их насущные потребности, ведь бурозубка засыпает около 70 раз в сутки, а кормится около 120 раз. В поисках корма способна, в отличие от всех остальных бурозубок, зарываться даже в уплотненный грунт.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Относительная численность крайне низка и не подвержена колебаниям по годам. Всего отловлено 42 особи этого вида, из них 19 в Уссурийском заповеднике и 16 в заповеднике Кедровая падь. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется на территориях заповедников Сихотэ-Алинского, Лазовского, Уссурийского, Кедровая падь. Специальные меры охраны не предложены, для их разработки необходимо более детальное изучение биологии вида.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_sorex_mirabilis_ognev <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_sorex_mirabilis_ognev => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; concept_wool; brown; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; grey;;
+	*);;
+//размеры и вес
+concept_sorex_mirabilis_ognev <= nrel_inclusion: 
+	[0-0.6 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [0.6 см]);;	
+	*);
+	[0-0.06 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.06 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[0.6 см] <- length_of_body; exact_value;;
+	[0.6 см] -> .centimeter: 0.6 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[0.06 кг] <- weight; exact_value;;
+	[0.06 кг] -> .kilogram: 0.06 (* <- number;;*);;
+//категория охраны и количество
+concept_sorex_mirabilis_ognev <= nrel_inclusion: concept_3_protection_category;;
+concept_sorex_mirabilis_ognev <= nrel_strength: [15000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 15000 (* <- number;;*);;
+		*);;	
+	*);;
+

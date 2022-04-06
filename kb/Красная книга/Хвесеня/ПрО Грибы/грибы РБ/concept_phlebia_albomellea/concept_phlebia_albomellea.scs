@@ -1,0 +1,131 @@
+concept_phlebia_albomellea=> nrel_main_idtf: [флебия бело-медовая](*<- lang_ru;;*); [phlebia albomellea](*<- lang_lat;;*); [флебія бела-мядовая](*<- lang_bel;;*);;
+
+concept_phlebia_albomellea<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (флебия бело-медовая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_phlebia_albomellea.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_phlebia_albomellea;;
+concept_species -> concept_phlebia_albomellea;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_phlebia_albomellea;;
+
+//пояснения
+concept_phlebia_albomellea <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Встречается в сосновых лесах. Произрастает и образует плодовые тела на опавших и неопавших ветвях хвойных и лиственных деревьев - лещины, сосны, дуба . В Беларуси отмечен на опавших ветвях сосны. Облигатный сапротроф, вызывающий белую гниль.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Плодовые тела появляются в июле.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются группами. Поддается культивированию в лабораторных условиях, однако в коллекциях культур в республике не поддерживается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса и хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов биологического заказника «Сопоцкинский». Необходим поиск новых местонахождений и организация их охраны с запрещением в местах роста антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Малоизученный вид с прерывистым ареалом; известен в Европе, Юго-Западной Азии, Северной Америке . В Беларуси обнаружен в Гродненском р-не Гродненской обл. (близ границы с Польшей и Литвой) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела округлые, почти чашевидные, диаметром 0,3–2 см, впоследствии сливаются. Гименофор гладкий, охряного и бурого оттенков. Край белый, бархатистый. Гифы с пряжками. Базидии узкобулавовидные, 30–40 ´ 4,5–5,5 мкм. Споры удлиненно-эллиптические или коротко-цилиндрические, бесцветные, 6 ´ 3 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_phlebia_albomellea <= nrel_spread: ... 
+	(*
+	->  Grodno_district;;
+	*);;
+
+concept_meruliaceae => nrel_inclusion: concept_phlebia_albomellea;;
+concept_phlebia_albomellea => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; rounded; cupped;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; cylindrical;;
+	*);;
+
+concept_phlebia_albomellea <= nrel_inclusion: 
+	[0.3-2см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.3 см] => [2 см]);;	
+	*);;
+
+	[0.3 см] <- length_of_body; exact_value;;
+	[0.3 см] -> .centimeter: 0.3 (* <- number;;*);;
+	[2 см] <- length_of_body; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	
+concept_phlebia_albomellea <= nrel_inclusion: concept_2_protection_category;;

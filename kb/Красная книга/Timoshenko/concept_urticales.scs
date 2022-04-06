@@ -1,0 +1,27 @@
+concept_urticales => nrel_main_idtf:
+[крапивоцветные](*<-lang_ru;;*);
+[urticales](*<-lang_lat;;*);;
+
+concept_order -> concept_urticales;;
+
+concept_urticales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_urticaceae;;
+	*);;
+
+//определение и пояснения
+concept_urticales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крапивоцветные - обширный порядок растений из трав, кустарников и деревьев с мелкими, чаще всего однополыми цветами, снабженными простым околоцветником, т. е. без разделения на чашечку и венчик.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_urticales;;

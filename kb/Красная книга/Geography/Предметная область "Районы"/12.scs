@@ -1,0 +1,50 @@
+concept_Council_of_Republic<-concept_parliament;;
+concept_Council_of_Republic=>nrel_main_idtf:[Совет Республики] (* <- lang_ru;; *);;
+concept_Council_of_Republic=>nrel_identifier:[множество Советов Республик] (* <- lang_ru;; *);;
+concept_Council_of_Republic=>nrel_identifier:[Council of Republic] (* <- lang_en;; *);;
+
+//используемые константы
+concept_Council_of_Republic<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_parliament;;
+->concept_republic;;
+->nrel_house;;
+*);;
+*);;
+concept_House_of_representatives=> nrel_main_idtf: [Опр.(Совет Республики)]  (* <- lang_ru;; *);;
+concept_House_of_representatives<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Совет Республики - верхняя палата парламента республики. ](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_House_of_representatives<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Совет Республики,орган)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Совет Республики является региональным представительным органом.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_House_of_representatives<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Совет Республики,принятие*,отклонение*,закон,Палата представителей)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Основная функция Совета Республики – принятие или отклонение проектов законов, принятых Палатой представителей.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

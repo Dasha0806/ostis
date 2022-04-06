@@ -1,0 +1,166 @@
+concept_salix_myrtilloides_l => nrel_main_idtf: [ива черничная](*<- lang_ru;;*); [salix myrtilloides l.](*<- lang_lat;;*); [вярба чарнічная](*<- lang_bel;;*);;
+concept_salix_myrtilloides_l => nrel_idtf: [вярба чарнічная](*<- lang_bel;;*);;
+
+concept_species -> concept_salix_myrtilloides_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_salix_myrtilloides_l;;
+
+concept_salix_myrtilloides_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (ива черничная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_salix_myrtilloides_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_salix_myrtilloides_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_salix_myrtilloides_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную  книгу  Беларуси 2-го издания (1993). Охраняется в Польше, Литве, Украине и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Кустарник с восходящими стволами высотой 30-80 см с серой корой. Побеги желто-бурые или красно-бурые, в верхней части пушистые. Листья мелкие, эллиптические или продолговато-яйцевидные, цельнокрайние, голые, сверху матово-зеленые, снизу сизые, на очень коротких черешках. Цветки мелкие, без прицветников, собраны в рыхлые сережки. Плод – узкая одногнездная двустворчатая коробочка .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Ареал охватывает лесотундровую и таежную зоны Севера, Центральной и Восточной Европы, почти всю Сибирь до берегов Охотского и Японского морей. Встречается в северной части Украины, на Средней Волге . Реликтовый бореальный вид, находящийся в Беларуси в отдельных локалитетах вблизи южной границы ареала . Встречается в Брестской (Брестский, Ивацевичский, Кобринский, Малоритский, Столинский р-ны), Витебской (Браславский, Докшицкий, Лепельский, Лиозненский, Россонский, Шумилинский р-ны), Минской (Борисовский, Вилейский, Воложинский, Крупский, Минский, Мядельский р-ны), Гомельской (Калинковичский и Мозырский р-ны) и Могилевской (Бобруйский, Кировский, Кличевский р-ны) обл. . Ранее отмечался для Гродно, Турова, Жлобина, д. Симоновичи (Глусского р-на) и территории Кличевского и Лельчицкого р-нов .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Мезотрофные осоково-сфагновые болота с преобладанием в травяном покрове осок топяной и волосистоплодной.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в начале мая (сережки распускаются одновременно с появлением листьев). Анемофил. Размножение преимущественно семенное. Плодоносит в июне. Анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно растет отдельными экземплярами и небольшими группами.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Осушение болот и хозяйственная трансформация земель.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Нарочанский” и Березинского биосферного заповедника, ряда заказников в Брестской (“Бусловка”, “Дикое”, “Выгонощанское”) и Витебской (“Козьянский”) обл., а также в охраняемых болотных массивах. Необходимы периодический контроль состояния известных популяций и поиск новых, организация охраны всех местонахождений с запрещением в местах роста ивы черничной негативных антропогенных воздействий.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_salix_myrtilloides_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Brest_district;;->Ivatsevichi_district;;->Kobrin_district;;->Malorita_district;;->Stolin_district;;->Braslav_district;;->Dokshitsy_district;;->Lepel_district;;->Liozno_district;;->Rosson_district;;->Shumilino_district;;->Borisov_district;;->Vileika_district;;->Volozhin_district;;->Krupski_district;;->Minsk_district;;->Myadel_district;;->Kalinkovichi_district;;->Mozyr_district;;->Bobruisk_district;;->Kirovskiy_district;;->Klichev_district;;->Grodno_district;;->Turov_district;;->Zhlobin_district;;->Glusk_district;;->Klichev_district;;->Lelchitsy_district;;
+		*);;
+*);;
+
+concept_salix_myrtilloides_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; rising;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; small;elliptical;oblong_ovate;entire;naked;Matt_green;bluish;short_petiole;;
+*);
+...
+(*
+<= nrel_inclusion: flower; small;without_bract;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; loose;shackle;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; narrow;is_unilocular;bivalve;box;;
+*);;
+
+concept_salix_myrtilloides_l <= nrel_inclusion: 
+[30-80]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([30 см] => [80 см]);; 
+*);;
+
+concept_salix_myrtilloides_l <= nrel_inclusion: 
+[3.4-7.2 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3.4 см] => [7.2 см]);; 
+*);;
+
+[30 см] <- length_of_inflorscence; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+[80 см] <- length_of_inflorscence; exact_value;;
+[80 см] -> .centimeter: 80 (* <- number;;*);;
+[3.4 см] <- length_of_inflorscence; exact_value;;
+[3.4 см] -> .centimeter: 3.4 (* <- number;;*);;
+[7.2 см] <- length_of_inflorscence; exact_value;;
+[7.2 см] -> .centimeter: 7.2 (* <- number;;*);;
+ 
+
+concept_salix_myrtilloides_l <= nrel_inclusion: concept_3_protection_category;;

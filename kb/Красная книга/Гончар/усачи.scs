@@ -1,0 +1,36 @@
+concept_cerambycidae=> nrel_main_idtf:
+[усачи](*<-lang_ru;;*);
+[cerambycidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_cerambycidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(усачи)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Усачи - разветвлённое и многочисленное семейство жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_cerambycidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Одним из наиболее характерных и отличительных, хотя и условных, признаков представителей семейства являются длинные сегментированные усы, часто значительно превышающие длину тела, иногда в 2—3, и даже в 4—5 раз.](* <- lang_ru;;*);;
+		*);;
+*);;

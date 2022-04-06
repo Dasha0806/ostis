@@ -1,0 +1,146 @@
+concept_bankera_fuligineoalba=> nrel_main_idtf: [банкера черно-белая](*<- lang_ru;;*); [bankera fuligineoalba](*<- lang_lat;;*); [банкера чорна-белая](*<- lang_bel;;*);;
+
+concept_bankera_fuligineoalba<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (банкера черно-белая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_bankera_fuligineoalba.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_bankera_fuligineoalba<-concept_plant;;
+
+
+
+
+concept_species -> concept_bankera_fuligineoalba;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_bankera_fuligineoalba;;
+
+//пояснения
+concept_bankera_fuligineoalba <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: В Красную книгу Беларуси включен впервые. Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Населяет сухие сосновые леса лишайникового и мшистого типов. Плодовые тела образуются на почве среди мохового покрова. Отмечается ассоциация гриба с черникой и брусникой . Образует микоризу с сосной обыкновенной .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела появляются в августе - сентябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Численность популяций не установлена. Встречается одиночно или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Интенсивное лесопользование, рекреационные нагрузки, нарушение лесной подстилки при лесосечных работах и сборе грибов, сокращение и деградация сосняков лишайниковых.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов Березинского биосферного заповедника и национальных парков «Нарочанский» и «Припятский». Необходим поиск новых популяций и организация заказников в местах, где гриб произрастает в комплексе с другими редкими видами, предотвращение антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Сибирь, Восточная Азия, Северная Америка [2–5]. В Беларуси известен в Гомельской обл. (Житковичский р-н, близ д. Переровский Млынок) и в Березинском заповеднике (район не указан) . Отмечается также для Минской обл. (Мядельский р-н) и Могилевской обл. (Кличевский р-н) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела дифференцированы на шляпку и центральную ножку, мясистые, одиночные или в сростках. Шляпка диаметром 4–8 (15) см, выпуклая или вогнутая, первоначально почти белая, затем буроватая или желтовато-бурая, бархатистая или голая, как правило, с налипшими растительными остатками. Ножка размером 1–6 ´ 0,8–2,5 см. Гименофор снизу шляпки в виде беловатых, сероватых или желтоватых шипов размером 1–6 ´ 0,2–0,6 мм, нисходящих на ножку. Гифы без пряжек. Базидии булавовидные, размером 15–30 ´ 4–5 мкм. Споры неправильно-эллиптические до угловатых, бородавчатые, размером 3–5 ´ 2,5–3,3 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+
+concept_bankeraceae => nrel_inclusion: concept_bankera_fuligineoalba;;
+concept_bankera_fuligineoalba => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; fleshy; solitary;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; white; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; yellow_brown;;
+	*);;
+
+concept_bankera_fuligineoalba <= nrel_inclusion: 
+	[4-15см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([4 см] => [15 см]);;	
+	*);
+	[0.8-2.5см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([0.8 см] => [2.5 см]);;	
+	*);;
+
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[15 см] <- length_of_body; exact_value;;
+	[15 см] -> .centimeter: 15 (* <- number;;*);;
+	[0.8 см] <- length_of_body; exact_value;;
+	[0.8 см] -> .centimeter: 0.8 (* <- number;;*);;
+	[2.5 см] <- length_of_body; exact_value;;
+	[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+	
+concept_bankera_fuligineoalba <= nrel_inclusion: concept_2_protection_category;;

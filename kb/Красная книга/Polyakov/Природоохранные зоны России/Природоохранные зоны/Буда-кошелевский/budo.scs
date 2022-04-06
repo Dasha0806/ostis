@@ -1,0 +1,79 @@
+
+sc_node_not_relation -> budo_kosh;;
+
+budo_kosh => nrel_main_idtf: [заказник Будо-кошелевский] (* <- lang_ru;; *);
+				     [Budo-koshelevskiy] (* <- lang_en;; *);;
+concept_territorry->budo_kosh;;
+budo_kosh <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Будо-кошелевский)](*<-lang_ru;;*);
+		[Pic. (Budo-koshelevskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://budo.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+budo_kosh<-concept_sanctuary;;
+
+budo_kosh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Будо-кошелевский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[заказник Будо-кошелевский cоздан 13 апреля 1988 года для сохранения остаточных фрагментов ценных дубрав с редкими видами растений, занесёнными в Красную книгу Белоруссии, имеющими большое научное, культурное и эстетическое значение. ]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							budo_kosh=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1988(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+budo_kosh <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Будо-кошелевский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Будо-кошелевского заказника составляет 13 575 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							budo_kosh=>nrel_square:[13 575 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[13 575](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+budo_kosh => nrel_area_location: Gomel_area;;
+budo_kosh => nrel_flora: ...(*
+<-concept_lilium_martagon_l;concept_iris_sibirica_l;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: budo_kosh;;

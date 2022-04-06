@@ -1,0 +1,22 @@
+concept_picidae => nrel_main_idtf:
+[дятловые](*<-lang_ru;;*);
+[picidae](*<-lang_lat;;*);;
+
+concept_family -> concept_picidae;;
+
+concept_picidae => nrel_inclusion: concept_picus_viridis; concept_dendrocopos_leucotos; concept_picoides_tridactylus;;
+
+//определение и пояснения
+concept_picidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дя́тловые, или дя́тлы (лат. Picidae) — семейство птиц; входит в отряд дятлообразных и занимает в нём центральное положение (включая 34 из 76 родов и 233 из 440 видов отряда). Характерная черта подавляющего большинства представителей семейства — долотообразный клюв, с помощью которого дятлы долбят кору и сердцевину дерева, извлекая оттуда пищу — насекомых и их личинок. Почти все виды являются оседлыми либо кочующими; это — лазающие древесные птицы, летающие неохотно (хотя быстро) и, как правило, на короткие расстояния. Живут обычно поодиночке или парами; некоторые, как желудёвый дятел (Melanerpes formicivorus) — большими группами.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_picidae;;

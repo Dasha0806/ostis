@@ -1,0 +1,8 @@
+ui_search_series_by_country_and_age_limit_in_memory
+	<- ui_scgg_control; sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Найти сериалы по стране и возрастному ограничению]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [Find series by country and age limit]
+(* <- lang_en;; *);;

@@ -1,0 +1,130 @@
+uromyces_maria => nrel_main_idtf:
+[уснея цветущая](*<-lang_ru;;*);
+[uromyces maria](*<-lang_lat;;*);
+[уснея квiтучая](*<-lang_bel;;*);;
+uromyces_maria => nrel_idtf:[уснея квiтучая](*<-lang_bel;;*);;
+
+plants -> uromyces_maria;;
+concept_species -> uromyces_maria;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: uromyces_maria;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: uromyces_maria;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+uromyces_maria <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на стволах лиственных деревьев, ветвях ели в старых широколиственных и хвойных лесах с повышенной влажностью воздуха.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается преимущественно спорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается одиночными экземплярами или небольшими группами. Отмечена тенденция к сокращению численности вида, связанная с антропогенными нарушениями мест обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, гидромелиоративные работы, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в Национальном парке "Беловежская пуща", Березинском биосферном заповеднике, заказнике "Большое моховое болото". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется: запрет любой лесохозяйственной деятельности в местах и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Западная и Центральная Европа, Азия, Северная и Центральная Америка . В Беларуси отмечен в Брестской (Каменецкий и Пружанский р-ны), Витебской (Лепельский , Оршанский , Россонский и Сенненский р-ны), Гомельской (Добрушский р-н ) и Могилевской (Осиповичский р-н ) областях.
+
+](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище кустистое, отстающее от основания, почти одинаковой длины и ширины (5-10 см), серо- или пепельно-зеленое, с расходящимися во все стороны под широким углом грубоватыми веточками, почти всегда заканчивающимися апотециями. Веточки по всей длине с мелкими или достаточно крупными полукруглыми бородавочками (сосочками) и нитевидными выростами (фибриллами). Апотеции многочисленные, округлые, диаметром 3-8 мм, блюдцевидные, у старых слоевищ почти плоские, гладкие, всегда с венцом фибрилл .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+uromyces_maria <= nrel_spread: ... 
+	(*
+	-> Vitebsk_district; Gomel_district; Brest_district; Mogilev_district;;
+	*);;
+
+concept_parmeliaceae => nrel_inclusion: uromyces_maria;;
+uromyces_maria => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; bushy; grey; green;;
+	*);;
+
+uromyces_maria <= nrel_inclusion: 
+	5_10_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_thallus;;
+	=> nrel_measurement: (5_cm => 10_cm);;	
+	*);;
+	5_cm <- diameter_of_thallus; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;
+	10_cm <- diameter_of_thallus; exact_value;;
+	10_cm -> .centimeter: 10 (* <- number;;*);;				
+
+uromyces_maria <= nrel_inclusion: concept_3_protection_category;;
+

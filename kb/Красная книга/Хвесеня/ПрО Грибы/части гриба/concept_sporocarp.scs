@@ -1,0 +1,46 @@
+sc_node_not_relation ->  concept_sporocarp;;
+concept_sporocarp => nrel_main_idtf:
+[плодовое тело](*<-lang_ru;;*);
+[sporocarp](*<-lang_en;;*);;
+
+concept_sporocarp <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(плодовое тело)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [вместилище спороносных органов большинства сумчатых и базидиальных грибов, образованное сплетением мицелиальных гиф](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+	->concept_marsupialia_fungos;;
+	->concept_basidiomycetes;;
+    ->concept_fungos;;
+	->concept_hypha;;
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_body => nrel_inclusion: concept_sporocarp;;
+
+//утверждения
+
+concept_sporocarp <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(плодовое тело)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Функцией плодового тела является образование спор.](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_sporocarp;;
+	-> rrel_key_sc_element: concept_spore;;
+	
+*);;

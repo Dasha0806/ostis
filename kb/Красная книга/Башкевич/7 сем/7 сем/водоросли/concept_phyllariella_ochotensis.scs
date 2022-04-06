@@ -1,0 +1,163 @@
+concept_phyllariella_ochotensis => nrel_main_idtf:
+[филлариелла охотская](*<-lang_ru;;*);
+[phyllariella ochotensis](*<-lang_lat;;*);;
+
+
+concept_species -> concept_phyllariella_ochotensis;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_phyllariella_ochotensis;;
+
+//пояснения
+concept_phyllariella_ochotensis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 а-редкий вид, эндемик Охотского моря.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище состоит из пластины и стволика с подошвой на конце. Пластина до 1 м дл., 11 см шир., гладкая, ланцетовидная или линейная, с клиновидным основанием, без ребра и отверстий, иногда с продольными разрывами, темно-бурая или светло-желтая, с криптостомами на поверхности. Стволик тонкий, округлый, до 13,5 см дл. Подошва небольшая, округлая. Для более надежного сцепления с субстратом черешки соседних растений переплетаются и форми- руют как бы единый тяж, каждая нить которого сцеплена с субстратом. Слизистые каналы и лакуны в пластине и стволике отсутствуют. Сорусы спорангиев развиваются по всей пластине с обеих сторон, за исключением края (1, 4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается в Охотском море: Камчатка, Гижигинская губа, заливы Тугурский, Ульбанский, Николая, Екатерины, Шелихова, Шантарские о-ва (5). Вне России: о-ва Прибылова (6).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. В нижнем горизонте литорали в фитоценозах, слагаемых Chordaria flagelliformis, Tichocarpus crinitus и Halosaccion microsporum и в сублиторали в фитоценозах, слагаемых Cystoseira crassipes и Saccharina gurjanovae (= Laminaria gurjanovae) на глубине 2-9 м на каменистом с галькой, гравием и песком грунте.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. В литорали о. Птичий является массовым видом ламинариевых водорослей, иногда образует чистые заросли (4)](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны.Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не изучена.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_phyllariella_ochotensis <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_phyllariella_ochotensis;;
+						concept_phyllariella_ochotensis => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_phyllariella_ochotensis <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_phyllariella_ochotensis <= nrel_inclusion: concept_3_protection_category;;

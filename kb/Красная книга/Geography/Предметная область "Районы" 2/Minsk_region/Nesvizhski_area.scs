@@ -1,0 +1,75 @@
+Nesvizhski_area<-concept_area;;
+Nesvizhski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Nesvizhski_area=>nrel_administrative_center_of_the_area:Nesvizh;;
+Nesvizh<-concept_city;;
+
+//самая высокая точка
+Nesvizhski_area=>nrel_highest_point:230_m;;
+230_m<-concept_number;;
+
+//площадь района
+Nesvizhski_area=>nrel_area_of_the_district:863_km;;
+863_km<-concept_number;;
+
+//население района
+Nesvizhski_area=>nrel_population_of_region:39022_m;;
+39022_m<-concept_number;;
+
+//используемые константы
+Nesvizhski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Несвижский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Несвижский район — административная единица на юго-востоке Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Nesvizhski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, территория)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Несвижский дворцово-замковый комплекс](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Nesvizhski_area;;
+Nesvizhski_area => nrel_main_idtf:
+[Несвижский район](* <-lang_ru;; *);
+[Nesvizhski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Nesvizh;;
+Nesvizh=> nrel_main_idtf:
+[Несвиж](* <-lang_ru;; *);
+[Nesvizh](* <- lang_en;; *);;
+
+sc_node_not_relation ->230_m;;
+230_m=> nrel_main_idtf:
+[230 м](* <-lang_ru;; *);
+[230 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->863_km;;
+863_km=> nrel_main_idtf:
+[863 км^2](* <-lang_ru;; *);
+[863 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->39022_m;;
+39022_m=> nrel_main_idtf:
+[39022 человек](* <-lang_ru;; *);
+[39022 m](* <- lang_en;; *);;

@@ -1,0 +1,166 @@
+concept_hedera_helix_l => nrel_main_idtf: [плющ обыкновенный](*<- lang_ru;;*); [hedera helix l.](*<- lang_lat;;*); [плюшч звычайны](*<- lang_bel;;*);;
+concept_hedera_helix_l => nrel_idtf: [плюшч звычайны](*<- lang_bel;;*);;
+
+concept_species -> concept_hedera_helix_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hedera_helix_l;;
+
+concept_hedera_helix_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (плющ обыкновенный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_hedera_helix_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_hedera_helix_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1964 (*<- number;;*);;*);;
+	*);;
+
+concept_hedera_helix_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Под государственную охрану в республике впервые взят в 
+1964 г. Включен в Красную книгу Беларуси 1го и 2го изданий (1981, 1993). Охраняется 
+в Литве, Латвии и Польше.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетняя лиана с тонким ветвистым стеблем (в условиях Беларуси достигает длины 3-5 м), стелющимся по земле или поднимающимся по стволам деревьев при помощи маленьких воздушных корней-присосок. Листья длинночерешковые, очередные, кожистые, блестящие, зеленые; на бесплодных побегах листья сердцевидные, в основном 3-5 лопастные (средняя доля лопасти крупная), на цветоносных - яйцевидные или ланцетные. Цветки зеленоватые, пятичленные, собранные в многоцветковые шаровидные зонтики. Плод - сине-черная ягода с 3-7 семенами, созревающая весной следующего года .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Реликтовый, по происхождению пребореальный среднеевропейский горный вид, ареал которого охватывает юго-западную Европу, включая Британские острова, южную часть Скандинавского, Пиренейский, Апеннинский и южную половину Балканского полуостровов, заходит в Западную Азию и Японию; на востоке Европы встречается в Прибалтике, Калининградской обл., Беларуси, Украине и Молдавии . В Беларуси находится в островных участках произрастания и отдельных локалитетах на восточной границе ареала и за ее пределами. Известны местонахождения в Брестском, Жабинковском, Ивацевичском, Каменецком, Кобринском, Малоритском и Пружанском р-нах Брестской обл., в Осиповичском р-не Могилевской обл. . Ранее приводился для Лиды, Щучина, Бреста .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Елово-широколиственные и широколиственные леса.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: На восточном пределе распространения вид в естественных местообитаниях практически не цветет, размножение вегетативное. Молодые годичные побеги обычно отмерзают на высоте снежного покрова . В последние годы в Брестской об. (в окрестностях городов Брест и Высокое) было отмечено цветение и плодоношение плюща в природных условиях , что, вероятно, связано со смягчением зим. Опыляется насекомыми.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Образует преимущественно небольшие, редко  значительные заросли (в Осиповичском р-не Могилевской обл.).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Вырубка лесов (все виды рубок), гидролесомелиоративные работы, хозяйственная трансформация земель.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Охраняется на территории Национального парка “Беловежская пуща”, в ландшафтном заказнике “Прибужское Полесье” (Брестский р-н). Культивируется в ботанических садах , парках и как комнатное растение. Необходимы ревизия известных местонахождений, контроль состояния известных популяций и поиск новых, организация охраны всех местонахождений вида с запрещением в местах роста антропогенных воздействий.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_hedera_helix_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Brest_district;;->Zhabinka_district;;->Ivatsevichi_district;;->Kamenetsky_district;;->Kobrin_district;;->Malorita_district;;->Pruzhany_district;;->Osipovichi_district;;->Lida_district;;->Shchuchin_district;;->Brest_district;;
+		*);;
+*);;
+
+concept_hedera_helix_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; thin;branched;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; small;air;suction_Cup;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; long;another;leathery;brilliant;green;heart_shaped;ovate;lanceolate;;
+*);
+...
+(*
+<= nrel_inclusion: flower; greenish;five_membered;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; many_flowered_umbrella;spherical_umbrella;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; blue_black;berry;;
+*);;
+
+concept_hedera_helix_l <= nrel_inclusion: 
+[300-500 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([300 см] => [500 см]);; 
+*); 
+[5-8 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([5 см] => [8 см]);; 
+*);;
+
+[300 см] <- length_of_inflorscence; exact_value;;
+[300 см] -> .centimeter: 300 (* <- number;;*);;
+[500 см] <- length_of_inflorscence; exact_value;;
+[500 см] -> .centimeter: 500 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[8 см] <- length_of_inflorscence; exact_value;;
+[8 см] -> .centimeter: 8 (* <- number;;*);;
+ 
+
+concept_hedera_helix_l <= nrel_inclusion: concept_2_protection_category;;

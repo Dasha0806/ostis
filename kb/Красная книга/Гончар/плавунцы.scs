@@ -1,0 +1,36 @@
+concept_dytiscidae=> nrel_main_idtf:
+[плавунцы](*<-lang_ru;;*);
+[dytiscidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_dytiscidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(плавунцы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Плавунцы  - семейство водных насекомых из отряда жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_dytiscidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Тазики задних ног без бедренных покрышек. Усики 11-сегментные.Плавунцы — хищники. Нападают на водяных насекомых, головастиков, тритонов и мальков. У личинок жвалы пронизаны тонкими канальцами, по которым в тело жертвы течёт пищеварительный сок, а обратно — переваренная пища.](* <- lang_ru;;*);;
+		*);;
+*);;

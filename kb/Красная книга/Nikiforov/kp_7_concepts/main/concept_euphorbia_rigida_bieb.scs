@@ -1,0 +1,55 @@
+concept_euphorbia_rigida_bieb => nrel_main_idtf:
+[Молочай жесткий](*<-lang_ru;;*);
+[Euphorbia rigida Bieb](*<-lang_lat;;*);;
+
+concept_species -> concept_euphorbia_rigida_bieb;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_euphorbia_rigida_bieb;;
+
+Red_list_ru -> concept_euphorbia_rigida_bieb;;
+
+//пояснения
+concept_euphorbia_rigida_bieb <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известен из двух местонахождений. Встречается единичными экземплярами и малочисленными группами. Численность не превышает 100 экз..](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Местонахождения расположены на территории Утришского ландшафтного заказника и ботанического памятника природы местного значения «Джанхотский сосновый бор».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается только в Краснодарском крае в районе Анапы и Геленджика, на южном макросклоне северо-западной части Главного Кавказского хребта: приморские осыпи и обрывы между пос. Большой и Малый Утриш, пос. Джанхот и мысом Идокопас, окр. пос. Ольгинка. За пределами России распространен в Крыму, Средиземноморье, Малой Азии и Иране.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Короткокорневищный гемикриптофит. Поликарпик. Размножается только семенным путем.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

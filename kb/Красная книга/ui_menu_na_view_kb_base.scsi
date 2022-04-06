@@ -1,0 +1,29 @@
+ui_menu_na_view_kb_base	<- ui_user_command_class_noatom;;
+
+ui_menu_na_view_kb_base	=> nrel_main_idtf: [Команды базовых запросов] (* <- lang_ru;; *);;
+ui_menu_na_view_kb_base => nrel_main_idtf: [Commands for base requests] (* <- lang_en;; *);;
+
+ui_menu_na_view_kb_base <= nrel_ui_commands_decomposition:
+{
+	ui_menu_view_all_output_const_pos_arc;
+	ui_menu_view_all_input_const_pos_arc;
+	ui_menu_view_all_output_const_pos_arc_with_rel;
+	ui_menu_view_all_input_const_pos_arc_with_rel;
+	ui_menu_file_for_finding_species_by_region;
+	ui_menu_file_for_finding_species_by_sign;
+	ui_menu_search_operation_by_size;
+	ui_menu_file_of_area_transformation;
+	ui_menu_find_colors_of_type;
+	ui_menu_find_colors_of_species;
+	ui_menu_file_for_coordinating_agent;
+        ui_menu_file_for_calculation_category_of_protection;
+        ui_menu_file_for_finding_plant_by_water_and_moisture;
+        ui_menu_file_for_finding_animal_by_eat_and_habitat;
+        ui_menu_file_for_finding_fungos_by_eat_and_habitat;
+	ui_menu_find_dates_of_type;
+	ui_menu_file_for_comparing_species;
+	ui_menu_find_colors_of_type;
+ 	ui_menu_find_categories_of_type;
+ui_menu_find_the_largest_year_of_territory;
+ui_menu_file_for_finding_similar_training_apparatus
+};;

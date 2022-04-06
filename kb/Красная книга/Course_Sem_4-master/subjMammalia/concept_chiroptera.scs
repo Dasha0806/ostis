@@ -1,0 +1,22 @@
+concept_chiroptera => nrel_main_idtf:
+[рукокрылые](*<-lang_ru;;*);
+[chiroptera](*<-lang_lat;;*);;
+
+concept_order -> concept_chiroptera;;
+
+concept_chiroptera => nrel_inclusion: concept_vespertilionidae;;
+
+//определение и пояснения
+concept_chiroptera <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Рукокрылые - отряд плацентарных млекопитающих, единственный, представители которого способны к активному полёту. Рукокрылых отличает две характерные особенности: машущий полёт как основной способ передвижения, позволяющий им пользоваться ресурсами, которые недоступны для других млекопитающих, и эхолокация.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_chiroptera;;

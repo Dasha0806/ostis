@@ -1,0 +1,938 @@
+scp_program ->proc_search_operation_by_size(*
+	->rrel_params: .proc_search_operation_by_size_params (*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _answer;;
+	*);;
+
+	->rrel_operators: .proc_search_operation_by_size_operator_set (*
+
+		-> rrel_init:  .proc_search_operation_by_size_operator1_1 (*
+			<- searchElStr3;;
+ 			-> rrel_1: rrel_fixed: rrel_scp_const: exact_value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_gen_ans_construction1;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_param_type_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_gen_ans_construction1 (*
+			<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+ 			-> rrel_3: rrel_fixed: rrel_scp_const: Russian_red_list_search_results;;
+
+ 			=>nrel_goto: .proc_search_operation_by_size_operator_gen_ans_construction2;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_gen_ans_construction2 (*
+			<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+ 			-> rrel_3: rrel_fixed: rrel_scp_const: Belarussian_red_list_search_results;;
+
+ 			=>nrel_goto: .proc_search_operation_by_size_operator_crear_bel_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_crear_bel_set (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: Belarussian_red_list_search_results;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _species;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_erase_bel;;
+			=> nrel_else: .proc_search_operation_by_size_operator_crear_ru_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_erase_bel (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_crear_bel_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_crear_ru_set (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: Russian_red_list_search_results;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _species;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_erase_ru;;
+			=> nrel_else: .proc_search_operation_by_size_operator1_2a;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_erase_ru (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_crear_ru_set;;
+		*);;
+
+		//сгенерировать вссе необходимые элементы сразу для упрощения удлаения
+		-> .proc_search_operation_by_size_operator1_2a (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _suitable_species_set;;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_2b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_2b (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _posible_measurments_set;;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_2c;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_2c (*
+			<- genEl;;
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _posible_numbers_set;;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_2;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_2 (*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _posible_numbers_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_3;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_3 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_numbers_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_num_pt1_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_number;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_4;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_param_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_4 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_number;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_6b;;
+			=> nrel_else: .proc_search_operation_by_size_operator1_5;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_5 (*
+			<- eraseEl;;
+		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _pos_num_pt1_arc;;
+
+		 	=> nrel_goto: .proc_search_operation_by_size_operator1_3;;	
+		*);;
+
+		//работа с измерением
+
+		-> .proc_search_operation_by_size_operator1_6b (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_number;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _possible_measurement;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _posible_measurments_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_7a;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_err_msg;;
+		*);;
+
+		//
+		-> .proc_search_operation_by_size_operator1_7a (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_measurments_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_meas_pt1_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _possible_measurement;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_7b;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_7b (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _possible_measurement;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator1_8;;
+			=> nrel_else: .proc_search_operation_by_size_operator1_7c;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_7c (*
+			<- eraseEl;;
+		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _pos_meas_pt1_arc;;
+
+		 	=> nrel_goto: .proc_search_operation_by_size_operator1_7a;;	
+		*);;
+
+		//для возможности работы с числом
+		-> .proc_search_operation_by_size_operator1_8 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_number;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_link: rrel_scp_var: _posible_number_link_not_assigned;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: .print_value;;
+		*);;
+
+		-> .print_value (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_number_link_not_assigned;;
+			=> nrel_goto: .proc_search_operation_by_size_operator_assign;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_assign (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _posible_number_link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_number_link_not_assigned;;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_9;;
+		*);;
+
+		//единица измерения
+		//nrel_measure
+		-> .proc_search_operation_by_size_operator1_9 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: centimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_assign_number_for_search;;
+			=> nrel_else: .proc_search_operation_by_size_operator1_10;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_assign_number_for_search (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_number_link;;
+
+			=> nrel_goto: .print_normalized_value;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_10 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: meter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_number_m;;
+			=> nrel_else: .proc_search_operation_by_size_operator1_11;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_normalize_number_m (*
+			<- contMult;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [100];;
+
+			=> nrel_goto: .print_normalized_value;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator1_11 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_measurement;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: millimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_number_mm;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_measure_err_msg;;
+		*);;
+
+		//вырожденный случай -- узел без названия, который должен быть найден как _possible_measurement
+		//назван meas1, чтобы исключить, что найдено не то
+		//ДВ поубирал типы дуг
+		-> .proc_search_operation_by_size_operator1_11t1 (* 
+			<- searchElStr5;; 
+			-> rrel_1: rrel_fixed: rrel_scp_const: meas1;; 
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;; 
+			-> rrel_3: rrel_fixed: rrel_scp_const: millimeter;; 
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;; 
+
+			=> nrel_then: .simplified_test_1_done_result;; 
+			=> nrel_else: .simplified_test_1_failed_result;; 
+		*);;
+
+
+		//оно в принципе не ищет ничего с мм, см
+		-> .proc_search_operation_by_size_operator1_11t2 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: smth1;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: millimeter;;
+			
+
+			=> nrel_then: .simplified_test_2_done_result;;
+			=> nrel_else: .simplified_test_2_failed_result;;
+		*);;
+
+
+		-> .proc_search_operation_by_size_operator_normalize_number_mm (*
+			<- contDiv;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [10];;
+			=> nrel_goto: .print_normalized_value;;
+		*);;
+
+		//проверить ссылки сюда
+
+		-> .proc_search_operation_by_size_operator_send_param_type_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при определении типа параметра];;
+			=> nrel_goto: .proc_search_operation_by_size_return_operator;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_send_param_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при обработке параметра];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_send_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при обработке представления точной величины];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_send_measure_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при определении единицы измерения];;
+			//времення замена для упрощенного теста
+			=> nrel_goto: .proc_search_operation_by_size_operator1_11t1;;
+			//=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		//временное
+		-> .simplified_test_1_failed_result (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [t1 НЕ нашло];;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_11t2;;
+		*);;
+
+		-> .simplified_test_1_done_result (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [t1 нашло];;
+			=> nrel_goto: .proc_search_operation_by_size_operator1_11t2;;
+		*);;
+
+		//временное
+		-> .simplified_test_2_failed_result (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [t2 НЕ нашло];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		-> .simplified_test_2_done_result (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [t2 нашло];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+		-> .print_normalized_value (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _normalized_value;;
+			=> nrel_goto: .proc_search_operation_by_size_operator2_1;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_1 (*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_species;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _species;;
+
+			->rrel_set_3: rrel_assign: rrel_scp_var: _suitable_species_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_2;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_species_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_2 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _suitable_species_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_posible_suitable_species;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _concrete_species;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_3;;
+			=> nrel_else: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_3 (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _posible_interval_value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_species;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+			->rrel_set_1: rrel_assign: rrel_scp_var: _posible_interval_values_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_4;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_4 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_interval_values_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posible_value_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_interval_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_5;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_5 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: interval_value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_interval_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_6;;
+			=> nrel_else: .proc_search_operation_by_size_operator_erase_to_check_next_posible_value;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_erase_to_check_next_posible_value (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_value_arc;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_4;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_6 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _posible_left_num;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_right_num;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _posible_interval_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_7;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		//левая граница
+		-> .proc_search_operation_by_size_operator2_7 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: exact_value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_left_num;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_8;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+
+		//мб тут нужно множество
+		-> .proc_search_operation_by_size_operator2_8 (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_num;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_left_num_value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _possible_left_measurment;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _posible_left_num_value_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_8b;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		//падает тут
+		-> .proc_search_operation_by_size_operator2_8b (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_num_value_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posible_left_num_value_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_left_num_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_9;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_9 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_left_num_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_10a;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_9b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_9b (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_left_num_value_arc;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_8b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_10a (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_num;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_left_num_value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _possible_left_measurment;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _posible_left_measurment_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_10b;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_10b (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_measurment_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posible_left_measurment_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _possible_left_measurment;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_10;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		//искать с учетом числа
+		-> .proc_search_operation_by_size_operator2_10 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _possible_left_measurment;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_10c;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_10d;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_10d (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_left_measurment_arc;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_10b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_10c (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_num_value;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_link: rrel_scp_var: _posible_left_number_link_not_assigned;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_11a;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_11a (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _posible_left_number_link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_left_number_link_not_assigned;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_11b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_11b (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_left_number_link;;
+			=> nrel_goto: .proc_search_operation_by_size_operator2_11;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_11 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_left_measurment;;//
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: centimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_assign_left_number_for_search;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_12;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_assign_left_number_for_search (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_left_value;;//
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_left_number_link;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_14;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_12 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_left_measurment;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: meter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_left_number_m;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_13;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_normalize_left_number_m (*
+			<- contMult;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_left_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_left_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [100];;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_14;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_13 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _possible_left_measurment;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: millimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_left_number_mm;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_normalize_left_number_mm (*
+			<- contDiv;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_left_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_left_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [10];;
+			=> nrel_goto: .proc_search_operation_by_size_operator2_14;;
+		*);;
+
+		//правая граница
+
+		-> .proc_search_operation_by_size_operator2_14 (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Начало обработки правой границы];;
+			=> nrel_goto: .proc_search_operation_by_size_operator2_14a;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_14a (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: exact_value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_right_num;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_15;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_15 (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_num;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_right_num_value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _posible_right_measurment;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _posible_right_num_value_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_15b;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_15b (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_num_value_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posible_right_num_value_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_right_num_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_16;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_16 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_right_num_value;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_17a;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_16b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_16b (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_right_num_value_arc;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_15b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_17a (*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_num;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_right_num_value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_assign: rrel_scp_var: _posible_right_measurment;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _posible_right_measurment_set;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_17b;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_17b (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_measurment_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _posible_right_measurment_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _posible_right_measurment;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_17;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		//искать с учетом числа
+		-> .proc_search_operation_by_size_operator2_17 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: measurement_of_fixed_measure;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _posible_right_measurment;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator2_17c;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_17d;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_17d (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_right_measurment_arc;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_17b;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_17c (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_num_value;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_3: rrel_assign: rrel_link: rrel_scp_var: _posible_right_number_link_not_assigned;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_18a;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_18a (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _posible_right_number_link;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_right_number_link_not_assigned;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_18;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_18 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_measurment;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: centimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_assign_right_number_for_search;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_19;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_assign_right_number_for_search (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_right_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_right_number_link;;
+
+			=> nrel_goto: .print_normalized_left_value;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_19 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_measurment;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: meter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_right_number_m;;
+			=> nrel_else: .proc_search_operation_by_size_operator2_20;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_normalize_right_number_m (*
+			<- contMult;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_right_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_right_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [100];;
+
+			=> nrel_goto: .print_normalized_left_value;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator2_20 (*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _posible_right_measurment;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: millimeter;;
+			-> rrel_4: rrel_assign: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measure;;
+
+			=> nrel_then: .proc_search_operation_by_size_operator_normalize_right_number_mm;;
+			=> nrel_else: .proc_search_operation_by_size_operator_send_interval_value_err_msg;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_normalize_right_number_mm (*
+			<- contDiv;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _normalized_right_value;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _posible_right_number_link;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [10];;
+			=> nrel_goto: .print_normalized_left_value;;
+		*);;
+
+//-------------------------------------------------------------------------------------------------------------------------------
+
+		-> .print_normalized_left_value (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _normalized_left_value;;
+			=> nrel_goto: .print_normalized_right_value;;
+		*);;
+
+		-> .print_normalized_right_value (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _normalized_right_value;;
+			=> nrel_goto: .proc_search_operation_by_size_operator_comparison_of_the_left_border;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_comparison_of_the_left_border (*
+			<- ifGr;;
+			-> rrel_1: rrel_scp_var: _normalized_value;;
+			-> rrel_2: rrel_scp_var: _normalized_left_value;;//_normalized_left_value
+			=> nrel_then: .proc_search_operation_by_size_operator_comparison_of_the_right_border;;
+			=> nrel_else: .proc_search_operation_by_size_operator_del_processed_species;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_comparison_of_the_right_border (*
+			<- ifGr;;
+			-> rrel_1: rrel_scp_var: _normalized_right_value;;
+			-> rrel_2: rrel_scp_var: _normalized_value;;
+			=> nrel_then: .proc_search_operation_operator_add_in_answer;;
+			=> nrel_else: .proc_search_operation_by_size_operator_del_processed_species;;
+		*);;
+
+		//-------------------------------------------------------------------------------------------------------------------
+
+		-> .proc_search_operation_by_size_operator_del_processed_species (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_posible_suitable_species;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_2;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_variables_bound_w_processed_species (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_interval_values_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_left_measurment_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_posible_left_measurment_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_left_measurment_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_right_measurment_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_posible_right_measurment_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_right_measurment_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_left_num_value_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_posible_left_num_value_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_left_num_value_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_right_num_value_set;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_posible_right_num_value_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_right_num_value_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_operator2_2;;
+		*);;
+
+
+		//заполнение ответа
+
+		-> .proc_search_operation_operator_add_in_answer (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: Red_list_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_species;;
+
+			=> nrel_then: .add_in_ru_ans;;
+			=> nrel_else: .add_in_bel_ans;;
+		*);;
+
+		-> .add_in_ru_ans (*
+			<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: Russian_red_list_search_results;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+ 			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_species;;
+
+ 			=>nrel_goto: .proc_search_operation_by_size_operator_del_processed_species;;
+		*);;
+
+		-> .add_in_bel_ans (*
+			<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: Belarussian_red_list_search_results;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+ 			-> rrel_3: rrel_fixed: rrel_scp_var: _concrete_species;;
+
+ 			=>nrel_goto: .proc_search_operation_by_size_operator_del_processed_species;;
+		*);;
+
+		//ошибки
+
+		-> .proc_search_operation_by_size_operator_send_species_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при обработке множества видов];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_posible_numbers_sets;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_send_interval_value_err_msg (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [Ошибка при обработке интервальной величины];;
+			=> nrel_goto: .proc_search_operation_by_size_operator_del_processed_species;;
+		*);;
+
+//-----------------------------------------------------------------------------------------------------------------------------
+//еще зачистить множество _posible_measurments_set
+
+		-> .proc_search_operation_by_size_operator_del_posible_numbers_sets (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_numbers_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_return_operator;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_posible_measurments_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _posible_measurments_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_return_operator;;
+		*);;
+
+		-> .proc_search_operation_by_size_operator_del_suitable_species_set (*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _suitable_species_set;;
+
+			=> nrel_goto: .proc_search_operation_by_size_return_operator;;
+		*);;
+
+		-> .proc_search_operation_by_size_return_operator (*
+			<- return;;
+		*);;
+	*);;
+*);;

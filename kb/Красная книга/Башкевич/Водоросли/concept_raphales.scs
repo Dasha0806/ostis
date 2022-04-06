@@ -1,0 +1,33 @@
+concept_raphales => nrel_main_idtf:
+[шовные](*<-lang_ru;;*);
+[raphales](*<-lang_lat;;*);;
+
+concept_order -> concept_raphales;;
+
+concept_raphales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_naviculaceae;;
+	-> concept_cymbellaceae;;
+	-> concept_surirellaceae;;
+	-> concept_cymbellaceae;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_raphales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Класс шовные включает водоросли с зигоморфными створками. На одной или на обеих створках присутствует шов, наличие которого обуславливает способность клеток к ползающему движению. Представители класса характеризуются полным отсутствием жгутиковых стадий,изо-,гетеро- или автогамией. При половом процессе две сблизившиеся клетки выделяют слизь.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_raphales;;

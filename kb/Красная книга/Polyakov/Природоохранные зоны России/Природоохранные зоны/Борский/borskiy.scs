@@ -1,0 +1,80 @@
+sc_node_not_relation -> borskiy;;
+
+borskiy => nrel_main_idtf: [заказник Борский] (* <- lang_ru;; *);
+				     [Borskiy] (* <- lang_en;; *);;
+concept_territorry->borskiy;;
+borskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Борский)](*<-lang_ru;;*);
+		[Pic. (Borskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://bor.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+borskiy<-concept_sanctuary;;
+
+borskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Борский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[заказник Борский cоздан в 1979 году на востоке болота Пустошь - Добролукское для сохранения в естественном состоянии мест массового произрастания клюквы.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							borskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+borskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Борский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Борский занимает 2805 га в Брестской области. ]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							borskiy=>nrel_square:[2805 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[2805](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+borskiy => nrel_area_location: Brest_area;;
+borskiy => nrel_flora: ...(*
+<-Oxycoccus;;
+*);;
+sc_node_not_relation -> Oxycoccus;;
+Oxycoccus=> nrel_main_idtf: [клюква мелкоплодная] (* <- lang_ru;; *);;
+ subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: borskiy;;		   

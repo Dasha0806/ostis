@@ -1,0 +1,41 @@
+concept_odonata=> nrel_main_idtf:
+[стрекозы](*<-lang_ru;;*);
+[odonata](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_odonata<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(стрекозы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Стрекозы - отряд древних амфибионтных хорошо летающих насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_odonata;;
+concept_odonata => nrel_inclusion:
+concept_lestidae;
+concept_coenagrionidae;
+concept_gomphidae;
+concept_cordulegasteridae;
+concept_aeschnidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Стрекозы - насекомые с подвижной головой, большими глазами, короткими щетинковидными усиками, удлинённым стройным брюшком и четырьмя прозрачными крыльями с густой сетью жилок.](* <- lang_ru;;*);;
+		*);;
+*);;

@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_polyplacophora;;
+
+concept_polyplacophora=> nrel_main_idtf: 
+ [панцирные](*<- lang_ru;;*); 
+ [polyplacophora](*<- lang_lat;;*);;
+
+concept_class -> concept_polyplacophora;;
+
+
+concept_polyplacophora <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса панцирные)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_polyplacophora.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_polyplacophora <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Небольшой класс моллюсков, у которых вместо цельной раковины имеется восемь отдельных пластинок - щитков, покрывающих спинную сторону животного.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Внутренностный мешок отсутствует. Раковина, как правило, состоит из 8 пластинок. Мантия в виде кольцевой складки равномерно окружает тело со всех сторон, прикрывая не только ногу, но и голову. Головные органы чувств отсутствуют. Характерно развитие спинных органов чувств на раковине. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Ведут малоподвижный образ жизни и потребляют подножный корм, являются исключительно морскими обитателями. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

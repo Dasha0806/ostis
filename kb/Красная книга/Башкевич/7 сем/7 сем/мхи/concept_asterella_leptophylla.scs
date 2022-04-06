@@ -1,0 +1,163 @@
+concept_asterella_leptophylla => nrel_main_idtf:
+[астерелла тонколистная](*<-lang_ru;;*);
+[asterella leptophylla](*<-lang_lat;;*);;
+
+
+concept_species -> concept_asterella_leptophylla;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_asterella_leptophylla;;
+
+//пояснения
+concept_asterella_leptophylla <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, с естественной малой численностью, имеющий значительный ареал, но находящийся в России на границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевищные растения средних размеров. Слоевища 1-4 см длиной и 3-10 мм шириной, вильчато разветвленные. Однодомные (пареция). Спорофиты встречаются часто.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Субтропический восточноазиатский вид. Известен в России только из Приморского края, где обнаружен в Ольгинском (с. Маргаритово) и Партизанском (4 местонахождения) р-нах, а также заповедниках Лазовский, «Кедровая Падь» и Дальневосточный морской (1). Вне пределов России известен из Китая (2) и Японии (3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Встречается на затененных гумусированных мезофитных участках в расщели- нах скал на морском побережье, в широколиственных лесах и по берегам ручьев и водопадов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид известен из 8 местонахождений в Приморском крае. Общая численность в выявленных популяциях, по-видимому, от 1000 до 5000 экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Стабильное, но в виду малочисленности вид может быть уничтожен в результате хозяйственного использования территории.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Местонахождения этого в целом субтропического вида находятся на территории России на границе ареала, в неморальной зоне. Вероятно, единственным лимитирующим фактором являются климатические условия.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Перечень объектов... , занесенных в Красную книгу Приморского края (2002). Ряд популяций находятся на территории заповедников Лазовский, «Кедровая Падь» и Дальневосточный морской.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль численности и состояния популяций.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_asterella_leptophylla <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_asterella_leptophylla;;
+						concept_asterella_leptophylla => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_asterella_leptophylla <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_asterella_leptophylla <= nrel_inclusion: concept_3_protection_category;;

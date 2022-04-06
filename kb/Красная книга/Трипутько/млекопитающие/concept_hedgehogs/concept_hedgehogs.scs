@@ -1,0 +1,106 @@
+concept_hedgehogs
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[ежовые]
+	(*<-lang_ru;;*);
+	[hedgehogs]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[ежовые]
+	(*<-lang_ru;;*);
+	[hedgehogs]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (Ежовые) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Ежовые - семейство афроевразийских млекопитающих, единственное рецентное (включающее ныне живущие виды) семейство в подотряде ежеобразных, входящем в отряд насекомоядных.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о ежовых) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[ Согласно справочнику «Mammal Species of the World» 2005 года, семейство включает 10 ныне живущих родов с 24 видами. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_family -> concept_hedgehogs;;
+concept_hedgehogs => nrel_inclusion: concept_mesechinus_dauuricus;;
+
+//предметная область
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_hedgehogs;;
+
+
+
+//Рисунок
+concept_hedgehogs <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (семейство ежовые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_hedgehogs.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_hedgehogs <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Общее описание: Телосложение у ежиных с их иглистым панцирем — более тяжёлое. Если у гимнуровых шейный перехват хорошо выражен, то у ежиных он скрыт под иглистым панцирем. Гимнуровые отличаются заметно вытянутой мордой, у ежиных же она укорочена. Как и у других насекомоядных, кончик морды вытянут в лицевой части и образует подвижный хоботок, который приводится в движение комплексом лицевых мышц. Ноздри находятся спереди и слегка смещены на боковую поверхность хоботка, причём края ноздрей обрамлены зубчатым гребнем. Глаза и ушные раковины относительно хорошо развиты. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Ежовые — обитатели лесов, степей, пустынь и окультуренных ландшафтов. В горы поднимаются до высоты 2500—2800 м. Селятся под корнями деревьев, в густом кустарнике, под камнями, роют норы. Как правило, ведут ночной образ жизни (хотя некоторые виды сохраняют активность и в светлое время суток) ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_hedgehogs <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_forest;;
+		*);;
+	*);;
+
+//питание
+concept_hedgehogs <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+			-> concept_plantae;;
+			-> concept_insecta;;
+		*);;
+	*);;
+
+//описание длин
+concept_hedgehogs <= nrel_inclusion: 
+    [8-10 лет]
+    (*
+        <- interval_value;;
+        <- length_of_life;;
+        => nrel_measurement: ([8 лет] => [10 лет]);;
+    *);;
+    [8 лет] <- length_of_life; exact_value;;
+	[8 лет] -> .year: 8 (* <- number;;*);;
+	[10 лет] <- length_of_life; exact_value;;
+	[10 лет] -> .year: 10 (* <- number;;*);;

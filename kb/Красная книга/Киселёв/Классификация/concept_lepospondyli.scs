@@ -1,0 +1,55 @@
+sc_node_not_relation ->  concept_lepospondyli;;
+
+concept_lepospondyli=> nrel_main_idtf: 
+ [тонкопозвонковые](*<- lang_ru;;*); 
+ [labyrinthodontia](*<- lang_lat;;*);;
+
+concept_subclass -> concept_lepospondyli;;
+
+
+
+concept_lepospondyli <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель подкласса тонкопозвонковые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lepospondyli.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+concept_lepospondyli => nrel_inclusion: concept_adelospondyli; concept_lysorophia ; concept_microsauria; concept_tsuditanomorpha;;
+
+
+//определение и пояснения
+concept_lepospondyli <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Подкласс небольших, но довольно разнообразных вымерших земноводных. Жили в каменноугольном и пермском периодах. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные отличительные черты:  Расширенная в виде бумеранга голова. Выросты образованы таблитчатыми и чешуйчатыми костями. Череп очень плоский. Рот маленький, нижняя челюсть не связана с боковыми выростами. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

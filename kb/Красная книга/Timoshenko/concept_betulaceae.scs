@@ -1,0 +1,27 @@
+concept_betulaceae => nrel_main_idtf:
+[берёзовые](*<-lang_ru;;*);
+[betulaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_betulaceae;;
+
+concept_betulaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_betula_nana;;
+	*);;
+
+//определение и пояснения
+concept_fagaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Берёзовые - семейство растений порядка Букоцветные, включающее в себя 234 видов, разбитых на шесть родов. Наиболее известными являются роды Берёза, Ольха, Лещина и Граб.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_betulaceae;;

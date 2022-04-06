@@ -1,0 +1,30 @@
+concept_nostocales => nrel_main_idtf:
+[ностоковые](*<-lang_ru;;*);
+[nostocales](*<-lang_lat;;*);;
+
+concept_order -> concept_nostocales;;
+
+concept_nostocales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_nostocaceae;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_nostocales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У водорослей порядка ностоковые трихомы всегда однорядные, всегда с гетероцистами и часто со спорами, не ветвящиеся или ветвящиеся ложно. Они бывают как с влагалищами, так и без них, чаще по одному трихому в каждом влагалище.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_nostocales;;

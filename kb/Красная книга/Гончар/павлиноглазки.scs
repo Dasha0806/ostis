@@ -1,0 +1,36 @@
+concept_saturniidae=> nrel_main_idtf:
+[павлиноглазки](*<-lang_ru;;*);
+[saturniidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_saturniidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(павлиноглазки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Павлиноглазки - семейство чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_saturniidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупные или очень крупные бабочки с большими широкими крыльями. Ротовые органы редуцированные: хоботок недоразвит или отсутствует; губные щупики хорошо развитые, прямые или несколько изогнутые вверх и торчащие впереди лба, реже очень маленькие и едва заметные.](* <- lang_ru;;*);;
+		*);;
+*);;

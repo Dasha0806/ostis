@@ -1,0 +1,45 @@
+concept_rhododendron_faurriei => nrel_main_idtf:
+[Рододендрон Фори](*<-lang_ru;;*);
+[Rhododendron fauriei](*<-lang_lat;;*);;
+
+concept_species -> concept_rhododendron_faurriei;;
+
+
+Red_list_ru -> concept_rhododendron_faurriei;;
+
+//пояснения
+concept_rhododendron_faurriei <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Перечень объектов, занесенных в Красную книгу Приморского края (2002). Охраняется в Сихотэ-Алинском заповеднике, где проводится регулярное наблюдение за локальными популяциями вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается в Приморском крае только на территории Сихотэ-Алинского заповедника.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Высокий вечнозеленый кустарник или дерево до 4-6 м выс. (1). Иногда образует стланиковую форму. Цветки белые, собраны в плотное шарообразное соцветие. Цветет в июне-июле. Размножение семенное. Обильное цветение наблюдается через год. Процент плодообразования колеблется от 30 до 80%.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_rhododendron_faurriei <= nrel_inclusion: concept_3_protection_category;;

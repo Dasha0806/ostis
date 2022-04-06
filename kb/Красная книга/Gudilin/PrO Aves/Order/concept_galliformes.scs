@@ -1,0 +1,22 @@
+concept_galliformes => nrel_main_idtf:
+[курообразные](*<-lang_ru;;*);
+[galliformes](*<-lang_lat;;*);;
+
+concept_order -> concept_galliformes;;
+
+concept_galliformes => nrel_inclusion: concept_tetraonidae;;
+
+//определение и пояснения
+concept_galliformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Курообразные - отряд птиц. Основную массу составляют птицы средней величины; крупных и мелких птиц мало.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_galliformes;;

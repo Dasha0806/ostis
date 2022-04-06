@@ -1,0 +1,22 @@
+concept_gaviiformes => nrel_main_idtf:
+[гагарообразные](*<-lang_ru;;*);
+[gaviiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_gaviiformes;;
+
+concept_gaviiformes => nrel_inclusion: concept_gaviidae;;
+
+//определение и пояснения
+concept_gaviiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гагарообразные - отряд водоплавающих птиц. Отряд гагар состоит из единственного семейства Гагаровые с пятью видами одного рода Гагары, распространёнными в холодном и умеренном поясе северного полушария.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gaviiformes;;

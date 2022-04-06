@@ -1,0 +1,36 @@
+concept_noctuidae=> nrel_main_idtf:
+[совки](*<-lang_ru;;*);
+[noctuidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_noctuidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(совки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Совки - наиболее крупное семейство чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_noctuidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Бабочки преимущественно средних размеров. Размах крыльев в среднем в пределах 25—45 мм. Голова округлая, лоб у большинства видов гладкий, выпуклый. Для некоторых видов и родов характерно наличие округленных лобных выступов, вдавленностей. Усики простые, нитевидные.](* <- lang_ru;;*);;
+		*);;
+*);;

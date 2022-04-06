@@ -1,0 +1,60 @@
+Yzdenski_area<-concept_area;;
+Yzdenski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Yzdenski_area=>nrel_administrative_center_of_the_area:Yzda;;
+Yzda<-concept_city;;
+
+//самая высокая точка
+Yzdenski_area=>nrel_highest_point:232_m;;
+232_m<-concept_number;;
+
+//площадь района
+Yzdenski_area=>nrel_area_of_the_district:1181_km;;
+1181_km<-concept_number;;
+
+//население района
+Yzdenski_area=>nrel_population_of_region:23481_m;;
+23481_m<-concept_number;;
+
+//используемые константы
+Yzdenski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Узденский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Узденский район — административная единица на северо-востоке Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+sc_node_not_relation -> Yzdenski_area;;
+Yzdenski_area => nrel_main_idtf:
+[Узденский район](* <-lang_ru;; *);
+[Yzdenski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Yzda;;
+Yzda=> nrel_main_idtf:
+[Узда](* <-lang_ru;; *);
+[Yzda](* <- lang_en;; *);;
+
+sc_node_not_relation ->232_m;;
+232_m=> nrel_main_idtf:
+[232 м](* <-lang_ru;; *);
+[232 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1181_km;;
+1181_km=> nrel_main_idtf:
+[1181 км^2](* <-lang_ru;; *);
+[1181 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->23481_m;;
+23481_m=> nrel_main_idtf:
+[23481 человек](* <-lang_ru;; *);
+[23481 m](* <- lang_en;; *);;

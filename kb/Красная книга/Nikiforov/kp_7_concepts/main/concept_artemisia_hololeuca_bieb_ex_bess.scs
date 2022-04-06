@@ -1,0 +1,45 @@
+concept_artemisia_hololeuca_bieb_ex_bess => nrel_main_idtf:
+[Полынь беловойлочная](*<-lang_ru;;*);
+[Artemisia hololeuca Bieb ex Bess](*<-lang_lat;;*);;
+
+concept_species -> concept_artemisia_hololeuca_bieb_ex_bess;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_artemisia_hololeuca_bieb_ex_bess;;
+
+Red_list_ru -> concept_artemisia_hololeuca_bieb_ex_bess;;
+
+//пояснения
+concept_artemisia_hololeuca_bieb_ex_bess <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Белгородской (2005), Волгоградской (2006) и Ростовской (2004) обл. Встречается на территории памятников природы в Воронежской обл. - в Донском Белогорье (Колодяжное, Верхний Карабут, Новая Калитва), в Ростовской обл. - по правому берегу р. Камышная против хут. Волошино в Миллеровском р-не.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:  В России встречается на юго-востоке Белгородской, юге Воронежской (Кантемировский и Богучарский районы), западе Волгоградской (по р. Хопёр) и Ростовской (только в Миллеровском р-не на правобережье рр. Камышная и Нагольная) обл..](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Невысокий полукустарничек (15--35 см) с одревесневающими у основания, облиственными цветоносными стеблями и многочисленными тесно сближенными укороченными вегетативными побегами. Цветет в июне-августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

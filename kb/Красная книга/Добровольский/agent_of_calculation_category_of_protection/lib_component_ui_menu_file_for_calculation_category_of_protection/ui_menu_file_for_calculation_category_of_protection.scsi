@@ -1,0 +1,19 @@
+ui_menu_file_for_calculation_category_of_protection
+		<- ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какова категория охраны?] (* <- lang_ru;; *);
+		[What is the category of protection?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_of_calculation_category_of_protection _-> ._question_of_calculation_category_of_protection_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+			*);;
+		._question_of_calculation_category_of_protection_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template:
+		[Какова категоря охраны для $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is the category of protection of $ui_arg_1]
+                (* <- lang_en;; *);;

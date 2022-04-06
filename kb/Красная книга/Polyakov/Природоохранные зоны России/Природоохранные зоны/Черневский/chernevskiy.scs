@@ -1,0 +1,78 @@
+sc_node_not_relation -> chernevskiy;;
+
+chernevskiy => nrel_main_idtf: [заказник Черневский] (* <- lang_ru;; *);
+				     [Chernevskiy] (* <- lang_en;; *);;
+
+chernevskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Черневский)](*<-lang_ru;;*);
+		[Pic. (Chernevskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+chernevskiy<-concept_sanctuary;;
+
+chernevskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Черневский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Черневский был создан в 1979 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							chernevskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+chernevskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Черневский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Черневский составляет 1000 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							chernevskiy=>nrel_square:[1000 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[1000](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+chernevskiy => nrel_area_location: Minsk_area;;
+chernevskiy => nrel_flora: ...(*
+<-Oxycoccus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: tyrvovichi;;

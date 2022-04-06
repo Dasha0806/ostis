@@ -1,0 +1,138 @@
+concept_xylocopa_valga=> nrel_main_idtf:
+[обыкновенная пчела плотник](*<-lang_ru;;*);
+[xylocopa valga](*<-lang_lat;;*);;
+
+concept_species -> concept_xylocopa_valga;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_xylocopa_valga;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_xylocopa_valga;;
+	-> rrel_number_of_year: 1872 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_xylocopa_valga <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен в Красные книги Литвы, Украины, России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Опушки старых лесов, реже населенные пункты с деревянными постройками и старыми садами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Самки выходят из зимовки в апреле и летают до августа. Гнезда строят в мертвой сухой древесине - в старых деревьях, пнях, телеграфных столбах, в стенах деревянных построек, гнилых бревнах. В течение нескольких дней самка выгрызает в древесине галерею до 30 см длиной (или использует уже готовые полости). После заготовки на дне медвяного теста (кучка пыльцы с нектаром) и откладки первого яйца устраивает перегородку из разжеванной и смоченной слюной древесины, которая является дном для следующей ячейки - так заполняется весь ход галереи. Личинки развиваются в течение 3 недель, после чего окукливаются в тонком паутинном коконе. Отродившиеся в августе молодые пчелы самостоятельно прогрызают ходы в древесине, и выходит наружу. После копуляции самцы вскоре погибают, а оплодотворенные самки уходят на зимовку. Пчелы посещают более 60 видов цветущих растений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В 1920-30 гг. отдельные экземпляры отмечались по всей территории Беларуси (коллекция М.В Добротворского, музей БГУ). За последние 20 лет зафиксирован дважды - в Национальном парке «Припятский» и Беловежской пуще.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение площади старых лесов, вырубка усыхающих деревьев, уменьшение количества старых деревянных построек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходим запрет отлова вида, сохранение старых лесов как резерватов редких видов, сохранение старых усыхающих деревьев.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: От сев. Африки и Европы через Среднюю Азию, Казахстан до Монголии включительно. В первой половине прошлого столетия вид регистрировался по всей территории Беларуси. В последнее время регистрируется только на юге .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Самая крупная пчела в фауне Беларуси. Тело (20-28 мм) черное, блестящее, слабоопушенное. Крылья темные с ярким фиолетовым отливом. Голени задних ног в густых волосках.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_xylocopa_valga <= nrel_spread: ... 
+	(*
+	-> Lyban_district; Minsk_district; Gomel_district;;
+	*);;
+
+concept_anthophoridae => nrel_inclusion: concept_xylocopa_valga;;
+concept_xylocopa_valga => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_wings; dark; purple;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; metallic; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; hairly; black;;
+	*);;
+
+concept_xylocopa_valga <= nrel_inclusion: 
+	20_28_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (20_mm => 28_mm);;	
+	*);;
+	20_mm <- length_of_body; exact_value;;
+	20_mm -> .millimeter: 20 (* <- number;;*);;
+	28_mm <- length_of_body; exact_value;;
+	28_mm -> .millimeter: 28 (* <- number;;*);;	
+
+concept_xylocopa_valga <= nrel_inclusion: concept_2_protection_category;;

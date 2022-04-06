@@ -1,0 +1,125 @@
+concept_felis_silvestris=> nrel_main_idtf: [лесной кот](*<- lang_ru;;*); [felis silvestris](*<- lang_lat;;*);;
+
+concept_species -> concept_felis_silvestris;;
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_felis_silvestris;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_felis_silvestris;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+nrel_date_of_disappereance -> ...
+	(*
+	-> rrel_1: concept_black_list;; 
+	-> rrel_2: concept_felis_silvestris;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1930 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_felis_silvestris <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Последние находки датируются 1930-ми годами. Позднее на территории страны вид отмечен не был.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Лесные кошки имеют коричневую окраску с черными полосами. Они крупнее домашних кошек, с толстым хвостом, как бы «обрубленным» на конце. Размер тела от 45 до 80 см в длину, весят от 1,5 до 18 кг. Средняя высота около 35 см, а длина хвоста около 30 см. Африканские подвиды обычно меньше размером и имеют более светлую окраску.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Лесная кошка обитает в Европе, северной Азии и Африке.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Лесной кот поселяется там, где нет недостатка в зайцах, кроликах и птицах, гнездящихся на земле.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Лесные кошки очень пугливы, зачастую агрессивны и стараются не приближаться к поселениям людей. Они ведут одиночный образ жизни и удерживают территорию около 3 км2. Самки достигают половой зрелости уже через 9—10 месяцев, тогда как самцы лишь на третьем году жизни.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденции изменения: Регионально исчезнувший (RE)](* <- lang_ru;; *);;
+		*);;
+*);;
+//характеристики
+concept_felis_silvestris <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> RE;;
+		*);;
+	*);;
+//части тела
+concept_felis_silvestris => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_stomack; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; grey; white; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_tail; grey; black;;
+	*);;
+	
+//размеры и вес
+concept_felis_silvestris <= nrel_inclusion: 
+	[45-80 см]
+	(*
+	<- interval_value;;
+	<- length_of_wing;;
+	=> nrel_measurement: ([45 см] => [80 см]);;
+	*);;
+	[45 см] <- length_of_wing; exact_value;;
+	[45 см] -> .centimeter: 45 (* <- number;;*);;
+	[80 см] <- length_of_wing; exact_value;;
+	[80 см] -> .centimeter: 80 (* <- number;;*);;
+//категория охраны и количество
+concept_felis_silvestris <- concept_black_list;;

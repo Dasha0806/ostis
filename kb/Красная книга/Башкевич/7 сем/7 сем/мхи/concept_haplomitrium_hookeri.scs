@@ -1,0 +1,163 @@
+concept_haplomitrium_hookeri => nrel_main_idtf:
+[гапломитриум хукера](*<-lang_ru;;*);
+[haplomitrium hookeri](*<-lang_lat;;*);;
+
+
+concept_species -> concept_haplomitrium_hookeri;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_haplomitrium_hookeri;;
+
+//пояснения
+concept_haplomitrium_hookeri <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 а - сокращающийся в численности вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Растения ярко-зеленые в небольших дерновинках (обычно до 10--15 стеблей) или рассеяны среди других мохообразных, очень мелкие, 2-9 мм дл. и до 2-2,5 (3) мм шир. Стебель неветвистый, листья вверх направленные в трех рядах, полиморфные. Двудомное. Антеридии очень крупные ярко-оранжевые. Споры сравнительно крупные, 23-36 мкм в диам.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известен из Мурманской обл.: долина оз. Ловно, Кандалакшский залив Белого моря, басс. оз. Имандра, Хибины (1), Ковдорский р-н (2); Ленинградской обл.: Карельский перешеек (3); Республики Коми: Средний Тиман (4); Красноярского края: Таймыр (5); Республики Саха (Якутия): Юдомо-Майское нагорье, среднее течение р. Юдома (6), хр. Удокан, р. Олдонгдо (7) и хр. Улахан-Чистай, р. Артык (8); Кемеровской обл.: Кузнецкий Алатау (9). Вне России известен по единичным находкам в Гренландии, Европе, Японии, Непале, Северной Америке (5).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. На песчаной, торфянистой или илистой почве по незадернованным откосам и берегам ручьев, речек, озер, на обочинах дорог, на отмирающих стеблях в основании кочек крупнодернистых осок.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В Мурманской обл. известен из нескольких местонахождений, но все популяции очень малочисленны - не более 10--30 особей, в Якутии три местонахождения, в Республике Коми, Ленинградской обл., Красноярском крае и Кемеровской обл. по одному местонахождению, в которых вид представлен единичными дерновинками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Часть популяций находится, по-видимому, в стабильном состоянии, но повторное об- следование ряда местонахождений в Мурманской обл. выявило исчезновение популяций; на территории Финляндии вид считается исчезнувшим (11).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Низкая конкурентоспособность, специфические временные биотопы и ограниченная способность к расселению (отсутствие выводковых почек, крупные споры).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красные книги Мурманской обл. (2003) и Pеспублики Коми (1998). Вид представлен на территории Кандалакшского заповедника (1) и заповедника «Кузнецкий Алатау» (8).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_haplomitrium_hookeri <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_haplomitrium_hookeri;;
+						concept_haplomitrium_hookeri => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_haplomitrium_hookeri <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_haplomitrium_hookeri <= nrel_inclusion: concept_2_protection_category;;

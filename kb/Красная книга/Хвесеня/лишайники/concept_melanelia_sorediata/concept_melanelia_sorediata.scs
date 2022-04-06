@@ -1,0 +1,137 @@
+concept_melanelia_sorediata=> nrel_main_idtf: [меланелия соредиозная](*<- lang_ru;;*); [melanelia sorediata](*<- lang_lat;;*); [меланелія сарэдыёзная](*<- lang_bel;;*);;
+
+concept_melanelia_sorediata<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (меланелия соредиозная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_melanelia_sorediata.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_melanelia_sorediata;;
+concept_species -> concept_melanelia_sorediata;;
+subject_domain_of_lichenas -> rrel_not_maximum_studied_object_class: concept_melanelia_sorediata;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_melanelia_sorediata;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_melanelia_sorediata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Включен в Красную книгу Беларуси 2-го издания (1993).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на кремнийсодержащем каменистом субстрате (гранитные наносные валуны).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции встречаются очень редко. Размножается преимущественно вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается одиночными розетками, реже образует сплошной покров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Ограничен в своем распространении из-за редкой встречаемости основного субстрата - нетронутых поверхностных гранитных валунов, являющихся останцами ледникового периода. Разрушение и перемещение гранитных валунов ведет к сокращению численности популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется совместно с геологическими памятниками природы Беларуси. Места произрастания находятся на территориях Березинского государственного биосферного заповедника, национальных парков "Беловежская пуща" и "Нарочанский", заказников "Освейский" и "Долгое". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых, предотвращение разрушения и перемещения субстрата (гранитных валунов).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная Америка, Гренландия . Реликтовый вид арктического периода. В республике находится за пределами ареала. Основные местонахождения отмечены в северной части Витебской обл. (Витебский, Глубокский, Лепельский, Оршанский, Поставский, Россонский, Сенненский и Ушачский р-ны); известен также в Гродненской (Свислочский р-н), Брестской (Каменецкий р-н), Минской (Крупский, Логойский, Минский, Мядельский и Столбцовский р-ны) и Могилевской (Осиповичский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище розетковидное, диаметром 3-4 см, довольно плотно прикрепленное к субстрату, часто сливающееся с соседними слоевищами. Лопасти узкие, шириной до 0,5 мм, маловетвистые, с острыми или округлыми пазухами. Верхняя поверхность слоевища коричнево-черная или оливково-коричневая, матовая или блестящая, с рассеянными белыми, более или менее плоскими округлыми соралями; нижняя - черная или черно-коричневая, с короткими, рассеянными ризинами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_melanelia_sorediata <= nrel_spread: ... 
+	(*
+	->Vitebsk_district; Hlybokaye_district; Lyelchytsy_distict; Orsha_district; Pastavy_district; Rossonsky_district; Senno_district; Ushachsky_district; Svislach_distict; Kamenets_distict; Krupsky_district; Logoisk_district; Minsk_district; Myadel_district; Stolbtsovsky_district; Osipovichi_district;;
+	*);;
+
+concept_parmeliaceae => nrel_inclusion: concept_melanelia_sorediata;;
+concept_melanelia_sorediata => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; rosette;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_blades; narrow; brown; branching; matte; brilliant;;
+	*);;
+
+concept_melanelia_sorediata <= nrel_inclusion: 
+	[3-4 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([3 см] => [4 см]);;	
+	*);;
+	
+	[3 см] <- length_of_body; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4(* <- number;;*);;
+
+concept_melanelia_sorediata <= nrel_inclusion: concept_4_protection_category;;

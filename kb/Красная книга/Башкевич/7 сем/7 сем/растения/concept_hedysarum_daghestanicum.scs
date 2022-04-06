@@ -1,0 +1,163 @@
+concept_hedysarum_daghestanicum => nrel_main_idtf:
+[копеечник дагестанский](*<-lang_ru;;*);
+[hedysarum daghestanicum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_hedysarum_daghestanicum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hedysarum_daghestanicum;;
+
+//пояснения
+concept_hedysarum_daghestanicum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д - редкий вид. Эндемик России (Дагестан).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Бесстебельный стержнекорневой многолетник высотой 10-20 см. Все части растения серого цвета от прижатого опушения. Цветет в июле. Размножение семенное.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Встречается только в России, в Республике Дагестан. Произрастает в Левашинском (между сел. Урма и Губден, Леваши, Хаджалмахи, Карекадани, Цудахар), Акушинском (сел. Тебекмахи), Унцукульском (сел. Гимры), Гумбетовском (сел. Чирката, Аргвани, откуда был описан вид) и Ботлихском (сел. Ансалта, Нижн. Инхело) р-нах (1-4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Мезоксерофит. Растет на сухих известняковых склонах, на каменистых местах в среднем горном поясе на высоте 800-1500 м н. ур. м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Известно около 15 местонахождений вида. Общая численность его оценивается в пределах 1000-1500 экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Все популяции малочисленны. В исследованной популяции в окр. сел. Нижнее Инхело Ботлихского р-на численность вида составляет около 30 экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Низкая численность популяций, очень низкая семенная продуктивность и слабое семенное возобновление. Сильно страдает от выпаса скота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Дагестан (1998).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Охрана вида во всех известных местонахождениях. Организация ботанического заказника в Ботлихской аридной котловине, где произрастет около 90 эндемиков различного уровня (4).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. В культуре не известен. Целесообразно испытание в культуре как декоративного растения для засушливых районов.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hedysarum_daghestanicum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_hedysarum_daghestanicum;;
+						concept_hedysarum_daghestanicum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_hedysarum_daghestanicum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_hedysarum_daghestanicum <= nrel_inclusion: concept_3_protection_category;;

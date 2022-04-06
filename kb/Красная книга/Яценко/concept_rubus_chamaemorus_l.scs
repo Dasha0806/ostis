@@ -1,0 +1,166 @@
+concept_rubus_chamaemorus_l => nrel_main_idtf: [морошка приземистая](*<- lang_ru;;*); [rubus chamaemorus l.](*<- lang_lat;;*); [марошка прысадзістая](*<- lang_bel;;*);;
+concept_rubus_chamaemorus_l => nrel_idtf: [марошка прысадзістая](*<- lang_bel;;*);;
+
+concept_species -> concept_rubus_chamaemorus_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_rubus_chamaemorus_l;;
+
+concept_rubus_chamaemorus_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (морошка приземистая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_rubus_chamaemorus_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_rubus_chamaemorus_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_rubus_chamaemorus_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 1го и 2го изданий (1981, 1993). Охраняется в Польше.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее двудомное травянистое растение с длинным ползучим корневищем, низкими (около 20 см) стеблями и 2-3-мя округло-почковидными листьями с зубчатым складчатым краем. Цветки однополые, белые иногда розоватые, одиночные, на длинных цветоножках, тычиночные крупнее пестичных. Чашечка из 5 травянистых туповатых волосистых железистых чашелистиков. Тычинки многочисленные, у пестичных цветков не развивающие пыльники. Плод - шаровидная многокостянка, состоящая из многочисленных сросшихся костянок, сначала красноватая, спелая - оранжево-желтая .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Лесотундровая и таежная зоны Евразии и Северной Америки . Реликтовый арктобореальный вид, который находится в Беларуси в особых локалитетах за южной границей ареала . Встречается преимущественно в Белорусском Поозерье:  в Витебской обл. (Верхнедвинский , Витебский , Городокский , Полоцкий , Миорский , Поставский , Россонский , Шумилинский  и Шарковщинский  р-ны) и на севере Минской обл. (Борисовский  и Мядельский  р-ны). Местонахождения в Минской обл. являются наиболее южными в Беларуси. Указанные точки в Борисовском, Шарковщинском и Поставском р-нах требуют проверки. Ранее отмечался в окрестностях Браслава, Гродно, в Беловежской и Налибокской пущах . В 19-м в. был собран в Могилевской губернии .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Верховые и переходные болота, сфагновые сосняки, примыкающие к верховым болотам; предпочитает открытые места обитания с багульником и голубикой.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - июне, плодоносит в июле - августе. Опыляется насекомыми (энтомофил). Обильное плодоношение невозможно из-за нарушений половой структуры популяций и высокой повреждаемости цветков поздневесенними заморозками . Преобладает вегетативное размножение ползучими корневищами.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Встречается обычно небольшими, местами значительными группами, реже отдельными экземплярами. Численность популяций резко сокращается.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  осушение и хозяйственное освоение болот, чрезмерные рекреационные нагрузки, включая пожары, связанные с деятельностью человека.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Произрастает в ряде заказников:  ландшафтном “Красный Бор” (Россонский р-н), биологических “Лонно” (Полоцкий р-н) и “Чистик” (Витебский р-н), гидрологических “Ельня” (Миорский р-н), “Болото Мох” (Миорский р-н) и “Корытенский Мох” (Городокский р-н) и других. Необходимы контроль состояния известных популяций и поиск новых, организация специализированных ботанических заказников во всех известных местах произрастания с запрещением негативных антропогенных воздействий, расселение вида в соответствующие природные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_rubus_chamaemorus_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Verkhnedvinsk_district;;->Vitebsk_district;;->Gorodok_district;;->Polotsk_district;;->Miory_district;;->Postavy_district;;->Rosson_district;;->Shumilino_district;;->Sharkovshchina_district;;->Borisov_district;;->Myadel_district;;->Borisov_district;;->Sharkovshchina_district;;->Postavy_district;;->Braslav_district;;->Grodno_district;;->Belovezhskaya_Pushcha_district;;->Nalibokskaya_Pushcha_district;;->Mogilev_district;;
+		*);;
+*);;
+
+concept_rubus_chamaemorus_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; low;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; long;creeping ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; orbicular_reniform;scalloped_folded_edge;;
+*);
+...
+(*
+<= nrel_inclusion: flower; gay;white;pinkish;single;long_pedicel;staminate;pistillate;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; spherical;mnogochastny;reddish;orange_yellow;;
+*);;
+
+concept_rubus_chamaemorus_l <= nrel_inclusion: 
+[15-25]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [25 см]);; 
+*);;
+
+concept_rubus_chamaemorus_l <= nrel_inclusion: 
+[1.5-2.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1.5 см] => [2.5 см]);; 
+*);;
+
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[25 см] <- length_of_inflorscence; exact_value;;
+[25 см] -> .centimeter: 25 (* <- number;;*);;
+[1.5 см] <- length_of_inflorscence; exact_value;;
+[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+[2.5 см] <- length_of_inflorscence; exact_value;;
+[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+ 
+
+concept_rubus_chamaemorus_l <= nrel_inclusion: concept_2_protection_category;;

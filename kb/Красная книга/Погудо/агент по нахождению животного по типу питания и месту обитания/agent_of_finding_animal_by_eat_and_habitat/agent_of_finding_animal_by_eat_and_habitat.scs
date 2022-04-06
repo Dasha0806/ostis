@@ -1,0 +1,201 @@
+agent_of_finding_animal_by_eat_and_habitat
+=> nrel_main_idtf:
+	[агентная scp-программа поиска животный по питанию и месту обитания] (* <- lang_ru;; *);
+	[agent scp-program of finding animal with given eat and habitat] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_finding_animal_by_eat_and_habitat
+	(*
+	-> rrel_params: .agent_of_finding_animal_by_eat_and_habitat_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_animal_by_eat_and_habitat_operator_set 
+		(*
+		-> rrel_init: .agent_of_finding_animal_by_eat_and_habitat_operator1A 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator1B;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator1B 
+			(*
+		  	<- searchElStr3;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: action_of_finding_animal_by_eat_and_habitat;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_then: .agent_of_finding_animal_by_eat_and_habitat_operator1C;;
+		  	=> nrel_else: .agent_of_finding_animal_by_eat_and_habitat_operator_return;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator1C
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_animal_by_eat_and_habitat_operator1D;;
+			=> nrel_else: .agent_of_finding_animal_by_eat_and_habitat_operator_return;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator1D
+			(*
+		 	<- searchElStr5;;
+
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+            		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_animal_by_eat_and_habitat_operator2A;;
+			=> nrel_else: .agent_of_finding_animal_by_eat_and_habitat_operator_return;;
+			*);;	 	
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator2A 
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator2B;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator2B
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [* _f _<- concept_animal;;
+								  _f _=> nrel_eat:: _g;; 
+								  _f _=> nrel_habitat:: _habitat;;
+								  _habitat _<- concept_city;; *];;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (* -> ... (* -> rrel_1: rrel_fixed: rrel_scp_const: _g;;
+										-> rrel_2: rrel_fixed: rrel_scp_var: _param1;; *);;
+								      -> ... (* -> rrel_1: rrel_fixed: rrel_scp_const: _habitat;;
+										-> rrel_2: rrel_fixed: rrel_scp_var: _param2;; *);;
+								   *);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_finding_animal_by_eat_and_habitat_operator2BC;;
+			=> nrel_else: .agent_of_finding_animal_by_eat_and_habitat_operator_return;;			
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator2BC 
+			(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator2C;;
+			*);;  
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator2C
+			(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_const: _node;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3A;; 
+			*);;
+			
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3A
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3B;;
+			*);;
+			
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3B
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3C;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3C
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_animal;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3D;;
+			*);;
+			
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3D
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_habitat;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3E;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3E
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_eat;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3F;;
+			*);;
+			
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3F
+			(*
+			<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: concept_city;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator3G;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator3G
+			(*
+			<- genElStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_of_finding_animal_by_eat_and_habitat_operator_return;;
+			*);;
+
+		-> .agent_of_finding_animal_by_eat_and_habitat_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;

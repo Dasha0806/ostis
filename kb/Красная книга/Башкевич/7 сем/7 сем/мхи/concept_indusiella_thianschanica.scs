@@ -1,0 +1,163 @@
+concept_indusiella_thianschanica => nrel_main_idtf:
+[индузиэлла тяньшанская](*<-lang_ru;;*);
+[indusiella thianschanica](*<-lang_lat;;*);;
+
+
+concept_species -> concept_indusiella_thianschanica;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_indusiella_thianschanica;;
+
+//пояснения
+concept_indusiella_thianschanica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид с дизъюнктивным ареалом и естественной низкой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Мелкий мох с прямостоячим стеблем, образующий маленькие густые дерновинки 2-5 мм выс. Однодомный, спорофиты развиваются часто. Размножение преимущественно спорами, вегетативная подвижность низкая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известны следующие местонахождения: Дагестан (1); Республика Алтай: Курайский хр., руч. Табожок (2); Республика Тыва: хр. Восточный Танну-Ола - урочище Берт-Даг (3); Западный Саян: р. Мал. Уры, верховья (3); Иркутская обл.: Восточный Саян - р. Бол. Хангорок (3); Республика Бурятия: Джергинский заповедник, р. Ковыли (4), Республика Саха (Якутия): Хангалаский р-н, устье р. Лабыйа на территории природного парка «Ленские Столбы» (5), Усть-Майский р-н, нижнее теч. р. Юдома (6); Томпонский р-н, хр. Сунтар Хаята, руч. Ат-Мооле (7). Вне России - Монголия, Китай, Таджикистан, Африка (Чад), Северная Америка (Аляска) (8).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает на поверхности камней и в мелких расщелинах сухих, преимущественно известняковых, скал, б.ч. в горных районах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В России известно 9 местонахождений вида, в большинстве мест выявлен в количестве нескольких десятков или сотен экземпляров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Удовлетворительное, но низкая численность популяций делает их уязвимыми к разного рода случайным воздействиям.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Стенотопность (кальцефильность в сочетании с теплолюбивостью и ксерофильностью).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был включен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красные книги Республик Тыва (1999), Бурятия (2002) и Дагестан (1998), охраняется в Иркутской обл. На охраняемых территориях популяции находятся в Джергинском заповеднике, природном парке «Ленские Столбы», ресурсном резервате «Сунтар-Хаята».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль численности популяций.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_indusiella_thianschanica <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_indusiella_thianschanica;;
+						concept_indusiella_thianschanica => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_indusiella_thianschanica <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_indusiella_thianschanica <= nrel_inclusion: concept_3_protection_category;;

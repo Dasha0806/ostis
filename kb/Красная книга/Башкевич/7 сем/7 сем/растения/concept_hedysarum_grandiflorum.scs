@@ -1,0 +1,163 @@
+concept_hedysarum_grandiflorum => nrel_main_idtf:
+[копеечник крупноцветковый](*<-lang_ru;;*);
+[hedysarum grandiflorum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_hedysarum_grandiflorum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hedysarum_grandiflorum;;
+
+//пояснения
+concept_hedysarum_grandiflorum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 в - редкий вид. Большая часть ареала в России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Травянистый стержнекорневой поликарпик 20-40 см выс. Листья сложные непарноперистые с 2-5 парами листочков. Цветет с мая по июль. Плодоносит в июле-августе. Размножение только семенное. Зацветает на 4- 5-й год (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается на Среднем и Нижнем Дону, на Приволжской возвышенности, в Заволжье, в Ергенях, на Южном Урале, в Республиках Башкортостан, Татарстан, Калмыкия, в Белгородской, Волгоградской, Воронежской, Оренбургской, Ростовской, Самарской, Саратовской, Ульяновской и Челябинской областях. Ранее указывался для Пензенской обл. Указание для Курской обл. ошибочно (1-7). Вне России встречается в Болгарии, Румынии и на Украине (3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Ксерофит, петрофит и кальцефил. Растет на глинисто-известняковых склонах, на обнажениях мела и мергеля, реже на известняках в тимьянниковых степях. Встречается в каменистых ковыльных и типчаковых степях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В Республике Татарстан известно около 15 популяций, в Волгоградской обл. более 25, в Ростовской - около 20, в Белгородской - около 10 (1, 5, 6, 7).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. В Волгоградской и Ростовской областях ценопопуляции имеют высокую числен- ность, полночленны по возрастной структуре, жизненность особей высокая (1, 8). В Дубовском р-не Ростовской обл. близ ст. Жуковской в злаково-ковыльной степи крупная популяция вида насчитывала 1320 особей на 600 м2, максимальная плотность на 1 м2 - 5 особей, а средняя - 2,2. В том же районе отмечены более малочисленные популяции (15 особей на 100 м2) (8).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Антропогенные нарушения среды обитания: разработка карьеров, выпас, эрозия склонов. Декоративное растение, страдает от сбора.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был занесен в Красную книгу РСФСР (1988). Вид включен в Красные книги или взят под охрану во всех субъектах федерации, где он произрастает. Охраняется в заповедниках «Белогорье», Жигулёвском и Оренбургском (9), а также в ПП «Нижнехопёрский», «Донской» и «Щербаковский» Волгоградской обл. (1) и ряде региональных ООПТ.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Создание новых ООПТ для охраны вида. Контроль за состоянием популяций.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. В России культивируется в ботанических садах Белгорода, Перми, Ростова-на-Дону, Уфы (10), Волгограда (ВГПУ и Региональном) (1).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hedysarum_grandiflorum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_hedysarum_grandiflorum;;
+						concept_hedysarum_grandiflorum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_hedysarum_grandiflorum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_hedysarum_grandiflorum <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,25 @@
+sc_node_not_relation ->  concept_geoglossovye;;
+concept_geoglossovye => nrel_main_idtf:
+[геоглоссовые](*<-lang_ru;;*);
+[geoglossovye](*<-lang_en;;*);;
+
+//
+concept_geoglossovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(геоглоссовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка гелоциальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_gelotsialnye;;
+	*);;	
+*);;
+
+//

@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_gymnophiona;;
+
+concept_gymnophiona=> nrel_main_idtf: 
+ [безногие](*<- lang_ru;;*); 
+ [gymnophiona](*<- lang_lat;;*);;
+
+concept_ordo_A -> concept_gymnophiona;;
+
+
+concept_gymnophiona <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель отряда безногие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_gymnophiona.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_gymnophiona <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Отряд позвоночных животных из класса земноводных. Безногие являются самым малочисленным современным отрядом земноводных, включающим 207 видов. Известны с нижнего юрского периода.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: У безногих земноводных нет конечностей, а хвост сильно редуцирован.Кожа безногих земноводных гладкая и зачастую окрашена в матовый тёмный цвет. Глаза безногих земноводных покрыты тонким слоем кожи, из-за чего они могут различать лишь свет и тьму.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ареал: Безногие земноводные встречаются в тропиках и субтропиках Юго-Восточной Азии, Африки и Латинской Америки. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

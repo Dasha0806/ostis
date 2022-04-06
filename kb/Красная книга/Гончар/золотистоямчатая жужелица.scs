@@ -1,0 +1,146 @@
+concept_carabus_clathratus_linnaeus=> nrel_main_idtf:
+[золотистоямчатая жужелица](*<-lang_ru;;*);
+[carabus clathratus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_clathratus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_clathratus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_clathratus_linnaeus;;
+	-> rrel_number_of_year: 1761 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_clathratus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Самый влаголюбивый вид рода. Предпочитает места обитания с богатой растительностью на торфяных почвах: низинные заболоченные луга в пойме рек, а также низинные болота и болота переходного типа. Встречается местами часто.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид с весенним типом размножения, зимует имаго. Наибольшая активность отмечена в конце мая, начале июня. Личинки и имаго питаются личинками насекомых, сухопутными моллюсками, червями. Активны преимущественно в сумерки и ночью .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Вид приурочен к угрожаемым биоценозам.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение мест обитания в силу осушения низинных болот и ведения хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Выявление новых мест обитания вида и их охрана. Соблюдение порядка ведения хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евро-сибирско-центральноазиатский гигрофильный вид. Встречается по всей территории на заболоченных лугах, низинных болотах, по берегам рек и водохранилищ .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 21-36 мм. Надкрылья уплощены, с вырезкой на боковом крае перед вершиной, с 3 очень крупными золотистыми ямками, прерывающими ряды узких коротких бугорков; ребра на них более высокие. Верх слабо блестящий, бронзовый или бронзово-черный.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_clathratus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_clathratus_linnaeus;;
+concept_carabus_clathratus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; gold;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; gold; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; bronze; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; gold;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; short;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; gold;;
+	*);;
+
+concept_carabus_clathratus_linnaeus <= nrel_inclusion: 
+	21_36_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (21_mm => 36_mm);;	
+	*);;
+	21_mm <- length_of_body; exact_value;;
+	21_mm -> .millimeter: 21 (* <- number;;*);;
+	36_mm <- length_of_body; exact_value;;
+	36_mm -> .millimeter: 36 (* <- number;;*);;	
+
+concept_carabus_clathratus_linnaeus <= nrel_inclusion: concept_3_protection_category;;

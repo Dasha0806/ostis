@@ -1,0 +1,66 @@
+concept_vegetatively
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[размножение вегетативно]
+	(*<-lang_ru;;*);
+	[disputes]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[размножение вегетативно]
+	(*<-lang_ru;;*);
+	[disputes]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (размножение вегетативно) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[размножение вегетативно -  образование новой особи из многоклеточной части тела родительской особи.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о размножение вегетативно) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  У некоторых растений могут укореняться отделившиеся от материнского растения побеги.
+. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_vegetatively <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ В основе вегетативного размножения лежат процессы, сходные с процессами регенерации. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ У высших растений происходит либо как распадение материнской особи на две и более дочерние особи . ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_vegetatively <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (вегетативное размножение)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_vegetatively.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;

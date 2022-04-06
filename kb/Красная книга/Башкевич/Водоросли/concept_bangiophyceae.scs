@@ -1,0 +1,30 @@
+concept_bangiophyceae => nrel_main_idtf:
+[бангиофициевые](*<-lang_ru;;*);
+[bangiophyceae](*<-lang_lat;;*);;
+
+concept_class -> concept_bangiophyceae;;
+
+concept_bangiophyceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_porphyridiales;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_bangiophyceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У водорослей класса бангиофициевые клетки часто со звездчатым хроматофором, заключающим пиреноид. Поры между клетками, как правило, отсутствуют. Кар-погон без трихогины, после оплодотворения содержимого карпогона непосредственно делится с образованием карпоспор. Бесполое размножение обычно моноспорами.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_bangiophyceae;;

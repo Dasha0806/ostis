@@ -1,0 +1,112 @@
+sc_node_not_relation -> nrel_surface;;
+nrel_surface=>nrel_main_idtf:
+[рельеф*](* <-lang_ru;; *);
+	[surface*](* <- lang_en;; *);;
+nrel_surface=>nrel_idtf:
+[рельефы](*<-lang_ru;; *);
+        [surfaces](*<-lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_type_of_ground;;
+concept_type_of_ground=>nrel_main_idtf:
+[тип местности](* <-lang_ru;; *);
+	[type of ground](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ground;;
+concept_ground=>nrel_main_idtf:
+[местность](* <-lang_ru;; *);
+	[ground](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_earth_surface;;
+concept_earth_surface=>nrel_main_idtf:
+[земная поверхность](* <-lang_ru;; *);
+	[earth surface](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_map;;
+concept_map=>nrel_main_idtf:
+[карта](* <-lang_ru;; *);
+	[map](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_solid_planetary_bodies;;
+concept_solid_planetary_bodies=>nrel_main_idtf:
+[твердые планетные тела](* <-lang_ru;; *);
+	[solid planetary bodies](* <- lang_en;; *);;
+
+//домены
+nrel_surface => nrel_first_domain: concept_ground;;
+nrel_surface => nrel_second_domain: concept_type_of_ground;;
+nrel_surface => nrel_definitional_domain: ...
+                              (*
+                               <-concept_ground;;
+                               <-concept_type_of_ground;;
+                              *);;
+
+
+//определение 
+nrel_surface <-rrel_key_sc_element:...
+(*
+    <-explanation;;
+    => nrel_main_idtf: 
+    [Опр.(рельеф)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Рельеф - это очертания земной поверхности и иных твёрдых планетных тел](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_solid_planetary_bodies;;
+    ->concept_earth_surface;;
+*);;
+*);;
+//утверждения
+nrel_surface <-rrel_key_sc_element:
+...
+(*
+	=> nrel_main_idtf: 
+    [Утв.(рельеф*,местность,карта)] (* <- lang_ru;; *);;
+	<-statement;;
+        <-concept_statement_of_general_form;;
+      ->rrel_key_sc_element: concept_ground;;
+      ->rrel_key_sc_element: concept_map;;
+            <- rrel_theorem:
+            subject_domain_of_geography 
+				(*
+                    <-subject_domain;;
+                *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> [Рельеф местности определяется с помощью топографических карт](* <- lang_ru;; *);;
+		*);;
+*);;
+
+//свойства
+nrel_disjoint_union <- binary_relation;;
+nrel_disjoint_union <- antireflexive_relation;;
+nrel_disjoint_union <- antitransitive_relation;;
+nrel_disjoint_union <- antisymmetric_relation;;
+nrel_disjoint_union <- oriented_relation;;
+
+statement_of_defining_type=>nrel_main_idtf:
+    [утверждение определяющего типа](*<-lang_ru;;*);;
+subject_domain_of_geography=>nrel_main_idtf:
+    [Предметная область географии](*<-lang_ru;;*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:nrel_surface;;
+	<= nrel_sc_text_translation: ...
+		(*
+		->"file://surface.jpg";;
+		*);;
+	*);;
+
+

@@ -1,0 +1,155 @@
+concept_lepiota_lignicola=> nrel_main_idtf: [лепиота древесинная](*<- lang_ru;;*); [lepiota lignicola](*<- lang_lat;;*);;
+
+concept_lepiota_lignicola<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лепиота древесинная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lepiota_lignicola.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_lepiota_lignicola;;
+concept_species -> concept_lepiota_lignicola;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_lepiota_lignicola;;
+
+//пояснения
+concept_lepiota_lignicola <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Гриб с плодовыми телами средних размеров, развивающимися на древесине. Шляпка 4-9 см в диам., выпуклая, желто - или рыже-бурая, покрытая щетинисто-заостренными, высокими, почти прямостоячими, по краю немного прижатыми, преходящими в плотное хлопьевидно-паутинистое частное покрывало, одноцветными с поверхностью, чешуйками. Пластинки почти свободные, белые или беловато-кремовые. Ножка 5-9 х 0,8-2 см, булавовидная, полая, с паутинисто-хлопьевидной кольцевой зоной, ниже которой одноцветная со шляпкой, хлопьевидно-чешуйчатая, а выше - охристая, голая, гладкая. Мякоть беловатая. Споровый порошок белый. Споры 4,5--6 х 2--4 мкм, эллипсоидальные, гладкие, бесцветные, амилоидные (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Архангельская обл. (2), Ненецкий АО (3), Республика Карелия (4), Северо-Западный Кавказ (Республика Адыгея, Майкопский р-н) (5, LE), Алтайский край (район Телецкого озера) (6), Красноярский край (район пос. Бахта) (6), Прибайкалье (7), Республика Бурятия (8), Читинская обл. (9), Хабаровский край (Комсомольский заповедник) (10), Приморский край (Уссурийский заповедник), заповедник «Кедровая Падь» (11). Общее распространение: Западная Европа, Сев. Америка (1, 7).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Обитает на гнилой древесине лиственных пород в равнинных и горных лиственных и смешанных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована. Состояние локальных популяций. Сведений нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Охраняется на территории заповедников: Уссурийский (LE), «Комсомольский», «Кедровая Падь» (11) (Приморский край). Включен в Красные книги Республик Адыгея (5) и Бурятия (8), Архангельской (2), Читинской (9) и Иркутской (12) обл.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходимы поиск новых местонахождений и охрана местообитаний вида.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не культивируется.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_lepiota_lignicola <= nrel_spread: ... 
+	(*
+	-> Primorskiy_kray; Arhangelskaja_oblast;;
+	*);;
+
+concept_shampinonovyye => nrel_inclusion: concept_lepiota_lignicola;;
+concept_lepiota_lignicola => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; convex; yellow_brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; club_shaped;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; loose; white;;
+	*);;
+
+concept_lepiota_lignicola <= nrel_inclusion: 
+	[4-9 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([4 см] => [9 см]);;	
+	*);
+	[0.8-2см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([0.8 см] => [2см]);;	
+	*);;
+
+	[4 см] <- cap_diameter; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[9 см] <- cap_diameter; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+	[0.8 см] <- lenght_of_leg; exact_value;;
+	[0.8 см] -> .centimeter: 0.8 (* <- number;;*);;
+	[2 см] <- lenght_of_leg; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	
+concept_lepiota_lignicola <= nrel_inclusion: concept_3_protection_category;;

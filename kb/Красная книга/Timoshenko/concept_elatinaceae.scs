@@ -1,0 +1,27 @@
+concept_elatinaceae => nrel_main_idtf:
+[повойничковые](*<-lang_ru;;*);
+[elatinaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_elatinaceae;;
+
+concept_elatinaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_elatine_hydropiper;;
+	*);;
+
+//определение и пояснения
+concept_elatinaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Повойничковые - семейство растений порядка чаецветные.Повойнички распространены по всему миру, от тропических до умеренных широт, но наибольшего разнообразия достигают именно в умеренной зоне. Бергия произрастает в умеренной зоне и тропиках Евразии и Африки. Центром биологического разнообразия бергии являются тропики Старого Света, здесь же наибольшего разнообразия достигает все семейство. Ни один род не обнаружен в арктических экосистемах.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_elatinaceae;;

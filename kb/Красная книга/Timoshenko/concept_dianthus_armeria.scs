@@ -1,0 +1,132 @@
+concept_dianthus_armeria => nrel_main_idtf:
+[гвоздика армериевидная](*<-lang_ru;;*);
+[dianthus armeria](*<-lang_lat;;*);
+[гваздзiк армерыяпадобны](*<-lang_bel;;*);;
+
+concept_species -> concept_dianthus_armeria;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_dianthus_armeria;;
+
+//пояснения
+concept_dianthus_armeria <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Одно- или двулетнее растение с простым или слаборазветвленным, сверху опушенным стеблем высотой 20-50 см и коротким вертикальным корнем. Нижние листья продолговато-ланцетовидные, средние и верхние линейно-ланцетовидные или линейные, сидячие. Цветки розово-пурпурные, на коротких цветоножках, собранные на верхушке стебля в малоцветковое головчатое соцветие. Плод - многосемянная коробочка .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Скандинавия, Средняя и Восточная Европа, Средиземноморье, Кавказ, Малая Азия, Иран . В Беларуси этот реликтовый вид находится в изолированных локалитетах на северо-восточной границе ареала . Достоверно известен в Брестской (Столинский р-н), Гомельской (Житковичский, Лоевский и Хойник­ский р-ны) и Гродненской (г. Гродно) областях . Ранее приводился для окрестностей Гродно, Волковыска, Щучина и Лоева .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Опушки лесов, кустарники, сухие луга, обрывистые берега рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июне - сентябре. Энтомофил. Размножение семенное. Баллист.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет одиночными экземплярами или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная трансформация земель (строительство, земляные работы, раскорчевка кустарников, распашка лугов и др.), чрезмерная пастьба и прогон скота, сбор в качестве декоративного растения.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка «Припятский», Полесского радиационно-экологического заповедника. Выращивается в Центральном ботаниче­ском саду НАН Беларуси , ботанических садах БГУ и Витебского университета и Республикан­ском экологическом центре учащихся и молодежи (Минск). Необходимо проводить ревизию и контроль состояния известных популяций, осуществлять поиск новых местонахождений; следует взять под охрану все местонахождения гвоздики армериевидной с запрещением или ограничением негативных антропогенных воздействий; рекомендуется более широкое введение вида в культуру в качестве декоративного растения.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_dianthus_armeria <= nrel_spread: ... 
+	(*
+	-> Stolynski_district; Zhitkovichski_district; Loevsky_district; Hoynicksky_district; Grodnensky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_dianthus_armeria;;
+						concept_dianthus_armeria => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; plain; hairy;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; sedentary;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; pink; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; multisweed; box;;
+							*);;
+
+concept_dianthus_armeria <= nrel_inclusion: 
+	20_50_cm
+	(*
+	<- interval_value;;
+	<- length_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (20_cm => 50_cm);;
+	*);;
+
+
+	20_cm <- length_of_leaf; exact_value;;
+	20_cm -> nrel_cm: 20 (* <- number;;*);;
+	50_cm <- length_of_leaf; exact_value;;
+	50_cm -> nrel_cm: 50 (* <- number;;*);;
+			
+
+concept_dianthus_armeria <= nrel_inclusion: concept_3_protection_category;;

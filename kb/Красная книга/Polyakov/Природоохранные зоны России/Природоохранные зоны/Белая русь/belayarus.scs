@@ -1,0 +1,79 @@
+
+sc_node_not_relation -> belayarus;;
+concept_territorry->belayarus;;
+belayarus => nrel_main_idtf: [заказник Белая русь] (* <- lang_ru;; *);
+				     [Belaya rus] (* <- lang_en;; *);;
+
+ 
+belayarus <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Белая русь)](*<-lang_ru;;*);
+		[Pic. (Belaya rus)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://belrus.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+belayarus<-concept_sanctuary;;
+belayarus <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Белая русь, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биологический заказник был основан в 2015 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							belayarus=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2015(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+belayarus <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Белая русь, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Белая русь составляет 3500 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							belayarus=>nrel_square:[3500 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[3500](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+belayarus => nrel_area_location: Minsk_area;;
+belayarus => nrel_flora: ...(*
+<-concept_epipactis_atrorubens_bess;concept_lilium_martagon_l;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: belayarus;;

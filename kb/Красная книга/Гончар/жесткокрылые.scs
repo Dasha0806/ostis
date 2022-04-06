@@ -1,0 +1,44 @@
+concept_coleoptera=> nrel_main_idtf:
+[жесткокрылые](*<-lang_ru;;*);
+[coleoptera](*<-lang_lat;;*);;
+ 
+
+//определение и пояснение
+concept_coleoptera <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(жесткокрылые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Жесткокрылые - отряд насекомых с жёсткими крыльями.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_coleoptera;;
+concept_coleoptera => nrel_inclusion: 
+concept_calosoma;
+concept_carabidae;
+concept_dytiscidae;
+concept_scarabaeidae;
+concept_lucanidae;
+concept_staphylinidae;
+concept_cerambycidae;
+concept_chrysomelidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Жесткокрылые - насекомые, которые характеризуются видоизменением передних крыльев в твёрдые, сильно склеротизированные, либо кожистые надкрылья, лишённые жилкования, с сохранением перепончатых задних крыльев, служащих для полёта и в спокойном состоянии сложенных под надкрыльями.](* <- lang_ru;;*);;
+		*);;
+*);;

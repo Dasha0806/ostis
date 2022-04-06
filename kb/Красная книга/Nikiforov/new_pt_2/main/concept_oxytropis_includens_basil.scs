@@ -1,0 +1,55 @@
+concept_oxytropis_includens_basil => nrel_main_idtf:
+[Остролодочник заключающий](*<-lang_ru;;*);
+[Oxytropis includens Basil.](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_includens_basil;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_includens_basil;;
+
+Red_list_ru -> concept_oxytropis_includens_basil;;
+
+//пояснения
+concept_oxytropis_includens_basil <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Популяции обычно небольшой площади, неполночленные, практически отсутствуют ювенильные особи. .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республик Хакасия (2002) и Тыва (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России. Основной ареал его находится в Республике Хакасии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетний розеточный поликарпик до 15 см выс. с каудексом. Листья с 5-6 парами листочков. Отличительная особенность — мелкие бобы, полностью заключенные во вздувающуюся чашечку.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

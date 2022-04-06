@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_umbilikarievye;;
+concept_umbilikarievye => nrel_main_idtf:
+[умбиликариевые](*<-lang_ru;;*);
+[umbilikarievye](*<-lang_en;;*);;
+
+//
+concept_umbilikarievye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(умбиликариевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка леканоральные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lekanoralnye;;
+	*);;	
+*);;
+

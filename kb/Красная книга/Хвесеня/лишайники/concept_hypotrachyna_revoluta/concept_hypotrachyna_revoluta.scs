@@ -1,0 +1,137 @@
+concept_hypotrachyna_revoluta=> nrel_main_idtf: [гипотрахина отогнутая](*<- lang_ru;;*); [hypotrachyna revoluta](*<- lang_lat;;*); [гіпатрахіна адагнутая](*<- lang_bel;;*);;
+
+concept_hypotrachyna_revoluta<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (гипотрахина отогнутая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_hypotrachyna_revoluta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_hypotrachyna_revoluta;;
+concept_species -> concept_hypotrachyna_revoluta;;
+subject_domain_of_lichenas -> rrel_not_maximum_studied_object_class: concept_hypotrachyna_revoluta;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_hypotrachyna_revoluta;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1984 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_hypotrachyna_revoluta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значімость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше и Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на замшелых стволах ольхи черной, реже на других лиственных деревьях в заболоченных старовозрастных черноольховых лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции не найдены. Размножается вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается спорадически отдельными особями или, очень редко, небольшими группами. Из 25 местонахождений, известных на территории Беларуси, 18 отмечено на территории Национального парка "Беловежская пуща" . Численность популяций невысокая, в ряде из них наблюдается тенденция к сокращению. В республике особи этого вида обычно встречаются с плохо развитыми слоевищами, а в нормально развитом состоянии они сохранились лишь в труднодоступных для человека местах и заповедниках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительная мелиорация, вырубка лесов, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Растет на территориях национальных парков "Беловежская пуща", "Нарочанский" и "Припятский", Березинского биосферного заповедника. Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях. Сохранение мест обитания, отвечающих требованиям вида. Для этого необходимо: запрет любой лесохозяйственной деятельности в местах роста и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная и Южная Америка, Австралия, Тасмания и Новая Зеландия . Реликтовый вид субокеанической флоры третичного периода , основная часть ареала которого охватывает районы с влажным континентальным и океаническим климатом . В Беларуси довольно редко встречается в Витебской (Лепельский и Россонский р-ны), Минской (Вилейский и Мядельский р-ны) и Гомельской (Житковичский, Лельчицкий и Мозырский р-ны) областях; большинство известных местонахождений обнаружено на западе Беларуси - в Брестской (Каменецкий, Малоритский, Пружанский и Столинский р-ны) и Гродненской (Свислочский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище листоватое, часто со слабо развитыми долями, неясно розетковидное, диаметром 4-10 см, почти кожистое. Лопасти шириной 3-6 мм, часто плоские или вогнутые, восходящие, на концах загибающиеся вниз. Верхняя поверхность слоевища свинцово-серая, в центре более темная, с соредиями; нижняя - от бурого до почти чёрного цвета, по периферии бледно-желто-коричневая, блестящая, с густыми черными ризинами, не доходящими до краев лопастей. Сорали темно-серые, коричневые или оливковые, головчатые .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hypotrachyna_revoluta <= nrel_spread: ... 
+	(*
+	->  Lepel_district; Zhytkavichy_district; Rasony_distict; Vileyka_distict; Myadzyel_distict; Mozyr_distict; Lyelchytsy_distict; Pruzhany_distict; Stolin_distict; Kamenets_distict; Malaryta_distict; Svislach_distict;;
+	*);;
+
+concept_parmeliaceae => nrel_inclusion: concept_hypotrachyna_revoluta;;
+concept_hypotrachyna_revoluta => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; leafy;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_blades; thin; concave; grey;;
+	*);;
+
+concept_hypotrachyna_revoluta <= nrel_inclusion: 
+	[4-10 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([4 см] => [10 см]);;	
+	*);;
+	
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10(* <- number;;*);;
+
+concept_hypotrachyna_revoluta <= nrel_inclusion: concept_3_protection_category;;

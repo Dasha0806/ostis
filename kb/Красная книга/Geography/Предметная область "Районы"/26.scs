@@ -1,0 +1,142 @@
+//синонимы
+concept_industry=>nrel_main_idtf:[промышленность] (* <- lang_ru;; *);;
+concept_industry=>nrel_identifier:[industry] (* <- lang_en;; *);;
+
+//используемые константы
+concept_industry<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_complex;;
+->concept_company;;
+->nrel_extraction;;
+->concept_production;;
+->concept_tool;;
+->concept_raw;;
+->concept_material;;
+->concept_fuel;;
+->concept_energy;;
+->nrel_processing;;
+->concept_product;;
+->concept_agriculture;;
+
+*);;
+*);;
+concept_industry=> nrel_main_idtf: [Опр.(промышленность)]  (* <- lang_ru;; *);;
+concept_industry<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Промышленность – совокупность предприятий, занятых производством орудий труда, добычей сырья, материалов, топлива, производством энергии и дальнейшей обработки продуктов, полученных в промышленности или произведённых в сельском хозяйстве.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+
+concept_industry<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(промышленность,рамка*,хозяйство)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Промышленность зародилась в рамках натурального домашнего крестьянского хозяйства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_industry<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(зарождение*,развиитие*,капитализм,рост*,промышленность)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Зарождение и развитие капитализма способствовало быстрому росту промышленности.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+//синонимы,включение
+nrel_industry=>nrel_main_idtf:[промышленность*] (* <- lang_ru;; *);;
+nrel_industry=>nrel_identifier:[industry*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_industry<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_complex;;
+->concept_company;;
+->nrel_extraction;;
+->concept_production;;
+->concept_tool;;
+->concept_raw;;
+->concept_material;;
+->concept_fuel;;
+->concept_energy;;
+->nrel_processing;;
+->concept_product;;
+->concept_agriculture;;
+*);;
+*);;
+nrel_industry=> nrel_main_idtf: [Опр.(промышленность*)]  (* <- lang_ru;; *);;
+nrel_industry<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Промышленность – совокупность предприятий, занятых производством орудий труда, добычей сырья, материалов, топлива, производством энергии и дальнейшей обработки продуктов, полученных в промышленности или произведённых в сельском хозяйстве.](* <- lang_ru;; *);;
+*);;
+	
+nrel_industry<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(промышленность*,рамка*,хозяйство)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Промышленность зародилась в рамках натурального домашнего крестьянского хозяйства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+nrel_industry<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(зарождение*,развиитие*,капитализм,рост*,промышленность*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Зарождение и развитие капитализма способствовало быстрому росту промышленности.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+//область определения
+nrel_industry=>nrel_first_domain:concept_country;;
+nrel_industry=>nrel_second_domain:concept_branch_industry;;
+nrel_industry=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+->concept_country;;
+->concept_branch_industry;;
+*);;
+*);;
+
+//свойства отношения
+nrel_industry<-oriented_relation;;
+nrel_industry<-antitransitive_relation;;
+nrel_industry<-antireflexive_relation;;
+nrel_industry<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

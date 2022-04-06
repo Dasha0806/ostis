@@ -1,0 +1,45 @@
+concept_carex_japonica => nrel_main_idtf:
+[Осока японская](*<-lang_ru;;*);
+[Carex japonica](*<-lang_lat;;*);;
+
+concept_species -> concept_carex_japonica;;
+
+
+Red_list_ru -> concept_carex_japonica;;
+
+//пояснения
+concept_carex_japonica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Сахалинской обл. (2005).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается в Сахалинской обл.: на юге о. Сахалин - окр. города Невельска и на Курильских о-вах -о.Кунашир между пос. Серноводск и Менделеево. Восточноазитский вид.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Растение до 40 см выс., с длинным ползучим корневищем и пучками побегов; общее соцветие с длинным узким верхушечным тычиночным колоском и 2-3 пестичными колосками, рыжеватыми от очень длинных долго сохраняющихся рылец. Разножается вегетативно и семенами. Цветет в июне, плодоносит в августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_japonica <= nrel_inclusion: concept_3_protection_category;;

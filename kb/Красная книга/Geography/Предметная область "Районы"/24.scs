@@ -1,0 +1,73 @@
+//синонимы,включение
+nrel_animal_world =>nrel_main_idtf:[животный мир*] (* <- lang_ru;; *);;
+nrel_animal_world =>nrel_identifier:[animal world*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_animal_world<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_totality;;
+->concept_organism;;
+->nrel_kind;;
+->concept_animal;;
+*);;
+*);;
+nrel_animal_world=> nrel_main_idtf: [Опр.(животный мир*)]  (* <- lang_ru;; *);;
+nrel_animal_world<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Животный мир – совокупность живых организмов всех видов диких животных.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+nrel_animal_world<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(животный мир*,группа,признак*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Животного мир делится на группы по родственным признакам.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+nrel_animal_world<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(животное,зоопарк,состав*,животный мир*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Домашние животные, животные в зоопарках не входят в состав животного мира.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+//область определения
+nrel_animal_world=>nrel_first_domain:concept_country;;
+nrel_animal_world=>nrel_second_domain:concept_animal;;
+nrel_animal_world=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+->concept_country;;
+->concept_animal;;
+*);;
+*);;
+
+//свойства отношения
+nrel_animal_world<-oriented_relation;;
+nrel_animal_world<-antitransitive_relation;;
+nrel_animal_world<-antireflexive_relation;;
+nrel_animal_world<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

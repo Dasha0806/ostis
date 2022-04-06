@@ -1,0 +1,145 @@
+concept_stellaria_crassifolia => nrel_main_idtf:
+[звездчатка толстолистная](*<-lang_ru;;*);
+[aconitum lycoctonum](*<-lang_lat;;*);
+[зоркаўка таўсталiстая](*<-lang_bel;;*);;
+
+concept_species -> concept_stellaria_crassifolia;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_stellaria_crassifolia;;
+
+//пояснения
+concept_stellaria_crassifolia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с тонким ползучим корневищем. Стебли восходящие, часто укореняющиеся у основания, высотой 5-20 см. Листья сидячие, продолговато-овальные, заостренные, длиной 5-15 мм, несколько толстоватые. Цветки мелкие, белые, в пазушных негустых полузонтиках, прицветники травянистые. Плод - коробочка.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Евразия (Скандинавия, Средняя и Восточная Европа, Кавказ, Западная и Восточная Сибирь, Дальний Восток, горы Средней Азии, Япония, Китай), Северная Америка . Арктобореальный вид, находящийся в Беларуси в отдельных локалитетах (преимущественно в северо-западных районах) в пределах ареала. Известен в нескольких местонахождениях в Пружанском р-не Брестской обл., в Верхнедвинском, Миорском, Постав­ском, Россонском р-нах Витебской обл., в Новогрудском р-не Гродненской обл. и Мядельском р-не Минской обл. . Ранее вид приводился для Пинского уезда, Могилевской губернии, Беловежской пущи, окрестностей Гродно и Брагина .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Прибрежные крупноосоковые сообщества, заболоченные осоковые луга, болота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в мае - июне. Энтомофил. Размножение семенное и вегетативное. Анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет единичными экземплярами или небольшими группами на ограниченных площадях.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительная мелиорация и хозяйственная трансформация земель.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка «Нарочанский», заказников в Витебской («Красный Бор») и Гродненской («Вселюбский») обл., а также проектируемого заказника «Мыличино» (Глубокский р-н). Необходимо строгое соблюдение охранного режима, исключение гидромелиоративных работ в местах произрастания вида. Следует периодически проводить ревизию известных местонахождений, осуществлять поиск новых и, при необходимости, организовывать их охрану.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_stellaria_crassifolia <= nrel_spread: ... 
+	(*
+	-> Pruzhansky_district; Miorsky_district; Postvsky_district; Rossonsky_district; Novogrudok_district; Myadelsk_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_stellaria_crassifolia;;
+						concept_stellaria_crassifolia => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; thin; creeping;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; sedentary; oval; pointed; thick;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; small; white;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box;;
+							*);;
+
+concept_stellaria_crassifolia <= nrel_inclusion: 
+	1_2_cm
+	(*
+	<- interval_value;;
+	<- length_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (1_cm => 2_cm);;
+	*);;
+concept_stellaria_crassifolia <= nrel_inclusion: 
+	5_20_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (5_cm => 20_cm);;
+	*);;
+
+	1_cm <- length_of_leaf; exact_value;;
+	1_cm -> nrel_cm: 1 (* <- number;;*);;
+	2_cm <- length_of_leaf; exact_value;;
+	2_cm -> nrel_cm: 2 (* <- number;;*);;
+	5_cm <- length_of_stem; exact_value;;
+	5_cm -> nrel_cm: 5 (* <- number;;*);;
+	20_cm <- length_of_stem; exact_value;;
+	20_cm -> nrel_cm: 20 (* <- number;;*);;					
+
+concept_stellaria_crassifolia <= nrel_inclusion: concept_3_protection_category;;

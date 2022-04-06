@@ -1,0 +1,146 @@
+concept_eumolpus_asclepiadeus_pallas=> nrel_main_idtf:
+[асклепиевый листоед](*<-lang_ru;;*);
+[eumolpus asclepiadeus pallas](*<-lang_lat;;*);;
+
+concept_species -> concept_eumolpus_asclepiadeus_pallas;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_eumolpus_asclepiadeus_pallas;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_eumolpus_asclepiadeus_pallas;;
+	-> rrel_number_of_year: 1776 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_eumolpus_asclepiadeus_pallas <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Жуки встречаются в пойменных биотопах на ваточнике (Asclepias) и ластовне (Vincetoxicum), на корнях которых питается личинка этого вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Редкий локальный вид, находящийся близ северной границы ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Малочисленный вид, единично встречающийся почти ежегодно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушение и хозяйственное освоение пойменных земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Необходимо изучение возможных мест обитания на территории Полесья и динамики численности.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Южная Европа, Литва, южная Беларусь, Украина, Кавказ, Казахстан, юг Западной Сибири. В Беларуси неоднократно был обнаружен в Мозырском р-не.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Крупный жук (длина тела 8-10 мм). Верх синий с металлическим блеском, ноги и усики черные, низ черно-зеленый. Голени с зубцами у вершины.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_eumolpus_asclepiadeus_pallas <= nrel_spread: ... 
+	(*
+	-> Mozir_district;;
+	*);;
+
+concept_chrysomelidae => nrel_inclusion: concept_eumolpus_asclepiadeus_pallas;;
+concept_eumolpus_asclepiadeus_pallas => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; dark; metallic; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; dark; metallic; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; dark; metallic; blue;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black; green;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_eumolpus_asclepiadeus_pallas <= nrel_inclusion: 
+	8_10_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (8_mm => 10_mm);;	
+	*);;
+	8_mm <- length_of_body; exact_value;;
+	8_mm -> .millimeter: 8 (* <- number;;*);;
+	10_mm <- length_of_body; exact_value;;
+	10_mm -> .millimeter: 10 (* <- number;;*);;	
+
+concept_eumolpus_asclepiadeus_pallas <= nrel_inclusion: concept_3_protection_category;;

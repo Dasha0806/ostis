@@ -1,0 +1,22 @@
+concept_gruidae => nrel_main_idtf:
+[журавлиные](*<-lang_ru;;*);
+[gruidae](*<-lang_lat;;*);;
+
+concept_family -> concept_gruidae;;
+
+concept_gruidae => nrel_inclusion: concept_grus_grus;;
+
+//определение и пояснения
+concept_gruidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Это крупные, длинноногие и длинношеие птицы, их высота составляет 90—155 см, размах крыльев 150—240 см, а вес 2—11 кг. Самый маленький журавль — красавка, самый крупный — австралийский. Высота подвида G. a. antigone у австралийского журавля, обитающего в Индии, достигает 175 см, что делает его самой высокой летающей птицей в мире.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gruidae;;

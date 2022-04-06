@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_lichenas_marsupialia;;
+concept_lichenas_marsupialia => nrel_main_idtf:
+[сумчатые лишайники](*<-lang_ru;;*);
+[lichenas marsupialia](*<-lang_en;;*);;
+
+//
+concept_lichenas_marsupialia <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(сумчатые лишайники)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[класс в отделе лишайников, который объединяет общий признак, споры у них развиваются внутри сумок](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lichenas;;
+	*);;	
+*);;
+
+//
+concept_lichenas_marsupialia => nrel_inclusion:
+    concept_kalitsialnye;
+    concept_lekanoralnye;
+    concept_peltigeralnye;;

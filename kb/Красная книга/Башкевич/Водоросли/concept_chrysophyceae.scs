@@ -1,0 +1,30 @@
+concept_chrysophyceae => nrel_main_idtf:
+[хризофитовые](*<-lang_ru;;*);
+[chrysophyceae](*<-lang_lat;;*);;
+
+concept_class -> concept_chrysophyceae;;
+
+concept_chrysophyceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_ochromonadales;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_chrysophyceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Класс хризофитовые  - класс охрофитовых водорослей. Включают в себя преимущественно микроскопические водоросли различных оттенков жёлтого цвета. Золотистые водоросли бывают одноклеточными, колониальными и многоклеточными. Известно около 800 видов.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_chrysophyceae;;

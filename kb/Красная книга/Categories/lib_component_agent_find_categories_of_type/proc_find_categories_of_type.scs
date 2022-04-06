@@ -1,0 +1,28 @@
+    scp_program -> proc_find_categories_of_type (*
+
+    -> rrel_params: ... (*
+    -> rrel_1: rrel_in: _type;;
+    -> rrel_2: rrel_in: _result;;
+    *);;
+
+    -> rrel_operators: ... (*
+
+    ->rrel_init: ..find_categorie (*
+    <- searchSetStr5;;
+    -> rrel_1: rrel_fixed: rrel_scp_var: _type;;
+    -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc2;;
+    -> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _no_name_node;;
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc4;;
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+    -> rrel_set_3: rrel_fixed: rrel_scp_var: _result;;
+    => nrel_then: ..proc_run_testcase_operator_return;;
+    => nrel_else: ..proc_run_testcase_operator_return;;
+    *);;
+
+    -> ..proc_run_testcase_operator_return (*
+    <- return;;
+    *);;
+    *);;
+    *);;
+

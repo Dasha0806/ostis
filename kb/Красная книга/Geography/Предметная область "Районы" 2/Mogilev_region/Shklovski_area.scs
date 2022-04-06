@@ -1,0 +1,61 @@
+Shklovski_area<-concept_area;;
+Shklovski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Shklovski_area=>nrel_administrative_center_of_the_area:Shklov;;
+Shklov<-concept_city;;
+
+//самая высокая точка
+Shklovski_area=>nrel_highest_point:220_m;;
+220_m<-concept_number;;
+
+//площадь района
+Shklovski_area=>nrel_area_of_the_district:1334_km;;
+1334_km<-concept_number;;
+
+//население района
+Shklovski_area=>nrel_population_of_region:18545_m;;
+18545_m<-concept_number;;
+
+//используемые константы
+Shklovski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Шкловский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Шкловский район — административная единица на севере Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+sc_node_not_relation -> Shklovski_area;;
+Shklovski_area => nrel_main_idtf:
+[Шкловский район](* <-lang_ru;; *);
+[Shklovski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Shklov;;
+Shklov=> nrel_main_idtf:
+[Шклов](* <-lang_ru;; *);
+[Shklov](* <- lang_en;; *);;
+
+sc_node_not_relation ->220_m;;
+220_m=> nrel_main_idtf:
+[220 м](* <-lang_ru;; *);
+[220 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1334_km;;
+1334_km=> nrel_main_idtf:
+[1334 км^2](* <-lang_ru;; *);
+[1334 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->27332_m;;
+27332_m=> nrel_main_idtf:
+[27332 человек](* <-lang_ru;; *);
+[27332 m](* <- lang_en;; *);;

@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_habitat;;
+
+nrel_habitat => nrel_main_idtf: [место обитания*] (* <- lang_ru;; *);
+				     [habitat] (* <- lang_en;; *);;

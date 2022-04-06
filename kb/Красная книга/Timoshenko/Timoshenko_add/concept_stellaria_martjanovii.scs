@@ -1,0 +1,45 @@
+concept_stellaria_martjanovii => nrel_main_idtf:
+[Звездчатка Мартьянова](*<-lang_ru;;*);
+[Stellaria martjanovii](*<-lang_lat;;*);;
+
+concept_species -> concept_stellaria_martjanovii;;
+
+
+Red_list_ru -> concept_stellaria_martjanovii;;
+
+//пояснения
+concept_stellaria_martjanovii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Алтай (1996).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в Республике Алтай. Ареал вида ограничен высокогорьями Северо-Чуйского, Южно-Чуйского и Курайского хр. В настоящее время известно до 10 местонахождений вида. Встречается на высотах от 2200-2300 до 2900 м н. ур. м. Описан с Алтая, р. Тётё, приток р. Чуя.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый вегетативно-подвижный поликарпик, с побегами в основном погруженными в субстрат.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_stellaria_martjanovii <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,160 @@
+concept_hydrocotyle_vulgaris_l => nrel_main_idtf: [щитолистник обыкновенный](*<- lang_ru;;*); [hydrocotyle vulgaris l.](*<- lang_lat;;*); [шчыталiснiк звычайны](*<- lang_bel;;*);;
+concept_hydrocotyle_vulgaris_l => nrel_idtf: [шчыталiснiк звычайны](*<- lang_bel;;*);;
+
+concept_species -> concept_hydrocotyle_vulgaris_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hydrocotyle_vulgaris_l;;
+
+concept_hydrocotyle_vulgaris_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (щитолистник обыкновенный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_hydrocotyle_vulgaris_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_hydrocotyle_vulgaris_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_hydrocotyle_vulgaris_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен
+в Красную книгу Беларуси 
+2го издания (1993). 
+Находится под
+государственной охраной 
+в Литве (возможно, исчез), 
+Украине и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с тонким ползучим укореняющимся в узлах стеблем. Листья очередные, округлые, цельные, по краю городчатые, щитовидно-воронковидные, диаметром до 3,5 см, на длинных черешках. Цветки очень мелкие, беловато-зеленоватые, собраны в одиночные или немногочисленные малоцветковые головчатые соцветия. Плод - вислоплодник.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия (юг), Атлантическая, Средняя и Восточная (запад) Европа, Средиземноморье, Малая Азия . В Беларуси находится в островных местонахождениях за восточной границей сплошного ареала. Достоверно известен в Брестском р-не Бресткой обл. (окрестности д. Томашевка)  и Гродненском р-не Гродненской обл. (окрестности д. Калеты) . По данным литературы указывался для Гродненской и Минской губерний (без точного указания местонахождений) . Вероятно, на основании этих данных позже приводился для окрестностей городов Гродно и Минск .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сырые заиленные и зарастающие крупноосочником берега водоемов (озер и рыборазводных прудов).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июле - августе. Энтомофил, автогам. Плодоносит в августе - сентябре. Барохор, гидрохор. Размножение вегетативное и семенное.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В известных местонахождениях произрастает небольшими группами особей. В Гродненском р-не численность популяции и занимаемая ею площадь снижается (в 2001 г. площадь популяции составляла около 10 м2). Популяция в Брестском р-не занимает площадь около 300 м2 (данные 2003 г.).](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  рекреационные нагрузки (вытаптывание), выжигание травы, изменение гидрологического режима водоемов (длительное водопонижение или затопление). Природные:  естественные смены растительности (зарастание и заболачивание прибрежных участков).](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_hydrocotyle_vulgaris_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Brest_district;;->Grodno_district;;->Minsk_district;;
+		*);;
+*);;
+
+concept_hydrocotyle_vulgaris_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; thin;creeping;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; another;rounded;solid;crenate;thyroid_funnel;long_petiole;;
+*);
+...
+(*
+<= nrel_inclusion: flower; small;whitish_green;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; single;a_few;few_flowered;capitate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; visioplaine;;
+*);;
+
+concept_hydrocotyle_vulgaris_l <= nrel_inclusion: 
+[20-100 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([20 см] => [100 см]);; 
+*); 
+[1-3.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1 см] => [3.5 см]);; 
+*);;
+
+[20 см] <- length_of_inflorscence; exact_value;;
+[20 см] -> .centimeter: 20 (* <- number;;*);;
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[1 см] <- length_of_inflorscence; exact_value;;
+[1 см] -> .centimeter: 1 (* <- number;;*);;
+[3.5 см] <- length_of_inflorscence; exact_value;;
+[3.5 см] -> .centimeter: 3.5 (* <- number;;*);;
+ 
+
+concept_hydrocotyle_vulgaris_l <= nrel_inclusion: concept_1_protection_category;;

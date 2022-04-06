@@ -1,0 +1,151 @@
+concept_cristaria_tuberculata  => nrel_main_idtf: [бугорчатая кристария](*<- lang_ru;;*); [cristaria tuberculata](*<- lang_lat;;*);;
+
+concept_cristaria_tuberculata   <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (бугорчатая кристария)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cristaria_tuberculata.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_cristaria_tuberculata <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_cristaria_tuberculata  ;;
+concept_species -> concept_cristaria_tuberculata  ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_cristaria_tuberculata  ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_cristaria_tuberculata  ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1987 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cristaria_tuberculata   <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина неправильно-ромбической формы, очень крупная, длиной до 30 см, выпуклая, в передней части толстостенная. Спинной край сильно наклонен вперед. В задней половине спинного края имеется очень высокий крыловидный гребень, который у старых особей может быть обломан. Передний и задний края раковины широкие, брюшной край в средней трети почти прямой. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из басс. оз. Ханка и р. Уссури. Возможно нахождение в водоемах басс. среднего и нижнего Амура.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают на равнинных участках стоячих и проточных водоемов на заиленном или песчано-илистом грунте. Животные подвижны. С наступлением зимнего периода моллюски из прибрежных участков водоемов обычно мигрируют на глубоководные участки. На илистом грунте способны переносить кратковременное пересыхание и промерзание водоема. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Проводившийся в 30-40-е гг. промышленный отлов кристарий для пуговичной промышленности, развитие в 60-80-е гг. в басс. оз. Ханка рисосеяния и прогрессирующее загрязнение поверхностных вод привели к резкому сокращению численности вида. Некоторая стабилизация численности вида наблюдалась после недавнего введения на озере водоохранной зоны и сокращения объемов рисосеяния. В последние 20 лет ареал бугорчатой кристарии резко сократился. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Распространение вида лимитируется чистотой воды, характером грунта и высокой скоростью течения. Обмеление рек или их использование для сплава леса ведут к полному исчезновению моллюсков. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Ханкайском государственном заповеднике. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_cristaria_tuberculata   <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_cristaria_tuberculata   => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; yellow; green; brown; black;;
+	*);;
+//размеры и вес
+concept_cristaria_tuberculata   <= nrel_inclusion: 
+	[24-30 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([24 см] => [30 см]);;	
+	*);
+	[0,170-0,200 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,170 кг] => [0,200 кг]);;	
+	*);;
+	[24 см] <- length_of_body; exact_value;;
+	[24 см] -> .centimeter: 24 (* <- number;;*);;
+	[30 см] <- length_of_body; exact_value;;
+	[30 см] -> .centimeter: 30 (* <- number;;*);;
+	[0,170 кг] <- weight; exact_value;;
+	[0,170 кг] -> .kilogram: 0.170 (* <- number;;*);;
+	[0,200 кг] <- weight; exact_value;;
+	[0,200 кг] -> .kilogram: 0.200 (* <- number;;*);;
+//категория охраны и количество
+concept_cristaria_tuberculata   <= nrel_inclusion: concept_2_protection_category;;
+concept_cristaria_tuberculata   <= nrel_strength: [6500 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 6500 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

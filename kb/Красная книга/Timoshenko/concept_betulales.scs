@@ -1,0 +1,27 @@
+concept_betulales => nrel_main_idtf:
+[берёзоцветные](*<-lang_ru;;*);
+[betulales](*<-lang_lat;;*);;
+
+concept_order -> concept_betulales;;
+
+concept_betulales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_betulaceae;;
+	*);;
+
+//определение и пояснения
+concept_betulales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Берёзоцветные - порядок двудольных растений.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_betulales;;

@@ -1,0 +1,163 @@
+concept_neoholmesia_japonica => nrel_main_idtf:
+[неохолмезия японская](*<-lang_ru;;*);
+[neoholmesia japonica](*<-lang_lat;;*);;
+
+
+concept_species -> concept_neoholmesia_japonica;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_neoholmesia_japonica;;
+
+//пояснения
+concept_neoholmesia_japonica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д - редкий вид, имеющий ограниченный ареал, часть которого находится в акватории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, прикрепляется подошвой, состоит из разветвленного стволика 1,5-7 см дл. и развивающихся на нем пластин. Ветвление от края. Пластины тонкокожистые, каштанового цвета, с выпуклым ребром, с боковыми жилками или без них, 7-11 см дл., 1-3 см шир., 0,13-0,23 мм толщ., ланцетовидные, овальные или язычковидные с округлой верхушкой или ромбовидные с острой оттянутой верхушкой. Край гладкий или с мелкими выростами, пролификациями, и микроскопическими зубцами или ресничками. Пластины многослойные, состоящие из коры и сердцевины. С возрастом пластины становятся выемчатыми, лопастными. Тетраспорангии рассеяны по пластине, исключая основание. Цистокарпы овальные, располагаются в нижней части поверхностных пролификаций, растущих пучками или группами. Растение многолетнее, растет не менее 3 вегетаций (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается на материковом побережье Японского моря (бухта Светлая, мыс Сайон), у Сахалина (Татарский пролив: Дуэ, пос. Мангидай (3), мысы Мунай (3), Рогатый (3), Надежды (3), Хокуй (3), Виндис (3), Майделя (3), г. Горнозаводск (3), пос. Мгачи; заливы Анива, Терпения), в акватории о. Кунашир (2). Вне России: о-ва Хоккайдо, Хонсю.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Низкобореальный пацифический приазиатский вид. Сублиторальная зона, на глубине 6-25 м в местах с повышенной гидродинамикой - у открытого побережья, на мысах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Локальные малочисленные поселения. На южных Курилах встречается на глубине до 23-30 м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Обитает в промысловых районах и оказывается в виде прилова. Разрушение среды обитания в результате хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид занесен в Красную книгу Сахалинской обл. (4).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественного состояния местообитаний вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не изучена.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_neoholmesia_japonica <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_neoholmesia_japonica;;
+						concept_neoholmesia_japonica => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_neoholmesia_japonica <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_neoholmesia_japonica <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,166 @@
+concept_saxifraga_granulata_l => nrel_main_idtf: [камнеломка зернистая](*<- lang_ru;;*); [saxifraga granulata l.](*<- lang_lat;;*); [каменяломнiк зярнiсты](*<- lang_bel;;*);;
+concept_saxifraga_granulata_l => nrel_idtf: [каменяломнiк зярнiсты](*<- lang_bel;;*);;
+
+concept_species -> concept_saxifraga_granulata_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_saxifraga_granulata_l;;
+
+concept_saxifraga_granulata_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (камнеломка зернистая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_saxifraga_granulata_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_saxifraga_granulata_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_saxifraga_granulata_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 1го и 2го изданий (1981, 1993).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое железисто-опушенное растение с прямостоячим стеблем высотой до 40 см и многочисленными мелкими подземными клубеньками у его основания. Нижние листья собраны в прикорневую розетку, простые, округло-почковидные, 5–9-лопастные или цельные крупногородчатые. Стеблевые листья немногочисленные, с клиновидным основанием и более узкими лопастями. Цветки беловатые, длиной до 1,5 см, в немногоцветковом метельчатом соцветии. Плод – коробочка.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия (юг), Атлантическая, Средняя и Восточная Европа, Средиземноморье, Малая Азия . Реликтовый вид, находящийся в Беларуси на восточной границе ареала. Произрастает преимущественно в западных районах республики. Известны местонахождения в Браславском р-не Витебской обл. , Гродненском, Кореличском, Новогрудском, Свислочском и Слонимском р-нах Гродненской обл. , Молодечненском и Столбцовском р-нах Минской обл. , Барановичском, Каменецком р-нах Брестской обл. . По гербарным и литературным данным отмечался в окрестностях Орши , Несвижа , Минска и в Беловежской пуще .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Мезофитные суходольные и пойменные луга, опушки и поляны по склонам речных террас.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце мая–июне. Энтомофил. Семена созревают в июне-июле. Баллист. Размножается семенами и вегетативно.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В большинстве известных популяций численность невелика (иногда встречается единичными особями), в ряде местонахождений произрастает в массе, но имеет тендению к сокращению.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Хозяйственная трансформация земель (распашка, сельскохозяйственное улучшение лугов, весенние палы травы), раннее сенокошение, пастьба скота, чрезмерные рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территории Национального парка “Браславский”. Культивируется в Центральном ботаническом саду НАН Беларуси . Необходима организация заказников в местах массового произрастания (в Столбцовском р-не); запрет хозяйственной деятельности в местах роста (кроме сенокошения во второй половине лета); поиск новых местонахождений в раннелетний период; ревизия указываемых по данным литературы местонахождений; контроль состояния и изучение динамики известных популяций. Рекомендовать к более широкому использованию в культуре в качестве декоративного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_saxifraga_granulata_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Braslav_district;;->Grodno_district;;->Korelichi_district;;->Novogrudok_district;;->Svisloch_district;;->Slonimsky_district;;->Molodechno_district;;->Stolbtsy_district;;->Baranavichy_district;;->Kamenetsky_district;;->Orsha_district;;->Nesvizh_district;;->Minsk_district;;->Belovezhskaya_Pushcha_district;;
+		*);;
+*);;
+
+concept_saxifraga_granulata_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; a_lot;small;the_nodule ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; rosette;simple;orbicular_reniform;solid;krupnosortnyj;little;wedge_base;narrow_blades;;
+*);
+...
+(*
+<= nrel_inclusion: flower; whitish;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; little; paniculate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; box;;
+*);;
+
+concept_saxifraga_granulata_l <= nrel_inclusion: 
+[20-40]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([20 см] => [40 см]);; 
+*);;
+
+concept_saxifraga_granulata_l <= nrel_inclusion: 
+[1.3-1.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1.3 см] => [1.5 см]);; 
+*);;
+
+[20 см] <- length_of_inflorscence; exact_value;;
+[20 см] -> .centimeter: 20 (* <- number;;*);;
+[40 см] <- length_of_inflorscence; exact_value;;
+[40 см] -> .centimeter: 40 (* <- number;;*);;
+[1.3 см] <- length_of_inflorscence; exact_value;;
+[1.3 см] -> .centimeter: 1.3 (* <- number;;*);;
+[1.5 см] <- length_of_inflorscence; exact_value;;
+[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+ 
+
+concept_saxifraga_granulata_l <= nrel_inclusion: concept_3_protection_category;;

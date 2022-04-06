@@ -1,0 +1,36 @@
+concept_geometridae=> nrel_main_idtf:
+[пяденицы](*<-lang_ru;;*);
+[geometridae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_geometridae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(пяденицы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Пяденицы - обширное семейство бабочек из отряда чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_geometridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Эти бабочки характеризуются своим большей частью тонким, слабым телом и широкими нежными крыльями. Глазков нет; сяжки щетинковидные, у самцов нередко гребёнчатые или перистые. Хоботок слабый, но спиральный; нижнегубные щупики умеренные. Ноги тонкие. Передние крылья обыкновенно широкотреугольные, задние округлённые, с защепкой.](* <- lang_ru;;*);;
+		*);;
+*);;

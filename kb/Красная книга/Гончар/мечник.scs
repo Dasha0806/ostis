@@ -1,0 +1,138 @@
+concept_conocephalus_dorsalis=> nrel_main_idtf:
+[короткокрылый мечник](*<-lang_ru;;*);
+[conocephalus dorsalis](*<-lang_lat;;*);;
+
+concept_species -> concept_conocephalus_dorsalis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_conocephalus_dorsalis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_conocephalus_dorsalis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1804 (*<- number;;*);;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_conocephalus_dorsalis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Живет в траве, на кустарниках, деревьях в прибрежных биоценозах, предпочитает сырые места.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Имаго появляется в июле и встречается до октября. Зимует в стадии яйца. Живет также колониями в зарослях осоки и камыша. Яйца откладывает в пазуху листа. Песня мягкая, состоит из двух достаточно разных, регулярно сменяющихся звуков: от отчетливо глубокого «р» до заикания «т-т-т…». Питание смешанное, рацион состоит из растительной пищи и мелких насекомых.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Численность невысокая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Исчезновение мест обитания в результате хоз. деятельности.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Сохранение болотных и пойменных биоценозов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европейско-северосибирский вид. В Европе распространен широко, доходит до севера Скандинавии, не достигая юга. В Беларуси встречается в пойме р. Припять в Национальном парке «Припятский» .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Небольшое (12-19 мм), стройное, с очень длинными усиками, зеленое насекомое. Над­крылья и крылья короче брюшка (редко вполне развитые). Яйцеклад самки (8,5-10 мм) изогнут кверху, короче задних бедер. Церки самца с сильным зубцом изнутри за серединой, со слегка загнутым вверх кончиком. Задние бедра снизу без шипиков.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_conocephalus_dorsalis <= nrel_spread: ... 
+	(*
+	-> Pripyat_river_district; Pripyatskiu_national_park;;
+	*);;
+
+concept_tettigoniidae => nrel_inclusion: concept_conocephalus_dorsalis;;
+concept_conocephalus_dorsalis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; brown;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; dark; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_legs; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_antennae; long; green;;
+	*);;
+
+concept_conocephalus_dorsalis <= nrel_inclusion: 
+	12_19_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (12_mm => 19_mm);;	
+	*);;
+	12_mm <- length_of_body; exact_value;;
+	12_mm -> .millimeter: 12 (* <- number;;*);;
+	19_mm <- length_of_body; exact_value;;
+	19_mm -> .millimeter: 19 (* <- number;;*);;	
+
+concept_conocephalus_dorsalis <= nrel_inclusion: concept_4_protection_category;;

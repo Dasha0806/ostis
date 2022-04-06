@@ -1,0 +1,100 @@
+concept_flag<-concept_state_symbol;;
+concept_flag=>nrel_main_idtf:[флаг] (* <- lang_ru;; *);;
+concept_flag=>nrel_system_identifier:[concept_flag] (* <- lang_en;; *);;
+concept_flag=>nrel_identifier:[множество флагов] (* <- lang_ru;; *);;
+concept_flag=>nrel_identifier:[flag] (* <- lang_en;; *);;
+
+concept_flag<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_symbol;;
+*);;
+*);;
+concept_flag=> nrel_main_idtf: [Опр.(флаг)]  (* <- lang_ru;; *);;
+concept_flag<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Флаг - официальный государственный символ.](* <- lang_ru;; *);;
+*);;
+
+concept_flag <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country;;
+=> nrel_main_idtf: [Утв.(описание*, флаг, акт)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Современное описание флага регулируется нормативными актами.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country<-concept_subject_domain;;
+
+concept_flag->rrel_example:belarussian_flag;;
+
+sc_node_not_relation ->concept_symbol;;
+concept_symbol=> nrel_main_idtf:
+[символ](* <-lang_ru;; *);
+[symbol](* <- lang_en;; *);;
+
+sc_node_not_relation ->concept_state_symbol;;
+concept_state_symbol=> nrel_main_idtf:
+[государственный символ](* <-lang_ru;; *);
+[state symbol](* <- lang_en;; *);;
+
+sc_node_not_relation -> belarussian_flag;;
+belarussian_flag=> nrel_main_idtf:
+[флаг Беларуси](* <-lang_ru;; *);
+[belarussian flag](* <- lang_en;; *);;
+
+sc_node_not_relation -> sc_definition;;
+sc_definition => nrel_main_idtf:
+[sc-определение](* <-lang_ru;; *);	
+[definition](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_type;;
+concept_statement_of_general_type => nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);	
+[statement of general type ](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_using_constants;;
+nrel_using_constants => nrel_main_idtf:
+[используемые константы*](* <-lang_ru;; *);	
+[using constants*](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_sc_text_translation;;
+nrel_sc_text_translation=> nrel_main_idtf:
+[трансляция sc-текста*](* <-lang_ru;; *);
+[sc text translation*](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_key_sc_element;;
+rrel_key_sc_element=> nrel_main_idtf:
+[ключевой sc-элемент'](* <-lang_ru;; *);	
+[key sc element'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_example;;
+rrel_example=> nrel_main_idtf:
+[пример'](* <-lang_ru;; *);
+[example'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_theorem;;
+rrel_theorem=> nrel_main_idtf:
+[теорема'](* <-lang_ru;; *);	
+[theorem'](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom=> nrel_main_idtf:
+[аксиома'](* <-lang_ru;; *);	
+[axiom'](* <- lang_en;; *);;
+
+sc_node_not_relation ->subject_domain_of_country;;
+subject_domain_of_geography => nrel_main_idtf:
+[Предметная область страна](* <-lang_ru;; *);	
+[subject domain of country](* <- lang_en;; *);;
+
+sc_node_not_relation ->subject_domain;;
+subject_domain => nrel_main_idtf:
+[предметная область](* <-lang_ru;; *);	
+[subject domain](* <- lang_en;; *);;

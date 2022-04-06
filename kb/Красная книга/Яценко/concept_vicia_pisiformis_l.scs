@@ -1,0 +1,166 @@
+concept_vicia_pisiformis_l => nrel_main_idtf: [горошек гороховидный](*<- lang_ru;;*); [vicia pisiformis l.](*<- lang_lat;;*); [гарошак гарохападобны](*<- lang_bel;;*);;
+concept_vicia_pisiformis_l => nrel_idtf: [гарошак гарохападобны](*<- lang_bel;;*);;
+
+concept_species -> concept_vicia_pisiformis_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_vicia_pisiformis_l;;
+
+concept_vicia_pisiformis_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (горошек гороховидный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_vicia_pisiformis_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_vicia_pisiformis_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_vicia_pisiformis_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу Беларуси включен впервые. Охраняется в Литве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение со слабым ребристым лазящим стеблем длиной 60-120 (250) см. Листья парноперистосложные, с 3-5 парами листочков, оканчиваются ветвистым усиком. Листочки широкояйцевидные, на конце тупые или усеченные, коротко заострены, длиной 2-4 см и шириной 1-3,5 см, нижняя пара крупнее остальных и приближена к основанию листа. Прилистники длиной до 11 мм. Цветки длиной около 1,5 см, собраны в рыхлые пазушные кисти из 10-15 цветков. Венчик бледно-желтый, позднее буреющий. Бобы продолговато-линейные, длиной до 3,5 см. Семена шаровидные .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия (юг), Средняя и Восточная Европа, Средиземноморье, Кавказ . Общий ареал фрагментированный. В Беларуси вид находится в отдельных локалитетах на северной границе ареала . По гербарным материалам известен в окрестностях д. Барбарово Мозырского р-на Гомельской обл. . В последние годы (сборы 2000 г.) выявлено новое местонахождение в окрестностях д. Обидовичи Быховского р-на Могилевской обл. . По литературным данным ранее указывался для окрестностей г. Гродно .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Опушки и поляны широколиственных и широколиственно-сосновых лесов, а также производные от них березняки и осинники орлякового и снытевого типов, преимущественно по высоким склонам речных террас.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне - июле. Энтомофил. Размножение семенное. Семена созревают в августе. Автомеханохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Популяция в Быховском р-не немногочисленная, насчитывает около 50 генеративных и вегетативных особей. Площадь популяции 15  3 м2. Численность и современное состояние популяций в Мозырском и Гродненском р-нах неизвестны (повторно не обнаружены).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Хозяйственная трансформация земель (вырубка лесов, выжигание травы, пастьба скота), чрезмерные рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: В Быховском р-не необходимо организовать ботанический заказник с запрещением антропогенных воздействий (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимний период). Следует осуществлять периодический контроль состояния известной популяции и целенаправленный поиск новых мест произрастания; выяснить возможность и условия выращивания вида в культуре в качестве декоративного растения (имеется опыт выращивания в ботанических садах России ). Необходима ревизия местонахождений в Мозырском и Гродненском р-нах. Целесообразно сохранение генофонда вида в условиях культуры.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_vicia_pisiformis_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Mozyr_district;;->Bykhov_district;;->Grodno_district;;
+		*);;
+*);;
+
+concept_vicia_pisiformis_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; weak;ribbed;climbing;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; properietary;branched_tendril;;
+*);
+...
+(*
+<= nrel_inclusion: flower;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; loose;axillary;brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; oblong_linear;Bob;;
+*);;
+
+concept_vicia_pisiformis_l <= nrel_inclusion: 
+[60-120]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([60 см] => [120 см]);; 
+*);;
+
+concept_vicia_pisiformis_l <= nrel_inclusion: 
+[1.3-2 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1.3 см] => [2 см]);; 
+*);;
+
+[60 см] <- length_of_inflorscence; exact_value;;
+[60 см] -> .centimeter: 60 (* <- number;;*);;
+[120 см] <- length_of_inflorscence; exact_value;;
+[120 см] -> .centimeter: 120 (* <- number;;*);;
+[1.3 см] <- length_of_inflorscence; exact_value;;
+[1.3 см] -> .centimeter: 1.3 (* <- number;;*);;
+[2 см] <- length_of_inflorscence; exact_value;;
+[2 см] -> .centimeter: 2 (* <- number;;*);;
+ 
+
+concept_vicia_pisiformis_l <= nrel_inclusion: concept_1_protection_category;;

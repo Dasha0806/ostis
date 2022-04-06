@@ -1,0 +1,36 @@
+concept_papilionidae=> nrel_main_idtf:
+[парусники](*<-lang_ru;;*);
+[papilionidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_papilionidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(парусники)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Парусники - семейство чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_papilionidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Средние, крупные и очень крупные бабочки с богатейшим разнообразием окраски и рисунка крыльев, особенно в тропических регионах. Размах крыльев до 28 см.](* <- lang_ru;;*);;
+		*);;
+*);;

@@ -1,0 +1,151 @@
+concept_mopalia_middendorffii => nrel_main_idtf: [мопалия миддендорфа](*<- lang_ru;;*); [mopalia middendorffii](*<- lang_lat;;*);;
+
+concept_mopalia_middendorffii  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мопалия миддендорфа)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_mopalia_middendorffii.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_mopalia_middendorffii <= nrel_inclusion: concept_polyplacophora;;
+concept_animalia -> concept_mopalia_middendorffii ;;
+concept_species -> concept_mopalia_middendorffii ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_mopalia_middendorffii ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_mopalia_middendorffii ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1985 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_mopalia_middendorffii  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Хитон средних размеров с длиной тела 15-20 мм. Форма тела удлиненно-овальная. Раковина сравнительно высокая, угловатая. Окраска раковины темно-красная, перинотум оранжево-ржавого цвета. Первый щиток имеет 8-9 слабо заметных уплощенных ребер. Скульптура тегментума на всех полях ячеистая; на центральных полях ячейки более крупные, чем на остальных полях. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Западно-тихоокеанский приазиатский низкобореальный вид. Известен у берегов Японии и России. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает на глубинах 2-28 м на скалистных, каменистых и смешанных грунтах с заиленным песком, гравием и камнями. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Данные о численности отсутствуют. Всего известно только около 20 особей этого вида. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Ограничивающие факторы не установлены. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Специальные меры охраны не разработаны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_mopalia_middendorffii  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> japan; russia;;
+		*);;
+	*);;
+//части тела
+concept_mopalia_middendorffii  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; dark_red; orange;;
+	*);;
+//размеры и вес
+concept_mopalia_middendorffii  <= nrel_inclusion: 
+	[1,5-2,0 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([1,5 см] => [2,0 см]);;	
+	*);
+	[0,005-0,007 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,005 кг] => [0,007 кг]);;	
+	*);;
+	[1,5 см] <- length_of_body; exact_value;;
+	[1,5 см] -> .centimeter: 1.5 (* <- number;;*);;
+	[2,0 см] <- length_of_body; exact_value;;
+	[2,0 см] -> .centimeter: 2.0 (* <- number;;*);;
+	[0,005 кг] <- weight; exact_value;;
+	[0,005 кг] -> .kilogram: 0.005 (* <- number;;*);;
+	[0,007 кг] <- weight; exact_value;;
+	[0,007 кг] -> .kilogram: 0.007 (* <- number;;*);;
+//категория охраны и количество
+concept_mopalia_middendorffii  <= nrel_inclusion: concept_3_protection_category;;
+concept_mopalia_middendorffii  <= nrel_strength: [20 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 20 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

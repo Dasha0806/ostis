@@ -1,0 +1,151 @@
+concept_amuranodonta_kijaensi => nrel_main_idtf: [кийская амуранодонта](*<- lang_ru;;*); [amuranodonta kijaensi](*<- lang_lat;;*);;
+
+concept_amuranodonta_kijaensi  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (кийская амуранодонта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_amuranodonta_kijaensi.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+concept_amuranodonta_kijaensi <= nrel_inclusion: concept_bivalvia;;
+
+concept_animalia -> concept_amuranodonta_kijaensi ;;
+concept_species -> concept_amuranodonta_kijaensi ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_amuranodonta_kijaensi ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_amuranodonta_kijaensi ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1973 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_amuranodonta_kijaensi  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина удлиненная, овально-четырехугольная, умеренно вздутая, тонкостенная. Максимальная длина створок может превышать 12 см. Спинной край перед макушками слегка наклонен вперед, за ними почти прямой, практически параллелен брюшному краю. Задний край вытянут в длинный, суженный клюв. Брюшной край спрямленный. Самая задняя точка раковины лежит против середины ее высоты. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из среднего течения р. Уссури, среднего течения и пойменных водоемов р. Большая Уссурка (Приморский край), а также из оз. Иннокентьевское и Заречное (басс. нижнего Амура, Хабаровский край). Типовое местонахождение - оз. Заречное, басс. р. Кия. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:	 Моллюски обитают в стоячих и слабо проточных водоемах на заиленном или илистом грунте. В зарастающих озерах обычно обитают на обрывистых стенках в норах под сплавиной. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  В местах скопления моллюсков плотность особей составляет около 2-3 экз./м2. Наблюдается стойкая тенденция снижения численности этих моллюсков. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Распространение вида лимитируется чистотой воды и характером грунта. Загрязнение или обмеление рек ведет к полному исчезновению моллюсков.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Пойменные водоемы в басс. р. Большая Уссурка, в которых обитают моллюски, внесены в особый природоохранный фонд Приморского края. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_amuranodonta_kijaensi  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_amuranodonta_kijaensi  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; yellow; green;;
+	*);;
+//размеры и вес
+concept_amuranodonta_kijaensi  <= nrel_inclusion: 
+	[9-12 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([9 см] => [12 см]);;	
+	*);
+	[0,060-0,080 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,060 кг] => [0,080 кг]);;	
+	*);;
+	[9 см] <- length_of_body; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+	[12 см] <- length_of_body; exact_value;;
+	[12 см] -> .centimeter: 12 (* <- number;;*);;
+	[0,060 кг] <- weight; exact_value;;
+	[0,060 кг] -> .kilogram: 0.060 (* <- number;;*);;
+	[0,080 кг] <- weight; exact_value;;
+	[0,080 кг] -> .kilogram: 0.080 (* <- number;;*);;
+//категория охраны и количество
+concept_amuranodonta_kijaensi  <= nrel_inclusion: concept_2_protection_category;;
+concept_amuranodonta_kijaensi  <= nrel_strength: [3500 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 3500 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+sc_node_not_relation ->  concept_hypha;;
+concept_hypha => nrel_main_idtf:
+[гифа](*<-lang_ru;;*);
+[hypha](*<-lang_en;;*);;
+
+concept_hypha <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(гифа)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [нитевидное образование у грибов, состоящее из многих клеток или содержащее множество ядер](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_fungos;;
+
+*);;
+*);;
+
+//включение / разбиение
+
+concept_sporocarp => nrel_inclusion: concept_hypha;;
+//утверждения
+
+concept_hypha <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(гифа)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Основная функция гиф — поглощение воды и питательных веществ. ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_hypha;;
+	-> rrel_key_sc_element: concept_water;;
+	
+*);;
+

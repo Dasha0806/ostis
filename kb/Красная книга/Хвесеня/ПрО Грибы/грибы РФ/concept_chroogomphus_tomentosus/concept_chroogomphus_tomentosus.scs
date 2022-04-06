@@ -1,0 +1,155 @@
+concept_chroogomphus_tomentosus=> nrel_main_idtf: [мокруха войлочная](*<- lang_ru;;*); [сhroogomphus tomentosus](*<- lang_lat;;*);;
+
+concept_chroogomphus_tomentosus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мокруха войлочная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_chroogomphus_tomentosus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_chroogomphus_tomentosus;;
+concept_species -> concept_chroogomphus_tomentosus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_chroogomphus_tomentosus;;
+
+//пояснения
+concept_chroogomphus_tomentosus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3г - вид, имеющий значительный общий ареал, но находящийся в пределах России на границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Гриб со среднего размера пластинчатыми плодовыми телами, развивающимися на почве. Шляпка 3-7(10) см в диам., выпуклая, часто с бугорком, сухая, вросше волокнисто-войлочная, во влажную погоду слабоклейкая, охристая, желтовато-коричневая, при подсыхании желтовато-розовато-коричневая, иногда волокна с розовато-винным оттенком. Пластинки низбегающие, редкие, охристые, затем сажисто-бурые от спорового порошка. Ножка до 5-19 х 1,2- 2,5 см, более или менее ровная, иногда слегка вздутая в средней части, одноцветная со шляпкой, покрыта волокнами, с паутинистым бледно-охристым частным покрывалом. Мякоть охристая, при подсыхании появляется розовато-винный оттенок. Споры 17-20 х (6)8-11 мкм, эллипсоидальные (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Приморский край (1-3); Сахалинская обл. (4). Общее распространение: вне России встречается в Сев. Америке и Азии (Япония) (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Микоризный симбионт кедра и пихты. Встречается в дальневосточных хвойно- широколиственных и хвойных лесах с Abies holophylla, в сентябре-октябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка дальневосточных хвойно-широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в региональные Красные книги Приморского края (5) и Сахалинской обл. (4). Охраняется в Лазовском заповеднике (3).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим контроль за состоянием популяций и поиск новых.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Поскольку вид является микоризным, поддержание его в чистой культуре пока не удается.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_chroogomphus_tomentosus <= nrel_spread: ... 
+	(*
+	-> Sahalinskaja_oblast; Primorskiy_kray;;
+	*);;
+
+concept_gomphidiaceae => nrel_inclusion: concept_chroogomphus_tomentosus;;
+concept_chroogomphus_tomentosus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; convex; dry; yellow_brown; buffy;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; flat;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; downy; rare; buffy;;
+	*);;
+
+concept_chroogomphus_tomentosus <= nrel_inclusion: 
+	[3-10см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([3 см] => [10 см]);;	
+	*);
+	[1.2-2.5см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1.2 см] => [2.5 см]);;	
+	*);;
+
+	[3 см] <- cap_diameter; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[10 см] <- cap_diameter; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[1.2 см] <- lenght_of_leg; exact_value;;
+	[1.2 см] -> .centimeter: 1.2 (* <- number;;*);;
+	[2.5 см] <- lenght_of_leg; exact_value;;
+	[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+	
+concept_chroogomphus_tomentosus <= nrel_inclusion: concept_3_protection_category;;

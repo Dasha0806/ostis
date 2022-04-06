@@ -1,0 +1,22 @@
+concept_podicipediformes => nrel_main_idtf:
+[поганкообразные](*<-lang_ru;;*);
+[podicipediformes](*<-lang_lat;;*);;
+
+concept_order -> concept_podicipediformes;;
+
+concept_podicipediformes => nrel_inclusion: concept_podicipedidae;;
+
+//определение и пояснения
+concept_podicipediformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Поганкообразные - отряд водоплавающих птиц. Длина от 23 см (малая поганка) до 60 см (большая поганка, или чомга). Тело вытянутое, уплощённое сверху вниз, длинная шея, маленькая голова и острый тонкий клюв.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_podicipediformes;;

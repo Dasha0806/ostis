@@ -1,0 +1,106 @@
+concept_canids
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[псовые]
+	(*<-lang_ru;;*);
+	[canids]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[псовые]
+	(*<-lang_ru;;*);
+	[canids]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (псовые) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Псовые -  семейство млекопитающих отряда хищных, включающее в себя ныне три подсемейства: волчьи, собачьи, шеухие лисицы.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о землеройковых) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Один из видов псовых — собака — был одомашнен человеком уже очень давно. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_family -> concept_canids;;
+concept_canids => nrel_inclusion: concept_alopex_lagopus;;
+concept_canids => nrel_inclusion: concept_cuon_alpinus;;
+
+//предметная область
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_canids;;
+
+
+
+//Рисунок
+concept_canids <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (семейство псовые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_canids.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_canids <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Общее описание: Семейство объединяет типичных хищников, как правило, крупного и среднего размера. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Обитают в разнообразных ландшафтах; живут и выводят потомство в норах или логовах. Ведут одиночный, семейный или групповой образ жизни; последний характерен для хищников, активно преследующих крупных копытных животных. Большинство видов плотоядны, но нередко питаются падалью, насекомыми, растительной пищей. Деятельны круглый год  ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_canids <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_forest;;
+		*);;
+	*);;
+
+//питание
+concept_canids <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+			-> concept_animal;;
+		*);;
+	*);;
+
+//описание длин
+concept_canids <= nrel_inclusion: 
+    [6-8 лет]
+    (*
+        <- interval_value;;
+        <- length_of_life;;
+        => nrel_measurement: ([6 лет] => [8 лет]);;
+    *);;
+    [6 лет] <- length_of_life; exact_value;;
+	[6 лет] -> .year: 6 (* <- number;;*);;
+	[8 лет] <- length_of_life; exact_value;;
+	[8 лет] -> .year: 8 (* <- number;;*);;

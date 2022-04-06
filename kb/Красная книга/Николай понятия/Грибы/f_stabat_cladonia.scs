@@ -1,0 +1,142 @@
+concept_stabat_cladonia => nrel_main_idtf:
+[кладония стройная](*<-lang_ru;;*);
+[stabat cladonia](*<-lang_lat;;*);
+[кладонiя стройная](*<-lang_bel;;*);;
+concept_stabat_cladonia => nrel_idtf:[кладонiя стройная](*<-lang_bel;;*);;
+
+plants -> concept_stabat_cladonia;;
+concept_species -> concept_stabat_cladonia;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: stabat_cladonia;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_stabat_cladonia;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_stabat_cladonia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется на территории Польши.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на почве, преимущественно песчаной, в сосновых лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается вегетативно и спорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность невелика. Образует одиночные куртины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вырубка лесов, антропогенное воздействие на живой напочвенный покров (вытаптывание, застройки и т.д).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Березинском биосферном заповеднике. Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, для чего необходим запрет в местах роста любой хозяйственной деятельности, ограничение рекреационных нагрузок.
+
+](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Арктика, Европа (север и горные районы), Азия (Россия, Япония, Китай, Индия - Гималаи), Северная Америка, Австралия, Новая Зеландия . На территории Беларуси встречается в Витебской (Лепельский р-н) и Минской (Минский р-н) областях . Ранее сведения приводились для бывшей Молодечненской обл. (Гродненская обл., Сморгонский р-н) . Имеются более поздние литературные данные о нахождении вида в республике без указания точного местонахождения.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Горизонтальное слоевище состоит из чешуек диаметром 1-2 мм, которые рано исчезают. Чешуйки сверху сизовато-серые, снизу белые, вырезные, городчатые. Подеции высотой до 12 см и толщиной до 2 мм, желтоватые, желтовато-серые, оливково-зеленоватые, прямостоячие, цилиндрические с узкими сцифами, по краям нередко с многочисленными острыми колючковидными пролификациями, дихотомически или симподиально разветвленные, с продырявленными или непродырявленными пазухами, покрытые цельным, гладким, ареолированным или мелкобугорчатым коровым слоем, без филлокладиев. Внутренняя хрящевая ткань сердцевины непрерывная. Апотеции коричневые, на апикальных веточках.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_stabat_cladonia <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Vitebsk_district;;
+	*);;
+
+concept_cladoniaceae => nrel_inclusion: concept_stabat_cladonia;;
+concept_stabat_cladonia => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_scales; white; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_podecia; yellow; grey; green;;
+	*);;
+
+concept_stabat_cladonia <= nrel_inclusion: 
+	1_2_mm
+	(*
+	<- interval_value;;
+	<- length_of_scales;;
+	=> nrel_measurement: (1_mm => 2_mm);;	
+	*);
+	1_12_cm
+	(*
+	<- interval_value;;
+	<- length_of_podecia;;
+	=> nrel_measurement: (1_cm => 12_cm);;	
+	*);;
+	1_mm <- length_of_scales; exact_value;;
+	1_mm -> .milimeter: 1 (* <- number;;*);;
+	2_mm <- length_of_scales; exact_value;;
+	2_mm -> .milimeter: 2 (* <- number;;*);;
+	1_cm <- length_of_podecia; exact_value;;
+	1_cm -> .centimeter: 1 (* <- number;;*);;
+	12_cm <- length_of_podecia; exact_value;;
+	12_cm -> .centimeter: 12 (* <- number;;*);;				
+
+concept_stabat_cladonia <= nrel_inclusion: concept_2_protection_category;;
+

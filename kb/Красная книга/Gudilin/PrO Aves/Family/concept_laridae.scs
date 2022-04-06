@@ -1,0 +1,22 @@
+concept_laridae => nrel_main_idtf:
+[чайковые](*<-lang_ru;;*);
+[laridae](*<-lang_lat;;*);;
+
+concept_family -> concept_laridae;;
+
+concept_laridae => nrel_inclusion: concept_larus_minutus; concept_larus_canus; concept_sterna_albifrons; concept_chlidonias_hybridus;;
+
+//определение и пояснения
+concept_laridae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Чайки представляют собой довольно единообразную группу птиц, члены которой хорошо узнаваемы и порой трудно отличимы друг от друга. Их характерными признаками служат массивное тело, длинные изогнутые крылья средней длины, массивный и слегка загнутый вниз клюв и хорошо развитые плавательные перепонки на ногах.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_laridae;;

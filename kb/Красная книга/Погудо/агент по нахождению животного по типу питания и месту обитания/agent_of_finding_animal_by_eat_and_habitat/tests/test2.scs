@@ -1,0 +1,15 @@
+concept_mousetrap<-concept_animal;;
+concept_mousetrap=>nrel_eat:concept_grass;; 
+concept_mousetrap=>nrel_eat:concept_pollen;; 
+concept_mousetrap=>nrel_eat:concept_fruit_juice;; 
+concept_mousetrap=>nrel_eat:concept_bug;; 
+concept_mousetrap=>nrel_habitat:Dribin;;
+concept_mousetrap=>nrel_habitat:Krygloe;;
+concept_mousetrap=>nrel_habitat:Osipovichi;;
+concept_mousetrap=>nrel_habitat:Kostyukovichi;;
+
+
+
+concept_mousetrap=> nrel_main_idtf:
+[мушловка](*<-lang_ru;;*);
+[mousetrap](*<-lang_lat;;*);;

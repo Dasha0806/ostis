@@ -1,0 +1,55 @@
+concept_hedysarum_razoumovianum_fisch_et_helm => nrel_main_idtf:
+[Копеечник Разумовского](*<-lang_ru;;*);
+[Hedysarum razoumovianum Fisch. et Helm](*<-lang_lat;;*);;
+
+concept_species -> concept_hedysarum_razoumovianum_fisch_et_helm;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_hedysarum_razoumovianum_fisch_et_helm;;
+
+Red_list_ru -> concept_hedysarum_razoumovianum_fisch_et_helm;;
+
+//пояснения
+concept_hedysarum_razoumovianum_fisch_et_helm <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известно более 80 местонахождений, из них 7 — в центральной части Приволжской возвышенности, остальные — в Заволжье и на южном Урале. На границах ареала в ряде популяций насчитывается всего по нескольку десятков особей. Ориентировочная общая численность — 5-20 тыс. экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красные книгу РСФСР (1988). Вид включен в Красные книги Республик Башкортостан (2001) и Татарстан (2006), а также Оренбургской (1998), Саратовской (1996) и Ульяновской (2005) областей. Охраняется на территории Оренбургского степного и Жигулёвского заповедников, в национальных парках «Хвалынский» и «Самарская Лука», в ГПКЗ «Чатыр-Тау» и ряда ООПТ («Чубовская лесостепь», «Гора Копейка», «Серноводский шихан» и др.). Включен в Приложение I Бернской Конвенции (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России основной ареал находится на Южном Урале и в Заволжье.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый стержнекорневой многолетник с многочисленными прямостоячими прижатоволосистыми и хорошо облиственными стеблями 20-40 см. выс. Гемикриптофит. Листья непарноперистые с 4-7 парами линейно-продолговатых или линейных листочков.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

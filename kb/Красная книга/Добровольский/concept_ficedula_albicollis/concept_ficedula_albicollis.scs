@@ -1,0 +1,174 @@
+concept_ficedula_albicollis=> nrel_main_idtf: [мухоловка-белошейка](*<- lang_ru;;*); [ficedula albicollis temminck](*<- lang_lat;;*); [валасяніца-белашыйка](*<- lang_bel;;*);;
+concept_ficedula_albicollis => nrel_idtf: [мухалоўка-белашыйка](*<- lang_bel;;*);;
+
+concept_ficedula_albicollis <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мухоловка-белошейка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_ficedula_albicollis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_ficedula_albicollis;;
+concept_species -> concept_ficedula_albicollis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_ficedula_albicollis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_bubo_bubo;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_ficedula_albicollis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Приложение II Бернской конвенции, отнесен к SPEC 4.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Мелкая птица. Длина тела 13 см, размах крыльев 22-24 см, масса 11,8-16 г. У самца верх головы и шеи, спина, крылья и хвост черные. Узкая полоска на лбу, широкая полоса на крыльях, надхвостье, полоски по бокам хвоста и весь низ тела белые. Белый цвет на шее заходит глубоко, образуя иногда полное кольцо. У самки верх тела оливково-бурый.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Ареал ограничен некоторыми южными, центральными и восточными районами Европы. В Беларуси распространен в южной половине территории, более обычен в южной половине страны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет высокоствольные лиственные, реже смешанные хвойно-лиственные леса. Предпочтение отдает широколиственным древостоям: дубово-грабовым и дубово-ольховым, а также дубравам с примесью различных широколиственных пород - ясеня, вяза, клена, осины. Нередко встречается в ольшаниках, иногда в сосново-дубовых лесах. Выбирает участки леса с хорошо развитым подлеском близ полян, лесных дорог, опушек и в других освещенных местах. Нередко придерживается лесных оврагов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездящийся перелетный вид. Гнездится отдельными парами, в оптимальных местах обитания (грабовые дубравы) может образовывать небольшие скопления. Гнездо всегда устраивает в дупле, используя для этой цели различные естественные выгнившие пустоты и расщелины в стволах деревьев, пнях, нередко - довольно открытые дупла с большим диаметром летка. Высота гнездования обычно не превышает 2-3 м. Само гнездо состоит из сухих древесных листьев, стебельков трав, лыка, лоток - из различной растительной ветоши, тонких лубяных волокон, небольшого количества волоса зверей. В полной кладке 5-7 бледно-голубых яиц со средним размером 17,9 - 13,5 мм. К откладке яиц птица приступает во второй половине мая - начале июня. Самка насиживает 12-13 дней. Птенцы в гнезде проводят 13-14 дней. Кормится в воздухе мелкими летающими формами насекомых.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность, оцениваемая в 3000-5000 пар, вероятно, снижается. Плотность населения в оптимальных местах обитания - дубравах (Национальные парки «Припятский», «Беловежская пуща») составляет 1-4 пары на 10 га.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение площадей высоковозрастных широколиственных лесов, прежде всего дубрав, в результате интенсификации рубок.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Ограничение рубок высоковозрастных лиственных лесов, полное прекращение рубок полесских дубрав.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_ficedula_albicollis <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_ficedula_albicollis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_beak; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; white; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; white; black;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; grey; black;;
+	*);;
+//размеры и вес
+concept_ficedula_albicollis <= nrel_inclusion: 
+	[0-13 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [13 см]);;	
+	*);
+	[0.012-0,016 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.046 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[13 см] <- length_of_body; exact_value;;
+	[13 см] -> .centimeter: 13 (* <- number;;*);;
+	[0.012 кг] <- weight; exact_value;;
+	[0.012 кг] -> .kilogram: 0.012 (* <- number;;*);;
+	[0.016 кг] <- weight; exact_value;;
+	[0.016 кг] -> .kilogram: 0.016 (* <- number;;*);;
+//категория охраны и количество
+concept_ficedula_albicollis <= nrel_inclusion: concept_4_protection_category;;
+concept_ficedula_albicollis <= nrel_strength: [8000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 8000(* <- number;;*);;
+		*);;	
+	*);;
+

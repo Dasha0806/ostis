@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_flora;;
+
+ nrel_flora => nrel_main_idtf: [флора*] (* <- lang_ru;; *);
+				     [flora] (* <- lang_en;; *);;
+
+ nrel_flora => nrel_first_domain: concept_protected_area;;
+ nrel_flora => nrel_second_domain: concept_plants;;
+
+ nrel_flora <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(флора*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [флора* - исторически сложившаяся совокупность видов растений, распространённых на конкретной природоохранной территории.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_plants;
+                                concept_protected_area
+                            };;
+        *);;
+
+ nrel_flora <- rrel_key_sc_element:
+        ...
+        (*
+            <- rrel_axiom:
+                subject_domain_of_protected_areas (*
+                    <-subject_domain;;
+                *);;
+            
+        *);;
+
+ nrel_flora <- binary_relation;;
+ nrel_flora <- antireflexive_relation;;
+ nrel_flora <- antitransitive_relation;;
+ nrel_flora <- antisymmetric_relation;;
+
+sc_node_not_relation->concept_plants;;
+concept_plants => nrel_main_idtf: [растение] (* <- lang_ru;; *);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: nrel_flora;;				  

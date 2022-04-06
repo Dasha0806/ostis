@@ -1,0 +1,22 @@
+concept_valerianaceae => nrel_main_idtf:
+[валериановые](*<-lang_ru;;*);
+[valerianaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_valerianaceae;;
+
+concept_valerianaceae => nrel_inclusion: concept_valeriana_dioica_l;;
+
+//определение и пояснения
+concept_valerianaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Травы, редко полукустарники и кустарники. Листья супротивные, цельные, тройчатые или рассечённые, без прилистников. Цветки обоеполые или раздельнополые, чаще 5-членные, более или менее асимметричные, реже почти правильные, обычно мелкие, в многоцветковых сложных соцветиях. Тычинок 4 или 3—1. Гинецей из 3 плодолистиков, из которых 2 недоразвиваются. Завязь нижняя. Плод часто снабжен крыловидной или перистой летучкой.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+//subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_valerianaceae;;

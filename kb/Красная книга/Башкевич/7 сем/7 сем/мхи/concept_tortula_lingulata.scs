@@ -1,0 +1,163 @@
+concept_tortula_lingulata => nrel_main_idtf:
+[тортула язычковая](*<-lang_ru;;*);
+[tortula lingulata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_tortula_lingulata;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_tortula_lingulata;;
+
+//пояснения
+concept_tortula_lingulata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д - редкий вид, с ограниченным ареалом, приуроченный к специфическим местообитаниям - выходам песчаников.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Мелкий мох, растущий единичными побегами или образующий небольшие дерновинки 1-3 мм выс. Двудомный, спорофиты образуются редко. Размножение преимущественно спорами, вегетативная подвижность низкая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известны два местонахождения на территории Ленинградской обл.: одно на левом берегу р. Саблинки недалеко от ее впадения в р. Тосну в Тосненском р-не (1) и в Лужском р-не у пос. Осьмино по р. Сабе (2). Кроме того, вид был указан для Псковской обл. (3). За пределами России встречается в Европе (4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет на песчаниковых обнажениях на открытых склонах и в тени кустарников.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Известно два местонахождения вида, где он встречается спорадически на выходах песчаников, которые тянутся на протяжении нескольких сотен метров (5).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Популяции на территории Ленинградской обл., по-видимому, стабильны. Популяции в Псковской обл. с начала XX века повторно не обследовались.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Приуроченность к специфическим местообитаниям - песчаникам - определяет дизъюнктивный ареал вида и его редкую встречаемость.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красную книгу природы Ленинградской обл. (2000). Оба местонахождения вида находятся на территории памятников природы «Саблинский» и «Геологические обнажения девонских и ордовикских пород на реке Саба».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций и поиск новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_tortula_lingulata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_tortula_lingulata;;
+						concept_tortula_lingulata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_tortula_lingulata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_tortula_lingulata <= nrel_inclusion: concept_3_protection_category;;

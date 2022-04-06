@@ -1,0 +1,22 @@
+concept_pelecanus => nrel_main_idtf:
+[пеликаны](*<-lang_ru;;*);
+[pelecanus](*<-lang_lat;;*);;
+
+concept_family -> concept_pelecanus;;
+
+concept_pelecanus => nrel_inclusion: concept_pelecanus_onocrotalus; concept_pelecanus_crispus;;
+
+//определение и пояснения
+concept_pelecanus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Пеликаны — род птиц, единственный в семействе пеликановых (Pelecanidae) отряда пеликанообразных. Включает 8 видов. Распространены пеликаны спорадично, в умеренном и тропическом поясах всех континентов, кроме Антарктиды. В России встречаются 2 вида: розовый (Pelecanus onocrotalus) и кудрявый пеликан (Pelecanus crispus). Виды умеренных широт перелётные.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_pelecanus;;

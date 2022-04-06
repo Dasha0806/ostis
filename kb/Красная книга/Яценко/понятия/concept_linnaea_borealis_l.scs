@@ -1,0 +1,172 @@
+concept_linnaea_borealis_l => nrel_main_idtf: [линнея северная](*<- lang_ru;;*); [linnaea borealis l.](*<- lang_lat;;*); [лiнея паўночная](*<- lang_bel;;*);;
+concept_linnaea_borealis_l => nrel_idtf: [лiнея паўночная](*<- lang_bel;;*);;
+
+concept_species -> concept_linnaea_borealis_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_linnaea_borealis_l;;
+
+concept_linnaea_borealis_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (линнея северная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_linnaea_borealis_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_linnaea_borealis_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1964 (*<- number;;*);;*);;
+	*);;
+
+concept_linnaea_borealis_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Под государственную охрану 
+в республике впервые взят 
+в 1964 г. Занесен в 1е и 
+2е издания Красной книги 
+Беларуси (1981, 1993). 
+Находится под охраной 
+в Смоленской обл. России 
+и Украине.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Вечнозеленый стелющийся кустарничек с тонкими укореняющимися деревянистыми стеблями длиной 1,0-1,5 м и прямостоячими ветвями высотой 5-10 (20) см. Листья супротивные, мелкие, широкояйцевидные или округлые, кожистые, по краю зубчатые, темно-зеленые. Цветки белые или бледно-розоватые, с приятным запахом и колокольчатым венчиком, располагаются преимущественно по 2 на длинных общих железисто-опушенных цветоносах на верхушках прямостоячих веточек. Плод - почти сухая односемянная костянка, длиной около 3 мм .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Атлантическая (Англия и Шотландия), Средняя (север и горы) и Восточная Европа, Кавказ, Западная и Восточная Сибирь, Дальний Восток, Монголия, Япония, Китай, Северная Америка . Арктобореальный таежный реликтовый вид, находящийся в Беларуси на южной границе ареала . Встречается спорадически почти по всей территории республики (исключая самые южные районы), наиболее часто в Поозерье. Известно более 25 местонахождений. Впервые приводится в конце 19-го в. для Пинского р-на . Позднее найден в Барановичском, Березинском, Бешенковичском, Борисовском, Браславском, Воложинском, Глубокском, Городокском, Дзержинском, Докшицком, Дятловском, Каменецком, Климовичском, Кореличском, Краснопольском, Крупском, Лепельском, Лиозненском, Логойском, Минском, Мядельском, Несвижском, Новогрудском, Оршанском, Полоцком, Пружанском, Пуховичском, Свислочском, Сенненском, Солигорском, Столбцовском, Узденском, Ушачском, Червенском и Щучинском 
+р-нах . В последнее десятилетие отмечен в Витебском, Глубокском, Россонском, Мядельском и Смолевичском р-нах .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Еловые, несколько реже сосновые леса мшистого, брусничного, черничного и кисличного типов; предпочитает полутеневые условия.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце июня - июле, плодоносит в августе - сентябре. Энтомофил. Размножение преимущественно вегетативное (укоренением ползучих стеблей), семенное происходит крайне редко. Барохор, зоохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно вид встречается в небольшом количестве на довольно ограниченных площадях (до нескольких десятков квадратных метров); редко площадь популяций достигает несколько сотен квадратных метров (в Полоцком р-не). Некоторое время вид сохраняется на осветленных участках, но быстро исчезает при сплошных рубках леса. Некоторые ранее известные местонахождения исчезли (в Смолевичском и Минском р-нах). При этом общая граница распространения вида в республике стремительно отодвигается к северу.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Рубки леса главного пользования, хозяйственная трансформация земель, лесные пожары, чрезмерные рекреационные нагрузки и выпас скота.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Березинского биосферного заповедника, национальных парков «Браславские озера», «Нарочанский» и «Беловежская пуща», ряда республиканских и местных заказников, расположенных преимущественно на севере республики. Необходим периодический контроль состояния известных популяций с предотвращением в местах произрастания негативных антропогенных воздействий (допускаются выборочные санитарные рубки и рубки ухода, проводимые в зимний период). В Беларуси попыток культивирования вида не предпринималось, хотя культивирование, в принципе, целесообразно, поскольку вид довольно декоративен.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_linnaea_borealis_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Pinsky_district;;->Baranavichy_district;;->Berezinsky_district;;->Beshenkovichi_district;;->Borisov_district;;->Braslav_district;;->Volozhin_district;;->Glubokoye_district;;->Gorodok_district;;->Dzerzhinsky_district;;->Dokshitsy_district;;->Dyatlovo_district;;->Kamenetsky_district;;->Klimovichi_district;;->Korelichi_district;;->Krasnopolsky_district;;->Krupski_district;;->Lepel_district;;->Liozno_district;;->Logoysk_district;;->Minsk_district;;->Myadel_district;;->Nesvizh_district;;->Novogrudok_district;;->Orsha_district;;->Polotsk_district;;->Pruzhany_district;;->Pukhovichi_district;;->Svisloch_district;;->Senno_district;;->Soligorsk_district;;->Stolbtsy_district;;->Uzda_district;;->Usha_district;;->Czerwinski_district;;->Shchuchin_district;;->Vitebsk_district;;->Glubokoye_district;;->Rosson_district;;->Myadel_district;;->Smolevichi_district;;
+		*);;
+*);;
+
+concept_linnaea_borealis_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; thin;rooting;woody;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; opposite;small;broadly;rounded;leathery;gear;dark_green;;
+*);
+...
+(*
+<= nrel_inclusion: flower; white;pale_pink;pleasant_smell;bell_shaped_Corolla;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; glandular_pubescent;stems;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; dry;seeded;drupe;;
+*);;
+
+concept_linnaea_borealis_l <= nrel_inclusion: 
+[100-150 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([100 см] => [150 см]);; 
+*); 
+[3-5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [5 см]);; 
+*);;
+
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[150 см] <- length_of_inflorscence; exact_value;;
+[150 см] -> .centimeter: 150 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+ 
+
+concept_linnaea_borealis_l <= nrel_inclusion: concept_4_protection_category;;

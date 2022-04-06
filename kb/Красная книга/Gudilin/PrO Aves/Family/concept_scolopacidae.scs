@@ -1,0 +1,22 @@
+concept_scolopacidae => nrel_main_idtf:
+[бекасовые](*<-lang_ru;;*);
+[scolopacidae](*<-lang_lat;;*);;
+
+concept_family -> concept_scolopacidae;;
+
+concept_scolopacidae => nrel_inclusion: concept_lymnocryptes_minimus; concept_gallinago_media; concept_limosa_limosa; concept_numenius_phaeopus; concept_numenius_arquata; concept_tringa_stagnatilis; concept_tringa_nebularia; concept_xenus_cinereus;;
+
+//определение и пояснения
+concept_scolopacidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Представители бекасовых обитают на побережьях и во влажных биотопах. Лишь немногие виды приспособлены к засушливым местностям. Характерным признаком бекасовых являются довольно длинные ноги и длинный клюв, с помощью которого они ищут добычу в иле и прибрежной гальке.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_scolopacidae;;

@@ -1,0 +1,138 @@
+concept_formica_forsslundi=> nrel_main_idtf:
+[муравей форшлюнда](*<-lang_ru;;*);
+[formica forsslundi](*<-lang_lat;;*);;
+
+concept_species -> concept_formica_forsslundi;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_formica_forsslundi;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_formica_forsslundi;;
+	-> rrel_number_of_year: 1949 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_formica_forsslundi <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Исключительно сфагновые болота, обычно верховые, реже переходного типа.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Облигатный болотный вид. Купола строит небольшие на кочках из кусочков стеблей мха. Лёт крылатых особей в середине июля - начале августа.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок, численность предположительно сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушение и разработка болот.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (IV категория). Организация заказников в известных местах проживания вида. Поиск новых мест проживания и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Швеция, Финляндия, Польша, Швейцария. В Беларуси известен из Шарковщинского, Лепельского и Житковичского р-нов .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Рабочие особи (длина 4-6 мм) двухцветные. Голова с глубокой выемкой на затылочном крае. Самки не крупнее рабочих особей (длина 5-6 мм) с гладким блестящим телом. Самцы (длина тела 5-6 мм) черные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_formica_forsslundi <= nrel_spread: ... 
+	(*
+	-> Lepelsk_district; Jitkovichi_district; Sharkovshchino_district;;
+	*);;
+
+concept_formicidae => nrel_inclusion: concept_formica_forsslundi;;
+concept_formica_forsslundi => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_wings; transparent; light; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; brown; black;;
+	*);;
+
+concept_formica_forsslundi <= nrel_inclusion: 
+	4_6_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (4_mm => 6_mm);;	
+	*);;
+	4_mm <- length_of_body; exact_value;;
+	4_mm -> .millimeter: 4 (* <- number;;*);;
+	6_mm <- length_of_body; exact_value;;
+	6_mm -> .millimeter: 6 (* <- number;;*);;	
+
+concept_formica_forsslundi <= nrel_inclusion: concept_3_protection_category;;

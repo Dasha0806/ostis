@@ -1,0 +1,45 @@
+concept_astragalus_fissuralis => nrel_main_idtf:
+[Астрагал щельный](*<-lang_ru;;*);
+[Astragalus fissuralis](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_fissuralis;;
+
+
+Red_list_ru -> concept_astragalus_fissuralis;;
+
+//пояснения
+concept_astragalus_fissuralis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Дагестан (1998).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России в Республике Дагестан. Растет в Акушинском р-не: гора Маара (откуда вид был описан), окр. сел. Балхар, Дубри, Урхучи; Левашинском - сел. Хаджалмахи; Гунибском - южные склоны Гунибского плато, Гергебильском - г. Зуберха, Ахвахском - сел. Карата и Ботлихском - сел. Нижн. Инхело, районах.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Мелкий кустарничек с тонкими, ветвистыми стеблями высотой 8-10 см. Все растение прижато серебристо опушенное. Цветет в июне-июле.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_astragalus_fissuralis <= nrel_inclusion: concept_3_protection_category;;

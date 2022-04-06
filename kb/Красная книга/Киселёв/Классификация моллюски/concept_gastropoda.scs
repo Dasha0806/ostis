@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_gastropoda;;
+
+concept_gastropoda=> nrel_main_idtf: 
+ [брюхоногие](*<- lang_ru;;*); 
+ [gastropoda](*<- lang_lat;;*);;
+
+concept_class -> concept_gastropoda;;
+
+
+concept_gastropoda <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса брюхоногие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_gastropoda.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_gastropoda <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Самый многочисленный класс в составе типа моллюсков, который включает около 110 тыс. видов. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Основным признаком брюхоногих моллюсков является торсия, то есть поворот внутренностного мешка на 180°. Кроме того, для большинства гастропод характерно наличие турбоспиральной раковины.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Основным признаком брюхоногих моллюсков является торсия, то есть поворот внутренностного мешка на 180°. Кроме того, для большинства гастропод характерно наличие турбоспиральной раковины. обитатели моря, однако многие из них перешли к жизни в пресной воде и на суше. Небольшое число видов ведёт паразитический образ жизни. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

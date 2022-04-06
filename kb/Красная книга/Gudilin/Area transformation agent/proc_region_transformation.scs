@@ -1,0 +1,148 @@
+scp_program -> proc_region_transformation (*
+->rrel_params: .proc_region_transformation_params (*
+->rrel_1: rrel_in: _region;;
+->rrel_2: rrel_in: _bunch;;
+*);;
+->rrel_operators: .proc_region_transformation_operator_set (*
+	-> rrel_init: .proc_region_transformation_if_region_is_region (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_region;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _region;;
+
+	=> nrel_then: .proc_region_transformation_intersection_loop_init;;
+	=> nrel_else: .proc_region_transformation_operator_return;;
+	*);;
+
+
+	-> .proc_region_transformation_intersection_loop_init (*
+	<- searchSetStr5;;
+	-> rrel_1: rrel_assign: rrel_scp_var: _node;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+	-> rrel_3: rrel_fixed: rrel_node: rrel_scp_var: _region;;	
+	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_intersection;;
+	-> rrel_set_1: rrel_assign: rrel_scp_var: _bunches;;
+
+	=>nrel_then: .proc_region_transformation_intersection_loop_iter;;
+	=>nrel_else: .proc_region_transformation_operator_return;;
+	*);;
+
+	-> .proc_region_transformation_intersection_loop_iter (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _bunches;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _region_bunch_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _region_bunch;;
+
+	//=> nrel_then: .proc_region_transformation_intersection_is_it;;
+	=> nrel_then: .proc_region_transformation_region_loop_init;;
+	=> nrel_else: .proc_region_transformation_intersection_loop_free;;
+	*);;
+
+	-> .proc_region_transformation_intersection_loop_next (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _region_bunch_arc;;
+
+	=> nrel_goto: .proc_region_transformation_intersection_loop_iter;;
+	*);;
+
+	-> .proc_region_transformation_intersection_loop_free (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _bunches;;
+
+	=> nrel_goto: .proc_region_transformation_operator_return;;
+	*);;
+
+
+
+	-> .proc_region_transformation_intersection_is_it (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _region_bunch;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [Разбиение по территориальному признаку];;
+	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
+
+	=>nrel_then: .proc_region_transformation_region_loop_init;;
+	=>nrel_else: .proc_region_transformation_intersection_loop_next;;
+	*);;
+
+
+	-> .proc_region_transformation_region_loop_init (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _region_bunch;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+	-> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _elem;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _districts;;
+
+	=>nrel_then: .proc_region_transformation_region_loop_iter;;
+	=>nrel_else: .proc_region_transformation_intersection_loop_next;;
+	*);;
+
+	-> .proc_region_transformation_region_loop_iter (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _districts;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _districts_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _district;;
+
+	=> nrel_then: .proc_region_transformation_if_district_in_bunch;;
+	//=> nrel_then: .proc_region_transformation_if_district_is_district;;
+	=> nrel_else: .proc_region_transformation_region_loop_free;;
+	*);;
+
+	-> .proc_region_transformation_region_loop_next (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _districts_arc;;
+
+	=> nrel_goto: .proc_region_transformation_region_loop_iter;;
+	*);;
+
+	-> .proc_region_transformation_region_loop_free (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _districts;;
+
+	=> nrel_goto: .proc_region_transformation_operator_return;;
+	*);;
+
+
+	//-> .proc_region_transformation_if_district_is_district (*               anccomit wen all areas will be done
+	//<- searchElStr3;;
+	//-> rrel_1: rrel_fixed: rrel_scp_const: concept_area;;
+	//-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+	//-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _district;;
+
+	//=> nrel_then: .proc_region_transformation_if_district_in_bunch;;
+	//=> nrel_else: .proc_region_transformation_region_loop_next;;
+	//*);;
+
+	-> .proc_region_transformation_if_district_in_bunch (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _bunch;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _district;;
+
+	=> nrel_then: .proc_region_transformation_region_loop_next;;
+	=> nrel_else: .proc_region_transformation_gen_ark_to_district;;
+	*);;
+
+	-> .proc_region_transformation_gen_ark_to_district (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _bunch;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _district;;
+
+	=> nrel_goto: .proc_region_transformation_region_loop_next;;
+	*);;
+
+	-> .proc_region_transformation_operator_return (*
+		<-printNl;;
+		-> rrel_1: rrel_fixed: rrel_scp_const: [<------------- return ------------->];;
+
+		=> nrel_goto: .proc_region_transformation_operator_return_2;;
+	*);;
+
+	-> .proc_region_transformation_operator_return_2 (*
+	<- return;;
+	*);;
+*);;
+*);;

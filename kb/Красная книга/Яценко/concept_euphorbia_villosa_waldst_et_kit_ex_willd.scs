@@ -1,0 +1,166 @@
+concept_euphorbia_villosa_waldst_et_kit_ex_willd => nrel_main_idtf: [молочай мохнатый](*<- lang_ru;;*); [euphorbia villosa waldst. et kit. ex willd.](*<- lang_lat;;*); [малачай махнаты](*<- lang_bel;;*);;
+concept_euphorbia_villosa_waldst_et_kit_ex_willd => nrel_idtf: [малачай махнаты](*<- lang_bel;;*);;
+
+concept_species -> concept_euphorbia_villosa_waldst_et_kit_ex_willd;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_euphorbia_villosa_waldst_et_kit_ex_willd;;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (молочай мохнатый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_euphorbia_villosa_waldst_et_kit_ex_willd.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_euphorbia_villosa_waldst_et_kit_ex_willd;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу Беларуси включен впервые.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с толстым многоглавым корнем. Стебли многочисленные, прямостоячие, высотой 45-100 (120) см, дудчатые, густоволосистые, реже местами голые. Низовые листья чешуевидные, стеблевые – сидячие или едва черешчатые, длиной 4,5-10,5 см и шириной 1-2,5 см, эллиптические или продолговато-эллиптические, на верхушке закругленные или слегка заостренные. Цветки раздельнополые, собраны в своеобразные соцветия, очень похожие на одиночные цветки. Общее соцветие щитковидное, верхушечное, из 5-8 лучей. Листочки обертки широкояйцевидные или продолговато-ланцетовидные, длиной 1,5-4,5 см. Плод - трехгнездная трехлопастная шаровидная коробочка, длиной 3,5-4 мм и шириной 4-4,5 мм слабо пушистая или оголенная. Семена гладкие, темно-бурые, блестящие .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Атлантическая, Средняя и Восточная Европа, Кавказ, Средиземноморье . В Беларуси встречается в изолированном локалитете за северо-восточной границей ареала. Известен в Житковичском р-не Гомельской обл. (окрестности г.п. Туров)  и в окрестностях г. Горки Могилевской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Остепненные луговые участки в деградированных дубравах и производных от них сообществах, растет среди зарослей кустарников на богатой карбонатной почве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце мая - июне. Энтомофил. Плодоносит с конца июня по август. Размножение семенное. Автохор (автомеханохор), мирмекохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Четыре изолированные популяции в Житковичском р-не, находящиеся одна от другой на расстоянии от 0,5 до 5 км, занимают общую площадь не более 0,5 га.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Сплошные рубки леса, хозяйственная трансформация земель, сенокошение.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Необходимы контроль состояния известных популяций в Житковичском р-не и организация их охраны с запрещением в местах роста молочая негативных антропогенных воздествий (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимний период), поиск новых мест произрастания, ревизия местонахождения в окрестностях г. Горки, культивирование и репатриация вида в естественные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Zhitkovichi_district;;->Gorki_district;;
+		*);;
+*);;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; numerous;erect;fistular;densely_hairy;naked;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thick;many;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; scaly;sedentary;petiolate;elliptical;rounded;pointed;;
+*);
+...
+(*
+<= nrel_inclusion: flower; dioecious;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; corymbose;apical;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; three_celled;three_blade;spherical;box;;
+*);;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd <= nrel_inclusion: 
+[45-120]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([45 см] => [120 см]);; 
+*);;
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd <= nrel_inclusion: 
+[4.5-10.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([4.5 см] => [10.5 см]);; 
+*);;
+
+[45 см] <- length_of_inflorscence; exact_value;;
+[45 см] -> .centimeter: 45 (* <- number;;*);;
+[120 см] <- length_of_inflorscence; exact_value;;
+[120 см] -> .centimeter: 120 (* <- number;;*);;
+[4.5 см] <- length_of_inflorscence; exact_value;;
+[4.5 см] -> .centimeter: 4.5 (* <- number;;*);;
+[10.5 см] <- length_of_inflorscence; exact_value;;
+[10.5 см] -> .centimeter: 10.5 (* <- number;;*);;
+ 
+
+concept_euphorbia_villosa_waldst_et_kit_ex_willd <= nrel_inclusion: concept_1_protection_category;;

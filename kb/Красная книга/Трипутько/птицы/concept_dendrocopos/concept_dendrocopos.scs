@@ -1,0 +1,107 @@
+concept_dendrocopos
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[пестрые дятлы]
+	(*<-lang_ru;;*);
+	[colorful woodpeckers]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[пестрые дятлы]
+	(*<-lang_ru;;*);
+	[colorful woodpeckers]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (пестрые дятлы) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[пестрые дятлы — род птиц семейства дятловых, распространённых в Евразии и Северной Африке.     ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о оленевых) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Это мелкие и среднего размера птицы, ведущие преимущественно древесный образ жизни.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_genus -> concept_dendrocopos;;
+concept_passerines -> concept_dendrocopos;;
+concept_dendrocopos => nrel_inclusion: concept_leiopicus_medius;;
+concept_dendrocopos => nrel_inclusion: concept_dendrocopos_hyperythrus_vigors;;
+
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_dendrocopos;;
+
+
+
+//Рисунок
+concept_dendrocopos <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род пестрые дятлы)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dendrocopos.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_dendrocopos <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Гнездятся в дуплах, выбирая мёртвые либо больные деревья.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дятлы иногда используют в качестве барабана пустые консервные банки и куски железа для того, чтобы их барабанная дробь звучала достаточно далеко: так они призывают к себе других дятлов.     ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_dendrocopos <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//питание
+concept_dendrocopos <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_insecta;;
+		*);;
+	*);;
+
+//описание длин
+concept_dendrocopos <= nrel_inclusion: 
+    [10-11 лет]
+    (*
+        <- interval_value;;
+        <- length_of_life;;
+        => nrel_measurement: ([10 лет] => [11 лет]);;
+    *);;
+    [10 лет] <- length_of_life; exact_value;;
+	[10 лет] -> .year: 10 (* <- number;;*);;
+	[11 лет] <- length_of_life; exact_value;;
+	[11 лет] -> .year: 11 (* <- number;;*);;

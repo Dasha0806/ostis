@@ -1,0 +1,136 @@
+concept_sparassis_laminosa=> nrel_main_idtf: [спарассис пластинчатый](*<- lang_ru;;*); [sparassis laminosa](*<- lang_lat;;*); [спарасіс пласціністы](*<- lang_bel;;*);;
+
+concept_sparassis_laminosa<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (спарассис пластинчатый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_sparassis_laminosa.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_sparassis_laminosa;;
+concept_species -> concept_sparassis_laminosa;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_sparassis_laminosa;;
+
+
+//пояснения
+concept_sparassis_laminosa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимостьВ Красную книгу Беларуси включен впервые. Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Встречается в лиственных лесах, преимущественно на корнях и корневых лапах дуба, значительно реже сосны, ели, лиственницы. Обнаружен на опушке хвойно-широколиственного леса вблизи озера .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вызывает желто-бурую гниль корней у основания стволов лиственных и некоторых хвойных деревьев. Плодовые тела появляются в августе - октябре, но не ежегодно .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Очень редкий ограниченного распространения вид. В месте произрастания единичное плодовое тело.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сбор плодовых тел (является весьма ценным съедобным и декоративным грибом).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо образование в местах роста специализированного микологического заказника, поиск новых местонахождений, запрет сбора плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Распространен преимущественно в лиственных лесах западной и средней части Европы; для восточной характерна локализация единичных особей на ограниченных площадях . В Беларуси найден в Гродненской обл. (Новогрудский р-н) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовое тело крупное, более широкое и хрупкое, чем у спарассиса курчавого. Лопасти коралловидно разветвленные, более грубые, плоские, несколько волнистые, прямостоячие, окрашены в соломенно-желтый цвет. Основание (стебель) мясистый. Мякоть восковатая, плотная, с приятным ореховым запахом. Размер гриба достигает 40-60 см в ширину, высота 25 см, масса до 9 кг. Форма плодового тела шаровидная или эллипсовидная в поперечнике. Споры эллипсовидные, гиалиновые, размером 4,5-7 3-4,5 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_sparassis_laminosa <= nrel_spread: ... 
+	(*
+	-> Novogrudok_district;;
+	*);;
+
+concept_sparassisovye => nrel_inclusion: concept_sparassis_laminosa;;
+concept_sparassis_laminosa => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; large; fragile; coral;;
+	*);;
+concept_sparassis_laminosa <= nrel_inclusion: 
+	[0-25 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [25 см]);;	
+	*);
+	[0-9 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [9 кг]);;	
+	*);;
+
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[25 см] <- length_of_body; exact_value;;
+	[25 см] -> .centimeter: 25 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[9 кг] <- weight; exact_value;;
+	[9 кг] -> .kilogram: 9 (* <- number;;*);;
+concept_sparassis_laminosa <= nrel_inclusion: concept_3_protection_category;;

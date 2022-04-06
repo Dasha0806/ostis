@@ -1,0 +1,214 @@
+concept_pinguicula_vulgaris_l => nrel_main_idtf: [жирянка обыкновенная](*<- lang_ru;;*); [pinguicula vulgaris l.](*<- lang_lat;;*); [тлушчанка звычайная](*<- lang_bel;;*);;
+concept_pinguicula_vulgaris_l => nrel_idtf: [тлушчанка звычайная](*<- lang_bel;;*);;
+
+concept_species -> concept_pinguicula_vulgaris_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_pinguicula_vulgaris_l;;
+
+concept_pinguicula_vulgaris_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (жирянка обыкновенная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_pinguicula_vulgaris_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pinguicula_vulgaris_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1964 (*<- number;;*);;*);;
+	*);;
+
+concept_pinguicula_vulgaris_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Под 
+государственную охрану 
+в республике впервые 
+взят в 1964 г. Занесен в 1-е и 2-е издания Красной книги 
+Беларуси (1981, 1993). 
+Находится под охраной 
+в Литве, Украине, Польше 
+и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 5-15 см с коротким корневищем и розеткой прикорневых листьев. Листья сидячие, цельные, длиной 1-5 см, продолговато-яйцевидные, с загнутыми во­внутрь краями, маслянистые из-за покрывающих их клейких железок. Из центра розетки листьев выходят по одной, реже по нескольку безлистных железисто-опушенных цветочных стрелок, несущих на верхушке по одному поникающему довольно крупному цветку (длиной около 20 мм). Цветки обоеполые, зигоморфные, с сине-фиолетовым двугубым венчиком со шпорцем. Плод - широкояйцевидная коробочка длиной 7-9 мм, раскрывающаяся двумя створками .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Евразия (Скандинавия, Атлантиче­ская, Средняя и Восточная Европа, Средиземноморье, Малая Азия, Дальний Восток, Западная и Восточная Сибирь) и Северная Америка . Голарктический реликтовый вид, находящийся в Беларуси в отдельных локалитетах за юго-восточной границей ареала. Впервые собран на берегу оз. Колдычевское в Барановичском р-не и в окрестностях Новогрудка в конце 19-го века . В 1960 г. вид обнаружен в окрестностях д. Шкеличи Новогрудского р-на , где регистрируется до сих пор (даты инвентаризации - 1991, 1992, 2002 годы) . В 70-х годах прошлого века отмечен для Мядельского р-на , а в 1989 г. для Вилейского р-на Минской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сырые и заболоченные луга и ключевые болота с гипново-мелкоосоково-злаковой растительностью преимущественно в долинах малых рек; обычно на богатых кальцием почвах.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Насекомоядное растение. Цветет в мае - июне, плодоносит в июле - августе. Энтомофил. Размножается семенами. Барохор и, возможно, анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Вид с быст­ро сокращающейся численностью. К настоящему времени достоверно существует лишь одно из четырех ранее известных местонахождений в Новогрудском р-не. Оно же и самое крупное из всех выявленных:  площадь популяции составляет несколько сот квадратных метров при средней плотности, равной 7 особям на один квадратный метр. Обычно площадь популяций исчисляется несколькими квадратными метрами, а их численность - десятками экземпляров или единичными особями. Так, ревизия местонахождения в Вилейском р-не в 1997 г. выявила прогрессирующую деградацию популяции, в которой сохранилось всего несколько генеративных экземпляров . Популяция в Барановичском р-не, вероятнее всего, исчезла. Попытки введения вида в культуру в пределах Беларуси пока отрицательные .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Осушительно-мелиоративные работы, выпас скота, закустаривание экотопов.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Охраняется на территории Национального парка «Нарочанский» и ландшафтного заказника «Новогрудский». Необходимы ревизия известных 
+местонахождений и постоянный контроль состояния 
+популяций с предотвращением в местах роста антропогенных воздействий, особенно влияющих на гидрологический режим мест обитания, в Новогрудском р-не 
+следует запретить проведение чистки канала; необходимо запретить применение на прилегающих сельхозугодьях минеральных удобрений и пестицидов; с целью 
+ограничения роста и развития кустарниковой растительности проводить целевую оптимизацию мест обитания - вырубку кустарников не реже 1 раза в 5 лет; целесообразно сохранение генофонда вида в условиях культуры.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_pinguicula_vulgaris_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district;;->Novogrudok_district;;->Myadel_district;;->Vileika_district;;
+		*);;
+*);;
+
+concept_pinguicula_vulgaris_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; short;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; sedentary;solid;oblong_ovate;curved_edges;buttery;;
+*);
+...
+(*
+<= nrel_inclusion: flower; bisexual;zygomorphic;blue_purple;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; broadly;box;drop_down;two_doors;;
+*);;
+
+concept_pinguicula_vulgaris_l <= nrel_inclusion: 
+[5-15 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([5 см] => [15 см]);; 
+*); 
+[0.5-1 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([0.5 см] => [1 см]);; 
+*);;
+
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[0.5 см] <- length_of_inflorscence; exact_value;;
+[0.5 см] -> .centimeter: 0.5 (* <- number;;*);;
+[1 см] <- length_of_inflorscence; exact_value;;
+[1 см] -> .centimeter: 1 (* <- number;;*);;
+ 
+
+concept_pinguicula_vulgaris_l <= nrel_inclusion: concept_1_protection_category;;
+concept_1_protection_category => nrel_main_idtf: 
+[первая категория охраны](*<-lang_ru;;*);
+[the first protection category](*<-lang_ru;;*);;
+
+concept_2_protection_category => nrel_main_idtf: 
+[вторая категория охраны](*<-lang_ru;;*);
+[the second protection category](*<-lang_eng;;*);;
+
+concept_3_protection_category => nrel_main_idtf: 
+[третья категория охраны](*<-lang_ru;;*);
+[the third protection category](*<-lang_eng;;*);;
+
+concept_4_protection_category => nrel_main_idtf: 
+[четвертая категория охраны](*<-lang_ru;;*);
+[the fourth protection category](*<-lang_eng;;*);;
+
+concept_stem => nrel_main_idtf:
+[стебель](*<-lang_ru;;*);
+[stem](*<-lang_eng;;*);;
+
+concept_rhizome => nrel_main_idtf:
+[корневище](*<-lang_ru;;*);
+[rhizome](*<-lang_eng;;*);;
+
+concept_leaf => nrel_main_idtf:
+[листок](*<-lang_ru;;*);
+[leaf](*<-lang_eng;;*);;
+
+flower => nrel_main_idtf:
+[цветок](*<-lang_ru;;*);
+[flower](*<-lang_eng;;*);;
+
+inflorscence => nrel_main_idtf:
+[соцветие](*<-lang_ru;;*);
+[inflorscence](*<-lang_eng;;*);;
+
+fruit => nrel_main_idtf:
+[плод](*<-lang_ru;;*);
+[fruit](*<-lang_eng;;*);;

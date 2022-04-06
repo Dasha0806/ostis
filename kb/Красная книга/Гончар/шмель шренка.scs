@@ -1,0 +1,138 @@
+concept_bombus_schrenckii=> nrel_main_idtf:
+[шмель шренка](*<-lang_ru;;*);
+[bombus schrenckii](*<-lang_lat;;*);;
+
+concept_species -> concept_bombus_schrenckii;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_bombus_schrenckii;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_bombus_schrenckii;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1881 (*<- number;;*);;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_bombus_schrenckii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Низинные и заливные луга вдоль небольших рек, сырые лесные поляны и опушки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Крупные перезимовавшие самки появляются в апреле. После периода питания на цветущей растительности закладывают наземные гнезда (в кочках на влажных лугах). Самка заготавливает т.н. «хлебец» (тщательно перемешанные цветочные пыльца и нектар), который помещает на восковую чашечку и на него откладывает несколько яиц, после чего согревает кладку. Личинки появляются через 4 суток и развиваются в течение 18-19 суток. После отрождения рабочих особей (недоразвитых самок) самка-основательница перестает летать за провизией, остается в гнезде и только откладывает яйца. Рабочие особи летают за нектаром и пыльцой, кормят расплод, охраняют, чистят и обогревают гнездо. К концу лета семья вырастает до 100 особей. В это время рождаются крупные самки - будущие основательницы гнезд и средних размеров самцы, которые после спаривания вскоре погибают. С наступлением холодов погибает вся семья, за исключением молодых оплодотворенных самок, которые разлетаются и зимуют во мху или трухлявой древесине. Шмели отмечаются на растениях различных семейств, чаще наблюдаются на цветках растений из семейств бобовых и губоцветных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: На неосвоенных территориях в сев. части республики иногда встречается в значительном количестве, в вост. и центр. частях - редок. По мере хоз. преобразования территории численность сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушение пойменных земель и заболоченных участков леса, использование пестицидов, сенокошение, выпас скота, выжигание сухой растительности.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Ограничение осушительной мелиорации и хоз. деятельности в поймах рек, сокращение хим. обработок, запрещение выжигания растительности.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вост. Европа, Сибирь, Сев. Монголия, Дальний Восток. На территории Беларуси отмечается в вост., центр. и сев. частях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Шмель средних размеров, длиной до 23-25 мм. Сверху спинка, первые 2 сегмента брюшка и голова покрыты темно-рыжими волосками; середина и вершина брюшка в чередующихся перевязях из черных и светло-желтых волосков; грудь по бокам в белых или светло желтых волосках; ноги в черных волосках. Длина хоботка самок в среднем 11 мм.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_bombus_schrenckii <= nrel_spread: ... 
+	(*
+	-> Vitebsk_district; Mogilev_district; Lida_district; Minsk_district;;
+	*);;
+
+concept_apidae => nrel_inclusion: concept_bombus_schrenckii;;
+concept_bombus_schrenckii => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_wings; light; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; hairly; ginger; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; hairly; ginger; dark;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; hairly; yellow; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; hairly; black;;
+	*);;
+
+concept_bombus_schrenckii <= nrel_inclusion: 
+	23_25_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (23_mm => 25_mm);;	
+	*);;
+	23_mm <- length_of_body; exact_value;;
+	23_mm -> .millimeter: 23 (* <- number;;*);;
+	25_mm <- length_of_body; exact_value;;
+	25_mm -> .millimeter: 25 (* <- number;;*);;	
+
+concept_bombus_schrenckii <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,163 @@
+concept_pantoneura_juergensii => nrel_main_idtf:
+[пантонейра юргенса](*<-lang_ru;;*);
+[pantoneura juergensii](*<-lang_lat;;*);;
+
+
+concept_species -> concept_pantoneura_juergensii;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_pantoneura_juergensii;;
+
+//пояснения
+concept_pantoneura_juergensii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Категория и статус: 3 д - редкий вид, имеющий ограниченный ареал, часть которого находится в акватории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище хрящеватое, неправильно поочередно, перисто, пучковато разветвленное, без видимого осевого побега, 10-40 см дл., многослойное, имеющее сердцевину и кору. Ветви 1-4-го порядков, линейные, с гладкими краями, к верхушке расширяющиеся, извилистые, 1-3 мм шир., до 0,7-0,8 мм толщ. Веточки последних 2-3 порядков мелкие, узкие, до мелкозубчатых, располагаются неправильно перисто, односторонне и пучками. Имеет бесполое и половое размножение. Тетраспорангии закладываются в веточках последних порядков по обе стороны от центральной клеточ- ной оси. Цистокарпы с выступающим перистомом (околоустьем), располагаются по средней линии веточек. Карпоспоры развиваются цепочками (2, 6).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В пределах морской акватории России встречается в Беринговом море: Карагинский и Олюторский залив (2, 3, 4), залив Озерный бухта Дежнева (6); у Командорских о-вов (3); в Камчатском заливе (5); Охотском море (о. Ионы) (2). Вне России: о-ва Алеутские, Прибылова (1, 2).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный пацифический вид. Произрастает в сублиторали на глубине 5-15 м на водорослях Neoptilota asplenioides, Thalassiophyllum clathrus и др.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не слишком велика, хотя ареал довольно обширен.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. На Командорах - единичные находки, в сборах из Берингова моря представлена достаточным количеством экземпляров, чаще всего стерильных (4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Чувствительность к органическому загрязнению.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид встречается на Командорских о-вах и южной части Камчатского залива, где организованы государственные заповедники (Командорский и Кроноцкий), включающие прибрежную морскую акваторию. Охраняется двухкилометровая прибрежная зона Карагинского залива (о. Карагинский с 1974 г. - заказник). Вид включен в Красную книгу Камчатки (6).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания, недопущение бесконтрольного промысла водорослей у о. Карагинский, который может невосполнимо разрушить растительные сообщества (6).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_pantoneura_juergensii <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_pantoneura_juergensii;;
+						concept_pantoneura_juergensii => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_pantoneura_juergensii <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_pantoneura_juergensii <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,12 @@
+concept_garden_dormouse<-concept_animal;;
+concept_garden_dormouse=>nrel_eat:concept_grass;; 
+concept_garden_dormouse=>nrel_eat:concept_pollen;; 
+concept_garden_dormouse=>nrel_eat:concept_fruit_juice;; 
+concept_garden_dormouse=>nrel_eat:concept_bug;; 
+concept_garden_dormouse=>nrel_habitat:Krygloe;;
+concept_garden_dormouse=>nrel_habitat:Osipovichi;;
+
+
+concept_garden_dormouse=> nrel_main_idtf:
+[садовая соня](*<-lang_ru;;*);
+[garden dormouse](*<-lang_lat;;*);;

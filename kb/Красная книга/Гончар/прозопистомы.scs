@@ -1,0 +1,36 @@
+concept_prosopistomatidae=> nrel_main_idtf:
+[прозопистомы](*<-lang_ru;;*);
+[prosopistomatidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_prosopistomatidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(прозопистомы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_ephemeroptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Прозопистомы - семейство отряда поденки.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_ephemeroptera =>nrel_inclusion: concept_prosopistomatidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Личинки этого семейства отличаются очень широким листовидно сжатым телом, их жабры скрыты под боковыми выростами слившихся сегментов, так что у них образуется жаберная полость. Живут эти личинки в быстрых потоках под камнями.](* <- lang_ru;;*);;
+		*);;
+*);;

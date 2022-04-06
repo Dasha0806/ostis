@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_magnoliophyta;;
+concept_magnoliophyta => nrel_main_idtf:
+[базидиомикота](*<-lang_ru;;*);
+[magnoliophyta](*<-lang_en;;*);;
+
+//
+concept_magnoliophyta <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(базидиомикота)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[отдел в царстве грибов, включающий виды, производящие споры в булавовидных структурах, именуемых базидиями](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_fungos;;
+	*);;	
+*);;
+
+//
+concept_magnoliophyta => nrel_inclusion: concept_basidiomycetes;;
+

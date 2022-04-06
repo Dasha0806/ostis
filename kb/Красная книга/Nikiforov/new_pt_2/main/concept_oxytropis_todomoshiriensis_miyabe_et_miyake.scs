@@ -1,0 +1,55 @@
+concept_oxytropis_todomoshiriensis_miyabe_et_miyake => nrel_main_idtf:
+[Остролодочник тодомоширский](*<-lang_ru;;*);
+[Oxytropis todomoshiriensis Miyabe et Miyake](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_todomoshiriensis_miyabe_et_miyake;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_todomoshiriensis_miyabe_et_miyake;;
+
+Red_list_ru -> concept_oxytropis_todomoshiriensis_miyabe_et_miyake;;
+
+//пояснения
+concept_oxytropis_todomoshiriensis_miyabe_et_miyake <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Невелика.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Сахалинской области (2005). Охраняется в пределах регионального морского природного парка «Остров Монерон».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Произрастает только в России в Сахалинской обл. Известен с о. Монерон в Татарском проливе Японского моря, в 50 км от юго-зап. побережья о. Сахалин.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое бесстебельное растение 15-25 см выс., густо опушенное белыми шелковистыми волосками, с крупным стержневым корнем, образующее довольно крупные дерновины. Листья с 8-10(12) парами листочков. Цветет в июне-июле, плодоносит в августе. Размножается семенами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

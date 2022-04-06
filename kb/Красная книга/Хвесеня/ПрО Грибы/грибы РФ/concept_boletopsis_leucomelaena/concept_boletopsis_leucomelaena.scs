@@ -1,0 +1,141 @@
+concept_boletopsis_leucomelaena=> nrel_main_idtf: [болетопсис бело-черный](*<- lang_ru;;*); [boletopsis leucomelaena](*<- lang_lat;;*);;
+
+concept_boletopsis_leucomelaena<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (болетопсис бело-черный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_boletopsis_leucomelaena.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_boletopsis_leucomelaena;;
+concept_species -> concept_boletopsis_leucomelaena;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_boletopsis_leucomelaena;;
+
+//пояснения
+concept_boletopsis_leucomelaena <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Гриб с плодовыми телами средних размеров, развивающимися на почве. Шляпка 5-10(12) см в диам., жесткомясистая, несколько вдавленная в центре, оливково-серая или темно-коричневая, с возрастом чешуйчатая в центре, с острым волнистым или лопастным краем. Гименофор трубчатый. Поровая поверхность сначала кремовая, со временем серо-коричневатая или оливково-серая. Поры 1-3 на 1 мм, округлые до угловатых или слегка извилистых. Ножка 3-5(10)×(1)1,5-2,5 см в диам., цилиндрическая или несколько расширенная у основания, более или менее одного цвета со шляпкой, плотная, гладкая, с возрастом иногда слегка растрескивающаяся. Мякоть жесткомясистая, гигрофанная, вначале белая, позднее бледно-серая, при повреждении розово-серая, дающая зеленоватую или оливково-черную окраску в КОН, без особого вкуса и запаха. Споровый порошок белый или буроватый. Споры 5-6,5(-8)×4-5(-6) мкм, почти шаровидные или эллипсоидальные, угловатые, бородавчатые, бесцветные, в массе слегка буроватые (1-3)](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Республика Карелия (1, LE); Ленинградская обл. (1, LE); Республика Марий Эл (1, LE). Общее распространение: Европа, Сев. Америка, Азия (Япония) (3, 4, LE).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Уничтожение и нарушение местообитаний вида](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красную книгу Республики Карелия (6).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходимы поиск новых местонахождений и охрана местообитаний вида.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не культивируется.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_boletopsis_leucomelaena <= nrel_spread: ... 
+	(*
+	-> Respublika_Karelija; Leningradskaja_oblast; Respublika_Mariy_El;;
+	*);;
+
+concept_bankeraceae => nrel_inclusion: concept_boletopsis_leucomelaena;;
+concept_boletopsis_leucomelaena => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; cylindrical;;
+	*);;
+
+concept_boletopsis_leucomelaena <= nrel_inclusion: 
+	[5-10 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([5 см] => [10 см]);;	
+	*);
+	[1-3 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1.5 см] => [2.5 см]);;	
+	*);;
+
+	[5 см] <- cap_diameter; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[10 см] <- cap_diameter; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[1.5 см] <- lenght_of_leg; exact_value;;
+	[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+	[2.5 см] <- lenght_of_leg; exact_value;;
+	[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+	
+concept_boletopsis_leucomelaena <= nrel_inclusion: concept_3_protection_category;;

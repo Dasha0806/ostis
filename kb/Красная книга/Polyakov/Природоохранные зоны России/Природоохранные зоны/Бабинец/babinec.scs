@@ -1,0 +1,89 @@
+
+sc_node_not_relation -> babinec;;
+concept_territorry->babinec;;
+babinec => nrel_main_idtf: [заказник Бабинец] (* <- lang_ru;; *);
+				     [Babinec] (* <- lang_en;; *);;
+
+
+babinec <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Бабинец)](*<-lang_ru;;*);
+		[Pic. (Babinec)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://babinez.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+babinec<-concept_sanctuary;;
+
+babinec <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Бабинец, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биологический заказник республиканского значения Бабинец действует вплоть с 1979 года, когда он был организован с целью сохранения естественного состояния мест произрастания клюквы.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							babinec=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+babinec <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Бабинец, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Бабинца составляет 850 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							babinec=>nrel_square:[850 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:850(*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+babinec => nrel_area_location: Gomel_area;;
+babinec => nrel_flora: ...(*
+<-Oxycoccus;;
+*);;
+
+
+sc_node_role_relation->rrel_ga;;
+rrel_ga => nrel_main_idtf:
+[га'](*<-lang_ru;;*);
+	[ga'](*<-lang_en;;*);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: babinec;;

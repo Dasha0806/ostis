@@ -1,0 +1,132 @@
+sc_node_not_relation -> Mogilev_region;;
+Mogilev_region=>nrel_main_idtf:
+[Могилевская область](* <-lang_ru;; *);
+	[Mogilev region](* <- lang_en;; *);;
+
+sc_node_not_relation -> mogilev_region_flag;;
+mogilev_region_flag=>nrel_main_idtf:
+[флаг Могилевской области](* <-lang_ru;; *);
+	[Mogilev region flag](* <- lang_en;; *);;
+
+sc_node_not_relation -> mogilev_region_coat_of_arms;;
+mogilev_region_coat_of_arms=>nrel_main_idtf:
+[герб Могилевской области](* <-lang_ru;; *);
+	[Mogilev region coat of arms](* <- lang_en;; *);;
+
+sc_node_not_relation -> BY_MA;;
+BY_MA => nrel_main_idtf:
+[BY_MA](* <-lang_ru;; *);
+	[BY_MA](* <- lang_en;; *);;
+
+sc_node_not_relation -> 6;;
+6 => nrel_main_idtf:
+[6](* <-lang_ru;; *);
+	[6](* <- lang_en;; *);;
+
+sc_node_not_relation -> 210000;;
+210000 => nrel_main_idtf:
+[210000](* <-lang_ru;; *);
+	[210000](* <- lang_en;; *);;
+
+sc_node_not_relation -> 851523;;
+851523 => nrel_main_idtf:
+[851 523](* <-lang_ru;; *);
+	[851 523](* <- lang_en;; *);;
+
+sc_node_not_relation -> 207223;;
+207223 => nrel_main_idtf:
+[207 223](* <-lang_ru;; *);
+	[207 223](* <- lang_en;; *);;
+
+sc_node_not_relation -> mogilev_regional_council_of_deputies;;
+mogilev_regional_council_of_deputies =>nrel_main_idtf:
+[Могилевский областной совет депутатов](* <-lang_ru;; *);
+	[Mogilev regional council of deputies](* <- lang_en;; *);;
+
+sc_node_not_relation -> mogilev_regional_executive_committee;;
+mogilev_regional_executive_committee =>nrel_main_idtf:
+[Могилевский областной исполнительный комитет](* <-lang_ru;; *);
+	[Mogilev regional executive committee](* <- lang_en;; *);;
+
+sc_node_not_relation -> Domanevskii_Vladimir_Viktorovich;;
+Domanevskii_Vladimir_Viktorovich =>nrel_main_idtf:
+[Доманевский Владимир Викторович](* <-lang_ru;; *);
+	[Domanevskii_Vladimir_Viktorovich](* <- lang_en;; *);;
+
+sc_node_not_relation -> Haritonchik_Dmitrii_Ivanovich;;
+Haritonchik_Dmitrii_Ivanovich =>nrel_main_idtf:
+[Харитонский Дмитрий Иванович](* <-lang_ru;; *);
+	[Haritonchik_Dmitrii_Ivanovich](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+Mogilev_region => nrel_regional_council_of_deputies: mogilev_regional_council_of_deputies;;
+
+mogilev_regional_council_of_deputies => nrel_chairman_of_the_regional_council_of_deputies: Haritonchik_Dmitrii_Ivanovich;;
+
+Mogilev_region => nrel_regional_executive_committee: mogilev_regional_executive_committee;;
+
+mogilev_regional_executive_committee => nrel_chairman_of_the_regional_executive_committee: Domanevskii_Vladimir_Viktorovich;;
+
+Mogilev_region => nrel_timezone:
+FET_UTC_PLUS_3;;
+
+Mogilev_region => nrel_code_iso_3166_2:
+BY_MA;;
+
+concept_code -> BY_MA;;
+
+Mogilev_region => nrel_car_number:
+6;;
+
+concept_number -> 6;;
+
+Mogilev_region => nrel_postcode:
+210000;;
+
+concept_number -> 210000;;
+
+Mogilev_region => nrel_administrative_center:
+Mogilev;;
+
+Mogilev_region => nrel_urban_population:
+851523;;
+
+concept_number -> 851523;;
+
+Mogilev_region => nrel_rural_population:
+207223;;
+
+concept_number -> 207223;;
+
+Mogilev_region => nrel_boundary_area: Minsk_region;;
+Mogilev_region => nrel_boundary_area: Vitebsk_region;;
+Mogilev_region => nrel_boundary_area: Gomel_region;;
+
+//определение 
+Mogilev_region <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Могилевская область)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Могилевская область - область РБ.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:Mogilev_region;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://Mogilev_region.png";;
+		*);;
+	*);;
+
+Mogilev_region <= nrel_intersection: ...(* -> Belinichski_area;; -> Glysski_area;; -> Dribinskii_area;; -> Kostyukovichski_area;; -> Krasnopolski_area;; -> Kryglyanski_area;; -> Mstislavki_area;; -> Osipovichski_area;; -> Slavogorodski_area;; -> Hotimski_area;; -> Chaysski_area;; -> Cherikovski_area;; -> Shklovski_area;; => nrel_idtf: [Разбиение по территориальному признаку](* <- concept_russian_language;; *);; *);;
+

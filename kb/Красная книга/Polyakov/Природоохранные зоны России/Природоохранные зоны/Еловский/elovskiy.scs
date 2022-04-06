@@ -1,0 +1,78 @@
+sc_node_not_relation -> elovskiy;;
+
+elovskiy => nrel_main_idtf: [заказник Еловский] (* <- lang_ru;; *);
+				     [Elovskiy] (* <- lang_en;; *);;
+concept_territorry->elovskiy;;
+elovskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Еловский)](*<-lang_ru;;*);
+		[Pic. (Elovskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+elovskiy<-concept_sanctuary;;
+
+elovskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Еловский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заказник Еловский был создан в 1979 году для охраны естественных скоплений клюквы в природе, а также для рационализации местного землепользования.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							elovskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+elovskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Еловский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Еловский составляет 963 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							elovskiy=>nrel_square:[963 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[963](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+elovskiy => nrel_area_location: Gomel_area;;
+elovskiy => nrel_flora: ...(*
+<-Oxycoccus;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: elovskiy;;

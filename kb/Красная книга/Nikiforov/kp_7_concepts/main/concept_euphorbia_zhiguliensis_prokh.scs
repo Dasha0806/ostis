@@ -1,0 +1,45 @@
+concept_euphorbia_zhiguliensis_prokh => nrel_main_idtf:
+[Молочай жигулевский](*<-lang_ru;;*);
+[Euphorbia zhiguliensis Prokh](*<-lang_lat;;*);;
+
+concept_species -> concept_euphorbia_zhiguliensis_prokh;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_euphorbia_zhiguliensis_prokh;;
+
+Red_list_ru -> concept_euphorbia_zhiguliensis_prokh;;
+
+//пояснения
+concept_euphorbia_zhiguliensis_prokh <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Самарской обл. Охраняется на территории Жигулёвского заповедника и НП «Самарская Лука», а также на региональных ООПТ.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России в Самарской обл. (Жигулёвские и Сокольи горы).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: ороткокорневищный гемикриптофит до 40 см. выс. Поликарпик. Цветет в мае, плодоносит в июне. Размножается только семенным путем.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,149 @@
+concept_betula_nana => nrel_main_idtf:
+[берёза карликовая](*<-lang_ru;;*);
+[betula nana](*<-lang_lat;;*);
+[бяроза карлiкавая](*<-lang_bel;;*);;
+
+concept_species -> concept_betula_nana;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_betula_nana;;
+
+//пояснения
+concept_betula_nana <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 1-го и 2-го изданий (1981, 1993). Охраняется в Латвии, Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Сильно разветвленный низкорослый кустарник высотой 1-1,5 м. Молодые ветви опушенные, с железистыми бородавочками, позднее почти голые. Листья длиной 0,5-1,5 см и шириной 1-2 см, ширококлиновидные, сердцевидные, темно-зеленые, блестящие, голые. Плод - эллипсо- или яйцевидный орешек с узкими крылышками .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Евразия (северные районы). Арктобореальный реликтовый вид, находящийся в Беларуси в отдельных локалитетах за юго-западной границей ареала . Найден в Борисовском , Докшицком , Mиорском , Мядельском , Полоцком , Поставском , Россонском , Сенненском , Шарковщинском и Шумилинском р-нах. Ранее приводился для окрестностей Лынтуп, Ельни и Дисны .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Облесенные и открытые торфяные сфагновые болота верхового и переходного типов, обычно по берегам озер и у родников.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в апреле - начале мая, плодоносит в мае - июне. Анемофил. Размножение семенное и вегетативное. Анемохор. Низкое качество семян и характер размещения особей в популяциях указывают на ведущую роль вегетативного размножения в естественном возобновлении популяций данного вида .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Обычно растет небольшими группами или образует небольшие заросли на площади не более 0,1-0,2 га. Локальная популяция на болотном массиве «Жары» в Березинском биосферном заповеднике является самой крупной в Беларуси. Слагающие ее ценопопуляции встречаются на площади около 1000 га .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительная мелиорация и хозяйственная трансформация болот, повышенные рекреационные нагрузки.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Произрастает в Березинском биосферном заповеднике, Национальном парке «Нарочанский» (на заповедной территории), в заказниках «Ельня», «Красный Бор» и «Юховичский». Необходим контроль состояния известных популяций, поиск новых и, при необходимости, организация их охраны, предотвращение в местах произрастания негативных антропогенных воздействий.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_betula_nana <= nrel_spread: ... 
+	(*
+	-> Borisov_district; Miorsky_district; Docshicky_district; Myadel_district; Polotsk_district; Postavsky_district; Rossonsky_district; Sennensky_district; Sharkovshinsky_district; Shumilinsky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_betula_nana;;
+						concept_betula_nana => nrel_part:: 
+
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; shiny; naked; heart_shaped; black; green ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: branch; naked;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; nut;;
+							*);;
+
+concept_betula_nana <= nrel_inclusion: 
+	100_150_cm
+	(*
+	<- interval_value;;
+	<- heigth_of_plant (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 15_cm);;
+	*);;
+concept_betula_nana <= nrel_inclusion: 
+	0_2_cm
+	(*
+	<- interval_value;;
+	<- length_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 2_cm);;
+	*);;
+concept_betula_nana <= nrel_inclusion: 
+	1_2_cm
+	(*
+	<- interval_value;;
+	<- width_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (1_cm => 2_cm);;
+	*);;
+
+	100_cm <- heigth_of_plant; exact_value;;
+	100_cm -> nrel_cm: 100 (* <- number;;*);;
+	150_cm <- heigth_of_plant; exact_value;;
+	150_cm -> nrel_cm: 150 (* <- number;;*);;
+	0_cm <- length_of_leaf; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	2_cm <- length_of_leaf; exact_value;;
+	2_cm -> nrel_cm: 2 (* <- number;;*);;
+	1_cm <- width_of_leaf; exact_value;;
+	1_cm -> nrel_cm: 1 (* <- number;;*);;
+	2_cm <- width_of_leaf; exact_value;;
+	2_cm -> nrel_cm: 2 (* <- number;;*);;
+
+concept_betula_nana <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,55 @@
+concept_oxytropis_physocarpa_ledeb => nrel_main_idtf:
+[Остролодочник вздутоплодный](*<-lang_ru;;*);
+[Oxytropis physocarpa Ledeb.](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_physocarpa_ledeb;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_physocarpa_ledeb;;
+
+Red_list_ru -> concept_oxytropis_physocarpa_ledeb;;
+
+//пояснения
+concept_oxytropis_physocarpa_ledeb <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Сокращается число особей в популяциях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Тыва (1999). Охраняется в Алтайском заповеднике.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России. В Республике Тыва известен на хр. Шапшальском (верховья р. Каргы), Чихачёва (окр. пос. Кызыл-Хая) и Цаган-Шибэту (в окр. пос. Мугур-Аксы); в Республике Алтай — на хр. Курайском и единично в долине р. Чуя, близ устья р. Чеган (откуда описан вид), Чеган-узун, а также в нижнем течении Чеган-узуна и по левобережным и низкогорным массивам.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с мощным деревянистым корнем и разветвленным каудексом. Листья 3-4 см дл., листочки сосредоточены в (8-12) мутовках по 2-4. Цветет в июне-июле, плодоносит в июле-августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,77 @@
+sc_node_not_relation -> slonimskiy;;
+
+slonimskiy => nrel_main_idtf: [заказник Слонимский] (* <- lang_ru;; *);
+				     [Slonimskiy] (* <- lang_en;; *);;
+
+slonimskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Слонимский)](*<-lang_ru;;*);
+		[Pic. (Slonimskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+slonimskiy<-concept_sanctuary;;
+
+slonimskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Слонимский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Слонимский был создан в 1978 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							slonimskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1978(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+slonimskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Слонимский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Слонимский составляет 14100 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							slonimskiy=>nrel_square:[14100 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[14100](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+slonimskiy => nrel_area_location: Grodno_area;;
+slonimskiy => nrel_flora: ...(*
+<-concept_orchis_ustulata_l;concept_cypripedium_calceolus_l;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: slonimskiy;;

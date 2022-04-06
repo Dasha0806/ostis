@@ -1,0 +1,27 @@
+concept_bryophyta => nrel_main_idtf:
+[мохообразные](*<-lang_ru;;*);
+[bryophyta](*<-lang_lat;;*);;
+
+concept_division -> concept_bryophyta;;
+
+concept_bryophyta <= nrel_subdividing:
+	...
+ (*
+    -> concept_bryopsida;;
+    -> concept_hepaticopsida;;
+	*);;
+
+//определение и пояснения
+concept_bryophyta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отдел мохообразные - совокупность высших растений, включающая как собственно мхи, так и другие сходные с ними организмы. Одно из главных отличий мохообразных от других высших растений — преобладание в цикле воспроизведения гаплоидного (то есть с одинарным набором непарных хромосом) гаметофита (половое поколение) над диплоидным спорофитом (бесполое поколение).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_bryophyta;;

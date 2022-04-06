@@ -1,0 +1,9 @@
+concept_swimm<-concept_plant;;
+concept_swimm=>nrel_water:concept_gigrofit;; 
+concept_swimm=>nrel_moisture:concept_acidofil;;
+concept_acidofil<-concept_organic;;
+
+
+concept_swimm=> nrel_main_idtf:
+[плывун](*<-lang_ru;;*);
+[swimm](*<-lang_lat;;*);;

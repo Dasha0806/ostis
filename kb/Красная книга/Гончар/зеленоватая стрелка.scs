@@ -1,0 +1,134 @@
+concept_coenagrion_armatum=> nrel_main_idtf:
+[зеленоватая стрелка](*<-lang_ru;;*);
+[coenagrion armatum](*<-lang_lat;;*);;
+
+concept_species -> concept_coenagrion_armatum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_coenagrion_armatum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_coenagrion_armatum;;
+	-> rrel_number_of_year: 1840 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_coenagrion_armatum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе ( Приложение II Бернской конвенции).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается возле слабопроточных или стоячих водоемов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Летает по берегам водоемов, на полянах, лугах. Цикл развития - 1 год. Яйца откладывает в ткани водных растений. Зимует в личиночной стадии. Личинки развиваются в стоячих водоемах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок. Данных по изменению численности нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Выявление мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Транспалеарктический вид. Север и средняя полоса Европы, Закавказье, Сибирь. Отмечен в южных районах Беларуси .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело небольшое с прозрачными крыльями, их длина 17-20 мм. Передние и задние крылья одинаковые по форме и размерам, в покое складываются параллельно телу. Длина брюшка 22-26 мм. Глаза не соприкасаются. Затылок с двумя светлыми пятнами. Задний край переднеспинки с выступом, направленным назад и вверх. Личинки зеленоватые с поперечными полосами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_coenagrion_armatum <= nrel_spread: ... 
+	(*
+	-> Pinsk_district; Jitkovichi_district;;
+	*);;
+
+concept_coenagrionidae => nrel_inclusion: concept_coenagrion_armatum;;
+concept_coenagrion_armatum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; light;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black; blue;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; transparent;;
+	*);;
+
+concept_coenagrion_armatum <= nrel_inclusion: 
+	22_26_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (22_mm => 26_mm);;	
+	*);;
+	22_mm <- length_of_body; exact_value;;
+	22_mm -> .millimeter: 22 (* <- number;;*);;
+	26_mm <- length_of_body; exact_value;;
+	26_mm -> .millimeter: 26 (* <- number;;*);;	
+
+concept_coenagrion_armatum <= nrel_inclusion: concept_1_protection_category;;

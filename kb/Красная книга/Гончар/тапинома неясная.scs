@@ -1,0 +1,134 @@
+concept_tapinoma_ambiguum=> nrel_main_idtf:
+[тапинома неясная](*<-lang_ru;;*);
+[tapinoma ambiguum](*<-lang_lat;;*);;
+
+concept_species -> concept_tapinoma_ambiguum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_tapinoma_ambiguum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_tapinoma_ambiguum;;
+	-> rrel_number_of_year: 1925 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_tapinoma_ambiguum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Светлые леса, чаще сосновые, на легких песчаных и супесчаных почвах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнезда диффузного типа, в семье приблизительно 1500 рабочих и 20-30 самок. Вид теплолюбивый, т.к. гнездовых построек не делает. Муравейники размещаются только на хорошо прогреваемых местах: пригорках, полянах, юж. склонах, опушках светлых сухих лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок. Всего известно 5 гнезд.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Не установлены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (IV категория). Организация заказников в известных местах проживания вида. Поиск новых мест проживания и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Центр. и вост. Европа. В Беларуси известен из Ельского, Лепельского, Пружанского и Столбцовского районов .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Рабочие особи (длина 3-4 мм) черные. Наличник с треугольной вырезкой. Длина самки 4,5-6 мм, самца - 4-5 мм.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_tapinoma_ambiguum <= nrel_spread: ... 
+	(*
+	-> Lepelsk_district; Elsk_district; Stolbci_district; Pryjani_district;;
+	*);;
+
+concept_formicidae => nrel_inclusion: concept_tapinoma_ambiguum;;
+concept_tapinoma_ambiguum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_tapinoma_ambiguum <= nrel_inclusion: 
+	3_6_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (3_mm => 6_mm);;	
+	*);;
+	3_mm <- length_of_body; exact_value;;
+	3_mm -> .millimeter: 3 (* <- number;;*);;
+	6_mm <- length_of_body; exact_value;;
+	6_mm -> .millimeter: 6 (* <- number;;*);;	
+
+concept_tapinoma_ambiguum <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_marsupialia_fungos;;
+concept_marsupialia_fungos => nrel_main_idtf:
+[сумчатые грибы](*<-lang_ru;;*);
+[marsupialia fungos](*<-lang_en;;*);;
+
+//
+concept_marsupialia_fungos <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(сумчатые грибы)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[один из крупнейших классов в отделе аскомикота, объединяющие организмы с септированным мицелием и очень специфическими органами полового спороношения – сумками](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_askomikota;;
+	*);;	
+*);;
+
+//
+concept_marsupialia_fungos => nrel_inclusion:
+	concept_gelotsialnye;
+	concept_tuberalnye;;
+

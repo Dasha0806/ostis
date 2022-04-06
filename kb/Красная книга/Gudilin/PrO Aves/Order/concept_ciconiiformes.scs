@@ -1,0 +1,22 @@
+concept_ciconiiformes => nrel_main_idtf:
+[аистообразные](*<-lang_ru;;*);
+[ciconiiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_ciconiiformes;;
+
+concept_ciconiiformes => nrel_inclusion: concept_ardeidae;  concept_ciconiidae;;
+
+//определение и пояснения
+concept_ciconiiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Аистообразные - отряд птиц, ноги, шея и клюв длинные, крылья тупые и широкие. Гнездятся как отдельными парами, так и колониями. Образуют постоянные пары. Тип развития — птенцовый. Разнообразны по внешнему облику, крупные и средние по размеру птицы.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_ciconiiformes;;

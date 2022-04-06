@@ -1,0 +1,146 @@
+concept_graphoderus_bilineatus=> nrel_main_idtf:
+[двуполосный подводень](*<-lang_ru;;*);
+[graphoderus bilineatus](*<-lang_lat;;*);;
+
+concept_species -> concept_graphoderus_bilineatus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_graphoderus_bilineatus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_graphoderus_bilineatus;;
+	-> rrel_number_of_year: 1774 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_graphoderus_bilineatus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе (Приложение II Бернской конвенции). Внесен в Красный список МСОП (VU, ver. 2.3, 1994) и Красную книгу Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Предпочитает глубокие водоемы со стоячей водой и густой растительностью у берегов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Изучена недостаточно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид с низкой численностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вид чувствителен к неблагоприятному воздействию загрязнений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: В Беларуси охраняется в заповедниках, в которых обитает. Необходима организация охраны территорий, где обнаружен этот вид, а также запрещение проведения мелиоративных работ, применения химических средств и удобрений на водосборных площадях, прилегающих к этим территориям.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Редкий вид, широко распространен в Евразии (кроме крайнего юга), но всюду немногочислен. Из сопредельных стран вид известен в Польше, Украине, России (до Западной Сибири) . В Беларуси отмечен в Березинском биосферном заповеднике, Национальных парках «Браславские озера», «Беловежская пуща» и «Припятский», заказнике «Званец» .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Выделяется среди всех остальных видов рода наиболее широкой и плоской формой тела. Тело жука очень широкое и короткое (длина 14-16 мм), с наибольшей шириной за серединой. Эпиплевры надкрылий очень широкие, вместе с ними образуют острый край. Бока надкрылий на уровне 2-го и 3-го стернитов слегка вдавлены, далее уплощены. Характерны очень узкие черные каемки на переднем и заднем краях переднеспинки. У самца передние лапки с 1 крупной присоской, 2 средней величины и более чем 32 мелкими присосками. Лапки средних ног с 16-18 присосками, расположенными в 2 ряда. Бока переднеспинки самки в продольных морщинках.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_graphoderus_bilineatus <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pushcha_district; Braslav_district;;
+	*);;
+
+concept_dytiscidae => nrel_inclusion: concept_graphoderus_bilineatus;;
+concept_graphoderus_bilineatus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; green;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; brown;;
+	*);;
+
+concept_graphoderus_bilineatus <= nrel_inclusion: 
+	14_16_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (14_mm => 16_mm);;	
+	*);;
+	14_mm <- length_of_body; exact_value;;
+	14_mm -> .millimeter: 14 (* <- number;;*);;
+	16_mm <- length_of_body; exact_value;;
+	16_mm -> .millimeter: 16 (* <- number;;*);;	
+
+concept_graphoderus_bilineatus <= nrel_inclusion: concept_3_protection_category;;

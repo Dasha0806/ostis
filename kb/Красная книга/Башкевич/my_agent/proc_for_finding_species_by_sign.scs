@@ -1,0 +1,122 @@
+scp_program -> proc_for_finding_species_by_sign(*
+	->rrel_params: .proc_for_finding_species_by_sign_params(*
+		->rrel_1: rrel_in: _param;;
+		->rrel_2: rrel_in: _answer;;
+		*);;
+->rrel_operators: .proc_for_finding_species_by_sign_operator_set (*
+			->rrel_init: .proc_for_finding_species_by_sign_print_set (*
+<-printNl;;
+-> rrel_1: rrel_fixed: rrel_scp_const: [Agent begin];;
+
+=> nrel_goto: .proc_for_finding_species_by_sign_search_inclusions;;
+		*);;
+			-> .proc_for_finding_species_by_sign_search_inclusions(*
+			//находим все узлы, связанные отношением включение* и добавляем во множество
+		<- searchSetStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+		-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _some_node;;
+		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+
+		-> rrel_set_3: rrel_assign: rrel_scp_var: _set_elem;;
+		
+
+		=>nrel_then: .proc_for_finding_species_by_sign_add_to_set_of_species;;
+		=>nrel_else: .proc_for_finding_species_by_sign_operator_return;;
+
+		*);;
+
+//цикл обхода узлов множества
+		-> .proc_for_finding_species_by_sign_add_to_set_of_species (*
+<-searchElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _set_elem;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _loop_arc;;
+-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_node;;
+
+=>nrel_then: .proc_for_finding_species_by_sign_erase_arc;;
+=>nrel_else: .proc_for_finding_species_by_sign_erase_set;;
+*);;	
+
+		//удаляем дуги принадлежности
+
+-> .proc_for_finding_species_by_sign_erase_arc (*
+<-eraseEl;;
+-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _loop_arc;;
+
+=> nrel_goto: .proc_for_finding_species_by_sign_check_species_1;;	
+//проверяем, относится ли данный признак ко всему виду
+*);;
+
+-> .proc_for_finding_species_by_sign_check_species_1 (*
+<-searchElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_const: concept_species;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+-> rrel_3: rrel_fixed: rrel_scp_var: _some_node;;
+
+=>nrel_then: .proc_for_finding_species_by_sign_add_species_to_answer_1;;
+=>nrel_else: .proc_for_finding_species_by_sign_search_by_part;;
+*);;
+
+
+//проверяем , к чему относится часть тела*
+-> .proc_for_finding_species_by_sign_search_by_part (*
+	<-searchElStr5;;
+		-> rrel_1: rrel_assign: rrel_scp_var: _species;;
+		-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _some_node;;
+		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_part;;
+		
+=>nrel_then: .proc_for_finding_species_by_sign_check_species_2;;
+// Если заданная конструкция не найдена, то выйти из цикла
+=>nrel_else: .proc_for_finding_species_by_sign_add_to_set_of_species;;
+*);;
+
+-> .proc_for_finding_species_by_sign_check_species_2 (*
+<-searchElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_const: concept_species;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+-> rrel_3: rrel_fixed: rrel_scp_var: _species;;
+
+=>nrel_then: .proc_for_finding_species_by_sign_add_species_to_answer_2;;
+=>nrel_else: .proc_for_finding_species_by_sign_add_to_set_of_species;;
+*);;
+
+// Добавляет элемент в ответ и возвращается к началу цикла
+// check elements in set
+-> .proc_for_finding_species_by_sign_add_species_to_answer_1 (*
+<-genElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+-> rrel_3: rrel_fixed: rrel_scp_var: _some_node;;
+
+
+=>nrel_goto: .proc_for_finding_species_by_sign_add_to_set_of_species;;
+
+*);;
+
+-> .proc_for_finding_species_by_sign_add_species_to_answer_2 (*
+<-genElStr3;;
+-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+-> rrel_3: rrel_fixed: rrel_scp_var: _species;;
+
+
+=>nrel_goto: .proc_for_finding_species_by_sign_add_to_set_of_species;;
+
+*);;
+
+-> .proc_for_finding_species_by_sign_erase_set (*
+<-eraseEl;;
+-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_elem;;
+
+=> nrel_goto: .proc_for_finding_species_by_sign_operator_return;;
+*);;
+	
+			
+		->.proc_for_finding_species_by_sign_operator_return(*
+		<-return;;
+		*);;
+	*);;
+*);;

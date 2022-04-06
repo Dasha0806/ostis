@@ -1,0 +1,27 @@
+format_search_anime_by_metagenre_and_year_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат anime search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format anime search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_anime_by_metagenre_and_year_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск аниме по метажанру и году выпуска]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find anime by metagenre and year] 
+	(* 
+	<- lang_en;;
+	*);;

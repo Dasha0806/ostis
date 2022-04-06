@@ -1,0 +1,7 @@
+Republick_of_Belarus <= nrel_intersection: ...(* -> Minsk_region;; -> Brest_region;; -> Vitebsk_region;; -> Mogilev_region;; -> Gomel_region;; -> Grodno_region;; 
+ => nrel_idtf: [Разбиение по территориальному признаку](* <- concept_russian_language;; *);; *);;
+
+Republick_of_Belarus => nrel_main_idtf:
+[Республика Беларусь](*<-lang_ru;;*);;
+
+concept_state -> Republick_of_Belarus;;

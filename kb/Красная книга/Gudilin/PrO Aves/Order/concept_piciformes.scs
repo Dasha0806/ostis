@@ -1,0 +1,22 @@
+concept_piciformes => nrel_main_idtf:
+[дятлообразные](*<-lang_ru;;*);
+[piciformes](*<-lang_lat;;*);;
+
+concept_order -> concept_piciformes;;
+
+concept_piciformes => nrel_inclusion: concept_picidae;;
+
+//определение и пояснения
+concept_piciformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дятлообразные - отряд птиц. Дятлы — птицы мелкой и средней величины: самые маленькие меньше воробья, наиболее крупные — с ворону. Внешний вид и окраска дятлов весьма различны.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_piciformes;;

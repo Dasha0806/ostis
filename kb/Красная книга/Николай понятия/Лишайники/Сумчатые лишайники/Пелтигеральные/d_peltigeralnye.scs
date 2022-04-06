@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_peltigeralnye;;
+concept_peltigeralnye => nrel_main_idtf:
+[пелтигеральные](*<-lang_ru;;*);
+[peltigeralnye](*<-lang_en;;*);;
+
+//
+concept_peltigeralnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пелтигеральные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе сумчатые лишайники, представляющий собой слоевище лопастное с выемчато-обрубленными краями лопастей](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lichenas_marsupialia;;
+	*);;	
+*);;
+
+//
+concept_peltigeralnye => nrel_inclusion:
+	concept_lobarievye;
+	concept_peltigerovye;;

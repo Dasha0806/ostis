@@ -1,0 +1,146 @@
+concept_carabus_violaceus_linnaeus=> nrel_main_idtf:
+[фиолетовая жужелица](*<-lang_ru;;*);
+[carabus violaceus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_violaceus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_violaceus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_violaceus_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_violaceus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: В светлых лиственных и смешанных лесах. Мелколиственные леса. Живет в лесной подстилке, под корой, валежником.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид с осенним типом размножения. Характеризуется высокой активностью. На открытых местах жуки активны только ночью, на опушках и в насаждениях в сумерках и ночью, иногда целые сутки, но через определенные промежутки времени становятся неподвижными. Зимуют имаго и личинки. Жуки летят на свет. Хищник-полифаг. Поедает дождевых червей, пауков, личинок, куколок и имаго колорадского жука, гусениц лугового мотылька, совок, молодых слизней .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редок. В отдельных хорошо гумусированных биогеоценозах достаточно многочислен. Численность сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная деятельность в лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Охраняется в Беловежской пуще. Необходима пропаганда охраны вида и контроль за состоянием популяций.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евроказахстанский ксерофильный, лесной вид. Европа (не выше 70о северной широты). Известен также в Западной Сибири. В Беларуси встречается повсюду .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 20-34 мм. Окраска черно-синяя или фиолетовая, края надкрылий с яркой синей, зелёной или медно-красной окантовкой.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_violaceus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_violaceus_linnaeus;;
+concept_carabus_violaceus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; blue; purple;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; blue; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; bright; green; blue;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; blue;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; green;;
+	*);;
+
+concept_carabus_violaceus_linnaeus <= nrel_inclusion: 
+	20_34_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (20_mm => 34_mm);;	
+	*);;
+	20_mm <- length_of_body; exact_value;;
+	20_mm -> .millimeter: 20 (* <- number;;*);;
+	34_mm <- length_of_body; exact_value;;
+	34_mm -> .millimeter: 34 (* <- number;;*);;	
+
+concept_carabus_violaceus_linnaeus <= nrel_inclusion: concept_4_protection_category;;

@@ -1,0 +1,237 @@
+concept_orchis_coriophora_l=> nrel_main_idtf: [ятрышник клопоносный](*<- lang_ru;;*); [orchis coriophora l](*<- lang_lat;;*);;
+
+//изображение
+concept_orchis_coriophora_l <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (ятрышник клопоносный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_orchis_coriophora_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+//предметная область, вид, растение
+subject_domain_of_plantae_vasculares-> rrel_not_maximum_studied_object_class: concept_orchis_coriophora_l;;
+concept_species -> concept_orchis_coriophora_l;;
+concept_plantae-> concept_orchis_coriophora_l;;
+
+//категория охраны
+concept_orchis_coriophora_l<= nrel_inclusion: concept_2_protection_category;;
+
+//дата включения в кк
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_orchis_coriophora_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//распространение
+concept_orchis_coriophora_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		->Grodno_district;;->Mosty_district;;->Brest_district;;->Ive_district;;->Pinsk_district;;->Stolin_district;;->Khoiniki_district;;->Gomel_district;;->Rechitsca_district;;->Mstislavl_district;;->Chernikov_district;;
+		*);;
+*);;
+
+//описание
+concept_perennial => nrel_inclusion:: concept_orchis_coriophora_l;; //многолетнее
+
+concept_orchis_coriophora_l => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; concept_straight;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_tuber; elliptical;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; concept_sharp; narrow_line; green;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_inflorescence; apical; dense; spike_shaped; multi_flowered;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; brown; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box; dry; drop_down;;
+							*);;
+
+concept_orchis_coriophora_l <= nrel_inclusion: 
+[20-40 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([20 см] => [40 см]);; 
+*); 
+[0.4-1 см]
+(*
+<- interval_value;;
+<- width_of_leaf;;
+=> nrel_measurement: ([0.4 см] => [1 см]);; 
+*);
+[13-14 см]
+(*
+<- interval_value;;
+<- length_of_inflorescence;;
+=> nrel_measurement: ([13 см] => [14 см]);; 
+*); 
+[1.5-3 см]
+(*
+<- interval_value;;
+<- width_of_inflorescence;;
+=> nrel_measurement: ([1.5 см] => [3 см]);; 
+*);;
+
+[20 см] <- length_of_stem; exact_value;;
+[20 см] -> .centimeter: 20 (* <- number;;*);;
+[40 см] <- length_of_stem; exact_value;;
+[40 см] -> .centimeter: 40 (* <- number;;*);;
+
+[0.4 см] <- width_of_leaf; exact_value;;
+[0.4 см] -> .centimeter: 0.4 (* <- number;;*);;
+[1 см] <- width_of_leaf; exact_value;;
+[1 см] -> .centimeter: 1 (* <- number;;*);;
+
+[13 см] <- length_of_inflorescence; exact_value;;
+[13 см] -> .centimeter: 13 (* <- number;;*);;
+[14 см] <- length_of_inflorescence; exact_value;;
+[14 см] -> .centimeter: 14 (* <- number;;*);;
+
+[1.5 см] <- width_of_inflorescence; exact_value;;
+[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+[3 см] <- width_of_inflorescence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+
+//биология
+concept_orchis_coriophora_l => nrel_flowering_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> May;;->June;;
+		*);;
+*);;
+
+concept_orchis_coriophora_l => nrel_fruit_ripening_period:...
+(*
+    <= nrel_combination: ... 
+		(*
+		->July;;->August;;
+		*);;
+*);;
+
+concept_orchis_coriophora_l => nrel_pollination_type: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_entomophilia;;
+		*);;
+*);;
+
+concept_orchis_coriophora_l => nrel_dissemination_method: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_anemochoria;;
+		*);;
+*);;
+
+concept_orchis_coriophora_l => nrel_propagation_type:...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_seed_propagation;;->concept_vegetative_propagation;;
+		*);;
+*);;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////пояснения
+concept_orchis_coriophora_l <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Под государственную охрану впервые взят в 1964 г. Занесен в 1-е и 2-е издания Красной книги Беларуси (1981, 1993). Находится под охраной в Украине, Польше (0 категория) и Российской Федерации. Включен в Приложение II к Конвенции СИТЕС.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с прямостоячим стеблем высотой 20-40 см и двумя эллипсовидными клубнями около 2 см в диаметре. Листья узколинейные, шириной 4-10(15) мм, зеленые, тупо заостренные. Соцветие верхушечное, густое, колосовидное, многоцветковое, длиной 13-14 см и шириной 1,5-3 см. Прицветники с 1 жилкой, зеленые или по краю пурпурные. Цветки коричнево-пурпурные, с неприятным запахом. Листочки околоцветника длиной 4-9 мм, узколинейные. Губа длиной 4-6 мм, коричнево-пурпурная с оливковым оттенком, при основании беловатая с пурпурными крапинками. Шпорец остро-конический, согнутый, короче завязи. Плоды - сухие раскрывающиеся коробочки с многочисленными очень мелкими пылевидными семенами .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Атлантическая, Средняя, Восточная (центральные р-ны России, Украина и Прибалтика) Европа, Средиземноморье, Малая Азия, Кавказ . В Беларуси находится на северо-восточной границе ареала; встречается спорадически, преимущественно в южной части республики. Впервые отмечен в середине 19-го в. в Слуцком р-не , позже - в Копыльском, Брестском, Минском, Мозырском р-нах . В последние десятилетия отмечен в Буда-Кошелевском, Гродненском, Житковичском, Жлобинском, Кричевском, Лоевском, Мостов­ском, Мстиславском, Новогрудском, Пинском, Речицком, Столинском и Хойникском р-нах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Влажные и сырые луга (особенно пойменные) с низким и разреженным разнотравно-злаковым травостоем, окраины ключевых болот; растет преимущественно на карбонатных почвах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в конце мая-июне, плодоносит в июле - августе. Энтомофил. Размножение преимущественно семенное, очень редко вегетативное (при образовании второго клубня). Анемохор.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Большинство из ныне известных популяций занимают малые площади (1-3 м2) и представлены обычно несколькими экземплярами. В 1995 г. в Мостовском р-не (окрестности д. Лунно) было насчитано свыше 800 особей ятрышника клопоносного](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительно-мелиоративные работы, распашка лугов, пастьба скота, раннее сенокошение, применение ядохимикатов, гербицидов и минеральных удобрений, чрезмерные рекреационные нагрузки, закустаривание экотопов, приводящее к изменению режима освещения.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Находится под охраной в Национальном парке «Припятский», ботаническом заказнике «Чёрлёна» (Мостовский р-н). Необходимы ревизия известных местонахождений и постоянный контроль состояния популяций, организация заказников республиканского значения в Речицком и Мстиславском р-нах, где данный вид произрастает совместно с другими редкими видами, а также специализированного ботанического заказника в Жлобинском р-не; в местах роста следует запретить или ограничить антропогенное воздействие; рекомендуются периодическое сенокошение (1 раз в 3 года) и целевая оптимизация мест обитания (периодическая рубка кустарников).](*<- lang_ru;;	*);;
+		*);;
+	*);;

@@ -1,0 +1,75 @@
+Dribinskii_area<-concept_area;;
+Dribinskii_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Dribinskii_area=>nrel_administrative_center_of_the_area:Dribin;;
+Dribin<-concept_city;;
+
+//самая высокая точка
+Dribinskii_area=>nrel_highest_point:199_m;;
+199_m<-concept_number;;
+
+//площадь района
+Dribinskii_area=>nrel_area_of_the_district:767_km;;
+767_km<-concept_number;;
+
+//население района
+Dribinskii_area=>nrel_population_of_region:10132_m;;
+10132_m<-concept_number;;
+
+//используемые константы
+Dribinskii_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Дрибинский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Дрибинский район — административная единица в центре Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Dribinskii_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(исполком*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Здание местного исполкома — постройка с башней, часами и просторными коридорами.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Dribinskii_area;;
+Dribinskii_area => nrel_main_idtf:
+[Дрибинский район](* <-lang_ru;; *);
+[Dribinskii area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Dribin;;
+Dribin=> nrel_main_idtf:
+[Дрибин](* <-lang_ru;; *);
+[Dribin](* <- lang_en;; *);;
+
+sc_node_not_relation ->199_m;;
+199_m=> nrel_main_idtf:
+[199 м](* <-lang_ru;; *);
+[199 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->767_km;;
+767_km=> nrel_main_idtf:
+[767 км^2](* <-lang_ru;; *);
+[767 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->10132_m;;
+10132_m=> nrel_main_idtf:
+[10132 человек](* <-lang_ru;; *);
+[10132 m](* <- lang_en;; *);;

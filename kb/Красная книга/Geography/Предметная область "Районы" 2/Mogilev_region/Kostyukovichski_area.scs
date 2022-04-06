@@ -1,0 +1,75 @@
+Kostyukovichski_area<-concept_area;;
+Kostyukovichski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Kostyukovichski_area=>nrel_administrative_center_of_the_area:Kostyukovichi;;
+Kostyukovichi<-concept_city;;
+
+//самая высокая точка
+Kostyukovichski_area=>nrel_highest_point:234_m;;
+234_m<-concept_number;;
+
+//площадь района
+Kostyukovichski_area=>nrel_area_of_the_district:1494_km;;
+1494_km<-concept_number;;
+
+//население района
+Kostyukovichski_area=>nrel_population_of_region:23504_m;;
+23504_m<-concept_number;;
+
+//используемые константы
+Kostyukovichski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Костюковичский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Костюковичский район — административная единица в центре Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Kostyukovichski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Костюковичский район, район, село)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[В Костюковичском районе находится церковь Свято-Покровская в селе Гавриленко](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Kostyukovichski_area;;
+Kostyukovichski_area => nrel_main_idtf:
+[Костюковичский район](* <-lang_ru;; *);
+[Kostyukovichski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Kostyukovichi;;
+Kostyukovichi=> nrel_main_idtf:
+[Костюковичи](* <-lang_ru;; *);
+[Kostyukovichi](* <- lang_en;; *);;
+
+sc_node_not_relation ->234_m;;
+234_m=> nrel_main_idtf:
+[234 м](* <-lang_ru;; *);
+[234 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1494_km;;
+1494_km=> nrel_main_idtf:
+[1494 км^2](* <-lang_ru;; *);
+[1494 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->23504_m;;
+23504_m=> nrel_main_idtf:
+[23504 человек](* <-lang_ru;; *);
+[23504 m](* <- lang_en;; *);;

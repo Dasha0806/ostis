@@ -1,0 +1,163 @@
+concept_hondaella_caperata => nrel_main_idtf:
+[хондэлла морщинистая](*<-lang_ru;;*);
+[hondaella caperata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_hondaella_caperata;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_hondaella_caperata;;
+
+//пояснения
+concept_hondaella_caperata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, распространенный преимущественно в субтропиках, находящийся в России на северной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Растения средних размеров, в густых дерновинках; стебель простертый, до 2 см дл. Двудомный, спорофиты с территории России неизвестны. Размножается вегетативно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известен только на юге Дальнего Востока из 4 местонахождений: Еврейская АО, заповедник «Бастак» (1); Хабаровский край, Большехехцирский заповедник (2); Приморский край: р. Змеиная, приток р. Бикин (3, 4) и заповедник «Кедровая падь» (4). Вне России - Индия, Таиланд, Китай, Япония, Корея (4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет в хвойно-широколиственных, широколиственных, реже хвойных лесах, на стволах дуба монгольского, клёна мелколистного, липы амурской и других пород деревьев, а также на гумусированных участках затененных скал.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. На скалах площадь покрытия около 1 м2; на стволах деревьев растет небольшими чистыми дерновинками или образует смешанные дерновинки с другими видами мхов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Стабильное.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Слабая конкурентная способность, связанная в произрастанием на границе ареала; отсутствие полового размножения; рубки леса и лесные пожары.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красную книгу Хабаровского края (1999), а также в Перечень объектов..., занесенных в Красную книгу Приморского края (2002). Три из четырех известных в России местонахождений находятся на территориях заповедников «Бастак», Большехехцирский и «Кедровая падь».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций. Создание в ближайшее время заказника, запланированного в нижней части басс. р. Бикин (5).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hondaella_caperata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_hondaella_caperata;;
+						concept_hondaella_caperata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_hondaella_caperata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_hondaella_caperata <= nrel_inclusion: concept_3_protection_category;;

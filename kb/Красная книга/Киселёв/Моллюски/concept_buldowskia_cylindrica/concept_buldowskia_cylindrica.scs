@@ -1,0 +1,151 @@
+concept_buldowskia_cylindrica => nrel_main_idtf: [цилиндрическая булдовския](*<- lang_ru;;*); [buldowskia cylindrica](*<- lang_lat;;*);;
+
+concept_buldowskia_cylindrica  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (цилиндрическая булдовския)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_buldowskia_cylindrica.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_buldowskia_cylindrica <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_buldowskia_cylindrica ;;
+concept_species -> concept_buldowskia_cylindrica ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_buldowskia_cylindrica ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_buldowskia_cylindrica ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1973 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_buldowskia_cylindrica  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина удлиненно-четырехугольная, сильно вздутая, средних размеров. Спинной и брюшной края раковины параллельны друг другу, задний край оттянут в почти прямой угол. Самая задняя точка раковины лежит заметно ниже середины ее высоты. Макушки широкие, сдвинуты к переднему краю. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из нижнего течения р. Кневичанка (Приморский край). Типовое местонахождение - р. Кневичанка ниже оз. Лосиное. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Моллюски обитают в стоячих и слабо проточных водоемах на заиленном или илистом грунте. Способны глубоко зарываться в грунт. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В пределах типового местонахождения из-за сильного загрязнения среды моллюски исчезли. Вероятно сохранились отдельные особи в незагрязненных протоках р. Кневичанка. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Распространение вида лимитируется чистотой воды и характером грунта. Загрязнение или обмеление рек ведет к полному исчезновению моллюсков. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Специальные меры охраны не разработаны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_buldowskia_cylindrica  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_buldowskia_cylindrica  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; black;;
+	*);;
+//размеры и вес
+concept_buldowskia_cylindrica  <= nrel_inclusion: 
+	[10-14 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([10 см] => [14 см]);;	
+	*);
+	[0,060-0,100 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,060 кг] => [0,100 кг]);;	
+	*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[14 см] <- length_of_body; exact_value;;
+	[14 см] -> .centimeter: 14 (* <- number;;*);;
+	[0,060 кг] <- weight; exact_value;;
+	[0,060 кг] -> .kilogram: 0.060 (* <- number;;*);;
+	[0,120 кг] <- weight; exact_value;;
+	[0,120 кг] -> .kilogram: 0.120 (* <- number;;*);;
+//категория охраны и количество
+concept_buldowskia_cylindrica  <= nrel_inclusion: concept_1_protection_category;;
+concept_buldowskia_cylindrica  <= nrel_strength: [60 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 60 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

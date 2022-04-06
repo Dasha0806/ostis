@@ -1,0 +1,146 @@
+concept_chlaenius_sulcicollis=> nrel_main_idtf:
+[бороздчатый слизнеед](*<-lang_ru;;*);
+[chlaenius sulcicollis](*<-lang_lat;;*);;
+
+concept_species -> concept_chlaenius_sulcicollis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_chlaenius_sulcicollis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_chlaenius_sulcicollis;;
+	-> rrel_number_of_year: 1798 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_chlaenius_sulcicollis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Предпочитает заболоченные луга в пойме рек, а также низинные болота и болота переходного типа.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гигрофильный вид, с весенним типом размножения. Наибольшая активность отмечена в конце мая - начале июня. Биология изучена слабо.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок, приурочен к угрожаемым биоценозам.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение мест обитания в связи с осушением низинных болот и проведением хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Выявление новых мест обитания вида и их охрана. Соблюдение порядка ведения хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евро-обский вид. Известен из Поозерья, с территории Беловежской пущи, Дрогичинского р-на, окр. Могилева . Встречается редко и спорадично.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 13-15 мм. Верх черный со свинцовым блеском. Голова без зеленого блеска. Усики и ноги черные. Переднеспинка по бокам валикообразно окаймлена, с тремя широкими продольными вдавлениями, из которых боковые кпереди укорочены. Отросток переднегруди не окаймлен, пунктирован. Все промежутки надкрылий более или менее одинаково густо точечные и покрыты тонкими волосками, шов не приподнят и не блестящий.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_chlaenius_sulcicollis <= nrel_spread: ... 
+	(*
+	-> Poozerie_district; Mogilev_district; Belovezhskaya_Pushcha_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_chlaenius_sulcicollis;;
+concept_chlaenius_sulcicollis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black; frosted;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; frosted;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; lead; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; hairy; black ;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_chlaenius_sulcicollis <= nrel_inclusion: 
+	13_15_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (13_mm => 15_mm);;	
+	*);;
+	13_mm <- length_of_body; exact_value;;
+	13_mm -> .millimeter: 13 (* <- number;;*);;
+	15_mm <- length_of_body; exact_value;;
+	15_mm -> .millimeter: 15 (* <- number;;*);;	
+
+concept_chlaenius_sulcicollis <= nrel_inclusion: concept_2_protection_category;;

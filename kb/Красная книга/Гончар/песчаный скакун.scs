@@ -1,0 +1,138 @@
+concept_cicindela_arenaria_viennensis_schrank=> nrel_main_idtf:
+[песчаный скакун](*<-lang_ru;;*);
+[cicindela arenaria viennensis schrank](*<-lang_lat;;*);;
+
+concept_species -> concept_cicindela_arenaria_viennensis_schrank;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_cicindela_arenaria_viennensis_schrank;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cicindela_arenaria_viennensis_schrank;;
+	-> rrel_number_of_year: 1781 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_cicindela_arenaria_viennensis_schrank <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Сухие сыпучие пески по берегам водоемов, песчаные карьеры, насыпи.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Жуки активны в июне-августе. Питаются муравьями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В Европе численность вида сокращается. В Беларуси встречается локально. В локальных популяциях на небольшой территории (в пределах 1 га) может размножаться в массе.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Загрязнение и рекреационное использование мест проживания вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Организация заказников в известных местах проживания вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: От Средней и Южной Европы до Западной Сибири. Встречается в южных районах Беларуси. Известен из Солигорского, Пинского, Осиповичского и Березовского р-нов.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Верх жука (длина 6,5-10 мм) бронзово-зеленый, матовый. Надкрылья с грубой пунктировкой, двумя тонкими изогнутыми белыми перевязями и вершинным пятном. Середина переднеспинки с редкими белыми волосками.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_cicindela_arenaria_viennensis_schrank <= nrel_spread: ... 
+	(*
+	-> Soligorsk_district; Pinsk_district; Osipovichi_district; Berezovka_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_cicindela_arenaria_viennensis_schrank;;
+concept_cicindela_arenaria_viennensis_schrank => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; sparse; wavy;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; bronze; frosted;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; raw; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; green;;
+	*);;
+
+concept_cicindela_arenaria_viennensis_schrank <= nrel_inclusion: 
+	6_10_mm
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (6_mm => 10_mm);;	
+	*);;
+	6_mm <- length_of_body; exact_value;;
+	6_mm -> .millimeter: 6 (* <- number;;*);;
+	10_mm <- length_of_body; exact_value;;
+	10_mm -> .millimeter: 10 (* <- number;;*);;	
+
+concept_cicindela_arenaria_viennensis_schrank <= nrel_inclusion: concept_4_protection_category;;

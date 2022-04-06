@@ -1,0 +1,166 @@
+concept_oxycoccus_microcarpus_turcz_ex_rupr => nrel_main_idtf: [клюква мелкоплодная](*<- lang_ru;;*); [oxycoccus microcarpus turcz. ex rupr.](*<- lang_lat;;*); [журавiны дробнаплодныя](*<- lang_bel;;*);;
+concept_oxycoccus_microcarpus_turcz_ex_rupr => nrel_idtf: [журавiны дробнаплодныя](*<- lang_bel;;*);;
+
+concept_species -> concept_oxycoccus_microcarpus_turcz_ex_rupr;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_oxycoccus_microcarpus_turcz_ex_rupr;;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (клюква мелкоплодная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_oxycoccus_microcarpus_turcz_ex_rupr.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_oxycoccus_microcarpus_turcz_ex_rupr;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу Беларуси включен впервые. Охраняется в Украине.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Вечнозеленый кустарничек высотой 10-30 см с тонкими нитевидными стелющимися стеблями. Листья очередные, кожистые, мелкие (длиной 3-6 мм), продолговато-яйцевидные, заостренные, с завороченными краями, сверху темно-зеленые, снизу сизые от воскового налета. Цветки одиночные, на голых длинных цветоножках; венчик глубокочетырехраздельный с розово-красными отогнутыми назад лепестками; прицветники находятся ниже середины цветоножек. Плод – округлая мелкая (диаметром 5-8 мм) темно-красная ягода.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Восточная Европа, Западная и Восточная Сибирь, Дальний Восток (Камчатка, Сахалин), полуостров Корея . Тундрово-таежный вид, находящийся в Беларуси вблизи южной границы ареала. В настоящее время достоверно известен в Столинском р-не (болото Морочно) Брестской обл.  (это местонахождение указывалось и в 1949 г. С. Кульчинским ), в Верхнедвинском, Витебском, Глубокском, Городокском, Лепельском, Миорском, Полоцком, Россонском, Шумилинском р-нах Витебской обл., в Свислочским р-не Гродненской обл., в Борисовском, Мядельском и Слуцком р-нах Минской обл., в Белыничском и Кличевском р-нах Могилевской обл. . Ранее указывался для Рогачевского р-на Гомельской обл. (болото Брусничное), Кличевского (болота Ваньковщина, Ореховка и Сосновка), Кировского и Горецкого р-нов Могилевской обл. и окрестностей Минска .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Верховые болота.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне-июле. Энтомофил. Плодоносит в августе – сентябре. Размножение вегетативное и семенное. Барохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Встречается микрогруппировками среди клюквы болотной.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Осушение и освоение болот (в первую очередь торфоразработки), вытаптывание при сборе клюквы болотной.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Произрастает на территориях национальных парков “Беловежская пуща” и “Нарочанский”, Березинского биосферного заповедника, ландшафтного заказника “Красный Бор”. Необходимы периодический контроль состояния известных популяций, поиск новых мест произрастания и, при необходимости, организация их охраны, предупреждение в местах роста клюквы мелкоплодной негативных антропогенных воздействий, ограничение рекреационных нагрузок на болотные массивы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Stolin_district;;->Verkhnedvinsk_district;;->Vitebsk_district;;->Glubokoye_district;;->Gorodok_district;;->Lepel_district;;->Miory_district;;->Polotsk_district;;->Rosson_district;;->Shumilino_district;;->Svisloch_district;;->Borisov_district;;->Myadel_district;;->Slutsky_district;;->Belynichi_district;;->Klichev_district;;->Rogachev_district;;->Klichev_district;;->Kirovskiy_district;;->Gorki_district;;
+		*);;
+*);;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; thin;threadlike;prostrate;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; another;leathery;small;oblong_ovate;pointed;navorochenny_edge;dark_green;bluish;;
+*);
+...
+(*
+<= nrel_inclusion: flower; single;bare_long_pedicel;whisk_globaliseringens_with_pink_and_red_petals;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; rounded;small;dark_red;berry;;
+*);;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr <= nrel_inclusion: 
+[10-30]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([10 см] => [30 см]);; 
+*);;
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr <= nrel_inclusion: 
+[0.3-0.6 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([0.3 см] => [0.6 см]);; 
+*);;
+
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+[30 см] <- length_of_inflorscence; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+[0.3 см] <- length_of_inflorscence; exact_value;;
+[0.3 см] -> .centimeter: 0.3 (* <- number;;*);;
+[0.6 см] <- length_of_inflorscence; exact_value;;
+[0.6 см] -> .centimeter: 0.6 (* <- number;;*);;
+ 
+
+concept_oxycoccus_microcarpus_turcz_ex_rupr <= nrel_inclusion: concept_3_protection_category;;

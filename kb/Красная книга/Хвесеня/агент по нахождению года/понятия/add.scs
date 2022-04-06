@@ -1,0 +1,129 @@
+
+sc_node_norole_relation -> nrel_creeate;;
+
+ nrel_creeate => nrel_main_idtf: [год основания*] (* <- lang_ru;; *);
+				     [year of foundation*] (* <- lang_en;; *);;
+
+ nrel_creeate => nrel_first_domain: concept_protected_area;;
+ nrel_creeate => nrel_second_domain: value;;
+
+ nrel_creeate <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(год основания*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Год основания* –  это единица летосчисления, промежуток времени, равный периоду обращения Земли вокруг Солнца и содержащий двенадцать календарных месяцев, отчисляемых с 1 января, а также цифровое обозначение такого промежутка.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_number;
+                                concept_protected_area
+                            };;
+        *);;
+
+ nrel_creeate <- rrel_key_sc_element:
+        ...
+        (*
+            <- rrel_axiom:
+                subject_domain_of_protected_areas (*
+                    <-subject_domain;;
+                *);;
+            
+        *);;
+
+ nrel_creeate <- binary_relation;;
+ nrel_creeate <- antireflexive_relation;;
+ nrel_creeate <- antitransitive_relation;;
+ nrel_creeate <- antisymmetric_relation;;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: nrel_creeate;;
+
+babinec=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1979];;
+ *);;
+
+belayarus=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[2015];;
+ *);;
+
+belovezhskaya_pusha=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1993];;
+ *);;
+
+borisovski=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[2014];;
+ *);;
+
+borskiy=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1979];;
+ *);;
+
+budo_kosh=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1988];;
+ *);;
+
+bukchanskiy=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1979];;
+ *);;
+
+buslovka=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1997];;
+ *);;
+
+volmyanskiy=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[2001];;
+ *);;
+
+glebkovka=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[2001];;
+ *);;
+
+zapolskiy=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[1979];;
+ *);;
+
+omelyanskiy=>nrel_creeate:
+...						
+(*
+<-concept_number;;
+->[2007];;
+ *);;

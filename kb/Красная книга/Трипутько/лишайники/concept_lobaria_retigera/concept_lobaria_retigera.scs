@@ -1,0 +1,128 @@
+
+concept_lobaria_retigera=> nrel_main_idtf: [лобария сетчатая](*<- lang_ru;;*); 
+[lobaria retigera](*<- lang_lat;;*); 
+[Лобараў сеткаватая](*<- lang_bel;;*);;
+
+concept_lobaria_retigera <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лобария сетчатая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lobaria_retigera.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_lichenas -> concept_lobaria_retigera;;
+concept_species -> concept_lobaria_retigera;;
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_lobaria_retigera;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_lobaria_retigera;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1988 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lobaria_retigera <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Листоватый лишайник, содержащий цианобактерию Nostoc. Слоевище гетеромерное, неправильно розетковидное, широколопастное, 15-25 см в диам. Лопасти слабо разветвленные, с небольшими округлыми пазухами, на концах широко округлые, дольчато-вырезанные. Верхняя поверхность желтовато-оливковая или коричневая, более или менее блестящая, сетчато-ребристая, мелкоямчатая (ямкам соответствуют вздутия на нижней стороне), по ребрам с белыми псевдоцифеллами и изидиями; нижняя --- гладкая, на вздутиях желтовато-коричневая, в желобках между вздутиями синевато-черно-опушенная. Апотеции леканоровые, развиваются редко. Размножается вегетативно, реже спорами. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы: Вырубки горных долинных лесов, пожары, прокладка дорог, загрязнение атмосферы. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны: Вид был включен в Красную книгу РСФСР (1988). Вид занесен в Красные книги Республики Алтай, Республики Тыва, Республики Хакасии, Кемеровской обл., Усть-Ордынской АО, Республики Бурятия, Хабаровского края, Читинской обл., Сахалинской обл. Охраняется на территориях заповедников: Алтайски, «Байкало-Ленский», Байкальский, «Бастак», Большехехцирский, «Витимский», Зейский, «Катунский», «Кедровая падь», «Комсомольский», Лазовский, «Саяно-Шушенский» ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны: Контроль за состоянием известных популяций. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид был занесен в Красную книгу РСФСР (1988).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_lobaria_retigera <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+ concept_lobaria_retigera => nrel_part: 
+	...
+ 	(*
+ 	<= nrel_inclusion: concept_thallus; red;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: apothecia; red;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: concept_disputes; grey;;
+ 	*);;
+
+concept_lobaria_retigera <= nrel_reproduction: concept_disputes;;
+
+//размеры и вес
+concept_lobaria_retigera <= nrel_inclusion: 
+	[0-25 см]
+	(*
+	<- interval_value;;
+	<- length_of_diam;;
+	=> nrel_measurement: ([0 см] => [25 см]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[25 см] <- length_of_body; exact_value;;
+	[25 см] -> .centimeter: 25 (* <- number;;*);;
+
+//категория охраны и количество
+concept_lobaria_retigera <= nrel_inclusion: concept_3_protection_category;;
+concept_lobaria_retigera <= nrel_strength: [5000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 5000 (* <- number;;*);;
+		*);;	
+	*);;
+

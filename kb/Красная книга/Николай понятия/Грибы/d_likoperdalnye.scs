@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_likoperdalnye;;
+concept_likoperdalnye => nrel_main_idtf:
+[ликопердальные](*<-lang_ru;;*);
+[likoperdalnye](*<-lang_en;;*);;
+
+//
+concept_likoperdalnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(ликопердальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий грибы с шаровидной, грушевидной, сливовидной, булавовидной или же звёздообразной формой плодового тела, которое может быть или надземным, или частично выступающим из почвы, или сидячим, или с ножкой, покрытым двухслойным перидием с базидиальным, а не сумчатым и скрытым внутрь плодового тела гименофором](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_likoperdalnye => nrel_inclusion: concept_dozhdevikovye;;

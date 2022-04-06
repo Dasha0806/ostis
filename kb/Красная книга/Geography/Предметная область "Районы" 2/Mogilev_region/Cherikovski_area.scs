@@ -1,0 +1,61 @@
+Cherikovski_area<-concept_area;;
+Cherikovski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Cherikovski_area=>nrel_administrative_center_of_the_area:Cherikov;;
+Cherikov<-concept_city;;
+
+//самая высокая точка
+Cherikovski_area=>nrel_highest_point:198_m;;
+198_m<-concept_number;;
+
+//площадь района
+Cherikovski_area=>nrel_area_of_the_district:1020_km;;
+1020_km<-concept_number;;
+
+//население района
+Cherikovski_area=>nrel_population_of_region:13530_m;;
+13530_m<-concept_number;;
+
+//используемые константы
+Cherikovski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Чериковский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Чериковский район — административная единица на севере Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+sc_node_not_relation -> Cherikovski_area;;
+Cherikovski_area => nrel_main_idtf:
+[Чериковский район](* <-lang_ru;; *);
+[Cherikovski_area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Cherikov;;
+Cherikov=> nrel_main_idtf:
+[Чериков](* <-lang_ru;; *);
+[Cherikov](* <- lang_en;; *);;
+
+sc_node_not_relation ->198_m;;
+198_m=> nrel_main_idtf:
+[198 м](* <-lang_ru;; *);
+[198 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1020_km;;
+1020_km=> nrel_main_idtf:
+[1020 км^2](* <-lang_ru;; *);
+[1020 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->13530_m;;
+13530_m=> nrel_main_idtf:
+[13530 человек](* <-lang_ru;; *);
+[13530 m](* <- lang_en;; *);;

@@ -1,0 +1,123 @@
+concept_egretta_eulophotes=> nrel_main_idtf: [желтоклювая цапля](*<- lang_ru;;*); 
+[egretta eulophotes](*<- lang_lat;;*); 
+[желтоклювая чапля](*<- lang_bel;;*);;
+
+concept_egretta_eulophotes <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (желтоклювая цапля)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_egretta_eulophotes.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_egretta_eulophotes;;
+concept_species -> concept_egretta_eulophotes;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_egretta_eulophotes;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_egretta_eulophotes;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1773 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_egretta_eulophotes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение:   Возможно, гнездится на побережье и морских о-вах юж. Приморья, где регулярно встречается в период миграций и летом [1-8]. На сев. побережье Приморья этот вид крайне редок [9,10]. На о. Сахалин лишь одна цапля встречена летом [11]. Вне России гнездится у побережья Кореи на о-вах Чин, Ран, Согам, Тегам, у побережья Китая на о-вах Луйшунь, Пейтако, мелких о-вах у провинции Цзянсу и в Сянгане [12,13]. Возможно гнездилась в других р-нах Китая и Корейского п-ова [14-16], но свежих сведений об этом нет. Отмечалась в Японии. К настоящему времени за пределами России гнездовой ареал вида, по-видимому, сократился, но причины этого неизвестны. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:  На морском побережье - скалы, берега солоноватых лагун и озер, устья рек. Иногда этот вид наблюдали на низкотравных болотистых лугах близ побережья. Селится на морских скалистых о-вах. На о. Чечжудо у Корейского п-ова желтоклювая цапля гнездилась совместно с чернохвостой чайкой, буревестником и бакланами ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:   В настоящее время численность желтоклювой цапли ниже, чем в первой половине XX в., но нет оснований считать, что она снижается в последние годы. В Приморье обычно отмечали одиночек, реже пары и изредка - группы от 3 до 9 особей. До настоящего времени места обитания вида в крае были мало изменены деятельностью человека, но в ближайшие годы возможно снижение численности цапли, т.к. в летний период почти не остается участков побережья, недоступных для отдыхающих.. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Занесена в Красный список МСОП-96, Приложение соглашения, заключенного Россией с Республикой Корея об охране мигрирующих птиц. Необходимо расширение территории Дальневосточного государственного морского заповедника, повышение статуса районного заказника на побережье зал. Ольги, проведение разъяснительной работы с населением по вопросам охраны вида.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_egretta_eulophotes <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_egretta_eulophotes => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; white;;
+	*);;
+//размеры и вес
+concept_egretta_eulophotes <= nrel_inclusion: 
+	[0-68 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [68 см]);;	
+	*);
+	[0-2 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [2 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[68 см] <- length_of_body; exact_value;;
+	[68 см] -> .centimeter: 68 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[2 кг] <- weight; exact_value;;
+	[2 кг] -> .kilogram: 2 (* <- number;;*);;
+//категория охраны и количество
+concept_egretta_eulophotes <= nrel_inclusion: concept_1_protection_category;;
+concept_egretta_eulophotes <= nrel_strength: [20 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 20 (* <- number;;*);;
+		*);;	
+	*);;
+

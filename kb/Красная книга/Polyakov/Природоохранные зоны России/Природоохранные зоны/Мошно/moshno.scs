@@ -1,0 +1,78 @@
+sc_node_not_relation -> moshno;;
+
+moshno => nrel_main_idtf: [заказник Мошно] (* <- lang_ru;; *);
+				     [Moshno] (* <- lang_en;; *);;
+
+moshno <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Мошно)](*<-lang_ru;;*);
+		[Pic. (Moshno)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+moshno<-concept_sanctuary;;
+
+moshno <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Мошно, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Мошно был создан в 1979 году для охраны природных мест произрастания клюквы]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							moshno=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+moshno <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Мошно, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Мошно составляет 398,76 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							moshno=>nrel_square:[398,76 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[398,76](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+moshno => nrel_area_location: Vitebsk_area;;
+moshno => nrel_flora: ...(*
+<-Oxycoccus;;*);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: moshno;;

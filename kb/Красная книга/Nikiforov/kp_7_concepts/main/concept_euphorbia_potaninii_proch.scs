@@ -1,0 +1,45 @@
+concept_euphorbia_potaninii_proch => nrel_main_idtf:
+[Молочай Потанина](*<-lang_ru;;*);
+[Euphorbia potaninii Proch](*<-lang_lat;;*);;
+
+concept_species -> concept_euphorbia_potaninii_proch;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_euphorbia_potaninii_proch;;
+
+Red_list_ru -> concept_euphorbia_potaninii_proch;;
+
+//пояснения
+concept_euphorbia_potaninii_proch <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Меры не принимались.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается на юге Республики Тыва. Вид отмечен в Тес-Хемском р-не (басс. р. Холу, пос. Ак-Чары) , Эрзинском р-не (басс. р. Тэс), Монгун-Тайгинском р-не (верх. р. Барлык; долина р. Каргы в 5 км ниже п. Мугур-Аксы, ур. Хадынныг-Доргун), Овюрском р-не (20 км от пос. Саглы на запад, дол. р. Терегтиг). За пределами России произрастает в Монголии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение 15-30 см выс., с толстым стержневым древеснеющим корнем и с плотным многоглавым каудексом. Цветет во второй половине июня. Семена созревают в конце июля, но плоды завязываются редко.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

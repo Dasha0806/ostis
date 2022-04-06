@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_peltigerovye;;
+concept_peltigerovye => nrel_main_idtf:
+[пелтигеровые](*<-lang_ru;;*);
+[peltigerovye](*<-lang_en;;*);;
+
+//
+concept_peltigerovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пелтигеровые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка пелтигеральные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_peltigeralnye;;
+	*);;	
+*);;
+

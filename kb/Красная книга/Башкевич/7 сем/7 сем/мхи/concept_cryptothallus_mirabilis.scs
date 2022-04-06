@@ -1,0 +1,163 @@
+concept_cryptothallus_mirabilis => nrel_main_idtf:
+[криптоталлус удивительный](*<-lang_ru;;*);
+[cryptothallus mirabilis](*<-lang_lat;;*);;
+
+
+concept_species -> concept_cryptothallus_mirabilis;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_cryptothallus_mirabilis;;
+
+//пояснения
+concept_cryptothallus_mirabilis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 б, в, г - редкий вид, имеющий узкую экологическую приуроченность и находящийся в России на восточной границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Белесый, бесхлорофилльный, микотрофный двудомный слоевищный печеночник, 10--35 мм дл., 0,7-2,5 мм шир., 0,5-1 мм толщ. Слоевище без срединного ребра. Мужские побеги более мелкие, растут вместе с женскими. Коробочка узкоцилиндрическая, обычно вскрывается 4 швами, при этом створки на верхушке остаются сросшимися. Споры в зрелом состоянии в тетрадах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Известен из Ленинградской и Мурманской обл. и Республики Карелия, где собирался в 30--35 км к сев.-востоку от г. Сортавала (1). Большинство находок известно из Ленинградской обл., где вид приводился с Карельского перешейка (Выборгский р-н), близ д. Кировское (бывш. Korpikyula) и Первомайское (бывш. Kivennapa) (2) и на болотном массиве Ламмин-Суо (1), а в 2005 г. выявлен в значительном количестве на окраине верхового болота в окр. пос. Дивенская на границе Лужского и Гатчинского р-нов Ленинградской обл. (4).За пределами России распространен в Европе и Гренландии (1).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Микотрофный вид, обитающий, как правило, под моховой дерниной, появляющийся на дневной поверхности только в период спороношения. Произрастает обычно в условиях значительного увлажнения под непересыхающими дернинами мезотрофных сфагнов, видов Mnium, Calliergonella cuspidata, иногда под Pleurozium schreberi, Hylocomium splendens и др. Не встречается в олиготрофных условиях и ниже уровня стояния весенних вод. Чаще всего растет близ Betula pubescens, редко - около хвойных пород (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Обычно вид встречается отдельными дерновинками. Наибольшая популяция вида выявлена (несколько де- сятков дерновинок на площади около 10-15 м2) на окраине верхового болота в окр. пос. Дивенская на границе Лужского и Гатчинского р-нов Ленинградской обл. (4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Повторно в местах литературных указаний в Ленинградской и Мурманской обл. вид выявить не удалось.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Влажность и кислотность субстрата. Сильное закисление или защелачивание, оводнение или осушение местообитаний (3). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу Мурманской обл. (2003) и Красную книгу природы Ленинградской обл. (2000).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Организация охраны известных местообитаний вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cryptothallus_mirabilis <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_cryptothallus_mirabilis;;
+						concept_cryptothallus_mirabilis => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_cryptothallus_mirabilis <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_cryptothallus_mirabilis <= nrel_inclusion: concept_3_protection_category;;

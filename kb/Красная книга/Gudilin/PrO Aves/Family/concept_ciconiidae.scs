@@ -1,0 +1,22 @@
+concept_ciconiidae => nrel_main_idtf:
+[аистовые](*<-lang_ru;;*);
+[ciconiidae](*<-lang_lat;;*);;
+
+concept_family -> concept_ciconiidae;;
+
+concept_ciconiidae => nrel_inclusion: concept_ciconia_nigra;;
+
+//определение и пояснения
+concept_ciconiidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Общими признаками семейства являются длинные ноги, длинная гибкая шея, а также длинный, конический клюв. Крылья, как правило, широкие и глубоко расчленённые. Все аистовые являются хорошими летунами, умело использующими термики для экономии энергии в полёте. Многие виды ежегодно совершают далёкие перелёты.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_ciconiidae;;

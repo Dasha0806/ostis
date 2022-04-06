@@ -1,0 +1,45 @@
+concept_cephalaria_litvinovii => nrel_main_idtf:
+[Головчатка Литвинова](*<-lang_ru;;*);
+[Cephalaria litvinovii](*<-lang_lat;;*);;
+
+concept_species -> concept_cephalaria_litvinovii;;
+
+
+Red_list_ru -> concept_cephalaria_litvinovii;;
+
+//пояснения
+concept_cephalaria_litvinovii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984), РСФСР (1988). Вид включен в Красные книги Белгородской (2005), Тамбовской (2002), Пензенской (2002) и Саратовской (1996), Ульяновской (2005) обл. Вид охраняется в Хопёрском заповеднике.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается на северо-западе Воронежской (Новохопёрский р-н по р. Савале, Подгоренский р- н у Агафоново) обл. и крайнем юге Тамбовской обл. (Жердевский р-н по склонам р. Савалы), а также в зап. р-нах Пензенской обл., в Ульяновской и Саратовской обл.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение высотой до 2 м. Размножение семенное и вегетативное. Цветет в июле-августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_cephalaria_litvinovii <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_zvezdovnikovyye;;
+concept_zvezdovnikovyye=> nrel_main_idtf:
+[звездовниковые](*<-lang_ru;;*);
+[zvezdovnikovyye](*<-lang_en;;*);;
+
+//
+concept_zvezdovnikovyye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(звездовниковые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка веселковые](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_veselkovye;;
+	*);;	
+*);;
+
+//
+concept_veselkovye => nrel_inclusion: concept_zvezdovnikovyye;;

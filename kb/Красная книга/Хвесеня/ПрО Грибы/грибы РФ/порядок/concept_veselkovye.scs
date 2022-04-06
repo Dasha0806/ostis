@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_veselkovye;;
+concept_veselkovye => nrel_main_idtf:
+[веселковые](*<-lang_ru;;*);
+[veselkovye](*<-lang_en;;*);;
+
+//
+concept_veselkovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(веселковые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидимиоцеты ](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	->concept_basidiomycetes;;
+	*);;	
+*);;
+concept_basidiomycetes => nrel_inclusion: concept_veselkovye;;

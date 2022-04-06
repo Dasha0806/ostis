@@ -1,0 +1,123 @@
+concept_pseudanodonta_complanata => nrel_main_idtf: [узкая беззубка](*<- lang_ru;;*); [pseudanodonta complanata](*<- lang_lat;;*); [вузкая бяззубка](*<- lang_bel;;*);;
+concept_pseudanodonta_complanata => nrel_idtf: [вузкая бяззубка](*<- lang_bel;;*);;
+
+concept_pseudanodonta_complanata <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (узкая беззубка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_pseudanodonta_complanata.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_bivalve -> concept_pseudanodonta_complanata;;
+concept_species -> concept_pseudanodonta_complanata;;
+subject_domain_of_bivalve -> rrel_not_maximum_studied_object_class: concept_pseudanodonta_complanata;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pseudanodonta_complanata;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1835 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_unio_crassus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Обладает международным охранным статусом в соответствии с категорией LR/nt (IUCN). Вид включен в Красную книгу Польши (категория EN).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Обитает в чистых реках, глубоководных зонах литорали озер. Предпочитает песчаное дно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Пресноводный двустворчатый моллюск. Малоподвижен и большую часть жизни проводит, зарывшись в донные осадки. Моллюски локализуются в углублениях дна водоемов, где с током воды для них обеспечивается поступление взвешенной в воде пищи.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Необходима дополнительная информация о численности и распространении данного вида в Беларуси. После 1985 г. на территории республики находки не подтверждались.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вид чувствителен к неблагоприятному воздействию загрязнений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Не допускать загрязнения водоемов и проведения мелиоративных мероприятий в местах обитания вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Общее распространение: Западная Европа. В Беларуси вид обнаружен в озерах Минской обл. (Нарочь, Мястро, Баторино) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина тонкостенная, овальная, удлиненная и очень сжатая. Спинной край раковины прямой, слегка возвышающийся над макушкой, а брюшной - закругленный. Задний и передний края раковины клиновидные, причем задний - более широкий.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//размеры и вес
+concept_pseudanodonta_complanata <= nrel_inclusion: 
+	[0.50-0.60 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.50 см] => [0.60 см]);;	
+	*);;
+	
+	[0.50 см] <- length_of_body; exact_value;;
+	[0.50 см] -> .centimeter: 0.50 (* <- number;;*);;
+	[0.60 см] <- length_of_body; exact_value;;
+	[0.60 см] -> .centimeter: 0.60 (* <- number;;*);;
+concept_pseudanodonta_complanata <= nrel_inclusion: concept_2_protection_category;;
+
+

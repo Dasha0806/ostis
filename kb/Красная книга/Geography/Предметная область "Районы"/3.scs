@@ -1,0 +1,48 @@
+concept_country=>nrel_main_idtf:[страна] (* <- lang_ru;; *);;
+concept_country=>nrel_identifier:[множество стран] (* <- lang_ru;; *);;
+concept_country=>nrel_identifier:[country] (* <- lang_en;; *);;
+
+//используемые константы
+concept_country<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_territory;;
+->nrel_border;;
+*);;
+*);;
+concept_country=> nrel_main_idtf: [Опр.(страна)]  (* <- lang_ru;; *);;
+concept_country<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Страна - территория, имеющая политические, физико-географические, культурные или исторические границы, которые могут быть как четко определенными и зафиксированными, так и размытыми.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_country <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(страна)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Выделяют политические, физико-географические, культурные и исторические страны.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_country <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(страна, территория, управление*, государство)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Страна - территория, имеющая собственное государственное управление или управляемая другим государством.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

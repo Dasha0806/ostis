@@ -1,0 +1,75 @@
+Slutski_area<-concept_area;;
+Slutski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Slutski_area=>nrel_administrative_center_of_the_area:Slyck;;
+Slyck<-concept_city;;
+
+//самая высокая точка
+Slutski_area=>nrel_highest_point:212_m;;
+212_m<-concept_number;;
+
+//площадь района
+Slutski_area=>nrel_area_of_the_district:1821_km;;
+1821_km<-concept_number;;
+
+//население района
+Slutski_area=>nrel_population_of_region:91059_m;;
+91059_m<-concept_number;;
+
+//используемые константы
+Slutski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Слуцкий район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Слуцкий район — административная единица на юге Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Slutski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, территория)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится собор во имя Св. Арх. Михаила ](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Slutski_area;;
+Slutski_area => nrel_main_idtf:
+[Слуцкий район](* <-lang_ru;; *);
+[Slutski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Slyck;;
+Slyck=> nrel_main_idtf:
+[Слуцк](* <-lang_ru;; *);
+[Slyck](* <- lang_en;; *);;
+
+sc_node_not_relation ->212_m;;
+212_m=> nrel_main_idtf:
+[212 м](* <-lang_ru;; *);
+[212 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1821_km;;
+1821_km=> nrel_main_idtf:
+[1821 км^2](* <-lang_ru;; *);
+[1821 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->91059_m;;
+91059_m=> nrel_main_idtf:
+[91059 человек](* <-lang_ru;; *);
+[91059 m](* <- lang_en;; *);;

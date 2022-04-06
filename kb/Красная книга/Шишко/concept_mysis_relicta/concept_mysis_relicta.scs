@@ -1,0 +1,144 @@
+concept_mysis_relicta=> nrel_main_idtf: [реликтовая мизида](*<- lang_ru;;*); [mysis relicta loven](*<- lang_lat;;*); [рэлiктавая мiзiда](*<- lang_bel;;*);;
+concept_mysis_relicta => nrel_idtf: [рэлiктавая мiзiда](*<- lang_bel;;*);;
+
+concept_mysis_relicta <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (реликтовая мизида)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_mysis_relicta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_mysis_relicta;;
+concept_species -> concept_mysis_relicta;;
+subject_domain_of_higher_crustaceans -> rrel_maximum_studied_object_class: concept_mysis_relicta;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_mysis_relicta;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_mysis_relicta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красную книгу Литвы (II кат.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: По внешнему виду напоминает маленьких креветок. Тело вытянуто в длину, глаза на стебельках, голова и грудь покрыты хитиновым карапаксом, брюшко тонкое и заканчивается хвостовым веером, состоящим из пластинок тельсона, по краям которого расположены двуветвистые уроподы. Общая длина тела рачка 8 -16 мм.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Основной ареал на севере Евразии и Северной Америки. В Беларуси проходит южная граница ареала вида. Впервые указан в озерах Ричи и Южный Волосо , в последующие годы многократно отмечался в этих озерах . До пуска Игналинской АЭС был и в оз. Дрисвяты .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет глубокие мезотрофные озера с признаками олиготрофии. Живет в придонном слое воды при температуре воды не выше 14 оС.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Ледниковый реликт. Ведет придонный образ жизни. Осуществляет суточные вертикальные миграции в толще воды. Продолжительность жизненного цикла у мелких особей 1 г., у крупных - 2 г. Размножение приурочено к холодному времени года и начинается поздней осенью. Плодовитость от 9 до 40 яиц. Развитие яиц и эмбрионов до молоди проходит зимой в выводковой сумке самки. Молодь рачка в массовом количестве появляется весной. Питание может осуществляться с помощью фильтрации взвешенных частиц, потребления детрита с поверхности дна и хищного потребления более мелких ракообразных .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Современных данных по численности нет. Ранее в придонных траловых ловах в течение нескольких минут вылавливалось от единиц до сотен экземпляров . Численность снижается под воздействием антропогенного эвтрофирования и загрязнения водоемов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Снижение концентрации кислорода в придонных слоях воды ниже 2 мг/л, эвтрофирование и загрязнение водоемов, в том числе и тепловое .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: В Красной книге Республики Беларусь с 1981 г. Охраняется в ландшафном заказнике «Межозерный» Национального парка «Браславские озера».](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_mysis_relicta <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_mysis_relicta => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green;;
+	*);;
+	
+//размеры и вес
+concept_mysis_relicta <= nrel_inclusion: 
+	[0.8-1.6 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.8 см] => [1.6 см]);;	
+	*);;
+	
+	[0.8 см] <- length_of_body; exact_value;;
+	[0.8 см] -> .centimeter: 0.8 (* <- number;;*);;
+	[1.6 см] <- length_of_body; exact_value;;
+	[1.6 см] -> .centimeter: 1.6 (* <- number;;*);;
+
+//категория охраны и количество
+concept_mysis_relicta <= nrel_inclusion: concept_3_protection_category;;
+
+

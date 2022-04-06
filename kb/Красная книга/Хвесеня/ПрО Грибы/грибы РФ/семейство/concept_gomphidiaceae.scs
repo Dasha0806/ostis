@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_gomphidiaceae;;
+concept_gomphidiaceae=> nrel_main_idtf:
+[мокруховые](*<-lang_ru;;*);
+[gomphidiaceae](*<-lang_en;;*);;
+
+//
+concept_gomphidiaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(мокруховые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка болетовые](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_boletales;;
+	*);;	
+*);;
+
+//
+concept_boletales => nrel_inclusion: concept_gomphidiaceae;;

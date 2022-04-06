@@ -1,0 +1,22 @@
+concept_artiodactyla => nrel_main_idtf:
+[парнокопытные](*<-lang_ru;;*);
+[artiodactyla](*<-lang_lat;;*);;
+
+concept_order -> concept_artiodactyla;;
+
+concept_artiodactyla => nrel_inclusion: concept_bovidae;;
+
+//определение и пояснения
+concept_artiodactyla <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Парнокопытные - Отряд плацентарных млекопитающих. Название отряду дано за наличие у этих животных развитых третьего и четвёртого пальцев, окончания которых покрыты толстым роговым копытом, как футляром или башмаком. Второй и пятый пальцы недоразвиты, а первый — редуцирован.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_artiodactyla;;

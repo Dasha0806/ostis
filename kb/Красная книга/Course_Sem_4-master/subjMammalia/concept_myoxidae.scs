@@ -1,0 +1,20 @@
+concept_myoxidae => nrel_main_idtf:
+[сони](*<-lang_ru;;*);
+[myoxidae](*<-lang_lat;;*);;
+
+concept_family -> concept_myoxidae;;
+
+//определение и пояснения
+concept_myoxidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сони - Семейство млекопитающих из отряда грызунов. Сони — мелкие и средние по размерам грызуны, внешне похожие на мышей (наземные формы) или на белок (древесные формы).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_myoxidae;;

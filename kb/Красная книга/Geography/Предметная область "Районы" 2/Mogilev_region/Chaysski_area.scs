@@ -1,0 +1,61 @@
+Chaysski_area<-concept_area;;
+Chaysski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Chaysski_area=>nrel_administrative_center_of_the_area:Chaysi;;
+Chaysi<-concept_city;;
+
+//самая высокая точка
+Chaysski_area=>nrel_highest_point:222_m;;
+222_m<-concept_number;;
+
+//площадь района
+Chaysski_area=>nrel_area_of_the_district:1471_km;;
+1471_km<-concept_number;;
+
+//население района
+Chaysski_area=>nrel_population_of_region:18545_m;;
+18545_m<-concept_number;;
+
+//используемые константы
+Chaysski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Чаусский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Чаусский район — административная единица на северо-востоке Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+sc_node_not_relation -> Chaysski_area;;
+Chaysski_area => nrel_main_idtf:
+[Чаусский район](* <-lang_ru;; *);
+[Chaysski_area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Chaysi;;
+Chaysi=> nrel_main_idtf:
+[Чаусы](* <-lang_ru;; *);
+[Chaysi](* <- lang_en;; *);;
+
+sc_node_not_relation ->222_m;;
+222_m=> nrel_main_idtf:
+[222 м](* <-lang_ru;; *);
+[222 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1471_km;;
+1471_km=> nrel_main_idtf:
+[1471 км^2](* <-lang_ru;; *);
+[1471 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->18545_m;;
+18545_m=> nrel_main_idtf:
+[18545 человек](* <-lang_ru;; *);
+[18545 m](* <- lang_en;; *);;

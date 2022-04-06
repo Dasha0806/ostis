@@ -1,0 +1,78 @@
+sc_node_not_relation -> chirkovichskiy;;
+
+chirkovichskiy => nrel_main_idtf: [заказник Чирковичский] (* <- lang_ru;; *);
+				     [Chirkovichskiy] (* <- lang_en;; *);;
+
+chirkovichskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Чирковичский)](*<-lang_ru;;*);
+		[Pic. (Chirkovichskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+chirkovichskiy<-concept_sanctuary;;
+
+chirkovichskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Чирковичский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Чирковичский был создан в 1979 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							chirkovichskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+chirkovichskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Чирковичский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Чирковичский составляет 463 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							chirkovichskiy=>nrel_square:[463 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[463](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+chirkovichskiy => nrel_area_location: Gomel_area;;
+chirkovichskiy => nrel_flora: ...(*
+<-concept_dactylorhiza_majalis_p_f_hunt_et_summerhayes;concept_platanthera_chlorantha_cust_reichenb;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: chirkovichskiy;;

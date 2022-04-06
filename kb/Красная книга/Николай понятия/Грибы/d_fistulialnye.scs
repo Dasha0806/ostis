@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_fistulialnye;;
+concept_fistulialnye => nrel_main_idtf:
+[фистулиальные](*<-lang_ru;;*);
+[fistulialnye](*<-lang_en;;*);;
+
+//
+concept_fistulialnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(фистулиальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий сидячие или с короткой боковой ножкой, желвакообразные, языковидные, лапчатообразные, выпуклые сверху грибы](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+
+concept_fistulialnye => nrel_inclusion: concept_fistulinovye;;

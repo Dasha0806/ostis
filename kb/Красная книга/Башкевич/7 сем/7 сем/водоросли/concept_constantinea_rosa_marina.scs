@@ -1,0 +1,163 @@
+concept_constantinea_rosa_marina => nrel_main_idtf:
+[константинея морская роза](*<-lang_ru;;*);
+[constantinea rosa-marina](*<-lang_lat;;*);;
+
+
+concept_species -> concept_constantinea_rosa_marina;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_constantinea_rosa_marina;;
+
+//пояснения
+concept_constantinea_rosa_marina <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 а - вид, сокращающийся в численности в результате изменения условий существования.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище развивается как щитковидная пластина на дисковидной подошве. Молодые пластины округлые, каштанового цвета, тонкие, 4-11 см в диам., с небольшим возвышением в центре, на верхушке которого появляется новая пластина, первоначально имеющая вид розетки. Старые пластины темно-каштановые, плотные, радиально рассеченные на неравные лопасти-секторы. Многолетнее слоевище состоит из стволика, пронзающего несколько округлых пластин или увенчанного лишь одной пластиной. Стволик неправильно поочередно, мутовчато разветвленный, кольчатый, 2-4 мм в диам. Слоевище из многих слоев клеток, имеет сердцевину и кору. Органы размножения развиваются на верхней пластине. Тетраспорангии образуют пятна на нижней, органы полового размножения - на верхней ее поверхности (1-4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается у о. Сахалин (к югу от м. Кузнецова, зал. Терпения, у м. Попова) (5), Курильских о-вов (Кунашир - Парамушир), Командорских о-вов, юго-восточной Камчатки (Авачинский залив), северо-за- падной Камчатки (6-8). Вне России: о. Хоккайдо; США: о-ва Алеутские, Прибылова, Шумагина, Кадьяк, Баранова, зал. Принс-Вильям.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Бореальный пацифический вид, имеющий большой, преимущественно островной ареал с небольшой численностью популяций. Произрастает в нижнем горизонте литорали и в сублиторали до глубины 20 м, преимущественно на скалистом грунте в открытых местообитаниях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. У о-вов Медный и Беринга в выбросах встречается более массово, чем у берегов юго- восточной Камчатки, на побережье о. Беринга выходит в нижний горизонт литорали, отмечается как обычный вид (7, 8).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Лимитирующие факторы. Обитает в промысловых зонах и оказывается в виде прилова при заготовках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Вид включен как уязвимый в Красную книгу Сахалинской обл. (10) и в Приложение I Красной книги Камчатки (список водорослей, нуждающихся в особом внимании к их состоянию в природной среде на тер- ритории Камчатки) (9).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_constantinea_rosa_marina <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_constantinea_rosa_marina;;
+						concept_constantinea_rosa_marina => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_constantinea_rosa_marina <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_constantinea_rosa_marina <= nrel_inclusion: concept_2_protection_category;;

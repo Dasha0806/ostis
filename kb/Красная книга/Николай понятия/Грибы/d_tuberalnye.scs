@@ -1,0 +1,30 @@
+sc_node_not_relation ->  concept_tuberalnye;;
+concept_tuberalnye => nrel_main_idtf:
+[туберальные](*<-lang_ru;;*);
+[tuberalnye](*<-lang_en;;*);;
+
+//
+concept_tuberalnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(туберальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе сумчатые грибы, включающий грибы, характеризующиеся наличием подземных плодовых тел в виде клубней различной формы, величины и окраски](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_marsupialia_fungos;;
+	*);;	
+*);;
+
+//
+concept_tuberalnye => nrel_inclusion:	
+    concept_gelvellovye;
+    concept_otidievye;
+    concept_truffle;;
+

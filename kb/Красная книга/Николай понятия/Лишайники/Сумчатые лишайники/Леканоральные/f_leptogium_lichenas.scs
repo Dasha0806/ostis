@@ -1,0 +1,120 @@
+concept_leptogium_lichenas => nrel_main_idtf:
+[лептогиум лишайниковый](*<-lang_ru;;*);
+[leptogium lichenas](*<-lang_lat;;*);
+[лептогiум лiшайнiкавы](*<-lang_bel;;*);;
+concept_leptogium_lichenas => nrel_idtf:[лептогiум лiшайнiкавы](*<-lang_bel;;*);;
+
+plants -> concept_leptogium_lichenas;;
+concept_species -> concept_leptogium_lichenas;;
+type -> concept_leptogium_lichenas;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_leptogium_lichenas;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_leptogium_lichenas;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_leptogium_lichenas <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на замшелом субстрате в лесах и на опушках. В 1997 и 2005 найден в окрестностях г. Гродно на бетонированных сооружениях Гродненской крепости.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается вегетативно, реже спорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается небольшими группами на ограниченных площадях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Нарушение условий произрастания и разрушение субстрата.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимы сохранение известного местонахождения, предупреждение разрушения субстрата, ревизия местонахождения в Мядельском р-не, поиск новых мест произрастания.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная и Центральная Африка, Северная Америка и Гренландия . До 1997 года считался вероятно исчезнувшим с территории Беларуси видом . Известен лишь из 2-х местонахождений: в Минской (Мядельский р-н) и Гродненской (Гродненский р-н, окрестности поселка Южный) обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: ССлоевище шириной до 5 мм в виде округлых дерновинок или подушечек, состоящее из приподнятых или прямостоящих коричневато-серых или свинцово-серых лопастей. Края лопастей зазубренные, мелкорассеченные или бахромчатые. Верхняя поверхность лопастей морщинистая, нижняя светлее, чем верхняя. Апотеции развиваются на верхней поверхности, но встречаются редко ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_leptogium_lichenas <= nrel_spread: ... 
+	(*
+	-> Minsk_district;;
+	-> Grodno_district;;
+	*);;
+
+concept_kollemovye => nrel_inclusion: concept_leptogium_lichenas;;
+concept_leptogium_lichenas => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; grey; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_blades; green;;
+	*);;			
+
+concept_leptogium_lichenas <= nrel_inclusion: concept_2_protection_category;;
+

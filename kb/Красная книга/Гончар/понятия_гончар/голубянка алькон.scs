@@ -1,0 +1,137 @@
+concept_maculinea_alcon => nrel_main_idtf:
+[голубянка алькон](*<-lang_ru;;*);
+[maculinea alcon](*<-lang_lat;;*);
+[блакiтнiца алькон](*<-lang_bel;;*);;
+concept_maculinea_alcon => nrel_idtf:[блакiтнiца алькон](*<-lang_bel;;*);;
+
+concept_species -> concept_maculinea_alcon;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: maculinea_alcon;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_maculinea_alcon;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1775 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_maculinea_alcon <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красный Список МСОП (категория - LR/nt, ver. 2.3, 1994), в Красные книги Европейских дневных бабочек (SPEC 3, категория - VU), Московской области России, Восточной Фенноскандии для Дании, Германии и Швеции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Узко ограничены подходящими для размножения участками, за пределами которых вид полностью исчезает. Населяет сырые и заболоченные луга, окраины и поляны сырых мелколиственных и сосновых лесов с наличием кормовой базы для гусениц.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:На территории Беларуси в течение года развивается 1 генерация. Лёт происходит с начала июля до середины августа. Гусеницы сначала развиваются на горечавках, а в более старших возрастах - в гнездах муравьев рода Myrmica, где поедают их личинок. Зимует в фазе гусеницы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В отдельных узко ограниченных местах в благоприятные годы может быть обычен. В последнее время численность резко упала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Изменение гидрологического режима, выпас скота, интенсивное сенокошение, весенние палы травы, зарастание лугов, застройка территорий, расширение сельскохозяйственных угодий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Необходимо ограничение осушительной мелиорации; изолирование известных мест обитаний от работ, влекущих за собой уничтожение или деградацию необходимых виду биотопов и введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От северной Испании до Центральной Азии. На территории Беларуси встречается крайне локально. Немногочисленные разобщенные популяции известны на севере, в центральной части и на юге страны .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Голубянка средних размеров, длина переднего крыла 16-19 мм. Верхняя сторона крыльев самца голубая с легким фиолетовым оттенком и узким темным краем, самки - бурая со слабым голубоватым напылением вблизи груди или без него и темными пятнами в центре. Бахрома светло-серая. Снизу крылья светло-бурые или серые с 2 дугообразно изогнутыми рядами темных точек вдоль внешнего края, а также черных точек, отороченных белым и образующих 1 неровный ряд поперек крыла в центральной части крыла, отдельных точек в прикорневой части и удлиненных пятен в центральной ячейке каждого крыла.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_maculinea_alcon <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Gomel_district; Vitebsk_district;;
+	*);;
+
+concept_lycaenidae => nrel_inclusion: concept_maculinea_alcon;;
+concept_maculinea_alcon => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; dark;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; bronze; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; blue ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; blue; purple;;
+*);;
+
+
+concept_maculinea_alcon <= nrel_inclusion: 
+	16_19_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (16_mm => 19_mm);;
+*);;
+16_mm <- length_of_body; exact_value;;
+16_mm -> .millimeter: 16 (* <- number;;*);;
+19_mm <- length_of_body; exact_value;;
+19_mm -> .millimeter: 19 (* <- number;;*);;				
+
+concept_maculinea_alcon <= nrel_inclusion: concept_3_protection_category;;

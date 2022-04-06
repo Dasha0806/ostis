@@ -1,0 +1,20 @@
+concept_mustelidae => nrel_main_idtf:
+[куньи](*<-lang_ru;;*);
+[mustelidae](*<-lang_lat;;*);;
+
+concept_family -> concept_mustelidae;;
+
+//определение и пояснения
+concept_mustelidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Куньи - семейство млекопитающих отряда хищных. Являются одним из наиболее богатых видами семейств. Размеры куньих для хищников довольно малы.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_mustelidae;;

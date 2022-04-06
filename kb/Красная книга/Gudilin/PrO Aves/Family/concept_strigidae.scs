@@ -1,0 +1,22 @@
+concept_strigidae => nrel_main_idtf:
+[совиные](*<-lang_ru;;*);
+[strigidae](*<-lang_lat;;*);;
+
+concept_family -> concept_strigidae;;
+
+concept_strigidae => nrel_inclusion: concept_tyto_alba; concept_otus_scops; concept_bubo_bubo; concept_glaucidium_passerinum; concept_athene_noctua; concept_strix_uralensis; concept_strix_nebulosa; concept_asio_flammeus;;
+
+//определение и пояснения
+concept_strigidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Настоящие совы (лат. Strigidae) — семейство хищных птиц отряда совообразных. К совиным относят такие роды как, например, ушастые совы, неясыти, сплюшки и филины. Большинство совиных охотятся исключительно ночью или в сумерках. От других хищных птиц отличаются отсутствием зоба, наличием длинных слепых кишок.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_strigidae;;

@@ -1,0 +1,25 @@
+ui_menu_file_for_finding_species_by_color<-ui_user_command_class_atom;
+ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_species_by_color => nrel_main_idtf:
+[Разработка агента поиска видов по цвету]
+(*<-lang_ru;;*);;
+
+ui_menu_file_for_finding_species_by_color => nrel_main_idtf:
+[Search species by color]
+(*<-lang_en;;*);;
+
+ui_menu_file_for_finding_species_by_color =>ui_nrel_command_template:
+	[*
+		action_for_finding_species_by_color _-> ._action_for_finding_species_by_color_instance
+		(*
+			_-> ui_arg_1;;
+			*);;
+
+
+		._action_for_finding_species_by_color_instance _<- question;;
+
+	*];;
+
+Ui_menu_file_for_finding_species_by_color => ui_nrel_command_lang_template: [Найти вид по цвету $ui_arg_1](*<-lang_ru;;*);;
+ui_menu_file_for_finding_species_by_color => ui_nrel_command_lang_template: [Find species by color $ui_arg_1](*<-lang_en;; *);;

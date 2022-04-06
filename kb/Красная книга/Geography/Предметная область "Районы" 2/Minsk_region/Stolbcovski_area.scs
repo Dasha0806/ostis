@@ -1,0 +1,60 @@
+Stolbcovski_area<-concept_area;;
+Stolbcovski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Stolbcovski_area=>nrel_administrative_center_of_the_area:Stolbci;;
+Stolbci<-concept_city;;
+
+//самая высокая точка
+Stolbcovski_area=>nrel_highest_point:340_m;;
+340_m<-concept_number;;
+
+//площадь района
+Stolbcovski_area=>nrel_area_of_the_district:1885_km;;
+1885_km<-concept_number;;
+
+//население района
+Stolbcovski_area=>nrel_population_of_region:39216_m;;
+39216_m<-concept_number;;
+
+//используемые константы
+Stolbcovski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Столбцовский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Столбцовский район — административная единица на северо-востоке Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+sc_node_not_relation -> Stolbcovski_area;;
+Stolbcovski_area => nrel_main_idtf:
+[Столбцовский район](* <-lang_ru;; *);
+[Stolbcovski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Stolbci;;
+Stolbci=> nrel_main_idtf:
+[Столбцы](* <-lang_ru;; *);
+[Stolbci](* <- lang_en;; *);;
+
+sc_node_not_relation ->340_m;;
+340_m=> nrel_main_idtf:
+[340 м](* <-lang_ru;; *);
+[340 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1885_km;;
+1885_km=> nrel_main_idtf:
+[1885 км^2](* <-lang_ru;; *);
+[1885 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->39216_m;;
+39216_m=> nrel_main_idtf:
+[39216 человек](* <-lang_ru;; *);
+[39216 m](* <- lang_en;; *);;

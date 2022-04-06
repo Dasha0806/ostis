@@ -1,0 +1,77 @@
+sc_node_not_relation -> glebkovka;;
+
+glebkovka => nrel_main_idtf: [заказник Глебковка] (* <- lang_ru;; *);
+				     [Glebkovka] (* <- lang_en;; *);;
+ concept_territorry->glebkovka;;
+glebkovka <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Глебковка)](*<-lang_ru;;*);
+		[Pic. (Glebkovka)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://glebkovka.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+glebkovka<-concept_sanctuary;;
+
+glebkovka <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Глебковка, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Государственный биологический заказник Глебковка был образован в 2001 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							glebkovka=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2001(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+glebkovka <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Глебковка, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Общая площадь республиканского биологического заказника Глебковка оценивается в 964 гектара.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							glebkovka=>nrel_square:[964 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[964](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+glebkovka => nrel_area_location: Minsk_area;;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: glebkovka;;
+
+

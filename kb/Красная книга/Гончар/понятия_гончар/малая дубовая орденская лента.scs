@@ -1,0 +1,137 @@
+concept_catocala_promissa => nrel_main_idtf:
+[малая дубовая орденская лента](*<-lang_ru;;*);
+[catocala promissa](*<-lang_lat;;*);
+[малая дубовая ордэнская стужка](*<-lang_bel;;*);;
+concept_catocala_promissa => nrel_idtf:[малая дубовая ордэнская стужка](*<-lang_bel;;*);;
+
+concept_species -> concept_catocala_promissa;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: catocala_promissa;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_catocala_promissa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1775 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_catocala_promissa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Московской области России, Восточной Фенноскандии для Германии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Дубравы и другие леса с примесью дуба. Выбирает преимущественно хорошо прогреваемые места.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается в одном поколении. Лёт длится с начала июля до конца августа. Бабочки активны с наступлением сумерек. Летают преимущественно в кронах дубов. Скапливаются на вытекающем древесном соке. Гусеницы развиваются в мае-июне, питаясь на дубе вначале почками, а позже листьями. Окукливание происходит среди листьев кормового растения. Зимует в фазе яйца.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В первой половине и в середине прошлого столетия на территории Беларуси вид считался достаточно обычным. В последнее время встречается очень редко, как правило, единичными экземплярами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Сокращение площади коренных лесов, замена их сосновыми монокультурами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Охраняется в Национальных парках «Припятский» и «Беловежская пуща». Необходим запрет отлова вида; сохранение старых лесов как резерватов коренных редких видов; ограничение хозяйственной деятельности в местах обитания и введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Западная часть Палеарктики. Вид обнаружен на всей территории Беларуси, за исключением Могилевской области. Распространен локально .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Крупная бабочка, длина переднего крыла 27-29 мм. Передние крылья светло-серые, местами с примесью коричневых и бурых тонов и темно-коричневым точечным напылением. Поперечные полосы черные или темно-бурые со светло-серыми, почти белыми просветами, сильно зубчатые. Задние крылья малиново-красные с широкой черной каймой вдоль края и узкой извилистой черной перевязью, не доходящей до внутреннего края. Бахромка серая. Голова и грудь серые с темно-бурыми чешуйками, брюшко коричневато-серое.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_catocala_promissa <= nrel_spread: ... 
+	(*
+	-> Brest_district; Vitebsk_district;;
+	*);;
+
+concept_noctuidae => nrel_inclusion: concept_catocala_promissa;;
+concept_catocala_promissa => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; grey; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; grey; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; grey; brown; pink; red;;
+*);;
+
+concept_catocala_promissa <= nrel_inclusion: 
+	
+27_29_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (27_mm => 29_mm);;
+*);;
+27_mm <- length_of_body; exact_value;;
+27_mm -> .millimeter: 27 (* <- number;;*);;
+29_mm <- length_of_body; exact_value;;
+29_mm -> .millimeter: 29 (* <- number;;*);;				
+
+concept_catocala_promissa <= nrel_inclusion: concept_3_protection_category;;

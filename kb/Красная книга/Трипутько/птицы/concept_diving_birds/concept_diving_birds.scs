@@ -1,0 +1,85 @@
+concept_diving_birds
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[птицы-нырцы]
+	(*<-lang_ru;;*);
+	[diving-birds]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[птицы-нырцы]
+	(*<-lang_ru;;*);
+	[diving-birds]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (птицы-нырцы) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[птицы-нырцы -  экологическая группа птиц, могут нырять под воду  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о птицах-пловцах) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Тело уплощено с бо­ков, центр тяжести отнесен назад, крылья малы, полет тяжелый, неманевренный. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_diving_birds => nrel_inclusion: ... 
+    (*
+        <= nrel_combination: ... (*
+            -> concept_phalacrocoracidae;;
+            -> concept_alcedinidae;;
+            -> concept_gaviidae;;
+        *);;
+    *);;
+    
+
+concept_birds -> concept_diving_birds;;
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_diving_birds;;
+
+
+
+//Рисунок
+concept_diving_birds <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (птицы-нырцы)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_diving_birds.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+
+concept_diving_birds <- rrel_key_sc_element:
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У ныряющих птиц ноги обычно далеко отнесены назад, таз узкий, кости крыла уплощены  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Среди нырцов встречаются как тяжело летающие, так и не летающие вовсе ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+

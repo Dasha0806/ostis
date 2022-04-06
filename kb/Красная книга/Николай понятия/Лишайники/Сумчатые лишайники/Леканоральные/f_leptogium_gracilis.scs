@@ -1,0 +1,119 @@
+concept_leptogium_gracilis => nrel_main_idtf:
+[лептогиум тонкий](*<-lang_ru;;*);
+[leptogium gracilis](*<-lang_lat;;*);
+[лептогiум тонкi](*<-lang_bel;;*);;
+concept_leptogium_gracilis => nrel_idtf:[лептогiум тонкi](*<-lang_bel;;*);;
+
+plants -> concept_leptogium_gracilis;;
+concept_species -> concept_leptogium_gracilis;;
+type -> concept_leptogium_gracilis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_leptogium_gracilis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_leptogium_gracilis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_leptogium_gracilis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет у оснований стволов широколиственных деревьев (часто временно затопляемых) в старых тенистых пойменных дубравах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается аскоспорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается одиночными особями или небольшими группами на ограниченных площадях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительная мелиорация, низовые пожары.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка "Припятский". Необходимы постоянный контроль состояния известных местонахождений, запрет всех видов рубок леса и проведения осушительно-мелиоративных работ вблизи его локалитетов, предупреждение низовых пожаров, поиск новых мест произрастания и, при необходимости, организация их охраны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается в Европе (рассеянно) и на Кавказе . В Беларуси известен в лишь Житковичском р-не Гомельской обл.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище маленькое, мелколистоватое, довольно тонкое, сверху серовато-коричневатое, гладкое, более или менее лоснящееся, снизу несколько светлее, довольно плотно прижатое к субстрату. Лопасти узкие, рассеченные, иногда с маленькими плоскими дольками. Апотеции мелкие, многочисленные, иногда скученные, округлые, около 0,2-0,4 мм в диаметре, приросшие к нижней поверхности. Споры муральные, эллипсовидные, с 3-8 поперечными и 1-2 продольными перегородками .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_leptogium_gracilis <= nrel_spread: ... 
+	(*
+	-> Gomel_district;;
+	*);;
+
+concept_kollemovye => nrel_inclusion: concept_leptogium_gracilis;;
+concept_leptogium_gracilis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; grey; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_blades; green;;
+	*);;			
+
+concept_leptogium_gracilis <= nrel_inclusion: concept_2_protection_category;;
+

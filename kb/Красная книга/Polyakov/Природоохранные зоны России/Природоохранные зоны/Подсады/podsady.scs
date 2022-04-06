@@ -1,0 +1,77 @@
+sc_node_not_relation -> podsady;;
+
+podsady => nrel_main_idtf: [заказник Подсады] (* <- lang_ru;; *);
+				     [Podsady] (* <- lang_en;; *);;
+
+podsady <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Подсады)](*<-lang_ru;;*);
+		[Pic. (Podsady)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+podsady<-concept_sanctuary;;
+
+podsady <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Подсады, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Подсады образован в 1999 году для сохранения ценного природного комплекса.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							podsady=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1999(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+podsady <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Подсады, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Подсады составляет 1079 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							podsady=>nrel_square:[1079 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[1079](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+podsady => nrel_area_location: Minsk_area;;
+podsady => nrel_flora: ...(*
+<-concept_trollius_europaeus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: podsady;;

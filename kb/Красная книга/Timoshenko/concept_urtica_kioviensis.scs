@@ -1,0 +1,137 @@
+concept_urtica_kioviensis => nrel_main_idtf:
+[крапива киевская](*<-lang_ru;;*);
+[aconitum lycoctonum](*<-lang_lat;;*);
+[крапiва кiеўская](*<-lang_bel;;*);;
+
+concept_species -> concept_urtica_kioviensis;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_urtica_kioviensis;;
+
+//пояснения
+concept_urtica_kioviensis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с полегающими и укореняющимися стеблями. Во взрослом состоянии типичное корневище практически отсутствует, а зимуют укорененные участки стеблей. Стебли высотой 80-120 см, многочисленные, густо покрытые отогнутыми жгучими волосками. Листья с редкими жгучими волосками, продолговато-ланцетные или яйцевидно-ланцетные, с крупно-пильчато-зубчатыми краями, с округлым или сердцевидным основанием, гладкие, тонкие; верхняя сторона листьев темно-зеленая, нижняя зеленая. Прилистники крупные, травянистые, у нижних пар листьев свободные, у верхних - часто сросшиеся между собой целиком или частично при основании. Нижняя часть соцветия несет только тычиночные цветки, верхняя - только пестичные. Плод - удлиненно-яйцевидный орешек размером 1-2 см.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Средняя и Восточная Европа (на востоке доходит до р. Урал). В Беларуси находится на северной границе ареала. Известен с начала 80-х годов минувшего столетия на территории Национального парка «Припятский» (Житковичский р-н Гомельской обл.) , позднее найден в Лунинецком , Пинском и Столинском р-нах Брестской области.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Сырые и заболоченные черноольховые и ясеневые леса, реже дубравы преимущественно долгопоемного затопления, прибрежная зона лесных старичных озер.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июне - июле, плодоносит в августе - сентябре. Анемофил. Размножение семенное и вегетативное (преимущественно). Автохор (барохор), эндо- и эпизоохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Площадь популяций обычно составляет несколько десятков квадратных метров, редко более.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Гидролесомелиоративные работы, рубки леса главного пользования, хозяйственная трансформация земель.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется на территориях Национального парка «Припятский», заказника «Средняя Припять». Необходимо осуществлять периодический контроль состояния известных популяций и поиск новых мест произрастания; в местах роста следует запретить антропогенное воздействие (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимнее время); целесообразно сохранение генофонда вида в условиях культуры.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_urtica_kioviensis <= nrel_spread: ... 
+	(*
+	->  Zhitkovichskiy_district; Luninec_district; Pinsky_district; Stolinsky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_urtica_kioviensis;;
+						concept_urtica_kioviensis => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; rooted; hairy;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; smooth; thin; hairy;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; nut;;
+							*);;
+
+concept_urtica_kioviensis <= nrel_inclusion: 
+	1_2_cm
+	(*
+	<- interval_value;;
+	<- size_of_fruit (*<-parameter;;*);;
+	=> nrel_measurement: (1_cm => 2_cm);;
+	*);;
+concept_urtica_kioviensis <= nrel_inclusion: 
+	80_120_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (80_cm => 120_cm);;
+	*);;
+
+	1_cm <- size_of_fruit; exact_value;;
+	1_cm -> nrel_cm: 1 (* <- number;;*);;
+	2_cm <- size_of_fruit; exact_value;;
+	2_cm -> nrel_cm: 2 (* <- number;;*);;
+	80_cm <- length_of_stem; exact_value;;
+	80_cm -> nrel_cm: 80 (* <- number;;*);;
+	120_cm <- length_of_stem; exact_value;;
+	120_cm -> nrel_cm: 120 (* <- number;;*);;					
+
+concept_urtica_kioviensis <= nrel_inclusion: concept_2_protection_category;;

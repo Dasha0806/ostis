@@ -1,0 +1,146 @@
+concept_carabus_coriaceus_linnaeus=> nrel_main_idtf:
+[шагреневая жужелица](*<-lang_ru;;*);
+[carabus coriaceus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_coriaceus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_coriaceus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_coriaceus_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_coriaceus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Обитает в лесах разных типов. В ельниках и сосняках иногда обычен.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид с летне-осенним типом размножения, зимуют имаго и личинки. Наибольшая активность отмечена в конце августа - начале сентября. Личинки и имаго питаются личинками насекомых, сухопутными моллюсками, червями; активны преимущественно в сумерки и ночью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Отмечен на всей территории республики, иногда обычен. Тенденции изменения численности изучены слабо.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная деятельность в лесах, а также сокращение площадей ельников - одного из основных мест обитаний вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Выявление новых мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Западноевропейский мезофильный вид. Встречается по всей территории республики, но редок .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Самая крупная жужелица в Беларуси. Длина жука 30-42 мм. Одноцветно черный. Надкрылья почти матовые, в грубых морщинках. На передних лапках самца расширены 3 членика.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_coriaceus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_coriaceus_linnaeus;;
+concept_carabus_coriaceus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_carabus_coriaceus_linnaeus <= nrel_inclusion: 
+	30_42_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (30_mm => 42_mm);;	
+	*);;
+	30_mm <- length_of_body; exact_value;;
+	30_mm -> .millimeter: 30 (* <- number;;*);;
+	42_mm <- length_of_body; exact_value;;
+	42_mm -> .millimeter: 42 (* <- number;;*);;	
+
+concept_carabus_coriaceus_linnaeus <= nrel_inclusion: concept_4_protection_category;;

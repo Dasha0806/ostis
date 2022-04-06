@@ -1,0 +1,146 @@
+concept_hygrocybe_purpurami => nrel_main_idtf:
+[гигрофор клейкий](*<-lang_ru;;*);
+[hygrocybe_purpurami](*<-lang_lat;;*);
+[гiграфор клейкi](*<-lang_bel;;*);;
+concept_hygrocybe_purpurami => nrel_idtf:[гiграфор клейкi](*<-lang_bel;;*);;
+
+plants -> concept_hygrocybe_purpurami;;
+concept_species -> concept_hygrocybe_purpurami;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_hygrocybe_purpurami;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_hygrocybe_purpurami;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_hygrocybe_purpurami <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в дубовых и других типах широколиственных лесов. Почва в местах его произрастания плодородная, свежая, рыхлая.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Микоризообразователь дуба. Плодоносит в августе - ноябре. Съедобный гриб.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются единичными экземплярами или небольшими группами. В настоящее время обе известные популяции немногочисленны и находятся под угрозой уничтожения в результате сокращения широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий – антропогенный: лесопользование, чрезмерные рекреационные нагрузки, сбор плодовых тел, загрязнение почвы, вырубка лесов (все виды рубок).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо создание в местах роста вида специализированных микологических заказников, запрещение несанкционированного сбора плодовых тел. Следует периодически проводить ревизию и эколого-биологический контроль состояния известных популяций, осуществлять поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Неморальный вид с евразийским ареалом. Ареал охватывает Европу и Азию (Дальний Восток) . Известны два местонахождения: Минская обл., Минский р-н, окрестности д. Крыжовка и Могилевская обл., Осиповичский р-н, Жорновская лесная опытная станция .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Шляпка диаметром 3-8 см, вначале ширококолокольчатая, затем выпуклая до распростертой, с подвернутым краем и тупым бугорком, очень слизистая, сначала серо- или оливково-бурая с темным центром, затем светлеет, особенно по краю, до светло-серо-бурой, охристо-бурой или оранжево-охристой, в центре всегда более темная. Пластинки широкоприросшие, довольно толстые, редкие, сначала белые, потом слегка зеленовато-желтоватые. Ножка размером 4,5-10 0,6-2 см, цилиндрическая или слегка веретеновидная, утонченная к основанию, верхняя часть сухая, сначала белая, затем сероватая, зеленоватая с белой зернистостью, остальная поверхность беловатая, покрытая поясками и пятнами слизи оливково-светло-бурого цвета. Мякоть белая, вблизи поверхности шляпки с зеленоватым оттенком. Запах очень слабый, фруктовый, сладковатый. Споры 9-12 5-7 мкм, эллипсоидальные до яйцевидных .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hygrocybe_purpurami <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Mogilev_district;;
+	*);;
+
+concept_hygrophoraceae => nrel_inclusion: concept_hygrocybe_purpurami;;
+concept_hygrocybe_purpurami => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; white;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; white; grey;;
+	*);;
+
+concept_hygrocybe_purpurami <= nrel_inclusion: 
+	3_8_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_a_cap;;
+	=> nrel_measurement: (3_cm => 8_cm);;	
+	*);
+	5_10_cm
+	(*
+	<- interval_value;;
+	<- length_of_stipe;;
+	=> nrel_measurement: (5_cm => 10_cm);;	
+	*);;
+	3_cm <- diameter_of_a_cap; exact_value;;
+	3_cm -> .centimeter: 3 (* <- number;;*);;
+	8_cm <- diameter_of_a_cap; exact_value;;
+	8_cm -> .centimeter: 8 (* <- number;;*);;
+	5_cm <- length_of_stipe; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;
+	10_cm <- length_of_stipe; exact_value;;
+	10_cm -> .centimeter: 10 (* <- number;;*);;				
+
+concept_hygrocybe_purpurami <= nrel_inclusion: concept_2_protection_category;;
+

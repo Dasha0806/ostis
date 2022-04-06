@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_agaricomycetes;;
+concept_agaricomycetes => nrel_main_idtf:
+[агарикомицеты](*<-lang_ru;;*);
+[agaricomycetes](*<-lang_en;;*);;
+
+//
+concept_agaricomycetes <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(агарикомицеты)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[класс в отделе базидиомикота, представители которого могут быть как сапротрофами и паразитами, так и микоризообразователями. ](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_magnoliophyta;;
+	*);;	
+*);;
+
+//
+concept_magnoliophyta => nrel_inclusion: concept_agaricomycetes;;

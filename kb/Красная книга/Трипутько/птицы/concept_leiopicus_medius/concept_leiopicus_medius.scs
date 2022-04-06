@@ -1,0 +1,123 @@
+concept_leiopicus_medius=> nrel_main_idtf: [европейский средний дятел](*<- lang_ru;;*); 
+[leiopicus medius](*<- lang_lat;;*); 
+[еўрапейскі сярэдні дзяцел](*<- lang_bel;;*);;
+
+concept_leiopicus_medius <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (Европейский средний дятел)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_leiopicus_medius.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_leiopicus_medius;;
+concept_species -> concept_leiopicus_medius;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_leiopicus_medius;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_leiopicus_medius;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1758 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_leiopicus_medius <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Юж. граница ареала проходит по юж. границе России [1]; границы ареала отодвинулись на сев. до Витебской, сев. Смоленской, юга Псковской, р-на Старицы Тверской обл.; вост. граница определяется находками на гнездовании близ Новомосковска Тульской, Узунова Московской, Спасска Рязанской, Ельца Тамбовской, Старого Оскола Белгородской обл. и г. Липецка.   ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Крайне стенотопен, предпочитая прежде всего плакорные, но не пойменные дубравы. Заселяет дубравы спелого и перестойного возраста, с обилием усыхающих деревьев. Захламленных сушняком лесов и дубравы с примесью других пород взрослые особи избегают, хотя сеголетки предпочитают дубово-осиновые леса [3]. Омоложенные и усыхающие дубравы непривлекательны для птиц. В качестве станции переживания могут быть использованы перестойные ольшанники. Нетерпимо относится к любой фрагментации дубрав.    ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  В западноукраинских и северокавказских очагах устойчивого размножения вида максимальная плотность (12.6-14.2 особи/км2) зарегистрирована в спелых дубравах из дуба черешчатого. В омоложенных дубравах она снижается до 6.7-7.3 особи/км2 и резко падает в молодняках дубрав до 0.7-0.9 особи/км2. В более старых дубравах плотность 8.4-8.85 особи/км2, причем при поспевании дубравы плотность падает до 4.6-5.1 особи/км2  ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесен в Приложение 2 Бернской Конвенции. В р-нах устойчивого размножения охраняется в заповедниках Воронежском, Хоперском, Брянский Лес, Центрально-Черноземном и Калужские Засеки. В связи с продолжающимся неуклонным снижением численности, наряду с вымиранием отдельных популяций в Европе, территория России становится основным очагом сохранения вида. Основным средством спасения вида является сохранение крупных, не менее 35-40 км2, массивов спелых дубрав, искусственные посадки дубрав для объединения оставшихся фрагментов в массивы леса.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_leiopicus_medius <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_leiopicus_medius => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+//размеры и вес
+concept_leiopicus_medius <= nrel_inclusion: 
+	[0-22 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [22 см]);;	
+	*);
+	[0-0.085 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.085 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[22 см] <- length_of_body; exact_value;;
+	[22 см] -> .centimeter: 22 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[0.085 кг] <- weight; exact_value;;
+	[0.085 кг] -> .kilogram: 0.085 (* <- number;;*);;
+//категория охраны и количество
+concept_leiopicus_medius <= nrel_inclusion: concept_2_protection_category;;
+concept_leiopicus_medius <= nrel_strength: [5000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 5000 (* <- number;;*);;
+		*);;	
+	*);;
+

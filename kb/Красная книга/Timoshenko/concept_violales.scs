@@ -1,0 +1,27 @@
+concept_violales => nrel_main_idtf:
+[фиалкоцветные](*<-lang_ru;;*);
+[violales](*<-lang_lat;;*);;
+
+concept_order -> concept_violales;;
+
+concept_violales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_violaceae;;
+	*);;
+
+//определение и пояснения
+concept_violales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фиалкоцветные - порядок двудольных растений. Получил своё название от входящего в него семейства фиалковых.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_violales;;

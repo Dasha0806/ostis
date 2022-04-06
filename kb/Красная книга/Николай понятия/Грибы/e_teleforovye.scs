@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_teleforovye;;
+concept_teleforovye => nrel_main_idtf:
+[телефоровые](*<-lang_ru;;*);
+[teleforovye](*<-lang_en;;*);;
+
+//
+concept_teleforovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(телефоровые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка телефоральные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_teleforalnye;;
+	*);;	
+*);;
+
+//
+concept_teleforovye => nrel_inclusion:
+    concept_albo_nigrum_boletopsis;
+    concept_leptigium_lichenas;
+    concept_leptigium_intestini;;

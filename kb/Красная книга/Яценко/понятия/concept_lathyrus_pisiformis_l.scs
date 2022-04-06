@@ -1,0 +1,168 @@
+concept_lathyrus_pisiformis_l => nrel_main_idtf: [чина гороховидная](*<- lang_ru;;*); [lathyrus pisiformis l.](*<- lang_lat;;*); [чына гарохападобная](*<- lang_bel;;*);;
+concept_lathyrus_pisiformis_l => nrel_idtf: [чына гарохападобная](*<- lang_bel;;*);;
+
+concept_species -> concept_lathyrus_pisiformis_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_lathyrus_pisiformis_l;;
+
+concept_lathyrus_pisiformis_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (чина гороховидная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_lathyrus_pisiformis_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lathyrus_pisiformis_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_lathyrus_pisiformis_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу Беларуси 
+2го издания (1993). 
+Охраняется в Литве, 
+Польше и Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с коротким корневищем и узкокрылатым стеблем высотой 50-100 см, который цепляется за опору с помощью листовых усиков. Листья парно-перистосложные, с 3-6 парами продолговато-яйцевидных или продолговато-эллиптических листочков, с крупными листоподобными прилистниками, почти равными листочкам. Цветки с грязно-лиловым венчиком, неправильные (“мотыльковые”), собранные по 8-15 (20) в густые довольно короткие кисти, расположенные в пазухах верхних листьев. Плоды – бобы, продолговато-линейные, заостренные на конце, длиной 4,0-5,0 см и шириной 0,4-0,5 см.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Средняя и Восточная Европа, Кавказ (Предкавказье), Западная Сибирь, Восточная Сибирь (запад), Средняя и Центральная Азия . В Беларуси этот реликтовый, по происхождению лесостепной вид находится в изолированных локалитетах на значительном отдалении от северной границы ареала . Достоверно известен в Витебской (Городокский р-н), Минской (Логойский и Минский р-ны) и Могилевской (Осиповичский р-н) обл. . Имеется литературное указание на нахождение вида в Лоевском р-не , которое требует проверки.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Преимущественно сосновые и сосново-березовые, реже елово-березовые леса, кустарники на склонах холмов. Предпочитает открытые места (поляны, опушки), карбонатные почвы.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне - июле, плодоносит в июле - августе. Энтомофил. Размножение семенное. При созревании створки боба скручиваются и разбрасывают семена (автомеханохор).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно встречается отдельными экземплярами и небольшими группами на ограниченных площадях. При благоприятных экологических условиях может длительно удерживаться на одном и том же месте. Примером могут служить популяции в Логойском р-не, наблюдаемые уже на протяжении почти 30 лет.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Вырубка лесов с последующей хозяйственной трансформацией земель, техногенные воздействия при рубке леса, повышенные рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Охраняется на территории ботанического заказника “Козырский” (Логойский р-н). Выращивается в Центральном ботаническом саду НАН Беларуси  и на участке в Республиканском экологическом центре учащихся и молодежи (Минск). Необходимы периодический эколого-биологический контроль состояния известных популяций и поиск новых, организация охраны всех местонахождений вида с запрещением или ограничением в местах роста антропогенных воздействий (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимнее время); рекомендуется более широкое введение вида в культуру в качестве декоративного и кормового растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_lathyrus_pisiformis_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Gorodok_district;;->Logoysk_district;;->Minsk_district;;->Mogilev_district;;->Osipovichi_district;;->Loev_district;;
+		*);;
+*);;
+
+concept_lathyrus_pisiformis_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; usconsulate;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; short;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; doubles_parisitology;oblong_jayawickramarajah_elliptical;large_stipule;lystopadovyi_stipule;;
+*);
+...
+(*
+<= nrel_inclusion: flower; dirty_purple_Corolla;wrong;butterfly;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; thick_brush;short_brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; Bob;oblong_linear;pointed;;
+*);;
+
+concept_lathyrus_pisiformis_l <= nrel_inclusion: 
+[50-100 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([50 см] => [100 см]);; 
+*); 
+[4-5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([4 см] => [5 см]);; 
+*);;
+
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[4 см] <- length_of_inflorscence; exact_value;;
+[4 см] -> .centimeter: 4 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+ 
+
+concept_lathyrus_pisiformis_l <= nrel_inclusion: concept_2_protection_category;;

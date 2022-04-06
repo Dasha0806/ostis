@@ -1,0 +1,131 @@
+concept_sistotrema_raduloides=> nrel_main_idtf: [систотрема терковидная](*<- lang_ru;;*); [sistotrema raduloides](*<- lang_lat;;*); [сістатрэма таркападобная](*<- lang_bel;;*);;
+
+concept_sistotrema_raduloides<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (систотрема терковидная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_sistotrema_raduloides.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_sistotrema_raduloides;;
+concept_species -> concept_sistotrema_raduloides;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_sistotrema_raduloides;;
+
+//пояснения
+concept_sistotrema_raduloides <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в дубовых, черноольховых и еловых, нередко сыроватых, лесах. Вид чувствителен к антропогенному воздействию. Выступает индикатором старовозрастных минимально нарушенных участков леса . Произрастает и образует плодовые тела на валежной, оголенной от коры древесине, преимущественно стволах лиственных пород - березы, граба, осины. Облигатный сапротроф, вызывающий белую гниль.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела появляются в июле- сентябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Численность популяций не установлена. Есть сведения о разведении гриба в лабораторных условиях , однако в республике в коллекциях культур не поддерживается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Интенсивная лесоэксплуатация, чрезмерные рекреационные нагрузки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов Национального парка «Припятский» и Налибокского заказника. Необходимо выявление новых популяций и их охрана (в ранге заказников местного значения) с запрещением всех видов рубок или ограничением антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Редкий голарктический вид, имеет прерывистое распространение в Европе, Азии, Северной Америке . В Беларуси отмечен в Брестской (Ивановский р-н ), Гомельской (Житковичский р-н ), Минской (Столбцовский р-н ) и Могилевской (Кличевский р-н ) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело распростертое, протяженностью до 10 см и более, рыхлое, мягкое, белое или желтоватое, с приросшим краем. Гименофор состоит из конических шипов размером 0,3–2,5 ´ 0,1–0,6 мм. Гифы с пряжками, с маслянистыми включениями. Базидии вздутые при основании, 11–30 ´ 5,5–7,5 мкм. Споры веретеновидно-цилиндрические, 6–9,5 ´ 2–3 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_sistotrema_raduloides <= nrel_spread: ... 
+	(*
+	->  Grodno_district; Ivanovskoye_district; Zhytkavichy_district; Stowbtsy_district; Klichaw_district;;
+	*);;
+
+concept_sistotremovye => nrel_inclusion: concept_sistotrema_raduloides;;
+concept_sistotrema_raduloides => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; open;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; cylindrical;;
+	*);;
+
+concept_phlebia_albomellea <= nrel_inclusion: 
+	[0-10см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [10 см]);;	
+	*);;
+
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	
+concept_sistotrema_raduloides <= nrel_inclusion: concept_3_protection_category;;

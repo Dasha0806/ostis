@@ -1,0 +1,92 @@
+Brest_area<-concept_area;;
+Brest_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//адм центр
+Brest_area->nrel_administrative_center_of_the_area:Brest;;
+Brest<-concept_city;;
+
+//самая высокая точка
+Brest_area->nrel_highest_point:186_m;;
+186_m<-concept_number;;
+
+//площадь района
+Brest_area->nrel_area_of_the_district:1544_m;;
+1544_m<-concept_number;;
+
+//население района
+Brest_area->nrel_population_of_region:42400_m;;
+42400_m<-concept_number;;
+
+//используемые константы
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+*);;
+*);;
+Brest_area=> nrel_main_idtf: [Опр.(Брестский район)]  (* <- lang_ru;; *);;
+Brest_area<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Брестский район — административная единица на западе Брестской области.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Брестский район,часть*,территория,зона*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Основная часть территории Брестского района находится в зоне Брестского Полесья.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Брестский район,группа,озеро)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ В Брестском районе находится Брестская группа озёр, в том числе Чёрное озеро.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Brest_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Брестский район,поверхность*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Поверхность Бресткого района в основном низинно-равнинная.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation ->186_m;;
+186_m=> nrel_main_idtf:
+[186 м](* <-lang_ru;; *);
+[186 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1544_m;;
+1544_m=> nrel_main_idtf:
+[2200 км^2](* <-lang_ru;; *);
+[1544 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->42400_m;;
+42400_m=> nrel_main_idtf:
+[42400 человек](* <-lang_ru;; *);
+[42400 m](* <- lang_en;; *);;

@@ -1,0 +1,27 @@
+format_search_anime_by_status_and_original_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат anime search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format anime search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_anime_by_status_and_original_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск аниме по статусу и оригиналу]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find anime by status and original] 
+	(* 
+	<- lang_en;;
+	*);;

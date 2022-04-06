@@ -1,0 +1,80 @@
+Bereza_area<-concept_area;;
+Bereza_area<=inclusion:Brest_region;;
+Brest_region<-concept_region;;
+
+//адм центр
+Bereza_area->nrel_administrative_center_of_the_area:Bereza;;
+Bereza<-concept_city;;
+
+//самая высокая точка
+Bereza_area->nrel_highest_point:189_m;;
+189_m<-concept_number;;
+
+//площадь района
+Bereza_area->nrel_area_of_the_district:1412_m;;
+1412_m<-concept_number;;
+
+//население района
+Bereza_area->nrel_population_of_region:62882_m;;
+62882_m<-concept_number;;
+
+//используемые константы
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->nrel_part;;
+*);;
+*);;
+Bereza_area=> nrel_main_idtf: [Опр.(Берёзовский район)]  (* <- lang_ru;; *);;
+Bereza_area<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Берёзовский район — административная единица в центральной части Брестской области.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Берёзовский район,река,приток*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[По территории Берёзовского района протекает река Ясельда с притоками Винец, Жигулянка.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Bereza_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Берёзовский район,территория,полезные ископаемые,торф, мел, песчано-гравийные материалы, силикатные пески, строительные пески, глины.)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Полезные ископаемые на территории Берёзовского района:торф, мел, песчано-гравийные материалы, силикатные и строительные пески, глины.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+sc_node_not_relation ->189_m;;
+189_m=> nrel_main_idtf:
+[189 м](* <-lang_ru;; *);
+[189 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1412_m;;
+1412_m=> nrel_main_idtf:
+[1412 км^2](* <-lang_ru;; *);
+[1412 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->62882_m;;
+62882_m=> nrel_main_idtf:
+[62882 человек](* <-lang_ru;; *);
+[62882 m](* <- lang_en;; *);;

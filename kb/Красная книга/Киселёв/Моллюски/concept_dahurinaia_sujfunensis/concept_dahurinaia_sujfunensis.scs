@@ -1,0 +1,151 @@
+concept_dahurinaia_sujfunensis => nrel_main_idtf: [приморская жемчужница](*<- lang_ru;;*); [dahurinaia sujfunensis](*<- lang_lat;;*);;
+
+concept_dahurinaia_sujfunensis  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (приморская жемчужница)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dahurinaia_sujfunensis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_dahurinaia_sujfunensis <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_dahurinaia_sujfunensis ;;
+concept_species -> concept_dahurinaia_sujfunensis ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_dahurinaia_sujfunensis ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_dahurinaia_sujfunensis ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_dahurinaia_sujfunensis  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Крупный двустворчатый моллюск. Длина раковины до 135 мм. Раковина снаружи темно-коричневая, удлиненно-овальная, сравнительно плоская. Макушки не выступающие. Раковина у макушки, как правило, сильно разъедена и перистракум полностью разрушен. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Вид известен из р. Комаровка (басс. р. Раздольная Приморского края, на территории Уссурийского заповедника). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает на песчано-галечном грунте, при течении менее 1 м/сек.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известны единичные взрослые ос. На отдельных участках плотность достигает 20 экз./1 м2. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Основные лимитирующие факторы - загрязнение и изменение режима рек. Вероятно, резкое снижение численности вида связано и с переловом моллюсков и рыб-хозяев. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Уссурийском заповеднике. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_dahurinaia_sujfunensis  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_dahurinaia_sujfunensis  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown;;
+	*);;
+//размеры и вес
+concept_dahurinaia_sujfunensis  <= nrel_inclusion: 
+	[10-13 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([10 см] => [13 см]);;	
+	*);
+	[0,090-0,110 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,090 кг] => [0,110 кг]);;	
+	*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[13 см] <- length_of_body; exact_value;;
+	[13 см] -> .centimeter: 13 (* <- number;;*);;
+	[0,090 кг] <- weight; exact_value;;
+	[0,090 кг] -> .kilogram: 0.090 (* <- number;;*);;
+	[0,110 кг] <- weight; exact_value;;
+	[0,110 кг] -> .kilogram: 0.110 (* <- number;;*);;
+//категория охраны и количество
+concept_dahurinaia_sujfunensis  <= nrel_inclusion: concept_3_protection_category;;
+concept_dahurinaia_sujfunensis  <= nrel_strength: [500 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 500 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

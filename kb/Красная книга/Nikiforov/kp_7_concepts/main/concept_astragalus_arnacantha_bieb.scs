@@ -1,0 +1,55 @@
+concept_astragalus_arnacantha_bieb => nrel_main_idtf:
+[Астрагал колючковый](*<-lang_ru;;*);
+[Astragalus arnacantha Bieb](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_arnacantha_bieb;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_astragalus_arnacantha_bieb;;
+
+Red_list_ru -> concept_astragalus_arnacantha_bieb;;
+
+//пояснения
+concept_astragalus_arnacantha_bieb <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Точных данных нет, как частый вид приводится для долины ручья Озерейка на п-ове Абрау.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Подвид включен в Красную книгу Краснодарского края (1994, 2007). Внесен в Красный список Европы. Необходимые меры охраны. Организация ООПТ для охраны подвида в окр. г. Новороссийска на хр. Маркотх.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России вид представлен подвидом астраканта колючковая колючковидная [Astracantha arnacantha subsp. arnacanthoides (Boriss.) Reer et Podlech], который встречается только в Краснодарском крае на Черноморском побережье Кавказа от Анапы до Новороссийска и Геленджика (3). Как особый вид, а затем подвид описан из района Новороссийска, м. Пенай (LE). Вне России растет - [в Крыму] и особая раса в Болгарии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:  Трагакантовый (колючеподушечный) кустарник с несколькими ветвящимися стволиками до 1 м выс., с обильными отогнутыми игловидными колючками (одревесневшие оси перистых листьев) (1, 2). Цветет в мае-июне. Плодоносит в июле-августе. Размножается семенами, растет медленно.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

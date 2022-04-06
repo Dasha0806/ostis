@@ -1,0 +1,55 @@
+sc_node_norole_relation -> nrel_regional_council_of_deputies;;
+nrel_regional_council_of_deputies=>nrel_main_idtf:
+[областной совет депутатов*](* <-lang_ru;; *);
+	[regional_council_of_deputies*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_council;;
+concept_council=>nrel_main_idtf:
+[совет](* <-lang_ru;; *);
+	[council](* <- lang_en;; *);;
+
+//домены
+nrel_regional_council_of_deputies => nrel_first_domain: concept_region;;
+nrel_regional_council_of_deputies => nrel_second_domain: concept_council;;
+nrel_regional_council_of_deputies => nrel_definitional_domain: ...
+                              (*
+                               <-concept_region;;
+                               <-concept_council;;
+                              *);;
+
+
+//определение 
+nrel_regional_council_of_deputies <-rrel_key_sc_element:...
+(*
+    <-explanation;;
+    => nrel_main_idtf: 
+    [Опр.(Областной совет депутатов*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Областной Совет депутатов - представительный государственный орган на территории области, являющийся основным звеном системы местного самоуправления.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_territory;;
+    ->concept_region;;
+*);;
+*);;
+
+//свойства
+nrel_disjoint_union <- binary_relation;;
+nrel_disjoint_union <- antireflexive_relation;;
+nrel_disjoint_union <- antitransitive_relation;;
+nrel_disjoint_union <- antisymmetric_relation;;
+nrel_disjoint_union <- oriented_relation;;
+
+statement_of_defining_type=>nrel_main_idtf:
+    [утверждение определяющего типа](*<-lang_ru;;*);;
+subject_domain_of_geography=>nrel_main_idtf:
+    [Предметная область географии](*<-lang_ru;;*);;

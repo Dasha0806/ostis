@@ -1,0 +1,16 @@
+ui_menu_find_categories_of_type  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_categories_of_type  => nrel_main_idtf: [Найти категории по виду] (* <- lang_ru;; *);;
+ui_menu_find_categories_of_type  => nrel_main_idtf: [Find categories by type] (* <- lang_en;; *);;
+ui_menu_find_categories_of_type  => ui_nrel_command_template:
+	[*
+		question_scp_find_categories_of_type _-> ._question_scp_find_categories_of_type_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_categories_of_type_instance _<- question;;
+
+	*];;
+
+ui_menu_find_categories_of_type  => ui_nrel_command_lang_template: [Найденные категории] (* <- lang_ru;; *);;
+ui_menu_find_categories_of_type  => ui_nrel_command_lang_template: [Categories] (* <- lang_en;; *);;

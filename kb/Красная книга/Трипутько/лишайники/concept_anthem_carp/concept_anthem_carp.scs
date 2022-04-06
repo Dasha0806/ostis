@@ -1,0 +1,100 @@
+concept_anthem_carp
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[гимнокарповые лишайники]
+	(*<-lang_ru;;*);
+	[anthem carp]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[гимнокарповые лишайники]
+	(*<-lang_ru;;*);
+	[anthem carp]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (гимнокарповые лишайники) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[гимнокарповые лишайники -  это класс лишайников, включающий в себя не менее 250 родов накипных, листоватых и кустистых лишайников.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о гимнокарповые лишайники) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Сумки у гимнокарповых лишайников унитупикатные. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_class -> concept_anthem_carp;;
+//concept_anthem_carp => nrel_inclusion: concept_rangifer_tarandus;;
+
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_anthem_carp;;
+
+concept_anthem_carp  -> concept_bushy;;
+concept_anthem_carp  -> concept_leafy;;
+concept_anthem_carp	 -> concept_scale_lichens;;
+		
+
+//Рисунок
+
+concept_anthem_carp <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Онтогенез плодовых тел аскогимениального типа — в плодовых телах образуется гимениальный слой, состоящий из сумок со спорами и парафил. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Эти лишайники имеют плодовые тела открытого типа ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//способ размножения
+concept_anthem_carp <= nrel_reproduction: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> concept_disputes;;
+            -> concept_vegetatively;;
+		*);;
+	*);;
+
+//питание
+concept_anthem_carp <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_photosynthesis;;
+		*);;
+	*);;
+
+//описание длин
+concept_anthem_carp <= nrel_inclusion: 
+    [200-250]
+    (*
+        <- interval_value;;
+        <- length_of_kind;;
+        => nrel_measurement: ([200] => [250]);;
+    *);;
+    [200] <- length_of_kind; exact_value;;
+	[200] -> .nrel_number_of_individuals: 200 (* <- number;;*);;
+	[250] <- length_of_kind; exact_value;;
+	[250] -> .nrel_number_of_individuals: 250 (* <- number;;*);;

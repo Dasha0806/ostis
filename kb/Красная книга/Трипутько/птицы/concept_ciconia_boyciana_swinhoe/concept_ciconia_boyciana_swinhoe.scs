@@ -1,0 +1,124 @@
+concept_ciconia_boyciana_swinhoe=> nrel_main_idtf: [дальневосточный аист](*<- lang_ru;;*); 
+[ciconia boyciana swinhoe](*<- lang_lat;;*); 
+[далёкаўсходні бусел](*<- lang_bel;;*);;
+
+concept_ciconia_boyciana_swinhoe <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (дальневосточный аист)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_ciconia_boyciana_swinhoe.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_ciconia_boyciana_swinhoe;;
+concept_species -> concept_ciconia_boyciana_swinhoe;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_ciconia_boyciana_swinhoe;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_ciconia_boyciana_swinhoe;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1873 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_ciconia_boyciana_swinhoe <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение:   Почти весь современный гнездовой ареал дальневосточного аиста находится на территории российского Дальнего Востока и приурочен главным образом к басс. рр. Амур, Уссури и Зея. Случай гнездования отмечен в Читинской обл., на р. Шилке [1]. Вне России гнездится в Китае, возможно в Монголии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:  Наиболее плотно заселенные участки расположены на Архаринской низменности и в междуречье Ульмы и Ташины (Амурская обл.), в окрестностях оз. Болонь (Хабаровский край) [2] и на Приханкайской равнине (Приморский край). Гнездится в островках релочных лесов или на отдельных деревьях (дуб, береза, осина, лиственница, сосна) среди обширных осоковых болот вблизи озер, речек. Избирает только увлажненные места (болота, берега озер, рисовые поля и т.д.) для кормления и отдыха во время миграций и зимовки.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Общая численность в мире около 3000 особей. В Монголии возможно нахождение единичных гнезд, в Китае - до 25-30 гнезд. В России - 600 гнездящихся пар. В Приморском крае - 60-100 пар ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Занесен в Красный список МСОП-96, Приложение 1 СИТЕС, Приложения двусторонних соглашений, заключенных Россией с Японией, Республикой Корея и КНДР об охране мигрирующих птиц. Охраняется в Хинганском и Ханкайском заповедниках и в заказниках областного и краевого подчинения. Разводится в орнитопарке Вальсроде (Германия), в питомнике г. Тоёка (Япония) и в ряде китайских зоопарков (Харбинский, Пекинский, Цицикарский и др.). В России попытки разведения (неудачные) предпринимались только в Московском зоопарке.
+Необходимы международные меры для сохранения вида, в частности, по восстановлению гнездящихся популяций в Японии и на Корейском п-ове. Центру по разведению и реинтродукции редких птиц Хинганского заповедника для поддержки местных гнездящихся популяций и создания популяций, не боящихся присутствия человека и способных гнездиться в соседстве с ним, необходимо использовать методику получения повторных кладок от пар, гнездящихся на неохраняемых территориях](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_ciconia_boyciana_swinhoe <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_ciconia_boyciana_swinhoe => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; red;;
+	*);;
+//размеры и вес
+concept_ciconia_boyciana_swinhoe <= nrel_inclusion: 
+	[0-102 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [102 см]);;	
+	*);
+	[0-3.5 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [3.5 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[102 см] <- length_of_body; exact_value;;
+	[102 см] -> .centimeter: 102 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[3.5 кг] <- weight; exact_value;;
+	[3.5 кг] -> .kilogram: 3.5 (* <- number;;*);;
+//категория охраны и количество
+concept_ciconia_boyciana_swinhoe <= nrel_inclusion: concept_1_protection_category;;
+concept_ciconia_boyciana_swinhoe <= nrel_strength: [1200 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 1200 (* <- number;;*);;
+		*);;	
+	*);;
+

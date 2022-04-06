@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_veshenkovyye;;
+concept_veshenkovyye=> nrel_main_idtf:
+[вешенковые](*<-lang_ru;;*);
+[veshenkovyye](*<-lang_en;;*);;
+
+//
+concept_veshenkovyye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(вешенковые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка агарикальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_agarikalnye;;
+	*);;	
+*);;
+
+//
+concept_agarikalnye => nrel_inclusion: concept_veshenkovyye;;

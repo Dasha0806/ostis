@@ -1,0 +1,22 @@
+concept_meropidae => nrel_main_idtf:
+[щурковые](*<-lang_ru;;*);
+[meropidae](*<-lang_lat;;*);;
+
+concept_family -> concept_meropidae;;
+
+concept_meropidae => nrel_inclusion: concept_merops_apiaster;;
+
+//определение и пояснения
+concept_meropidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Птицы с ярко окрашенным плотным, блестящим, сходным у самцов и самок оперением на стройном теле. В окраске преобладают синий, зелёный и жёлтый тона. Крылья длинные, острые, полёт быстрый. Птицы обычно имеют вытянутый, немного изогнутый тонкий клюв. Ноги короткие, что затрудняет передвижение по земле.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_meropidae;;

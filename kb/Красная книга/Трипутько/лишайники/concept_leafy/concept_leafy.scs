@@ -1,0 +1,106 @@
+concept_leafy
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[листоватые лишайники]
+	(*<-lang_ru;;*);
+	[leafy]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[листоватые лишайники]
+	(*<-lang_ru;;*);
+	[leafy]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (листоватые лишайники) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[листоватые лишайники -  это отдел лишайников, слоевище которых имеет вид листовидной пластинки ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о листоватые лишайники) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[    Обычно пластинка округлая (из-за радиального роста гиф), но у старых лишайников приобретает неправильную форму.. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_division -> concept_leafy;;
+concept_leafy => nrel_inclusion: concept_leptogum;;
+
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_leafy;;
+
+
+
+//Рисунок
+concept_leafy <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (умбиликария съедобная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_leafy.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_leafy <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Нередко пластинчатое слоевище по краям выемчато вырезано ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Характерная особенность листоватого слоевища – его дорзовентральное строение ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//способ размножения
+concept_leafy <= nrel_reproduction: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> concept_disputes;;
+		*);;
+	*);;
+
+//питание
+concept_leafy <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_photosynthesis;;
+		*);;
+	*);;
+
+//описание длин
+concept_leafy <= nrel_inclusion: 
+    [0-20]
+    (*
+        <- interval_value;;
+        <- diameter;;
+        => nrel_measurement: ([0] => [20]);;
+    *);;
+    [0] <- diameter; exact_value;;
+	[0] -> .centimeter: 0 (* <- number;;*);;
+	[20] <- diameter; exact_value;;
+	[20] -> .centimeter: 20 (* <- number;;*);;

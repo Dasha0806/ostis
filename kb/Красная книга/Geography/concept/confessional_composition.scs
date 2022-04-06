@@ -1,0 +1,93 @@
+sc_node_not_relation -> concept_confessional_composition;;
+concept_confessional_composition=>nrel_main_idtf:
+[конфессиональный состав](* <-lang_ru;; *);
+	[confessional composition](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_geography;;
+concept_geography => nrel_main_idtf:
+[география](* <-lang_ru;; *);
+	[география](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_norole_relation -> christianity;;
+christianity=>nrel_main_idtf:
+[христианство](* <-lang_ru;; *);
+	[christianity](* <- lang_en;; *);;
+
+sc_node_norole_relation -> catholicism;;
+catholicism=>nrel_main_idtf:
+[католицизм](* <-lang_ru;; *);
+	[catholicism](* <- lang_en;; *);;
+
+sc_node_norole_relation -> protestantism;;
+protestantism=>nrel_main_idtf:
+[протестантизм](* <-lang_ru;; *);
+	[protestantism](* <- lang_en;; *);;
+
+sc_node_norole_relation -> islam;;
+islam=>nrel_main_idtf:
+[ислам](* <-lang_ru;; *);
+	[islam](* <- lang_en;; *);;
+
+sc_node_not_relation -> nrel_administrative_territorial_unit;;
+nrel_administrative_territorial_unit => nrel_main_idtf:
+[административно-территориальная единица](* <-lang_ru;; *);
+	[administrative-territorial_unit](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_population;;
+concept_population=>nrel_main_idtf:
+[население](* <-lang_ru;; *);
+	[population](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_religion;;
+concept_religion=>nrel_main_idtf:
+[религия](* <-lang_ru;; *);
+	[religion](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+//определение 
+concept_confessional_composition <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Конфессиональный состав)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Конфессиональный состав - перечень населения по существующим на данной территории религиям.](* <- lang_ru;; *);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_population;;
+    ->concept_religion;;
+    ->concept_territory;;
+*);;
+*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:concept_confessional_composition;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://confessional_composition.jpg";;
+		*);;
+	*);;
+
+concept_confessional_composition <= nrel_intersection: ...(* -> christianity;; -> catholicism;; -> protestantism;;  -> islam;; => nrel_idtf: [Разбиение по виду религии](* <- concept_russian_language;; *);; *);;
+

@@ -1,0 +1,123 @@
+concept_paradoxornis_polivanovi_stepanyan=> nrel_main_idtf: [тростниковая сутора](*<- lang_ru;;*); 
+[paradoxornis polivanovi stepanyan](*<- lang_lat;;*); 
+[трысняговая сутора](*<- lang_bel;;*);;
+
+concept_paradoxornis_polivanovi_stepanyan <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (тростниковая сутора)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_paradoxornis_polivanovi_stepanyan.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_paradoxornis_polivanovi_stepanyan;;
+concept_species -> concept_paradoxornis_polivanovi_stepanyan;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_paradoxornis_polivanovi_stepanyan;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_paradoxornis_polivanovi_stepanyan;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1974 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_paradoxornis_polivanovi_stepanyan <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Самостоятельный вид надвидового комплекса Paradoxornis, считавшийся прежде P. heudei с тем же русским названием [1]. P. polivanovi описан с оз. Ханка. Гнездится на Приханкайской низменности и, вероятно, на правобережье р. Сунгача. Р-н гнездования занимает площадь около 500 км2 [2]. Дважды был отмечен в 80 и 130 км к юго-зап. от ближайших известных мест размножения: в окрестностях г. Уссурийска и устья р. Раздольная [3], где не исключено хотя бы нерегулярное гнездование.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет тростниковые заросли, избегая в период размножения низкорослых, редких и изолированных участков тростника. Поселяется на заросших тростником искусственно заболоченных территориях. В значительной степени оседлый вид. Во внегнездовое время кочует стайками от 3-8 до 30 особей преимущественно в пределах р-на гнездования. Гнезда устраивает в зарослях тростника, на их постройку затрачивает 3-8 дней   ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Численность в России в 1977-1978 гг. не превышала 400 гнездящихся пар [2]. По материалам учета в вост. и юж. р-нах Приханкайской низменности в 1993-1994 гг. численность оказалась в 1.7 раза ниже и по расчетам составила около 230 пар. Реальная численность, вероятно, несколько выше расчетной [8]. Плотность гнездования на отдельных участках около 20 пар/км2 [7], расстояние между ближайшими гнездами 150-200 м [6].  ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесен Красный список МСОП-96, Приложение 1 СИТЕС, Приложения двусторонних соглашений, заключенных Россией с Японией, КНДР и Республикой Корея об охране мигрирующих птиц. Охраняется в Ханкайском заповеднике, к которому примыкает участок со стороны КНР. Следует разработать и принять меры к восстановлению и сохранению участков ландшафтов, главным образом, на Хасане, по рр. Илистой, Сунгач, в устье Бикина и Уссури.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_paradoxornis_polivanovi_stepanyan <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_paradoxornis_polivanovi_stepanyan => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+//размеры и вес
+concept_paradoxornis_polivanovi_stepanyan <= nrel_inclusion: 
+	[0-17 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [17 см]);;	
+	*);
+	[0-0.016 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.016 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[17 см] <- length_of_body; exact_value;;
+	[17 см] -> .centimeter: 17 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[0.016 кг] <- weight; exact_value;;
+	[0.016 кг] -> .kilogram: 0.016 (* <- number;;*);;
+//категория охраны и количество
+concept_paradoxornis_polivanovi_stepanyan <= nrel_inclusion: concept_3_protection_category;;
+concept_paradoxornis_polivanovi_stepanyan <= nrel_strength: [400 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 400 (* <- number;;*);;
+		*);;	
+	*);;
+

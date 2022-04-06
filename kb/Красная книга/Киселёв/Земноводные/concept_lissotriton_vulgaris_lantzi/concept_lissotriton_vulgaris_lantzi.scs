@@ -1,0 +1,175 @@
+concept_lissotriton_vulgaris_lantzi=> nrel_main_idtf: [тритон обыкновенный ланца](*<- lang_ru;;*); [lissotriton vulgaris lantzi](*<- lang_lat;;*);;
+
+concept_lissotriton_vulgaris_lantzi <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (тритон обыкновенный ланца)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lissotriton_vulgaris_lantzi.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_lissotriton_vulgaris_lantzi <= nrel_inclusion: concept_caudata;;
+
+concept_animalia -> concept_lissotriton_vulgaris_lantzi;;
+concept_species -> concept_lissotriton_vulgaris_lantzi;;
+subject_domain_of_amphibians -> rrel_not_maximum_studied_object_class: concept_lissotriton_vulgaris_lantzi;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_lissotriton_vulgaris_lantzi;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1979 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lissotriton_vulgaris_lantzi <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международное значение: Обыкновенный тритон ланца внесён в Красную книгу России, и Красную книгу Украины, находится под защитой Бернской конвенции по охране европейских видов дикой фауны и их мест обитания, заключённой в 1979 году. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина тела с хвостом 53.1-89.2 мм. Серии сошниковых зубов в виде параллельных линий, слегка сходящихся сзади. Кожа гладкая или слабозернистая. Голова с темными продольными полосами, одна из которых проходит через глаз. Верх и с бока буроватые до оливково-серого. Брюхо желтое или оранжевое с темными пятнами. В отличие от самки, у самца в брачный период развиваются зазубренный гребень на спине и хвосте и широкие перепонки на пальцах задних ног, сбоку хвоста появляется перламутрово-голубая продольной полоса, клоака становится более выпуклой. Как в брачный период, так и после него все тело самца покрыто крупными темными пятнами, отсутствующими у самки (у нее имеются мелкие точки на брюхе). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Типовая территория Новороссийск. Обитает в зап. Предкавказье, зап. Грузии, юго-вост. Азербайджане и прилежащих р-нах Турции и Ирана. В России находится сев. часть области распространения подвида. Сев. граница ареала проходит приблизительно по линии Новороссийск-Краснодар-Ставрополь-Северная Осетия, далее уходит в Закавказье. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Большинство популяций обитает в хвойных, лиственных и смешанных лесах. Наличие лесов - критический фактор для существования подвида. В пределах лесного пояса подвид проявляет высокую экологическую пластичность, населяя как заросшие, так и открытые пространства, заросли кустарников, парки, сады, луга и сельскохозяйственные ландшафты. Встречается на расстоянии до 300 м от ближайшего водоема ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: На суше взрослые особи день проводят в лесной подстилке, под корой лежащих деревьев, камнями и поленницами дров и т. д. Днем их можно увидеть лишь в дождливую погоду или в период миграции к местам размножения. В водной фазе жизни обыкновенный тритон питается мелкими ракообразными, личинками насекомых, водными моллюсками. На суше основными компонентами питания становятся жуки, гусеницы бабочек, многоножки, панцирные клещи, пауки и дождевые черви. Личинки потребляют дафний, личинок комаров и других планктонных беспозвоночных животных. Естественными врагами для обыкновенного тритона являются хищные водные насекомые, их личинки, рыбы, лягушки и некоторые виды птиц.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: На суше встречается единичными особями, в водоемах встречаемость составляет 0.016-5000 особей/га; местами достигает 110 особей/м3 воды . В целом по Кавказу, имеется тенденция уменьшения общей численности вида в вост. и юго-зап. направлениях ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Основной фактор сокращения численности - разрушение местообитаний человеком, в первую очередь нерестовых водоемов. Негативные последствия имеет, очевидно, сокращение площади лесов. Подвид отлавливается в массовых количествах для частной торговли. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Охрана: Охраняется в Кавказском заповеднике; предполагается его наличие в Тебердинском, Кабардино-Балкарском и Северо-Осетинском заповедниках	. Успешно разводился в Московском зоопарке, любителями террариума в СССР и в некоторых странах Зап. Европы. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_lissotriton_vulgaris_lantzi <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia; turkey; iran;;
+		*);;
+	*);;
+//части тела
+concept_lissotriton_vulgaris_lantzi => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_striped; brown; olive;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; concept_spotty; brown; olive;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; concept_spotty; yellow; orange;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; concept_spotty; brown; black;;
+	*);;
+//размеры и вес
+concept_lissotriton_vulgaris_lantzi <= nrel_inclusion: 
+	[5-9 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [9 см]);;	
+	*);
+	[0,008-0,014 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,008 кг] => [0,014 кг]);;	
+	*);;
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[9 см] <- length_of_body; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+	[0,008 кг] <- weight; exact_value;;
+	[0,008 кг] -> .kilogram: 0.008 (* <- number;;*);;
+	[0,014 кг] <- weight; exact_value;;
+	[0,014 кг] -> .kilogram: 0.014 (* <- number;;*);;
+//категория охраны и количество
+concept_lissotriton_vulgaris_lantzi <= nrel_inclusion: concept_3_protection_category;;
+concept_lissotriton_vulgaris_lantzi <= nrel_strength: [50000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 50000 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+concept_lissotriton_vulgaris_lantzi <= nrel_larval_stage: concept_axolotl;;
+
+concept_axolotl=>nrel_main_idtf:
+[аксолотль](* <-lang_ru;; *);
+	[axolotl](* <- lang_en;; *);;
+
+

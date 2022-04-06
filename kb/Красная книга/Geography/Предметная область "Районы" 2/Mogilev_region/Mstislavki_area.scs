@@ -1,0 +1,75 @@
+Mstislavki_area<-concept_area;;
+Mstislavki_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Mstislavki_area=>nrel_administrative_center_of_the_area:Mstislavl;;
+Mstislavl<-concept_city;;
+
+//самая высокая точка
+Mstislavki_area=>nrel_highest_point:201_m;;
+201_m<-concept_number;;
+
+//площадь района
+Mstislavki_area=>nrel_area_of_the_district:1333_km;;
+1333_km<-concept_number;;
+
+//население района
+Mstislavki_area=>nrel_population_of_region:21543_m;;
+21543_m<-concept_number;;
+
+//используемые константы
+Mstislavki_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Мстиславский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Мстиславский район — административная единица на северо-востоке Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Mstislavki_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, Орша, Кричев)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Через район проходят: железная дорога линии Орша — Кричев.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Mstislavki_area;;
+Mstislavki_area => nrel_main_idtf:
+[Мстиславский район](* <-lang_ru;; *);
+[Mstislavki area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Mstislavl;;
+Mstislavl=> nrel_main_idtf:
+[Мстиславль](* <-lang_ru;; *);
+[Mstislavl](* <- lang_en;; *);;
+
+sc_node_not_relation ->201_m;;
+201_m=> nrel_main_idtf:
+[201 м](* <-lang_ru;; *);
+[201 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1333_km;;
+1333_km=> nrel_main_idtf:
+[1333 км^2](* <-lang_ru;; *);
+[1333 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->21543_m;;
+21543_m=> nrel_main_idtf:
+[21543 человек](* <-lang_ru;; *);
+[21543 m](* <- lang_en;; *);;

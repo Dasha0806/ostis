@@ -1,0 +1,25 @@
+sc_node_not_relation ->  concept_dozhdevikovye;;
+concept_dozhdevikovye => nrel_main_idtf:
+[дождевиковые](*<-lang_ru;;*);
+[dozhdevikovye](*<-lang_en;;*);;
+
+//
+concept_dozhdevikovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(дождевиковые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка ликопердальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_likoperdalnye;;
+	*);;	
+*);;
+
+//

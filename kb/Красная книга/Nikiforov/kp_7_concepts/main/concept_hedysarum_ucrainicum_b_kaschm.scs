@@ -1,0 +1,55 @@
+concept_hedysarum_ucrainicum_b_kaschm => nrel_main_idtf:
+[Копеечник украинский](*<-lang_ru;;*);
+[Hedysarum ucrainicum В. Kaschm.](*<-lang_lat;;*);;
+
+concept_species -> concept_hedysarum_ucrainicum_b_kaschm;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_hedysarum_ucrainicum_b_kaschm;;
+
+Red_list_ru -> concept_hedysarum_ucrainicum_b_kaschm;;
+
+//пояснения
+concept_hedysarum_ucrainicum_b_kaschm <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известные популяции в Волгоградской обл. малочисленны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Белгородской (2005) и Волгоградской (2006) обл. Охраняется на ООПТ в Белгородской обл.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается в Белгородской (Ровенский р-н), Воронежской (Кантемировский и Россошанский р-ны) и Волгоградской (Калачевский р-н) областях. За пределами России произрастает на территории восточной Украины.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с глубоко уходящим в грунт корневищем, сильно ветвящимся у корневой шейки и восходящими цветоносными побегами 20-45 см выс. Цветет в июне-июле. Размножение семенное и вегетативное (парциальным делением кустов).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

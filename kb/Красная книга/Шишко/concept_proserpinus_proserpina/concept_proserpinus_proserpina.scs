@@ -1,0 +1,154 @@
+concept_proserpinus_proserpina => nrel_main_idtf: [бражник прозерпина](*<- lang_ru;;*); [proserpinus proserpina](*<- lang_lat;;*); [бражнік празерпіна](*<- lang_bel;;*);;
+concept_proserpinus_proserpina => nrel_idtf: [бражнік празерпіна](*<- lang_bel;;*);;
+
+concept_proserpinus_proserpina <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (бражник прозерпина)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_proserpinus_proserpina.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_insecta -> concept_proserpinus_proserpina;;
+concept_species -> concept_proserpinus_proserpina;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_proserpinus_proserpina;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_proserpinus_proserpina;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1772 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_proserpinus_proserpina <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красный Список МСОП (категория - DD), в Красные книги Украины, Польши и Московской области России, в приложение II Бернской конвенции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Хорошо прогреваемые обширные лесные поляны и вырубки, опушки, суходольные луга, пустыри, окраины дорог и полей с наличием кормовой базы для гусениц и взрослых насекомых.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: В течение года развивается 1 генерация. Лёт длится с середины мая до конца июня, изредка позже. Бабочки активны вечером и рано утром в сумерки; питаются главным образом на цветущих кустах бирючины, сирени и жимолости.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Имаго встречается крайне редко, чаще можно наблюдать гусениц последнего возраста развития. В большинстве мест обитания численность вида низкая и продолжает сокращаться, в некоторых местах, вероятно, исчез, на юго-западе встречается чаще.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Весенние палы прошлогодней растительности, выпас скота, застройка и распашка мест обитания, сбор и уничтожение легкодоступных гусениц людьми.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется на территории заказника «Черлено». Специальные меры охраны не применялись. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: От Центральной и Южной Европы, через Поволжье, Казахстан и восточный Афганистан до северо-западного Китая. На территории Беларуси зарегистрирован в центральной , южной и западной частях; распространен очень локально.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Мелкий бражник, длина переднего крыла составляет 17-22 мм. Внешний край крыльев зазубренный. Передние крылья оливково-зеленые или серо-зеленые, с затемнением по внешнему краю и широкой темно-зеленой перевязью посередине. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+//части тела
+
+concept_proserpinus_proserpina => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; bright; green; yellow;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; green;;
+	*);;
+//размеры и вес
+concept_proserpinus_proserpina <= nrel_inclusion: 
+	[0.17-0.22 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.17 см] => [0.22 см]);;	
+	*);;
+	
+	[0.17 см] <- length_of_body; exact_value;;
+	[0.17 см] -> .centimeter: 0.17 (* <- number;;*);;
+	[0.22 см] <- length_of_body; exact_value;;
+	[0.22 см] -> .centimeter: 0.22 (* <- number;;*);;
+//категория охраны и количество
+concept_proserpinus_proserpina <= nrel_inclusion: concept_3_protection_category;;
+
+

@@ -1,0 +1,55 @@
+concept_oxytropis_alpestris_schischk => nrel_main_idtf:
+[Остролодочник приальпийский](*<-lang_ru;;*);
+[Oxytropis alpestris Schischk](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_alpestris_schischk;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_alpestris_schischk;;
+
+Red_list_ru -> concept_oxytropis_alpestris_schischk;;
+
+//пояснения
+concept_oxytropis_alpestris_schischk <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность популяций невелика.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988). Вид внесен в Красную книгу Республики Алтай (1996).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России в Республике Алтай. На юго-востоке Алтая — хр. Сайлюгем (классическое местонахождение), Чихачёва, Монгун-Тайга и Курайский (верховье р. Тургень, или Быстрая).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Розеточное стержнекорневое бесстебельное растение, образующее рыхлые дерновинки. Листья 8-20 см длины с 10-12 парами листочков. Цветет в июле. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

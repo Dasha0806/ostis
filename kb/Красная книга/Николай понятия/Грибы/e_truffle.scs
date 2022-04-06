@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_truffle;;
+concept_truffle => nrel_main_idtf:
+[трюфелевые](*<-lang_ru;;*);
+[truffle](*<-lang_en;;*);;
+
+//
+concept_truffle <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(трюфелевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка туберальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_tuberalnye;;
+	*);;	
+*);;
+
+//
+concept_truffle => nrel_inclusion:	
+    concept_tuber_borja;
+    concept_tuber_aestas;;
+

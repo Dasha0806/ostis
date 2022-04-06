@@ -1,0 +1,9 @@
+concept_waran_width<-concept_plant;;
+concept_waran_width=>nrel_water:concept_gigrofit;; 
+concept_waran_width=>nrel_moisture:concept_acidofil;;
+concept_acidofil<-concept_organic;;
+
+
+concept_waran_width=> nrel_main_idtf:
+[варан широкий](*<-lang_ru;;*);
+[waran width](*<-lang_lat;;*);;

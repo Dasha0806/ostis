@@ -1,0 +1,36 @@
+concept_formicidae=> nrel_main_idtf:
+[муравьи](*<-lang_ru;;*);
+[formicidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_formicidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(муравьи)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_hymenoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Муравьи - семейство насекомых из отряда перепончатокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_hymenoptera =>nrel_inclusion: concept_formicidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Являются общественными насекомыми, образующими 3 касты: самки, самцы и рабочие особи. Наиболее эволюционно продвинутое семейство насекомых. Муравьи отличаются по своей морфологии от других насекомых наличием коленчатых усиков, метаплевральной железой, а также сильным сужением второго абдоминального сегмента в узел-петиоль.](* <- lang_ru;;*);;
+		*);;
+*);;

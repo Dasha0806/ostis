@@ -1,0 +1,55 @@
+concept_oxytropis_lanuginosa_kom => nrel_main_idtf:
+[Остролодочник войлочный](*<-lang_ru;;*);
+[Oxytropis lanuginosa Kom.](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_lanuginosa_kom;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_lanuginosa_kom;;
+
+Red_list_ru -> concept_oxytropis_lanuginosa_kom;;
+
+//пояснения
+concept_oxytropis_lanuginosa_kom <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В местах произрастания чаще встречается единично. Средняя численность в окр. оз. Хадын составила 16 экз. на 1 м2.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: ыл внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Тыва (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: России встречается в Центрально-Тувинской котловине Республики Тыва — окр. озер Дус-Холь (Сватиково) и Хадын (откуда и описан), у пос. Бай-Хак, в окр. с. Погроменского. Вне России произрастает в Монголии в Западном Хангае.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Стержнекорневой травянистый поликарпик. Длительновегетирующий. Надземные побеги короткие до 25-30 см выс. Листья с 5-10(15) мутовками из 4 или 5 беловойлочных листочков.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

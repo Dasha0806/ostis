@@ -1,0 +1,8 @@
+ui_search_anime_by_status_and_original_in_memory
+	<- ui_scgg_control; sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Найти аниме по статусу и оригиналу]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [Find anime by status and original]
+(* <- lang_en;; *);;

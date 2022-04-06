@@ -1,0 +1,45 @@
+concept_artemisia_senjavinensis_bess => nrel_main_idtf:
+[Полынь сенявинская](*<-lang_ru;;*);
+[Artemisia senjavinensis Bess](*<-lang_lat;;*);;
+
+concept_species -> concept_artemisia_senjavinensis_bess;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_artemisia_senjavinensis_bess;;
+
+Red_list_ru -> concept_artemisia_senjavinensis_bess;;
+
+//пояснения
+concept_artemisia_senjavinensis_bess <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Был включен в Красные книги СССР (1984) и РСФСР (1988). В соответствии с международной программой сохранения арктической флоры и фауны включен в Атлас редких эндемичных сосудистых растений Арктики.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России, на территории Чукотского АО.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плотноподушковидный полукустарничек густо опушенный длинными белыми волосками. Вегетативные побеги почти шаровидные, розеточные, плотно покрытые остатками отмерших листьев.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

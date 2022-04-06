@@ -1,0 +1,55 @@
+concept_oxytropis_sverdrupii_lynge => nrel_main_idtf:
+[Остролодочник Свердрупа](*<-lang_ru;;*);
+[Oxytropis sverdrupii Lynge](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_sverdrupii_lynge;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_sverdrupii_lynge;;
+
+Red_list_ru -> concept_oxytropis_sverdrupii_lynge;;
+
+//пояснения
+concept_oxytropis_sverdrupii_lynge <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В двух известных местонахождениях популяции могут насчитывать по 500-1000 растений в каждой.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Меры для охраны вида не принимались.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Известно два местонахождения вида на о. Айон — в северо-западной части Чаунской губы Восточно­ сибирского моря (Чукотский АО). Небольшие популяции вида отмечены на западном побережье и в центре острова (в долине р. Рывеем). Вид описан по экземплярам, собранным с северо-западного берега о. Айон.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Стержнекорневой многоглавый травянистый многолетник с длинными ползучими веточками кау- декса, несущими мелкие придаточные корни и спящие почки.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

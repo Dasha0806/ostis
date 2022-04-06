@@ -1,0 +1,19 @@
+concept_black_list => nrel_main_idtf:
+[черный список](*<-lang_ru;;*);
+[black list](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_black_list <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(черный список)]  (* <- lang_ru;; *);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Черный список - аннотированный список вымерших видов.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_black_list;;

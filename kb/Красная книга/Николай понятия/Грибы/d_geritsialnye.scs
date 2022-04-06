@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_geritsialnye;;
+concept_geritsialnye => nrel_main_idtf:
+[герициальные](*<-lang_ru;;*);
+[geritsialnye](*<-lang_en;;*);;
+
+//
+concept_geritsialnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(герициальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий все грибы с чётко разделёнными шляпкой и ножкой, их плодовые тела мясистые, а гименофор состоит из легко отделяющихся (у зрелых плодов) конических шипов](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_geritsialnye => nrel_inclusion:
+	concept_auriskalpievye;
+	concept_hericiaceae;;

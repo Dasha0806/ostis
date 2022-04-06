@@ -1,0 +1,22 @@
+concept_muscicapidae => nrel_main_idtf:
+[мухоловковые](*<-lang_ru;;*);
+[muscicapidae](*<-lang_lat;;*);;
+
+concept_family -> concept_muscicapidae;;
+
+concept_muscicapidae => nrel_inclusion: concept_ficedula_albicollis;;
+
+//определение и пояснения
+concept_muscicapidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Мелкие птицы с небольшим уплощенным и широким клювом. Хвост недлинный, прямой, часто с вырезкой на конце (длинный хвост только у райской мухоловки). Населяют различные древесные насаждения. Для мухоловок характерно сидеть на ветке, взлетая за пролетающими насекомыми. Ранее входивший в семейство род канареечных мухоловок вместе с Elminia, золотобрюхой веерохвосткой и стеностирой на основе недавних открытий в молекулярной систематике был выделен в отдельное семейство Stenostiridae.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_muscicapidae;;

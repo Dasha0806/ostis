@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_gelotsialnye;;
+concept_gelotsialnye => nrel_main_idtf:
+[гелоциальные](*<-lang_ru;;*);
+[gelotsialnye](*<-lang_en;;*);;
+
+//
+concept_gelotsialnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(гелоциальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе сумчатые грибы, отличительной особенностью которого являются апотеции расположены на поверхности субстрата или вначале погружены в него, а затем выступают на поверхность, сумки цилиндрические или булавовидные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_marsupialia_fungos;;
+	*);;	
+*);;
+
+//
+concept_gelotsialnye => nrel_inclusion: concept_geoglossovye;;

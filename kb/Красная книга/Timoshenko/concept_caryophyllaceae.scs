@@ -1,0 +1,27 @@
+concept_caryophyllaceae => nrel_main_idtf:
+[гвоздичные](*<-lang_ru;;*);
+[caryophyllaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_caryophyllaceae;;
+
+concept_caryophyllaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_cucubalus_baccifer; concept_dianthus_armeria; concept_stellaria_crassifolia; concept_moehringia_latteriflora;;
+	*);;
+
+//определение и пояснения
+concept_caryophyllaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гвоздичные - семейство растений порядка гвоздикоцветные. Обычно травянистые растения, реже полукустарники и кустарники. У всех видов, за немногими исключениями, листья парные, супротивные, редко очерёдные, всегда простые, от почти линейных до овальных, изредка с небольшими плёнчатыми прилистниками.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_caryophyllaceae;;

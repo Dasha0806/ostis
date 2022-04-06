@@ -1,0 +1,55 @@
+concept_dendranthema_sinuatum_tzvelev => nrel_main_idtf:
+[Дендрантема выемчатолистная](*<-lang_ru;;*);
+[Dendranthema sinuatum Tzvelev](*<-lang_lat;;*);;
+
+concept_species -> concept_dendranthema_sinuatum_tzvelev;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_dendranthema_sinuatum_tzvelev;;
+
+Red_list_ru -> concept_dendranthema_sinuatum_tzvelev;;
+
+//пояснения
+concept_dendranthema_sinuatum_tzvelev <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известно свыше 50 местонахождений вида, общая приблизительная численность не менее 20 тыс. экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Алтайском, Саяно-Шушенском заповедниках, произрастает в охранной зоне Катунского заповедника. Вид внесен в Красные книги Алтайского края (1998), Республик Алтай (1996), Тыва (2002), Хакасия (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В пределах России вид встречается в Алтайском крае, Республике Алтай.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Полукустарничек, образующий различные по плотности подушкообразные формы роста. Размножение исключительно семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

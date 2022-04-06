@@ -1,0 +1,22 @@
+concept_falconidae => nrel_main_idtf:
+[соколиные](*<-lang_ru;;*);
+[falconidae](*<-lang_lat;;*);;
+
+concept_family -> concept_falconidae;;
+
+concept_falconidae => nrel_inclusion: concept_falco_tinnunculus; concept_falco_vespertinus; concept_falco_columbarius; concept_falco_subbuteo; concept_falco_peregrinus;;
+
+//определение и пояснения
+concept_falconidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[семейство птиц из отряда соколообразных (Falconiformes). Содержит 11 родов и около 60 видов. К ним относятся и самые маленькие хищные птицы — карликовые соколы, величина которых находится в пределах от 15 до 19 см.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_falconidae;;

@@ -1,0 +1,22 @@
+concept_anatidae => nrel_main_idtf:
+[утиные](*<-lang_ru;;*);
+[anatidae](*<-lang_lat;;*);;
+
+concept_family -> concept_anatidae;;
+
+concept_anatidae => nrel_inclusion: concept_anas_acuta; concept_aythya_nyroca; concept_mergellus_albellus; concept_mergus_serrator; concept_mergus_merganser; concept_anser_erythropus;;
+
+//определение и пояснения
+concept_anatidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Широко распространённое и наиболее многочисленное семейство водоплавающих птиц из отряда гусеобразных (Anseriformes), в состав которого включают около 150 современных видов птиц, разбитых на 40—50 родов.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_anatidae;;

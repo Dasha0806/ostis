@@ -1,0 +1,45 @@
+concept_cicer_minutum => nrel_main_idtf:
+[Нут маленький](*<-lang_ru;;*);
+[Cicer minutum](*<-lang_lat;;*);;
+
+concept_species -> concept_cicer_minutum;;
+
+
+Red_list_ru -> concept_cicer_minutum;;
+
+//пояснения
+concept_cicer_minutum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Республики Дагестан (1998)](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России известен только из Республики Дагестан. Растет на склонах г. Несин-даг, что в окр. сел. Куруш Докузпаринского р-на.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Корневищный многолетник с лежачими стеблями длиной до 10 см. Цветет в июле. Размножается семенами и корневищами. Преобладает вегетативное размножение.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_cicer_minutum <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,30 @@
+concept_nitellopsidaceae => nrel_main_idtf:
+[нителлопсиевые](*<-lang_ru;;*);
+[nitellopsidaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_nitellopsidaceae;;
+
+concept_nitellopsidaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_nitellopsis_obtusa;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_nitellopsidaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[У водорослей семейства нителлопсиевые таллом всегда без прилистников и без коры. Листья членисто-вильчатого строения, иногда неправильного, и тогда с более или менее обособленной основной осью члеников и многоклеточными листочками в ее узлах, реже простые, без листочков. Оогонии в поперечном сечении округлые или эллиптические, с коронкой из 10 клеток, расположенных в два яруса.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_nitellopsidaceae;;

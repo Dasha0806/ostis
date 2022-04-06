@@ -1,0 +1,30 @@
+lib_component_agent_find_the_largest_year_of_territory
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска территории]
+		(* <- lang_ru;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_find_the_largest_year_of_territory; 
+
+<- key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задачей sc-агента поиска территории является поиск территории, которая стала природоохранной позже всех остальных];;
+		*);;
+	*);;
+
+question_find_the_largest_year_of_territory
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[действие. найти максимальный год]
+		(* <- lang_ru;; *);
+	[action. find the largest year]
+		(* <- lang_en;;	*);;

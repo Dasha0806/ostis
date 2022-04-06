@@ -1,0 +1,45 @@
+concept_bothrocaryum_controversum => nrel_main_idtf:
+[Ботрокариум спорный](*<-lang_ru;;*);
+[Bothrocaryum controversum](*<-lang_lat;;*);;
+
+concept_species -> concept_bothrocaryum_controversum;;
+
+
+Red_list_ru -> concept_bothrocaryum_controversum;;
+
+//пояснения
+concept_bothrocaryum_controversum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Красную книгу Сахалинской обл. (2005). Охраняется в заповеднике «Курильский» (Алёхинское лесничество) на о. Кунашир.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России растет только на о. Кунашир в окр. поселков Алёхино и Урвитово, вблизи ручья Валентины.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Листопадное дерево с плоской кроной до 20 м выс. и стволом с серой корой до 60 см в диам. Цветет в июне, плодоносит в августе-сентябре. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_bothrocaryum_controversum <= nrel_inclusion: concept_3_protection_category;;

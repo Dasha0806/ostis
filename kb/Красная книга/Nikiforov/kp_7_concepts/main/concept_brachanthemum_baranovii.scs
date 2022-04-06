@@ -1,0 +1,45 @@
+concept_brachanthemum_baranovii => nrel_main_idtf:
+[Брахантемум Баранова](*<-lang_ru;;*);
+[Brachanthemum baranovii](*<-lang_lat;;*);;
+
+concept_species -> concept_brachanthemum_baranovii;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_brachanthemum_baranovii;;
+
+Red_list_ru -> concept_brachanthemum_baranovii;;
+
+//пояснения
+concept_brachanthemum_baranovii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Алтай (1996). Сохраняется в виде культуры ткани в Южно-Сибирском ботаническом саду (Барнаул).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В пределах России вид встречается только в Республике Алтай.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Медленно растущий ксерофитный полукустарник, 20-50 см выс. Цветет очень поздно и продолжительно - с середины августа до середины октября, массовое цветение - середина сентября.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,58 @@
+nrel_propagation_type => nrel_main_idtf: [тип размножения*](*<- lang_ru;;*); [propagation type*](*<- lang_en;;*);;
+
+sc_node_norole_relation -> nrel_propagation_type;;
+
+subject_domain_of_plantae_vasculares -> rrel_explored_relation: nrel_propagation_type;;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: nrel_propagation_type;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Тип размножения - отношение, связывающее некоторый вид растения с характерным для него типом размножения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(тип размножения*)](*<- lang_ru;;*);;
+    <= nrel_using_constants: {concept_propagation_type; concept_plantae};;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_propagation_type;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Фиалке горной характерно семенное размножение.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(тип размножения*)](*<- lang_ru;;*);;
+    <= nrel_using_constants:{concept_seed_propagation; concept_viola_montana_l};;
+*);;
+
+//область определения
+. -> ...
+(*
+<= nrel_definitional_domain: nrel_propagation_type;; 
+<= nrel_association: {concept_plantae; concept_propagation_type};;
+*);;
+
+//домены
+nrel_propagation_type => nrel_first_domain: concept_plantae;;
+nrel_propagation_type => nrel_second_domain: concept_propagation_type;;
+
+//арность отношения
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_propagation_type;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+//свойства отношения
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: norole_relation;;
+relation -> binary_relation;;
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: isymetric_relation;;
+
+antireflexive_relation -> nrel_propagation_type;;
+isymetric_relation -> nrel_propagation_type;;
+norole_relation-> nrel_propagation_type;;
+oriented_relation -> nrel_propagation_type;;

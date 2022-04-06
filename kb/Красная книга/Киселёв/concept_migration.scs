@@ -1,0 +1,117 @@
+
+nrel_migration
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[migration*](*<-lang_en;;*);
+                 [миграция*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(миграция)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_animal(*<-sc_node_not_relation;;*);
+	concept_population_animal;
+	individual;
+	habitat
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:
+[	<b>Миграция</b> - регулярное передвижение <b><sc_element sys_idtf="concept_population">популяции</b></sc_element> <b><sc_element sys_idtf="concept_animal">животных</b></sc_element>, в ходе которого <b><sc_element sys_idtf="individual">особи</b></sc_element> из одной <b><sc_element sys_idtf="habitat">области обитания</b></sc_element> перемещаются в другую.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(Миграция)](*<-lang_ru;;*);;
+
+=>nrel_using_constants:{
+
+	concept_fish(*<-sc_node_not_relation;;*);
+	bird1(*<-sc_node_not_relation;;*);
+        concept_amphibia
+
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:[Миграция наиболее распространена у рыб, птиц и земноводных](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:...(*
+	<=nrel_combination:{ concept_animal(*<=nrel_first_domain:nrel_migration;;*);
+ 	location(*<=nrel_second_domain:nrel_migration;;*)
+};;
+*);;
+nrel_migration<-asymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_migration<-antitransitive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_migration<-antireflexive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_migration<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+
+
+stork1<-bird1;;
+central_europe<-location;;
+east_africa<-location;;
+
+stork1=>nrel_migration: ...(*
+
+	->rrel_where_from:central_europe;;
+	->rrel_where_to:east_africa;;
+*);;
+
+
+
+
+arity->...(*=>nrel_measurement:2;;
+	->nrel_migration;;
+*);;
+
+                          
+
+
+individual<-sc_node_not_relation;
+=>nrel_main_idtf:
+[особь] (*<-lang_ru;;*);
+[individual] (*<-lang_en;;*);;
+
+habitat<-sc_node_not_relation;
+=>nrel_main_idtf:
+[область обитания] (*<-lang_ru;;*);
+[habitat] (*<-lang_en;;*);;
+
+
+location<-sc_node_not_relation;
+=>nrel_main_idtf:
+[место] (*<-lang_ru;;*);
+[location] (*<-lang_en;;*);;
+
+nrel_former_habitat<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[прежняя область обитания] (*<-lang_ru;;*);
+[former_habitat] (*<-lang_en;;*);;
+
+
+nrel_habitat<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[область обитания] (*<-lang_ru;;*);
+[habitat] (*<-lang_en;;*);;
+
+rrel_where_from<-sc_node_role_relation;
+=>nrel_main_idtf:
+[откуда] (*<-lang_ru;;*);
+[where_from] (*<-lang_en;;*);;
+
+rrel_where_to<-sc_node_role_relation;
+=>nrel_main_idtf:
+[куда] (*<-lang_ru;;*);
+[where_to] (*<-lang_en;;*);;
+
+asymmetric_relation<-sc_node_not_relation;
+=>nrel_main_idtf:
+[асимметричное отношение] (*<-lang_ru;;*);
+[asymmetric_relation] (*<-lang_en;;*);;
+
+concept_population_animal<-sc_node_not_relation;
+=>nrel_main_idtf:
+[популяция] (*<-lang_ru;;*);
+[concept_population_animal] (*<-lang_en;;*);;
+

@@ -1,0 +1,20 @@
+concept_cricetidae => nrel_main_idtf:
+[хомяковые](*<-lang_ru;;*);
+[cricetidae](*<-lang_lat;;*);;
+
+concept_family -> concept_cricetidae;;
+
+//определение и пояснения
+concept_cricetidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Хомяковые - семейство отряда грызунов, входящее в состав подотряда мышеобразных.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_cricetidae;;

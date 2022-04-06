@@ -1,0 +1,144 @@
+concept_puellae_fungus_umbrella => nrel_main_idtf:
+[гриб-зонтик девичий](*<-lang_ru;;*);
+[puellae fungus umbrella](*<-lang_lat;;*);
+[грыб-парасонiк дзявочы](*<-lang_bel;;*);;
+concept_puellae_fungus_umbrella => nrel_idtf:[грыб-парасонiк дзявочы](*<-lang_bel;;*);;
+
+plants -> concept_puellae_fungus_umbrella;;
+concept_species -> concept_puellae_fungus_umbrella;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_puellae_fungus_umbrella;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_puellae_fungus_umbrella;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_puellae_fungus_umbrella <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993), Красную книгу СССР (1984). Охраняется в Украине.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает на опушках и полянах хвойных и смешанных лесов, иногда встречается на суходольных лугах. Растет на хорошо удобренной почве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела созревают в августе - сентябре. Малоизвестный съедобный гриб.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается единичными экземплярами или небольшими группами. Во всех местонахождениях численность вида невелика и подвержена значительным годичным колебаниям.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Интенсивное лесопользование, вырубка лесов, чрезмерные рекреационные нагрузки (уплотнение и загрязнение почвы).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо предупреждение изменения экологического режима в местах произрастания (запретить все виды рубок леса и хозяйственную трансформацию земель, ограничить рекреационные нагрузки). Следует проводить периодический контроль состояния известных популяций, осуществлять поиск новых мест роста и, при необходимости, организовывать их охрану; создавать заказники в местах, где гриб-зонтик произрастает совместно с другими охраняемыми видами.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический вид с дизъюнктивным европейским ареалом . В Беларуси известны два местонахождения: Минская обл., Воложинский р-н, окрестности д. Падневичи и в Центральном ботаническом саду НАН Беларуси (Минск).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Шляпка диаметром 5-8 см, изначально широкояйцевидная, потом плоско-распростертая, с гладким коричневатым бугорком, белая, покрыта волокновидными белыми чешуйками, с тонким бархатистым краем. Мякоть белая, пресная на вкус, со слабым запахом редьки, на воздухе у основания ножки слегка краснеет. Пластинки белые или с розовым оттенком, от нажатия становятся грязно-бурыми, с длинными бесцветными хейлоцистидами. Споры 7-9 5-6 мкм, яйцевидные. Ножка размером 5-12 0,5-1 см, внизу клубневидная, ровная или слегка изогнутая, полая, грязно-белая или коричневатая, гладко-волокнистая, с широким подвижным мягким молочно-белым кольцом, махристым по краю.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_puellae_fungus_umbrella <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Volozhin_district;;
+	*);;
+
+concept_agaricales => nrel_inclusion: concept_puellae_fungus_umbrella;;
+concept_puellae_fungus_umbrella => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; white;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; white;;
+	*);;
+
+concept_puellae_fungus_umbrella <= nrel_inclusion: 
+	0.5_1_cm
+	(*
+	<- interval_value;;
+	<- length_of_stipe;;
+	=> nrel_measurement: (0.5_cm => 1_cm);;	
+	*);
+	5_8_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_a_cap;;
+	=> nrel_measurement: (5_cm => 8_cm);;	
+	*);;
+	0.5_cm <- length_of_stipe; exact_value;;
+	0.5_cm -> .centimeter: 0.5 (* <- number;;*);;
+	1_cm <- length_of_stipe; exact_value;;
+	1_cm -> .centimeter: 1 (* <- number;;*);;
+	5_cm <- diameter_of_a_cap; exact_value;;
+	5_cm -> .centimeter: 5 (* <- number;;*);;
+	8_cm <- diameter_of_a_cap; exact_value;;
+	8_cm -> .centimeter: 8 (* <- number;;*);;				
+
+concept_puellae_fungus_umbrella <= nrel_inclusion: concept_2_protection_category;;
+

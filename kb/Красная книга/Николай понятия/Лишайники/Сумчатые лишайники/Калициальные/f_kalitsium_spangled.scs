@@ -1,0 +1,134 @@
+concept_kalitsium_spangled => nrel_main_idtf:
+[калициум усыпанный](*<-lang_ru;;*);
+[kalitsium spangled](*<-lang_lat;;*);
+[калiцыум усыпаны](*<-lang_bel;;*);;
+concept_kalitsium_spangled => nrel_idtf:[калiцыум усыпаны](*<-lang_bel;;*);;
+
+plants -> concept_kalitsium_spangled;;
+concept_species -> concept_kalitsium_spangled;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_kalitsium_spangled;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_kalitsium_spangled;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_kalitsium_spangled <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается на коре ствола дуба в старовозрастных широколиственных лесах и пойменных дубравах с повышенной влажностью воздуха, а также на гнилых сосновых пнях в заболоченных сосновых лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается аскоспорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет небольшими группами, реже образует сплошной покров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Рубки леса главного пользования, хозяйственная трансформация земель, осушительная мелиорация, рекреационные нагрузки, лесные пожары.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков "Беловежская пуща" и "Припятский". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида, запрет любой лесохозяйственной деятельности в местах роста и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа (Польша, Карелия, Прибалтика, Украина и Россия), Азия (Япония), Северная Америка, Австралия . В Беларуси известен в Брестской (Пружанский р-н), Гродненской (Свислочский р-н) и Гомельской (Житковичский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище зернистое, бугорчатое или чешуйчатое, беловато-серое или оливково-бурое. Подслоевище беловатое. Апотеции высотой 0,5-1,5 мм, на ножках (высотой 0,3-1 мм, толщиной 0,1-0,3 мм) с зеленоватым налетом. Головки апотециев воронко- или линзовидные, резко отграниченные от ножки. Диск сначала покрыт плотным желто-зеленым или золотисто-желтым налетом, позже голый, выпуклый, диаметром 0,3-0,9 мм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_kalitsium_spangled <= nrel_spread: ... 
+	(*
+	-> Grodno_district;;
+	*);;
+
+concept_kalitsievye => nrel_inclusion: concept_kalitsium_spangled;;
+concept_kalitsium_spangled => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; white; grey; granular;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_underclass; white; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_apothecia;;
+	*);;
+
+concept_kalitsium_spangled <= nrel_inclusion: 
+	1_2_mm
+	(*
+	<- interval_value;;
+	<- length_of_apothecia;;
+	=> nrel_measurement: (1_mm => 2_mm);;	
+	*);;
+	1_mm <- length_of_apothecia; exact_value;;
+	1_mm -> .milimeter: 1 (* <- number;;*);;
+	2_mm <- length_of_apothecia; exact_value;;
+	2_mm -> .milimeter: 2 (* <- number;;*);;				
+
+concept_kalitsium_spangled <= nrel_inclusion: concept_3_protection_category;;
+

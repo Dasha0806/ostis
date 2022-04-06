@@ -1,0 +1,53 @@
+sc_node_not_relation ->  concept_lissamphibia;;
+
+concept_lissamphibia=> nrel_main_idtf: 
+ [беспанцирные](*<- lang_ru;;*); 
+ [labyrinthodontia](*<- lang_lat;;*);;
+
+concept_subclass -> concept_lissamphibia;;
+
+
+
+concept_lissamphibia <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель подкласса беспанцирные)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lissamphibia.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+concept_lissamphibia <= nrel_subdividing:
+	...
+        (*
+	
+	-> concept_caudata;;
+	-> concept_anura;;
+	-> concept_gymnophiona;;
+	
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+//определение и пояснения
+concept_lissamphibia <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Подкласс земноводных позвоночных. К этому подклассу относятся все ныне живущие земноводные.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+        
+
+	
+
+
+
+

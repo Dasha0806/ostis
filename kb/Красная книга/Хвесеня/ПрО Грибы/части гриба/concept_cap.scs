@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_cap;;
+concept_cap => nrel_main_idtf:
+[шляпка гриба](*<-lang_ru;;*);
+[pileus](*<-lang_en;;*);;
+
+concept_cap <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(шляпка гриба)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть плодового тела шляпочного гриба](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_fungos;;
+	->concept_sporocarp;;
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_cap => nrel_inclusion: concept_sporocarp;;

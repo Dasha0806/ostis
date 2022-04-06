@@ -1,0 +1,77 @@
+sc_node_not_relation -> pekalinskiy;;
+
+pekalinskiy => nrel_main_idtf: [заказник Пекалинский] (* <- lang_ru;; *);
+				     [Pekalinskiy] (* <- lang_en;; *);;
+
+pekalinskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Пекалинский)](*<-lang_ru;;*);
+		[Pic. (Pekalinskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+pekalinskiy<-concept_sanctuary;;
+
+pekalinskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Пекалинский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Пекалинский был создан в 2000 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							pekalinskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2000(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+pekalinskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Пекалинский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Пекалинский составляет 2129 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							pekalinskiy=>nrel_square:[2129 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[2129](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+pekalinskiy => nrel_area_location: Grodno_area;;
+pekalinskiy => nrel_flora: ...(*
+<-concept_epipactis_atrorubens_bess;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: pekalinskiy;;

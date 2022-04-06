@@ -1,0 +1,154 @@
+concept_geastrum_fornicatum=> nrel_main_idtf: [звездовик сводчатый](*<- lang_ru;;*); [geastrum fornicatum](*<- lang_lat;;*);;
+
+concept_geastrum_fornicatum<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (звездовик сводчатый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_geastrum_fornicatum.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+ Red_list_ru -> concept_geastrum_fornicatum;;
+concept_plant -> concept_geastrum_fornicatum;;
+concept_species -> concept_geastrum_fornicatum;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_geastrum_fornicatum;;
+
+//пояснения
+concept_geastrum_fornicatum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Молодые плодовые тела подземные или полуподземные, прижато-шаровидные, до 4-5 см в диам., с коротким тупым носиком, при созревании выходящие на поверхность. Раскрытые плодовые тела 5-10 см выс. и 6-9 см в диам. Экзоперидий разрывается на 4, редко 5 лопастей, при этом внешний мицелиальный слой экзоперидия остается в виде чаши в субстрате, а лопасти внутреннего слоя заворачиваются книзу и приподнимают спороносную часть над субстратом. Эндоперидий приплюснуто-шаровидный, иногда сливовидный, 1-1,5 см выс. и 1,2-2 (2,5) см в диам., с расширением в нижней части эндоперидия (апофизой). Перистом волокнистый, не отграничен от остальной части эндоперидия. Споры шаровидные, бородавчатые, темно-коричневые, 3,5-4,5 мкм в диам. Гифы капиллиция 10-12 мкм толщ. (1, 2, 3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Ленинградская (4), Тверская (5, 6), Тамбовская обл. (7), Центральное Черноземье (8); Правобережное Поволжье: Ульяновская, Самарская, Саратовская обл. (9), Приволжская возвышенность: Саратовская и Пен- зенская обл. (10); Белгородская (11, LE); Волгоградская (12); Ростовская (13; 14); Астраханская (14) области; Краснодарский (14), Ставропольский края (LE); Свердловская обл. (15). Общее распространение: вне России: Европа, Азия, Сев. Америка, Африка, Австралия (2, 16).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Сапротроф гумусово-подстилочный. Произрастает в лиственных, хвойных и смешанных лесах, лесополосах. На мощном слое подстилки, богатой перегнойной почве, иногда в дуплах деревьев. Плодоношение - по несколько экземпляров или большими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В России известно около 25-30 местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Сокращение численности связано с сокращением площади лиственных лесов (основного типа местообитания вида), растущими рекреационными нагрузками и неумеренным выпасом скота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу природы Ленинградской обл.(18), Красные книги Тверской (6) и Там- бовской обл. (7).Охраняется на территориях Богдинско-Баскунчакского заповедника (Астраханская обл.), Ботанического сада Южного федерального университета (Ростовская обл.) (14) и Государственного музея-заповедника М.А. Шолохова (Ростовская обл.) (13).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим контроль за состоянием популяций и поиск новых местонахождений, а также изучение лимитирующих факторов. Необходимо ускорить процесс организации Природного парка на севере Ростовской области, где отмечена высокая плотность популяции вида. Желательно введение вида в культуру.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Штамм вида имеется в Коллекции культур базидиомицетов БИН РАН (LE(BIN)) (18). Есть указания на выделение в чистую культуру других представителей рода (19).](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+	
+
+//разное
+concept_geastrum_fornicatum <= nrel_spread: ... 
+	(*
+	-> Leningradskaja_oblast; Tverskaja_oblast; Tambovskaja_oblast; tsentralnochernozemniy_zapovednik; Uljanovskaja_oblast; Samarskaja_oblast; Saratovskaja_oblast; Penzenskaja_oblast_Uljanovskaja_oblast; Krasnodarskiy_kray; Stavropolskiy_kray;;
+*);;
+
+concept_zvezdovnikovyye => nrel_inclusion: concept_geastrum_fornicatum;;
+concept_geastrum_fornicatum => nrel_part: 
+	
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; pressed_spherical; semi_underground; underground;;
+	*);
+...
+	(*
+	<= nrel_inclusion: concept_spore; dark_brown; warty; globular;;
+	*);;
+
+			concept_geastrum_fornicatum <= nrel_inclusion: 
+
+	[6-9 см]
+	(*
+	<- interval_value;;
+	<- body_diameter;;
+	=> nrel_measurement: ([6 см] => [9 см]);;	
+	*);
+	[5-10 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [10 см]);;	
+	*);;
+
+	[6 см] <- body_diameter; exact_value;;
+	[6 см] -> .centimeter: 6 (* <- number;;*);;
+	[9 см] <- body_diameter; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	
+concept_geastrum_fornicatum <= nrel_inclusion: concept_3_protection_category;;

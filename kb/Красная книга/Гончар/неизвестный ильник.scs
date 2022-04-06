@@ -1,0 +1,146 @@
+concept_rhantus_incognitus_scholz=> nrel_main_idtf:
+[неизвестный ильник](*<-lang_ru;;*);
+[rhantus incognitus scholz](*<-lang_lat;;*);;
+
+concept_species -> concept_rhantus_incognitus_scholz;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_rhantus_incognitus_scholz;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_rhantus_incognitus_scholz;;
+	-> rrel_number_of_year: 1927 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_rhantus_incognitus_scholz <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Главным образом в небольших лесных реках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Биология вида изучена недостаточно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид с небольшой численностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вид чувствителен к неблагоприятному воздействию загрязнений.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется в Беловежской пуще. Необходима организация охраны территорий, где он обнаружен, а также запрещение проведения мелиоративных работ, применения химических средств и удобрений на водосборных площадях, прилегающих к этим территориям.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Редкий среднеевропейский вид. В настоящее время известен только из Восточной Польши и Юго-Западной Литвы, Латвии, Западной Украины и Словакии . В Беларуси отмечен только в Дятловском р-не Гродненской обл. и в Беловежской пуще .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Один из 9 видов рода, зарегистрированных в Беларуси. Тело жука (10-11 мм) широкоовальное, кпереди и кзади одинаково сильно суженное, блестящее, красновато-желтое, низ тела желто-бурый. Усики и ноги красновато-желтые. Черные крапинки надкрылий широкие, сливающиеся. Основание переднеспинки прямое, или самое большее, со слабыми выемками у задних углов. Боковой рубчик на переднеспинке толстый. Голова с зачерненным теменем. Верх тела личинки желто-коричневый, с явственным рисунком.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_rhantus_incognitus_scholz <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pushcha_district; Dyatlovo_district;;
+	*);;
+
+concept_dytiscidae => nrel_inclusion: concept_rhantus_incognitus_scholz;;
+concept_rhantus_incognitus_scholz => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; yellow; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; red; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; yellow; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; yellow;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; red; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; brown;;
+	*);;
+
+concept_rhantus_incognitus_scholz <= nrel_inclusion: 
+	10_11_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (10_mm => 11_mm);;	
+	*);;
+	10_mm <- length_of_body; exact_value;;
+	10_mm -> .millimeter: 10 (* <- number;;*);;
+	11_mm <- length_of_body; exact_value;;
+	11_mm -> .millimeter: 11 (* <- number;;*);;	
+
+concept_rhantus_incognitus_scholz <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,80 @@
+sc_node_not_relation -> zamok;;
+
+zamok => nrel_main_idtf: [заказник Замковый Лес] (* <- lang_ru;; *);
+				     [Zamkoviy Les] (* <- lang_en;; *);;
+
+concept_territorry->zamok;;
+zamok <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Замковый Лес)](*<-lang_ru;;*);
+		[Pic. (Zamkoviy Les)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+zamok<-concept_sanctuary;;
+
+zamok <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Замковый Лес, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[заказник Замковый Лес занимается охраной тамошних природных угодий с 1998 года.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zamok=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1998(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zamok <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Замковый Лес, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Замковый Лес составляет 3709 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zamok=>nrel_square:[3709 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[3709](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zamok => nrel_area_location: Grodno_area;;
+zamok => nrel_flora: ...(*
+<-concept_lilium_martagon_l;concept_bromopsis_benekenii_lange_holub;concept_cephalanthera_longifolia_l_fritsch;
+concept_cephalanthera_rubra_l_rich;concept_iris_sibirica_l;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: zamok;;
+

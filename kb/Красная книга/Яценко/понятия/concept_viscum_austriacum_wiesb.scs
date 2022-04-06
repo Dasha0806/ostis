@@ -1,0 +1,166 @@
+concept_viscum_austriacum_wiesb => nrel_main_idtf: [омела австрийская](*<- lang_ru;;*); [viscum austriacum wiesb. (=v. album l. subsp. austriacum (wiesb.) vollm.; v. laxum boiss. et reut.)](*<- lang_lat;;*); [амела аўстрыйская](*<- lang_bel;;*);;
+concept_viscum_austriacum_wiesb => nrel_idtf: [амела аўстрыйская](*<- lang_bel;;*);;
+
+concept_species -> concept_viscum_austriacum_wiesb;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_viscum_austriacum_wiesb;;
+
+concept_viscum_austriacum_wiesb  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (омела австрийская)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_viscum_austriacum_wiesb.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_viscum_austriacum_wiesb;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_viscum_austriacum_wiesb <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную 
+книгу Беларуси включен 
+впервые.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Вечнозеленый кустарник с многократно вильчато-разветвленными от основания и слегка повисающими книзу стеблями, образующими в пространстве почти правильный шар. Листья длиной 2-4 см (длина в 5-7 раз превышает ширину), узкие, тупые, кожистые, супротивные, с характерным дуговидным жилкованием. Цветки правильные, желтоватые или зеленоватые, невзрачные, мелкие, длиной около 2 мм, однополые, двудомные, почти сидячие, собраны в немногоцветковое соцветие, располагающееся в пазухах листьев или на верхушках ветвей. Околоцветник простой, обычно из четырех долей, сильно редуцированный, особенно в женских цветках. Тычинок 4. Пестик короткий; завязь нижняя, одногнездная, с одной семяпочкой. Плод - продолговатая слегка желтоватая, редко беловатая, сочная ягода длиной до 1 см с клейкой мякотью. Семена с мясистым эндоспермом.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Средняя и Восточная Европа, Средиземноморье, Кавказ (Закавказье), Малая Азия . Из стран, соседствующих с Беларусью, отмечен лишь в западных районах Украины  и южных районах Польши . В Беларуси находится в изолированных локалитетах за северной границей ареала. С конца 70-х годов прош­лого века известен в Житковичском р-не Гомельской обл. (территория Национального парка «Припятский») . В последние годы найден в Столинском  и Брест­ском  р-нах Брестской области.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Произрастает на старовозрастных экземплярах сосны обыкновенной (преимущественно 120-150 лет и более), располагаясь на старых трещинноватых ветвях.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Растение-паразит, развивающее гаусториальную систему внутри растения-хозяина. Ведет полупаразитический образ жизни, поскольку имеет зеленые фотосинтезирующие листья. Цветет и плодоносит с марта до осени. Энтомофил и анемофил. Размножение исключительно семенное. Эпи- и эндоорнитохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В лесных массивах отмечается на отдельных старовозрастных деревьях. На одном дереве может произрастать от 2-3 до 7-10 растений.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Рубки леса главного пользования в старовозрастных сосняках, а также использование растений для лечебных целей.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка «Припятский» и ландшафтных заказников «Ольманские болота» (Столинский р-н) и «Бугский» (Брест­ский р-н). Необходимо запретить рубку старовозрастных сосняков в пределах выявленных популяций и вблизи них (допускаются выборочные санитарные рубки и рубки ухода, исключая старовозрастные деревья), осуществлять постоянный контроль состояния популяций.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_viscum_austriacum_wiesb <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Zhitkovichi_district;;->Stolin_district;;->Brest_district;;
+		*);;
+*);;
+
+concept_viscum_austriacum_wiesb => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; fork_branched;hangs;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; narrow;stupid;leathery;opposite;arcuate_venation;;
+*);
+...
+(*
+<= nrel_inclusion: flower; right;yellowish;greenish;plain;small;gay;dioecious;sedentary;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; nemnogolyudny;simple;reduced;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; oblong;yellowish;whitish;juicy;berry;;
+*);;
+
+concept_viscum_austriacum_wiesb <= nrel_inclusion: 
+[15-30]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [30 см]);; 
+*); 
+[2-7 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([2 см] => [7 см]);; 
+*);;
+
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[30 см] <- length_of_inflorscence; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+[2 см] <- length_of_inflorscence; exact_value;;
+[2 см] -> .centimeter: 2 (* <- number;;*);;
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+ 
+
+concept_viscum_austriacum_wiesb <= nrel_inclusion: concept_2_protection_category;;

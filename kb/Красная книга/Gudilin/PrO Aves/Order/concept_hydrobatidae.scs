@@ -1,0 +1,22 @@
+concept_hydrobatidae => nrel_main_idtf:
+[качурковые](*<-lang_ru;;*);
+[hydrobatidae](*<-lang_lat;;*);;
+
+concept_family -> concept_hydrobatidae;;
+
+concept_hydrobatidae => nrel_inclusion: concept_oceanodroma_monorhis;;
+
+//определение и пояснения
+concept_hydrobatidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Качурковые — семейство новонёбных птиц из отряда буревестникообразных. Русское название происходит от слова «окочуриться»: в старину качурок считали душами утонувших моряков. Из-за сходства некоторых качурок с ласточками (в размерах, щебетании и манере полёта) их также называли «штормовыми ласточками».](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_hydrobatidae;;

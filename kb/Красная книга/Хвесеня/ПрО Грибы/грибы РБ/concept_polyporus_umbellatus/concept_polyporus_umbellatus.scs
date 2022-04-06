@@ -1,0 +1,161 @@
+concept_polyporus_umbellatus=> nrel_main_idtf: [полипорус зонтичный](*<- lang_ru;;*); [polyporus umbellatus](*<- lang_lat;;*); [папіпорус парасонавы](*<- lang_bel;;*);;
+
+concept_polyporus_umbellatus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (полипорус зонтичный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_polyporus_umbellatus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+
+
+concept_plant -> concept_polyporus_umbellatus;;
+concept_species -> concept_polyporus_umbellatus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_polyporus_umbellatus;;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_grifola_frondosa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_polyporus_umbellatus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Украине, Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Лиственные и хвойно-широколиственные леса. Растет как паразит на корнях, у основания стволов и пней лиственных пород деревьев (дуба, граба, клена).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вызывает белую гниль, гниение малоактивное. Плодовое тело образуется из подземного многолетнего бугорковидного склероция, черного снаружи и белого внутри . Плодовые тела появляются в августе - сентябре . Ценный съедобный и лекарственный гриб .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается единичными экземплярами. Численность особей в популяциях подвержена годичным колебаниям. Отмечена тенденция к уменьшению частоты встречаемости вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Активный сбор плодовых тел, нарушение условий роста (все виды рубок леса, хозяйственная трансформация земель).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в национальных парках «Беловежская пуща» и «Припятский». Необходимо образование в известных местах роста специализированных микологических заказников с запретом антропогенных воздействий, поиск новых мест произрастания и, при необходимости, организация их охраны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Северная Америка . В Беларуси найден в Брестской (Березовский, Брестский, Жабинковский и Пружанский р-ны), Витебской (Глубокский и Лиозненский р-ны), Гомельской (Житковичский р-н), Минской (Молодечненский и Пуховичский р-ны, Несвижский дворцово-парковый ансамбль) и Могилевской (Белыничский, Кричевский и Хотимский р-ны) обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела однолетние, состоящие из многочисленных ветвистых ножек, которые несут маленькие шляпки; белые ножки соединяются у основания в общий клубневидный пенек. Плодовое тело достигает в диаметре 50 см. Отдельные шляпки диаметром 1-4 см, округлые, с небольшим углублением в центре, поверхность шляпок светло-охряная. Трубочки гименофора несколько низбегающие на ножку. Гифальная система димитическая, гифы с пряжками. Базидии булавовидные, 2-4 споровые. Споры цилиндрические или веретеновидные, у основания косо оттянутые, гиалиновые, размером 7-10 3-4 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_polyporus_umbellatus <= nrel_spread: ... 
+	(*
+	->  Berezinsky_district; Brest_district; Zhabinka_district; Pryjani_district; Hlybokaye_district; Liozna_district; Zhytkavichy_district; Maladzyechna_district; Pukhavichy_district; Nesvizh_district; Byalynichy_district; Krychaw_district; Khotsimsk_district;;
+	*);;
+
+concept_poliporovye => nrel_inclusion: concept_polyporus_umbellatus;;
+concept_polyporus_umbellatus => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; annual;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; white; branching;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; white; light_ocher;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; cylindrical;;
+	*);;
+
+concept_polyporus_umbellatus <= nrel_inclusion: 
+	[0-50 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [50 см]);;	
+	*);
+	[1-4 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([1 см] => [4 см]);;	
+	*);;
+
+
+
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[50 см] <- length_of_body; exact_value;;
+	[50 см] -> .centimeter: 50 (* <- number;;*);;
+	[1 см] <- cap_diameter; exact_value;;
+	[1 см] -> .centimeter: 1 (* <- number;;*);;
+	[4 см] <- cap_diameter; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	
+concept_polyporus_umbellatus <= nrel_inclusion: concept_2_protection_category;;

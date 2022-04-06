@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_caudofoveata;;
+
+concept_caudofoveata=> nrel_main_idtf: 
+ [ямкохвостые](*<- lang_ru;;*); 
+ [caudofoveata](*<- lang_lat;;*);;
+
+concept_class -> concept_caudofoveata;;
+
+
+concept_caudofoveata <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса ямкохвостые)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_caudofoveata.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_caudofoveata <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Класс моллюсков, содержит около 60 видов. Обитают в толще рыхлого морского осадка, где занимают экологическую нишу избирательных детритофагов или хищников.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Населяют верхний слой донных осадков от сублиторали до глубины около 2200 м. Располагаются в осадке косо, головой вниз, где собирают радулой свою пищу: детрит, диатомовые водоросли, фораминиферы.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Ямкохвостые обладают телом цилиндрической формы длиной меньше 3 см и в отличие от большинства других моллюсков лишены ноги[1].Находящееся на переднем конце тела ротовое отверстие окружено складкой мантии — оральным щитом. Он служит для рытья и одновременно выступает органом чувств. Известно, что Caudofoveata раздельнополы. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

@@ -1,0 +1,102 @@
+sc_node_not_relation -> concept_national_composition;;
+concept_national_composition=>nrel_main_idtf:
+[национальный состав](* <-lang_ru;; *);
+	[national composition](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_geography;;
+concept_geography => nrel_main_idtf:
+[география](* <-lang_ru;; *);
+	[география](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_territory;;
+concept_territory => nrel_main_idtf:
+[территория](* <-lang_ru;; *);
+	[территория](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> belarussian;;
+belarussian => nrel_main_idtf:
+[белорус](* <-lang_ru;; *);
+	[belarussian](* <- lang_en;; *);;
+
+sc_node_not_relation -> polish;;
+polish => nrel_main_idtf:
+[поляк](* <-lang_ru;; *);
+	[polish](* <- lang_en;; *);;
+
+sc_node_not_relation -> tatar;;
+tatar => nrel_main_idtf:
+[татар](* <-lang_ru;; *);
+	[tatar](* <- lang_en;; *);;
+
+sc_node_not_relation -> armenian;;
+armenian => nrel_main_idtf:
+[армян](* <-lang_ru;; *);
+	[armenian](* <- lang_en;; *);;
+
+sc_node_not_relation -> ukrainian;;
+ukrainian => nrel_main_idtf:
+[украинец](* <-lang_ru;; *);
+	[ukrainian](* <- lang_en;; *);;
+
+sc_node_not_relation -> gypsy;;
+gypsy => nrel_main_idtf:
+[цыган](* <-lang_ru;; *);
+	[gypsy](* <- lang_en;; *);;
+
+sc_node_not_relation -> russian;;
+russian => nrel_main_idtf:
+[росиянин](* <-lang_ru;; *);
+	[russian](* <- lang_en;; *);;
+
+sc_node_not_relation -> nrel_nationality;;
+nrel_nationality => nrel_main_idtf:
+[национальность*](* <-lang_ru;; *);
+	[nationality*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+//определение 
+concept_national_composition <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Национальный состав)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Национальный состав - перечень национальностей живущих на данной территории.](* <- lang_ru;; *);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->nrel_nationality;;
+    ->concept_territory;;
+*);;
+*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:concept_national_composition;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://national_composition.jpg";;
+		*);;
+	*);;
+
+concept_national_composition <= nrel_intersection: ...(* -> belarussian;; -> russian;; -> polish;;  -> tatar;;  -> armenian;;  -> ukrainian;; -> gypsy;; => nrel_idtf: [Разбиение по признаку рассовой принадлежности](* <- concept_russian_language;; *);; *);;
+

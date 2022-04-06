@@ -1,0 +1,30 @@
+concept_batrachospermaceae => nrel_main_idtf:
+[батрахоспермовые](*<-lang_ru;;*);
+[batrachospermaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_batrachospermaceae;;
+
+concept_batrachospermaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_batrachospermum_moniliforme;;
+
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_batrachospermaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Мягкое слизистое слоевище водорослей семейства батрахоспермовые состоит из центральной однорядной оси, разветвленной моноподиально или псевдоди-хотомически. Основные ветви густо покрыты пучками коротких веточек ограниченного роста, расположенных мутовками. Строение батрахоспермума легко представить как результат усложнения и упорядочения строения акрохетиевых. Вначале образуется стелющаяся по субстрату нить, она ветвится с образованием псевдопаренхимной подошвы, из клеток которой возникает множество вертикальных однорядных побегов, морфологически почти неотличимых от акрохетиума. ](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_batrachospermaceae;;

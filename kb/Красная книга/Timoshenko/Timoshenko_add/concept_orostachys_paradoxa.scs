@@ -1,0 +1,45 @@
+concept_orostachys_paradoxa => nrel_main_idtf:
+[Горноколосник странный](*<-lang_ru;;*);
+[Orostachys paradoxa](*<-lang_lat;;*);;
+
+concept_species -> concept_orostachys_paradoxa;;
+
+
+Red_list_ru -> concept_orostachys_paradoxa;;
+
+//пояснения
+concept_orostachys_paradoxa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Меры охраны вида не принимались.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России в Приморском крае. Вид описан из окр. пос. Светлая в Тернейском р-не (галечник близ морского побережья). Приводится также для окр. пос. Заповедный в Лазовском р-не.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый суккулентный многолетник с монокарпическими побегами, приподнимающимися в основании, 5-15 см выс. Размножение семенное и отчасти вегетативное. Цветет с августа по сентябрь. Опыляется насекомыми. Плодоносит с сентября по октябрь. Распространение семян анемохорное и отчасти гидрохорное (семена выбиваются из зрелых листовок дождевыми каплями).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_orostachys_paradoxa <= nrel_inclusion: concept_1_protection_category;;

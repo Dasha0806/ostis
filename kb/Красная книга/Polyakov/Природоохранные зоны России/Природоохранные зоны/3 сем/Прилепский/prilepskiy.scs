@@ -1,0 +1,87 @@
+
+sc_node_not_relation -> prilepskiy;;
+
+prilepskiy => nrel_main_idtf: [заказник Прилепский] (* <- lang_ru;; *);
+				     [prilepskiy] (* <- lang_en;; *);;
+
+
+prilepskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Прилепский)](*<-lang_ru;;*);
+		[Pic. (prilepskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://66.jpg!300!200!reduce.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+prilepskiy<-concept_sanctuary;;
+
+prilepskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Прилепский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заказник Прилепский был создан в 2000 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							prilepskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2000(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+prilepskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Прилепский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Прилепский составляет 3242 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							prilepskiy=>nrel_square:[3242 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:3242(*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+prilepskiy => nrel_area_location: Minsk_area;;
+
+
+
+sc_node_role_relation->rrel_ga;;
+rrel_ga => nrel_main_idtf:
+[га'](*<-lang_ru;;*);
+	[ga'](*<-lang_en;;*);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: prilepskiy;;

@@ -1,0 +1,75 @@
+Puhovichski_area<-concept_area;;
+Puhovichski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Puhovichski_area=>nrel_administrative_center_of_the_area:Marina_gorka;;
+Marina_gorka<-concept_city;;
+
+//самая высокая точка
+Puhovichski_area=>nrel_highest_point:236_m;;
+236_m<-concept_number;;
+
+//площадь района
+Puhovichski_area=>nrel_area_of_the_district:2441_km;;
+2441_km<-concept_number;;
+
+//население района
+Puhovichski_area=>nrel_population_of_region:22557_m;;
+22557_m<-concept_number;;
+
+//используемые константы
+Puhovichski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Пуховичский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Пуховичский район — административная единица на востоке Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Puhovichski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Пуховичский район является центром Беларуси](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Puhovichski_area;;
+Puhovichski_area => nrel_main_idtf:
+[Пуховичский район](* <-lang_ru;; *);
+[Puhovichski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Marina_gorka;;
+Marina_gorka=> nrel_main_idtf:
+[Марьина горка](* <-lang_ru;; *);
+[Marina gorka](* <- lang_en;; *);;
+
+sc_node_not_relation ->236_m;;
+236_m=> nrel_main_idtf:
+[236 м](* <-lang_ru;; *);
+[236 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->2441_km;;
+2441_km=> nrel_main_idtf:
+[2441 км^2](* <-lang_ru;; *);
+[2441 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->65113_m;;
+65113_m=> nrel_main_idtf:
+[65113 человек](* <-lang_ru;; *);
+[65113 m](* <- lang_en;; *);;

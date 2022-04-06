@@ -1,0 +1,163 @@
+concept_gelidium_elegans => nrel_main_idtf:
+[гелидиум изящный](*<-lang_ru;;*);
+[gelidium elegans](*<-lang_lat;;*);;
+
+
+concept_species -> concept_gelidium_elegans;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_gelidium_elegans;;
+
+//пояснения
+concept_gelidium_elegans <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г-редкий вид, имеющий значительный общий ареал, в России растет на северной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище кустистое, 4-5 см дл., мягкохрящеватое, от основания до вершины равномерно поочередно или супротивно разветвленное. Ветви неограниченного роста до 2 мм шир. Широкие ветви плоские или уплощенные, узкие ветви - вальковатые. Веточки ограниченного роста шиловидные, неразветвленные или разветвленные, перисто расположенные. Слоевище многоосевое, состоит из большого числа разветвленных клеточных нитей, образующих сердцевину и кору. Ризоидообразные нити развиты в сердцевине, встречаются во внутренней коре. Спорангии в овальных субапикальных сорусах (пятнах), располагающихся по 1(2) на веточке. Верхушки спорангиеносных веточек острые. Цистокарпы развиваются на мелких веточках 0,5-0,6 мм дл. и 0,2-0,025 мм шир.; веточки с тупой или острой верхушкой (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается в Японском море: Амурский залив, м. Де-Фриза (2). Вне России: Желтое, Японское моря, о-ва Японские, Рюкю, Тайвань.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Бореально-тропический интерзональный, субтропический, пацифический приазиатский вид. Найден в литоральной зоне на камнях и устрицах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Внесен в Перечень объектов растительного и животного мира, занесенных в Красную книгу Приморского края (3).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_gelidium_elegans <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_gelidium_elegans;;
+						concept_gelidium_elegans => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_gelidium_elegans <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_gelidium_elegans <= nrel_inclusion: concept_3_protection_category;;

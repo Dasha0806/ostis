@@ -1,0 +1,171 @@
+concept_panurus_biarmicus=> nrel_main_idtf: [усатая синица](*<- lang_ru;;*); [panurus biarmicus temminck](*<- lang_lat;;*); [вусатая сініца](*<- lang_bel;;*);;
+
+concept_panurus_biarmicus <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (усатая синица)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_panurus_biarmicus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_panurus_biarmicus;;
+concept_species -> concept_panurus_biarmicus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_panurus_biarmicus;;
+
+//пояснения
+concept_panurus_biarmicus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Приложение II Бернской конвенции. Внесен в Красные книги Литвы и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Мелкая птица. Длина тела 15-18 см, размах крыльев 16-19 см, масса 13,0-19,8 г. Хвост длинный, ступенчатый, заостренный на конце. У самца верх головы и шеи серый, спина и хвост коричневато-рыжие, подхвостье черное, крылья черноватые с белой полосой, нижняя сторона тела белая с розоватым налетом, под клювом длинные пучки черных перьев («усы»), свисающие к шее. Клюв желтый. У самок и молодых голова рыжеватая, «усов» нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Ареал разорванный, пятнистый - от западной и южной Европы до Приморского края . Впервые на гнездовании в Беларуси обнаружен в 1993 г. в Червенском р-не (рыбхоз «Волма») . Распространен локально в южной, западной и центральной частях территории.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Зарастающие, преимущественно стоячие водоемы с обширными зарослями тростника и рогоза.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездящийся и зимующий вид. Держится парами и стайками в зарослях рогоза и тростника. Гнездится часто группами (колониями). Гнездо в форме глубокой чашечки, помещается у основания кустов, на поваленных стеблях рогоза или тростника, на стеблях над водой. Кладка из 5-6 белых с темными крапинками яиц в апреле-мае.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Вероятно, составляет 20-100 пар. Численность, по-видимому, увеличивается.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Весенние палы высокой прибрежной и надводной растительности.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Сохранение выявленных мест обитания, контроль над весенними палами растительности.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_panurus_biarmicus <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_panurus_biarmicus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_short; concept_beak; orange; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; red; grey; ginger;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; red; ginger;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; red; ginger; black; white;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_tail; red; ginger;;
+	*);;
+//размеры и вес
+concept_panurus_biarmicus <= nrel_inclusion: 
+	[15-18 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([15 см] => [18 см]);;	
+	*);
+	[0.013-0.020 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0.013 кг] => [0.020 кг]);;	
+	*);;
+	[15 см] <- length_of_body; exact_value;;
+	[15 см] -> .centimeter: 15 (* <- number;;*);;
+	[18 см] <- length_of_body; exact_value;;
+	[18 см] -> .centimeter: 18 (* <- number;;*);;
+	[0.013 кг] <- weight; exact_value;;
+	[0.013 кг] -> .kilogram: 0.013 (* <- number;;*);;
+	[0,020 кг] <- weight; exact_value;;
+	[0.020 кг] -> .kilogram:0.020 (* <- number;;*);;
+//категория охраны и количество
+concept_panurus_biarmicus <= nrel_inclusion: concept_4_protection_category;;
+concept_panurus_biarmicus <= nrel_strength: [100 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 100 (* <- number;;*);;
+		*);;	
+	*);;
+

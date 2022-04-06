@@ -1,0 +1,33 @@
+concept_bryopsida => nrel_main_idtf:
+[мхи](*<-lang_ru;;*);
+[bryopsida](*<-lang_lat;;*);;
+
+concept_class -> concept_bryopsida;;
+
+concept_bryopsida <= nrel_subdividing:
+	...
+ (*
+    -> concept_sphagnales;;
+    -> concept_andreaeales;;
+    -> concept_pottiales;;
+    -> concept_orthotrichales;;	
+    -> concept_dicranales;;	
+    -> concept_bryales;;	
+    -> concept_hypnales;;
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_bryopsida <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Класс мхи — класс высших растений, насчитывающий около 10 000 видов. Как правило, это мелкие растения, длина которых лишь изредка превышает 50 мм; исключение составляют водные мхи, некоторые из которых имеют длину более полуметра, и эпифиты, которые могут быть ещё более длинными. Моховидные, как и другие Мохообразные, отличаются от других высших растений тем, что в их жизненном цикле гаплоидный гаметофит преобладает над диплоидным спорофитом.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_bryopsida;;

@@ -1,0 +1,30 @@
+concept_ochromonadales => nrel_main_idtf:
+[охромонадальные](*<-lang_ru;;*);
+[ochromonadales](*<-lang_lat;;*);;
+
+concept_order -> concept_ochromonadales;;
+
+concept_ochromonadales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_dinobryonaceae;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_ochromonadales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Порядок охромонадальные входит в класс хризофитовые.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_ochromonadales;;

@@ -1,0 +1,161 @@
+concept_emys_orbicularis => nrel_main_idtf: [болотная черепаха](*<- lang_ru;;*); [emys orbicularis](*<- lang_lat;;*); [балотная чарапаха](*<- lang_bel;;*);;
+concept_emys_orbicularis => nrel_idtf: [роднасная понтапарэя](*<- lang_bel;;*);;
+
+concept_emys_orbicularis <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (балотная чарапаха)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_emys_orbicularis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_emys_orbicularis;;
+concept_species -> concept_emys_orbicularis;;
+subject_domain_of_reptilia -> rrel_maximum_studied_object_class: concept_emys_orbicularis;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_emys_orbicularis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1758 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_pontoporeia_affinis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен в Красный список МСОП (LR/nt, версия 2.3, 1994), приложение II Бернской Конвенции, Красные книги Латвии и Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Единственный представитель черепах в Беларуси. Панцирь и кожные покровы черные, коричневато- или серовато-черные. Карапакс (верхний панцирь), голова, шея, конечности и хвост черные со слабым желтым или белым сетчатым или пятнистым рисунком. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: В Беларуси проходит сев. граница видового ареала. Обитающий в Беларуси наиболее крупный и темноокрашенный подвид распространен также в сопредельных странах Вост. Европы (Польша, Литва, сев. часть Украины).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Русла и старицы небольших лесных рек, низинные болота, мелиоративные каналы и пруды рыбоводных хозяйств. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Зимний период проводится в состоянии спячки в водоемах, которые в холодный сезон нередко покрываются льдом. После зимовки пробуждается в начале апреля при температуре воды и воздуха выше 10-12оС. Спаривание обычно происходит с конца апреля по 1-ю декаду мая. В популяции в соотношении 2:1 преобладают самки. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Со второй половины 20 в. численность болотной черепахи в республике быстро сокращается. По последним данным, в Белорусском Полесье она встречается лишь в 4,2% водоемов. В Беларуси расположено ядро номинативного подвида, составляющее примерно 60% его общей численности (порядка 7-9 тыс. особей) .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Снижение численности болотной черепахи в Беларуси связано с радикальной трансформацией и сокращением площади естественных мест обитаня, последовавших за антропогенными изменениями природных ландшафтов, осушением заболоченных земель, обвалованием и спрямлением русел многих рек. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесена в Красную книгу Республики Беларусь с 1981 г. Основным природным резерватом в сохранении болотной черепахи в Беларуси в настоящее время является Полесский радиационно-экологический заповедник .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_emys_orbicularis <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_emys_orbicularis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);;
+	
+//размеры
+concept_emys_orbicularis <= nrel_inclusion: 
+	[0-21 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [21 см]);;	
+	*);
+	[0-1.5 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [1.5 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[21 см] <- length_of_body; exact_value;;
+	[21 см] -> .centimeter: 21 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[1.5 кг] <- weight; exact_value;;
+	[1.5 кг] -> .kilogram: 1.5 (* <- number;;*);;
+
+//категория охраны и количество
+concept_emys_orbicularis <= nrel_inclusion: concept_3_protection_category;;
+concept_emys_orbicularis <= nrel_strength: [8000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 8000 (* <- number;;*);;
+		*);;	
+	*);;
+
+

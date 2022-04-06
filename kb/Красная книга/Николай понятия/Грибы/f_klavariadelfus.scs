@@ -1,0 +1,136 @@
+concept_klavariadelfus => nrel_main_idtf:
+[клавариадельфус](*<-lang_ru;;*);
+[klavariadelfus](*<-lang_lat;;*);
+[клаварыядэльфус](*<-lang_bel;;*);;
+concept_klavariadelfus => nrel_idtf:[клаварыядэльфус](*<-lang_bel;;*);;
+
+plants -> concept_klavariadelfus;;
+concept_species -> concept_klavariadelfus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_klavariadelfus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_klavariadelfus;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_klavariadelfus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993) и Красную книгу СССР (1984). Охраняется в Литве, Латвии, Российской Федерации, Украине и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Лиственные (липа, граб и др.) и смешанные, реже хвойные леса. Образует плодовые тела на почве, нередко среди мхов. Тяготеет к карбонатным почвам . Подстилочный сапротроф или, предположительно, микоризообразователь .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела наблюдаются в осенний период.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Интенсивное лесопользование и рекреационнные нагрузки, возможно, также сбор плодовых тел населением как имеющих эстетическую привлекательность.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов национальных парков «Беловежская пуща» и «Припятский». Необходим периодический контроль состояния известных популяций, поиск новых и организация их охраны с запрещением или ограничением антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Ареал прерывистый, охватывает Европу, Восточную Азию, Северную Америку . В Беларуси отмечен в Брестской (Пружанский р-н), Витебской (Ушачский р-н), Гомельской (Житковичский р-н), Минской (Смолевичский р-н) и Могилевской (Осиповичский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело широкобулавовидное, высотой 7–30 см, диаметром 2–6 см, часто с продольно-морщинистой поверхностью, от светло-желтого до охряно-желтого цвета, с плотной, затем мягкой губчатой тканью, при повреждении окрашивается в буровато-пурпурный цвет. Базидии булавовидные, 50–75 ´ 8–13 мкм. Споры продолговато-эллиптические, (7) 11–16 ´ (3,7) 6–10 мкм, бесцветные до желтоватых .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_klavariadelfus <= nrel_spread: ... 
+	(*
+	-> Brest_district; Mogilev_district; Gomel_district;;
+	*);;
+
+concept_klavariadelfovye => nrel_inclusion: concept_klavariadelfus;;
+concept_klavariadelfus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_body; spherical; yellow; orange;;
+	*);;
+
+concept_klavariadelfus <= nrel_inclusion: 
+	2_6_cm
+	(*
+	<- interval_value;;
+	<- body_diameter;;
+	=> nrel_measurement: (2_cm => 6_cm);;	
+	*);
+	7_30_cm
+	(*
+	<- interval_value;;
+	<- body_length;;
+	=> nrel_measurement: (7_cm => 30_cm);;	
+	*);;
+	2_cm <- body_diameter; exact_value;;
+	2_cm -> .centimeter: 2 (* <- number;;*);;
+	6_cm <- body_diameter; exact_value;;
+	6_cm -> .centimeter: 6 (* <- number;;*);;
+	7_cm <- body_length; exact_value;;
+	7_cm -> .centimeter: 7 (* <- number;;*);;
+	30_cm <- body_length; exact_value;;
+	30_cm -> .centimeter: 30 (* <- number;;*);;			
+
+concept_klavariadelfus <= nrel_inclusion: concept_3_protection_category;;
+

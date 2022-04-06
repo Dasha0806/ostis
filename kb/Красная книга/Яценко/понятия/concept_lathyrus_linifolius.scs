@@ -1,0 +1,156 @@
+concept_lathyrus_linifolius => nrel_main_idtf: [чина льнолистная (горная)](*<- lang_ru;;*); [lathyrus linifolius (reichard) bassler (=l. montanus bernh.)](*<- lang_lat;;*); [чынa льналiстая (горная)](*<- lang_bel;;*);;
+concept_lathyrus_linifolius => nrel_idtf: [чынa льналiстая (горная)](*<- lang_bel;;*);;
+
+concept_species -> concept_lathyrus_linifolius;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_lathyrus_linifolius;;
+
+concept_lathyrus_linifolius  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (чина льнолистная (горная))](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_lathyrus_linifolius.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lathyrus_linifolius;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_lathyrus_linifolius <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу 
+Беларуси 2го издания (1993). 
+Охраняется в Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с длинным горизонтальным корневищем и клубневидными утолщениями на корнях. Стебли узкокрылатые, прямостоячие или восходящие, высотой 15-35 см. Листья парноперистосложные, с 2-3 парами продолговато-эллиптических или продолговатых листочков. Цветки неправильные («мотыльковые»), собраны по 2-6 в рыхлые пазушные кисти. Венчик розовато-лилово-красный, длиной 15-20 мм. Плоды - бобы, продолговато-линейные, на конце заостренные, длиной 3,0-4,0 см.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Атлантическая, Средняя и Восточная Европа, Малая Азия (окрестности Стамбула) ; в Восточной Европе, кроме Беларуси, выявлены лишь немногочисленные местонахождения вида в северо-западных районах России, в том числе и в Калинин­градской области. В Беларуси этот лесной реликтовый вид находится в отдельных локалитетах и островных местах произрастания за восточной границей ареала . Достоверно известен в Барановичском, Ивацевичском и Ляховичском р-нах Брестской обл. , в Волковысском, Дятловском, Новогрудском и Щучинском р-нах Гроднен­ской обл. , в Березинском, Борисовском, Круп­ском, Логойском, Минском, Смолевичском р-нах Минской обл. . В конце 19-го в. встречался в окрестностях городов Гродно, Минск, Мозырь и в Могилевской губернии (точное указание места роста отсутствует) .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Преимущественно сосняки, реже ельники, дубравы, сосново-мелколиственные и сосново-еловые леса; предпочитает осветленные участки - поляны и опушки.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - июне, плодоносит в июне - июле. Энтомофил. Размножение семенное и вегетативное (ползучим корневищем). При созревании створки боба скручиваются и разбрасывают семена (автомеханохор).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Обычно растет небольшими группами, местами (в Смолевичском и Барановичском р-нах) образует довольно многочисленные популяции. При благоприятной экологической ситуации вид может удерживаться на одном месте достаточно долго (более 40 лет). В тоже время ряд местонахождений в черте Минска и его окрестностях утрачен в результате прямого уничтожения мест обитания при застройке территорий, прокладке дорог и т. п.; численность других популяций сократилась из-за чрезмерных рекреационных нагрузок.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  хозяйственная трансформация земель, техногенное воздействие при рубке лесов, пастьба и прогон скота, чрезмерные рекреационные нагрузки (вытаптывание, сбор цветущих растений).](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_lathyrus_linifolius <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district;;->Ivatsevichi_district;;->Lyakhovichi_district;;->Volkovysk_district;;->Dyatlovo_district;;->Novogrudok_district;;->Shchuchyn_district;;->Berezinsky_district;;->Borisov_district;;->Krupski_district;;->Logoysk_district;;->Smolevichi_district;;->Grodno_district;;->Minsk_district;;->Mozyr_district;;
+		*);;
+*);;
+
+concept_lathyrus_linifolius => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; usconsulate;erect;rising;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; long;horizontal;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; properietary;oblong_elliptic;oblong;;
+*);
+...
+(*
+<= nrel_inclusion: flower; wrong;butterfly;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; mauve_red;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; Bob;oblong_linear;pointed;;
+*);;
+
+concept_lathyrus_linifolius <= nrel_inclusion: 
+[15-35 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [35 см]);; 
+*); 
+[3-3.5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [3.5 см]);; 
+*);;
+
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[35 см] <- length_of_inflorscence; exact_value;;
+[35 см] -> .centimeter: 35 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[3.5 см] <- length_of_inflorscence; exact_value;;
+[3.5 см] -> .centimeter: 3.5 (* <- number;;*);;
+ 
+
+concept_lathyrus_linifolius <= nrel_inclusion: concept_4_protection_category;;

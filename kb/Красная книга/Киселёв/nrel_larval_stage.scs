@@ -1,0 +1,66 @@
+
+nrel_larval_stage
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[larval stage*](*<-lang_en;;*);
+                 [личиночная стадия*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(личиночная стадия)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+	concept_animal(*<-sc_node_not_relation;;*);	
+	concept_metamorphosis
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:
+[	<b>Личиночная стадия</b> - фаза жизненного цикла <b><sc_element sys_idtf="concept_animal">животных</b></sc_element> с непрямым развитием от момента рождения до окончания<b><sc_element sys_idtf="concept_metamorphosis">метаморфоза</b></sc_element>. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(Личиночная стадия)](*<-lang_ru;;*);;
+
+=>nrel_using_constants:{
+
+	concept_insecta;
+	concept_mollusca;
+        concept_larva;
+        concept_amphibia
+
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:[<b><sc_element sys_idtf="concept_larva">Личинки</b></sc_element> известны у многих морских и пресноводных беспозвоночных, например у <b><sc_element sys_idtf="concept_insecta">насекомых</b></sc_element>, <b><sc_element sys_idtf="concept_mollusca">моллюсков</b></sc_element> и <b><sc_element sys_idtf="concept_amphibia">земноводных</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:...(*
+	<=nrel_combination:{ concept_animal(*<=nrel_first_domain:nrel_larval_stage;;*);
+ 	concept_larva(*<=nrel_second_domain:nrel_larval_stage;;*)
+};;
+*);;
+nrel_larval_stage<-asymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_larval_stage<-antitransitive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_larval_stage<-antireflexive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_larval_stage<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+
+
+arity->...(*=>nrel_measurement:2;;
+	->nrel_larval_stage;;
+*);;
+
+                          
+
+
+concept_metamorphosis<-sc_node_norole_relation;
+=>nrel_main_idtf:
+[метаморфоз] (*<-lang_ru;;*);
+[metamorphosis] (*<-lang_en;;*);;
+
+
+concept_larva<-sc_node_not_relation;
+=>nrel_main_idtf:
+[личинка] (*<-lang_ru;;*);
+[larva] (*<-lang_en;;*);;

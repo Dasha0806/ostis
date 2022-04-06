@@ -1,0 +1,60 @@
+Logoiski_area<-concept_area;;
+Logoiski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Logoiski_area=>nrel_administrative_center_of_the_area:Logoisk;;
+Logoisk<-concept_city;;
+
+//самая высокая точка
+Logoiski_area=>nrel_highest_point:333_m;;
+333_m<-concept_number;;
+
+//площадь района
+Logoiski_area=>nrel_area_of_the_district:2365_km;;
+2365_km<-concept_number;;
+
+//население района
+Logoiski_area=>nrel_population_of_region:35631_m;;
+35631_m<-concept_number;;
+
+//используемые константы
+Logoiski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+=> nrel_main_idtf: [(Опр.Логойский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Логойский район — административная единица на севере Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+
+sc_node_not_relation -> Logoiski_area;;
+Logoiski_area => nrel_main_idtf:
+[Логойский район](* <-lang_ru;; *);
+[Logoiski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Logoisk;;
+Logoisk=> nrel_main_idtf:
+[Логойск](* <-lang_ru;; *);
+[Logoisk](* <- lang_en;; *);;
+
+sc_node_not_relation ->333_m;;
+333_m=> nrel_main_idtf:
+[333 м](* <-lang_ru;; *);
+[333 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->2365_km;;
+2365_km=> nrel_main_idtf:
+[2365 км^2](* <-lang_ru;; *);
+[2365 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->35631_m;;
+35631_m=> nrel_main_idtf:
+[35631 человек](* <-lang_ru;; *);
+[35631 m](* <- lang_en;; *);;

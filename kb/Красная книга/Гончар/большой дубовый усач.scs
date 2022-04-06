@@ -1,0 +1,146 @@
+concept_cerambyx_cerdo_linnaeus=> nrel_main_idtf:
+[большой дубовый усач](*<-lang_ru;;*);
+[cerambyx cerdo linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_cerambyx_cerdo_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_cerambyx_cerdo_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cerambyx_cerdo_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_cerambyx_cerdo_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе (Приложение II Бернской конвенции). Включен в Красный Список МСОП (VU, ver. 2.3, 1994); в Красные книги Литвы и Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Населяет лиственные леса и парки. Личинки развиваются в древесине дуба, реже каштана, бука, граба, ильма, грецкого ореха. Жуки предпочитают толстые, перестойные, ослабленные деревья, но встречаются и в молодых деревьях, а иногда - в пнях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Лёт жуков с мая по июль. Взрослые особи питаются вытекающим соком деревьев, активны преимущественно ночью. Развитие личинки продолжается два-три года. Личинка выгрызает в коре, а затем в древесине длинные (протяженностью до 1 м) ходы. Перед окукливанием достигает в длину почти 100 мм и ширины 18-20 мм.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В последние годы наблюдаются единичные экземпляры.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Усыхание и вырубка старых дубов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Сохранение участков старовозрастных дубрав или, по крайней мере, отдельных перестойных деревьев в Национальных парках «Припятский» и «Беловежская пуща».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: На юге Беларуси обитает западный подвид (C. c. cerdo L.), который распространен в Западной Европе, на север - до южной части Швеции, а на восток - до Харькова на Украине . В течение последних 20-30 лет найден только в пойменных дубравах по берегам р. Припять . Один экземпляр был обнаружен в конце 90-х годов в окр. г. Раков . Отмечен в Беловежской пуще .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Жук (длина тела 35-50 мм) смоляно блестящий, черно-коричневого цвета с более светлыми вершинами надкрылий. Низ и ноги в коротких сероватых волосках. Переднеспинка в грубых морщинках с острыми боковыми буграми. Надкрылья шагренированы. Усики у самцов в 1,4-1,7 раза длиннее тела, у самок равны ему.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_cerambyx_cerdo_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pyshcha_district; Jitkovici_district;;
+	*);;
+
+concept_cerambycidae => nrel_inclusion: concept_cerambyx_cerdo_linnaeus;;
+concept_cerambyx_cerdo_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; brown; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; brown; light; shaggy;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; hairly; grey;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; long; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; hairly; grey;;
+	*);;
+
+concept_cerambyx_cerdo_linnaeus <= nrel_inclusion: 
+	35_50_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (35_mm => 50_mm);;	
+	*);;
+	35_mm <- length_of_body; exact_value;;
+	35_mm -> .millimeter: 35 (* <- number;;*);;
+	50_mm <- length_of_body; exact_value;;
+	50_mm -> .millimeter: 50 (* <- number;;*);;	
+
+concept_cerambyx_cerdo_linnaeus <= nrel_inclusion: concept_3_protection_category;;

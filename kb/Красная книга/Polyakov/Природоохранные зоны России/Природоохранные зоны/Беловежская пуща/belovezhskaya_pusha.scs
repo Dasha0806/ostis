@@ -1,0 +1,95 @@
+sc_node_not_relation -> belovezhskaya_pusha;;
+
+belovezhskaya_pusha => nrel_main_idtf: [Беловежская пуща] (* <- lang_ru;; *);
+				     [Bialowieza Forest] (* <- lang_en;; *);;
+concept_territorry->belovezhskaya_pusha;;
+belovezhskaya_pusha <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Беловежская пуща)](*<-lang_ru;;*);
+		[Pic. (Bialowieza Forest)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://belovezha.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+belovezhskaya_pusha<-concept_national_park;;
+belovezhskaya_pusha <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(Беловежская пуща, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В рамках программы ЮНЕСКО «Человек и биосфера» в 1976 году в польской части Пущи создан биосферный заповедник «Беловежа», а в 1993 году в белорусской части Пущи — биосферный заповедник «Беловежская пуща»]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							belovezhskaya_pusha=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1993(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+belovezhskaya_pusha <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(Беловежская пуща, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Беловежской пущи составляет 3086 км2.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							belovezhskaya_pusha=>nrel_square:[3086 км2](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:3086(*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+belovezhskaya_pusha => nrel_area_location: Brest_area;;
+belovezhskaya_pusha => nrel_flora: ...(*
+<-concept_herminium_monorchis_l_r_br;concept_cypripedium_calceolus_l;concept_neottianthe_cucullata_l_schlechter;
+concept_carex_heleonastes_ehrh;concept_hordelymus_europaeus_l_harz;concept_bromopsis_benekenii_lange_holub;
+concept_corallorhiza_trifida_chatel;concept_allium_schoenoprasum_l;concept_malaxis_monophyllos_l_sw;
+concept_carex_buxbaumii_wahlenb;concept_listera_ovata_l_r_br;concept_trisetum_sibiricum_rupr;
+concept_epipactis_atrorubens_bess;concept_allium_ursinum_l;
+concept_platanthera_chlorantha_cust_reichenb;concept_dactylorhiza_majalis_p_f_hunt_et_summerhayes;
+concept_eriophorum_gracile_koch;concept_cephalanthera_rubra_l_rich;concept_iris_sibirica_l;
+concept_lilium_martagon_l;concept_festuca_altissima_all;concept_spatulyariya_clavately;
+concept_dentipellis_futilis;concept_egregie_ganoderma;concept_geritsy;concept_oligoporus_caesius_tenaces;
+concept_dicranum_viride;concept_orthotrichum_lyellii;concept_andreaea_rupestris;concept_porella_platyphylla;
+concept_cephalozia_catenulata;;
+*);;
+
+sc_node_role_relation->rrel_km2;;
+rrel_km2 => nrel_main_idtf:
+[км2'](*<-lang_ru;;*);
+	[km2'](*<-lang_en;;*);;
+
+ subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: belovezhskaya_pusha;;
+
+

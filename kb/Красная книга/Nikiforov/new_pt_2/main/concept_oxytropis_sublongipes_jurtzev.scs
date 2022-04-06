@@ -1,0 +1,55 @@
+concept_oxytropis_sublongipes_jurtzev => nrel_main_idtf:
+[Остролодочник почти-длинноножковый](*<-lang_ru;;*);
+[Oxytropis sublongipes Jurtzev](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_sublongipes_jurtzev;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_sublongipes_jurtzev;;
+
+Red_list_ru -> concept_oxytropis_sublongipes_jurtzev;;
+
+//пояснения
+concept_oxytropis_sublongipes_jurtzev <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: 8 местонахождений можно сгруппировать в 5 скоплений — до 500 экз. (визуально). Наибольшее число особей вероятно в лесном острове в пойме р. Майн (с наиболее континентальным климатом).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в список охраняемых растений Камчатской обл.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России. Известно 8 местонахождений: 3 в пойме р. Майн (в пределах ли­ ственничного острова), 2 в верхнем и среднем течении р. Великой, 1 в низовьях р. Пенжины (не вполне типичный), 2 в пойме р. Ваамочки на севере Корякского нагорья.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Рыхлодернистый надземно-ползучий стержнекорневой травянистый поликарпический многолетник. Боб на короткой ножке, короче трубки чашечки, зрелый раскрывается по всему брюшному шву и опадает вместе с ножкой.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

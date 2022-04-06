@@ -1,0 +1,118 @@
+concept_pleurotus_djamor=> nrel_main_idtf: [вешенка семгово-соломенная](*<- lang_ru;;*); [pleurotus djamor](*<- lang_lat;;*);;
+
+
+concept_plant -> concept_pleurotus_djamor;;
+concept_species -> concept_pleurotus_djamor;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_pleurotus_djamor;;
+
+//пояснения
+concept_pleurotus_djamor <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Категория и статус. 3 д - редкий вид, имеющий значительный общий ареал, но находящийся в пределах России на границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Краткая характеристика. Гриб с плодовыми телами средних размеров, развивающимися на древесине. Шляпка 2--10 см в диам., боковая, семговая, выцветающая и становящаяся соломенножелтой или не изменяющаяся, гигрофанная, с просве- чивающее-полосатым краем. Мякоть семговая, соломенно-желтая, одноцветная со шляпкой. Пластинки сбегающие, частые, одноцветные со шляпкой, семговые, соломенно-желтые. Ножка зачаточная. Споровый порошок семговый. Споры 8-10 х 4- 5 мкм, эллипсоидальные (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Приморский край: Лазовский заповедник (2), Уссурийский заповедник (3), Хабаровский край: Большехехцирский заповедник (4). Общее распространение: Азия, Япония, Сев. Америка.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Обитает на гнилой древесине лиственных пород.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована. Состояние локальных популяций. Удовлетворительное. Лимитирующие факторы. Вырубка лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу Приморского края (5). Охраняется на территории Большехехцирского (4), Лазовского (2), Уссурийского (3) заповедников.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходимы поиск новых местонахождений и охрана местообитаний вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Культивируется, штаммы имеются в ряде коллекций культур, в том числе в Коллекции культур базидиомицетов БИН РАН (LE(BIN)) (6).](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_pleurotus_djamor <= nrel_spread: ... 
+	(*
+	-> Primorskiy_kray; lazovskiy_zapovednik; ussuriyskiy_zapovednik; Habarovskiy_kray; bolshehehtsirskiy_zapovednik;;
+	*);;
+
+concept_veshenkovyye => nrel_inclusion: concept_pleurotus_djamor;;
+concept_pleurotus_djamor => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; yellow;;
+	*);;
+
+concept_pleurotus_djamor <= nrel_inclusion: 
+	[2-10 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([2 см] => [10 см]);;	
+	*);;
+
+	[2 см] <- cap_diameter; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[10 см] <- cap_diameter; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	
+	
+concept_pleurotus_djamor <= nrel_inclusion: concept_3_protection_category;;

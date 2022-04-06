@@ -1,0 +1,22 @@
+concept_phalacrocoracidae => nrel_main_idtf:
+[баклановые](*<-lang_ru;;*);
+[phalacrocoracidae](*<-lang_lat;;*);;
+
+concept_family -> concept_phalacrocoracidae;;
+
+concept_phalacrocoracidae => nrel_inclusion: concept_phalacrocorax_aristotelis; concept_phalacrocorax_aristotelis;;
+
+//определение и пояснения
+concept_phalacrocoracidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Баклановые — семейство птиц отряда пеликанообразных, состоящее, согласно традиционной систематике, из одного рода Phalacrocorax и более 40 видов. В последние годы в этом семействе некоторые авторы выделяют ещё 2 рода, кроме вышеупомянутого рода Phalacrocorax — Nannopterum, с нелетающим галапагосским бакланом (Nannopterum harrisi), и Leucocarbo, включающий широкий комплекс форм синеглазых бакланов (Leucocarbo atriceps s. l.), систематический статус которых (вид/подвид) остаётся невыясненным, в том числе и у антарктического синеглазого баклана.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_phalacrocoracidae;;

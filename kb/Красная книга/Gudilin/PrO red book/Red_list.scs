@@ -1,0 +1,24 @@
+Red_list => nrel_main_idtf:
+[Красный список РБ](*<-lang_ru;;*);
+[Red list RB](*<-lang_en;;*);;
+
+concept_red_list -> Red_list;;
+
+//определение и пояснения
+Red_list <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Красный список РБ)]  (* <- lang_ru;; *);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+		-> Red_book_RB; concept_red_list;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Красный список РБ - красный список красной книги РБ.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: Red_list;;

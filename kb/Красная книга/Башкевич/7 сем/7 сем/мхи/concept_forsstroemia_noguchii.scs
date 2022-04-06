@@ -1,0 +1,153 @@
+concept_forsstroemia_noguchii => nrel_main_idtf:
+[форсстремия ногучи](*<-lang_ru;;*);
+[forsstroemia noguchii](*<-lang_lat;;*);;
+
+
+concept_species -> concept_forsstroemia_noguchii;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_forsstroemia_noguchii;;
+
+//пояснения
+concept_forsstroemia_noguchii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 1 - вид, находящийся под угрозой исчезновения. Находится в России далеко за пределами основной части ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Многолетний мох, образующий рыхлые дерновинки. Двудомный, спорофиты с территории России неизвестны. Размножается исключительно вегетативным путем (разрастанием плагиотропных побегов).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России имеется только одно местонахождение в Pеспублике Бурятия: Восточный Саян, хр. Тункинский, руч. Кынгарга в окр. курорта Аршан (1-3, IRK). Вне России - Япония, Китай, менее 10 местонахождений (3, 4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Скальный вид. Произрастает на поверхности крупных известняковых валунов в редкостойном лиственничном лесу в долине р. Кынгарга на обоих ее берегах. Численность. Вид отмечен на двух участках общей площадью примерно 50х100 м2. Общее число экземпляров не более 2000-3000.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. По-видимому, удовлетворительное, но один из участков подвергается сильной антропогенной нагрузке. Местонахождение неоднократно посещалось различными исследователями (последний раз в 2006 г. С.Г. Казановским), обнаружены изменения к худшему на правом берегу реки, где место произрастания вида подвергается довольно интенсивной рекреационной нагрузке и, кроме того, расположено на крутом эродируемом склоне (5).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Общее несоответствие экологической природы сравнительно теплолюбивого вида современным условиям Сибири.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красную книгу Республика Бурятия (2002). Произрастает на территории Тункинского национального парка.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Местонахождение необходимо включить в состав зоны особой охраны Тункинского национального парка.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_forsstroemia_noguchii <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_forsstroemia_noguchii;;
+						concept_forsstroemia_noguchii => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_forsstroemia_noguchii <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_forsstroemia_noguchii <= nrel_inclusion: concept_1_protection_category;;

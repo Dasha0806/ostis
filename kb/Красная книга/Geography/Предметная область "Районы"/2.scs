@@ -1,0 +1,146 @@
+//используемые константы
+Belarus<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_state;;
+*);;
+*);;
+Belarus=> nrel_main_idtf: [Опр.(Беларусь)]  (* <- lang_ru;; *);;
+Belarus<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Беларусь - государство в Восточной Европе.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+Belarus<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Беларусь,место,количество*,население*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Беларусь занимает девяносто третье место по количеству населения.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+Belarus<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(Беларусь,язык)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Государственными языками Беларуси являются белорусский и русский.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_country->Belarus;;
+Belarus=>nrel_population_of_country:...
+(*
+<- concept_quantity;;
+<=nrel_value:...
+(*
+->9_6_mln;;
+*);;
+*);;
+9_6_mln<-concept_number;;
+
+Belarus=>nrel_capital:Minsk;;
+Minsk<-concept_city;;
+
+Belarus=>nrel_neighbor_country:...
+(*
+->Russia;;
+->Poland;;
+*);;
+Russia<-concept_country;;
+Poland<-concept_country;;
+
+Belarus=>nrel_be_mineral:...
+(*
+->concept_oil;;
+->concept_potassium_salt;;
+->concept_rock_salt;;
+*);;
+concept_oil<-concept_minerals;;
+concept_potassium_salt<-concept_minerals;;
+concept_rock_salt<-concept_minerals;;
+
+Belarus=>nrel_animal_world:...
+(*
+->concept_elk;;
+->concept_deer;;
+->concept_hare;;
+*);;
+concept_elk<-concept_animal;;
+concept_deer<-concept_animal;;
+concept_hare<-concept_animal;;
+
+Belarus=>nrel_industry:...
+(*
+->concept_engineering;;
+->concept_metalworking;;
+*);;
+
+Belarus=>nrel_president:Alexander_Lukashenko;;
+Alexander_Lukashenko<-concept_man;;
+
+Belarus=>nrel_national_currency:belarusian_ruble;;
+belarusian_ruble<-concept_currency;;
+
+Belarus=>nrel_politic_system:concept_parliament;;
+concept_parliament=>nrel_inclusion:...
+(*
+->concept_House_of_Representatives;;
+->concept_council_of_republic;;
+*);;
+
+Belarus=>nrel_prime_minister:Andrey_Kobyakov;;
+Andrey_Kobyakov<-concept_man;;
+
+Belarus=>nrel_type_of_climate:concept_temperate_continental_climate;;
+concept_temperate_continental_climate<-concept_climate;;
+
+Belarus=>nrel_height_above_sky_level:160;;
+160<-concept_number;;
+
+Belarus=>nrel_prevailing_breed:...
+(*
+->concept_pine;;
+->concept_spruce;;
+->concept_oak;;
+->concept_pine;;
+->concept_spruce;;
+->concept_oak;;
+*);;
+
+Belarus=>nrel_level_of_GDP:18600_dollars_per_person;;
+18600_dollars_per_person<-concept_gross_domestic_product;;
+
+Belarus=>nrel_level_of_ichr:high;;
+high<-concept_human_development_index;;
+
+Belarus=>nrel_literacy_rate:...
+(*
+<- concept_quantity;;
+<=nrel_value:...
+(*
+->99;;
+*);;
+*);;
+99<-concept_number;;
+
+Belarus=>nrel_standard_of_living:high;;
+
+Belarus=>nrel_level_of_education:high;;
+
+Belarus=>nrel_organic_law:Constitution_of_the_Republic_of_Belarus;;
+Constitution_of_the_Republic_of_Belarus<-concept_constitution;;

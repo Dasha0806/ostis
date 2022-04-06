@@ -1,0 +1,36 @@
+concept_acrididae=> nrel_main_idtf:
+[настоящие саранчовые](*<-lang_ru;;*);
+[acrididae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_acrididae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(настоящие саранчовые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_orthoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Настоящие саранчовые - обширное семейство прямокрылых насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_orthoptera =>nrel_inclusion: concept_acrididae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Главной характеристикой семейства являются прочные и короткие усики, а также присутствие тимпанального органа слуха на первом брюшном сегменте.](* <- lang_ru;;*);;
+		*);;
+*);;

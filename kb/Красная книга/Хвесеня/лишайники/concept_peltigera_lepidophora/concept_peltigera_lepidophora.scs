@@ -1,0 +1,118 @@
+concept_peltigera_lepidophora=> nrel_main_idtf: [пелтигера чешуеносная](*<- lang_ru;;*); [peltigera lepidophora](*<- lang_lat;;*); [пельтыгера лусканосная](*<- lang_bel;;*);;
+
+concept_peltigera_lepidophora<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (пелтигера чешуеносная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_peltigera_lepidophora.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_peltigera_lepidophora;;
+concept_species -> concept_peltigera_lepidophora;;
+subject_domain_of_lichenas -> rrel_not_maximum_studied_object_class: concept_peltigera_lepidophora;;
+
+//пояснения
+concept_peltigera_lepidophora <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Впервые включен в Красную книгу Беларуси. Охраняется в Польше и Литве. Включен в глобальный Красный список лишайников (IUCN Global red list of lichens).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Растет на почве и у оснований лиственных деревьев на опушках еловых и лиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции неизвестны. Размножается вегетативно (изидиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречается отдельными особями или небольшими группами; имеет тенденцию к сокращению численности. Последние сборы были сделаны 20 лет назад в 1982 году в Мядельском р-не.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительно-мелиоративные работы, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков "Беловежская пуща" и "Нарочанский" (на заповедной территории Голубых озер). Необходимы постоянный контроль состояния известных популяций, осуществление целенаправленного поиска новых мест произрастания вида в сходных условиях и, при необходимости, организация их охраны, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах роста и осушительно-мелиоративных работ вблизи его локалитетов, ограничение рекреационных нагрузок на живой напочвенный покров, предупреждение хозяйственной трансформации земель.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа, Азия, Африка, Северная Америка (США), Гренландия . В Беларуси отмечен в Брестской (Пружанский р-н ), Минской (Мядельский р-н ) и Витебской (Оршанский р-н ) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище округло-лопастное, некрупное, диаметром до 10 (20) мм, с чашечковидно вогнутыми, реже плоскими, приподнятыми, слегка утолщенными, цельными или слабо надрезанными краями лопастей. Верхняя поверхность оливково- или серо-коричневая, матовая, по краю лопастей чуть паутинистая. По всей верхней поверхности рассеяны изидии, горизонтальные, мелкие (диаметром до 0,5 мм), плоские или выпуклые, округлые, немного темнее верхней поверхности, иногда с беловатым налетом. Нижняя поверхность слоевища светлее, с ясно выраженными выпуклыми к центру темнеющими жилками. Ризины обычно косицевидные или узкопучковидные, коричневые или темно-коричневые .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_peltigera_lepidophora <= nrel_spread: ... 
+	(*
+	->Pruzhany_district; Myadel_district;Orsha_distict;;
+	*);;
+
+concept_peltigerovye => nrel_inclusion: concept_peltigera_lepidophora;;
+concept_peltigera_lepidophora => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; rosette; leafy; dissected_lobed;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_blades; narrow; green; branching; matte; brilliant; fan_shaped;;
+	*);;
+
+concept_peltigera_lepidophora <= nrel_inclusion: concept_2_protection_category;;

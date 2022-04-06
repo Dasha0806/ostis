@@ -1,0 +1,167 @@
+concept_ajuga_pyramidalis_l => nrel_main_idtf: [живучка пирамидальная](*<- lang_ru;;*); [ajuga pyramidalis l.](*<- lang_lat;;*); [гарлянка пiрамiдальная](*<- lang_bel;;*);;
+concept_ajuga_pyramidalis_l => nrel_idtf: [гарлянка пiрамiдальная](*<- lang_bel;;*);;
+
+concept_species -> concept_ajuga_pyramidalis_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_ajuga_pyramidalis_l;;
+
+concept_ajuga_pyramidalis_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (живучка пирамидальная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_ajuga_pyramidalis_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_ajuga_pyramidalis_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_ajuga_pyramidalis_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу 
+Беларуси 2-го издания (1993). 
+Охраняется в Латвии 
+и Литве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 10-35 см, без стелющихся побегов, с прямым опушенным четырехгранным стеблем с сильно укороченными междоузлиями до начала цветения. Прикорневые листья собраны в розетку, коротко черешковые, их пластинки эллиптические или широколопастные; прицветные листья сидячие, нижние в 4 раза, верхние (часто фиолетовые) в 2 раза длиннее цветков. Цветки бледно-голубые, небольшие, сидячие, собраны по 6 в ложные мутовки, формирующие четырехгранно-пирамидальное соцветие. Чашечка вдвое короче трубки венчика; венчик сростнолепестный, двугубый, верхняя губа двулопастная, очень короткая, нижняя - трехлопастная с небольшой средней лопастью. Плод - округлый сетчато-морщинистый темно-коричневый опушенный орешек.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия, Атлантическая, Средняя и Восточная Европа, Средиземноморье . Реликтовый, по происхождению среднеевропейский горный вид, находящийся в Беларуси в отдельных локалитетах и островных участках произрастания за восточной границей ареала . Встречается преимущественно в Минской и Гродненской обл.:  в Вилейском, Воложинском, Минском, Мядельском, Смолевичском и Столбцовском р-нах Минской обл. , в Дятловском, Ивьевском, Мостовском, Новогрудском, Островецком, Ошмянском и Сморгонском р-нах Гродненской обл. . Имеются отдельные местонахождения в Барановичском р-не Брестской обл. . Известен также единственный локалитет в Россон­ском р-не Витебской обл. . Ранее И.К. Пачоским отмечался для окрестностей городов Пинск, Лунинец, Новогрудок ; указание для Могилевской обл.  ошибочно.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сосновые, сосново-мелколиственные, еловые и широколиственно-еловые леса мшистого и черничного типов. Тяготеет к возвышенным элементам рельефа. Предпочитает солнечные склоны, лесные поляны, опушки, просеки, вырубки, обочины лесных дорог, противопожарные разрывы.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - июне, плодоносит в июне - июле. Энтомофил. Размножение семенное. Анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Все извест­ные популяции немногочисленные, с низкой плотностью; местами (в Минском р-не) площадь популяций до­стигает 1 га и более, но численность в них обычно не превышает 50-100 особей.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Лесохозяйственные работы с нарушением живого напочвенного покрова, осушение территории, чрезмерные рекреационные нагрузки (вытаптывание), интенсивная пастьба, закустаривание экотопов.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Произрастает на территориях Национального парка «Нарочанский», существующих заказников в Витебской («Синьша») и Гродненской («Свитязян­ский», «Липичанская пуща») обл., а также проектируемого заказника «Налибокская пуща». Рекомендуется поддержание просек и противопожарных разрывов в рабочем состоянии. Сохранение оптимального для вида режима освещения. Необходимы контроль состояния популяций в известных местонахождениях и поиск новых, организация специализированных заказников, ограничение рекреационных нагрузок, введение в культуру как декоративного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_ajuga_pyramidalis_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district;;->Vileika_district;;->Volozhin_district;;->Minsk_district;;->Myadel_district;;->Smolevichi_district;;->Stolbtsy_district;;->Dyatlovo_district;;->Ivie_district;;->Mosty_district;;->Novogrudok_district;;->Ostrovets_district;;->Oshmyany_district;;->Smorgon_district;;
+		*);;
+*);;
+
+concept_ajuga_pyramidalis_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; direct;pubescent;tetrahedral;shortened_internode;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; petiolate;elliptical_plate;shirokolashka_plate;sedentary;purple;;
+*);
+...
+(*
+<= nrel_inclusion: flower; pale_blue;small;sedentary;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; tetrahedral_pyramidal;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; rounded;reticulate_wrinkled;dark_brown;pubescent;nut;;
+*);;
+
+concept_ajuga_pyramidalis_l <= nrel_inclusion: 
+[10-35 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([10 см] => [35 см]);; 
+*); 
+[3-7 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [7 см]);; 
+*);;
+
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+[35 см] <- length_of_inflorscence; exact_value;;
+[35 см] -> .centimeter: 35 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+ 
+
+concept_ajuga_pyramidalis_l <= nrel_inclusion: concept_4_protection_category;;

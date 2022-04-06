@@ -1,0 +1,29 @@
+concept_chlorophyta => nrel_main_idtf:
+[зеленые водоросли](*<-lang_ru;;*);
+[chlorophyta](*<-lang_lat;;*);;
+
+concept_division -> concept_chlorophyta;;
+
+concept_chlorophyta <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_siphonocladophyceae;;
+	
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_chlorophyta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отдел Зеленые водоросли — группа низших растений. В современной систематике эта группа имеет ранг отдела, включающего одноклеточные и колониальные планктонные водоросли, одноклеточные и многоклеточные формы бентосных водорослей. Здесь встречаются все морфологические типы слоевища, кроме ризоподиальных одноклеточных и крупных многоклеточных форм со сложным строением. Многие нитчатые зелёные водоросли крепятся к субстрату только на ранних стадиях развития, затем они становятся свободноживущими, формируя маты или шары.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_chlorophyta;;

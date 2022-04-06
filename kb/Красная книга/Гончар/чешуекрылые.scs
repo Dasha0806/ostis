@@ -1,0 +1,46 @@
+concept_lepidoptera=> nrel_main_idtf:
+[чешуекрылые](*<-lang_ru;;*);
+[lepidoptera](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_lepidoptera<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(чешуекрылые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Чешуекрылые - отряд насекомых с полным превращением.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_lepidoptera;;
+concept_lepidoptera => nrel_inclusion:
+concept_saturniidae;
+concept_noctuidae;
+concept_arctiidae;
+concept_sphingidae;
+concept_geometridae;
+concept_lycaenidae;
+concept_satyridae;
+concept_papilionidae;
+concept_nymphalidae;
+concept_pieridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Чешуекрылые - насекомые, наиболее характерная особенность которых — наличие густого покрова хитиновых чешуек, уплощённых волосков на передних и задних крыльях.](* <- lang_ru;;*);;
+		*);;
+*);;

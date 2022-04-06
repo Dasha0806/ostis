@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_sterealnye;;
+concept_sterealnye => nrel_main_idtf:
+[стереальные](*<-lang_ru;;*);
+[sterealnye](*<-lang_en;;*);;
+
+//
+concept_sterealnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(стереальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий округлые плодовые грибные тела, чашевидные, гименофор гладкий, охряного и бурого оттенков](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_sterealnye => nrel_inclusion:
+    concept_meruliaceae;
+    concept_sistotremovye;;

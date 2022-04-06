@@ -1,0 +1,27 @@
+concept_fagales => nrel_main_idtf:
+[букоцветные](*<-lang_ru;;*);
+[fagales](*<-lang_lat;;*);;
+
+concept_order -> concept_fagales;;
+
+concept_fagales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_fagaceae;;
+	*);;
+
+//определение и пояснения
+concept_fagales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Букоцветные - порядок покрытосеменных растений, включающий несколько хорошо известных семейств деревьев, таких как Берёзовые, Буковые, Ореховые и некоторые другие.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_fagales;;

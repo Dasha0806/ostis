@@ -1,0 +1,27 @@
+concept_theales => nrel_main_idtf:
+[чаецветные](*<-lang_ru;;*);
+[theales](*<-lang_lat;;*);;
+
+concept_order -> concept_theales;;
+
+concept_theales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_hypericaceae; concept_elatinaceae;;
+	*);;
+
+//определение и пояснения
+concept_theales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Чаецветные - порядок двудольных растений.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_theales;;

@@ -1,0 +1,56 @@
+sc_node_norole_relation -> nrel_code_iso_3166_2;;
+nrel_code_iso_3166_2=>nrel_main_idtf:
+[код ISO 3166-2*](* <-lang_ru;; *);
+	[code iso 3166-2*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_not_relation -> nrel_geocode;;
+nrel_geocode=>nrel_main_idtf:
+[геокод*](* <-lang_ru;; *);
+	[geocode*](* <- lang_en;; *);;
+
+
+//домены
+nrel_code_iso_3166_2 => nrel_first_domain: concept_number;;
+nrel_code_iso_3166_2 => nrel_second_domain: concept_territory;;
+nrel_code_iso_3166_2 => nrel_definitional_domain: ...
+                              (*
+                               <-concept_number;;
+                               <-concept_territory;;
+                              *);;
+
+
+//определение 
+nrel_code_iso_3166_2 <-rrel_key_sc_element:...
+(*
+    <-explanation;;
+    => nrel_main_idtf: 
+    [Опр.(Код ISO 3166_2*)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Код ISO 3166_2 - часть стандарта ISO 3166, изданного Международной организацией по стандартизации и определяющего геокоды для основных единиц первого или первого и второго уровня административно-территориального деления территории всех стран.](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->nrel_geocode;;
+    ->condept_territory;;
+*);;
+*);;
+
+//свойства
+nrel_disjoint_union <- binary_relation;;
+nrel_disjoint_union <- antireflexive_relation;;
+nrel_disjoint_union <- antitransitive_relation;;
+nrel_disjoint_union <- antisymmetric_relation;;
+nrel_disjoint_union <- oriented_relation;;
+
+statement_of_defining_type=>nrel_main_idtf:
+    [утверждение определяющего типа](*<-lang_ru;;*);;
+subject_domain_of_geography=>nrel_main_idtf:
+    [Предметная область географии](*<-lang_ru;;*);;

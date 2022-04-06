@@ -1,0 +1,44 @@
+sc_node_norole_relation -> nrel_create_year;;
+
+ nrel_create_year => nrel_main_idtf: [год основания*] (* <- lang_ru;; *);
+				     [year of foundation*] (* <- lang_en;; *);;
+
+ nrel_create_year => nrel_first_domain: concept_protected_area;;
+ nrel_create_year => nrel_second_domain: value;;
+
+ nrel_create_year <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(год основания*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Год основания* –  это единица летосчисления, промежуток времени, равный периоду обращения Земли вокруг Солнца и содержащий двенадцать календарных месяцев, отчисляемых с 1 января, а также цифровое обозначение такого промежутка.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_number;
+                                concept_protected_area
+                            };;
+        *);;
+
+ nrel_create_year <- rrel_key_sc_element:
+        ...
+        (*
+            <- rrel_axiom:
+                subject_domain_of_protected_areas (*
+                    <-subject_domain;;
+                *);;
+            
+        *);;
+
+ nrel_create_year <- binary_relation;;
+ nrel_create_year <- antireflexive_relation;;
+ nrel_create_year <- antitransitive_relation;;
+ nrel_create_year <- antisymmetric_relation;;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: nrel_create_year;;

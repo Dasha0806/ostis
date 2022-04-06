@@ -1,0 +1,163 @@
+concept_hyophila_involuta => nrel_main_idtf:
+[гиофила завернутая](*<-lang_ru;;*);
+[hyophila involuta](*<-lang_lat;;*);;
+
+
+concept_species -> concept_hyophila_involuta;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_hyophila_involuta;;
+
+//пояснения
+concept_hyophila_involuta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, имеющий дизъюнктивный ареал, находящийся в России на северной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Мелкий мох, имеющий прямосточие побеги и формирующий небольшие рыхлые дерновинки. Двудомный, спорофиты с территории России неизвестны. Размножается исключительно вегетативным путем, посредством специальных выводковых тел, развивающихся в пазухах листьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России имеется два далеко друг от друга изолированных местонахождения: Читинская обл., окр. пос. Нерчинский Завод (1); Приморский край, хр. Лозовый в Партизанском р-не (1, 2). За пределами России вид встречается в Восточной и Юго-Восточной Азии, в Северной и Южной Америке, на Гавайских о-вах, в горах Центральной Европы (3, 4, 5).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности биологии и фитоценологии. Кальцефильный скальный вид. Произрастает на известняковых скалах преимущественно южной экспозиции, в низкогорных районах, на высотах 300--500 м н. ур. м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Cуммарная площадь, на которой отмечен вид в обоих местонахождениях, не превышает 0,5 км2.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. По данным 1970-х гг. --- стабильное. В последние 30 лет местонахождения не обсле- довались.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Повышенная теплолюбивость. В особенности большое значение она имеет для восточносибирской (Забайкалье) части ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Читинской области и Агинского автономного округа (2002), а также в Перечень объектов..., занесенных в Красную книгу Приморского края (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Организация ООПТ на хр. Лозовом в Партизанском р-не Приморского края, где компактно произрастает ряд редких, включенных в Красную книгу РФ видов листостебельных мхов (гиофила завернутая, гомалиадельфус гладкозубый) и покрытосеменных растений (мегадения пещер, кровохлебка великолепная, копеечник уссурийский,можжевельник твердый).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_hyophila_involuta <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_hyophila_involuta;;
+						concept_hyophila_involuta => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_hyophila_involuta <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_hyophila_involuta <= nrel_inclusion: concept_3_protection_category;;

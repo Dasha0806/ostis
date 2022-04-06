@@ -1,0 +1,55 @@
+concept_photosynthesis
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[фотосинтез]
+	(*<-lang_ru;;*);
+	[photosynthesis]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[фотосинтез]
+	(*<-lang_ru;;*);
+	[photosynthesis]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (фотосинтез) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[фотосинтез -  Образование в клетках зелёных растений и водорослей углеводов из углекислоты и воды под воздействием света, поглощаемого хлорофиллом растений..  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о фотосинтез) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Система бесхлорофилльного фотосинтеза отличается значительной простотой организации, в связи с чем предполагается эволюционно первичным механизмом запасания энергии.
+. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_photosynthesis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ У живых организмов обнаружено два типа пигментов, способных выполнять функцию фотосинтетических антенн. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Основной путь получения энергии для галобактерий — аэробное окисление органических соединений. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;

@@ -1,0 +1,163 @@
+concept_chara_strigosa => nrel_main_idtf:
+[хара щетинистая](*<-lang_ru;;*);
+[chara strigosa](*<-lang_lat;;*);;
+
+
+concept_species -> concept_chara_strigosa;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_chara_strigosa;;
+
+//пояснения
+concept_chara_strigosa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 в - редкий вид, имеющий узкую экологическую приуроченность.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище однодомное, до 25 см выс., редко больше, часто сильно инкрустировано. При сильном разрастании образует войлочно спутанные поросли. На протяжении стебля междоузлия равновеликие. Ветви дорастают до вершины главного стебля. Венчик прилистников двурядный. Стеблевая кора правильно или неправильно двухполосная. Шипы хорошо развитые, цилиндрические, на концах заостренные. Листья твердые, прямые, до 1 см дл., по 5-7 в мутовке. Оогонии широкоэллипсоидные или яйцевидные. Ооспоры черные, с 8-12 слабо выдающимися ребрами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. На территории России встречается в Карелии (Кончезерские озера), Ленинградской обл. (оз. Врево, Лужского р-на), на Южном Урале, на Кавказе (1, 2). За пределами России: Белоруссия, Прибалтика (1, 2), Западная Европа, Северная Африка (3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает в пресных, преимущественно холодноводных минерализованных водоемах (общая минерализация до 8000 мг/л) (3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Встречается редко.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Неизвестно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Узкая экологическая амплитуда вида. Ухудшение состояния местообитаний.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Охраняется в Череменецком заказнике, занесена в Красную книгу природы Ленинградской обл. (2000).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Поддержание чистоты воды, выявление новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не изучена.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_chara_strigosa <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_chara_strigosa;;
+						concept_chara_strigosa => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_chara_strigosa <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_chara_strigosa <= nrel_inclusion: concept_3_protection_category;;

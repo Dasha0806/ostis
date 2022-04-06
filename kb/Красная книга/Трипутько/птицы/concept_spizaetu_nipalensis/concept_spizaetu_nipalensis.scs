@@ -1,0 +1,123 @@
+concept_spizaetu_nipalensis=> nrel_main_idtf: [хохлатый орел](*<- lang_ru;;*); 
+[spizaetu nipalensis](*<- lang_lat;;*); 
+[хохлатый арол](*<- lang_bel;;*);;
+
+concept_spizaetu_nipalensis <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (хохлатый орел)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_spizaetu_nipalensis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_spizaetu_nipalensis;;
+concept_species -> concept_spizaetu_nipalensis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_spizaetu_nipalensis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_spizaetu_nipalensis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1836 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_spizaetu_nipalensis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение:  На Дальнем Востоке России гнездование хохлатого орла установлено только в юго-зап. р-нах Приморского края - в вост. отрогах Борисовского (Шуфанского) плато, расположенного в пограничных с Китаем Восточно-Манчжурских горах [1]. Вероятно гнездится в юж. частях хр. Сихотэ-Алинь на территории от верховьев р. Партизанская (Сучан) на юг до верховьев р. Большая Уссурка (Иман) и Сихотэ-Алинского заповедника на сев., где птицы регистрировались не менее 15 раз зимой (в ноябре-январе) и летом [2-4]. Это подтверждает и экземпляр молодой птицы (в возрасте 1 года), добытой 17 ноября 1974 г. Залетные птицы были встречены 19 октября 1914 г. на о. Монерон [6], 11-12 июня 1986 г. на о. Кунашир, Юж. Курильские о-ва [7], и 2 июня 1980 г. на юге о. Сахалин [8]. За пределами России распространен в Гималаях, в юж. и юго-вост. р-нах Китая к сев. до р. Янцзы, Таиланде, юж. Индии, о-вах Шри-Ланка, Хайнань, Тайвань, Японских.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:  В Юж. Приморье в вост. отрогах Борисовского плато обитает в горных высокоствольных и многоярусных хвойно-широколиственных лиановых лесах на высотах 500-700 м н.у.м. Подлесок здесь сильно разрежен, местами почти совершенно отсутствует. Лес имеет парковый облик, и хохлатые орлы, гнездящиеся в первом древесном ярусе, в поисках добычи уверенно летают среди деревьев второго и третьего ярусов и опускаются на землю.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Численность в Приморье на крайне низком уровне. В вост. отрогах Борисовского плато одна гнездящаяся пара постоянно держалась на участке площадью не менее 50 км2 [10]. Общая численность вида в Японии около 1 тыс. особей [9]. Лимитирующие факторы - деградация мест обитания в результате вырубок хвойно-широколиственных лесов, лесных пожаров, прокладки дорог, промышленного строительства в горно-таежных р-нах, незаконный отстрел и гибель орлов в капканах (в сезон охоты на соболя и других пушных зверей). ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Занесен в Приложение 2 СИТЕС, Приложение 2 Боннской Конвенции, Приложение соглашения, заключенного Россией с Японией об охране мигрирующих птиц. Охраняется в Сихотэ-Алинском и Лазовском заповедниках и заказнике Борисовское Плато.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_spizaetu_nipalensis <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_spizaetu_nipalensis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; yellow;;
+	*);;
+//размеры и вес
+concept_spizaetu_nipalensis <= nrel_inclusion: 
+	[0-75 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [75 см]);;	
+	*);
+	[0-3.5 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [3.5 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[75 см] <- length_of_body; exact_value;;
+	[75 см] -> .centimeter: 75 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[3.5 кг] <- weight; exact_value;;
+	[3.5 кг] -> .kilogram: 3.5 (* <- number;;*);;
+//категория охраны и количество
+concept_spizaetu_nipalensis <= nrel_inclusion: concept_3_protection_category;;
+concept_spizaetu_nipalensis <= nrel_strength: [1000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 1000 (* <- number;;*);;
+		*);;	
+	*);;
+

@@ -1,0 +1,146 @@
+concept_lucanus_cervus_linnaeus=> nrel_main_idtf:
+[жук олень](*<-lang_ru;;*);
+[lucanus cervus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_lucanus_cervus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_lucanus_cervus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lucanus_cervus_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_lucanus_cervus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе (приложение III Бернской конвенции). Вид включен в Красные книги России, Литвы, Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Старые широколиственные леса и парки. Личинки развиваются в гнилой древесине старых деревьев, чаще всего дуба, реже березы, ивы, груши, бука, ясеня.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Лёт жуков с конца мая до августа. Активны в сумерки, питаются вытекающим соком деревьев. Личинки крупные, до 135 мм длиной, С-образно изогнутые. Развитие продолжается 5-6 лет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редок на всей территории.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Уничтожение старовозрастных широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Сохранение участков старовозрастных дубрав или, по крайней мере, отдельных старых трухлявых дубов и других широколиственных деревьев.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Средняя и Южная Европа, Малая Азия и Северная Африка. Населяет юг лесной зоны, распространен в Крыму и на Кавказе. В Беларуси вид встречается преимущественно в дубравах Полесья . В центральной и северной части находки жука редки и единичны . Отмечен в Беловежской пуще .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина самца без верхних челюстей 30-55 мм, а с ними - до 80 мм. Длина самки 28-45 мм. Окраска жука каштановая до почти черной. Надкрылья и верхние челюсти самцов обычно светлее. Усики коленчатые с гребневидной четырехчлениковой булавой. Голова самца крупная, несет длинные, массивные верхние челюсти, которые разветвлены наподобие рогов оленя.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_lucanus_cervus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pyshcha_district; Polesie_district;;
+	*);;
+
+concept_lucanidae => nrel_inclusion: concept_lucanus_cervus_linnaeus;;
+concept_lucanus_cervus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; black; light;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black; light;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_lucanus_cervus_linnaeus <= nrel_inclusion: 
+	30_55_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (30_mm => 55_mm);;	
+	*);;
+	30_mm <- length_of_body; exact_value;;
+	30_mm -> .millimeter: 30 (* <- number;;*);;
+	55_mm <- length_of_body; exact_value;;
+	55_mm -> .millimeter: 55 (* <- number;;*);;	
+
+concept_lucanus_cervus_linnaeus <= nrel_inclusion: concept_2_protection_category;;

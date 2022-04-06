@@ -1,0 +1,55 @@
+concept_lathyrus_venetus_mill_wohlf => nrel_main_idtf:
+[Чина голубая ](*<-lang_ru;;*);
+[Lathyrus venetus (Mill.) Wohlf. ](*<-lang_lat;;*);;
+
+concept_species -> concept_lathyrus_venetus_mill_wohlf;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_lathyrus_venetus_mill_wohlf;;
+
+Red_list_ru -> concept_lathyrus_venetus_mill_wohlf;;
+
+//пояснения
+concept_lathyrus_venetus_mill_wohlf <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность популяции стабильная, довольно высокая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается только в Белгородской обл.: по правобережью р. Северский Донец.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый корневищный поликарпик, 20-40 см выс. Цветет с середины мая до начала июня. Плодоносит в июле. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

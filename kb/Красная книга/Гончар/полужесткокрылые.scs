@@ -1,0 +1,37 @@
+concept_heteroptera=> nrel_main_idtf:
+[полужесткокрылые](*<-lang_ru;;*);
+[heteroptera](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_heteroptera<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(полужесткокрылые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Полужесткокрылые - отряд насекомых с неполным превращением.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_heteroptera;;
+concept_heteroptera => nrel_inclusion: 
+concept_gerridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Полужесткокрылые - это наземные или водные насекомые, тело которых чаще всего умеренно уплощённое. Главный признак этих насекомых — ротовые органы колюще-сосущего типа; хоботок почти во всех случаях прикреплён к передней части головы.](* <- lang_ru;;*);;
+		*);;
+*);;

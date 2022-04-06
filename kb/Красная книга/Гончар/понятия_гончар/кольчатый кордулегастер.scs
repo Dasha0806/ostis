@@ -1,0 +1,132 @@
+concept_cordulegaster_boltonii => nrel_main_idtf:
+[кольчатый кордулегастер](*<-lang_ru;;*);
+[cordulegaster boltonii](*<-lang_lat;;*);
+[кольчаты кардулегастэр](*<-lang_bel;;*);;
+concept_cordulegaster_boltonii => nrel_idtf:[кольчаты кардулегастэр](*<-lang_bel;;*);;
+
+concept_species -> concept_cordulegaster_boltonii;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: cordulegaster_boltonii;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cordulegaster_boltonii;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1807 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cordulegaster_boltonii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Имаго встречается вдоль рек и ручьев. Личинки обитают в холодных и чистых реках и ручьях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Имаго - активные хищники. Лёт в июне-июле. Самки откладывают яйца во влажный грунт. Цикл развития 3-4 года. Личинки крупные, удлиненные, внешне напоминают личинок коромысел, зарываются в грунт рек и ручьев, чувствительны к чистоте воды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Очень редок.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Загрязнение рек и ручьев.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория) как Cordulegas­ter annulatus Latreille, 1805. Выявление новых мест обитания вида и их охрана. Соблюдение порядка ведения хоз. деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Южная и средняя часть Европы. Известен в центр. и северо-зап. частях республики. По территории республики проходит вост. граница ареала .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Единственный представитель рода на территории Беларуси. Крупная стрекоза, длина брюшка 54-64 мм. Тело черное, с ярко-желтыми полосами на груди. Брюшко с ярко-желтыми кольцевидными пятнами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cordulegaster_boltonii <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Vitebsk_district;;
+	*);;
+
+concept_cordulegasteridae => nrel_inclusion: concept_cordulegaster_boltonii;;
+concept_cordulegaster_boltonii => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; black; blue; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; black; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; white;;
+*);;
+
+concept_cordulegaster_boltonii <= nrel_inclusion: 
+	54_64_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (54_mm => 64_mm);;
+*);;
+54_mm <- length_of_body; exact_value;;
+54_mm -> .millimeter: 54 (* <- number;;*);;
+64_mm <- length_of_body; exact_value;;
+64_mm -> .millimeter: 64 (* <- number;;*);;				
+
+concept_cordulegaster_boltonii <= nrel_inclusion: concept_2_protection_category;;

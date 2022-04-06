@@ -1,0 +1,36 @@
+concept_staphylinidae=> nrel_main_idtf:
+[стафилиниды](*<-lang_ru;;*);
+[staphylinidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_staphylinidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(стафилиниды)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Стафилиниды - огромное по численности видов семейство жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_staphylinidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Они легко определяются по коротким надкрыльям. Длина от 0,5 до 50 миллиметров, но большая их часть не превышает 8 мм. Отличаются короткими надкрыльями (не покрывающими 4, 5 и 6-й тергиты брюшка) и, как правило, узким телом. Основная окраска красновато-коричневая, буровато-чёрная, иногда с жёлтыми или красными отметинами.](* <- lang_ru;;*);;
+		*);;
+*);;

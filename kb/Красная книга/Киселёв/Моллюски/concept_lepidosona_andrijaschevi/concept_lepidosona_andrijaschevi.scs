@@ -1,0 +1,151 @@
+concept_lepidosona_andrijaschevi => nrel_main_idtf: [лепидозона андрияшева](*<- lang_ru;;*); [lepidosona andrijaschevi](*<- lang_lat;;*);;
+
+concept_lepidosona_andrijaschevi  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лепидозона андрияшева)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lepidosona_andrijaschevi.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_lepidosona_andrijaschevi <= nrel_inclusion: concept_polyplacophora;;
+concept_animalia -> concept_lepidosona_andrijaschevi ;;
+concept_species -> concept_lepidosona_andrijaschevi ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_lepidosona_andrijaschevi ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_lepidosona_andrijaschevi ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1985 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lepidosona_andrijaschevi  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Хитон средних размеров с длиной тела 25-30 мм. Форма тела удлиненно-овальная. Раковина низкая, слегка угловатая. Общая окраска раковины и перинотума коричневая, полосатая. Скульптура тегментума первого щитка, боковых полей промежуточных щитков и заднего поля последнего щитка состоит из радиальных ребер, на гребне которых располагаются крупные, диаметром до 140 мкм сферические зерна. Центральные поля имеют ячеистую скульптуру. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Западно-тихоокеанский приазиатский низкобореальный вид. Известен из сев. части Японского моря (зал. Чихачева, сев.-зап. прибрежье Сахалина) и прибрежья малой Курильской гряды. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает на глубинах 6-28 м на галечных с заиленным песком и камнями грунтах. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:   Данные о численности отсутствуют. С момента обнаружения собрано всего около 30 особей. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Ограничивающие факторы не установлены. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Специальные меры охраны не разработаны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_lepidosona_andrijaschevi  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> japan; russia;;
+		*);;
+	*);;
+//части тела
+concept_lepidosona_andrijaschevi  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; striped; brown;;
+	*);;
+//размеры и вес
+concept_lepidosona_andrijaschevi  <= nrel_inclusion: 
+	[2,5-3,0 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([2,5 см] => [3,0 см]);;	
+	*);
+	[0,007-0,010 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,007 кг] => [0,010 кг]);;	
+	*);;
+	[2,5 см] <- length_of_body; exact_value;;
+	[2,5 см] -> .centimeter: 2.5 (* <- number;;*);;
+	[3,0 см] <- length_of_body; exact_value;;
+	[3,0 см] -> .centimeter: 3.0 (* <- number;;*);;
+	[0,007 кг] <- weight; exact_value;;
+	[0,007 кг] -> .kilogram: 0.007 (* <- number;;*);;
+	[0,010 кг] <- weight; exact_value;;
+	[0,010 кг] -> .kilogram: 0.010 (* <- number;;*);;
+//категория охраны и количество
+concept_lepidosona_andrijaschevi  <= nrel_inclusion: concept_3_protection_category;;
+concept_lepidosona_andrijaschevi  <= nrel_strength: [30 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 30 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

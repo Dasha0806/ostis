@@ -1,0 +1,142 @@
+concept_spatulyariya_clavately => nrel_main_idtf:
+[спатулярия булавидная](*<-lang_ru;;*);
+[spatulyariya clavately](*<-lang_lat;;*);
+[спатулярыя булавападобная](*<-lang_bel;;*);;
+concept_spatulyariya_clavately => nrel_idtf:[спатулярыя булавападобная](*<-lang_bel;;*);;
+
+plants -> concept_spatulyariya_clavately;;
+concept_species -> concept_spatulyariya_clavately;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_spatulyariya_clavately;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_spatulyariya_clavately;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_spatulyariya_clavately <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает на подстилке в ельниках и елово-широколиственных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Сапротроф с многолетней грибницей. Плодовые тела образуются в августе –октябре (не каждый год). Чрезвычайно декоративный малоизвестный съедобный гриб .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются по отдельности или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий – антропогенный: уплотнение и загрязнение почвы, вырубка лесов, сбор и повреждение плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимы ревизия местонахождения вида в Беловежской пуще, контроль состояния известной популяции в Осиповичском р-не с целью предупреждения изменения экологического режима в местах произрастания, выявление новых мест роста и их охрана, запрет сбора плодовых тел.
+
+](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический лесной вид. Ареал охватывает Европу, Азию, Северную Америку, особенно часто встречается в горных лесных массивах центральной и южной части Европы, порой выходит и на равнинные участки . В Беларуси известны два местонахождения: Могилевская обл., Осиповичский р-н, Жорновская лесная опытная станция , ранее отмечался в Беловежской пуще .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела с золотисто-желтым или оранжево-желтым гимениальным шаром, высотой 4-6 см, диаметром до 2,5 см. Ножка беловатая или желтоватая, цилиндрическая, часто сплющенная, у основания обычно с клубневидным вздутием, гладкая. Верхняя часть (спороносная) расширена наподобие гребешка, складчато-волнистая, отделена от ножки. Мякоть тонкая, с приятным грибным запахом. Аски булавовидные, 8-споровые. Споры нитевидные или игловидные, кверху расширены, размером 45-70 2-3 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_spatulyariya_clavately <= nrel_spread: ... 
+	(*
+	-> Mogilev_district;;
+	*);;
+
+concept_geoglossovye => nrel_inclusion: concept_spatulyariya_clavately;;
+concept_spatulyariya_clavately => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_body; spherical; yellow; orange;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; white;;
+	*);;
+
+concept_spatulyariya_clavately <= nrel_inclusion: 
+	2_3_cm
+	(*
+	<- interval_value;;
+	<- body_diameter;;
+	=> nrel_measurement: (2_cm => 3_cm);;	
+	*);
+	4_6_cm
+	(*
+	<- interval_value;;
+	<- length_of_stipe;;
+	=> nrel_measurement: (4_cm => 6_cm);;	
+	*);;
+	2_cm <- body_diameter; exact_value;;
+	2_cm -> .centimeter: 2 (* <- number;;*);;
+	3_cm <- body_diameter; exact_value;;
+	3_cm -> .centimeter: 3 (* <- number;;*);;
+	4_cm <- length_of_stipe; exact_value;;
+	4_cm -> .centimeter: 4 (* <- number;;*);;
+	6_cm <- length_of_stipe; exact_value;;
+	6_cm -> .centimeter: 6 (* <- number;;*);;				
+
+concept_spatulyariya_clavately <= nrel_inclusion: concept_2_protection_category;;
+

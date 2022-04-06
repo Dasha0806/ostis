@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_sanctuary;;
+concept_sanctuary => nrel_main_idtf:
+[заказник](* <- lang_ru;; *);
+	[sanctuary](* <- lang_en;; *);;
+
+sc_node_norole_relation->nrel_forbidden;;
+nrel_forbidden => nrel_main_idtf:
+[быть запрещенным*](*<-lang_ru;;*);
+	[be forbidden*](*<-lang_en;;*);;
+
+sc_node_not_relation -> concept_hunt;;
+concept_hunt => nrel_main_idtf:
+[охота](* <- lang_ru;; *);
+	[hunting](* <- lang_en;; *);;
+			
+concept_sanctuary<- rrel_key_sc_element:...
+	(*
+		<- definition;;
+		<= nrel_used_constants: concept_reserve;nrel_forbidden;concept_plants;concept_animal;concept_hunt;nrel_special_protection;;
+		=> nrel_main_idtf: [Опр.(заказник)](*<-lang_ru;;*);;
+		<= nrel_sc_text_translation:...(*-> [Заказник – род заповедника, где временно запрещена охота или где растения находятся под особой охраной.](*<-lang_ru;;*);; *);; 
+	*);;
+
+concept_sanctuary->rrel_key_sc_element:...	
+	(*
+	<- statement;;
+	<- concept_statement_of_general_type;;
+	<- rrel_axiom: subject_domain_of_protected_areas;;
+	=> nrel_main_idtf: [Утв.(заказник, Беларусь )] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Всего в Беларуси находятся 42 заповедника.](* <- lang_ru;; *);;
+		*);;
+
+	<- rrel_key_sc_element: concept_Belarus ;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: concept_sanctuary;;

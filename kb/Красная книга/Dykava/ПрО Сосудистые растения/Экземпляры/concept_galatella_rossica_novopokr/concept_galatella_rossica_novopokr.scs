@@ -1,0 +1,194 @@
+concept_galatella_rossica_novopokr=> nrel_main_idtf: [солонечник русский](*<- lang_ru;;*); [galatella rossica novopokr](*<- lang_lat;;*);;
+
+//изображение
+concept_galatella_rossica_novopokr<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (солонечник русский)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_galatella_rossica_novopokr.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+//предметная область, вид
+subject_domain_of_plantae_vasculares-> rrel_not_maximum_studied_object_class: concept_galatella_rossica_novopokr;;
+concept_species -> concept_galatella_rossica_novopokr;;
+concept_plantae-> concept_galatella_rossica_novopokr;;
+
+//категория охраны
+concept_galatella_rossica_novopokr <= nrel_inclusion: concept_2_protection_category;;
+
+//дата включения в кк
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_galatella_rossica_novopokr;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2015 (*<- number;;*);;*);;
+	*);;
+
+//распространение
+concept_galatella_rossica_novopokr <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Gomel_district;;->Buda_Koshelevo_district;;->Loev_district;;
+		*);;
+*);;
+
+//описание
+concept_perennial => nrel_inclusion:: concept_galatella_rossica_novopokr;;
+
+concept_galatella_rossica_novopokr => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; upright; leafy; pubescent;; 
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; whole_edge; linear;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; purple; tubular; yellow;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_inflorescence; paniculate ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; achene; pubescent;;
+							*);;
+
+concept_galatella_rossica_novopokr <= nrel_inclusion: 
+[70-100 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([70 см] => [100 см]);;
+*);;
+
+[70 см] <- length_of_stem; exact_value;;
+[70 см] -> .centimeter: 70 (* <- number;;*);;
+[100 см] <- length_of_stem; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+
+//биология
+concept_galatella_rossica_novopokr => nrel_flowering_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		->July;;->August;;->September;;->October;;
+		*);;
+*);;
+
+concept_galatella_rossica_novopokr => nrel_fruit_ripening_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		->September;;->October;;
+		*);;
+*);;
+
+concept_galatella_rossica_novopokr => nrel_pollination_type: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_entomophilia;;
+		*);;
+*);;
+
+concept_galatella_rossica_novopokr => nrel_dissemination_method: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_anemochoria;;
+		*);;
+*);;
+
+concept_galatella_rossica_novopokr=> nrel_propagation_type:{concept_seed_propagation};;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////пояснения
+concept_galatella_rossica_novopokr <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: В Красную книгу Беларуси включен впервые.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с коротким вертикальным корневищем и стеблем высотой до 100 см, прямостоячим, простым, разветвленным в соцветии, густоолиственным, опушенным сосочковидными волосками. Листья очередные, цельные, цельнокрайние, линейные или линейно-ланцетные, с длинно- и постепенно заостренной верхушкой, почти сидячие, часто с многочисленными мелкими точечными ямками, снизу с 3 жилками, с шиповидными волосками по краям и жилкам. Цветки в многочисленных небольших корзинках, собранных в щитковидно-метельчатое соцветие. Краевые цветки бесплодные, язычковые, розовато-лиловые или лиловые, немногочисленные; срединные - обое­полые, трубчатые, желтые. Плод - опушенная сплюснутая семянка с буроватым хохолком.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Восточная Европа (Украина, Молдова, южные и центральные р-ны России), юг Западной Сибири и восток Средней Азии . В Беларуси вид находится в отдельных изолированных локалитетах и остров­­ных участках роста на северо-западной границе ареала. Впервые солонечник русский приводится в конце 19-го в. для долины р. Днепр в Лоевском р-не . Спустя почти сто лет вновь найден в Лоевском р-не , в послед­ние годы выявлен в двух локалитетах в пойме р. Днепр в Жлобинском р-не и повторно в Лоевском р-не (в 2003 г.) . В середине прошлого века ошибочно приводился для окрестностей Минска на основании неверного определения гербарных образцов .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Сильно деградированные пойменные дубравы на гривах, заросли кустарников в долинах крупных рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет с конца июля до октября, плодоносит в сентябре - октябре. Энтомофил. Размножение семенное. Анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известные к этому времени немногочисленные популяции занимают небольшие площади (обычно в несколько квадратных метров) и насчитывают в своем составе 4-6 генеративных особей на квадратном метре. В пределах республики вид практически не культивируется, но довольно широко выращивается за ее пределами .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная трансформация земель (вырубка пойменных дубрав, распашка пойм, подсев трав и др.), чрезмерные выпас скота и рекреационные нагрузки (вытаптывание, сбор цветущих растений).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в биологическом заказнике «Днепро-Сожский» (Лоевский р-н), растет на территории проектируемого заказника «Стрешинский» (Жлобинский р-н). Необходимо осуществлять постоянный контроль состояния известных популяций и поиск новых мест произрастания, предотвращать в местах роста антропогенное воздействие; целесообразно сохранение генофонда вида в условиях культуры; рекомендуется введение в культуру в качестве высокодекоративного растения, ценного своим поздним и обильным цветением.](*<- lang_ru;;	*);;
+		*);;
+	*);;

@@ -1,0 +1,60 @@
+Krasnopolski_area<-concept_area;;
+Krasnopolski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Krasnopolski_area=>nrel_administrative_center_of_the_area:Krasnopole;;
+Krasnopole<-concept_city;;
+
+//самая высокая точка
+Krasnopolski_area=>nrel_highest_point:198_m;;
+198_m<-concept_number;;
+
+//площадь района
+Krasnopolski_area=>nrel_area_of_the_district:1223_km;;
+1223_km<-concept_number;;
+
+//население района
+Krasnopolski_area=>nrel_population_of_region:9713_m;;
+9713_m<-concept_number;;
+
+//используемые константы
+Krasnopolski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Краснопольский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Краснопольский район — административная единица на юге Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+sc_node_not_relation -> Krasnopolski_area;;
+Krasnopolski_area => nrel_main_idtf:
+[Краснопольский район](* <-lang_ru;; *);
+[Krasnopolski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Krasnopole;;
+Krasnopole=> nrel_main_idtf:
+[Краснополье](* <-lang_ru;; *);
+[Krasnopole](* <- lang_en;; *);;
+
+sc_node_not_relation ->198_m;;
+198_m=> nrel_main_idtf:
+[198 м](* <-lang_ru;; *);
+[198 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1223_km;;
+1223_km=> nrel_main_idtf:
+[1223 км^2](* <-lang_ru;; *);
+[1223 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->9713_m;;
+9713_m=> nrel_main_idtf:
+[9713 человек](* <-lang_ru;; *);
+[9713 m](* <- lang_en;; *);;

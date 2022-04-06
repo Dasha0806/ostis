@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_kalitsialnye;;
+concept_kalitsialnye => nrel_main_idtf:
+[калициальные](*<-lang_ru;;*);
+[kalitsialnye](*<-lang_en;;*);;
+
+//
+concept_kalitsialnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(калициальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе сумчатые лишайники, представляющий собой слоевище лепрозное(порошковидное), зернистое или бородавчатое, апотеции на черных или коричневато-черных ножках, покрытых густым налетом](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lichenas_marsupialia;;
+	*);;	
+*);;
+
+//
+concept_kalitsialnye => nrel_inclusion: concept_kalitsievye;;

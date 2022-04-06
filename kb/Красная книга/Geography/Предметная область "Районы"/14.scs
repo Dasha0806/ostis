@@ -1,0 +1,56 @@
+//синонимы
+concept_climate<=nrel_subdividing:...
+(*
+->concept_maritime_climate;;
+->concept_continental_climate;;
+->concept_monsoon_climate;;
+=>nrel_main_idtf:[Разбиение по признаку влияние океана.] (* <- lang_ru;; *);;
+*);;
+concept_climate=>nrel_main_idtf:[климат] (* <- lang_ru;; *);;
+concept_climate=>nrel_identifier:[множество климатов] (* <- lang_ru;; *);;
+concept_climate=>nrel_identifier:[climate] (* <- lang_en;; *);;
+
+//используемые константы
+concept_climate<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_weather;;
+->nrel_mode;;
+*);;
+*);;
+concept_relief=> nrel_main_idtf: [Опр.(климат)]  (* <- lang_ru;; *);;
+concept_relief<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Климат – многолетний режим погоды.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_climate<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(климат,наука,климатология)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Климат изучает наука климатология.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_climate<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(климат,пространство,время)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Климат изменяется в пространстве и времени.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

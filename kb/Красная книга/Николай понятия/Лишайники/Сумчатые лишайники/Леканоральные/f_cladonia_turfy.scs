@@ -1,0 +1,141 @@
+concept_cladonia_turfy => nrel_main_idtf:
+[кладония дернистая](*<-lang_ru;;*);
+[cladonia turfy](*<-lang_lat;;*);
+[кладонiя дзiрванiстая](*<-lang_bel;;*);;
+concept_cladonia_turfy => nrel_idtf:[кладонiя дзiрванiстая](*<-lang_bel;;*);;
+
+plants -> concept_cladonia_turfy;;
+concept_species -> concept_cladonia_turfy;;
+type -> concept_cladonia_turfy;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_cladonia_turfy;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cladonia_turfy;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cladonia_turfy <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется на территории Литвы и Польши.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на корневых лапах ели в хвойно-широколиственных лесах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается вегетативно (соредиями) и спорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается единичными особями или очень небольшими группами особей.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вырубка лесов, чрезмерные рекреационные нагрузки на живой напочвенный покров, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка "Беловежская пуща". Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, для чего в местах произрастания необходим запрет любой лесохозяйственной деятельности, ограничение рекреационных нагрузок, предупреждение трансформации экотопов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа (исключая Арктику), Азия, Северная Америка, Южная Африка . Один из немногих представителей горного элемента лихенофлоры Беларуси. В Беларуси найден в Гродненской обл. (Свислочский р-н) на территории Беловежской пущи . Более ранние сведения о нахождении вида на территории республики приводятся без указания точного местонахождения .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Горизонтальное слоевище состоит из чешуек. Чешуйки длиной 2-5 (10) мм и шириной 0,5-1 мм, черепитчато налегают одна на другую, глубоко рассеченные, сверху сероватые и оливково-зеленоватые, снизу белые, иногда с немногочисленными зернистыми соредиями. Подеции часто не развиваются, низкие, 0,5-2 (7) мм, беловатые или сероватые, цилиндрические или со слабым сцифообразным расширением, на концах с темно- или красно-коричневыми апотециями .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cladonia_turfy <= nrel_spread: ... 
+	(*
+	-> Grodno_district;;
+	*);;
+
+concept_cladoniaceae => nrel_inclusion: concept_cladonia_turfy;;
+concept_cladonia_turfy => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_scales; white; grey; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_podecia; white; grey;;
+	*);;
+
+concept_cladonia_turfy <= nrel_inclusion: 
+	2_5_mm
+	(*
+	<- interval_value;;
+	<- length_of_scales;;
+	=> nrel_measurement: (2_mm => 5_mm);;	
+	*);
+	0.5_2_mm
+	(*
+	<- interval_value;;
+	<- length_of_podecia;;
+	=> nrel_measurement: (0.5_mm => 2_mm);;	
+	*);;
+	2_mm <- length_of_scales; exact_value;;
+	2_mm -> .milimeter: 2 (* <- number;;*);;
+	5_mm <- length_of_scales; exact_value;;
+	5_mm -> .milimeter: 0.5 (* <- number;;*);;
+	0.5_mm <- length_of_podecia; exact_value;;
+	0.5_mm -> .milimeter: 5 (* <- number;;*);;
+	2_mm <- length_of_podecia; exact_value;;
+	2_mm -> .milimeter: 2 (* <- number;;*);;				
+
+concept_cladonia_turfy <= nrel_inclusion: concept_1_protection_category;;
+

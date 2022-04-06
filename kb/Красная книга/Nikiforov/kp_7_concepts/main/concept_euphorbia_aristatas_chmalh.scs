@@ -1,0 +1,45 @@
+concept_euphorbia_aristatas_chmalh => nrel_main_idtf:
+[Молочай остистый](*<-lang_ru;;*);
+[Euphorbia aristata Schmalh](*<-lang_lat;;*);;
+
+concept_species -> concept_euphorbia_aristatas_chmalh;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_euphorbia_aristatas_chmalh;;
+
+Red_list_ru -> concept_euphorbia_aristatas_chmalh;;
+
+//пояснения
+concept_euphorbia_aristatas_chmalh <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Ставропольского края (2002). Организован ботанический заказник «Четвертая балка». Изучена биология и созданы искусственные популяции.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России, в Ставропольском крае на Приянкульских высотах (Шатыр-Курган, к северу от хутора Калюжного, к юго-западу от с. Бешпагир, в балках Горькая и Ломагина, в р-не г. Пикетной) и на г. Баба. Описан из окр. г. Ставрополя.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый многолетник до 1 м выс. Размножается семенами и корнеотпрысками. Цветет в мае-июне. Плодоносит в июне. .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

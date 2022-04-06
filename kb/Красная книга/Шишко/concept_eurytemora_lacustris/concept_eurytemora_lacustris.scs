@@ -1,0 +1,144 @@
+concept_eurytemora_lacustris=> nrel_main_idtf: [озерная эвритемора](*<- lang_ru;;*); [eurytemora lacustris](*<- lang_lat;;*); [азёрная эўрытэмора](*<- lang_bel;;*);;
+concept_eurytemora_lacustris => nrel_idtf: [азёрная эўрытэмора](*<- lang_bel;;*);;
+
+concept_eurytemora_lacustris <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (озерная эвритемора)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_eurytemora_lacustris.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_maxillopoda -> concept_eurytemora_lacustris;;
+concept_species -> concept_eurytemora_lacustris;;
+subject_domain_of_maxillopoda -> rrel_maximum_studied_object_class: concept_eurytemora_lacustris;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_eurytemora_lacustris;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1887 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_eurytemora_lacustris <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красную книгу Литвы (I кат.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Один из двух представителей семейства в фауне республики. Длина тела взрослых особей в водоемах Беларуси от 1,5 до 1,7 мм. Туловище состоит из 3 отделов: головного (цефалона), грудного (торакса), слитых в головогрудь (цефалоторакс), и брюшного (абдомен).  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Редко встречающийся в водной фауне Беларуси вид . Центр ареала - озера и дельты рек севера Европы и Зап. Сибири. В соседней Литве обнаружен в 10 озерах.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет глубокие мезотрофные озера с признаками олиготрофии. Живет в гиполимнионе озер, при низкой температуре воды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Редкий вид. Встречается в планктоне круглый год, максимальное развитие популяций в летние месяцы. В июле найдены все возрастные стадии развития от науплиев до взрослых самок с яйцами. Детали биологии в наших водоемах изучены слабо .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Средняя плотность в озерах Беларуси от 1380 до 2877 экземпляров в 1м3. Максимальная плотность (до 12 000 экз./м3) отмечена в оз. Вечелье в гиполимнионе. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Ареал сокращается. Не изучены. Возможно, ограниченная встречаемость в озерах связана с потребностью рачка в высокой концентрации кислорода в глубоководных слоях воды. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Оз. Волчин вошло в границы территории Национального парка «Нарочанский». Необходима организация заказников на озерах, где обитает вид, а также снижение антропогенного воздействия на водосборных площадях этих озер.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_eurytemora_lacustris <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_eurytemora_lacustris => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green;;
+	*);;
+	
+//размеры и вес
+concept_eurytemora_lacustris <= nrel_inclusion: 
+	[0.15-0.17 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0.15 см] => [0.17 см]);;	
+	*);;
+	
+	[0.15 см] <- length_of_body; exact_value;;
+	[0.15 см] -> .centimeter: 0.15 (* <- number;;*);;
+	[0.17 см] <- length_of_body; exact_value;;
+	[0.17 см] -> .centimeter: 0.17 (* <- number;;*);;
+
+//категория охраны и количество
+concept_eurytemora_lacustris <= nrel_inclusion: concept_3_protection_category;;
+
+

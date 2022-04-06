@@ -1,0 +1,163 @@
+concept_oreas_martiana => nrel_main_idtf:
+[ореас марциуса](*<-lang_ru;;*);
+[oreas martiana](*<-lang_lat;;*);;
+
+
+concept_species -> concept_oreas_martiana;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_oreas_martiana;;
+
+//пояснения
+concept_oreas_martiana <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 б - редкий вид с дизъюнктивным распространением и естественной малой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Довольно мелкий мох с прямостоячими побегами, образующий плотные дерновинки до 5 см высотой. Однодомный, спорофиты развиваются часто. Размножение, по-видимому, преимущественно спорами; вегетативная подвижность вида незначительная.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известны 5 местонахождений вида: Дагестан, между пос. Карата и Хунзах (1), Кабардино-Балкария, верховья р. Черек-Безенгийский, руч. Мижирги (2), Бурятия, Восточный Саян, Тункинский хр. близ с. Монды (3), Чукотский АО в Провиденском р-не (Гильмимлинейские горячие ключи и окр. оз. Иони) (4). Вне России - Европа, Гималаи, Китай, Япония (5), Гренландия (6), Северная Америка (7).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Вид скальных и каменистых местообитаний. Растет в расщелинах и на полузадернованных субстратах на свободных от извести скалах и скалистых обнажениях в альпийском поясе гор; в щебнистой дриадово-разнотравно-моховой тундре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Известно 5 местонахождений, в каждом из которых были отмечены единичные дерновинки, менее 1 дм2 по площади.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Удовлетворительное из-за нахождения в относительно труднодоступных районах. Вместе с тем размер популяций столь мал, что случайные факторы (вытаптывание при неумеренном выпасе, воздействие транспорта, разного рода хозяйственные мероприятия) могут привести к их исчезновению.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Неясны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красные книги Республик Бурятия (2002) и Дагестан (1998). На территории Чукотского АО одно местонахождение вида на Гильмимлинейских горячих ключах относится к территории комплексного природного памятника «Термальный» (8). Местонахождение в Кабардино-Балкарии находится на территории Кабардино-Балкарского заповедника.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходимы поиски новых местонахождений вида и контроль за состоянием известных.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_oreas_martiana <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_oreas_martiana;;
+						concept_oreas_martiana => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_oreas_martiana <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_oreas_martiana <= nrel_inclusion: concept_3_protection_category;;

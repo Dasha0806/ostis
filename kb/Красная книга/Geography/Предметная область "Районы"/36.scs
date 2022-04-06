@@ -1,0 +1,50 @@
+//синонимы,включение
+concept_area<=nrel_inclusion:concept_region;;
+concept_area=>nrel_main_idtf:[район] (* <- lang_ru;; *);;
+concept_area=>nrel_system_identifier:[concept_area] (* <- lang_en;; *);;
+concept_area=>nrel_identifier:[множество районов] (* <- lang_ru;; *);;
+concept_area=>nrel_identifier:[area] (* <- lang_en;; *);;
+
+//используемые константы
+concept_area<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_territorial_unit;;
+*);;
+
+=> nrel_main_idtf: [Опр.(район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Район-территориальная единица.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+concept_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,страна,повет,аналог*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Аналогами районов в других странах считаются повяты.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район,административно-территориальная единица)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Районом является также административно-территориальная единица.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

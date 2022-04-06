@@ -1,0 +1,76 @@
+//синонимы,включение
+nrel_standard_of_living =>nrel_main_idtf:[уровень жизни*] (* <- lang_ru;; *);;
+nrel_standard_of_living=>nrel_identifier:[standard of living*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_standard_of_living<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->nrel_degree_of_satisfaction;;
+->nrel_weight;;
+->concept_need;;
+->concept_man;;
+->concept_product;;
+->concept_unit_of_time;;
+*);;
+*);;
+nrel_standard_of_living=> nrel_main_idtf: [Опр.(уровень жизни*)]  (* <- lang_ru;; *);;
+nrel_standard_of_living<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Уровень жизни — степень удовлетворения материальных и духовных потребностей людей массой товаров и услуг, используемых в единицу времени.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+nrel_standard_of_living<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(уровень жизни*,объём*,доход,душа несаления*,потребление*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Уровень жизни базируется на объёме реальных доходов на душу населения и соответствующем объёме потребления.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+nrel_standard_of_living<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(уровень жизни*,уровень*,стандарт,категория,степень удовлетворения*,потребность,человек)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Уровень жизни - жизненный уровень, жизненный стандарт, экономическая категория, выражающая степень удовлетворения материальных и культурных потребностей людей.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+//область определения
+nrel_standard_of_living=>nrel_first_domain:concept_country;;
+nrel_standard_of_living=>nrel_second_domain:concept_quantity;;
+nrel_standard_of_living=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+-> concept_quantity;;
+->concept_country;;
+*);;
+*);;
+
+//свойства отношения
+nrel_standard_of_living<-oriented_relation;;
+nrel_standard_of_living<-antitransitive_relation;;
+nrel_standard_of_living<-antireflexive_relation;;
+nrel_standard_of_living<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

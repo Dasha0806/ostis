@@ -1,0 +1,138 @@
+concept_gerris_sphagnetorum=> nrel_main_idtf:
+[сфагновая водомерка](*<-lang_ru;;*);
+[gerris sphagnetorum](*<-lang_lat;;*);;
+
+concept_species -> concept_gerris_sphagnetorum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gerris_sphagnetorum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_gerris_sphagnetorum;;
+	-> rrel_number_of_year: 1947 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_gerris_sphagnetorum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: В Беларуси предпочитает осоковые переходные болота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Практически не известна.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид, численность которого низка во многих странах Европы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Не изучены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Березинском биосферном заповеднике, заказниках «Звонец», «Дикое» и «Споровское». Необходима организация охраны территорий, где он обнаружен, а также запрещение мелиоративных работ, применения хим. средств защиты растений, удобрений и др. на водосборных площадях, прилегающих к этим территориям.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Редкий палеарктический вид, северного происхождения, распространенный на восток до оз. Байкал. Известен из Швеции, Финляндии, России (г. Санкт-Петербург, Тобольск) и Украины (Полтавская обл.). В Польше также относится к крайне редким видам. В Беларуси отмечен на низинных болотах заказника «Звонец», «Дикое», «Споровское» и Национальном парке «Припятский», в Березинском биосферном заповеднике (оз. Московица и ручей Смоленка, связанные с болотными экосистемами). Очевидно, является ледниковым реликтом .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Бескрылые особи, очень редко полнокрылые. Надкрылья, если они есть, не разделены на клавус, перепоночку и кориум. Тело (длина 8-10 мм) вытянутое. Хоботок короткий. Переднеспинка оттянута назад и закрывает щиток. Задние и передние ноги сближены и приспособлены к передвижению по водной поверхности, передние - хватательные, с мощно развитыми бедрами. Характерным признаком вида является светлая полоса на боках переднегруди, развитая только в передней части.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_gerris_sphagnetorum <= nrel_spread: ... 
+	(*
+	-> Zvonec_reserve; Sporovskoe_reserve; Dikoe_reserve;;
+	*);;
+
+concept_gerridae => nrel_inclusion: concept_gerris_sphagnetorum;;
+concept_gerris_sphagnetorum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; light; white;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);;
+
+concept_gerris_sphagnetorum <= nrel_inclusion: 
+	8_10_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (8_mm => 10_mm);;	
+	*);;
+	8_mm <- length_of_body; exact_value;;
+	8_mm -> .millimeter: 8 (* <- number;;*);;
+	10_mm <- length_of_body; exact_value;;
+	10_mm -> .millimeter: 10 (* <- number;;*);;	
+
+concept_gerris_sphagnetorum <= nrel_inclusion: concept_3_protection_category;;

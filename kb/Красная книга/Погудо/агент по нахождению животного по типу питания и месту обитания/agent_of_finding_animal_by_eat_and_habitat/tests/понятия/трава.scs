@@ -1,0 +1,25 @@
+concept_grass=> nrel_main_idtf:
+[трава](*<-lang_ru;;*);
+[grass](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_grass<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(трава)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Трава-небольшое растение с тонким зелёным стеблем, не принадлежащее к деревьям и кустарникам.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+

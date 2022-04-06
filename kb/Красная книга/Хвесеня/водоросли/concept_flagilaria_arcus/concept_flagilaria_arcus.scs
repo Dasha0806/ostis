@@ -1,0 +1,118 @@
+concept_flagilaria_arcus=> nrel_main_idtf: [флагилярия аркообразгая](*<- lang_ru;;*); [flagilaria arcus](*<- lang_lat;;*); [флагілярыя аркападобная](*<- lang_bel;;*);;
+
+concept_flagilaria_arcus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (флагилярия аркообразгая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_flagilaria_arcus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_flagilaria_arcus;;
+concept_species -> concept_flagilaria_arcus;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_flagilaria_arcus;;
+
+//пояснения
+concept_flagilaria_arcus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Впервые включен в Красную книгу Беларуси.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Обитает в холодных текучих водах, обрастает камни и растения, редко в иле, планктоне, при низком и среднем содержании электролитов . В указанных местах Беларуси отмечен в планктоне и перифитоне.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножение вегетативное продольным делением клетки и через ряд поколений - половой процесс.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается частоасто в массе в горных проточных водоемах, в равнинных - спорадически . В водотоках и водоемах Беларуси - в единичных экземплярах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Нарушение гидрохимического режима: повышение температуры, минерализации и рН, снижение проточности воды.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Охраняется в режиме охраны водоемов Березинского биосферного заповедника. Необходимо выявление новых мест роста и их охрана, картирование ареала распространения, предупреждение антропогенных воздействий, эвтрофирования водоемов и изменения их гидрохимического режима.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Повсеместно в умеренной зоне, в горных областях, в Северной Америке, Западной Европе . В Беларуси отмечен в р. Березина и ее притоках на территории Березинского биосферного заповедника.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Клетки палочковидные, слегка серповидно-изогнутые, образуют колонии, смыкаясь створками в короткие ленты. С пояска панцирь линейный, слегка суженный к концам. Поясковая поверхность спинной стороны шире брюшной, поэтому короткие лентовидные колонии имеют форму разрезанного вдоль бочîнка. Створки более или менее серповидно-изогнутые, с клювовидными или головчатыми концами. Поперечные штрихи нежные, параллельные, на брюшной стороне посередине створки, где находится односторонне выпуклое среднее поле, прерваны. Осевое поле узколинейное. Хлоропласты пластинчатые .
+
+.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_flagilaria_arcus <= nrel_spread: ... 
+	(*
+	->  Berezino_distict;;
+	*);;
+
+concept_fragilariaceae => nrel_inclusion: concept_flagilaria_arcus;;
+concept_flagilaria_arcus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cells; rod_shaped;;
+	*);;
+
+
+
+concept_flagilaria_arcus <= nrel_inclusion: concept_3_protection_category;;

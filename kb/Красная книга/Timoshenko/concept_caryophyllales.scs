@@ -1,0 +1,27 @@
+concept_caryophyllales => nrel_main_idtf:
+[гвоздикоцветные](*<-lang_ru;;*);
+[caryophyllales](*<-lang_lat;;*);;
+
+concept_order -> concept_caryophyllales;;
+
+concept_caryophyllales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_caryophyllaceae;;
+	*);;
+
+//определение и пояснения
+concept_caryophyllales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гвоздикоцветные - порядок двудольных растений. Значительная часть представителей этого порядка приспособлена к произрастанию в условиях засушливого климата; среди жизненных форм преобладают травы и кустарнички.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_caryophyllales;;

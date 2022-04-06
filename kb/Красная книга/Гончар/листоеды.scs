@@ -1,0 +1,36 @@
+concept_chrysomelidae=> nrel_main_idtf:
+[листоеды](*<-lang_ru;;*);
+[chrysomelidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_chrysomelidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(листоеды)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Листоеды - одно из крупнейших семейств жесткокрылых насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_chrysomelidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Это обычно маленьких или средних размеров от 3 до 15 мм и ярко окрашенные жуки. Тело разнообразных форм от овальных, упрощенных до сферических, голов. Интересная характерная черта этих жуков в том, что они умеют прятать лапки и усики под себя так, что ни лап ни усиков не видно, когда они сидят на листьях.](* <- lang_ru;;*);;
+		*);;
+*);;

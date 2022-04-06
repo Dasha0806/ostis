@@ -1,0 +1,126 @@
+concept_dentipellis_futilis => nrel_main_idtf:
+[дентипеллис ломкий](*<-lang_ru;;*);
+[puellae fungus_umbrella](*<-lang_lat;;*);
+[дэнтыпелiс ломкi](*<-lang_bel;;*);;
+concept_dentipellis_futilis => nrel_idtf:[дэнтыпелiс ломкi](*<-lang_bel;;*);;
+
+plants -> concept_dentipellis_futilis;;
+concept_species -> concept_dentipellis_futilis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_dentipellis_futilis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_dentipellis_futilis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_dentipellis_futilis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в широколиственных, черноольховых и еловых, часто сырых и тенистых лесах. Индикатор старовозрастных минимально нарушенных лесных экосистем . Обитает и образует плодовые тела на значительно разложившейся валежной, лишенной коры древесине лиственных пород (клена платановидного, ольхи черной, граба обыкновенного и др.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела наблюдаются в июле - сентябре. Облигатный сапротроф, вызывающий белую гниль.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются одиночно или малыми группами. Численность популяций не установлена. Поддается лабораторному культивированию, однако в республике в коллекциях культур не поддерживается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Интенсивная лесоэксплуатация, осушительная мелиорация лесов и прилегающих территорий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природных комплексов национальных парков «Беловежская пуща» и «Припятский». Необходимы организация заказников в местах обитания вида в комплексе с другими видами, требующими охраны, сохранение гидрологического режима старовозрастных участков леса, а также поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Ареал охватывает Европу, Кавказ, Сибирь, Среднюю Азию, Дальний Восток . Отмечен в четырех местонахождениях южной и юго-западной частей Беларуси: в Брестской (Ивановский и Пружанский р-ны) и Гомельской (Житковичский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело мягко-перепончатое, при высыхании хрупкое, от беловатого вначале до желтоватого и охряного цвета, размером до 10 см и более. Край свободно отделяющийся, часто отогнутый. Гименофор состоит из шипов размером 0,5–9 0,1–0,4 мм. Цистиды многочисленные, с маслянистым преломляющим свет содержимым, четковидно сегментированные в верхней части, шириной 4,5–7,5 мкм. Гифы с пряжками. Базидии булавовидные, 27–37 4,5–7 мкм. Споры эллиптические или почти сферические, с утолщенной гладкой или шероховатой оболочкой, 4–6,3 3,3–6 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_dentipellis_futilis <= nrel_spread: ... 
+	(*
+	-> Brest_district; Gomel_district;;
+	*);;
+
+concept_auriskalpievye => nrel_inclusion: concept_dentipellis_futilis;;
+dentipellis_futilis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thorns; white; yellow;;
+	*);;
+
+concept_dentipellis_futilis <= nrel_inclusion: 
+	0.5_9_mm
+	(*
+	<- interval_value;;
+	<- length_of_thorns;;
+	=> nrel_measurement: (0.5_mm => 9_mm);;	
+	*);;
+	0.5_mm <- length_of_thorns; exact_value;;
+	0.5_mm -> .milimeter: 0.5 (* <- number;;*);;
+	9_mm <- length_of_thorns; exact_value;;
+	9_mm -> .milimeter: 9 (* <- number;;*);;			
+
+concept_dentipellis_futilis <= nrel_inclusion: concept_2_protection_category;;
+

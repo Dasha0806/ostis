@@ -1,0 +1,173 @@
+concept_bufo_verrucosissimus=> nrel_main_idtf: [кавказская жаба](*<- lang_ru;;*); [bufo verrucosissimus](*<- lang_lat;;*);;
+
+concept_bufo_verrucosissimus <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (кавказская жаба)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_bufo_verrucosissimus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_bufo_verrucosissimus <= nrel_inclusion: concept_anura;;
+concept_bufo_verrucosissimus <= nrel_type_of_eating: concept_predation;;
+
+concept_animalia -> concept_bufo_verrucosissimus;;
+concept_species -> concept_bufo_verrucosissimus;;
+subject_domain_of_amphibians -> rrel_not_maximum_studied_object_class: concept_bufo_verrucosissimus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_bufo_verrucosissimus;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2001 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_bufo_verrucosissimus <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Наиболее крупная жаба фауны России: длина тела 73.5-97 мм (самцы) и 91.5-124 мм (самки). Сверху серая или светло-коричневая с более темными пятнами. На каждой околоушной железе более или менее развитая продольная коричневая полоска. Брюхо серое или желтоватое. Кожа на спине с крупными округлыми бугорками, на брюхе с мелкими бугорками. Кожные выделения ядовиты. Самец по размеру значительно мельче самки и имеет брачные мозоли на первом пальце передних конечностей. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Обитает на Зап. Кавказе к сев. и югу от Главного Кавказского хребта в России, Грузии и Турции; изолированные популяции известны в Азербайджане (Закатальский р-н и Талыш) и прилежащих частях Ирана. Наиболее вост. находки в России указаны для Чечни (р. Армхи и г. Грозный).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает в горных хвойных, смешанных и лиственных лесах, в зарослях кустарников, на опушках и полянах. Предпочитает затененные и влажные биотопы. Зимует в почве, лесной подстилке и т.д.. Размножается в феврале-мае, в горах до августа в прудах, озерцах, лужах и ручьях, в основном с проточной водой. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Наибольшую активность кавказская жаба проявляет вечером и в предрассветные часы. Днем, как правило, она забирается в укрытия: под камни, старые деревья, в густую траву, валежник и даже в дупла на высоте 1,5 м. В пасмурную погоду и в период размножения амфибия активна в течение всего дня. Основу рациона кавказской жабы составляют различные насекомые, пауки, многоножки и улитки. Молодые особи питаются в основном муравьями и небольшими жуками. Из спячки жаба выходит в конце марта, когда воздух прогреется до +9 °C.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  В лесах Кавказского заповедника встречается около 100 особей/га, в садах - 70, в огородах - 140, вблизи верхней границы зоны широколиственных лесов - 10. В разных биотопах Ставропольского края плотность населения составляет 0.1-1360 особей, в среднем 15.8 особей/га. В период размножения встречаемость достигает 80-86 особей/км берега ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Факторы сокращения численности не изучены. Отрицательную роль играет сокращение площади лесов и снижение влажности местообитаний. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Кавказском заповеднике. Необходима организация локальных охраняемых территорий](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_bufo_verrucosissimus <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia; georgia; turkey;;
+		*);;
+	*);;
+//части тела
+concept_bufo_verrucosissimus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; brown; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; concept_spotty; brown; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; grey; yellow;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; grey;;
+	*);;
+//размеры и вес
+concept_bufo_verrucosissimus <= nrel_inclusion: 
+	[8-12 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([10 см] => [12 см]);;	
+	*);
+	[0,120-0,200 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,120 кг] => [0,200 кг]);;	
+	*);;
+	[8 см] <- length_of_body; exact_value;;
+	[8 см] -> .centimeter: 10 (* <- number;;*);;
+	[12 см] <- length_of_body; exact_value;;
+	[12 см] -> .centimeter: 12 (* <- number;;*);;
+	[0,120 кг] <- weight; exact_value;;
+	[0,120 кг] -> .kilogram: 0.120 (* <- number;;*);;
+	[0,200 кг] <- weight; exact_value;;
+	[0,200 кг] -> .kilogram: 0.200 (* <- number;;*);;
+//категория охраны и количество
+concept_bufo_verrucosissimus <= nrel_inclusion: concept_2_protection_category;;
+concept_bufo_verrucosissimus <= nrel_strength: [15000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 15000 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+concept_bufo_verrucosissimus <= nrel_larval_stage: concept_tadepole;;
+
+concept_tadepole=>nrel_main_idtf:
+[головастик](* <-lang_ru;; *);
+	[tadepole](* <- lang_en;; *);;
+
+concept_predation=>nrel_main_idtf:
+[хищничество](* <-lang_ru;; *);
+	[predation](* <- lang_en;; *);;
+
+
+
+

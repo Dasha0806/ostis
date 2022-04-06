@@ -1,0 +1,141 @@
+concept_porphyrellus_porphyrosporus=> nrel_main_idtf: [порфировик ложноберёзовиковый](*<- lang_ru;;*); [porphyrellus porphyrosporus](*<- lang_lat;;*);;
+
+concept_porphyrellus_porphyrosporus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (порфировик ложноберёзовиковый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_porphyrellus_porphyrosporus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_porphyrellus_porphyrosporus;;
+concept_species -> concept_porphyrellus_porphyrosporus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_porphyrellus_porphyrosporus;;
+
+//пояснения
+concept_porphyrellus_porphyrosporus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус.. 3б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус.. 3б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Калининградская обл. (2, LE); Республика Адыгея (3, 4); Хабаровский край (5); Приморский край (6-10); Сахалинская обл. (11). Общее распространение: вне России распространен в Европе, Азии и Сев. Америке (1). Особенности экологии и фитоценологии. Микоризный симбионт бука, дуба, берёзы (?), кедра (?), пихты (?) и ели (?). Спорадически встречается в широколиственных, смешанных и хвойных лесах с участием этих древесных пород.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка кавказских и дальневосточных лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид включен в Красные книги Республики Адыгея (12), Хабаровского края (13) и Сахалинской обл. (14). Охраняется в ряде заповедников России: Кавказском (3, 4, 12), Большехехцирском (5), Уссурийском (7), Лазов- ском (8), Сихотэ-Алинском (9), «Кедровая Падь» (10).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим контроль за состоянием популяций и поиск новых местонахождений вида.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Поскольку вид является микоризным, поддержание его в чистой культуре пока не удается.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_porphyrellus_porphyrosporus <= nrel_spread: ... 
+	(*
+	-> Kaliningradskaja_oblast; Primorskiy_kray; Sahalinskaja_oblast;;
+	*);;
+
+concept_shishkogribovyye => nrel_inclusion: concept_porphyrellus_porphyrosporus;;
+concept_porphyrellus_porphyrosporus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; matte; brown; velvety;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; fibrous;;
+	*);;
+
+concept_porphyrellus_porphyrosporus <= nrel_inclusion: 
+	[5-10 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([5 см] => [10 см]);;	
+	*);
+	[1-3 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1 см] => [3 см]);;	
+	*);;
+
+	[5 см] <- cap_diameter; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[10 см] <- cap_diameter; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[1 см] <- lenght_of_leg; exact_value;;
+	[1 см] -> .centimeter: 1 (* <- number;;*);;
+	[3 см] <- lenght_of_leg; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	
+concept_porphyrellus_porphyrosporus <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,37 @@
+concept_ephemeroptera=> nrel_main_idtf:
+[поденки](*<-lang_ru;;*);
+[ephemeroptera](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_ephemeroptera<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(поденки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Поденки - древний отряд крылатых насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_ephemeroptera;;
+concept_ephemeroptera => nrel_inclusion: 
+concept_prosopistomatidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Поденки - насекомые, которые имеют две пары сетчатых прозрачных и очень тонких крыльев. У которых передние крылья всегда крупнее задних, у некоторых поденок задние крылья совсем не развиты, а на конце брюшка — три, или реже две, длинные тонкие хвостовые нити.](* <- lang_ru;;*);;
+		*);;
+*);;

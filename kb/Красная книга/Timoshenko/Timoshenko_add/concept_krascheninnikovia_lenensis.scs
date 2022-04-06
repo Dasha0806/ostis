@@ -1,0 +1,45 @@
+concept_krascheninnikovia_lenensis => nrel_main_idtf:
+[Крашенинниковия ленская](*<-lang_ru;;*);
+[Krascheninnikovia lenensis](*<-lang_lat;;*);;
+
+concept_species -> concept_krascheninnikovia_lenensis;;
+
+
+Red_list_ru -> concept_krascheninnikovia_lenensis;;
+
+//пояснения
+concept_krascheninnikovia_lenensis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид был включен в Красную книгу РСФСР (1988). Занесен в Красные книги Республики Саха (Якутия) (2000). Охраняется в НП «Ленские Столбы», но численность его там невелика.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Растет только в России. Известен в долине верхней Лены от с. Булгунняхтах выше Якутска до окр. Олёкминска (сс. Абага и Кятчи, Орджоникидзевский и Олёкминский р-ны Республики Саха (Якутия). Описан из окр. д. Кятчи по правому берегу р. Лены в Якутии (ТК).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Зимнезеленый полукустарник от 20 до 70 см выс. с однополыми однодомными цветками. Женские цветки очень маленькие - 2-3 мм дл. Цветение женских и мужских цветков разновременное. Цветет в июле- савгусте. Семена немногочисленные, часто невыполненные. Размножение семенное и вегетативное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_krascheninnikovia_lenensis <= nrel_inclusion: concept_3_protection_category;;

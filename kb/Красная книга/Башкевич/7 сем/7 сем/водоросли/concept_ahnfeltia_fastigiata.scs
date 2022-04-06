@@ -1,0 +1,163 @@
+concept_ahnfeltia_fastigiata => nrel_main_idtf:
+[анфельция равновершинная](*<-lang_ru;;*);
+[ahnfeltia fastigiata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_ahnfeltia_fastigiata;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_ahnfeltia_fastigiata;;
+
+//пояснения
+concept_ahnfeltia_fastigiata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Макроскопическое слоевище (гаметофит) кустистое, жесткое, плотно-хрящеватое, цилиндрическое или сдавленное, 5-10 см дл., ветвится правильно дихотомически, прикрепляется подошвой. Ветви до 0,5-0,8 мм шир. Верхушки ветвей располагаются на одном уровне. Сердцевина многоосевая, состоит из плотно сомкнутых продольных нитей, образованных узкими длинными толстостенными клетками, укорачивающимися к поверхности. Периферические нити отходят радиально и образуют плотно сомкнутую многослойную мелкоклеточную кору. Длинные клетки сердцевины через 5-10 см прослаиваются мелкими клетками. Отношение ширины к длине клеток в сердцевине 1: 11-22. Органы полового размножения - карпогоны - в нематециях, образующихся в результате наружного разрастания нитей коры. Слоевище спорофита для видов Ahnfeltia корковидное в виде базального диска, состоит из плотно сомкнутых клеточных рядов. На нем в нематециях развиваются тетраспорангии (1,2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России найден у Камчатки в Авачинской губе (1, 3), на Командорских о-вах [о. Медный (4-6), о. Бе- ринга (7)] и у о. Кунашир у мыса Водопадный (Курильские о-ва) (8), Сахалине, в Охотском и Японском морях [чаще всего под названием Ahnfeltia plicata (Hudson) Fries] (2, 9). Вне России: побережье Северной Америки (Аляска, Алеутские о-ва, Калифорния и др.) и у о. Чилоэ (Чили), у побережья Японии (1, 10-12).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Найден в сублиторальной зоне на камнях до глубины 4 м. Бореально-нотальный пацифический вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Неизвестна.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Поселения малочисленные, находки единичные. В Авачинской губе вид больше не встречается, и, вероятно, его можно признать исчезнувшим из этой акватории (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания в результате хозяйственной деятельности человек; вылов вмести с промысловыми видами анфельции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Включена в Красную книгу Камчатки со статусом - уязвимый вид (2).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественного состояния местообитаний вида. Поиск новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_ahnfeltia_fastigiata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_ahnfeltia_fastigiata;;
+						concept_ahnfeltia_fastigiata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_ahnfeltia_fastigiata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_ahnfeltia_fastigiata <= nrel_inclusion: concept_3_protection_category;;

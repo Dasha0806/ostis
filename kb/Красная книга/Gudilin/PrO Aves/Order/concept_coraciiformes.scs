@@ -1,0 +1,22 @@
+concept_coraciiformes => nrel_main_idtf:
+[ракшеобразные](*<-lang_ru;;*);
+[coraciiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_coraciiformes;;
+
+concept_coraciiformes => nrel_inclusion: concept_alcedinidae; concept_meropidae; concept_coraciidae;;
+
+//определение и пояснения
+concept_coraciiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ракшеобразные - Ракшеобразные (Coraciiformes), отряд птиц. Телосложение плотное, голова крупная, клюв прямой или немного изогнут вниз, иногда очень мощный. Ноги слабые, четырёхпалые; передвигаться по земле избегают. Преобладают древесные формы. Оперение жёсткое, яркое, с металлическим отливом, перья плотно прилегают к телу.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_coraciiformes;;

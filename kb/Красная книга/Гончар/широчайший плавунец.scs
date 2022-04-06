@@ -1,0 +1,146 @@
+concept_dytiscus_latissimus_linnaeus=> nrel_main_idtf:
+[широчайший плавунец](*<-lang_ru;;*);
+[dytiscus latissimus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_dytiscus_latissimus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_dytiscus_latissimus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_dytiscus_latissimus_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_dytiscus_latissimus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Охраняется в Европе (Приложение II Бернской конвенции). Внесен в Красную книгу Литвы; в Красный список МСОП (VU, ver. 2.3, 1994).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Предпочитает крупные стоячие водоемы (озера, водохранилища, старицы).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Изучена недостаточно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид, численность которого низкая во многих странах Европы. Нигде не обнаружены устойчивые популяции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Отсутствуют.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется в Березинском биосферном заповеднике и заказнике «Званец». Необходима организация охраны территорий, где обнаружен этот вид, а также запрещение проведения мелиоративных работ, применения химических средств и удобрений на прилегающих водосборных площадях.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Редкий вид, распространен в северной, средней Европе и Западной Сибири . Полесский регион является южной границей его ареала. В Беларуси известны находки в районе н.п. Плещеницы (Логойский р-н), Новый Свержень (Столбцовский р-н), Лахва (Лунинецкий р-н), Чемерин (Пинский р-н), Березинский биосферный заповедник, заказник «Званец» .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Самый крупный род из плавунцов Беларуси. Тело жука очень широкое и крупное (длина 36-44 мм), широкоовальное, слабовыпуклое, зеленовато-бурое. Ротовые части, пятна на лбу, широкая кайма вокруг переднеспинки и кайма на надкрыльях желтые. Надкрылья сильно расширены. Их боковой край распластан в виде тонкой острой пластинки. Надкрылья самки с 10 продольными бороздками, не доходящими до вершины, анальный стернит с глубокой выемкой посередине, по сторонам с грубыми морщинками. На лапках передних ног самца имеется 1000-1200 присосок, на лапках средних ног - 200-500 присосок. Анальный стернит у самца на конце с небольшой выемкой.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_dytiscus_latissimus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Logoisk_district; Lyninec_district; Pinsk_district; Stolbci_district;;
+	*);;
+
+concept_dytiscidae => nrel_inclusion: concept_dytiscus_latissimus_linnaeus;;
+concept_dytiscus_latissimus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; green; brown ;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; green;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; brown;;
+	*);;
+
+concept_dytiscus_latissimus_linnaeus <= nrel_inclusion: 
+	36_44_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (36_mm => 44_mm);;	
+	*);;
+	36_mm <- length_of_body; exact_value;;
+	36_mm -> .millimeter: 36 (* <- number;;*);;
+	44_mm <- length_of_body; exact_value;;
+	44_mm -> .millimeter: 44 (* <- number;;*);;	
+
+concept_dytiscus_latissimus_linnaeus <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,146 @@
+concept_emus_hirtus_linnaeus=> nrel_main_idtf:
+[волосатый стафилин](*<-lang_ru;;*);
+[emus hirtus linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_emus_hirtus_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_emus_hirtus_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_emus_hirtus_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_emus_hirtus_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Красную книгу Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в лесах и на открытых местах, под экскрементами, падалью, на вытекающем соке деревьев (преимущественно берез).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Жуки встречаются с мая по октябрь, наиболее многочисленны с конца мая до июля. Хищник, охотится на личинок насекомых-копрофагов в навозе и других разлагающихся субстратах. Личинки жука также хищничают.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Редкий вид. Тенденция изменения численности не известна.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение режима пользования сельхозугодьями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Сохранение существующего режима природопользования в местах локализации наиболее крупных популяций вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Южная, Западная и Средняя Европа на север до Британских островов и Скандинавии (Дания и южная Швеция). Кавказ, Турция, Иран, Казахстан. В Беларуси встречается локально по всей территории . Отмечен в Беловежской пуще и Национальном парке «Припятский». Наиболее многочисленная популяция известна из Березинского заповедника .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Жук (18-28 мм) черный с темно-фиолетовым металлическим блеском. Все тело покрыто длинными густыми волосками, золотисто-желтыми на голове, переднеспинке и вершине брюшка. На основании брюшка и надкрылий волоски черные, вершина надкрылий с перевязью из серых волосков. Надкрылья укорочены.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_emus_hirtus_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belovezhskaya_Pyshcha_district; Belarus_district;;
+	*);;
+
+concept_staphylinidae => nrel_inclusion: concept_emus_hirtus_linnaeus;;
+concept_emus_hirtus_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; hairly; gold; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; hairly; gold; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; metallic; purple; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; hairly; black; grey;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; hairly; gold; yellow;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_emus_hirtus_linnaeus <= nrel_inclusion: 
+	18_28_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (18_mm => 28_mm);;	
+	*);;
+	18_mm <- length_of_body; exact_value;;
+	18_mm -> .millimeter: 18 (* <- number;;*);;
+	28_mm <- length_of_body; exact_value;;
+	28_mm -> .millimeter: 28 (* <- number;;*);;	
+
+concept_emus_hirtus_linnaeus <= nrel_inclusion: concept_4_protection_category;;

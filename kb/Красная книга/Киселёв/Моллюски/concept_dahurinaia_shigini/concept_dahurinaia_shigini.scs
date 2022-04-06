@@ -1,0 +1,151 @@
+concept_dahurinaia_shigini => nrel_main_idtf: [жемчужница шигина](*<- lang_ru;;*); [dahurinaia shigini](*<- lang_lat;;*);;
+
+concept_dahurinaia_shigini  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (жемчужница шигина)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dahurinaia_shigini.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_dahurinaia_shigini <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_dahurinaia_shigini ;;
+concept_species -> concept_dahurinaia_shigini ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_dahurinaia_shigini ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_dahurinaia_shigini ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1987 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_dahurinaia_shigini  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Крупный двустворчатый моллюск. Длина раковины до 60 мм. Похожа на гладкую жемчужницу, от которой отличается пропорциями раковины: очень короткая, снаружи темно-коричневая, удлиненно-овальная, мало вздутая. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Вид известен с о. Кунашир, откуда описан типовой экземпляр. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает в слабо текущих реках олиготрофного типа юж. части о. Кунашир. Грунты чисто песчаные. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Образует скопления до 10 экз./1 м2. Численность низкая. Тенденция к сокращению не наблюдается. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Лимитирующие факторы не изучены. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в Курильском государственном заповеднике. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_dahurinaia_shigini  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_dahurinaia_shigini  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; black;;
+	*);;
+//размеры и вес
+concept_dahurinaia_shigini  <= nrel_inclusion: 
+	[4-6 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([4 см] => [6 см]);;	
+	*);
+	[0,045-0,065 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,045 кг] => [0,060 кг]);;	
+	*);;
+	[4 см] <- length_of_body; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+	[6 см] <- length_of_body; exact_value;;
+	[6 см] -> .centimeter: 6 (* <- number;;*);;
+	[0,045 кг] <- weight; exact_value;;
+	[0,045 кг] -> .kilogram: 0.045 (* <- number;;*);;
+	[0,060 кг] <- weight; exact_value;;
+	[0,060 кг] -> .kilogram: 0.060 (* <- number;;*);;
+//категория охраны и количество
+concept_dahurinaia_shigini  <= nrel_inclusion: concept_3_protection_category;;
+concept_dahurinaia_shigini  <= nrel_strength: [2000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 2000 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+concept_ranunculaceae => nrel_main_idtf:
+[лютиковые](*<-lang_ru;;*);
+[ranunculaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_ranunculaceae;;
+
+concept_ranunculaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_aconytum_lycoctonum; concept_aconytum_lasiostomum; concept_anemone_sylvestris; concept_delphinium_elatum; concept_cimicifuga_europaea; concept_trollius_europaeus; concept_clematis_recta; concept_pulsatilla_pratensis; concept_isopyrum_thalictroides;;
+	*);;
+
+//определение и пояснения
+concept_ranunculaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лютиковые - семейство двудольных свободнолепестных растений. Представители семейства — однолетние, двулетние и многолетние травы; иногда (например, некоторые виды рода Ломонос) — полукустарники и вьющиеся кустарники.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_ranunculaceae;;

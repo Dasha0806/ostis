@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_agarikalnye;;
+concept_agarikalnye => nrel_main_idtf:
+[агарикальные](*<-lang_ru;;*);
+[agarikalnye](*<-lang_en;;*);;
+
+//
+concept_agarikalnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(агарикальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий все пластинчатые грибы со структурой гименофора в форме тонких пластинок](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_agarikalnye => nrel_inclusion:
+     concept_agaricales;
+     concept_hygrophoraceae;
+     concept_triholomovye;;

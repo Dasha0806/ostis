@@ -1,0 +1,163 @@
+concept_plagiothecium_obtusissimum => nrel_main_idtf:
+[плагиотециум тупейший](*<-lang_ru;;*);
+[plagiothecium obtusissimum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_plagiothecium_obtusissimum;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_plagiothecium_obtusissimum;;
+
+//пояснения
+concept_plagiothecium_obtusissimum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 д - редкий вид, имеет ограниченный ареал, часть которого находится на территории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Среднего размера мох, образующий плотные, светло-зеленые, блестящие дерновинки. Стебель 1-3 см длиной, ползучий, плоско и густо облиственный. Двудомный, спорофиты развиваются изредка, размножается генеративно и вегетативно.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается в Сахалинской обл.: на Курильских о-вах (Шикотан, Кунашир, Уруп) (1, 2, 3) и о. Сахалин (4). За пределам России известен в Японии, на о. Хоккайдо (5).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Растет в пихтово-еловых лесах на почве, валежнике, на гумусированной поверхности камней.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Встречается небольшими, от нескольких десятков до нескольких сотен особей, популяциями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Стабильное. Почти все местонахождения находятся в труднодоступных районах, где нет прямой хозяйственной деятельности.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Нарушение условий произрастания вида, разного рода антропогенные воздействия, а также случайные факторы (пожары) могут привести к исчезновению популяций этого редкого вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был включен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Сахалинской обл. (2005). Часть местонахождений вида на о. Кунашир находятся на территории Курильского заповедника.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием известных популяций и поиск новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_plagiothecium_obtusissimum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_plagiothecium_obtusissimum;;
+						concept_plagiothecium_obtusissimum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_plagiothecium_obtusissimum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_plagiothecium_obtusissimum <= nrel_inclusion: concept_3_protection_category;;

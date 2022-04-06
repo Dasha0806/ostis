@@ -1,0 +1,78 @@
+sc_node_not_relation -> zapolskiy;;
+
+zapolskiy => nrel_main_idtf: [заказник Запольский] (* <- lang_ru;; *);
+				     [Zapolskiy] (* <- lang_en;; *);;
+concept_territorry->zapolskiy;;
+zapolskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Запольский)](*<-lang_ru;;*);
+		[Pic. (Zapolskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+zapolskiy<-concept_sanctuary;;
+
+zapolskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Запольский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заказник Запольский был создан в 1979 году на верховом болоте для охраны мест естественного произрастания клюквы.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zapolskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zapolskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Запольский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Запольский составляет 794 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zapolskiy=>nrel_square:[794 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[794](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zapolskiy => nrel_area_location: Vitebsk_area;;
+zapolskiy => nrel_flora: ...(*
+<-Oxycoccus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: zapolskiy;;
+

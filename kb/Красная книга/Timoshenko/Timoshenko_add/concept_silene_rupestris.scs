@@ -1,0 +1,45 @@
+concept_silene_rupestris => nrel_main_idtf:
+[Смолёвка скальная](*<-lang_ru;;*);
+[Silene rupestris](*<-lang_lat;;*);;
+
+concept_species -> concept_silene_rupestris;;
+
+
+Red_list_ru -> concept_silene_rupestris;;
+
+//пояснения
+concept_silene_rupestris <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу природы Ленинградской обл. (2000) и Красные книги Мурманской (2003) обл. и Республики Карелия (1995). Охраняется в ряде региональных ООПТ.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается в Ленинградской обл. (Карельский перешеек), на западе Мурманской обл. и в Республике Карелии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый поликарпик 7-15 см выс., со стеблем, ветвящимся от основания. Цветет в июле- августе. Размножается семенами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_silene_rupestris <= nrel_inclusion: concept_2_protection_category;;

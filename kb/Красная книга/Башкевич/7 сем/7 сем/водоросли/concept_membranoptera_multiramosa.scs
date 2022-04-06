@@ -1,0 +1,163 @@
+concept_membranoptera_multiramosa => nrel_main_idtf:
+[мембраноптера густоразветвленная](*<-lang_ru;;*);
+[membranoptera multiramosa](*<-lang_lat;;*);;
+
+
+concept_species -> concept_membranoptera_multiramosa;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_membranoptera_multiramosa;;
+
+//пояснения
+concept_membranoptera_multiramosa <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 б, г - редкий вид, встречается спорадически и с небольшой численностью популяций, в России находится на западной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище плоское, 3-5 см дл., сближено поочередно разветвленное, состоит из нескольких побегов и имеет вид розетки. Ветви из одного слоя клеток, с центральным многослойным хорошо выраженным ребром и боковыми жилками, короткие, 1-4 мм шир., линейные, до широколанцетовидных. Край ветвей гладкий, или крупнозубчатый, или реснитчатый, мелковолнистый. Боковые жилки обильно прорастают в веточки следующего порядка или образуют зубцы и реснички, создавая поочередное, почти перистое ветвление. Тетраспорангии рассеяны вдоль ребра и жилок. Цистокарпы 27-36 х 45-63 мкм развиваются на среднем ребре (1, 2, 3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается на Курильских (Симушир) и Командорских (2, 3, 5, 6) о-вах, Авачинской губе (4). Вне России: тихоокеанское побережье США от Вашингтона до Калифорнии (3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Бореальный интерзональный, пацифический вид. Произрастает в нижнем горизонте литорали в защищенных расщелинах и в сублиторали до глубины 10 м, а также как эпифит на других водорослях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Чувствительность к загрязнению.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Вид включен в Красную книгу Камчатки (4).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_membranoptera_multiramosa <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_membranoptera_multiramosa;;
+						concept_membranoptera_multiramosa => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_membranoptera_multiramosa <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_membranoptera_multiramosa <= nrel_inclusion: concept_3_protection_category;;

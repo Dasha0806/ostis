@@ -1,0 +1,162 @@
+concept_cinna_latifolia => nrel_main_idtf: [цинна широколистная](*<- lang_ru;;*); [cinna latifolia](*<- lang_lat;;*); [цына шыракалістая](*<- lang_bel;;*);;
+concept_cinna_latifolia => nrel_idtf: [цына шыракалістая](*<- lang_bel;;*);;
+
+concept_species -> concept_ajuga_pyramidalis_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_ajuga_pyramidalis_l;;
+
+concept_poaceae->concept_cinna_latifolia;;
+
+concept_cinna_latifolia  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (цинна широколистная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_cinna_latifolia.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_cinna_latifolia;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_cinna_latifolia <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Считался, по-видимому, исчезнувшим с территории Беларуси. Включен в Приложение II к Директиве Европейского Союза о местах обитания. Охраняется в Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с длинным корневищем и прямостоячими стеблями высотой 40-130 (до 200) см. Пластинки листьев шириной до 15 мм, с выдающейся белой средней жилкой, шероховатые по краям и средней жилке; язычок длиной 3-9 мм. Метелки длиной 15-30 см, рыхлые, поникающие, с многочисленными колосками. Колоски с одним цветком, светло-зеленые, длиной 3-4 мм, сжатые с боков; нижние цветковые чешуи коротко опушенные по жилкам, на верхушке двузубчатые, короче колосковых чешуй, с короткой (до 0,5 мм) остью, находящейся в выемке между зубцами; верхняя цветковая чешуя с килем. Плод - свободная зерновка .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Евразия (Скандинавия, Восточная Европа, Кавказ, Западная и Восточная Сибирь, Дальний Восток, Монголия, Япония, Китай), Северная Америка ; распространен в лесной полосе Северного полушария. В Беларуси находится в изолированном локалитете на юго-западной границе европейской части ареала. Достоверно известен в Сенненском р-не Витебской обл. . Имеются старые гербарные сборы из Борисовского и Логойского р-нов.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сырые широколиственные и еловые леса; растет на богатой гумусом рыхлой почве](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Размножается вегетативно и семенами. Цветет в конце июня - июле. Анемофил. Плодоносит в августе. Анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Популяция в Сенненском р-не насчитывает приблизительно 90 экземпляров и занимает площадь около 0,01 га. Отмечена тенденция к сокращению численности данной популяции, связанная с антропогенными нарушениями мест обитания.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Рубки леса главного пользования, хозяйственная трансформация земель, осушительная мелиорация прилегающих территорий, чрезмерные рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Необходимы ревизия местонахождений в Борисовском и Логойском р-нах, постоянный контроль состояния популяции в Сенненском р-не, где следует создать специализированный ботанический заказник с запрещением или ограничением антропогенных воздействий (допускаются выборочные санитарные рубки и рубки ухода, проводимые в зимнее время). Целесообразно сохранение вида в условиях культуры.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_ajuga_pyramidalis_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district;;->Vileika_district;;->Volozhin_district;;->Minsk_district;;->Myadel_district;;->Smolevichi_district;;->Stolbtsy_district;;->Dyatlovo_district;;->Ivie_district;;->Mosty_district;;->Novogrudok_district;;->Ostrovets_district;;->Oshmyany_district;;->Smorgon_district;;
+		*);;
+*);;
+
+concept_ajuga_pyramidalis_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; direct;pubescent;tetrahedral;shortened_internode;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; petiolate;elliptical_plate;shirokolashka_plate;sedentary;green;;
+*);
+...
+(*
+<= nrel_inclusion: flower; pale_green;small;sedentary;;
+*);;
+
+
+
+concept_cinna_latifolia <= nrel_inclusion: 
+[0-200 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([0 см] => [200 см]);; 
+*);; 
+
+concept_cinna_latifolia <= nrel_inclusion:
+[50-90 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([50 см] => [90 см]);; 
+*);;
+
+[0 см] <- length_of_inflorscence; exact_value;;
+[0 см] -> .centimeter: 0 (* <- number;;*);;
+[200 см] <- length_of_inflorscence; exact_value;;
+[200 см] -> .centimeter: 200 (* <- number;;*);;
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[90 см] <- length_of_inflorscence; exact_value;;
+[90 см] -> .centimeter: 90 (* <- number;;*);;
+ 
+
+concept_ajuga_pyramidalis_l <= nrel_inclusion: concept_1_protection_category;;

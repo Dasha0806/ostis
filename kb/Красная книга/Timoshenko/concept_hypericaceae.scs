@@ -1,0 +1,27 @@
+concept_hypericaceae => nrel_main_idtf:
+[зверобойные](*<-lang_ru;;*);
+[hypericaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_hypericaceae;;
+
+concept_hypericaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_hypericum_tetrapterum_fries; concept_hypericum_montanum; concept_hypericum_hirsutum;;
+	*);;
+
+//определение и пояснения
+concept_hypericaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Зверобойные - семейство растений порядка чаецветные.Тропические виды — большей частью кустарники и деревья; большинство же других видов — многолетние травы. Листья супротивные или кольчато-расположенные, простые, обыкновенно цельнокрайние, перисто-нервные и у многих представителей семейства испещрённые просвечивающими маслянистыми желёзками.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_hypericaceae;;

@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_lahnokladievye;;
+concept_lahnokladievye => nrel_main_idtf:
+[лахнокладиевые](*<-lang_ru;;*);
+[lahnokladievye](*<-lang_en;;*);;
+
+//
+concept_lahnokladievye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(лахнокладиевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка лахнокладиальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lahnokladialnye;;
+	*);;	
+*);;
+
+//
+concept_lahnokladievye => nrel_inclusion: concept_stsitinostroma_olentia;;

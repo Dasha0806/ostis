@@ -1,0 +1,58 @@
+//синонимы,включение
+nrel_population_of_country =>nrel_main_idtf:[население страны*] (* <- lang_ru;; *);;
+nrel_population_of_country =>nrel_identifier:[population of country*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_population_of_country<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_country;;
+->concept_totality;;
+*);;
+*);;
+nrel_population_of_country=> nrel_main_idtf: [Опр.(население страны*)]  (* <- lang_ru;; *);;
+nrel_population_of_country<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Население страны - совокупность людей,живущих в стране.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+nrel_population_of_country<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(население страны*,ход*,воспроизводство*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Население страны непрерывно возобновляется в ходе воспроизводства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+
+//область определения
+nrel_population_of_country=>nrel_first_domain:concept_country;;
+nrel_population_of_country=>nrel_second_domain:concept_quantity;;
+nrel_population_of_country=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+->concept_country;;
+->concept_quantity;;
+*);;
+*);;
+
+//свойства отношения
+nrel_population_of_country<-oriented_relation;;
+nrel_population_of_country<-antitransitive_relation;;
+nrel_population_of_country<-antireflexive_relation;;
+nrel_population_of_country<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

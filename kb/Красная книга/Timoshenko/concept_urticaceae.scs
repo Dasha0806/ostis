@@ -1,0 +1,27 @@
+concept_urticaceae => nrel_main_idtf:
+[крапивные](*<-lang_ru;;*);
+[urticaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_urticaceae;;
+
+concept_urticaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_urtica_kioviensis;;
+	*);;
+
+//определение и пояснения
+concept_urticaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крапивные - семейство цветковых растений с преобладанием травянистых жизненных форм, включающее в себя около 60 родов и 1000 видов, распространённых преимущественно в тропиках. Наиболее известными представителями являются крапивы, обладающие чрезвычайно сильными жалящими свойствами лапортеи, а также распространённые в комнатной культуре пилеи и солейролии.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_urticaceae;;

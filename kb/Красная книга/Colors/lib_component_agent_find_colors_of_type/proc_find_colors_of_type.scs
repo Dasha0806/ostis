@@ -1,0 +1,102 @@
+scp_program -> proc_find_colors_of_type (*
+	
+	-> rrel_params: ... (*
+		-> rrel_1: rrel_in: _type;;
+		-> rrel_2: rrel_in: _result;;
+	*);;
+
+	-> rrel_operators: ... (*
+
+		->rrel_init:  ..find_color (*
+			 <- searchSetStr5;; 
+			-> rrel_1: rrel_fixed: rrel_scp_var: _type;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arc2;;
+			-> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _no_name_node;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arc4;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_part;;
+		
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+			=> nrel_then: ..proc_search_part;;
+		 	=> nrel_else: ..proc_run_testcase_operator_return;;
+		*);;
+
+        
+        -> ..proc_search_part
+            (*
+            	<-searchElStr3;;
+            	-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arci;;
+			    -> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _node;;
+			
+			    => nrel_then: ..proc_erase;;
+		 	    => nrel_else: ..proc_run_testcase_operator_return;;
+        	*);;
+
+        -> ..proc_erase
+        (*
+        	<-eraseEl;;
+        	->rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arci;;
+        	=>nrel_goto: ..proc_search_color;;
+        *);;
+
+        ->..proc_search_color
+        (*
+        	<- searchSetStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _color;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: rrel_const: _arcus1;;
+			-> rrel_3: rrel_fixed: rrel_node: rrel_scp_var: _node;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: rrel_const: _arcus2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion;;
+		
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set1;;
+			=> nrel_then: ..proc_search_part1;;
+		 	=> nrel_else: ..proc_search_part;;
+        *);;
+
+
+        -> ..proc_search_part1
+            (*
+            	<-searchElStr3;;
+            	-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+			    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arci1;;
+			    -> rrel_3: rrel_assign: rrel_node: rrel_scp_var: _node1;;
+			
+			    => nrel_then: ..proc_erase1;;
+		 	    => nrel_else: ..proc_search_part;;
+        	*);;
+
+
+        -> ..proc_erase1
+        (*
+        	<-eraseEl;;
+        	->rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arci1;;
+        	=>nrel_goto: ..proc_check_color;;
+        *);;
+
+
+        ->..proc_check_color
+        (*
+        	<- searchElStr3;;
+        	-> rrel_1: rrel_fixed: rrel_node: rrel_scp_const: concept_color;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node1;;
+
+			=> nrel_then: ..proc_for_finding_species_by_sign_add_species_to_answer_1;;		
+		 	=> nrel_else: ..proc_search_part1;;
+		*);;
+
+
+        -> ..proc_for_finding_species_by_sign_add_species_to_answer_1
+        (*
+		<-genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcus;;
+		-> rrel_3: rrel_fixed: rrel_node: rrel_scp_var: _node1;;
+		=>nrel_goto: ..proc_search_part1;;
+		*);;
+
+		-> ..proc_run_testcase_operator_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

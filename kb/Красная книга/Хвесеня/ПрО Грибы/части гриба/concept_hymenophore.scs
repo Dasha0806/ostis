@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_hymenophore;;
+concept_hymenophore => nrel_main_idtf:
+[гименофор](*<-lang_ru;;*);
+[hymenophore](*<-lang_en;;*);;
+
+concept_hymenophore <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.( гименофор)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [часть плодового тела гриба, несущая на поверхности тонкий спороносный слой — гимений. ](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_fungos;;
+	->concept_sporocarp;;
+*);;
+*);;
+
+
+//включение / разбиение
+
+concept_hymenophore => nrel_inclusion: concept_sporocarp;;

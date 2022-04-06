@@ -1,0 +1,25 @@
+length_of_body
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[длина тела]
+	(*<-lang_ru;;*);
+	[length of body]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[длина тела]
+	(*<-lang_ru;;*);
+	[length of body]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (длина тела) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Длина тела - это протяжение на теле в том направлении, в котором две крайние точки тела лежат на наибольшем расстоянии друг от друга ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_length -> length_of_body;;
+	

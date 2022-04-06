@@ -1,0 +1,36 @@
+concept_lycaenidae=> nrel_main_idtf:
+[голубянки](*<-lang_ru;;*);
+[lycaenidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_lycaenidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(голубянки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Голубянки - семейство дневных бабочек.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_lycaenidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Бабочки обычно небольшие, с хорошо выраженным половым диморфизмом, особенно в окраске крыльев — самцы окрашены в более яркие тона. Обычно окраска верхней стороны крыльев самок тёмно-бурая с желтоватыми или оранжевыми пятнышками в их краевой части. Отличия самцов от самок заключаются в том, что желтоватые пятна у них сокращаются или исчезают.](* <- lang_ru;;*);;
+		*);;
+*);;

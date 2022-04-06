@@ -1,0 +1,61 @@
+sc_agent_for_coordinator
+=> nrel_main_idtf:
+	[sc-агент координации] 
+		(* <- lang_ru;; *);
+	[sc-agent of coordination] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_for_coordinator_condition => ..sc_agent_for_coordinator_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_for_coordinator
+	};
+<-key_sc_element:
+	...
+	(*
+	<-sc_description_of_sc_agent_behavior;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Задачей sc-агента является координация поиска других агентов];;
+		*);;
+	*);
+=> nrel_inclusion: ...
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		proc_coordinator;
+		agent_proc_coordinator
+		
+		};;
+	-> sc_agent_for_finding_species_by_sign_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_for_coordinator_condition
+= [*
+	action_for_coordinator _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._param;;
+*];;
+
+..sc_agent_for_coordinator_result
+= [*
+	action_for_coordinator _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._param;;
+*];;

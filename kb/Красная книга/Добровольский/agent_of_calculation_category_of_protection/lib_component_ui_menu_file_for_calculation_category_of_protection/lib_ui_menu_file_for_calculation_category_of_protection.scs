@@ -1,0 +1,22 @@
+lib_ui_menu_file_for_calculation_category_of_protection => nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для расчета категории охраны]
+	(* <- lang_ru;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/ui_calculation_category_of_protection.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_ui_menu_file_for_calculation_category_of_protection = [*^"file://ui_menu_file_for_calculation_category_of_protection.scsi"*];; 

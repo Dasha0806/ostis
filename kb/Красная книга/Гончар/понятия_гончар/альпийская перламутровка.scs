@@ -1,0 +1,140 @@
+concept_clossiana_thore => nrel_main_idtf:
+[альпийская перламутровка](*<-lang_ru;;*);
+[clossiana thore](*<-lang_lat;;*);
+[альпiйская перламутраўка](*<-lang_bel;;*);;
+concept_clossiana_thore => nrel_idtf:[альпiйская перламутраўка](*<-lang_bel;;*);;
+
+concept_species -> concept_clossiana_thore;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: clossiana_thore;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_clossiana_thore;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1806 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_clossiana_thore <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Европейских дневных бабочек (SPEC 3, категория - VU) и Восточной Фенноскандии для Германии и Финляндии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Зарастающие ивой и другими мелколиственными древесными породами небольшие поляны, просеки и дороги в сырых еловых лесах, окраины верховых болот.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Развивается в одном поколении. Лёт наблюдается с конца мая до конца первой декады июля. Бабочки обычно держатся в кронах деревьев или кустов, избегая открытых луговых пространств. Гусеницы развиваются на различных видах герани с июля по май следующего года с перерывом на зимовку.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В течение одного сезона обычно наблюдается не более десятка особей. В последние годы отмечено снижение численности.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, сокращение площадей старовозрастных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходим запрет отлова вида; ограничение осушительной мелиорации; запрещение рубки леса в местах обитания вида; проведение фрагментарной санитарной расчистки полян.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Лесотундровая и лесная зона Европы и Азии, Альпы, Алтай и Саяны. В Беларуси найден только в Налибокской пуще и Березинском заповеднике , вероятно, может быть обнаружен и в других частях на севере и в центре страны.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Один из наиболее крупных представителей рода, длина переднего крыла 21-26 мм. Верх крыльев охристо-оранжевый с контрастными черными жилками, поперечными черными перевязями в прикорневой части крыльев и рядами округлых черных пятен на внешней половине. Низ передних крыльев имеет сходную окраску, но со значительно менее выраженным черным рисунком. Низ задних крыльев желтовато-рыжий со срединной охристо-желтой перевязью и прерванным рядом белесых пятен снаружи от нее. Наружная половина крыльев с двумя рядами бурых пятен. Пятна прикраевого ряда округлые, краевого - лунчатые с голубыми разводами снаружи.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_clossiana_thore <= nrel_spread: ... 
+	(*
+	-> Grodno_district; Vitebsk_district;;
+	*);;
+
+concept_nymphalidae => nrel_inclusion: concept_clossiana_thore;;
+concept_clossiana_thore => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; orange; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_abdomen; bronze; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; bristle;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; orange;;
+*);;
+
+concept_clossiana_thore <= nrel_inclusion: 
+	21_26_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (21_mm => 26_mm);;
+*);;
+21_mm <- length_of_body; exact_value;;
+21_mm -> .millimeter: 21 (* <- number;;*);;
+26_mm <- length_of_body; exact_value;;
+26_mm -> .millimeter: 26 (* <- number;;*);;				
+
+concept_clossiana_thore <= nrel_inclusion: concept_2_protection_category;;

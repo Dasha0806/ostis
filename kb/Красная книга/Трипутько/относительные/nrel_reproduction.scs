@@ -1,0 +1,48 @@
+nrel_reproduction
+<-  sc_node_norole_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: concept_living_organism;
+		=>nrel_second_domain: concept_reproduction;
+
+=> nrel_definitional_domain: ... (*
+ 	<= nrel_combination:{
+		concept_living_organism;
+		concept_reproduction
+	};;
+*);
+=>nrel_main_idtf:
+ 	[репродукция*]  (* <- lang_ru;; *);
+	[reproduction* ] (* <- lang_en;; *);
+
+
+<-rrel_key_sc_element: ... (*
+ 	<- definition;;
+	=>nrel_main_idtf:
+	[Опр.(Репродукция*] (* <- lang_ru;; *);;
+	=>nrel_using_constants: {
+	concept_living_organism
+};;
+<=nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[ Репродукция*   -  воспроизведение организмами себе подобных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+   *);;
+  *);
+
+
+<-rrel_key_sc_element: ... (*
+ 	 <- explanation;;
+	=>nrel_main_idtf:
+         [Утв. (Репродукция*)] (* <- lang_ru;; *);;
+		=>nrel_using_constants: { 
+        concept_species
+};;
+<=nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[Обеспечивает непрерывность и преемственность поколений и являющееся необходимым условием существования и эволюции вида. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+   *);;
+ *);;
+ 
+ar<-sc_node_not_relation;;
+ar=>nrel_measurement:2;;
+ar->nrel_reproduction;;
+arity->ar;;

@@ -1,0 +1,20 @@
+concept_protection_category => nrel_main_idtf:
+[категория охраны](*<-lang_ru;;*);
+[protection category](*<-lang_en;;*);;
+
+concept_protection_category -> concept_1_protection_category; concept_2_protection_category; concept_3_protection_category; concept_4_protection_category;;
+
+//определение и пояснения
+concept_protection_category <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Предупреждает о серьёзности утраты представителей таксона в недалёком будущем.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_protection_category;;

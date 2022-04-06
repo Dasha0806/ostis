@@ -1,0 +1,109 @@
+concept_margaritana_margaritifera=> nrel_main_idtf: [жемчужница обыкновенная](*<- lang_ru;;*); [margaritana margaritifera](*<- lang_lat;;*);;
+
+concept_species -> concept_margaritana_margaritifera;;
+subject_domain_of_bivalvia -> rrel_not_maximum_studied_object_class: concept_margaritana_margaritifera;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_margaritana_margaritifera;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+nrel_date_of_disappereance -> ...
+	(*
+	-> rrel_1: concept_black_list;; 
+	-> rrel_2: concept_margaritana_margaritifera;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1850 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_margaritana_margaritifera <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В Красной книге Республики Беларусь с 1981 г. Вид занесен в Красный список Европы, в Красную книгу РСФСР](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина европейской жемчужницы удлинённая, сужающаяся к заднему краю. В длину достигает 9—12 см. В месте сочленения створок имеются выступы раковины (один на правой створке, два — на левой), образующие замок, который обеспечивает более жёсткое соединение.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: В течение последних 40 лет не обнаруживается на территории страны.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет чистые пресные ручьи и реки многих стран Северного полушария](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Личинкам в холодных речках Северной Европы для завершения паразитической фазы развития требуется от 8 до 11 месяцев, поэтому моллюск продлевает жизнь рыбе, которая иначе погибла бы вскоре после нереста, замедляя её старение, делая более живучей и позволяя, в конечном счёте, нереститься несколько раз в жизни](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденции изменения: Регионально исчезнувший (RE)](* <- lang_ru;; *);;
+		*);;
+	*);;
+//характеристики
+concept_margaritana_margaritifera <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> RE;;
+		*);;
+	*);;
+//части тела
+concept_margaritana_margaritifera => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_long; concept_shell; brown; black;;
+	*);;
+	
+//размеры и вес
+concept_margaritana_margaritifera <= nrel_inclusion: 
+	[9-12 см]
+	(*
+	<- interval_value;;
+	<- length_of_shell;;
+	=> nrel_measurement: ([9 см] => [12 см]);;
+	*);;
+	[9 см] <- length_of_body; exact_value;;
+	[9 см] -> .centimeter: 9 (* <- number;;*);;
+	[12 см] <- length_of_shell; exact_value;;
+	[12 см] -> .centimeter: 12 (* <- number;;*);;
+//категория охраны и количество
+concept_margaritana_margaritifera <- concept_black_list;;

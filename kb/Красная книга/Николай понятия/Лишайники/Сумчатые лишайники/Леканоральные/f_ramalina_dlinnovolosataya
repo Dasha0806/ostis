@@ -1,0 +1,126 @@
+concept_ramalina_dlinnovolosataya => nrel_main_idtf:
+[рамалина длинноволосатая](*<-lang_ru;;*);
+[ramalina dlinnovolosataya](*<-lang_lat;;*);
+[рамалiна доугаваласатая](*<-lang_bel;;*);;
+concept_ramalina_dlinnovolosataya => nrel_idtf:[рамалiна доугаваласатая](*<-lang_bel;;*);;
+
+plants -> concept_ramalina_dlinnovolosataya;;
+concept_species -> concept_ramalina_dlinnovolosataya;;
+type -> concept_ramalina_dlinnovolosataya;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_ramalina_dlinnovolosataya;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_ramalina_dlinnovolosataya;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_ramalina_dlinnovolosataya <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется в Польше и Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает преимущественно в еловых лесах на лиственных и хвойных деревьях (чаще на ветвях елей).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции отсутствуют. Размножается вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается отдельными особями, реже группами. Из 6 местонахождений, известных на территории Беларуси, 5 отмечено на охраняемых природных территориях .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительная мелиорация, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков "Беловежская пуща", "Нарочанский" и "Припятский". Необходимы периодический контроль состояния известных популяций и организация целенаправленного поиска новых мест роста вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных работ вблизи его локалитетов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия и Северная Америка. Редкий таежный реликт субатлантического периода , ареал которого простирается в зоне тайги на всем протяжении Голарктики. В Беларуси известен в Брестской (Пружанский р-н ), Витебской (Оршанский р-н ), Гомельской (Лельчицкий р-н ) и Минской (Минский и Мядельский р-ны) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище в виде повисающих, иногда достигающих 20 см длины, светло- или серовато-зеленоватых, радиально-кустистых или уплощенных, особенно в местах разветвлений у основания, ближе к вершине нитевидных лопастей. Веточки у основания до 1 мм толщины, постепенно утончающиеся, округлые в сечении, разветвлены по всей длине вильчато, с коралловидными утолщениями, представляющими мелкие беловатые сорали .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_ramalina_dlinnovolosataya <= nrel_spread: ... 
+	(*
+	-> Brest_district;;
+	-> Gomel_district;;
+	-> Minsk_district;;
+	-> Vitebsk_district;;
+	*);;
+
+concept_ramalinovye => nrel_inclusion: concept_ramalina_dlinnovolosataya;;
+concept_ramalina_dlinnovolosataya => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; white; grey; green;;
+	*);;
+
+concept_ramalina_dlinnovolosataya <= nrel_inclusion: 
+	20_200_mm
+	(*
+	<- interval_value;;
+	<- length_of_thallus;;
+	=> nrel_measurement: (20_mm => 200_mm);;	
+	*);;			
+
+concept_ramalina_dlinnovolosataya <= nrel_inclusion: concept_3_protection_category;;
+

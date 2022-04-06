@@ -1,0 +1,146 @@
+concept_gonioctena_olivacea_forster=> nrel_main_idtf:
+[оливковый листоед](*<-lang_ru;;*);
+[gonioctena olivacea forster](*<-lang_lat;;*);;
+
+concept_species -> concept_gonioctena_olivacea_forster;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gonioctena_olivacea_forster;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_gonioctena_olivacea_forster;;
+	-> rrel_number_of_year: 1771 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_gonioctena_olivacea_forster <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Жуки встречаются небольшими скоплениями на открытых, хорошо прогреваемых местах, чаще на окраинах леса в мае-июне. Кормовые растения жуков и личинок относятся к семейству бобовых - дрок красильный (Genista tinctoria) и жарновец метельчатый (Sarothamnus scoparius). Яйцекладка в конце мая - в июне, яйца откладываются кучками на листьях или на стручках вдоль края. Личинки сначала скелетируют, а затем грызут листья по краям, нередко повреждают и плоды. Окукливаются в подстилке или в почве. В году одно поколение.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Редкий вид, находящийся на восточной границе ареала.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В отдельные годы нередок, но колебания численности значительны из-за деятельности энтомофагов и грибковых заболеваний.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Уничтожение зарослей кормовых растений при освоении территорий под распашку местообитаний вида и предупреждение вырубки кустарниковых бобовых при застройках территории.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Целесообразно дальнейшее исследование.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Северная Африка, Европа от Швеции на севере до Франции на юге, на восток доходит до Беларуси и Центральной Украины. В Беларуси встречается отдельными очагами под Минском и в районе Мозыря .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело жука округлое, выпуклое. Длина 3-5 мм. Верхняя сторона и конечности охристо-желтые или красновато-бурые, иногда надкрылья с черным рисунком в виде продольных полос. Точки надкрылий собраны в правильные ряды.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_gonioctena_olivacea_forster <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Mozir_district;;
+	*);;
+
+concept_chrysomelidae => nrel_inclusion: concept_gonioctena_olivacea_forster;;
+concept_gonioctena_olivacea_forster => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; brown; ocherous;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; ocherous; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown; ocherous;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; brown; ocherous; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; ocherous;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; ocherous; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; ocherous; yellow; brown;;
+	*);;
+
+concept_gonioctena_olivacea_forster <= nrel_inclusion: 
+	3_5_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (3_mm => 5_mm);;	
+	*);;
+	3_mm <- length_of_body; exact_value;;
+	3_mm -> .millimeter: 3 (* <- number;;*);;
+	5_mm <- length_of_body; exact_value;;
+	5_mm -> .millimeter: 5 (* <- number;;*);;	
+
+concept_gonioctena_olivacea_forster <= nrel_inclusion: concept_3_protection_category;;

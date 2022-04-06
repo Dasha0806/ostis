@@ -1,0 +1,17 @@
+ui_series_load_in_memory
+	<- ui_scgg_control; sc_node_not_relation;
+	=> nrel_main_idtf:
+		[Добавить сериал]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [Add series]
+(* <- lang_en;; *);;
+
+ui_series_example
+    <- ui_scgg_control; sc_node_not_relation;
+    => nrel_main_idtf:
+        [Название - год - описание]
+        (* <- lang_ru;; *);
+    => nrel_main_idtf:
+        [Name - year - description]
+(* <- lang_en;; *);;

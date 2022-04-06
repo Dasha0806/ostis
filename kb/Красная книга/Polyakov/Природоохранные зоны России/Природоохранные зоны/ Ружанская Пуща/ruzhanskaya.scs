@@ -1,0 +1,77 @@
+sc_node_not_relation -> ruzhanskaya;;
+
+ruzhanskaya => nrel_main_idtf: [заказник Ружанская Пуща] (* <- lang_ru;; *);
+				     [Ruzhanskaya Pusha] (* <- lang_en;; *);;
+
+ruzhanskaya <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Ружанская Пуща)](*<-lang_ru;;*);
+		[Pic. (Ruzhanskaya Pusha)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+ruzhanskaya<-concept_sanctuary;;
+
+ruzhanskaya <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Ружанская Пуща, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Ружанская Пуща был создан в 1980 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							ruzhanskaya=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1980(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+ruzhanskaya <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Ружанская Пуща, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Ружанская Пуща составляет 2778 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							ruzhanskaya=>nrel_square:[2778 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[2778](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+ruzhanskaya => nrel_area_location: Brest_area;;
+ruzhanskaya => nrel_flora: ...(*
+<-concept_cypripedium_calceolus_l;concept_platanthera_chlorantha_cust_reichenb;concept_allium_ursinum_l;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: ruzhanskaya;;

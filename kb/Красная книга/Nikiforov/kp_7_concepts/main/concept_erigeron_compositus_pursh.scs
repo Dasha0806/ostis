@@ -1,0 +1,55 @@
+concept_erigeron_compositus_pursh => nrel_main_idtf:
+[Мелколепестник сложный](*<-lang_ru;;*);
+[Erigeron compositus Pursh](*<-lang_lat;;*);;
+
+concept_species -> concept_erigeron_compositus_pursh;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_erigeron_compositus_pursh;;
+
+Red_list_ru -> concept_erigeron_compositus_pursh;;
+
+//пояснения
+concept_erigeron_compositus_pursh <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Вне о. Врангель на северо-востоке России три изолированных местонахождения. На о. Врангель не менее 8-10 местонахождений по 5-15 скоплений особей. Состояние локальных популяций. При сравнительно малой численности состояние популяций удовлетворительное,](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красные Книги СССР (1984) и РСФСР (1988). Охраняется в заповеднике «Остров Врангеля» и в памятниках природы (среднее течение р. Паляваам и среднее течение р. Амгуэмы).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России вид встречается на территории Чукотского АО и Корякского АО Камчатского края.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетний травянистый поликарпик, розеточный, с многоглавым каудексом, часто подушковидный. Цветет в июле, плодносит в августе. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

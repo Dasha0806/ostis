@@ -1,0 +1,45 @@
+concept_chloranthus_serratus => nrel_main_idtf:
+[Хлорант пильчатый](*<-lang_ru;;*);
+[Chloranthus serratus](*<-lang_lat;;*);;
+
+concept_species -> concept_chloranthus_serratus;;
+
+
+Red_list_ru -> concept_chloranthus_serratus;;
+
+//пояснения
+concept_chloranthus_serratus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Красную книгу Сахалинской обл. (2005). Встречается только в охранной зоне заповедника «Курильский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается только на Южных Курилах в Сахалинской обл. Растет в окр. мыса Столбчатый на о-ве Кунашир.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение до 50 см выс., с утолщенным разветвленным корневищем и супротивными листьями в числе 2 пар, сближенных в верхней части стебля. Цветет в мае-июне, плодоносит в июне-июле.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_chloranthus_serratus <= nrel_inclusion: concept_1_protection_category;;

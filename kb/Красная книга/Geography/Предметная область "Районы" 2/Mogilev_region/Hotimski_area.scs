@@ -1,0 +1,75 @@
+Hotimski_area<-concept_area;;
+Hotimski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Hotimski_area=>nrel_administrative_center_of_the_area:Hotimsk;;
+Hotimsk<-concept_city;;
+
+//самая высокая точка
+Hotimski_area=>nrel_highest_point:243_m;;
+243_m<-concept_number;;
+
+//площадь района
+Hotimski_area=>nrel_area_of_the_district:859_km;;
+859_km<-concept_number;;
+
+//население района
+Hotimski_area=>nrel_population_of_region:10977_m;;
+10977_m<-concept_number;;
+
+//используемые константы
+Hotimski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Хотимский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Хотимский район — административная единица на востоке Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Hotimski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(территория, район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Ивановская роща.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Hotimski_area;;
+Hotimski_area => nrel_main_idtf:
+[Хотимский](* <-lang_ru;; *);
+[Hotimski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Hotimsk;;
+Hotimsk=> nrel_main_idtf:
+[Хотимск](* <-lang_ru;; *);
+[Hotimsk](* <- lang_en;; *);;
+
+sc_node_not_relation ->243_m;;
+243_m=> nrel_main_idtf:
+[243 м](* <-lang_ru;; *);
+[243 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->859_km;;
+859_km=> nrel_main_idtf:
+[859 км^2](* <-lang_ru;; *);
+[859 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->10977_m;;
+10977_m=> nrel_main_idtf:
+[10977 человек](* <-lang_ru;; *);
+[10977 m](* <- lang_en;; *);;

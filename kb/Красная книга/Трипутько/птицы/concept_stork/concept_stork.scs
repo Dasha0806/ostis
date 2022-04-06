@@ -1,0 +1,109 @@
+concept_stork
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[аисты]
+	(*<-lang_ru;;*);
+	[storks]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[аисты]
+	(*<-lang_ru;;*);
+	[storks]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (аисты) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[аисты — род птиц из отряда голенастых. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о аистах) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[   аистов характерны длинные обнаженные ноги, покрытые сетчатой кожей.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_genus -> concept_stork;;
+concept_ciconiiformes -> concept_stork;;
+concept_stork => nrel_inclusion: concept_ciconia_boyciana_swinhoe;;
+
+
+//предметная область
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_stork;;
+
+
+
+//Рисунок
+concept_stork <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род аисты)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_stork.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_stork <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Корм добывают на воде и на суше, питаются небольшими прибрежными животными  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Линька у аистов происходит один раз в год и длится очень медленно. В любой месяц года можно найти свежие и пробивающиеся перья, как покровные, так и крупные. У перелетных аистов смена пера происходит чуть быстрее.   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_stork <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//питание
+concept_stork <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_insecta;;
+            -> concept_mammals;;
+            -> concept_fish;;
+        *);;
+	*);;
+
+//описание длин
+concept_stork <= nrel_inclusion: 
+    [0-4.4 кг]
+    (*
+        <- interval_value;;
+        <- weight;;
+        => nrel_measurement: ([0 кг] => [4.4 кг]);;
+    *);;
+    [0 кг] <- length_of_life; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[4.4 кг] <- length_of_life; exact_value;;
+	[4.4 кг] -> .kilogram: 4.4 (* <- number;;*);;

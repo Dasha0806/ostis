@@ -1,0 +1,19 @@
+concept_red_list => nrel_main_idtf:
+[красный список](*<-lang_ru;;*);
+[red list](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_red_list <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(красный список)]  (* <- lang_ru;; *);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Красный список - аннотированный список редких и находящихся под угрозой исчезновения видов.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_red_list;;

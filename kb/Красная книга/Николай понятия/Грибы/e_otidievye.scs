@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_otidievye;;
+concept_otidievye => nrel_main_idtf:
+[отидиевые](*<-lang_ru;;*);
+[otidievye](*<-lang_en;;*);;
+
+//
+concept_otidievye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(отидиевые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка туберальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_tuberalnye;;
+	*);;	
+*);;
+
+//
+concept_otidievye => nrel_inclusion:
+    concept_satin_stefenziya;;
+

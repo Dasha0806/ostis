@@ -1,0 +1,50 @@
+//синонимы
+concept_prime_minister<-concept_man;;
+concept_prime_minister=>nrel_main_idtf:[премьер-министр] (* <- lang_ru;; *);;
+concept_prime_minister=>nrel_identifier:[множество премьер-министров] (* <- lang_ru;; *);;
+concept_prime_minister=>nrel_identifier:[prime minister] (* <- lang_en;; *);;
+
+//используемые константы
+concept_prime_minister<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_executive_branch;;
+->nrel_head;;
+*);;
+*);;
+concept_prime_minister=> nrel_main_idtf: [Опр.(премьер-министр)]  (* <- lang_ru;; *);;
+concept_prime_minister<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Премьер-министр – глава исполнительной власти. ](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_prime_minister<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(республика,премьер-министр,глава*,государство)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ В парламентских республиках премьер-министр является фактическим главой государства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_prime_minister<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(премьер-министр,ход*,голосование,парламент,глава*,государство)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Премьер-министр избирается в ходе общего голосования,утверждается парламентом либо назначается главой государства.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

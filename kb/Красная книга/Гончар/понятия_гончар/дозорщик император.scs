@@ -1,0 +1,134 @@
+concept_anax_imperator => nrel_main_idtf:
+[дозорщик император](*<-lang_ru;;*);
+[anax imperator](*<-lang_lat;;*);
+[дазоршчык iмператар](*<-lang_bel;;*);;
+concept_anax_imperator => nrel_idtf:[дазоршчык iмператар](*<-lang_bel;;*);;
+
+concept_species -> concept_anax_imperator;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: anax_imperator;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_anax_imperator;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1815 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_anax_imperator <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги России, Украины и Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Литоральная зона больших озер, реже - слабопроточные водоемы. Стрекозы могут улетать на большие расстояния (до 10 км) от места выхода имаго.
+
+](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Имаго - активные хищники. Лёт в мае-августе. Цикл развития 3-4 года. Личинки развиваются в прибрежной зоне озер, реже в слабопроточной воде и стоячих водоемах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Очень редок, известны единичные находки на озерах Нарочанской и Браславской групп.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Загрязнение водоемов, вызванное нарушением водоохранного законодательства. Рекреационная нагрузка в местах обитания вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Выявление новых мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Евроазиатский вид. Известен лишь в сев. части Беларуси .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Крупная стрекоза, длина брюшка 49-61 мм. Грудь ярко-зеленая, брюшко у самца светло-синее, сверху с широкой, выемчатой, по краям черной продольной полосой; у самки брюшко зеленое, с бурой полосой.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_anax_imperator <= nrel_spread: ... 
+	(*
+	-> Vitebsk_district;;
+	*);;
+
+concept_aeschnidae => nrel_inclusion: concept_anax_imperator;;
+concept_anax_imperator => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; bronze; white;;
+*);;
+
+concept_anax_imperator <= nrel_inclusion: 
+	49_61_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (49_mm => 61_mm);;
+*);;
+49_mm <- length_of_body; exact_value;;
+49_mm -> .millimeter: 49 (* <- number;;*);;
+61_mm <- length_of_body; exact_value;;
+61_mm -> .millimeter: 61 (* <- number;;*);;				
+
+concept_anax_imperator <= nrel_inclusion: concept_3_protection_category;;

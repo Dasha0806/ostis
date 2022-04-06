@@ -1,0 +1,55 @@
+concept_hedysarum_minussinense_b_fedtsch => nrel_main_idtf:
+[Копеечник минусинский](*<-lang_ru;;*);
+[Hedysarum minussinense В. Fedtsch.](*<-lang_lat;;*);;
+
+concept_species -> concept_hedysarum_minussinense_b_fedtsch;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_hedysarum_minussinense_b_fedtsch;;
+
+Red_list_ru -> concept_hedysarum_minussinense_b_fedtsch;;
+
+//пояснения
+concept_hedysarum_minussinense_b_fedtsch <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плотность ценопопуляций различная: в каменистой степи в 2 раза меньше, чем в крупнодерновинной (6,7 экз./м2 против 12,4 экз./м2) (окр. с. Знаменка, Боградский р-н). На охраняемом участке «Оглахты» плотность популяции от 0,75 экз./м2 до 6-8 экз./м2.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Хакасия (2002). Охраняется на территории заповедника Хакасский (участок «Горы Оглахты»).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид растет только в России. Известно несколько местонахождений в Республике Хакасии и в Красноярском крае.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Стержнекорневой многоглавый травянистый полукустарничек с полурозеточными побегами 10- 40 см выс. Живые базальные участки побегов, ежегодно сохраняющиеся, одревесневают, перезимовывают и входят в состав каудекса. Средневозрастные генеративные особи (около 25 лет) характеризуются наибольшей мощностью.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

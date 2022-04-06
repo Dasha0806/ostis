@@ -1,0 +1,22 @@
+concept_diomedeidae => nrel_main_idtf:
+[альбатросовые](*<-lang_ru;;*);
+[diomedeidae](*<-lang_lat;;*);;
+
+concept_family -> concept_diomedeidae;;
+
+concept_diomedeidae => nrel_inclusion: concept_diomedea_albatrus;;
+
+//определение и пояснения
+concept_diomedeidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Альбатросовые — семейство морских птиц отряда буревестникообразных, широко распространённых в Южном океане (воды вокруг Антарктиды) и в северной части Тихого океана. На севере Атлантики отсутствуют, однако на основании ископаемых находок можно предположить, что ранее они встречались и там. Альбатросы считаются одними из самых крупных летающих птиц, а у странствующего (Diomedea exulans) и южного королевского альбатросов (Diomedea epomophora) размах крыльев достигает рекордной величины — до 3,7 м и даже выше. Обычно всех альбатросов разделяют на 4 рода, но по поводу количества видов среди орнитологов имеются определённые разногласия.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_diomedeidae;;

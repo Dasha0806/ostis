@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_square;;
+
+ nrel_square => nrel_main_idtf: [площадь*] (* <- lang_ru;; *);
+				     [square*] (* <- lang_en;; *);;
+
+ nrel_square => nrel_first_domain: concept_protected_area;;
+ nrel_square => nrel_second_domain: value;;
+
+ nrel_square <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(площадь*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Площадь* –  численная характеристика природоохранной территории, неформально говоря, показывающая размер этой территории]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                value;
+                                concept_protected_area
+                            };;
+        *);;
+
+ nrel_square <- rrel_key_sc_element:
+        ...
+        (*
+            <- rrel_axiom:
+                subject_domain_of_protected_areas (*
+                    <-subject_domain;;
+                *);;
+            
+        *);;
+
+ nrel_square <- binary_relation;;
+ nrel_square <- antireflexive_relation;;
+ nrel_square <- antitransitive_relation;;
+ nrel_square <- antisymmetric_relation;;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: nrel_square;;
+	

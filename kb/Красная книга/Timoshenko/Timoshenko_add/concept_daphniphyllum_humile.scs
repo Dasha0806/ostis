@@ -1,0 +1,45 @@
+concept_daphniphyllum_humile => nrel_main_idtf:
+[Волчелистник низкий](*<-lang_ru;;*);
+[Daphniphyllum humile](*<-lang_lat;;*);;
+
+concept_species -> concept_daphniphyllum_humile;;
+
+
+Red_list_ru -> concept_daphniphyllum_humile;;
+
+//пояснения
+concept_daphniphyllum_humile <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Был внесен в Красную книгу РСФСР (1988). Включен в Красную книгу Сахалинской области (2005). Охраняется в заповеднике «Курильский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России растет только в Сахалинской обл. на Курильских о-вах. Вид известен с севера о. Кунашир: ручей Докучаева, мыс Докучаева, ручей Мористый, р. Заливная и р. Птичья, а также с юга о. Итуруп: вулкан Беретарубе.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Вечнозеленый двудомный кустарник до 1, реже 1,5 м выс., с очередными, цельными, кожистыми, эллиптическими или обратноланцетно-яйцевидными листьями. Цветет в июне, плоды созревают в сентябре.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_daphniphyllum_humile <= nrel_inclusion: concept_2_protection_category;;

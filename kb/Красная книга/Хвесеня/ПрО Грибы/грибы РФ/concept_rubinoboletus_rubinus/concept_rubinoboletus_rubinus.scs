@@ -1,0 +1,151 @@
+concept_rubinoboletus_rubinus=> nrel_main_idtf: [перечный гриб рубиновый](*<- lang_ru;;*); [rubinoboletus rubinus](*<- lang_lat;;*);;
+
+concept_rubinoboletus_rubinus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (перечный гриб рубиновый)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_rubinoboletus_rubinus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_rubinoboletus_rubinus;;
+concept_species -> concept_rubinoboletus_rubinus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_rubinoboletus_rubinus;;
+
+//пояснения
+concept_rubinoboletus_rubinus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика Гриб с плодовыми телами средних размеров, развивающимися на почве, реже на сильно- разложившейся древесине дуба. Шляпка желтовато- или красновато-коричневая, бархатистая, 3-8 см диаметром. Ножка 4-5х0,6-1,2 см, красная, в нижней части желтая. Мякоть шляпки желтовато-беловатая, ножки - красноватая. Поры крупного диам. (до 1 мм), яркоокрашенные, карминно-красные. Споровый порошок коричневатый. Споры округлые, 5,5-6х4,5-5 мкм.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение В России: Пензенская обл. (1). Общее распространение: Западная и Восточная Европа (2), Прибалтика (3), Закавказье (4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Микоризный симбионт дуба. Обитает в пойменных дубняках паркового типа, на- ходящихся под выпасом, с изреженным подлеском и разнотравно-злаковым травяным покровом, на уплотненных животными черноземовидных почвах, подстилаемых иловатыми глинами. Базидиомы образуются одиночно, реже маленькими группами по 2-3 экземпляра, на почве, реже на сильноразложившихся дубовых пнях. Базидиомы развиваются в конце июля - начале августа. Не ежегодно. Обычно в годы с теплым и очень влажным летом.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка лесов. Нарушение гидрологического режима пойм.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу Пензенской обл. (5).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим поиск новых местонахождений и включение местообитаний в состав ООПТ.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не культивируется](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_rubinoboletus_rubinus <= nrel_spread: ... 
+	(*
+	-> Penzenskaja_oblast_Uljanovskaja_oblast;;
+	*);;
+
+concept_giroporovyye => nrel_inclusion: concept_rubinoboletus_rubinus;;
+concept_rubinoboletus_rubinus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; yellow; velvety;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; red;;
+	*);;
+
+concept_rubinoboletus_rubinus <= nrel_inclusion: 
+	[3-8 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([3 см] => [8 см]);;	
+	*);
+	[0.6-1.2см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([0.6 см] => [1.2 см]);;	
+	*);;
+
+	[3 см] <- cap_diameter; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[8 см] <- cap_diameter; exact_value;;
+	[8 см] -> .centimeter: 8(* <- number;;*);;
+	[0.6 см] <- lenght_of_leg; exact_value;;
+	[0.6 см] -> .centimeter: 0.6 (* <- number;;*);;
+	[1.2 см] <- lenght_of_leg; exact_value;;
+	[1.2 см] -> .centimeter: 1.2 (* <- number;;*);;
+	
+concept_rubinoboletus_rubinus <= nrel_inclusion: concept_3_protection_category;;

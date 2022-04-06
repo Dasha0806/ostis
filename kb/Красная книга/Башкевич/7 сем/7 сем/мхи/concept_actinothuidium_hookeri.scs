@@ -1,0 +1,163 @@
+concept_actinothuidium_hookeri => nrel_main_idtf:
+[актинотуидиум гукера](*<-lang_ru;;*);
+[actinothuidium hookeri](*<-lang_lat;;*);;
+
+
+concept_species -> concept_actinothuidium_hookeri;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_actinothuidium_hookeri;;
+
+//пояснения
+concept_actinothuidium_hookeri <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д - редкий вид, имеющий ограниченный ареал, часть которого находится на территории России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Довольно крупный бокоплодный мох с восходящими и прямостоячими побегами, формирующий небольшие дерновинки. Двудомный вид, исключительно редко развивающий коробочки и размножающийся преимущественно вегетативно (северный подвид, встречающийся в России и северной части Китая, со спорофитами вообще не известен; у растений с территории России не были найдены даже гаметангии).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. Вид встречается в России только в басс. рек Буреи и Амгуни на территории Хабаровского края. На Амгуни вид найден в верхнем течении (руч. Алкит), на Бурее - от низовий Левой Буреи до руч. Тырмы (близ границы с Амурской обл.), в целом по Бурее (и Левой Бурее) известен на протяжении около 300 км, где выявлен в 5 пунктах (Лан, Чапхоз, Умальта-Макит, Шахтинский, Тырма). Вид представлен двумя подвидами, северный из которых вне России известен из северо-восточного и центрального Китая, а южный подвид - в Гималаях и на Тайване.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. На территории России растет на лесной подстилке в долинных елово-пихтовых лесах, вместе с обычными таежными мхами, доминантами зеленомошных лесов (Pleurozium, Hylocomium). В Китае и Гималаях встречается в высокогорных тундрах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В четырех местонахождениях на Бурее, обследованных в 1997 г., вид рос в каждом из мест в небольшом количестве (по несколько дм2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Два сбора были сделаны в 1931 г. (Тырма) и 1951 г. (Амгунь), и с тех пор эти популяции повторно не обследовались. В 1997 г. вид был найден в 4 местонахождениях по р. Бурея, где состояние популяций производило впечатление стабильных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Не известны. Объяснение столь низкой численности при произрастании в весьма распространенном типе местообитаний, однако, означает, по-видимому, наличие еще не выясненных факторов, ограничивающих распространение вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был включен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Хабаровского края (1999). Два его местонахождения (Лан, Чапхоз), находятся на территории Буреинского заповедника, еще одно (Умальта-Макит) - возле кордона заповедника.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций. Ограничение рубок в местах произрастания вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_actinothuidium_hookeri <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_actinothuidium_hookeri;;
+						concept_actinothuidium_hookeri => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_actinothuidium_hookeri <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_actinothuidium_hookeri <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,155 @@
+concept_amanita_strobiliformis=> nrel_main_idtf: [мухомор шишкообразный](*<- lang_ru;;*); [amanita strobiliformis](*<- lang_lat;;*);;
+
+concept_amanita_strobiliformis<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мухомор шишкообразный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_amanita_strobiliformis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_amanita_strobiliformis;;
+concept_species -> concept_amanita_strobiliformis;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_amanita_strobiliformis;;
+
+//пояснения
+concept_amanita_strobiliformis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3 г - редкий вид, имеющий значительный ареал, но находящийся в пределах России ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Краткая характеристика. Гриб с крупными плодовыми телами, развивающимися на почве. Шляпка 7-17 см в диам., толстомясистая, вначале полукруглая, затем ширококолокольчатая до распростертой, беловатая, позже с зеленоватым или буроватым оттенком, покрытая крупными коническими бородавками, переходящими по периферии в чешуйки, с тонким, гладким, становящимся с возрастом рубчатым неровным краем. Пластинки свободные, широкие, частые, белые, со временем приобретающие серовато-кремовый оттенок. Ножка 8-16 х 1,5-2,5 см, цилиндрическая или слегка суживающаяся к ос-нованию, белая, с широким, двойным, бородавчатым беловатым кольцом, покрытая ниже кольца концентрически расположенными заостренными белыми чешуйками, с быстро исчезающей, заметной лишь на молодых плодовых телах вольвой. Мякоть белая, при повреждении слегка желтеет , со слабым приятным запахом, без особого вкуса. Споровый порошок беловатый. Споры 9-15 х 6,5-11 мкм, яйцевидные или эллипсоидальные, гладкие, амилоидные (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Приморский край (заповедник «Кедровая Падь») - одно местонахождение в 1945 г. (2), Ростовская обл. (Мясниковский р-н, г. Ростов-на-Дону) (3). Общее распространение: Европа, Сев. Африка, Средняя Азия, Сев. и Юж. Америка (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. В пределах ареала растет на почве одиночными экземплярами или группами в целинных степях, полезащитных полосах, в широколиственных и смешанных лесах, парках с апреля по октябрь.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Не изучены.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Включен в Красную книгу Ростовской обл. (3). Охраняется на территории заповедника «Кедровая Падь» (2).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходимы поиск новых местонахождений и охрана местообитаний вида.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не культивируется.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_amanita_strobiliformis <= nrel_spread: ... 
+	(*
+	-> Primorskiy_kray;;
+	*);;
+
+concept_plyuteyevyye => nrel_inclusion: concept_amanita_strobiliformis;;
+concept_amanita_strobiliformis => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; white; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; cylindrical;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; loose; white;;
+	*);;
+
+concept_amanita_strobiliformis <= nrel_inclusion: 
+	[7-17 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([7 см] => [17 см]);;	
+	*);
+	[1.5-2.5 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1.5 см] => [2.5 см]);;	
+	*);;
+
+	[7 см] <- cap_diameter; exact_value;;
+	[7 см] -> .centimeter: 7 (* <- number;;*);;
+	[17 см] <- cap_diameter; exact_value;;
+	[17 см] -> .centimeter: 17 (* <- number;;*);;
+	[1.5 см] <- lenght_of_leg; exact_value;;
+	[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+	[2.5 см] <- lenght_of_leg; exact_value;;
+	[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+	
+concept_amanita_strobiliformis <= nrel_inclusion: concept_3_protection_category;;

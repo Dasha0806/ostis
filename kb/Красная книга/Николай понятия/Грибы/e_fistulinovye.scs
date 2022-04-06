@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_fistulinovye;;
+concept_fistulinovye => nrel_main_idtf:
+[фистулиновые](*<-lang_ru;;*);
+[fistulinovye](*<-lang_en;;*);;
+
+//
+concept_fistulinovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(фистулиновые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка фистулиальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_fistulialnye;;
+	*);;	
+*);;
+
+//
+

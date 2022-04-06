@@ -1,0 +1,19 @@
+concept_1_protection_category => nrel_main_idtf:
+[I категория охраны](*<-lang_ru;;*);
+[I protection category](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_1_protection_category <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(I категория охраны)]  (* <- lang_ru;; *);;
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[I категория охраны наивысшей национальной природоохранной значимости включает таксоны, имеющие очень низкую или быстро сокращающуюся численность, спасение которых невозможно без осуществления комплекса специальных мер, а также таксоны, национальная популяция которых имеет высокую международную значимость (т.е. если страна несет ответственность за сохранение значительной доли от глобальной или европейской популяции).](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: concept_1_protection_category;;

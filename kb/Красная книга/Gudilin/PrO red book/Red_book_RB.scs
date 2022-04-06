@@ -1,0 +1,39 @@
+Red_book_RB => nrel_main_idtf:
+[Красная книга РБ](*<-lang_ru;;*);
+[Red book of Belarus](*<-lang_en;;*);;
+
+concept_red_book -> Red_book_RB;; 
+
+Red_book_RB <= nrel_subdividing:
+	...
+ (*
+    -> Black_list; Red_list;;
+	*);;
+//определение и пояснения
+Red_book_RB <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(Красная книга РБ)]  (* <- lang_ru;; *);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+		-> concept_red_book; concept_species; nrel_spread; Republic_of_Belarus;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Красная книга РБ - красная книга, содержащая виды, распространенные на территерии Республики Беларусь](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Красная книга РБ - издание, содержащее список редких и находящихся под угро­зой исчезновения на территории Беларуси ви­дов (в том числе подвидов) диких животных и дикорастущих растений.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_red_book -> rrel_not_maximum_studied_object_class: Red_book_RB;;

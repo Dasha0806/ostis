@@ -1,0 +1,146 @@
+concept_geotrupes_vernalis_linnaeus=> nrel_main_idtf:
+[весенний навозник](*<-lang_ru;;*);
+[geotrupes vernalis linnaeus](*<-lang_lat;;*);;
+
+concept_species -> concept_geotrupes_vernalis_linnaeus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_geotrupes_vernalis_linnaeus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_geotrupes_vernalis_linnaeus;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_geotrupes_vernalis_linnaeus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Под навозом на пастбищах, возле дорог, в лесах и т.д.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Взрослые жуки встречаются с мая по сентябрь. Активны в сумерках. Под кучкой навоза жуки роют глубокую норку, которая может достигать 50-60 см в глубину. В нижней части норки имеются ячейки, которые заполняются навозом. Сюда откладывается яйцо. Личинка питается навозом, растет, зимует, а весной окукливается. Цикл развития занимает около года.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В Беларуси встречается на всей территории, однако локален. Численность сильно колеблется в разные годы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: До конца не выяснены. Вероятно, негативно может влиять резкая смена режима пользования сельхозугодьями, когда пастбища распахиваются следующей весной, что не дает возможность жуку завершить цикл развития.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Сохранение участков, не затронутых хозяйственной деятельностью, в местах локализации вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Кавказ. В Беларуси по всей территории .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Овальный, сильно выпуклый жук длиной 13-20 мм. Надкрылья почти гладкие. Верх очень блестящий, металлически-зеленый или синий, часто радужно переливается. На западе Беларуси в популяции преобладают темно-синие (почти до черного) экземпляры с матовыми надкрыльями.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_geotrupes_vernalis_linnaeus <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_scarabaeidae => nrel_inclusion: concept_geotrupes_vernalis_linnaeus;;
+concept_geotrupes_vernalis_linnaeus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; metallic; green;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green; blue;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; metallic; green; blue; brilliant;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; smooth; green;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black; short;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; green;;
+	*);;
+
+concept_geotrupes_vernalis_linnaeus <= nrel_inclusion: 
+	13_20_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (13_mm => 20_mm);;	
+	*);;
+	13_mm <- length_of_body; exact_value;;
+	13_mm -> .millimeter: 13 (* <- number;;*);;
+	20_mm <- length_of_body; exact_value;;
+	20_mm -> .millimeter: 20 (* <- number;;*);;	
+
+concept_geotrupes_vernalis_linnaeus <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,178 @@
+concept_lanius_minor=> nrel_main_idtf: [чернолобый сорокопут](*<- lang_ru;;*); [lanius minor gmelin](*<- lang_lat;;*); [чарналобы грычун](*<- lang_bel;;*);;
+concept_lanius_minor => nrel_idtf: [чарналобы саракуш](*<- lang_bel;;*);;
+
+concept_lanius_minor <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (чернолобый сорокопут)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_lanius_minor.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_lanius_minor;;
+concept_species -> concept_lanius_minor;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_lanius_minor;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lanius_minor;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_lanius_minor <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Приложение II Бернской конвенции, отнесен к SPEC 2. Внесен в Красные книги Латвии и Польши.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Некрупная птица, длина тела около 19 см, масса 47-53 г. Спина серая, брюшко - белое с розово-палевым оттенком, крылья черные с белым «зеркальцем», лоб и передняя часть темени черные.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Евразия. Ареал охватывает юг Европы и Западной Сибири, доходит на восток до запада Алтая и Казахстана, на севере до Латвии, Московской обл., Башкирии. В Беларуси регулярно встречается на юге, на остальной ее части - крайне спорадично и не выше широты Лепеля и Свири. В последнее время в центральной и северной частях республики практически не отмечался, встречи в гнездовой период в южных районах единичные.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Гнездится в небольших островных участках леса или по его опушкам, а также в рощицах, нередко - даже на одиночных деревьях, растущих на полях и лугах. Встречается и в садах, парках, в аллеях снегозащитных лесопосадок у дорог. Преимущественно культурный мозаичный ландшафт: придорожные насаждения, поля, луга, пустоши с группами или одиночными деревьями, редколесья и перелески, окраины населенных пунктов, лесонасаждения, заброшенные земли с садами, аллеями и отдельными строениями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездящийся перелетный вид. Моногам. Гнездится одиночными парами. Гнезда строит в густых кронах лиственных (груша, тополь, рябина и др.), реже хвойных деревьев на высоте от 3 до 10 м, изредка на крупных кустарниках. Гнездо довольно массивное, имеет чашеобразную форму, в его стенки всегда вплетается зеленые соцветия ароматичных трав. Лоток и особенно края гнезда выстланы растительным пухом (тополей, ив), выстилкой также служат перья, тонкие травинки, иногда шерсть и конский волос. Откладка яиц в конце мая - июне. В кладке 4-6 яиц со средними размерами 24,8 - 18,1 мм. Скорлупа матовая или слегка блестящая, окраска варьирует от бледно-зеленоватого до светло-зеленовато-серого цвета. На этом фоне разбросаны крупные оливково-бурые и серые или слегка фиолетовые пятна, которые группируясь образуют хорошо заметный венчик. Насиживает 15-16 суток. В году 1 выводок. Кормится насекомыми, преимущественно жуками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Низкая - в пределах 50-200 пар. Снижение численности и сокращение территории распространения отмечено в 1970-90-е годы.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Возможно, колебания численности, а также ее невысокий уровень, обусловлены проживанием вида на краю северной границы распространения.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесен в Красную книгу Республики Беларусь с 1993 г. Выявление локалитетов обитания, выделение ключевых мест обитания, сохранение мозаичного лесостепного антропогенного ландшафта на юге региона.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_lanius_minor <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Pruzhany_district; Stolin_district; Slonim_district; Lelchitsy_district; Zhitkovichi_district; Loev_district;;
+		*);;
+	*);;
+//части тела
+concept_lanius_minor => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_beak; black; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; grey; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; white; black; grey;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; black;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_tail; black;;
+	*);;
+//размеры и вес
+concept_lanius_minor <= nrel_inclusion: 
+	[0-19 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [19 см]);;	
+	*);
+	[0.047-0.053 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0.047 кг] => [0.053 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[19 см] <- length_of_body; exact_value;;
+	[19 см] -> .centimeter: 19 (* <- number;;*);;
+	[0.047 кг] <- weight; exact_value;;
+	[0.047 кг] -> .kilogram: 0.047 (* <- number;;*);;
+	[0.053 кг] <- weight; exact_value;;
+	[0.053 кг] -> .kilogram: 0.053 (* <- number;;*);;
+//категория охраны и количество
+concept_lanius_minor <= nrel_inclusion: concept_2_protection_category;;
+concept_lanius_minor <= nrel_strength: [300 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 300 (* <- number;;*);;
+		*);;	
+	*);;
+

@@ -1,0 +1,20 @@
+concept_sciuridae => nrel_main_idtf:
+[беличьи](*<-lang_ru;;*);
+[sciuridae](*<-lang_lat;;*);;
+
+concept_family -> concept_sciuridae;;
+
+//определение и пояснения
+concept_sciuridae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[К беличьим относятся разнообразные по внешнему виду и образу жизни животные, объединяемые единством происхождения и сходством анатомического строения. Размеры мелкие и средние. Длина тела от 6 (мышиная белка) до 60 см (сурки).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_sciuridae;;

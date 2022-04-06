@@ -1,0 +1,139 @@
+concept_picnoporus_cinnabarinus=> nrel_main_idtf: [пикнопорус киноварно-красный](*<- lang_ru;;*); [picnoporus cinnabarinus](*<- lang_lat;;*); [пікнапорус кінаварна-чырвоны](*<- lang_bel;;*);;
+
+concept_picnoporus_cinnabarinus<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (пикнопорус киноварно-красный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_picnoporus_cinnabarinus.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_picnoporus_cinnabarinus;;
+concept_species -> concept_picnoporus_cinnabarinus;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_picnoporus_cinnabarinus;;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_grifola_frondosa;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_picnoporus_cinnabarinus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость:Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше и Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Растет в лиственных и смешанных лесах на мертвой древесине - стволах, пнях, ветвях лиственных пород, чаще на березе, тополе, рябине, в хорошо освещаемых местах, на вырубках или местах лесных пожаров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Вызывает периферическую белую гниль, иногда с оранжевым оттенком, не проникающую глубоко в древесину. Плодовые тела появляются в апреле - сентябре . Декоративный и лекарственный вид .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Обычно встречается небольшими группами или единичными экземплярами. Во всех местонахождениях численность вида невелика и подвержена годичным колебаниям.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Нарушение мест обитаний антропогенными факторами (все виды рубок леса, хозяйственная трансформация земель), сбор плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территории Национального парка «Беловежская пуща». Необходима организация охраняемых природных территорий в остальных местах роста с запрещением антропогенных воздействий, разъяснительная работа среди населения.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Космополит . На территории республики встречается в Брестской (Пружанский р-н), Витебской (Толочинский р-н) и Минской (Логойский и Столбцовский р-ны) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовые тела однолетние, полукруглые, размером 5-8 3-10 см. Поверхность шляпок слабо зональная, опушенная, киноварно-оранжевая. Поверхность гименофора шафранно-красная, поры округлые или угловатые. Гифальная система тримитическая, гифы с пряжками. Споры удлиненно-эллипсоидальные, гиалиновые, неамилоидные, 4,5-6,5 2-2,5 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_picnoporus_cinnabarinus <= nrel_spread: ... 
+	(*
+	->  Pryjani_district; Stolbci_district; Logoisk_district; Tolochin_district;;
+	*);;
+
+concept_koriolovye => nrel_inclusion: concept_picnoporus_cinnabarinus;;
+concept_picnoporus_cinnabarinus => nrel_part: 
+		...
+	(*
+	<= nrel_inclusion: concept_sporocarp; annual; rounded;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; pubescent; cinnabar_orange;;
+	*);;
+
+concept_picnoporus_cinnabarinus <= nrel_inclusion: 
+	[3-10 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([3 см] => [10 см]);;	
+	*);;
+
+
+	[3 см] <- length_of_body; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	
+concept_picnoporus_cinnabarinus <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,36 @@
+concept_lestidae=> nrel_main_idtf:
+[лютки](*<-lang_ru;;*);
+[lestidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_lestidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(лютки)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_odonata;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Лютки - небольшое семейство отряда стрекоз.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_odonata =>nrel_inclusion: concept_lestidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Стрекозы небольших размеров, имеют тонкое удлинённое тело.С помощью яйцеклада самки люток откладывают яйца в жёсткие стебли прибрежных растений: осок, камыша, рогоза и даже в ветви деревьев и кустарников.](* <- lang_ru;;*);;
+		*);;
+*);;

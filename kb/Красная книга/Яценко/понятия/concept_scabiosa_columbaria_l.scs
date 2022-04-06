@@ -1,0 +1,169 @@
+concept_scabiosa_columbaria_l => nrel_main_idtf: [скабиоза голубиная](*<- lang_ru;;*); [scabiosa columbaria l.](*<- lang_lat;;*); [скабiёза галубiная](*<- lang_bel;;*);;
+concept_scabiosa_columbaria_l => nrel_idtf: [скабiёза галубiная](*<- lang_bel;;*);;
+
+concept_species -> concept_scabiosa_columbaria_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_scabiosa_columbaria_l;;
+
+concept_scabiosa_columbaria_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (скабиоза голубиная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_scabiosa_columbaria_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_scabiosa_columbaria_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_scabiosa_columbaria_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу Беларуси 
+1го и 2го изданий 
+(1981, 1993). Находится 
+под государственной 
+охраной в Литве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с прямостоячим стеблем высотой до 70-80 см. Листья супротивные, продолговато-яйцевидные или продолговато-эллиптические, перистораздельные или перисторассеченные; листья прикорневой розетки более крупные, длиной до 10 см, иногда почти цельные. Цветки голубоватые или лиловато-фиолетовые, собраны в головчатые соцветия (напоминающее по внешнему облику корзинку сложноцветных) диаметром около 3 см. Плод - семянка, длиной около 3 мм.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Атлантическая, Средняя и Восточная Европа, Средиземноморье, Кавказ и Средняя Азия . Реликтовый, по происхождению среднеевропейский горный вид находится в Беларуси на северо-восточной границе ареала. Достоверно известно два пункта произрастания вида:  в Логойском (окрестности д. Прилепцы) и Воложинском (окрестности д. Городьки) р-нах Минской обл. . Еще одно местонахождение в Логойском р-не (в окрестностях г. п. Плещеницы), по-видимому, уничтожено . По гербарным и литературным данным отмечался в окрестностях г. Гродно , Новогрудка , Каменца , Бреста, Могилева  и в Могилевской губернии (без точного указания местонахождения) . Указание на произрастание в окрестностях оз. Нарочь  ошибочно (неправильное определение) .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: В Логойском р-не растет на опушке заболоченного сосняка в молиниево-тростниковой ассоциации и на сыром осоково-злаково-разнотравном пойменном лугу на торфянистой почве , в Воложин­ском р-не - на остепненном разнотравно-злаковом лугу в полосе отчуждения железной дороги.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет с конца июня по сентябрь. Энтомофил. Семена созревают в июле - сентябре. Баллист-анемохор, зоохор. Размножение преимущественно семенное.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Популяция в Логойском р-не невелика (в 1975 г. занимала площадь около 0,5 га) . В Воложинском р-не встречается в массе, но на очень ограниченной территории (в 2003 г. отмечен на площади около 0,1 га). В культуре вид довольно устойчив.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Хозяйственная трансформация земель (распахивание), выпас скота, сенокошение, рекреационные нагрузки (вытаптывание), весенние и осенние палы.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Выращивается в Центральном ботаническом саду НАН Беларуси , ботанических садах БГУ и Витебского университета . Необходимо ввести запрет на хозяйственную трансформацию земель в из­вест­ных местонахождениях (кроме периодического осеннего сенокошения), проводить наблюдения за состоянием популяций. Предпринять целенаправленные поиски в подходящих местах обитания в окрестностях пунктов, указанных в литературе, а также искусственное расселение в подходящие экотопы. Рекомендовать шире использовать для выращивания в условиях культуры в качестве лекарственного и декоративного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_scabiosa_columbaria_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Logoysk_district;;->Volozhinski_district;;
+		*);;
+*);;
+
+concept_scabiosa_columbaria_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; opposite;oblong_ovate;oblong_elliptic;pinnately;pinnate;solid;;
+*);
+...
+(*
+<= nrel_inclusion: flower; bluish;lilac_purple;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; capitate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; achene;;
+*);;
+
+concept_scabiosa_columbaria_l <= nrel_inclusion: 
+[70-80 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([70 см] => [80 см]);; 
+*); 
+[7-10 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([7 см] => [10 см]);; 
+*);;
+
+[70 см] <- length_of_inflorscence; exact_value;;
+[70 см] -> .centimeter: 70 (* <- number;;*);;
+[80 см] <- length_of_inflorscence; exact_value;;
+[80 см] -> .centimeter: 80 (* <- number;;*);;
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+ 
+
+concept_scabiosa_columbaria_l <= nrel_inclusion: concept_2_protection_category;;

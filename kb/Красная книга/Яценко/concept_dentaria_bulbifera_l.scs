@@ -1,0 +1,170 @@
+
+concept_dentaria_bulbifera_l => nrel_main_idtf: [зубянка клубненосная](*<- lang_ru;;*); [dentaria bulbifera l.](*<- lang_lat;;*); [зубніца клубняносная](*<- lang_bel;;*);;
+concept_dentaria_bulbifera_l => nrel_idtf: [зубніца клубняносная](*<- lang_bel;;*);;
+
+concept_species -> concept_dentaria_bulbifera_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_dentaria_bulbifera_l;;
+
+concept_dentaria_bulbifera_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (зубянка клубненосная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_dentaria_bulbifera_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_dentaria_bulbifera_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_dentaria_bulbifera_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в список охраняемых растений в 1964 г. 
+и в Красную книгу Беларуси 1-го 
+и 2-го изданий (1981, 1993). 
+Охраняемое растение Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 40-60 см с прямостоячим стеблем и длинным разветвленным горизонтальным корневищем. Нижние стеблевые листья непарноперисторассеченные с 2-3 парами зубчатых листочков, самые верхние цельные. Соцветие - верхушечная кисть; цветки лилово-розовые или светло-фиолетовые, редко белые, диаметром 1,5-2,0 см. В пазухах листьев находятся фиолетово-бурые, черноватые или темно-зеленые луковички. Плоды – узкие стручочки длиной до 3 см.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Неморальный реликтовый вид, распространенный в широколиственных лесах Атлантической, Средней и Восточной Европы, Средиземноморья, Малой Азии, Кавказа, Ирана. В восточно-европейскую часть ареала входит Прибалтика, Украина, южная половина России (на севере до Псковской и Московской обл.) . В Беларуси находится на северо-восточной границе ареала, встречается во всех областях. Единичные местонахождения известны в Витебском, Городокском, Лепельском и Лиозненском р-нах Витебской обл. и в Дятловском, Ивьевском, Ошмянском, Свислочском и Щучинском р-нах Гродненской области. В остальных областях встречается чаще. В Брестской обл. найдена в Березовском, Брестском, Ганцевичском, Ивановском, Ивацевичском, Кобринском, Лунинецком, Ляховичском, Малоритском, Пинском, Пружанском и Столинском р-нах; в Гомельской обл. – в Житковичском, Калинковичском, Мозырском, Октябрьском, Светлогорском, Речицком и Хойникском р-нах; в Минской обл. – в Борисовском, Воложинском, Любанском, Пуховичском, Слуцком, Стародорожском, Столбцовском и Узденском р-нах; в Могилевской обл. – в Белыничском, Бобруйском, Кировском, Кличевском, Костюковичском, Осиповичском и Чериковском р-нах . Ранее отмечалась в окрестностях Горок (Горецкий р-н Могилевской обл.) , в Беловежской пуще, окрестностях Гродно, Мозыря, д. Поречье (Пинский р-н) и д. Молодово (Ивановский р-н) Брестской обл. , Паричей (Светлогорский р-н Гомельской обл.), Буда-Кошелево, д. Жорновки (Осиповичский р-н Могилевской обл.), д. Хвойное (Хойникский р-н Гомельской обл.ти)  и в Могилевской губернии .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сырые тенистые широколиственные и смешанные леса на богатых гумусом почвах.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце мая - июне. Опыляется насекомыми (энтомофил). Цветет регулярно, но, как правило, плоды опадают недоразвитыми. Размножается вегетативно посредством легко обламывающихся и опадающих выводковых луковичек и корневища.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В большинстве местонахождений встречается одиночными особями или немногочисленными группами рассеянно на площадях 0,5-1,0 га. Наиболее крупные популяции выявлены в Речицком р-не Гомельской области.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Быстро исчезает из фитоценозов в результате антропогенных вмешательств, изменяющих режимы освещения и увлажнения в местах обитания вида:  осушительно-мелиоративных работ, в том числе и на прилегающих территориях, рубок леса главного пользования; плохо переносит вытаптывание, пастьбу и прогон скота.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях национальных парков “Беловежская пуща” и “Припятский”, заповедников - Березинского биосферного и Полесского радиационно-экологического, заказников - “Барановичский”, “Бугский”, “Бусловка”, “Выгонощанское”, “Дивин-Великий лес”, “Завишье”, “Луково”, “Лунинский”, “Оброво”, “Попелево”, “Рухчанский”, “Тырвовичи”, “Хмелевка” и других. Культивируется в Центральном ботаническом саду НАН Беларуси . Необходимо в местах произрастания исключить антропогенное воздействие (допустимы выборочные рубки, санитарные рубки ухода).](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_dentaria_bulbifera_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Vitebsk_district;;->Gorodok_district;;->Lepel_district;;->Liozno_district;;->Dyatlovo_district;;->Ivie_district;;->Oshmyany_district;;->Svisloch_district;;->Shchuchin_district;;->Berezovsky_district;;->Brest_district;;->Gantsevichi_district;;->Ivanovo_district;;->Ivatsevichi_district;;->Kobrin_district;;->Luninets_district;;->Lyakhovichi_district;;->Malorita_district;;->Pinsk_district;;->Pruzhany_district;;->Stolin_district;;->Zhitkovichi_district;;->Kalinkovichi_district;;->Mozyr_district;;->October_district;;->Svetlogorsk_district;;->Rechitsa_district;;->Khoiniki_district;;->Borisov_district;;->Volozhin_district;;->Luban_district;;->Pukhovichi_district;;->Slutsky_district;;->Starye_Dorogi_district;;->Stolbtsy_district;;->Uzda_district;;->Belynichi_district;;->Bobruisk_district;;->Kirovskiy_district;;->Klichev_district;;->Kostyukovichi_district;;->Osipovichi_district;;->Cherikov_district;;->Gorki_district;;->Belovezhskaya_Pushcha_district;;->Grodno_district;;->Mozyr_district;;->Pinsk_district;;->Ivanovo_district;;->Svetlogorsk_district;;->Osipovichi_district;;->Khoiniki_district;;->Mogilev_district;;
+		*);;
+*);;
+
+concept_dentaria_bulbifera_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; upright;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; long;branched;horizontal;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; unpaired_pinnatisect;gear;solid;;
+*);
+...
+(*
+<= nrel_inclusion: flower; lilac_pink;light_purple;white;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; apical_brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; narrow;Willie;;
+*);;
+
+concept_dentaria_bulbifera_l <= nrel_inclusion: 
+[40-60]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([40 см] => [60 см]);; 
+*);;
+
+concept_dentaria_bulbifera_l <= nrel_inclusion: 
+[1.5-2 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([1.5 см] => [2 см]);; 
+*);;
+
+[40 см] <- length_of_inflorscence; exact_value;;
+[40 см] -> .centimeter: 40 (* <- number;;*);;
+[60 см] <- length_of_inflorscence; exact_value;;
+[60 см] -> .centimeter: 60 (* <- number;;*);;
+[1.5 см] <- length_of_inflorscence; exact_value;;
+[1.5 см] -> .centimeter: 1.5 (* <- number;;*);;
+[2 см] <- length_of_inflorscence; exact_value;;
+[2 см] -> .centimeter: 2 (* <- number;;*);;
+ 
+
+concept_dentaria_bulbifera_l <= nrel_inclusion: concept_4_protection_category;;

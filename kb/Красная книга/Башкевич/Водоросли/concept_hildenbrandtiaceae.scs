@@ -1,0 +1,30 @@
+concept_hildenbrandtiaceae => nrel_main_idtf:
+[гильденбрандтиевые](*<-lang_ru;;*);
+[hildenbrandtiaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_hildenbrandtiaceae;;
+
+concept_hildenbrandtiaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_hildenbrandtia_rivularis;;
+
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_hildenbrandtiaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Семейство гильденбрандтиевые является частью порядка криптонемиальные.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_hildenbrandtiaceae;;

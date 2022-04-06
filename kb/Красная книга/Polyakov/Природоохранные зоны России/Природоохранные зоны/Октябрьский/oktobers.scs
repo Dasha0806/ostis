@@ -1,0 +1,77 @@
+sc_node_not_relation -> oktobers;;
+
+oktobers => nrel_main_idtf: [заказник Октябрьский] (* <- lang_ru;; *);
+				     [Oktyabrskiy] (* <- lang_en;; *);;
+
+oktobers <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Октябрьский)](*<-lang_ru;;*);
+		[Pic. (Oktyabrskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+oktobers<-concept_sanctuary;;
+
+oktobers <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Октябрьский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Октябрьский был создан в 2003 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							oktobers=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2003(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+oktobers <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Октябрьский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Октябрьский составляет 4070 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							oktobers=>nrel_square:[4070 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[4070](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+oktobers => nrel_area_location: Gomel_area;;
+oktobers => nrel_flora: ...(*
+<-concept_cephalanthera_rubra_l_rich;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: oktobers;;

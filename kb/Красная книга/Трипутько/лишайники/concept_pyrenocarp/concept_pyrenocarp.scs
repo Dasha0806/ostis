@@ -1,0 +1,97 @@
+concept_pyrenocarp
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[пиренокарповые лишайники]
+	(*<-lang_ru;;*);
+	[pyrenocarp]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[пиренокарповые лишайники]
+	(*<-lang_ru;;*);
+	[pyrenocarp]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (пиренокарповые лишайники) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[пиренокарповые лишайники -   этот класс объединяют лишайники с плодовыми телами в форме перитециев.  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о пиренокарповые лишайники) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[   Пиренокарповые лишайники широко распространены по всему земному шару, причем наибольшее их количество встречается в умеренных областях Голарктики. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_class -> concept_pyrenocarp;;
+//concept_pyrenocarp => nrel_inclusion: concept_rangifer_tarandus;;
+
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_pyrenocarp;;
+
+
+
+//Рисунок
+
+concept_pyrenocarp <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Онтогенез плодовых тел аскогимениального типа — в плодовых телах образуется гимениальный слой, состоящий из сумок со спорами и парафил. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ В тропиках и субтропиках они обычно встречаются на коре деревьев ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//способ размножения
+concept_pyrenocarp <= nrel_reproduction: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> concept_disputes;;
+            -> concept_vegetatively;;
+		*);;
+	*);;
+
+//питание
+concept_pyrenocarp <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_photosynthesis;;
+		*);;
+	*);;
+
+//описание длин
+concept_pyrenocarp <= nrel_inclusion: 
+    [60-70]
+    (*
+        <- interval_value;;
+        <- length_of_kind;;
+        => nrel_measurement: ([60] => [70]);;
+    *);;
+    [60] <- length_of_kind; exact_value;;
+	[60] -> .nrel_number_of_individuals: 60 (* <- number;;*);;
+	[70] <- length_of_kind; exact_value;;
+	[70] -> .nrel_number_of_individuals: 70 (* <- number;;*);;

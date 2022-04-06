@@ -1,0 +1,36 @@
+concept_sphingidae=> nrel_main_idtf:
+[бражники](*<-lang_ru;;*);
+[sphingidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_sphingidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(бражники)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Бражники - семейство насекомых отряда чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_sphingidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупные или средней величины бабочки, с мощным, часто конусовидно заострённым на конце телом и узкими вытянутыми крыльями.](* <- lang_ru;;*);;
+		*);;
+*);;

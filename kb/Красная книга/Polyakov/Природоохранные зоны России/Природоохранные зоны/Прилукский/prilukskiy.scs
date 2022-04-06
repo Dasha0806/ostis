@@ -1,0 +1,76 @@
+sc_node_not_relation -> prilukskiy;;
+
+prilukskiy => nrel_main_idtf: [заказник Прилукский] (* <- lang_ru;; *);
+				     [Prilukskiy] (* <- lang_en;; *);;
+
+prilukskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Прилукский)](*<-lang_ru;;*);
+		[Pic. (Prilukskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+prilukskiy<-concept_sanctuary;;
+
+prilukskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Прилукский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Прилукский был создан в 1977 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							prilukskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1977(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+prilukskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Прилукский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Прилукский составляет 510 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							prilukskiy=>nrel_square:[510 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[510](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+prilukskiy => nrel_area_location: Minsk_area;;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: prilukskiy;;

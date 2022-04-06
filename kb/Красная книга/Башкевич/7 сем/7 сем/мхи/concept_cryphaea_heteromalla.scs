@@ -1,0 +1,163 @@
+concept_cryphaea_heteromalla => nrel_main_idtf:
+[крифея разнонаправленная](*<-lang_ru;;*);
+[cryphaea heteromalla](*<-lang_lat;;*);;
+
+
+concept_species -> concept_cryphaea_heteromalla;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_cryphaea_heteromalla;;
+
+//пояснения
+concept_cryphaea_heteromalla <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 г - редкий вид, в России находящийся на восточной границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Мох среднего размера с простертым стеблем, образующий довольно густые дерновинки. Однодомный, регулярно развивает спорофиты. Вегетативная подвижность сравнительно низкая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается на Кавказе - в Краснодарском крае, в Сочи, на территории дендрария «Южные культуры» (1, 2). Это единственное местонахождение и в России, и на Кавказе в целом. Вне России - Европа, Ближний Восток, Северная Африка (2).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Отмечался в России на стволах можжевельника, клена, липы и бука, в умеренно редкостойной, но тенистой (из-за обширных крон) части дендрария. На последних трех породах рос на высоте 1,5-3,0 м. В местах более массового распространения в Европе также растет на деревьях в б.м. ксерофитных лесных сообществах, редко как эпилит.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Первая находка относится к 1957 г. (сбор в гербарии, численность не указана), и повторно вид был най- ден в 2002 г., на трех деревьях указанных широколиственных пород, на которых он рос компактными дерновинками, 1- 4 дм2 (3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. На данных деревьях дерновинки вида имели вид постепенно разрастающихся. Вместе с тем, территория дендрария подвержена действию смерчей, и один из них в 2001 г. уничтожил более половины старых деревьев дендрария. Тем не менее, в сохранившейся части парка популяция вида в 2002 г. успешно существовала, и обследование 2007 г. показало ее стабильное положение (4).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вероятно, климатические --- редкость сочетания условий, сходных с таковыми Южной Европы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид был включен в Красные книги СССР (1984) и РСФСР (1988). Включен в Красную книгу Краснодарского края (1994, 2007).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cryphaea_heteromalla <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_cryphaea_heteromalla;;
+						concept_cryphaea_heteromalla => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_cryphaea_heteromalla <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_cryphaea_heteromalla <= nrel_inclusion: concept_3_protection_category;;

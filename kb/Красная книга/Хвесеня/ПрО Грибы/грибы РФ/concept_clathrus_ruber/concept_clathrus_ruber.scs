@@ -1,0 +1,74 @@
+concept_clathrus_ruber=> nrel_main_idtf: [решеточник красный](*<- lang_ru;;*); [clathrus ruber](*<- lang_lat;;*);;
+
+concept_clathrus_ruber<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (решеточник красный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_clathrus_ruber.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+ Red_list_ru -> concept_clathrus_ruber;;
+concept_plant -> concept_clathrus_ruber;;
+concept_species -> concept_clathrus_ruber;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_clathrus_ruber;;
+
+//пояснения
+concept_geastrum_fornicatum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Молодые плодовые тела полупогруженные в почву или наземные, шаровидные или яйцевидные, (3)5-10 см выс., с тонким белым до светло-серого экзоперидием и толстым студенистым мезоперидием, с мощным мицелиальным тяжом. Зрелое плодовое тело округлое, сетчатое, сидячее нижней частью в оставшейся части экзоперидия, 5- 10(12) см выс. и (5)7-9 см шир. Ячеи сети округлые или многоугольные, от красного до светло-желтоватого цвета, с внутренней стороны покрыты зеленовато-оливковой спороносной глебой. Гриб с сильным неприятным запахом, что способствует привлечению мух и других насекомых, разносящих споры. Споры эллипсоидные, гладкие, тонкостенные, бесцветные, 4-6 х 2-3 мкм (1, 2, 3).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России: Ленинградская обл., Санкт-Петербург, оранжерея БИН РАН (4; LE); Ярославская обл. (5); Московская обл. (6, 7); Калужская обл. (8); Краснодарский край (9, 10); Республика Адыгея (11); Республика Северная Осетия-Алания (12); Екатеринбург, субтропическая оранжерея (SVER(F)); Алтайский край, г. Горно-Алтайск, в оранжерее (4). Находки вида в условиях закрытого грунта (оранжереи, теплицы) в северных регионах обусловлены заносом диаспор с субстратом и посадочным материалом. Общее распространение: Европа (главным образом Средиземноморье, побережье Черного моря), Азия, Северная Америка, Северная Африка, Новая Зеландия (13). Субтропический вид с дизъюнктивным ареалом (2, 14, 15). Особенности экологии и фитоценологии. Гумусовый сапротроф. Возможно образование микоризы с лиственными породами (16). В пределах России растет одиночно или небольшими группами на почве в широколиственных, реже - смешанных лесах (1, 17). Преимущественно в регионах с мягким климатом (Краснодарский край и т.п.).](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+	
+//разное
+concept_clathrus_ruber <= nrel_spread: ... 
+	(*
+	-> Leningradskaja_oblast; Krasnodarskiy_kray;;
+*);;
+
+concept_veselkovye => nrel_inclusion: concept_clathrus_ruber;;
+concept_clathrus_ruber => nrel_part: 
+	
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; pressed_spherical; semi_underground; underground;;
+	*);
+...
+	(*
+	<= nrel_inclusion: concept_spore; dark_brown; warty; globular;;
+	*);;
+
+
+	concept_clathrus_ruber <= nrel_inclusion: 
+	[5-10 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [10 см]);;	
+	*);;
+
+
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	
+concept_clathrus_ruber <= nrel_inclusion: concept_3_protection_category;;

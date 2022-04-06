@@ -1,0 +1,163 @@
+concept_aongstroemia_julacea => nrel_main_idtf:
+[онгстремия серёжчатая](*<-lang_ru;;*);
+[aongstroemia julacea](*<-lang_lat;;*);;
+
+
+concept_species -> concept_aongstroemia_julacea;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_aongstroemia_julacea;;
+
+//пояснения
+concept_aongstroemia_julacea <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 б - редкий вид, с сильно фрагментированным ареалом и естественной низкой численностью популяций.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Мелкий мох с прямостоячими побегами, формирующий небольшие дерновинки. Двудомный, спорофиты очень редки, в России неизвестны. Размножается исключительно вегетативным путем, очевидно обрывками побегов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известно два местонахождения, расположенных на расстоянии около 50 км друг от друга - Республика Бурятия, Восточный Саян, хр. Тункинский: верховья р. Хубута и окр. с. Монды (1, 2). Вне России - Япония, Непал, Южная Африка, Сейшельские о-ва, Колумбия, Эквадор, Мексика (3).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает в горах, в подгольцовом поясе, на высоте около 2000 м н. ур. м., в расщелинах скал.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В каждом из двух местонахождений вид представлен единичными дерновинками, менее 1 дм2 каждая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. По обследованию 1960-х гг., удовлетворительное, впоследствии местонахождения не посещались.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Не изучены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красные книги СССР (1984) и РСФСР (1988). Вид включен в Красную книгу Республики Бурятия (2002).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Контроль за состоянием популяций. Включение мест произрастания вида в состав Тункинского национального парка.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_aongstroemia_julacea <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_aongstroemia_julacea;;
+						concept_aongstroemia_julacea => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_aongstroemia_julacea <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_aongstroemia_julacea <= nrel_inclusion: concept_3_protection_category;;

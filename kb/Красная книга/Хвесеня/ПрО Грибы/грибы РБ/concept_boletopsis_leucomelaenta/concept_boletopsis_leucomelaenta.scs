@@ -1,0 +1,163 @@
+concept_boletopsis_leucomelaenta=> nrel_main_idtf: [ болетопсис бело-черный ](*<- lang_ru;;*); [boletopsis leucomelaenta](*<- lang_lat;;*); [балетопсіс бела-чорны](*<- lang_bel;;*);;
+
+concept_boletopsis_leucomelaenta<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (болетопсис бело-черный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_boletopsis_leucomelaenta.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+concept_boletopsis_leucomelaenta<-concept_plant;;
+
+
+
+
+
+
+concept_species -> concept_boletopsis_leucomelaenta;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_boletopsis_leucomelaenta;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_boletopsis_leucomelaenta;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_boletopsis_leucomelaenta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет во влажных хвойных (еловых) и смешанных лесах среди разреженного напочвенного покрова; образует микоризу .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодоносит с августа по октябрь. Съедобный гриб, но низких вкусовых качеств.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается единичными экземплярами. Численность популяций вида невелика, количество местонахождений сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сбор плодовых тел, нарушение условий роста антропогенными факторами (все виды рубок леса, хозяйственная трансформация земель, чрезмерные рекреационные нагрузки).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в составе природного комплекса Березинского биосферного заповедника. Необходимы контроль состояния известных популяций и поиск новых мест произрастания, создание микологических заказников с запрещением в местах роста антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа, Северная Америка . В Беларуси встречается в Витебской обл. (Лепельский р-н) и Минской обл. (Логойский р-н) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Европа, Северная Америка . В Беларуси встречается в Витебской обл. (Лепельский р-н) и Минской обл. (Логойский р-н) .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+	
+
+concept_teleforovye => nrel_inclusion: concept_boletopsis_leucomelaenta;;
+concept_boletopsis_leucomelaenta => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; annual;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_cap; grey; rounded; convex;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; cylindrical;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_hypha; swollen;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_spore; spherical; warty; brownish;;
+	*);;
+
+
+concept_boletopsis_leucomelaenta <= nrel_inclusion: 
+	[5-10 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([5 см] => [10 см]);;	
+	*);
+	[2-4 см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([2 см] => [4 см]);;	
+	*);;
+
+	[5 см] <- cap_diameter; exact_value;;
+	[5 см] -> .centimeter: 2 (* <- number;;*);;
+	[10 см] <- cap_diameter; exact_value;;
+	[10 см] -> .centimeter: 10(* <- number;;*);;
+	[2 см] <- lenght_of_leg; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[4 см] <- lenght_of_leg; exact_value;;
+	[4 см] -> .centimeter: 4 (* <- number;;*);;
+
+concept_boletopsis_leucomelaenta <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,166 @@
+concept_primula_elatior_hill => nrel_main_idtf: [первоцвет высокий](*<- lang_ru;;*); [primula elatior (l.) hill](*<- lang_lat;;*); [першацвет высокі](*<- lang_bel;;*);;
+concept_primula_elatior_hill => nrel_idtf: [першацвет высокі](*<- lang_bel;;*);;
+
+concept_species -> concept_primula_elatior_hill;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_primula_elatior_hill;;
+
+concept_primula_elatior_hill  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (первоцвет высокий)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_primula_elatior_hill.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_primula_elatior_hill;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_primula_elatior_hill <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 1-го и 2-го изданий  (1981, 1993). Охраняется в Польше (неполная охрана).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое бесстебельное короткокорневищное растение с розеткой прикорневых листьев и прямостоячим безлистным цветоносом высотой 15-25 см. Листья продолговато-обратнояйцевидные, постепенно суженные в широкий черешок, по краю зубчатые, мягкоопушенные, длиной до 20 см. Цветки светло-желтые, пятичленные, собраны по 3-10 в зонтиковидное соцветие. Плод – многосемянная коробочка, в 1,5-2 раза превышающая чашечку .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Горные районы Атлантической, Средней и Южной Европы, юг Скандинавии . Реликтовый, по происхождению среднеевропейский горный вид, находящийся в Беларуси в отдельных локалитетах за восточной границей ареала . Известны места произрастания в Пуховичском р-не Минской обл. ; в Витебском, Глубокском, Докшицком, Лиозненском, Полоцком и Шумилинском р-нах Витебской обл. ; в Каменецком р-не Брестской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Луговины с временным избыточным увлажнением, реже  суходольные луга в пределах полос отчуждения железных дорог, опушки разреженных елово-широколиственных лесов снытевого типа, по берегам ручьев.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце апреля - начале мая. Зацветает раньше первоцвета весеннего на 1-1,5 недели. Отмечено опыление шмелями. Плодоносит в июне. Размножение семенное и вегетативное (при помощи придаточных почек, закладывающихся на корневищах). В возрастном (онтогенетическом) составе популяций отмечены особи всех возрастных групп.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Растет отдельными особями и небольшими группами на площадях от нескольких квадратных метров до нескольких десятков квадратных метров, местами (в Глубокском р-не) образует значительные популяции на площади до 0,15 га. В культуре в погодно-климатических условиях г. Витебск наблюдается регулярное плодоношение и самосев, вегетативное размножение сопровождается образованием 1-2 новых зачатков, морозами не повреждается .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  выжигание сухой травы в весенний период, землеустроительные и гидромелиоративные работы, сбор цветущих растений. Природные:  демутационные смены растительности, сопровождающиеся закустариванием луговин и сильным разрастанием  на них плотнокустовых злаков.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Выращивается в Центральном ботаническом саду НАН Беларуси , ботанических садах Витебского университета и БГУ, а также в Республиканском экологическом центре учащихся и молодежи (Минск). Необходимы контроль состояния известных популяций, организация заказников в местах произрастания (в Глубокском р-не), выявление новых мест роста и, при необходимости, организация их охраны, предупреждение антропогенных воздействий, более широкое введение вида в культуру в качестве декоративного, лекарственного и медоносного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_primula_elatior_hill <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Pukhovichi_district;;->Vitebsk_district;;->Glubokoye_district;;->Dokshitsy_district;;->Liozno_district;;->Polotsk_district;;->Shumilino_district;;->Kamenetsky_district;;
+		*);;
+*);;
+
+concept_primula_elatior_hill => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; short ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; oblong_obovate;wide_petiole;gear;melkopeschany;;
+*);
+...
+(*
+<= nrel_inclusion: flower; light_yellow;five_membered;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; umbel;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; polyspermous;box;;
+*);;
+
+concept_primula_elatior_hill <= nrel_inclusion: 
+[15-25]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [25 см]);; 
+*);;
+
+concept_primula_elatior_hill <= nrel_inclusion: 
+[5-20 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([5 см] => [20 см]);; 
+*);;
+
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[25 см] <- length_of_inflorscence; exact_value;;
+[25 см] -> .centimeter: 25 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[20 см] <- length_of_inflorscence; exact_value;;
+[20 см] -> .centimeter: 20 (* <- number;;*);;
+ 
+
+concept_primula_elatior_hill <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,163 @@
+concept_stilophora_tenella => nrel_main_idtf:
+[стилофора нежная](*<-lang_ru;;*);
+[stilophora tenella](*<-lang_lat;;*);;
+
+
+concept_species -> concept_stilophora_tenella;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_stilophora_tenella;;
+
+//пояснения
+concept_stilophora_tenella <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 а - вид, сокращающийся в численности в результате изменения условий существования или разрушения мест обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика: Слоевища 10-60 см дл., желто-бурое, цилиндрическое, обычно обильно разветвленные беспорядочно или вильчато-дихотомически. Ветви плотные, внизу около 1 мм толщиной, кверху постепенно становятся тонкими. Конечные веточки почти волосовидные. На поперечном срезе в центре видна небольшая полость или 4-5 клеток небольшой величины, окруженных несколькими рядами крупных клеток. Наружный ряд состоит из мелких окрашенных клеток; от наруж- ного ряда отходит группа парафиз с настоящими волосками и органами размножения. Парафизы простые, неразветвленные цилиндрические или кеглевидные, состоят из 4-7 клеток. Одноклеточные спорангии грушевидные или обратно-яйцевидные, сидячие, развиваются на основании парафиз, с которыми образуют резко отграниченные сорусы. Многоклеточные спорангии однорядные цилиндрические или кеглевидные, отходят от клеток нижней части парафиз, на ножках (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается только в Черном море: Кавказ (1), Геленджикская бухта (2). За пределами России: Черное море - Украина (Крым) (1, 3), Румыния; Азовское море, Средиземное море, Атлантическое побережье Европы и Северной Америки, Япония (1, 4), Индийский океан (восточная Африка) (4).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает на камнях, ракушечнике, талломах Cystoseira spp. Встречается в верхней и нижней сублиторали на глубине 1-20 м весной и летом. Широко-бореальный вид (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Неизвестны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественного состояния среды обитания. Поиск новых местонахождений вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Имеются данные о возможности культивирования в лабораторных условиях.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_stilophora_tenella <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_stilophora_tenella;;
+						concept_stilophora_tenella => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_stilophora_tenella <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_stilophora_tenella <= nrel_inclusion: concept_2_protection_category;;

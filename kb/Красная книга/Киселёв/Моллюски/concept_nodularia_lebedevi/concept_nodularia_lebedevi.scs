@@ -1,0 +1,143 @@
+concept_nodularia_lebedevi => nrel_main_idtf: [нодулярия лебедева](*<- lang_ru;;*); [nodularia lebedevi](*<- lang_lat;;*);;
+
+concept_nodularia_lebedevi  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (нодулярия лебедева)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_nodularia_lebedevi.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_nodularia_lebedevi <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_nodularia_lebedevi ;;
+concept_species -> concept_nodularia_lebedevi ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_nodularia_lebedevi ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_nodularia_lebedevi ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1984 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_nodularia_lebedevi  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина овально-клиновидная, плоская, умеренной толщины. Самая задняя точка раковины расположена примерно против середины ее высоты. Задний край раковины изогнут под острым углом. Брюшной край несколько выгнут. Макушки широкие, выступающие над контуром створки, сильно сдвинуты вперед. Макушечная скульптура w-образная. Периостракум желто-коричневый. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Известна из пойменных озер ниж. Амура (Хабаровский край). Типовое местонахождение - нижний Амур, озерцо на о. Сахалянь, против г. Амурска.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Обитает в пойменных проточных озерах на песчано-илистом грунте. Размножается глохидиями вероятно в летний период.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Количественный учет вида не проводился. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Загрязнение водоемов ведет к деградации местообитаний моллюсков и к их гибели.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Специальные меры охраны не разработаны. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_nodularia_lebedevi  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_nodularia_lebedevi  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; yellow;;
+	*);;
+//размеры и вес
+concept_nodularia_lebedevi  <= nrel_inclusion: 
+	[5-7 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [7 см]);;	
+	*);
+	[0,030-0,040 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,030 кг] => [0,040 кг]);;	
+	*);;
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[7 см] <- length_of_body; exact_value;;
+	[7 см] -> .centimeter: 7 (* <- number;;*);;
+	[0,030 кг] <- weight; exact_value;;
+	[0,030 кг] -> .kilogram: 0.030 (* <- number;;*);;
+	[0,040 кг] <- weight; exact_value;;
+	[0,040 кг] -> .kilogram: 0.040 (* <- number;;*);;
+//категория охраны и количество
+concept_nodularia_lebedevi  <= nrel_inclusion: concept_4_protection_category;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

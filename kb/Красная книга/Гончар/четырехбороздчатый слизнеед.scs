@@ -1,0 +1,146 @@
+concept_chlaenius_quadrisulcatus=> nrel_main_idtf:
+[четырехбороздчатый слизнеед](*<-lang_ru;;*);
+[chlaenius quadrisulcatus](*<-lang_lat;;*);;
+
+concept_species -> concept_chlaenius_quadrisulcatus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_chlaenius_quadrisulcatus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_chlaenius_quadrisulcatus;;
+	-> rrel_number_of_year: 1790 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_chlaenius_quadrisulcatus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Предпочитает заболоченные луга в пойме рек, а также низинные болота и болота переходного типа.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид с весенним типом размножения. Зимует имаго.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Вид приурочен к угрожаемым биоценозам. Численность невысокая и сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение площадей болот в связи с осушением низинных болот и проведением хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Выявление новых мест обитания вида и их охрана. Соблюдение порядка ведения хозяйственной деятельности в водоохранной зоне рек.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Палеарктический вид . По территории Беларуси проходит южная граница ареала. Найден только в двух местах на западе и юго-западе Беларуси .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 13-14 мм. Верх черный со свинцовым блеском. Усики и ноги черные. Пе­редне­спинка по бокам валикообразно окаймлена, с 3 широкими продольными вдавлениями, из которых боковые кпереди укорочены. Четные (2-й, 4-й, 6-й, 8-й) промежутки надкрылий густо точечные и в густом желтом опушении. Опушение нечетных промежутков черное, шов приподнятый, блестящий.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_chlaenius_quadrisulcatus <= nrel_spread: ... 
+	(*
+	-> Ivanovo_district; Kamenyki_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_chlaenius_quadrisulcatus;;
+concept_chlaenius_quadrisulcatus => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; black; frosted;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; frosted;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; lead; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; hairy; black ;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; black;;
+	*);;
+
+concept_chlaenius_quadrisulcatus <= nrel_inclusion: 
+	13_14_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (13_mm => 14_mm);;	
+	*);;
+	13_mm <- length_of_body; exact_value;;
+	13_mm -> .millimeter: 13 (* <- number;;*);;
+	14_mm <- length_of_body; exact_value;;
+	14_mm -> .millimeter: 14 (* <- number;;*);;	
+
+concept_chlaenius_quadrisulcatus <= nrel_inclusion: concept_1_protection_category;;

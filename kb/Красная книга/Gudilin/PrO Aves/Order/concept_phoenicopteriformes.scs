@@ -1,0 +1,22 @@
+concept_phoenicopteriformes => nrel_main_idtf:
+[фламингообразные](*<-lang_ru;;*);
+[phoenicopteriformes](*<-lang_lat;;*);;
+
+concept_order -> concept_phoenicopteriformes;;
+
+concept_phoenicopteriformes => nrel_inclusion: concept_phoenicopteridae;;
+
+//определение и пояснения
+concept_phoenicopteriformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фламингообразные - отряд новонёбных птиц. У представителей отряда крупное туловище, длинные ноги, тонкая шея и небольшая голова. Массивный клюв у современных представителей отряда круто изогнут вниз в средней части[4], подклювье намного глубже надклювья. По краю клюва находятся пластины, которые служат для фильтрации пищи из солёных или щелочных водоёмов, в которых обитают фламинго. Ископаемые фламинго рода Palaelodus характеризуются в целом прямым клювом.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_phoenicopteriformes;;

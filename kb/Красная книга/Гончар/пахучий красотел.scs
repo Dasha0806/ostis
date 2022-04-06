@@ -1,0 +1,150 @@
+concept_calosoma_sycophanta=> nrel_main_idtf:
+[пахучий красотел](*<-lang_ru;;*);
+[calosoma sycophanta](*<-lang_lat;;*);;
+
+concept_species -> concept_calosoma_sycophanta;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_calosoma_sycophanta;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_calosoma_sycophanta;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_calosoma_sycophanta <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен в Красные книги Литвы, Украины, России. В ряде стран (Германия, Польша, Чехия, Венгрия) находятся под охраной.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Широколиственные леса (особенно дубравы), реже хвойные леса, сады и парки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Хищник. Жуки и личинки уничтожают в основном гусениц и куколок чешуекрылых, среди которых вредители леса - непарный и кольчатый шелкопряды, монашенка, хохлатки, златогузка и др. Жуки зимуют в почве и лесной подстилке. Спаривание и откладка яиц весной или в начале лета. Активны днем, взбираются на деревья. Развитие личинок и куколок длится около 2 месяцев. Самки откладывают около сотни яиц, из которых через 3-15 суток выходят личинки, которые проходят 3 фазы развития и превращаются в куколок, а через 10-18 суток выходят жуки. Молодые жуки появляются в августе-сентябре. Часть особей зимует и откладывает яйца 2-3 раза.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок. Встречаются единичные экземпляры.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Значительный урон виду наносит хозяйственная деятельность в лесах. Вид очень чувствителен к ядохимикатам и гербицидам, лов жуков коллекционерами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Необходимо сокращение обработок лесных массивов ядохимикатами и охрана мест обитания. Запрет отлова жуков. Пропаганда охраны вида. В Беларуси целесообразно расселение.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Достоверно известен только из Беловежской Пущи . В Беларуси проходит северо-восточная граница ареала. В 1936 г. отмечался в Витебском р-не .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Крупный, ярко окрашенный жук длиной 22-33 мм. Боковой кант переднеспинки продолжен до ее задних углов. Голова, переднеспинка и большая часть низа тела темно-синие. Надкрылья золотисто-зеленые с медно-красным отливом, они широкие, с выступающими плечевыми углами. Личинка подвижная, черная, IX сегмент брюшка сверху с ярко-оранжевым пятном. Усики, ротовой аппарат, голени, лапки и брюшко черные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_calosoma_sycophanta <= nrel_spread: ... 
+	(*
+	-> VItebsk_district; Belovezhskaya_Pushcha_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_calosoma_sycophanta;;
+concept_calosoma_sycophanta => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; blue; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; blue; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; blue; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; gold; green; broad;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+      ...
+	(*
+	<= nrel_inclusion: concept_antennae; black;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_oral_apparatus; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; black;;
+	*);;
+
+concept_calosoma_sycophanta <= nrel_inclusion: 
+	22_33_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (22_mm => 33_mm);;	
+	*);;
+	22_mm <- length_of_body; exact_value;;
+	22_mm -> .millimeter: 22 (* <- number;;*);;
+	33_mm <- length_of_body; exact_value;;
+	33_mm -> .millimeter: 33 (* <- number;;*);;	
+
+concept_calosoma_sycophanta <= nrel_inclusion: concept_1_protection_category;;

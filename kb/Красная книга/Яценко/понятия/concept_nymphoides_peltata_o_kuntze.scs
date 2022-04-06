@@ -1,0 +1,170 @@
+concept_nymphoides_peltata_o_kuntze => nrel_main_idtf: [болотноцветник щитолистный](*<- lang_ru;;*); [nymphoides peltata (s.g. gmel.) o. kuntze](*<- lang_lat;;*); [балатнакветнiк шчыталiсты](*<- lang_bel;;*);;
+concept_nymphoides_peltata_o_kuntze => nrel_idtf: [балатнакветнiк шчыталiсты](*<- lang_bel;;*);;
+
+concept_species -> concept_nymphoides_peltata_o_kuntze;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_nymphoides_peltata_o_kuntze;;
+
+concept_nymphoides_peltata_o_kuntze  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (болотноцветник щитолистный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_nymphoides_peltata_o_kuntze.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_nymphoides_peltata_o_kuntze;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_nymphoides_peltata_o_kuntze <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу 
+Беларуси 1-го и 2-го изданий (1981, 1993). Находится под 
+государственной охраной 
+в Литве, Польше и Украине. 
+Включен в Красную книгу 
+Латвии (0 категория).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее водное травянистое растение с длинным погруженным ползучим корневищем и стеблем высотой до 1,5 м. Плавающие листья округлые, простые, цельнокрайние, с сердцевидным основанием, диаметром до 10 см. Цветки собраны в зонтиковидные пучки в пазухах верхних листьев; венчик желтый, диаметром около 3,5 см. Плод - коробочка.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Распространен спорадически почти по всей Евразии . В Беларуси находится в отдельных локалитетах на северо-восточной границе европей­ской части ареала. Выявлен в 1976 г. в двух близкорасположенных друг от друга местонахождениях на р. Неман в Столбцовском (Минская обл.) и Кореличском (Гродненская обл.) р-нах . Указание на произрастание в окрестностях г. Гродно  ошибочно (неправильно определена видовая принадлежность образцов) .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: В стоячих и медленно текущих водах речных стариц и заводей.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне - августе. Энтомофил. Семена созревают в августе - сентябре. Гидрохор, зоохор (орнитохор). Размножается вегетативно и семенами.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В известных популяциях занимал площадь не более 50 м2, где образовывал почти чистые заросли (после 1976 г. в достоверно известных местонахождениях не обнаруживался).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Точно не установлены. Возможно, нарушение гидрологического и гидрохимического режима водоемов в результате их загрязнения и осушения, лов рыбы сетями, рекреационные нагрузки.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Необходима организация специальных поисков в известных местонахождениях, а также в подходящих местах обитания в долине р. Неман. При обнаружении - организация специализированных заказников и осуществление контроля за состоянием популяций и изучением лимитирующих факторов. Выяснить возможность расселения в естественные сообщества и способы выращивания в культуре в качестве декоративного водного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_nymphoides_peltata_o_kuntze <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Stolbtsy_district;;->Korelichi_district;;
+		*);;
+*);;
+
+concept_nymphoides_peltata_o_kuntze => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; long;shipped;creeping;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; rounded;simple;entire;heart_shaped_base;;
+*);
+...
+(*
+<= nrel_inclusion: flower; yellow;umbellate_beam;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; box;;
+*);;
+
+concept_nymphoides_peltata_o_kuntze <= nrel_inclusion: 
+[50-150 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([50 см] => [150 см]);; 
+*); 
+[2-4 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([2 см] => [4 см]);; 
+*);;
+
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[150 см] <- length_of_inflorscence; exact_value;;
+[150 см] -> .centimeter: 150 (* <- number;;*);;
+[2 см] <- length_of_inflorscence; exact_value;;
+[2 см] -> .centimeter: 2 (* <- number;;*);;
+[4 см] <- length_of_inflorscence; exact_value;;
+[4 см] -> .centimeter: 4 (* <- number;;*);;
+ 
+
+concept_nymphoides_peltata_o_kuntze <= nrel_inclusion: concept_1_protection_category;;

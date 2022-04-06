@@ -1,0 +1,163 @@
+concept_opuntiella_ornata => nrel_main_idtf:
+[опунтиелла украшенная](*<-lang_ru;;*);
+[opuntiella ornata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_opuntiella_ornata;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_opuntiella_ornata;;
+
+//пояснения
+concept_opuntiella_ornata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 б - редкий вид, имеющий значительный ареал, в пределах которого встречается спорадически и с небольшой численностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Слоевище пластинчатое. Пластины сидячие, разветвленные, яйцевидной, клиновидной и неправильной формы, мясистые, карминово-фиолетовые, 10-15 см в поперечнике, до 0,5-0,9 мм толщ., по краю и поверхности прорастающие в папиллы (сосочки) и пластины различной величины: краевые пластины до размеров материнской, поверхностные до 1 см в поперечнике. Слоевище многоосевое, состоит из переплетенных разветвленных клеточных нитей, образующих сердцевину и кору. В коровом слое развиваются крупные светопреломляющие железистые клетки. Гонимобласты образуются в сердцевине слоевища и слегка выступают над его поверхностью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается на Камчатке: Авачинская губа, заливы Корфа (3, 8), Олюторский, Шелихова, о-ва Карагинский (3, 8), Командорские (1, 6, 7), юго-западная Камчатка (5). Вне России: Сев. Америка: зал. Якутат - Британская Колумбия.](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Высокобореальный пацифический вид. Сублиторальная зона (8, 12 м), в нижнем горизонте литоральной зоны на скалистом грунте с песком и камнями и в лужах в открытых и прибойных местообитаниях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Вид представлен единичными находками.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Не известно. В сублиторали и литорали о. Беринга отмечается как обычный вид (6, 7).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Разрушение среды обитания вследствие хозяйственной деятельности человека.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. На Командорских о-вах организован государственный природный заповедник, включающий прибрежную морскую акваторию. Вид включен в Приложение I Красной книги Камчатки (9).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Сохранение естественной среды обитания.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Не изучена.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_opuntiella_ornata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_opuntiella_ornata;;
+						concept_opuntiella_ornata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_opuntiella_ornata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_opuntiella_ornata <= nrel_inclusion: concept_3_protection_category;;

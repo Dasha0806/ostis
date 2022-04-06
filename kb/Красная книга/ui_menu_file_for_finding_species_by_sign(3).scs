@@ -1,0 +1,25 @@
+ui_menu_file_for_finding_species_by_sign<-ui_user_command_class_atom;
+ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_species_by_sign => nrel_main_idtf:
+[Поиск вида по заданному признаку]
+(*<-lang_ru;;*);;
+
+ui_menu_file_for_finding_species_by_sign => nrel_main_idtf:
+[Search species by sign]
+(*<-lang_en;;*);;
+
+ui_menu_file_for_finding_species_by_sign =>ui_nrel_command_template:
+	[*
+		action_for_finding_species_by_sign _-> ._action_for_finding_species_by_sign_instance
+		(*
+			_-> ui_arg_1;;
+			*);;
+
+
+		._action_for_finding_species_by_sign_instance _<- question;;
+
+	*];;
+
+ui_menu_file_for_finding_species_by_sign => ui_nrel_command_lang_template: [Найти вид по признаку $ui_arg_1](*<-lang_ru;; *);;
+ui_menu_file_for_finding_species_by_sign => ui_nrel_command_lang_template: [Find species by sign $ui_arg_1](*<-lang_en;; *);;

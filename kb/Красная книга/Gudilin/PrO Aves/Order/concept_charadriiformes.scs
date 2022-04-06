@@ -1,0 +1,22 @@
+concept_charadriiformes => nrel_main_idtf:
+[ржанкообразные](*<-lang_ru;;*);
+[charadriiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_charadriiformes;;
+
+concept_charadriiformes => nrel_inclusion: concept_haematopodidae; concept_burhinidae; concept_scolopacidae; concept_laridae;;
+
+//определение и пояснения
+concept_charadriiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Ржанкообразные - отряд птиц. Масса тела от 20 г до 2,5 кг. Преобладает неяркая тёмная окраска, но встречается белое оперение.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_charadriiformes;;

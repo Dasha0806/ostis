@@ -1,0 +1,22 @@
+concept_procellariiformes => nrel_main_idtf:
+[трубконосые](*<-lang_ru;;*);
+[procellariiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_procellariiformes;;
+
+concept_procellariiformes => nrel_inclusion: concept_diomedeidae; concept_hydrobatidae; concept_procellariidae;;
+
+//определение и пояснения
+concept_procellariiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Трубконосые - отряд длиннокрылых и короткохвостых морских птиц. Название «трубконосые» птицы получили за особое строение клюва. Ноздри их вытянуты двумя роговыми трубочками, лежащими сверху на клюве отверстиями вперёд (у некоторых буревестников отверстия направлены вверх).](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_procellariiformes;;

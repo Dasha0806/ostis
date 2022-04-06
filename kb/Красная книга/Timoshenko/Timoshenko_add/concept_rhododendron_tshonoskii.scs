@@ -1,0 +1,45 @@
+concept_rhododendron_tshonoskii => nrel_main_idtf:
+[Рододендрон Чоноски](*<-lang_ru;;*);
+[ Rhododendron tschonoskii](*<-lang_lat;;*);;
+
+concept_species -> concept_rhododendron_tshonoskii;;
+
+
+Red_list_ru -> concept_rhododendron_tshonoskii;;
+
+//пояснения
+concept_rhododendron_tshonoskii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978; 1984) и РСФСР (1988). Вид включен в Красную книгу Сахалинской обл. (2005). Охраняется в Алёхинском лесничестве заповедника «Курильский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:  России встречается только в южной части о-ва Кунашир в Сахалинской обл., главным образом в кальдере вулкана Головнина.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Листопадный кустарник до 120 см выс., с густоветвистой кроной и ржавоволосистыми молодыми побегами. Цветет в июле, плоды созревают в сентябре.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_rhododendron_tshonoskii <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,27 @@
+concept_papaverales => nrel_main_idtf:
+[макоцветные](*<-lang_ru;;*);
+[papaverales](*<-lang_lat;;*);;
+
+concept_order -> concept_papaverales;;
+
+concept_papaverales <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на семейства, входящие в красную книгу РБ.];;
+    -> concept_fumariaceae;;
+	*);;
+
+//определение и пояснения
+concept_papaverales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Макоцветные - порядок, который объединяет многолетние и однолетние травы, реже полукустарники, кустарники или небольшие деревца. Листья очередные, редко почти супротивные или почти мутовчатые, без прилистников.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_papaverales;;

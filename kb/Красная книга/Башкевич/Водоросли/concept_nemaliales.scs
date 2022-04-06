@@ -1,0 +1,30 @@
+concept_nemaliales => nrel_main_idtf:
+[немалиальные](*<-lang_ru;;*);
+[nemaliales](*<-lang_lat;;*);;
+
+concept_order -> concept_nemaliales;;
+
+concept_nemaliales <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_batrachospermaceae;;
+
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_nemaliales <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Порядок немалиальные , включающий формы одноосевого и многоосевого строения, характеризуется отсутствием ауксилярных клеток; гонимобласты развиваются непосредственно из оплодотворенного карпогона или из его дочерней клетки. ](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_nemaliales;;

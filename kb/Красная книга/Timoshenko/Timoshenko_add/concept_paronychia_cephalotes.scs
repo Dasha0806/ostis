@@ -1,0 +1,45 @@
+concept_paronychia_cephalotes => nrel_main_idtf:
+[Паронихия головчатая](*<-lang_ru;;*);
+[Paronychia cephalotes](*<-lang_lat;;*);;
+
+concept_species -> concept_paronychia_cephalotes;;
+
+
+Red_list_ru -> concept_paronychia_cephalotes;;
+
+//пояснения
+concept_paronychia_cephalotes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен в Красную книгу Краснодарского края(2007).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России встречается в Западном Закавказье - в Краснодарском крае в окр. Новороссийска.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Низкорослый травянистый многолетник 5-15 см выс., образует небольшие куртинки. Цветет в мае-июне. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_paronychia_cephalotes <= nrel_inclusion: concept_2_protection_category;;

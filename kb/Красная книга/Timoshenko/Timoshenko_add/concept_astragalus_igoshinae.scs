@@ -1,0 +1,45 @@
+concept_astragalus_igoshinae => nrel_main_idtf:
+[Астрагал Игошиной](*<-lang_ru;;*);
+[Astragalus igoschinae](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_igoshinae;;
+
+
+Red_list_ru -> concept_astragalus_igoshinae;;
+
+//пояснения
+concept_astragalus_igoshinae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Включен в Список редких эндемичных видов Арктики (1999).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:  Вид был единственный раз собран в 1958 г. на Полярном Урале в Республике Коми, по р. Хойла, левому притоку р. Юнеята в бассейне верховий реки Усы близ перевала Хойла. Повторные поиски пока успеха не принесли, возможно, что вид растет на восточной (а не на западной) стороне Уральского хребта.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Полукустарничек до 20-25 см выс., с немногопарно-перистыми листьями и собранными в головчатые сжатые кисти сиренево-розовыми цветками. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_astragalus_igoshinae <= nrel_inclusion: concept_3_protection_category;;

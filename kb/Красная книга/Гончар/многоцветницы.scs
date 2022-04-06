@@ -1,0 +1,36 @@
+concept_nymphalidae=> nrel_main_idtf:
+[многоцветницы](*<-lang_ru;;*);
+[nymphalidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_nymphalidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(многоцветницы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Многоцветницы - насекомые семейства чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_nymphalidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Бабочки средних размеров. Размах крыльев 25—180 мм. Окраска преимущественно пёстрая и яркая. Нижняя сторона крыльев часто покровительственной окраски. Щупики большие, косо торчащие вперед. Передние ноги редуцированы, не используются при хождении, лишены коготков и покрыты густыми волосками. Задние голени с одной парой шпор.](* <- lang_ru;;*);;
+		*);;
+*);;

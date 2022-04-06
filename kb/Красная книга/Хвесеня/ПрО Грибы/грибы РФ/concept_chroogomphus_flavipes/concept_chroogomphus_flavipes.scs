@@ -1,0 +1,155 @@
+concept_chroogomphus_flavipes=> nrel_main_idtf: [мокруха желтоножковая](*<- lang_ru;;*); [сhroogomphus flavipes](*<- lang_lat;;*);;
+
+concept_chroogomphus_flavipes<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мокруха желтоножковая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_chroogomphus_flavipes.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_chroogomphus_flavipes;;
+concept_species -> concept_chroogomphus_flavipes;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_chroogomphus_flavipes;;
+
+//пояснения
+concept_chroogomphus_flavipes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус. 3г - вид, имеющий значительный общий ареал, но находящийся в пределах России на границе распространения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Гриб с пластинчатыми плодовыми телами небольшого размера, развивающимися на почве. Шляпка 1-2 см в диам., выпуклая, сухая или влажная, но не клейкая, радиально волокнисто-трещиноватая, семгово-розовая, розовато- или оранжево-винного цвета, при подсыхании темнеет. Пластинки низбегающие, редкие, бледно-семгово-розовые, затем серые. Ножка до 6-9 х 0,5-0,7 см, более или менее ровная, в верхней трети беловатая и почти голая, ниже - лимонно- желтая и покрыта волокнами, с паутинистым бледно-семговым частным покрывалом. Споры 20--24 х 7--8 мкм, эллипсоидальные (1, 2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В России: Приморский край (Сихотэ-Алинский заповедник) (1). Общее распространение: вне России встречается в Сев. Америке (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Микоризный симбионт, предположительно кедра. Встречается в заболоченных старовозрастных хвойных лесах (2).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Не исследована. Состояние локальных популяций. Сведений нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Вырубка дальневосточных хвойно-широколиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Вид охраняется в Сихотэ-Алинском заповеднике (1).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Необходим контроль за состоянием популяций и поиск новых.](*<- lang_ru;;	*);;
+		*);;
+	*);
+...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Поскольку вид является микоризным, поддержание его в чистой культуре пока не удается.](*<- lang_ru;;*);;
+		*);;
+	*);;
+
+//разное
+concept_chroogomphus_flavipes <= nrel_spread: ... 
+	(*
+	-> Primorskiy_kray;;
+	*);;
+
+concept_gomphidiaceae => nrel_inclusion: concept_chroogomphus_flavipes;;
+concept_chroogomphus_flavipes => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; convex; dry; yellow_brown; buffy;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; flat;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; downy; rare; buffy;;
+	*);;
+
+concept_chroogomphus_flavipes <= nrel_inclusion: 
+	[1-2 см]
+	(*
+	<- interval_value;;
+	<- cap_diameter;;
+	=> nrel_measurement: ([1 см] => [2 см]);;	
+	*);
+	[0.5-0.7см]
+	(*
+	<- interval_value;;
+	<- lenght_of_leg;;
+	=> nrel_measurement: ([1.2 см] => [2.5 см]);;	
+	*);;
+
+	[1 см] <- cap_diameter; exact_value;;
+	[1 см] -> .centimeter: 1 (* <- number;;*);;
+	[2 см] <- cap_diameter; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[0.5 см] <- lenght_of_leg; exact_value;;
+	[0.5 см] -> .centimeter: 0.5 (* <- number;;*);;
+	[0.7 см] <- lenght_of_leg; exact_value;;
+	[0.7 см] -> .centimeter: 0.7 (* <- number;;*);;
+	
+concept_chroogomphus_flavipes <= nrel_inclusion: concept_3_protection_category;;

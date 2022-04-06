@@ -1,0 +1,20 @@
+ui_menu_search_operation_by_size<- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+// Указываем русский идентификатор нашей команды меню
+ui_menu_search_operation_by_size =>nrel_main_idtf: [Запрос поиска растений по размеру] (* <- lang_ru;; *);;
+// Указываем английский идентификатор нашей команды меню
+ui_menu_search_operation_by_size =>nrel_main_idtf: [Request search of plants by size] (* <- lang_en;; *);;
+// Указываем шаблон нашей команды
+ui_menu_search_operation_by_size =>ui_nrel_command_template:
+[*
+question_search_operation_by_size _-> ._question_search_operation_instance
+(*
+_-> ui_arg_1;;
+*);;
+._question_search_operation_instance _<- question;;
+*];;
+// Указываем текстовый шаблон для истории диалога на русском языке
+ui_menu_search_operation_by_size =>ui_nrel_command_lang_template: [Запрос поиска по размеру: $ui_arg_1] (*
+<- lang_ru;; *);;
+// Указываем текстовый шаблон для истории диалога на английском языке
+ui_menu_search_operation_by_size =>ui_nrel_command_lang_template: [Request of search by size: $ui_arg_1]
+(* <- lang_en;; *);;

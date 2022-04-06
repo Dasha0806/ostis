@@ -1,0 +1,48 @@
+concept_coat_of_arms<-concept_state_symbol;;
+concept_coat_of_arms=>nrel_main_idtf:[герб] (* <- lang_ru;; *);;
+concept_coat_of_arms=>nrel_identifier:[множество гербов] (* <- lang_ru;; *);;
+concept_coat_of_arms=>nrel_identifier:[coat of arms] (* <- lang_en;; *);;
+
+//используемые константы
+concept_coat_of_arms<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_emblem;;
+*);;
+*);;
+concept_coat_of_arms=> nrel_main_idtf: [Опр.(герб)]  (* <- lang_ru;; *);;
+concept_coat_of_arms<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Герб-главная государственная эмблема.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_coat_of_arms <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(герб,принадлежность*,ранг*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Гербы можно систематизировать по принадлежности, рангам.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_coat_of_arms <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_axiom:subject_domain_of_country;;
+=> nrel_main_idtf: [Утв.(герб,распространение*,расцвет*,средство индивидуальной защиты)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Распространение гербов связано с расцветом средств индивидуальной защиты.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

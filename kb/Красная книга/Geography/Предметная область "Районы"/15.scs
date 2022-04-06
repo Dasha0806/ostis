@@ -1,0 +1,56 @@
+//синонимы
+concept_arboreal<=nrel_subdividing:...
+(*
+->concept_coniferous;;
+->concept_hardwood;;
+=>nrel_main_idtf:[Разбиение по признаку хозяйственное значение древесной породы.] (* <- lang_ru;; *);;
+*);;
+concept_arboreal=>nrel_main_idtf:[древесная порода] (* <- lang_ru;; *);;
+concept_arboreal=>nrel_identifier:[множество древесных пород] (* <- lang_ru;; *);;
+concept_arboreal=>nrel_identifier:[arboreal] (* <- lang_en;; *);;
+
+//используемые константы
+concept_arboreal<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_plant;;
+->concept_clan;;
+->nrel_kind;;
+*);;
+*);;
+concept_relict_forest=> nrel_main_idtf: [Опр.(древесная порода)]  (* <- lang_ru;; *);;
+concept_relict_forest<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Древесная порода — род или вид древесного растения.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+concept_arboreal<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(древесная порода,ель,сосна)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ К хвойным древесным породам относятся ель, сосна.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_arboreal<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(древесная порода,дерево,кустарник,лист)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[К лиственным древесным породам относятся деревья и кустарники с пластинчатыми листьями.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

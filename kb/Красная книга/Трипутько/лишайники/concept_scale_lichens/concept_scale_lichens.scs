@@ -1,0 +1,105 @@
+concept_scale_lichens
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[накипные лишайники]
+	(*<-lang_ru;;*);
+	[scale lichens]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[накипные лишайники]
+	(*<-lang_ru;;*);
+	[scale lichens]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (накипные лишайники) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[накипные лишайники -  это отдел  лишайников, слоевище которых имеет вид корочки ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о накипные лишайники) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[    Корочка может быть очень тонкой, в виде еле заметной накипи. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_division -> concept_scale_lichens;;
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_scale_lichens;;
+
+
+
+//Рисунок
+concept_scale_lichens <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (умбиликария съедобная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_scale_lichens.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+concept_scale_lichens <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Нередко пластинчатое слоевище по краям выемчато вырезано ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Иногда слоевище полностью погружено в субстрат, изредка на поверхности видны плодовые тела ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//способ размножения
+concept_scale_lichens <= nrel_reproduction: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> concept_disputes;;
+		*);;
+	*);;
+
+//питание
+concept_scale_lichens <= nrel_eat: ...
+	(*
+	<= nrel_combination: ...
+		(*
+            -> concept_photosynthesis;;
+		*);;
+	*);;
+
+//описание длин
+concept_scale_lichens <= nrel_inclusion: 
+    [0-30]
+    (*
+        <- interval_value;;
+        <- diameter;;
+        => nrel_measurement: ([0] => [30]);;
+    *);;
+    [0] <- diameter; exact_value;;
+	[0] -> .centimeter: 0 (* <- number;;*);;
+	[30] <- diameter; exact_value;;
+	[30] -> .centimeter: 30 (* <- number;;*);;

@@ -1,0 +1,55 @@
+concept_lespedeza_tomentosa_maxim => nrel_main_idtf:
+[Леспедеца войлочная](*<-lang_ru;;*);
+[Lespedeza tomentosa (Thunb.) Maxim.](*<-lang_lat;;*);;
+
+concept_species -> concept_lespedeza_tomentosa_maxim;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_lespedeza_tomentosa_maxim;;
+
+Red_list_ru -> concept_lespedeza_tomentosa_maxim;;
+
+//пояснения
+concept_lespedeza_tomentosa_maxim <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Вид наиболее обычен в Хасанском р-не, но встречается единичными особями. В других местах редок.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978,1984) и РСФСР (1988). Вид включен в Перечень объектов, занесенных в Красную книгу Приморского края (2002). Охраняется в заповедниках: Дальневосточный морской, «Кедровая падь» и Лазовский.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:  России распространен в Приморском крае в Хасанском р-не (до басс. р. Пойма). Очагами встречается в Октябрьском р-не (у с. Борисовка и с. Алексей-Никольское в басс. р. Раздольная), в Партизанском р-не (у с. Сергеевки), Лазовском р-не (у с. Кишиневка в басс. р. Киевка) и на о-ве Рикорда в заливе Петра Великого. Основной ареал лежит за пределами России и охватывает Восточную Монголию, Китай, п-ов Корея, Японию, Тайвань и о. Рюкю в Тихом океане; на западе граница доходит до Индии (Гималаи).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый поликарпик до 80 см выс., с одиночным, прямостоячим крепким, снизу деревянистым стеблем. Цветет в августе, плодоносит в сентябре.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

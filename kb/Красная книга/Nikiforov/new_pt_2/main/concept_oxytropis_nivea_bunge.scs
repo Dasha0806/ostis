@@ -1,0 +1,55 @@
+concept_oxytropis_nivea_bunge => nrel_main_idtf:
+[Остролодочник белоснежный](*<-lang_ru;;*);
+[Oxytropis nivea Bunge](*<-lang_lat;;*);;
+
+concept_species -> concept_oxytropis_nivea_bunge;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_oxytropis_nivea_bunge;;
+
+Red_list_ru -> concept_oxytropis_nivea_bunge;;
+
+//пояснения
+concept_oxytropis_nivea_bunge <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Известно более 10 местонахождений вида. Численность его не превышает 1000 экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красную книгу Республики Алтай (1996).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид встречается только в России в Республике Алтай: в верховьях рек Кокоря (откуда был описан вид), Ортолык, Тобожок, Узун-Терек, Буйлюкем, Богуты, Бар-Бургазы, Чаган-Бургазы, Шибеты, г. Талдуаир, оз. Кара-Коль. Особенности экологии и фитоценологии. Растет в высокогорных тундрах, альпийских и субальпийских лугах, в разреженных лиственничниках близ границы леса.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое бесстебельное растение до 10 см выс. Листья 5-9 см дл. Листочки в числе 15-19 пар. Цветочные стрелки равны или немного длиннее листьев. Цветет в июне-июле. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

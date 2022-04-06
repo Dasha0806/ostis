@@ -1,0 +1,45 @@
+concept_silene_hellmannii => nrel_main_idtf:
+[Смолёвка Гельманна](*<-lang_ru;;*);
+[Silene hellmannii](*<-lang_lat;;*);;
+
+concept_species -> concept_silene_hellmannii;;
+
+
+Red_list_ru -> concept_silene_hellmannii;;
+
+//пояснения
+concept_silene_hellmannii <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:  Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Астраханской (2000), Волгоградской (2006), Оренбургской (1998) и Ростовской (2004) обл. Охраняется на территории Богдинско-Баскунчакского заповедника. Внесен в список особо охраняемых видов флоры Европы (Бернская конвенция, май 1999).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается в Астраханской, Волгоградской и Ростовской обл. Отдельные местонахождения отмечались под Оренбургом, в Саратовской обл.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Двудомный травянистый поликарпик 20-40 см выс. Цветет в мае-июне. Размножается семенами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_silene_hellmannii <= nrel_inclusion: concept_3_protection_category;;

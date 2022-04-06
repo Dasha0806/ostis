@@ -1,0 +1,7 @@
+lang_bel => nrel_main_idtf:
+[Белорусский язык](*<-lang_ru;;*);
+[беларусскi язык](*<-lang_bel;;*);;
+lang_bel <- languages;;
+lang_lat => nrel_main_idtf:
+[Латинский язык](*<-lang_ru;;*);;
+lang_lat <- languages;;

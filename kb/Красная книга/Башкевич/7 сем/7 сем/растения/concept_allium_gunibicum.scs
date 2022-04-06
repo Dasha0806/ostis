@@ -1,0 +1,163 @@
+concept_allium_gunibicum => nrel_main_idtf:
+[лук гунибский](*<-lang_ru;;*);
+[allium gunibicum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_allium_gunibicum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_galanthus_bortkewitschianus;;
+
+//пояснения
+concept_allium_gunibicum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д — редкий вид. Вид с очень ограниченным ареалом. Эндемик Кавказа.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Корневищно-луковичный многолетник, 15-30 см выс. с продолговатой луковицей. Цветет в июле-августе.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России встречается почти во всех р-нах среднегорного известнякового Дагестана: Ахвахский, Ботлихский, Гумбетовский, Унцукульский, Хунзахский, Шамильский, Гергебильский, Гунибский (Гуниб — классическое место­ нахождение), Акушинский, Левашинский (1-5), а также в Чечне (приток р. Фартанги). Вне России известен из Грузии (Хевсуретия) (7).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Ксерофит. Произрастает на каменистых склонах и скалах в среднегорном поясе на высоте 600-2000 м н. ур. м.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. В пределах ареала встречается довольно часто, т.е. это не такой редкий вид, как считалось раньше. Общая численность может быть оценена не менее чем в 20 тыс. экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Все известные популяции достаточно стабильны по численности. В Гунибе за последние 30 лет не отмечено существенных изменений в динамике популяций вида.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Выпас скота, освоение горных территорий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красную книгу РСФСР(1988). Вид включен в Красную книгу Республики Дагестан (1998). Охраняется в Мелештинском заказнике Дагестана (б).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Организация на Гунибском плато национального парка. Контроль за состоянием популяций, сбор семян и интродукция в ботанические сады.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Вид культивируется в ГорБС ДагНЦ РАНи на станции БИН РАН в Пятигорске.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_allium_gunibicum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_allium_gunibicum;;
+						concept_allium_gunibicum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_allium_gunibicum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_allium_gunibicum <= nrel_inclusion: concept_3_protection_category;;

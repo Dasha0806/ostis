@@ -1,0 +1,52 @@
+//синонимы
+concept_elections<-concept_procedure;;
+concept_elections=>nrel_main_idtf:[выборы] (* <- lang_ru;; *);;
+concept_elections=>nrel_identifier:[множество выборов] (* <- lang_ru;; *);;
+concept_elections=>nrel_identifier:[elections] (* <- lang_en;; *);;
+
+//используемые константы
+concept_elections<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_procedure;;
+->nrel_election;;
+->concept_vote;;
+*);;
+*);;
+concept_elections=> nrel_main_idtf: [Опр.(выборы)]  (* <- lang_ru;; *);;
+concept_elections<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Выборы – процедура избрания путём тайного голосования.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+
+concept_elections<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(выборы,день,система,замещение*,должность,человек,общность*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Выборы считаются на сегодняшний день наиболее демократичной системой замещения руководящих должностей в любых общностях людей.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+concept_elections<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(выборы,осуществление*,утверждение*,должность,руководитель)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[ Выборы проводятся для осуществления законного утверждения в должности какого-либо руководителя.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

@@ -1,0 +1,43 @@
+sc_node_not_relation ->  concept_cystidium;;
+concept_cystidium => nrel_main_idtf:
+[цистиды](*<-lang_ru;;*);
+[cystidium](*<-lang_en;;*);;
+
+concept_cystidium <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(цистиды)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [стерильные элементы гимениального слоя у многих базидиальных грибов](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_fungos;;
+	->concept_basidiomycetes;;
+
+*);;
+*);;
+
+//включение / разбиение
+
+concept_sporocarp => nrel_inclusion: concept_cystidium;;
+//утверждения
+
+concept_cystidium <- rrel_key_sc_element:...
+(*
+	<-statement;;
+        <-concept_statement_of_general_form;;
+	=>nrel_main_idtf: [Утв.(цистиды)](* <-lang_ru;; *);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example:
+			[Основная функция цистид — защита базидии от повреждения сверху. ](* <-lang_ru;; *);;
+	*);;
+	-> rrel_key_sc_element: concept_cystidium;;
+-> rrel_key_sc_element: concept_protection;;
+*);;
+

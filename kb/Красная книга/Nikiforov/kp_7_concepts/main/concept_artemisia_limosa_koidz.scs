@@ -1,0 +1,45 @@
+concept_artemisia_limosa_koidz => nrel_main_idtf:
+[Полынь топяная](*<-lang_ru;;*);
+[Artemisia limosa Koidz](*<-lang_lat;;*);;
+
+concept_species -> concept_artemisia_limosa_koidz;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_artemisia_limosa_koidz;;
+
+Red_list_ru -> concept_artemisia_limosa_koidz;;
+
+//пояснения
+concept_artemisia_limosa_koidz <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен в Красную книгу Сахалинской обл. (2005). Территория грязевого вулкана Магунтан объявлена памятником природы регионального значения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:  Встречается только на о. Сахалин: Макаровский р-н, окр. с. Пугачёво, грязевой вулкан Магунтан, откуда вид и описан.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Двулетнее травянистое растение. В первый год образуются прикорневые розетки диам. 6-15 см. Стебли обычно одиночные, до 30 см выс. Размножается исключительно семенами. Цветет в июле, плодоносит в сентябре.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

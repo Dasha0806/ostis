@@ -1,0 +1,21 @@
+concept_aves => nrel_main_idtf:
+[птицы](*<-lang_ru;;*);
+[berds](*<-lang_en;;*);
+[aves](*<-lang_lat;;*);;
+
+concept_class -> concept_aves;;
+
+concept_aves => nrel_inclusion: concept_ciconiiformes; concept_anseriformes; concept_strigiformes; concept_podicipediformes; concept_piciformes; concept_passeriformes; concept_galliformes; concept_gaviiformes; concept_coraciiformes; concept_charadriiformes; concept_gruiformes; concept_falconiformes;;
+
+//определение и пояснения
+concept_aves <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Птицы - класс теплокровных яйцекладущих позвоночных животных. Представляют собой хорошо обособленную группу.Характерные признаки: покров из перьев, предохраняющий тело от неблагоприятных изменений температуры и играющий важную роль при полёте (крылья); клюв.](* <- lang_ru;; *);;
+		*);;
+*);;

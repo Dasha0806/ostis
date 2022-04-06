@@ -1,0 +1,67 @@
+
+nrel_research_object
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[research object*](*<-lang_en;;*);
+                 [объект исследования*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(объект исследования)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+	process;
+        situation;	
+	concept_phenomenon
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:
+[	<b>Объект исследования</b> - это <b><sc_element sys_idtf="process">процесс</b></sc_element> или <b><sc_element sys_idtf="concept_phenomenon">явление</b></sc_element>, порождающее проблемную <b><sc_element sys_idtf="situation">ситуацию</b></sc_element> и взятое исследователем для изучения. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(Личиночная стадия)](*<-lang_ru;;*);;
+
+=>nrel_using_constants:{
+
+        concept_science
+
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:[В одной <b><sc_element sys_idtf="concept_science">науке</b></sc_element> может быть несколько объектов исследований. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:...(*
+	<=nrel_combination:{ concept_science(*<=nrel_first_domain:nrel_research_object;;*);
+ 	subject_domain(*<=nrel_second_domain:nrel_research_object;;*)
+};;
+*);;
+nrel_research_object<-asymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_research_object<-antitransitive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_research_object<-antireflexive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_research_object<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+
+
+arity->...(*=>nrel_measurement:2;;
+	->nrel_research_object;;
+*);;
+
+                          
+
+concept_phenomenon<-sc_node_not_relation;
+=>nrel_main_idtf:
+[явление] (*<-lang_ru;;*);
+[phenomenon] (*<-lang_en;;*);;
+
+
+concept_science<-sc_node_not_relation;
+=>nrel_main_idtf:
+[наука] (*<-lang_ru;;*);
+[science] (*<-lang_en;;*);;
+
+
+
+

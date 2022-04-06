@@ -1,0 +1,127 @@
+concept_cladonia_graciliformis=> nrel_main_idtf: [кладония грациозновидная](*<- lang_ru;;*); 
+[cladonia graciliformis](*<- lang_lat;;*); 
+[кладония грациозновидная](*<- lang_bel;;*);;
+
+concept_cladonia_graciliformis <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (кладония грациозновидная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cladonia_graciliformis.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_lichenas -> concept_cladonia_graciliformis;;
+concept_species -> concept_cladonia_graciliformis;;
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_cladonia_graciliformis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_cladonia_graciliformis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1966 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_cladonia_graciliformis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Кустистый лишайник. Горизонтальное слоевище состоит из пальчато-рассеченных приподнимающихся чешуек (до 8 мм дл.), сверху серых, снизу оранжеватых. Подеции стройные, тонкие (до 7 см выс. и до 1,5 см в диам.), иногда искривленные, на концах разделены на 2--3 веточки, с небольшими филлокладиями в нижней части,. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы: . Очень требователен к влажности. Чувствителен к нарушению естественных местообитаний и атмосферным загрязнителям.. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны: Вид был занесен в Красную книгу СССР (1984), Красную книгу РСФСР (1988). Внесен в Красную книгу Сахалинской обл. (5). Охраняется на территориях заповедников: «Курильский», Кроноцкий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны:  Контроль за состоянием популяций и поиск новых местонахождений. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид был занесен в Красную книгу РСФСР (1966). Включен в региональные Красные книги: Кемеровской обл., Республики Алтай, Республики Башкортостан, Республики Тыва, Республики Хакасия, Читинской обл., Сахалинской обл. Охраняется на территориях заповедников: «Азас», Алтайский, «Байкало-Ленский», Байкальский, Башкирский (18), «Витимский», Дальневосточный морской (16), «Джергинский», Зейский, Кавказский, «Катунский», Лазовский (17), «Малая Сосьва», Сихотэ-Алинский (16), «Столбы», Тебердинский..](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_cladonia_graciliformis <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+ concept_cladonia_graciliformis => nrel_part: 
+	...
+ 	(*
+ 	<= nrel_inclusion: concept_thallus; green;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: apothecia; green;;
+ 	*);
+ 	...
+ 	(*
+ 	<= nrel_inclusion: concept_disputes; green;;
+ 	*);;
+
+concept_cladonia_graciliformis <= nrel_reproduction: concept_vegetatively;;
+
+//размеры и вес
+concept_cladonia_graciliformis <= nrel_inclusion: 
+	[0-3 см]
+	(*
+	<- interval_value;;
+	<- length_of_diam;;
+	=> nrel_measurement: ([0 см] => [3 см]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[3 см] <- length_of_body; exact_value;;
+	[3 см] -> .centimeter: 3 (* <- number;;*);;
+
+//категория охраны и количество
+concept_cladonia_graciliformis <= nrel_inclusion: concept_3_protection_category;;
+concept_cladonia_graciliformis <= nrel_strength: [5000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 5000 (* <- number;;*);;
+		*);;	
+	*);;
+

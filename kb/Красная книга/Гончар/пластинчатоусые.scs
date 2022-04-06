@@ -1,0 +1,36 @@
+concept_scarabaeidae=> nrel_main_idtf:
+[пластинчатоусые](*<-lang_ru;;*);
+[scarabaeidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_scarabaeidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(пластинчатоусые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Пластинчатоусые - многочисленное разнообразное семейство жесткокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_coleoptera =>nrel_inclusion: concept_scarabaeidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Одним из наиболее отличительных и характерных признаков представителей которого, является особая форма строения усиков с 3—7-члениковой пластинчатой булавой, способной раскрываться в виде веера, передние голени копательные, на вершинах их развито не более одной вершинной шпоры.](* <- lang_ru;;*);;
+		*);;
+*);;

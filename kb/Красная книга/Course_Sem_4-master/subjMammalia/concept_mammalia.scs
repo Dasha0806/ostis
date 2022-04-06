@@ -1,0 +1,21 @@
+concept_mammalia => nrel_main_idtf:
+[млекопитающие](*<-lang_ru;;*);
+[mammalian](*<-lang_en;;*);
+[mammalia](*<-lang_lat;;*);;
+
+concept_class -> concept_mammalia;;
+
+concept_mammalia => nrel_inclusion: concept_rodentia; concept_artiodactyla; concept_chiroptera; concept_carnivora;;
+
+//определение и пояснения
+concept_mammalia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Млекопита́ющие — класс позвоночных животных, основной отличительной особенностью которых является вскармливание детёнышей молоком.](* <- lang_ru;; *);;
+		*);;
+*);;

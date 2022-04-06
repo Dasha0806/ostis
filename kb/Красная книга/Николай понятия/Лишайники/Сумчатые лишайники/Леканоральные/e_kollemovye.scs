@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_kollemovye;;
+concept_kollemovye => nrel_main_idtf:
+[коллемовые](*<-lang_ru;;*);
+[kollemovye](*<-lang_en;;*);;
+
+//
+concept_kollemovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(коллемовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка леканоральные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_lekanoralnye;;
+	*);;	
+*);;
+

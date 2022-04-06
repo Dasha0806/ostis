@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_saprophytes;;
+concept_saprophytes => nrel_main_idtf:
+[сапрофиты](*<-lang_ru;;*);
+[saprophytes](*<-lang_en;;*);;
+
+concept_saprophytes <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Сапрофиты)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [это организмы, питающиеся разлагающимися органическими веществами](* <- lang_ru;;*);;
+*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_organism;;
+    ->concept_organic;;
+*);;
+*);;
+
+
+
+
+
+	

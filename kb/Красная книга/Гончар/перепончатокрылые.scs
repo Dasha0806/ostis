@@ -1,0 +1,39 @@
+concept_hymenoptera=> nrel_main_idtf:
+[перепончатокрылые](*<-lang_ru;;*);
+[hymenoptera](*<-lang_lat;;*);;
+ 
+
+//определение и пояснение
+concept_hymenoptera <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(перепончатокрылые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Перепончатокрылые - один из крупнейших и наиболее развитых в эволюционном плане отрядов насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_hymenoptera;;
+concept_hymenoptera => nrel_inclusion: 
+concept_anthophoridae;
+concept_apidae;
+concept_formicidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Перепончатокрылые - насекомые, у которых из двух пар перепончатых крыльев задние меньше передних, крылья с редкой сетью жилок, редко без жилок, на переднем крае заднего крыла расположен ряд крючковидных зацепок, входящих в соответствующую им складку на заднем крае переднего крыла, грызущие и лижущие или только грызущие ротовые органы и полное превращение.](* <- lang_ru;;*);;
+		*);;
+*);;

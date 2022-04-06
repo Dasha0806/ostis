@@ -1,0 +1,136 @@
+concept_zerynthia_polyxena => nrel_main_idtf:
+[зеринтия поликсена](*<-lang_ru;;*);
+[nehalennia speciosa](*<-lang_lat;;*);
+[зярынція палiксена](*<-lang_bel;;*);;
+concept_zerynthia_polyxena => nrel_idtf:[зярынція палiксена](*<-lang_bel;;*);;
+
+concept_species -> concept_zerynthia_polyxena;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: zerynthia_polyxena;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_zerynthia_polyxena;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1775 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_zerynthia_polyxena <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Украины, в приложение II Бернской конвенции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Ксерофитные склоны и луга вдоль опушек долинных лесов в поймах рек с обязательным произрастанием кормового растения гусениц.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается в одном поколении. Лёт начинается в первых числах мая, в холодные годы задерживается на 1-2 недели. Период активности имаго ограничен приблизительно 2 неделями. Бабочки летают в солнечную погоду, держатся вблизи зарослей кормового растения гусениц. Самки откладывают по одному яйцу на нижнюю сторону листьев кирказона обыкновенного. Гусеницы развиваются в июне, окукливаются на стеблях кормовых растений. Зимует куколка.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Стабильно невысокий уровень.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Хозяйственная деятельность в поймах рек - интенсивное сенокошение, перевыпас скота, застройка мест обитания вида, весенние палы травы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходим запрет отлова вида; запрещение в окрестностях мест обитания вида выпаса скота, распашки и застройки лугов; ограничение рекреационной нагрузки, сплошного сенокошения.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Юг Европы на север до пояса широколиственных лесов, на восток до Южного Урала, Западный Кавказ, северное побережье Турции. С 1996 года 1 популяция известна из долины реки Днепр в Речицком р-не Гомельской обл. . Вероятны находки вида по долинам других рек юга Беларуси.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 28-35 мм. Основной тон крыльев желтый, жилки черные. Наружная часть крыльев с черным рисунком из чередующихся зигзагообразных черных и желтых полос. На передних крыльях центральную ячейку пересекают 4 черных пятна; поперек центральной части крыла проходит черная перевязь, на которой у переднего края крыла находится красное пятно. На задних крыльях на внутренней границе черного рисунка почти в каждой ячейке расположены сближенные красные и синие пятна. Туловище темное с характерным рисунком из оранжевых и красных пятен.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_zerynthia_polyxena <= nrel_spread: ... 
+	(*
+	-> Gomel_district;;
+	*);;
+
+concept_papilionidae => nrel_inclusion: concept_zerynthia_polyxena;;
+concept_zerynthia_polyxena => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; black;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; black; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; yellow; black;;
+*);;
+
+concept_zerynthia_polyxena <= nrel_inclusion: 
+	28_35_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (28_mm => 35_mm);;
+*);;
+28_mm <- length_of_body; exact_value;;
+28_mm -> .millimeter: 28 (* <- number;;*);;
+35_mm <- length_of_body; exact_value;;
+35_mm -> .millimeter: 35 (* <- number;;*);;			
+
+concept_zerynthia_polyxena <= nrel_inclusion: concept_1_protection_category;;

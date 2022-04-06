@@ -1,0 +1,151 @@
+concept_Margaritifera_margaritifera => nrel_main_idtf: [обыкновенная жемчужница](*<- lang_ru;;*); [Margaritifera margaritifera](*<- lang_lat;;*);;
+
+concept_Margaritifera_margaritifera  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (обыкновенная жемчужница)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_Margaritifera_margaritifera.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_Margaritifera_margaritifera <= nrel_inclusion: concept_bivalvia;;
+concept_animalia -> concept_Margaritifera_margaritifera ;;
+concept_species -> concept_Margaritifera_margaritifera ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_Margaritifera_margaritifera ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_Margaritifera_margaritifera ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_Margaritifera_margaritifera  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Крупный двустворчатый моллюск (длина раковины до 160 мм). Снаружи раковина темно-коричневая или черная (у молодых особей желто-зеленая), обычно удлиненная, овально-четырехугольная, слабо выпуклая. Макушки почти не выступают. Раковина у макушки, как правило, сильно разъедена и периостракум полностью разрушен, скульптура макушки видна только у самых молодых особей. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Реки Атлантического побережья сев.-вост. США, вост. Канады, зап. Европы, Балтии, Белорусии и лесной зоны сев.-зап. России. На территории России известна из Карелии, Мурманской, Ленинградской и Архангельской обл. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Предпочитает чистую воду со слабой минерализацией, бедную органикой, с быстрым течением. Грунт - галька с подложкой из песка. Взрослые моллюски располагаются на дне, зарывшись в грунт.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В Сев. Америке и зап. Европе численность ныне не превышает нескольких миллионов особей. В XX в. численность сократилась более чем на 90%. Наиболее крупные популяции остались в России: в реках Мурманской обл. (около 150 млн. особей) и Карелии (около 42 млн. особей). Плотность моллюсков до 200 экз./м2 речного дна. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Быстрое падение численности моллюсков, а местами полное их исчезновение вызваны браконьерским и промышленным ловом моллюсков, сведением лесов, внесением удобрений, пестицидов, лесосплавом, загрязнением воды промышленными стоками, кислотными дождями, мелиоративными работами в русле рек, эврофикацией, а также факторами, уменьшающими численность рыб-хозяев (перелов рыб, строительство плотин, акклиматизация других видов рыб и т.д.)  ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесена в Красный список МСОП-96, Европейский красный список, Приложение 3 Бернской конвенции. В Кандалакшском и Лапландском заповедниках, в Национальном парке "Панаярви" обитают небольшие ручьевые популяции жемчужницы. В конце 80-х гг. были предприняты попытки реакклиматизации моллюсков в некоторых реках сев. России, разработаны способы интенсификации воспроизводства в естественных водоемах и на базе лососевых хозяйств.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_Margaritifera_margaritifera  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> russia;;
+		*);;
+	*);;
+//части тела
+concept_Margaritifera_margaritifera  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; brown; black; green;;
+	*);;
+//размеры и вес
+concept_Margaritifera_margaritifera  <= nrel_inclusion: 
+	[10-13 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([10 см] => [16 см]);;	
+	*);
+	[0,090-0,110 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,090 кг] => [0,110 кг]);;	
+	*);;
+	[10 см] <- length_of_body; exact_value;;
+	[10 см] -> .centimeter: 10 (* <- number;;*);;
+	[16 см] <- length_of_body; exact_value;;
+	[16 см] -> .centimeter: 13 (* <- number;;*);;
+	[0,090 кг] <- weight; exact_value;;
+	[0,090 кг] -> .kilogram: 0.090 (* <- number;;*);;
+	[0,110 кг] <- weight; exact_value;;
+	[0,110 кг] -> .kilogram: 0.110 (* <- number;;*);;
+//категория охраны и количество
+concept_Margaritifera_margaritifera  <= nrel_inclusion: concept_2_protection_category;;
+concept_Margaritifera_margaritifera  <= nrel_strength: [500000000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 500000000 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

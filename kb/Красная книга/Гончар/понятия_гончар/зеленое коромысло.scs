@@ -1,0 +1,136 @@
+concept_aeschna_viridis => nrel_main_idtf:
+[зеленое коромысло](*<-lang_ru;;*);
+[aeschna viridis](*<-lang_lat;;*);
+[зялёны каромысел](*<-lang_bel;;*);;
+concept_aeschna_viridis => nrel_idtf:[зялёны каромысел](*<-lang_bel;;*);;
+
+concept_species -> concept_aeschna_viridis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: aeschna_viridis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_aeschna_viridis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1836 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_aeschna_viridis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красный список МСОП (LR/nt, ver. 2.3, 1994) и в Красную книгу Литвы. Охраняется в Европе (приложение II Бернской конвенции).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Встречается на низинных болотах и в поймах рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Взрослые насекомые - активные хищники. Добычу (комары, мошки) ловят во время лёта. Лёт и размножение в июне-июле. Личинки живут в стоячих (в том числе заболоченных) и слабопроточных водоемах с густой растительностью, питаются водными беспозвоночными, мальками рыб (могут наносить вред рыборазведению).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Редок на всей территории республики.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Вид приурочен к местам обитания, которые находятся под угрозой уничтожения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Выявление мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Транспалеарктический вид. В Беларуси распространен по всей территории .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Крупная пестроокрашенная стрекоза. Длина брюшка самца 48-52 мм, самки - 47-54 мм. Длина задних крыльев самца 38-41 мм, самки - 41-45 мм. Глаза соприкасаются друг с другом на некотором протяжении. Т-образное пятно на лбу неполное. Бока груди у самца и самки зеленые, без полос. Шов между лбом и наличником не зачернен. Верх груди самца с 2 широкими, зелеными полосами. Жилки крыльев черноватые. Яйцеклад самки с боковыми пластинками, его основная пластинка сзади без глубокой выемки.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_aeschna_viridis <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Brest_district; Vitebsk_district;;
+	*);;
+
+concept_aeschnidae => nrel_inclusion: concept_aeschna_viridis;;
+concept_aeschna_viridis => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; green; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_abdomen; bronze; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; bronze;;
+*);;
+
+concept_aeschna_viridis <= nrel_inclusion: 
+	47_54_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (47_mm => 54_mm);;
+*);;
+47_mm <- length_of_body; exact_value;;
+47_mm -> .millimeter: 47 (* <- number;;*);;
+54_mm <- length_of_body; exact_value;;
+54_mm -> .millimeter: 54 (* <- number;;*);;				
+
+concept_aeschna_viridis <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,55 @@
+concept_cladochaeta_candidissima => nrel_main_idtf:
+[Кладохета чистейшая](*<-lang_ru;;*);
+[Cladochaeta candidissima (Bieb.) DC.](*<-lang_lat;;*);;
+
+concept_species -> concept_cladochaeta_candidissima;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_cladochaeta_candidissima;;
+
+Red_list_ru -> concept_cladochaeta_candidissima;;
+
+//пояснения
+concept_cladochaeta_candidissima <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Оптимальные условия развития вида - в болотистой среде.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984), РСФСР (1978, 1988), Северной Осетии (1999) и Кабардино-Балкарии (2000). Встречается в заповеднике «Эрзи» (Ингушетия) и в охранной зоне Северо-Осетинского заповедника.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается на Большом Кавказе и в Предкавказье от предгорных равнин до межгорных котловин Северной юрской депрессии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый поликарпик с прямыми, слегка приподнимающимися стеблями 10-40 см выс. Цветет в июне-июле. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

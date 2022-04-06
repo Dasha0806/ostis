@@ -1,0 +1,45 @@
+concept_astragalus_aksaicus => nrel_main_idtf:
+[Астрагал аксайский](*<-lang_ru;;*);
+[Astragalus aksaicus](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_aksaicus;;
+
+
+Red_list_ru -> concept_astragalus_aksaicus;;
+
+//пояснения
+concept_astragalus_aksaicus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988). Вид внесен в Красную книгу Республики Алтай (1996).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России известно несколько местонахождений на территории Республики Алтай в верховьях р. Чуи: долины рек Аксай (откуда вид был описан), Ак-Кобу, Уландрык, Юстыд.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый поликарпик с разветвленным каудексом. Стебли многочисленные, 1-4 см дл. Цветет в июле, размножается семенами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_astragalus_aksaicus <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_sparassisovye;;
+concept_sparassisovye => nrel_main_idtf:
+[спарассисовые](*<-lang_ru;;*);
+[sparassisovye](*<-lang_en;;*);;
+
+//
+concept_sparassisovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(спарассисовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка кантареллальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_kantarellalnye;;
+	*);;	
+*);;
+
+//
+concept_sparassisovye => nrel_inclusion:
+    concept_sparassis_crispa;
+    concept_sparassis_sparassis_laminam;;

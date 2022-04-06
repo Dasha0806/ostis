@@ -1,0 +1,79 @@
+sc_node_not_relation -> lonno;;
+
+lonno => nrel_main_idtf: [заказник Лонно] (* <- lang_ru;; *);
+				     [Lonno] (* <- lang_en;; *);;
+
+lonno <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Лонно)](*<-lang_ru;;*);
+		[Pic. (Lonno)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpeg"(*=>nrel_format:format_jpeg;;*);;
+	*);;
+*);;
+lonno<-concept_sanctuary;;
+
+lonno <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лонно, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Появился заказник Лонно в 1979 году с целью проведения охранных мероприятий в области обильного произрастания клюквы.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							lonno=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+lonno <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лонно, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Лонно составляет 439 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							lonno=>nrel_square:[439 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[439](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+lonno => nrel_area_location: Vitebsk_area;;
+lonno => nrel_flora: ...(*
+<-Oxycoccus;;*);;
+
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: lonno;;

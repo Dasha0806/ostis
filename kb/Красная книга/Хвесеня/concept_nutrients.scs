@@ -1,0 +1,23 @@
+sc_node_not_relation ->  concept_nutrients;;
+concept_nutrients => nrel_main_idtf:
+[питательные вещества](*<-lang_ru;;*);
+[nutrients](*<-lang_en;;*);;
+
+concept_hypha <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(питательное вещество )](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ это вещество, используемое организмом для выживания, роста и размножения](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_living_organism;;
+    ->nrel_height;;
+*);;
+*);;
+

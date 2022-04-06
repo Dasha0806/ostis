@@ -1,0 +1,22 @@
+concept_pelecaniformes => nrel_main_idtf:
+[пеликанообразные](*<-lang_ru;;*);
+[pelecaniformes](*<-lang_lat;;*);;
+
+concept_order -> concept_pelecaniformes;;
+
+concept_pelecaniformes => nrel_inclusion: concept_pelecanus; concept_phalacrocoracidae;;
+
+//определение и пояснения
+concept_pelecaniformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Пеликанообразные - отряд новонёбных птиц. Как правило, они живут вблизи водоёмов и питаются рыбой.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_pelecaniformes;;

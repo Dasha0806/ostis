@@ -1,0 +1,22 @@
+concept_rodentia => nrel_main_idtf:
+[грызуны](*<-lang_ru;;*);
+[rodentia](*<-lang_lat;;*);;
+
+concept_order -> concept_rodentia;;
+
+concept_rodentia => nrel_inclusion: concept_myoxidae;  concept_sciuridae; concept_cricetidae;;
+
+//определение и пояснения
+concept_rodentia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Грызуны - отряд млекопитающих. Отличительным признаком представителей отряда является наличие диастемы и по одной паре крупных резцов в верхней и нижней челюстях..](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_rodentia;;

@@ -1,0 +1,138 @@
+concept_chariaspilates_formosaria => nrel_main_idtf:
+[красивая пяденица](*<-lang_ru;;*);
+[chariaspilates formosaria](*<-lang_lat;;*);
+[прыгожы пядзенік](*<-lang_bel;;*);;
+concept_chariaspilates_formosaria => nrel_idtf:[прыгожы пядзенік](*<-lang_bel;;*);;
+
+concept_species -> concept_chariaspilates_formosaria;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: chariaspilates_formosaria;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_chariaspilates_formosaria;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1837 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_chariaspilates_formosaria <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Переходные и низинные болота, реже заболоченные луга и лесные опушки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Лёт длится с конца июня до конца первой декады августа. Самка откладывает яйца цепочками на листья и стебли кормового растения гусениц, которые развиваются с середины июля до поздней осени и после зимовки до мая на вербейнике и, возможно, на калужнице болотной.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:На болоте «Званец» в пик лёта на свет прилетает до 15 экз. за ночь, в других известных пунктах попадается единично. В связи с осушением болот численность сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, интенсивное сенокошение, весенние палы на болотах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Охраняется в Березинском заповеднике, Национальном парке «Беловежская пуща», биологическом заказнике «Званец». Необходимо ограничение осушительной мелиорации; запрещение сплошного сенокошения в местах обитания вида; введение повышенных штрафных санкций за причинение вреда основным стациям вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Европа (исключая север и юго-запад), Урал, через южную Сибирь, Китай до побережья Тихого океана, Японские острова. В Беларуси известен по немногочисленным находкам по югу , из Березинского биосферного заповедника и окрестностей г. Витебск .
+
+](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Длина переднего крыла 18-22 мм. Тело бабочки серовато-бледно-желтое, грудка с коричневатым опушением. Основной фон верха передних крыльев золотисто-желтый, густо усыпан мелкими коричневатыми точками. От вершины к середине нижнего края тянется косая темная линия, отороченная по всей длине коричневатым снаружи и серебристым изнутри. Передний и наружный края с серо-серебристым напылением. У переднего края темный поперечный штрих. Задние крылья сверху серовато-бледно-желтые с темными срединной точкой и поперечной линией, расположенной ближе к внешнему краю, между которыми крыло густо усыпано мелкими точками и штрихами. Бахромка серо-коричневая.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_chariaspilates_formosaria <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Brest_district; Vitebsk_district;;
+	*);;
+
+concept_geometridae => nrel_inclusion: concept_chariaspilates_formosaria;;
+concept_chariaspilates_formosaria => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; brown; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; grey; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; yellow;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; gold; yellow;;
+*);;
+
+concept_chariaspilates_formosaria <= nrel_inclusion: 
+	18_22_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (18_mm => 22_mm);;
+*);;
+18_mm <- length_of_body; exact_value;;
+18_mm -> .millimeter: 18 (* <- number;;*);;
+22_mm <- length_of_body; exact_value;;
+22_mm -> .millimeter: 22 (* <- number;;*);;			
+
+concept_chariaspilates_formosaria <= nrel_inclusion: concept_3_protection_category;;

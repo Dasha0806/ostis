@@ -1,0 +1,163 @@
+concept_allium_paradoxum => nrel_main_idtf:
+[лук странный](*<-lang_ru;;*);
+[allium paradoxum](*<-lang_lat;;*);;
+
+
+concept_species -> concept_allium_paradoxum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_allium_paradoxum;;
+
+//пояснения
+concept_allium_paradoxum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 3 д — редкий вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Луковичный многолетник 10-20 см выс. Ранневесенний эфемероид. Цветет в марте-апреле. Размножается семенами, луковицами, но чаще луковичками, образующимися в соцветиях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Распространение. В России основной ареал приходится на предгорные р-ны Дагестана от Каспийского побережья к западу до окр. ст. Вознесенской на Терском хр. Чеченской Республики (7), а также на Сунженском хр. в Республике Север­ ная Осетия-Алания (1-6). Вне России вид распространен в Закавказье, на севере Ирана и на Копетдаге в Средней Азии (8).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает в дубовых, дубово-грабовых предгорных лесах в нижнем и среднем поясе. Мезофит.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Является одним из доминантов травяного покрова предгорных лесов в весенний период. Общая численность составляет свыше 500 тыс. экз.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Численность популяций, расположенных вблизи населенных пунктов, резко сокращается вследствие сбора населением цветущих растений в массовом количестве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Сбор в качестве пищевого и лекарственного растения.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республик: Дагестан (1998), Северная Осетия-Алания (1999).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Организация охраны природных местообитаний вида. Запрет сбора растений.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Культивируется в 7 ботанических садах: Санкт-Петербурга (БИН РАН и СПбГУ), Москвы (МГУ, ММА, ГБС РАН), Махачкалы (ГорБС ДагНЦ РАН) и Пятигорска. В культуре хорошо размножается луковичками (8). Необходимо широкое внедрение вида в культуру.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_allium_paradoxum <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_allium_paradoxum;;
+						concept_allium_paradoxum => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_allium_paradoxum <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_allium_paradoxum <= nrel_inclusion: concept_3_protection_category;;

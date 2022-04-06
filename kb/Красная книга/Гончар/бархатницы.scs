@@ -1,0 +1,36 @@
+concept_satyridae=> nrel_main_idtf:
+[бархатницы](*<-lang_ru;;*);
+[satyridae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_satyridae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(бархатницы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Бархатницы - семейство дневных бабочек отряда чешуекрылые.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_satyridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Небольшие или средней величины бабочки с широкими округлыми крыльями. Окраска преимущественно коричневая, бурая, серая, желтовато-оранжевая, охристо-жёлтая.](* <- lang_ru;;*);;
+		*);;
+*);;

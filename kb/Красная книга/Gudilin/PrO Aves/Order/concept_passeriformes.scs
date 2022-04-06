@@ -1,0 +1,22 @@
+concept_passeriformes => nrel_main_idtf:
+[воробьинообразные](*<-lang_ru;;*);
+[passeriformes](*<-lang_lat;;*);;
+
+concept_order -> concept_passeriformes;;
+
+concept_passeriformes => nrel_inclusion: concept_alaudidae; concept_motacillidae; concept_sylviidae; concept_muscicapidae; concept_timaliidae; concept_paridae; concept_laniidae; concept_emberizidae;;
+
+//определение и пояснения
+concept_passeriformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Воробьинообразные - отряд птиц. Преимущественно мелкие и средней величины птицы, значительно различающиеся по внешнему виду, образу жизни, условиям обитания и способам добывания пищи.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_passeriformes;;

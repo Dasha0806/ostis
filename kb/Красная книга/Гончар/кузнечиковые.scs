@@ -1,0 +1,36 @@
+concept_tettigoniidae=> nrel_main_idtf:
+[кузнечиковые](*<-lang_ru;;*);
+[tettigoniidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_tettigoniidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(кузнечиковые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_orthoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Кузнечиковые - семейство насекомых отряда прямокрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_orthoptera =>nrel_inclusion: concept_tettigoniidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Задние ноги прыгательные. Надкрылья, если они развиты, лежат на теле кровлеобразно.](* <- lang_ru;;*);;
+		*);;
+*);;

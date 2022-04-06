@@ -1,0 +1,163 @@
+concept_siphonocladus_pusillus => nrel_main_idtf:
+[сифонокладус крохотный](*<-lang_ru;;*);
+[siphonocladus pusillus](*<-lang_lat;;*);;
+
+
+concept_species -> concept_siphonocladus_pusillus;;
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_tokidaea_serrata;;
+
+//пояснения
+concept_siphonocladus_pusillus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 2 а - вид, сокращающейся в численности из-за разрушений местообитаний.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Таллом одиночный или образует дерновинки со стелящимся основанием, состоящим из разветвленных нитей. Эти нити имеют поперечные перегородки и содержат хлоропласты. На концах нитей развиваются присоски с бахромчатыми краями. От нитей поднимаются вертикальные побеги булавовидной или цилиндрической формы, 1-3 см дл. и около 1 мм толщ. Вертикальные побеги горизонтальными или косыми перегородками разделены на небольшое число сегментов, которые могут прорастать в боковые ветви; чаще одноклеточные и короткие. Зооспоры или апланоспоры развиваются в верхушечных или боковых сегментах (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В акватории России встречается только на Российском побережье Черного моря (Кавказ) (1, 2). Вне территории России встречается в Черном (1, 3, 4), Средиземном (1, 3), Красном морях (5).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. Произрастает на ракушечнике, в нижнем горизонте сублиторали на глубине 8- 12 м, или на талломах Cystoseira spp. на глубине до 2 м (1). Нижне-бореальный вид (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Нет данных.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Нет данных.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможность культивирования. Нет данных.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_siphonocladus_pusillus <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_siphonocladus_pusillus;;
+						concept_siphonocladus_pusillus => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_siphonocladus_pusillus <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_siphonocladus_pusillus <= nrel_inclusion: concept_2_protection_category;;

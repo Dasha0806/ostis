@@ -1,0 +1,101 @@
+concept_leptogum
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[лептогиум]
+	(*<-lang_ru;;*);
+	[leptogum]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[лептогиум]
+	(*<-lang_ru;;*);
+	[leptogum]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (лептогиум) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[лептогиум — род лишайников. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о лептогиум) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  На поверхности гомеомерного слоевища развивается крупноклеточный коровой слой, состоящий из одного или нескольких рядов клеток.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_anthem_carp -> concept_leptogum;;
+concept_genus -> concept_leptogum;;
+concept_leptogum => nrel_inclusion: concept_leptogium_burnetiae;;
+concept_leptogum => nrel_inclusion: concept_leptogium_hildenbrandii;;
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_leptogum;;
+
+
+
+//Рисунок
+concept_leptogum <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род лептогиум)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_leptogum.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_leptogum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Слоевища темно-зеленые, оливково-коричневые или снинцово-серые, преимущественно листоватые.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Апотеции леканорового типа, красно-коричневые, бурые или рыжие. Споры бесцветные, поперечно-многоклеточные до муральных   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_leptogum <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//Части тела
+
+
+//описание длин
+//concept_leptogum <= nrel_inclusion: 
+//    [0-3.6 кг]
+//    (*
+//        <- interval_value;;
+//        <- weight;;
+//        => nrel_measurement: ([0 кг] => [3.6 кг]);;
+//    *);;
+//    [0 кг] <- length_of_life; exact_value;;
+//	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+//	[3.6 кг] <- length_of_life; exact_value;;
+//	[3.6 кг] -> .kilogram: 3.6 (* <- number;;*);;

@@ -1,0 +1,126 @@
+concept_utriusque_kalvatsiya => nrel_main_idtf:
+[кальвация гигантская](*<-lang_ru;;*);
+[utriusque kalvatsiya](*<-lang_lat;;*);
+[галавач гiганцкi](*<-lang_bel;;*);;
+concept_utriusque_kalvatsiya => nrel_idtf:[галавач гiганцкi](*<-lang_bel;;*);;
+
+plants -> concept_utriusque_kalvatsiya;;
+concept_species -> concept_utriusque_kalvatsiya;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_utriusque_kalvatsiya;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_utriusque_kalvatsiya;;
+	-> rrel_3: 1993 (*<- number;;*);;
+	*);;
+
+//пояснения
+concept_utriusque_kalvatsiya <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Литве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в основном в лиственных лесах, иногда на открытых местах (полях, лугах и в парках), на плодородных почвах, в условиях умеренного увлажнения. Нитрофил.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодовые тела развиваются в июле - сентябре. Съедобен.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются единичными экземплярами, очень редко по 2-3 в одном месте. При этом, появившись в каком-либо месте, гриб может или совсем исчезнуть или не появляться в течение длительного времени .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение условий роста под воздействием антропогенных факторов (уплотнение и загрязнение почвы).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо образование в местах роста вида специализированных микологических заказников, запрещение несанкционированного сбора плодовых тел. Следует периодически проводить ревизию и эколого-биологический контроль состояния известных популяций, осуществлять поиск новых местонахождений. Рекомендуется выращивать в культуре (есть опыт выращивания в Ботаническом институте Российской АН).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический вид. Ареал охватывает Европу, Азию, Северную Америку . В Беларуси известны следующие местонахождения: Витебская обл. (Витебский р-н; Шумилинский р-н, окрестности п. Шумилино, Глубокский р-н), Минская обл. (Минск; Дзержинский р-н, окрестности д. Рутамполь) .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовые тела высотой 50-60 см, шароподобные, приплюснутые, сидячие, складчатые, со слабо развитой стерильной тканью и толстым корневидным тяжом мицелия у основания. Перидий (оболочка) двухслойный. Экзоперидий тонкий, белый, постепенно буреет, в стадии зрелости сохраняется только около основания. Эндоперидий толстый, мягкий, белый или бурый, хрупкий, обламывается. Глеба мягкая, мясистая, губчатая, белая, с приятным запахом и вкусом, спелая оливково-бурая, порошковидная. Капелиции с толстыми стенками, имеются перегородки. Споры 3,5 6 мкм, шаровидные, гладкие или шероховатые, буро-коричневые.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_utriusque_kalvatsiya <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Vitebsk_district;;
+	*);;
+
+concept_dozhdevikovye => nrel_inclusion: concept_utriusque_kalvatsiya;;
+concept_utriusque_kalvatsiya => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_body; spherical; grey; white;;
+	*);;
+
+concept_utriusque_kalvatsiya <= nrel_inclusion: 
+	50_60_cm
+	(*
+	<- interval_value;;
+	<- body_height;;
+	=> nrel_measurement: (50_cm => 60_cm);;	
+	*);;
+	50_cm <- body_height; exact_value;;
+	50_cm -> .centimeter: 50 (* <- number;;*);;
+	60_cm <- body_height; exact_value;;
+	60_cm -> .centimeter: 60 (* <- number;;*);;				
+
+concept_utriusque_kalvatsiya <= nrel_inclusion: concept_3_protection_category;;
+

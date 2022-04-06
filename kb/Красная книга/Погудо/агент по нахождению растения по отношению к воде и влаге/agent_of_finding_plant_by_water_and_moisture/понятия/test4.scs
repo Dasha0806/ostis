@@ -1,0 +1,9 @@
+concept_pygach<-concept_plant;;
+concept_pygach=>nrel_water:concept_gigrofit;; 
+concept_pygach=>nrel_moisture:concept_acidofil;;
+concept_acidofil<-concept_organic;;
+
+
+concept_pygach=> nrel_main_idtf:
+[пугач](*<-lang_ru;;*);
+[pygach](*<-lang_lat;;*);;

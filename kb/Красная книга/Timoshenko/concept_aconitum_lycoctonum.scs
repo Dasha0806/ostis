@@ -1,0 +1,149 @@
+concept_aconitum_lycoctonum => nrel_main_idtf:
+[борец обыкновенный](*<-lang_ru;;*);
+[aconitum lycoctonum](*<-lang_lat;;*);
+[боцiкi звычайныя](*<-lang_bel;;*);;
+
+concept_species -> concept_aconitum_lycoctonum;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_aconitum_lycoctonum;;
+
+//пояснения
+concept_aconitum_lycoctonum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с толстым коротким корневищем и ребристым опушенным стеблем высотой до 2 м. Листья крупные, длиной до 15 см и шириной до 25 см. Цветки грязно- или серовато-фиолетовые, собраны в рыхлую, в нижней части ветвистую, колосовидную кисть. Цветоножки и обычно ось соцветия покрыты оттопыренными прямыми простыми железистыми волосками. Чашелистики окрашенные, лепестковидные: верхний - высокий, коническо-цилиндрический, шлемовидый. Плод - многосемянная голая листовка .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Евросибирский бореально-таежный реликтовый вид, распространенный в Скандинавии, Восточной Европе, Западной и Восточной Сибири . Ранее высказывалось предположение о вероятном нахождении вида в Беларуси . Сравнительно недавно борец обыкновенный выявлен в окрестностях г. Витебск . Данное местонахождение представляет отдельный локалитет за юго-западной границей ареала вида .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Тенистый овражный берег небольшой реки, в зарослях ольхи серой; растет на рыхлой богатой гумусом почве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в конце мая - июне, плодоносит в августе. Опыляется насекомыми (энтомофил). Размножение семенное. Баллист-анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В единственной известной популяции произрастает небольшими группами и отдельными экземплярами на малой площади.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Антропогенные: гидромелиоративные и строительные работы, хозяйственная трансформация земель, повышенные рекреационные нагрузки, все виды рубок леса.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимы организация специализированного ботанического заказника в окрестностях Витебска и постоянный эколого-биологический контроль известной популяции, предотвращение в месте роста негативных антропогенных воздействий, выявление новых мест произрастания и, при необходимости, организация их охраны; целесообразно сохранение генофонда вида в условиях культуры; рекомендуется введение вида в культуру в качестве лекарственного и декоративного растения.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_aconitum_lycoctonum <= nrel_spread: ... 
+	(*
+	-> Vitebsk_city;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_aconitum_lycoctonum;;
+						concept_aconitum_lycoctonum => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; multisweated;;
+							*);;
+
+concept_aconitum_lycoctonum <= nrel_inclusion: 
+	0_15_cm
+	(*
+	<- interval_value;;
+	<- length_of_leaf (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 15_cm);;
+	*);;
+	concept_aconitum_lycoctonum <= nrel_inclusion: 
+	0_200_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (0_cm => 200_cm);;
+	*);;
+
+	0_cm <- length_of_leaf; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	15_cm <- length_of_leaf; exact_value;;
+	15_cm -> nrel_cm: 15 (* <- number;;*);;
+	0_cm <- length_of_stem; exact_value;;
+	0_cm -> nrel_cm: 0 (* <- number;;*);;
+	200_cm <- length_of_stem; exact_value;;
+	200_cm -> nrel_cm: 200 (* <- number;;*);;					
+
+concept_aconitum_lycoctonum <= nrel_inclusion: concept_1_protection_category;;

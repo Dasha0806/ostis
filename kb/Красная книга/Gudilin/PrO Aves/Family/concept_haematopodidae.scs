@@ -1,0 +1,22 @@
+concept_haematopodidae => nrel_main_idtf:
+[кулики-сороки](*<-lang_ru;;*);
+[haematopodidae](*<-lang_lat;;*);;
+
+concept_family -> concept_haematopodidae;;
+
+concept_haematopodidae => nrel_inclusion: concept_haematopus_ostralegus;;
+
+//определение и пояснения
+concept_haematopodidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Кулики-сороки — крупные коренастые птицы, бродящие по мелководью. У них примечательное оперение, окрашенное в чёрно-белый, чёрный или коричневатый цвет. Некоторые виды имеют белые обрамления на крыльях. У куликов-сорок нет полового диморфизма, у самцов и самок одинаковое оперение. Лапы и клюв у обоих полов красные, оранжевые или розовые. Клюв у всех видов сильный и длинный, приспособленный к тому, чтобы разбивать о камни мидий и разделывать раков. У некоторых видов имеются ярко-оранжевые круги вокруг глаз.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_haematopodidae;;

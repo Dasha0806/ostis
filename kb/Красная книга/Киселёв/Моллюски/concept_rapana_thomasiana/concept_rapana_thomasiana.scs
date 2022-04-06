@@ -1,0 +1,151 @@
+concept_rapana_thomasiana => nrel_main_idtf: [кийская амуранодонта](*<- lang_ru;;*); [amuranodonta kijaensi](*<- lang_lat;;*);;
+
+concept_rapana_thomasiana  <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (кийская амуранодонта)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_rapana_thomasiana.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+concept_rapana_thomasiana <= nrel_inclusion: concept_gastropoda;;
+
+concept_animalia -> concept_rapana_thomasiana ;;
+concept_species -> concept_rapana_thomasiana ;;
+subject_domain_of_mollusca -> rrel_not_maximum_studied_object_class: concept_rapana_thomasiana ;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_rapana_thomasiana ;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1978 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_rapana_thomasiana  <- rrel_key_sc_element:
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Раковина с 7-8 ступенчатыми оборотами, разделенными неглубоким швом. Окраска раковины варьирует от светло-желтой до красновато-коричневой, иногда с темными полосами, пятнами или пунктирными линиями. Скульптура состоит из неровных по своей величине спиральных ребер, из которых плечевое выступает и снабжено шипами или вогнутыми лопастями.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Западно-тихоокеанский приазиатский субтропический вид. Встречается в сев. части Восточно-Китайского, Желтом, зап., юж. и вост. частях Японского морей. Для акватории России известна из зал. Посьета. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания:	 Обитает на глубинах от 0.5 до 7-10 м на каменистых, гравийно-галечных, ракушечных, песчанистых и илисто-песчаных грунтах, при температурах от отрицательной (зимой) до +26°C (летом) и при солености 25-32‰. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Дальневосточная популяция находится под угрозой исчезновения, на что указывает факт крайне редких находок вида в последние десятилетия у берегов юж. Приморья. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Основной лимитирующий фактор здесь - любительский лов. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в акватории Дальневосточного морского заповедника. ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_rapana_thomasiana  <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> japan; russia;;
+		*);;
+	*);;
+//части тела
+concept_rapana_thomasiana  => nrel_part: 		
+	...
+	(*
+	<= nrel_inclusion: concept_shell; striped; red;;
+	*);;
+//размеры и вес
+concept_rapana_thomasiana  <= nrel_inclusion: 
+	[14-16 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([14 см] => [16 см]);;	
+	*);
+	[0,080-0,110 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0,090 кг] => [0,110 кг]);;	
+	*);;
+	[14 см] <- length_of_body; exact_value;;
+	[14 см] -> .centimeter: 14 (* <- number;;*);;
+	[16 см] <- length_of_body; exact_value;;
+	[16 см] -> .centimeter: 16 (* <- number;;*);;
+	[0,090 кг] <- weight; exact_value;;
+	[0,090 кг] -> .kilogram: 0.090 (* <- number;;*);;
+	[0,110 кг] <- weight; exact_value;;
+	[0,110 кг] -> .kilogram: 0.110 (* <- number;;*);;
+//категория охраны и количество
+concept_rapana_thomasiana  <= nrel_inclusion: concept_1_protection_category;;
+concept_rapana_thomasiana  <= nrel_strength: [500 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 500 (* <- number;;*);;
+		*);;	
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

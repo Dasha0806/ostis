@@ -1,0 +1,136 @@
+concept_erebia_aethiops => nrel_main_idtf:
+[чернушка эфиопка](*<-lang_ru;;*);
+[erebia aethiops](*<-lang_lat;;*);
+[чарнушка эфіопка](*<-lang_bel;;*);;
+concept_erebia_aethiops => nrel_idtf:[чарнушка эфіопка](*<-lang_bel;;*);;
+
+concept_species -> concept_erebia_aethiops;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: erebia_aethiops;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_erebia_aethiops;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1777 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_erebia_aethiops <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Литвы и Московской области.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Старые хвойные леса в холмистой местности, преимущественно светлые сухие боры, по полянам, опушкам, обочинам лесных дорог.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается в одном поколении. Лёт длится с середины июня до конца августа. Гусеницы появляются в конце лета, осенью и после зимовки до июня развиваются на многих дикорастущих злаках (мятлик, вейник, трясунка, пахучеколосник, молиния и др.). Окукливание в хрупкой герметичной оболочке в свернутых листьях или во мху.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Чрезвычайно низкая, сокращается. В настоящее время известен лишь из окрестностей г. Гродно как очень редкий вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Сокращение площади старых лесов, выпас скота, весенние палы травы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (IV категория). Охраняется в Национальном парке «Беловежская пуща». Необходимо сохранение старых участков лесов, как резерватов редких коренных видов; ревизия всех известных местообитаний с последующим (при подтверждении обитаниия вида) ограждением их от работ, ведущих к трансформации биотопов; введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Южной (исключая Испанию и Португалию) и Центральной Европы через Малую Азию, Урал до Саян. На территории Беларуси распространен локально, отмечен лишь в Беловежской пуще, окрестностях городов Столбцы , Гродно, Жодино и вблизи Новогрудка .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Бабочка среднего размера, длина переднего крыла 22-27 мм. Верхняя сторона крыльев темно-коричневая, по внешнему краю на рыжем фоне цепочка мелких серых глазков с белыми по центру точками. Количество глазков варьирует от 3 до 5 на каждом крыле. Снизу окраска крыльев более светлая, на заднем крыле с 2 широкими зубчатыми полосами у основания и в центре и слабо выраженными глазками.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_erebia_aethiops <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Grodno_district;;
+	*);;
+
+concept_satyridae => nrel_inclusion: concept_erebia_aethiops;;
+concept_erebia_aethiops => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; black; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; brown; orange;;
+*);;
+
+concept_erebia_aethiops <= nrel_inclusion: 
+	22_27_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (22_mm => 27_mm);;
+*);;
+22_mm <- length_of_body; exact_value;;
+22_mm -> .millimeter: 22 (* <- number;;*);;
+27_mm <- length_of_body; exact_value;;
+27_mm -> .millimeter: 27 (* <- number;;*);;				
+
+concept_erebia_aethiops <= nrel_inclusion: concept_2_protection_category;;

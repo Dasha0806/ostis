@@ -1,0 +1,138 @@
+concept_polyergus_rufescens=> nrel_main_idtf:
+[муравей амазонка](*<-lang_ru;;*);
+[polyergus rufescens](*<-lang_lat;;*);;
+
+concept_species -> concept_polyergus_rufescens;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_polyergus_rufescens;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_polyergus_rufescens;;
+	-> rrel_number_of_year: 1805 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_polyergus_rufescens <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Умеренно влажные хвойные и лиственные леса. Муравейники строят на опушках, просеках, разреженных участках лесных биотопов. Избегают участков сильного затенения и полностью открытых мест.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездо муравьев состоит из 2 частей: надземной (в пне, гнилом бревне, основании живого подсыхающего дерева) и подземной. Вид является облигатным социальным паразитом - «рабовладельцем». В качестве рабов используются муравьи вида Formica fusca. В походах за куколками этого вида участвует до 2 тыс. муравьев-амазонок. Вылет крылатых особей в середине - конце июля.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Очень редок, встречаются одиночные муравейники.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Не установлены.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (IV категория). Организация заказников в известных местах проживания вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Средняя и юж. Европа, степная зона Зап. Сибири. По территории Беларуси проходит сев. граница ареала. Известен из Лунинецкого, Жабинковского и Ельского районов .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Тело рабочих особей (длина 5,5-6 мм) коричнево-красное, с черными оттопыренными волосками. Мандибулы саблеподобные. Самки (длина 8-9 мм) коричневато-красные, самцы (6-7,5 мм) черные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_polyergus_rufescens <= nrel_spread: ... 
+	(*
+	-> Lyninec_district; Jabin_district; Elsk_district;;
+	*);;
+
+concept_formicidae => nrel_inclusion: concept_polyergus_rufescens;;
+concept_polyergus_rufescens => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_wings; transparent; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; brown; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown; red;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; brown; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; brown; red;;
+	*);;
+
+concept_polyergus_rufescens <= nrel_inclusion: 
+	5_9_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (5_mm => 9_mm);;	
+	*);;
+	5_mm <- length_of_body; exact_value;;
+	5_mm -> .millimeter: 5 (* <- number;;*);;
+	9_mm <- length_of_body; exact_value;;
+	9_mm -> .millimeter: 9 (* <- number;;*);;	
+
+concept_polyergus_rufescens <= nrel_inclusion: concept_3_protection_category;;

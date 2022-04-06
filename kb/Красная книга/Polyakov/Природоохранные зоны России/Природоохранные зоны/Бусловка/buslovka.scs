@@ -1,0 +1,78 @@
+sc_node_not_relation -> buslovka;;
+
+buslovka => nrel_main_idtf: [заказник Бусловка] (* <- lang_ru;; *);
+				     [Buslovka] (* <- lang_en;; *);;
+ concept_territorry->buslovka;;
+buslovka <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Бусловка)](*<-lang_ru;;*);
+		[Pic. (Buslovka)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://buslovka_zakaznik_0.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+buslovka<-concept_sanctuary;;
+
+buslovka <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Бусловка, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[осударственный биологический заказник Бусловка был образован в 1997 году на территории Пружанского и Берёзовского районов Брестской области.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							buslovka=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1997(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+buslovka <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Бусловка, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Бусловки составляет 7935,9 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							buslovka=>nrel_square:[7935,9 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[7935,9](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+buslovka => nrel_area_location: Brest_area;;
+buslovka => nrel_flora: ...(*
+<-concept_iris_sibirica_l;concept_listera_ovata_l_r_br;concept_lilium_martagon_l;;
+*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: buslovka;;

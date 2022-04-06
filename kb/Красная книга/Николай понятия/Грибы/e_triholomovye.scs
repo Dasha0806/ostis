@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_triholomovye;;
+concept_triholomovye => nrel_main_idtf:
+[трихоломовые](*<-lang_ru;;*);
+[triholomovye](*<-lang_en;;*);;
+
+//
+concept_triholomovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(трихоломовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка агарикальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_agarikalnye;;
+	*);;	
+*);;
+
+//
+concept_triholomovye => nrel_inclusion:
+     concept_sordidum_lepisto;
+     concept_calocybe_hyacintho;;

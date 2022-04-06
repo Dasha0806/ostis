@@ -1,0 +1,60 @@
+
+nrel_type_of_eating
+<-sc_node_norole_relation;
+=>nrel_main_idtf:[type of eating*](*<-lang_en;;*);
+                 [тип питания*](*<-lang_ru;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+
+=>nrel_main_idtf:
+[Опр.(тип питания)](*<-lang_ru;;*);;
+=>nrel_using_constants:{
+        concept_food;
+	concept_living_organism
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:
+[	<b>Тип питания</b> - тип поддержание жизни и здоровья <b><sc_element sys_idtf="concept_living_organism">живого организма</b></sc_element> с помощью <b><sc_element sys_idtf="concept_food">пищи</b></sc_element>. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:[Утв.(Тип питания)](*<-lang_ru;;*);;
+
+=>nrel_using_constants:{
+
+	concept_animalia;
+	concept_class
+
+};;
+<=nrel_sc_text_translation:...(*
+	->rrel_example:[ <b><sc_element sys_idtf="concept_animalia">Животные</b></sc_element> и другие гетеротрофные организмы должны есть, чтобы выжить; их рацион и процесс поглощения питательных веществ зависит от биологического <b><sc_element sys_idtf="concept_class">класса</b></sc_element>. ](* <- lang_ru;; => nrel_format: format_html;;*);;
+*);;
+*);
+
+=>nrel_definitional_domain:...(*
+	<=nrel_combination:{ concept_animal(*<=nrel_first_domain:nrel_type_of_eating;;*);
+ 	concept_nutrition(*<=nrel_second_domain:nrel_type_of_eating;;*)
+};;
+*);;
+nrel_type_of_eating<-asymmetric_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_type_of_eating<-antitransitive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_type_of_eating<-antireflexive_relation(*<=nrel_inclusion:binary_relation(*<=nrel_inclusion:relation;;*);;*);;
+nrel_type_of_eating<-oriented_relation(*<=nrel_inclusion:relation;;*);; 
+
+
+
+arity->...(*=>nrel_measurement:2;;
+	->nrel_type_of_eating;;
+*);;
+
+                          
+
+
+concept_nutrition<-sc_node_not_relation;
+=>nrel_main_idtf:
+[питание] (*<-lang_ru;;*);
+[nutrition] (*<-lang_en;;*);;
+
+

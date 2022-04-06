@@ -1,0 +1,55 @@
+concept_medicago_cancellata_bieb => nrel_main_idtf:
+[Люцерна решетчатая](*<-lang_ru;;*);
+[Medicago cancellata Bieb](*<-lang_lat;;*);;
+
+concept_species -> concept_medicago_cancellata_bieb;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_medicago_cancellata_bieb;;
+
+Red_list_ru -> concept_medicago_cancellata_bieb;;
+
+//пояснения
+concept_medicago_cancellata_bieb <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Общее число генеративных особей по всему ареалу, в том числе в Айтуарской степи более 500 генеративных особей.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республики Башкортостан (2001), Ставропольского края (2002), Волгоградской (2006) и Оренбургской (1998) областей. Охраняется на территории филиала Оренбургского степного заповедника «Айтуарская степь» и памятника природы «Ярыш-тау» в Башкирии .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Ареал вида диффузный в виде серии отдельных местонахождений в степной зоне европейской части России.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый поликарпик 15-40 см выс. Цветет в конце мая - начале июня. Массовое цветение в июне. Семена созревают в июле, сохраняют всхожесть в почве до 10 лет.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

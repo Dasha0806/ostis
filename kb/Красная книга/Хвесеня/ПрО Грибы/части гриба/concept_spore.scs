@@ -1,0 +1,24 @@
+sc_node_not_relation ->  concept_spore;;
+concept_spore => nrel_main_idtf:
+[споры](*<-lang_ru;;*);
+[spore](*<-lang_en;;*);;
+
+concept_spore <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(споры)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [ клетки растений и грибов, служащие для их размножения и рассеяния](* <- lang_ru;; 	*);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_fungos;;
+	->concept_plantae;;
+	->concept_reproduction;;
+
+*);;
+*);;

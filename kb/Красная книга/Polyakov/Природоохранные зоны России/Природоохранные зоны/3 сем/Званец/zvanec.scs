@@ -1,0 +1,87 @@
+
+sc_node_not_relation -> zvanec;;
+
+zvanec => nrel_main_idtf: [заказник Званец] (* <- lang_ru;; *);
+				     [zvanec] (* <- lang_en;; *);;
+
+
+zvanec <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Званец)](*<-lang_ru;;*);
+		[Pic. (zvanec)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://5.jpg!300!200!reduce.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+zvanec<-concept_sanctuary;;
+
+zvanec <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Званец, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заказник Званец был создан в 1996 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zvanec=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1996(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zvanec <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Званец, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Званец составляет 16200 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							zvanec=>nrel_square:[16200 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:16200(*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+zvanec => nrel_area_location: Brest_area;;
+
+
+
+sc_node_role_relation->rrel_ga;;
+rrel_ga => nrel_main_idtf:
+[га'](*<-lang_ru;;*);
+	[ga'](*<-lang_en;;*);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: zvanec;;

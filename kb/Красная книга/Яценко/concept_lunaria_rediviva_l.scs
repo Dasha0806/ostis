@@ -1,0 +1,166 @@
+concept_lunaria_rediviva_l => nrel_main_idtf: [лунник оживающий](*<- lang_ru;;*); [lunaria rediviva l.](*<- lang_lat;;*); [луннiк ажываючы](*<- lang_bel;;*);;
+concept_lunaria_rediviva_l => nrel_idtf: [луннiк ажываючы](*<- lang_bel;;*);;
+
+concept_species -> concept_lunaria_rediviva_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_lunaria_rediviva_l;;
+
+concept_lunaria_rediviva_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лунник оживающий)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_lunaria_rediviva_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_lunaria_rediviva_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_lunaria_rediviva_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Под государственную охрану в республике впервые взят в 1964 г. Занесен в Красную книгу Беларуси 1-го и 2-го изданий (1981, 1993). Охраняется в Литве, Латвии, Украине и Смоленской обл. России.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое короткокорневищное растение высотой до 120 см. Стебель прямостоячий, шершавый, покрыт короткими белыми волосками, в верхней части ветвистый. Листья тонкие, крупные, сердцевидные, короткоопушенные, по краю пильчато-зубчатые, верхние – очередные, нижние - супротивные. Цветки душистые, с лиловыми, фиолетовыми, редко белыми лепестками длиной около 1,5 см, собраны в негустое метельчатое соцветие. Плоды – стручочки, повислые, уплощенные, эллиптические, с обоих концов заостренные, длиной до 5 см и шириной 1,5-2,0 см, с пленчатой серебристо-перламутровой перегородкой, остающейся на растении после опадения створок и семян. Семена почковидные, 4-6 штук в стручочке, ширина их вдвое больше длины.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Атлантическая, Средняя и Восточная Европа, Средиземноморье, Скандинавия, Северная Америка (занос) ; в Восточной Европе встречается в Прибалтике, Украине, Молдавии, в центральных и западных районах европейской части России. В Беларуси этот реликтовый, по происхождению пребореальный среднеевропейский неморальный вид находится в островных участках произрастания и отдельных локалитетах вблизи северо-восточной границы ареала . Местонахождения сосредоточены преимущественно в Минской обл. (Борисовский, Вилейский, Воложинский, Логойский, Любанский, Минский, Мядельский и Солигорский р-ны). По одному - несколько местонахождений известно в Витебской (Бешенковичский, Витебский, Городокский, Докшицкий, Лиозненский, Оршанский и Сенненский р-ны) и Брестской (Ивацевичский и Столинский р-ны) обл. . Ранее произрастал в окрестностях Гродно, Беловежской пуще и Могилевской губернии . В 1927 г. І.Г. Васількоў  указывал на нахождение вида в Горецком р-не Могилевской области.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Более часто встречается в широколиственных (пойменных дубравах, черноольшаниках) и смешанных (елово-широколиственных) лесах, реже в мелколиственных (березовых и сероольховых). Предпочитает береговые склоны как больших, так и малых рек, склоны оврагов и пойменные места обитания.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - июне, плодоносит в июле - августе. Энтомофил. Размножение семенное. Анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Растет одиночно и небольшими группами, иногда образует заросли. Некоторые популяции, расположенные в основном  в долинах рек, небольшими фрагментами простираются на 1-2 км.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Осушительная мелиорация; рубка леса главного пользования; хозяйственная трансформация земель; сбор цветущих и плодоносящих растений в букеты; нарушение мест обитания при пастьбе и прогоне скота.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Нарочанский”, заказников “Бабиновичский”, “Выгонощанское”, “Зуйка”, “Лунник оживающий”, проектируемого ландшафтного заказника “Налибокская пуща”. Культивируется в ботанических садах НАН Беларуси  и Витебского университета , а также и в Республиканском экологическом центре учащихся и молодежи (Минск). Необходимо в местах обитания вида предотвращать негативные антропогенные воздействия; посредством проведения зимних выборочных рубок и расчистки кустарников поддерживать сомкнутость крон древесно-кустарникового яруса на уровне 40-70%; периодически проводить эколого-биологический контроль состояния известных популяций; рекомендуется более широкое введение вида в культуру в качестве декоративного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_lunaria_rediviva_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Borisov_district;;->Vileika_district;;->Volozhin_district;;->Logoysk_district;;->Luban_district;;->Minsk_district;;->Myadel_district;;->Soligorsk_district;;->Beshenkovichi_district;;->Vitebsk_district;;->Gorodok_district;;->Dokshitsy_district;;->Liozno_district;;->Orsha_district;;->Senno_district;;->Ivatsevichi_district;;->Stolin_district;;->Grodno_district;;->Belovezhskaya_Pushcha_district;;->Mogilev_district;;->Gorki_district;;
+		*);;
+*);;
+
+concept_lunaria_rediviva_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;rough;white_hairs;branched;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; thin;large;cordate;korotkoopushenny;serrate_dentate;another;opposite;;
+*);
+...
+(*
+<= nrel_inclusion: flower; fragrant;purple;purple;white_petal;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; rare;paniculate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; Willie;drooping;flattened;elliptical;pointed;filmy_silver_mother_of_pearl_septum;;
+*);;
+
+concept_lunaria_rediviva_l <= nrel_inclusion: 
+[100-120]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([100 см] => [120 см]);; 
+*);;
+
+concept_lunaria_rediviva_l <= nrel_inclusion: 
+[5-10 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([5 см] => [10 см]);; 
+*);;
+
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[120 см] <- length_of_inflorscence; exact_value;;
+[120 см] -> .centimeter: 120 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+ 
+
+concept_lunaria_rediviva_l <= nrel_inclusion: concept_4_protection_category;;

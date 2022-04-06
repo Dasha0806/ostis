@@ -1,0 +1,172 @@
+concept_valeriana_dioica_l => nrel_main_idtf: [валериана двудомная](*<- lang_ru;;*); [valeriana dioica l.](*<- lang_lat;;*); [валяр’ян двухдомны](*<- lang_bel;;*);;
+concept_valeriana_dioica_l => nrel_idtf: [валяр’ян двухдомны](*<- lang_bel;;*);;
+
+concept_species -> concept_valeriana_dioica_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_valeriana_dioica_l;;
+
+concept_valeriana_dioica_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (валериана двудомная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_valeriana_dioica_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_valeriana_dioica_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+concept_valeriana_dioica_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: I категория (CR) - вид, 
+находящийся на грани 
+исчезновения. Включен в 
+1-ое и 2-ое издания Красной 
+книги Беларуси (1981, 1993) 
+и Красную книгу СССР 
+2го издания (1984). 
+Охраняется на территории 
+Украины.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с тонким ползучим корневищем длиной до 15 см. Стебли одиночные, прямые, бороздчатые, коротко опушенные, высотой 10-25 см. Листья супротивные; прикорневые цельные, яйцевидные или овальные, на длинных черешках, стеблевые лировидно-непарноперистые (с 2-3 парами боковых листочков), сидячие. Цветки мелкие, однополые, пестичные белые, тычиночные розоватые, собраны в конечные головчато-щитковидные со­цветия. Плод - продолговато-яйцевидная семянка, длиной около 2,5 мм, с летучкой из перистых щетинок .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Преимущественно горные районы Атлантической и Средней Европы, юг Скандинавии и северо-запад Средиземноморья; в Восточной Европе отмечен в Прибалтике и Украине . Реликтовый, по происхождению среднеевропейский горный вид, находящийся в Беларуси в изолированных локалитетах за восточной границей ареала . Известен в двух местонахождениях:  Беловежская пуща  и окрестности г. Марьина Горка в Пуховичском р-не Минской обл. .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Сырые мелкоосоково-злаковые закустаренные луговины в местах выхода грунтовых вод.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в середине мая - начале июня, плодоносит в июне - июле. Опыляется насекомыми (энтомофил). Размножение семенное и вегетативное. Семена разносятся ветром (анемохор).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Местонахождение в Беловежской пуще, по-видимому, следует считать утраченным. Предпринятые здесь в последние годы поиски не дали положительных результатов . В Пуховичском р-не численность вида сократилась до критического:  в 2002 г. выявлены лишь отдельные экземпляры. Двадцать пять лет назад в этом месте была довольно многочисленная популяция, состоящая из нескольких плотных групп .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  осушительная мелиорация с последующей хозяйственной трансформацией земель, дорожно-строительные и дорожно-ремонтные работы. Природные:  демутационные смены растительных сообществ, сопровождающиеся зарастанием луговины кустарниками и задернением почвы. На состояние популяции в Пуховичском р-не негативно сказывается нахождение рядом с ней дачных поселков; обострили ситуацию часто повторяющиеся в последние десять лет летние засухи.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Выращивается в Центральном ботаническом саду НАН Беларуси , Ботаническом саду БГУ и Республиканском экологическом центре учащихся и молодежи (Минск). Необходимо установить постоянный контроль состояния популяции в Пуховичском р-не с предотвращением в данном местонахождении негативных антропогенных воздействий, рассмотреть вопрос об изменении режима ее охраны (восстановить ежегодное сенокошение, проводимое во второй половине лета). Следует осуществлять поиск новых мест произрастания; рекомендуется более широкое введение вида в культуру в качестве лекарственного и декоративного растения, его репатриация в естественные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_valeriana_dioica_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Belovezhskaya_Pushcha_district;;->Pukhovichi_district;;
+		*);;
+*);;
+
+concept_valeriana_dioica_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; single;direct;grooved;short;pubescent;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thin;creeping;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; opposite;solid;ovate;oval;long_petiole;stem;lyrate_pinnate;sedentary;;
+*);
+...
+(*
+<= nrel_inclusion: flower; small;gay;pistillate;white;staminate;pinkish;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; end;capitate_corymbose;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; oblong_ovate;achene;briefing;a_feathery_bristle;;
+*);;
+
+concept_valeriana_dioica_l <= nrel_inclusion: 
+[10-15 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([10 см] => [15 см]);; 
+*); 
+[3-7 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [7 см]);; 
+*);;
+
+[10 см] <- length_of_inflorscence; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+[15 см] <- length_of_inflorscence; exact_value;;
+[15 см] -> .centimeter: 15 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[7 см] <- length_of_inflorscence; exact_value;;
+[7 см] -> .centimeter: 7 (* <- number;;*);;
+ 
+
+concept_valeriana_dioica_l <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,104 @@
+concept_listera_ovata_l_r_br => nrel_main_idtf:
+[тайник яйцевидный](*<-lang_ru;;*);
+[listera ovata (l.) r. br.](*<-lang_lat;;*);
+[тайнiк яйцападобны](*<-lang_bel;;*);;
+
+concept_species -> concept_listera_ovata_l_r_br;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_listera_ovata_l_r_br;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_listera_ovata_l_r_br;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_listera_ovata_l_r_br <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Внесен во 2-е издание Красной книги Беларуси (1993). Охраняется в Украине и Смоленской обл. России. Включен в Приложение II к Конвенции СИТЕС.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Сырые хвойные, лиственные и смешанные леса, лесные поляны и опушки, низинные луга, поросшие кустарником, окраины болот. Предпочитает полутеневые условия.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июне - июле, плодоносит в июле - августе. Энтомофил. Размножение преимущественно вегетативное (корневыми отпрысками) и семенное. Анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет отдельными особями или небольшими группами, местами образует довольно многочисленные популяции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вырубка лесов, осушительно-мелиоративные работы, хозяйственная трансформация земель, чрезмерные рекреационные нагрузки и пастьба скота.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в национальных парках «Беловежская пуща», «Припятский» и «Браславские озера», в Березинском биосферном заповеднике, а также в ряде заказников. Выращивается в Республиканском экологическом центре учащихся и молодежи (Минск) и Ботаническом саду Витебского университета . Необходим контроль состояния известных популяций, поиск новых мест произрастания, предотвращение в местах роста антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евразия: Скандинавия, Атлантическая, Средняя и Восточная Европа, Средиземноморье, Кавказ, Малая и Средняя Азия, Западная Сибирь . Равнинно-субальпийский вид, встречающийся спорадически почти по всей территории Беларуси, наиболее часто в северных р-нах. Известны местонахождения в Баранович­ском, Березовском, Брестском, Дрогичинском, Каменецком, Кобринском и Пружанском р-нах Брестской обл., в Бешенковичском, Браславском, Верхнедвинском, Витеб­ском, Глубокском, Городокском, Докшицком, Дубровен­ском, Лепельском, Лиозненском, Миорском, Полоцком, Поставском, Сенненском, Ушачском, Чашникском, Шарковщинском и Шумилинском р-нах Витебской обл., в Житковичском и Мозырском р-нах Гомельской обл., в Гродненском, Зельвенском, Кореличском, Новогрудском, Щучинском и Свислочском р-нах Гродненской обл., в Вилейском, Воложинском, Дзержинском, Крупском, Минском, Мядельском и Пуховичском р-нах Минской обл., в Горецком, Кировском, Климовичском, Кличевском, Костюковичском, Краснопольском и Чериковском р-нах Могилевской обл. . Ранее указывался также для окрест­ностей Гродно, Островца, Несвижа, Лоева, Рогачева, Жлобина, ряда пунктов в Вороновском, Ганцевич­ском, Ивановском, Мозырском, Пинском и Слонимском р-нах .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с коротким толстоватым корневищем, многочисленными шнуровидными корнями и прямостоячим стеблем высотой 20-70 см. Стебель ниже листьев голый, с буроватыми влагалищами, выше листьев - железисто-опушенный, с 1-3 редуцированными листочками. Листья парные, супротивные, со стеблеобъемлющим основанием, расположены в средней части стебля, крупные (длиной 6-15 см), широкояйцевидные, на верхушке тупые или слегка заостренные, глянцевые. Цветки мелкие, желтовато-зеленоватые, собраны в узкую многоцветковую кисть. Прицветники яйцевидно-ланцетные, заостренные. Листочки околоцветника сложены в шлем; губа обратноклиновидная, почти до середины надрезанная на две линейно-продолговатые лопасти, свисающие вниз. Плод - сухая растрескивающаяся коробочка с многочисленными семенами .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_listera_ovata_l_r_br <= nrel_spread: ... 
+	(*
+	-> Baranovichi_district; Berezovsky_district; Brest_district; Drogichinsky_district; Kamianets_district; Kobrinsky_district; Pruzhany_district; Beshenkovichi_district; Braslav_district; Verhnedvinsk_district; Vitebsk_district; Glubokoe_district; Gorodoksky_district; Dokshitsy_district; Dubrovensky_district; Lepel_district; Lioznensky_district; Miory_district; Polotsky_district; Postavy_district; Senno_district; Ushachsky_district; Chashniki_district; Sharkovshchina_district; Shumilinsky_district; Zhitkovichi_district; Mozyr_district; Grodno_district; Zelvensky_district; Karelicsky_district; Novogrudok_district; Schuchinsky_district; Svisloch_district; Vileika_district; Volozhin_district; Dzerzhinsky_district; Krupsky_district; Minsk_district; Myadel_district; Pukhovichi_district; Gorki_district; Kirovsky_district; Klimovichi_district; Klichev_district; Kostyukovichi_district; Krasnopolsky_district; Cherikov_district;;
+	*);;
+
+concept_listera_ovata_l_r_br <= nrel_inclusion: concept_4_protection_category;;

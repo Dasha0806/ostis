@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_sight;;
+concept_sight=>nrel_main_idtf:
+[достопримечательность](* <-lang_ru;; *);
+	[sight](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_place;;
+concept_place => nrel_main_idtf:
+[объект](* <-lang_ru;; *);
+	[object](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_norole_relation -> concept_historical_heritage;;
+concept_historical_heritage=>nrel_main_idtf:
+[историческое наследие](* <-lang_ru;; *);
+	[историческое наследие](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+//определение 
+concept_sight <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(Достопримечательность)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Достопримечательность — место, вещь или объект, заслуживающие особого внимания, знаменитые или замечательные чем-либо, например, являющиеся историческим наследием, художественной ценностью.](* <- lang_ru;; *);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_place;;
+    ->concept_historical_heritage;;
+*);;
+*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:concept_sight;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://sight.jpg";;
+		*);;
+	*);;

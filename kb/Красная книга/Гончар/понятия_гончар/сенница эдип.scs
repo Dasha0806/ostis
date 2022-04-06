@@ -1,0 +1,136 @@
+concept_coenonympha_oedippus => nrel_main_idtf:
+[сенница эдип](*<-lang_ru;;*);
+[coenonympha oedippus](*<-lang_lat;;*);
+[сенніца эдып](*<-lang_bel;;*);;
+concept_coenonympha_oedippus => nrel_idtf:[сенніца эдып](*<-lang_bel;;*);;
+
+concept_species -> concept_coenonympha_oedippus;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: coenonympha_oedippus;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_coenonympha_oedippus;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1787 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_coenonympha_oedippus <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красную книгу Европейских дневных бабочек (SPEC 3), в Красный список МСОП (LR/nt, ver. 2.3, 1994). Охраняется в Европе (приложение II Бернской конвенции).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Крупные низинные, реже верховые болота, откуда распространяется на примыкающие заболоченные опушки лесов, сырые луговины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:За год дает одно поколение. Бабочки летают в июне-июле. Кормовые растения гусениц - злаки, осоки, ирис болотный. Зимуют гусеницы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:В большинстве известных мест обитания встречается в значительном количестве. Численность стабильна.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация и лесоразработки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Консервация условий в местах обитания. Требуется изучение факторов, ограничивающих распространение вида по болотам и заболоченным территориям.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Западной Европы до Китая и Японии по степной и лесостепной зонам, а также на юге лесной зоны. В Беларуси встречается в Полесье .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Небольшая бабочка, длина переднего крыла 17-22 мм. Основной тон крыльев у обоих полов сверху темно-бурый, снизу желто-коричневый с рядами окруженных светлыми желтыми кольцами черных глазков вдоль внешнего края. На задних крыльях расположено 6 более крупных глазков, на передних они мельче, их число может варьировать вплоть до полного отсутствия.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_coenonympha_oedippus <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Brest_district;;
+	*);;
+
+concept_satyridae => nrel_inclusion: concept_coenonympha_oedippus;;
+concept_coenonympha_oedippus => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; black;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; black; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; bristle;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; brown; yellow;;
+*);;
+
+concept_coenonympha_oedippus <= nrel_inclusion: 
+	17_22_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (17_mm => 22_mm);;
+*);;
+17_mm <- length_of_body; exact_value;;
+17_mm -> .millimeter: 17 (* <- number;;*);;
+22_mm <- length_of_body; exact_value;;
+22_mm -> .millimeter: 22 (* <- number;;*);;				
+
+concept_coenonympha_oedippus <= nrel_inclusion: concept_3_protection_category;;

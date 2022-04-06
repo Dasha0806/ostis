@@ -1,0 +1,45 @@
+concept_dioscorea_nipponica => nrel_main_idtf:
+[Диоскорея ниппонская](*<-lang_ru;;*);
+[Dioscorea nipponica](*<-lang_lat;;*);;
+
+concept_species -> concept_dioscorea_nipponica;;
+
+
+Red_list_ru -> concept_dioscorea_nipponica;;
+
+//пояснения
+concept_dioscorea_nipponica <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988). Вид включен в Красные книги Хабаровского края (2000), Амурской обл. (1995) и Еврейской АО (1997). Охраняется в заповедниках: Хинганский (Амурская обл.), «Бастак» (Еврейская АО), Большехехцирский (Хабаровский край), а также во всех заповедниках Приморского края.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России охраняемая часть ареала вида расположена на юге Амурской обл., в Еврейской АО (на Малом Хингане и Среднеамурской низменности) и в юго-западной части Хабаровского края.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетняя травянистая двудомная лиана до 4 м длиной с толстым горизонтальным корневищем. Цветет в июне-июле, плодоносит в августе-сентябре. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_dioscorea_nipponica <= nrel_inclusion: concept_2_protection_category;;

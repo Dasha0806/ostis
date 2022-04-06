@@ -1,0 +1,21 @@
+concept_common_flying_squirrel<-concept_animal;;
+concept_common_flying_squirrel=>nrel_eat:concept_grass;; 
+concept_common_flying_squirrel=>nrel_eat:concept_pollen;; 
+concept_common_flying_squirrel=>nrel_eat:concept_fruit_juice;; 
+concept_common_flying_squirrel=>nrel_eat:concept_bug;; 
+concept_common_flying_squirrel=>nrel_habitat:Dribin;;
+concept_common_flying_squirrel=>nrel_habitat:Krygloe;;
+concept_common_flying_squirrel=>nrel_habitat:Osipovichi;;
+concept_common_flying_squirrel=>nrel_habitat:Kostyukovichi;;
+
+
+concept_common_flying_squirrel=> nrel_main_idtf:
+[обыкновенная летяга](*<-lang_ru;;*);
+[common flying squirrel](*<-lang_lat;;*);;
+
+
+
+
+
+
+

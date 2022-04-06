@@ -1,0 +1,126 @@
+concept_gidnotriya_tulle => nrel_main_idtf:
+[гиднотрия тюляна](*<-lang_ru;;*);
+[gidnotriya tulle](*<-lang_lat;;*);
+[гiднотрыя цюляна](*<-lang_bel;;*);;
+concept_gidnotriya_tulle => nrel_idtf:[гiднотрыя цюляна](*<-lang_bel;;*);;
+
+plants -> concept_gidnotriya_tulle;;
+concept_species -> concept_gidnotriya_tulle;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_gidnotriya_tulle;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_gidnotriya_tulle;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_gidnotriya_tulle <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает преимущественно в лиственных лесах. Гипогейный вид (развивается под землей). Образует плодовые тела в верхнем горизонте почвы, порой они выступают на поверхность.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Микоризообразователь с дубом, грабом, елью. Плодовые тела развиваются на протяжении лета, созревают в августе - сентябре. Малоизвестный съедобный гриб .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Вид обитает на крайне ограниченной территории, встречается единичными экземплярами или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий – антропогенный: уплотнение и загрязнение почвы, вырубка лесов, сбор и повреждение плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется на территории Национального парка «Припятский». Необходимы предупреждение изменения экологического режима в местах произрастания, запрет сбора плодовых тел, контроль состояния известной популяции, выявление новых мест роста и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический лесной вид, ареал которого охватывает Европу и Азию . В Беларуси известно одно местонахождение: окрестности д. Семурадцы, Житковичский р-н, Гомельская обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело клубневидное, диаметром до 3 см, плотно-мясистое. Перидий (оболочка) буроватый, с шоколадным оттенком, особенно при высыхании, с извилинами и ямками, в нескольких местах ведущими внутрь плодового тела, почти гладкий, неотделимый от глебы. Глеба (мякоть) розовато-буроватая, с многочисленными извилистыми наружными венами. Сумки разбросаны в глебе группами, 8-споровые, вытянуто-мешковидные или цилиндрические, розовато-буроватые. Споры неправильно-шаровидные, с толстой бугорчатой оболочкой, светло-красно-буроватые, диаметром 24-34 мкм, в сумке лежат в два ряда .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_gidnotriya_tulle <= nrel_spread: ... 
+	(*
+	-> Gomel_district;;
+	*);;
+
+concept_gelvellovye => nrel_inclusion: concept_gidnotriya_tulle;;
+concept_gidnotriya_tulle => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_body; tuberous; brown;;
+	*);;
+
+concept_gidnotriya_tulle <= nrel_inclusion: 
+	2_3_cm
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (2_cm => 3_cm);;	
+	*);;
+	2_cm <- length_of_body; exact_value;;
+	2_cm -> .centimeter: 2 (* <- number;;*);;
+	3_cm <- length_of_body; exact_value;;
+	3_cm -> .centimeter: 3 (* <- number;;*);;				
+
+concept_gidnotriya_tulle <= nrel_inclusion: concept_2_protection_category;;
+

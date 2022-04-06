@@ -1,0 +1,30 @@
+concept_naviculaceae => nrel_main_idtf:
+[навикуловые](*<-lang_ru;;*);
+[naviculaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_naviculaceae;;
+
+concept_naviculaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_pinnularia_polyonca;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_naviculaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[  Это одно из центральных и наиболее обширных семейств диатомей. Клетки у навикуловых одиночные или образуют кустиковидные колонии. Панцирь с пояска удлиненно-четырехугольный. Створки линейные, ланцетные, эллиптические, прямые, сигмоидные или дорсовентральные, с разнообразной формой концов. Шов проходит по продольной оси створок. Семейство очень богато родами и видами, обитающими в морях, пресных и солоноватых водоемах, обычно в сублиторали. Большое количество видов обнаружено в ископаемом состоянии.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_naviculaceae;;

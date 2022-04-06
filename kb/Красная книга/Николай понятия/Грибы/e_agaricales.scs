@@ -1,0 +1,26 @@
+sc_node_not_relation ->  concept_agaricales;;
+concept_agaricales => nrel_main_idtf:
+[агариковые](*<-lang_ru;;*);
+[agaricales](*<-lang_en;;*);;
+
+//
+concept_agaricales <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(агариковые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка агарикальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_agarikalnye;;
+	*);;	
+*);;
+
+//
+

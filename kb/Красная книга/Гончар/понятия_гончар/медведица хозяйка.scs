@@ -1,0 +1,135 @@
+concept_pericallia_matronula => nrel_main_idtf:
+[медведица хозяйка](*<-lang_ru;;*);
+[pericallia matronula](*<-lang_lat;;*);
+[мядзведзіца гаспадыня](*<-lang_bel;;*);;
+concept_pericallia_matronula => nrel_idtf:[мядзведзіца гаспадыня](*<-lang_bel;;*);;
+
+concept_species -> concept_pericallia_matronula;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: pericallia_matronula;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pericallia_matronula;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1758 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_pericallia_matronula <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Латвии, Литвы, Украины, Смоленской и Московской областей России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Тенистые, преимущественно сырые лиственные и смешанные леса. Чаще попадается по окраинам лесных опушек и полян.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Развитие происходит в течение 2 лет. Лёт в июне-июле с наступлением сумерек. Самки откладывают яйца рядами на нижнюю сторону листьев кормовых растений. Гусеницы питаются листьями лещины, черемухи, подорожника, одуванчика, черники и других растений, зимуют дважды. Окукливание происходит весной после второй зимовки без докармливания в беловато-сером рыхлом коконе в подстилке.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Встречается локально, единичными особями. Местами в отдельные годы наблюдается в сравнительно большем количестве.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Сокращение площади коренных лесов, осушительная мелиорация, сенокошение, выпас скота, весенние палы травы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Вид включен во 2-е издание Красной книги Республики Беларусь (III категория). Охраняется в Березинском заповеднике, Национальных парках «Беловежская пуща» и «Припятский», в заказнике «Черлено». Необходимо сохранение старых лесов как резерватов коренных редких видов; ограничение в местах обитания хозяйственной деятельности и введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Центральной Европы до восточных границ Сибири. На территории Беларуси обнаружен во всех областях, за исключением Могилевской .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Самый крупный вид семейства в Европе, длина переднего крыла 37-43 мм. Окраска крыльев изменчива. Передние крылья темно-буро-коричневые с цепочкой из 4-5 бледно-желтых пятен вдоль переднего края. Такого же цвета некрупное пятно обычно располагается и во внутреннем углу крыла. Задние крылья светло-оранжевые или желтые с крупными черными пятнами, обычно сливающимися и образующими 2 перевязи. Голова сверху коричневая, снизу красная. Грудь с верхней стороны темно-коричневая с 2 продольными красными полосами, с нижней - красная. Брюшко сверху красное с рядом черных пятен, снизу черное с красными пятнами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_pericallia_matronula <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Brest_district; Grodno_district; Vitebsk_district;;
+	*);;
+
+concept_arctiidae => nrel_inclusion: concept_pericallia_matronula;;
+concept_pericallia_matronula => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; red; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; bristle;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; orange; brown; black;;
+*);;
+concept_pericallia_matronula <= nrel_inclusion: 
+	37_43_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (37_mm => 43_mm);;
+*);;
+37_mm <- length_of_body; exact_value;;
+37_mm -> .millimeter: 37 (* <- number;;*);;
+43_mm <- length_of_body; exact_value;;
+43_mm -> .millimeter: 43 (* <- number;;*);;				
+
+concept_pericallia_matronula <= nrel_inclusion: concept_3_protection_category;;

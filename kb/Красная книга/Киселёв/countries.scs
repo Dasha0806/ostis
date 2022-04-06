@@ -1,0 +1,65 @@
+
+russia=>nrel_main_idtf:
+[Россия](* <-lang_ru;; *);
+	[Russia](* <- lang_en;; *);;
+
+
+china=>nrel_main_idtf:
+[Китай](* <-lang_ru;; *);
+	[China](* <- lang_en;; *);;
+
+
+korea=>nrel_main_idtf:
+[Корея](* <-lang_ru;; *);
+	[Korea](* <- lang_en;; *);;
+
+iran=>nrel_main_idtf:
+[Иран](* <-lang_ru;; *);
+	[Iran](* <- lang_en;; *);;
+
+turkey=>nrel_main_idtf:
+[Турция](* <-lang_ru;; *);
+	[Turkey](* <- lang_en;; *);;
+
+georgia=>nrel_main_idtf:
+[Грузия](* <-lang_ru;; *);
+	[Georgia](* <- lang_en;; *);;
+
+
+azerbaijan=>nrel_main_idtf:
+[Азербайджан](* <-lang_ru;; *);
+	[Azerbaijan](* <- lang_en;; *);;
+
+
+israel=>nrel_main_idtf:
+[Израиль](* <-lang_ru;; *);
+	[Israel](* <- lang_en;; *);;
+
+
+syria=>nrel_main_idtf:
+[Сирия](* <-lang_ru;; *);
+	[Syria](* <- lang_en;; *);;
+
+japan=>nrel_main_idtf:
+[Япония](* <-lang_ru;; *);
+	[Japan](* <- lang_en;; *);;
+
+korea=>nrel_main_idtf:
+[Корея](* <-lang_ru;; *);
+	[Korea](* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+
+
+concept_state-> russia; korea; china; iran; turkey; georgia; azerbaijan; israel; syria;;
+
+
+
+
+

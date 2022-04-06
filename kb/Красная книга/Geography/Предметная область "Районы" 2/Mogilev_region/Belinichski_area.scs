@@ -1,0 +1,60 @@
+Belinichski_area<-concept_area;;
+Belinichski_area<=inclusion:Mogilev_region;;
+
+//адм центр
+Belinichski_area=>nrel_administrative_center_of_the_area:Belinichi;;
+Belinichi<-concept_city;;
+
+//самая высокая точка
+Belinichski_area=>nrel_highest_point:211_m;;
+211_m<-concept_number;;
+
+//площадь района
+Belinichski_area=>nrel_area_of_the_district:1420_km;;
+1420_km<-concept_number;;
+
+//население района
+Belinichski_area=>nrel_population_of_region:18459_m;;
+18459_m<-concept_number;;
+
+//используемые константы
+Belinichski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Mogilev_region;;
+*);;
+
+=> nrel_main_idtf: [Опр.Белыничский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Белыничский район — административная единица на востоке Могилёвской области.](* <- lang_ru;; *);;
+*);;
+*);;
+sc_node_not_relation -> Belinichski_area;;
+Belinichski_area => nrel_main_idtf:
+[Белыничский район](* <-lang_ru;; *);
+[Belinichski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Belinichi;;
+Belinichi=> nrel_main_idtf:
+[Белыничи](* <-lang_ru;; *);
+[Belinichi](* <- lang_en;; *);;
+
+sc_node_not_relation ->211_m;;
+211_m=> nrel_main_idtf:
+[211 м](* <-lang_ru;; *);
+[211 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1420_km;;
+1420_km=> nrel_main_idtf:
+[1420 км^2](* <-lang_ru;; *);
+[1420 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->18459_m;;
+18459_m=> nrel_main_idtf:
+[18459 человек](* <-lang_ru;; *);
+[18459 m](* <- lang_en;; *);;

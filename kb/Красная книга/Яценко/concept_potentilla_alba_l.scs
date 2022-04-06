@@ -1,0 +1,166 @@
+concept_potentilla_alba_l => nrel_main_idtf: [лапчатка белая](*<- lang_ru;;*); [potentilla alba l.](*<- lang_lat;;*); [дуброўка белая](*<- lang_bel;;*);;
+concept_potentilla_alba_l => nrel_idtf: [дуброўка белая](*<- lang_bel;;*);;
+
+concept_species -> concept_potentilla_alba_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_potentilla_alba_l;;
+
+concept_potentilla_alba_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лапчатка белая)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_potentilla_alba_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_potentilla_alba_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_potentilla_alba_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу Беларуси  включен впервые.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 8-25 см с горизонтальным деревянистым корневищем длиной до 30 см. Цветоносные стебли слабые, в числе нескольких, разветвленные, по длине не превышающие прикорневые листья. Длинночерешковые пальчато-сложные листья собраны в прикорневую розетку; их листочки в числе 5, длиной до 10 см и шириной до 2 см, продолговатые или обратно-ланцетные, снизу и по краям шелковисто прижато-волосистые; стеблевые листья редуцированы. Соцветие вильчатое, состоит из 2-5 цветков на длинных цветоножках; лепестки белые, выемчатые. Плод – орешек, при основании волосистый .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Средняя и Восточная (Калининградская обл. и центр европейской России, Украина, Молдавия) Европе, Средиземноморье (Италия), Балканы . В Беларуси проходит северная граница распространения вида , которая доходит до широты Минска. Лапчатка белая выявлена в Брестском, Буда-Кошелевском, Быховском, Волковысском, Гомельском, Гродненском, Житковичском, Каменецком, Клецком, Минском, Мозырском, Мстиславском, Несвижском, Пружанском, Речицком, Рогачевском, Свислочском, Слуцком, Солигорском и Столинском р-нах . В более ранних источниках приводилась также для окрестностей Глушковичей, Кобрина, Лоева, Мозыря, Новогрудка, Пинска, Свислочи, Турова и Хойников .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Растет в сухих дубовых и сосновых (с примесью дуба) лесах, на хорошо прогреваемых открытых травяных склонах холмов; прдпочитает богатые гумусом почвы.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае - июне, плодоносит в июне - июле. Преимущественно энтомофил. Размножение семенное (преимущественно) и вегетативное. Барохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Большинство из известных популяций немногочисленны (несколько десятков экземпляров), занимают небольшие площади (от 0,5 до 50 м2). Наиболее многочисленные локальные популяции (в Беловежской пуще, Буда-Кошелевском и Мозырском р-нах) имеют площадь от одного до нескольких гектар (с неравномерным диффузным распределеним одиночных особей и небольших групп особей по площади популяции). В последнее десятилетие наблюдается четко выраженная тенденция сокращения числа популяций.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Сплошные рубки леса, хозяйственная трансформация земель, пастьба скота и повышенные рекреационные нагрузки (вытаптывание).](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях национальных парков “Беловежская пуща” и “Припятский”, в ландшафтных заказниках “Бугский” (Брестский р-н), “Ворохово” (Каменецкий р-н) и “Прилукский” (Минский р-н), биологических заказниках “Замковый лес” (Волковысский р-н), “Альба” (Минский р-н), “Буда-Кошелевский” и др. Выращивается в Центральном ботаническом саду НАН Беларуси , Ботаническом саду БГУ и Республиканском экологическом центре учащихся и молодежи (Минск). Необходим контроль состояния популяций, поиск новых местонахождений и, при необходимости, организация их охраны, создание ботанических заказников в местах массового роста в комплексе с другими редкими видами (в Мозырском р-не), предотвращение в местах произрастания лапчатки белой негативных антропогенных воздействий; рекомендуется более широкое введение вида в культуру в качестве декоративного и лекарственного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_potentilla_alba_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Brest_district;;->Buda_Koshelevo_district;;->Bykhov_district;;->Volkovysk_district;;->Gomel_district;;->Grodno_district;;->Zhitkovichi_district;;->Kamenetsky_district;;->Kletsk_district;;->Minsk_district;;->Mozyr_district;;->Mstislav_district;;->Nesvizh_district;;->Pruzhany_district;;->Rechitsa_district;;->Rogachev_district;;->Slutsky_district;;->Soligorsk_district;;->Stolin_district;;->Glushkovichi_district;;->Kobrin_district;;->Loev_district;;->Mozyr_district;;->Novogrudok_district;;->Pinsk_district;;->Svisloch_district;;->Turov_district;;->Halikowski_district;;
+		*);;
+*);;
+
+concept_potentilla_alba_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; weak;branched;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; horizontal;woody ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; long;palmately_compound;;
+*);
+...
+(*
+<= nrel_inclusion: flower; white;emarginate;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; fork;long_pedicel;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; hairy;nut;;
+*);;
+
+concept_potentilla_alba_l <= nrel_inclusion: 
+[8-25]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([8 см] => [25 см]);; 
+*);;
+
+concept_potentilla_alba_l <= nrel_inclusion: 
+[3-5 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([3 см] => [5 см]);; 
+*);;
+
+[8 см] <- length_of_inflorscence; exact_value;;
+[8 см] -> .centimeter: 8 (* <- number;;*);;
+[25 см] <- length_of_inflorscence; exact_value;;
+[25 см] -> .centimeter: 25 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+ 
+
+concept_potentilla_alba_l <= nrel_inclusion: concept_3_protection_category;;

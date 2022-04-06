@@ -1,0 +1,57 @@
+nrel_neighbor_country =>nrel_main_idtf:[соседняя страна*] (* <- lang_ru;; *);;
+nrel_neighbor_country =>nrel_identifier:[neighbor country*] (* <- lang_en;; *);;
+
+//используемые константы
+nrel_neighbor_country<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_country;;
+->nrel_part;;
+->nrel_border;;
+*);;
+*);;
+nrel_neighbor_country=> nrel_main_idtf: [Опр.(соседняя страна*)]  (* <- lang_ru;; *);;
+nrel_neighbor_country<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Соседняя страна- страна,имеющая общую часть границы с данной страной.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+nrel_neighbor_country<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_axiom:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(страна,соседняя страна*)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Соседняя страна - страна, которая непосредственно граничит с данной страной.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+//область определения
+nrel_neighbor_country=>nrel_first_domain:concept_country;;
+nrel_neighbor_country=>nrel_second_domain:concept_country;;
+nrel_neighbor_country=>nrel_definitional_domain:...
+(*
+<=nrel_union:...
+(*
+->concept_country;;
+->concept_country;;
+*);;
+*);;
+
+//свойства отношения
+nrel_neighbor_country<-oriented_relation;;
+nrel_neighbor_country<-antitransitive_relation;;
+nrel_neighbor_country<-antireflexive_relation;;
+nrel_neighbor_country<-antisymmetric_relation;;
+oriented_relation=>nrel_inclusion:relation;;
+relation=>nrel_inclusion:binary_relation;;
+binary_relation=>nrel_inclusion:antireflexive_relation;;
+binary_relation=>nrel_inclusion:antitransitive_relation;;
+binary_relation=>nrel_inclusion:antisymmetric_relation;;

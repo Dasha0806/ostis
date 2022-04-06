@@ -1,0 +1,136 @@
+concept_glaucopsyche_alexis => nrel_main_idtf:
+[голубянка алексис](*<-lang_ru;;*);
+[glaucopsyche alexis](*<-lang_lat;;*);
+[блакітніца алексiс](*<-lang_bel;;*);;
+concept_glaucopsyche_alexis => nrel_idtf:[блакітніца алексiс](*<-lang_bel;;*);;
+
+concept_species -> concept_glaucopsyche_alexis;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: glaucopsyche_alexis;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_glaucopsyche_alexis;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1761 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_glaucopsyche_alexis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красные книги Европейских дневных бабочек (SPEC 3, категория - VU), Московской области России, Восточной Фенноскандии для Карелии, Швеции и Германии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Луга, поляны и окраины лиственных лесов, сухие редколесья и пустоши.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:В течение года развивается в одном поколении. Лёт длится с середины мая до начала июля. Гусеницы питаются листьями и цветками чины луговой, люцерны, донника лекарственного, мышиного горошка и других бобовых. Известно, что гусеницы контактируют с различными видами муравьев (рода Myrmica, Formica, Lasius и др.). Зимует в фазе куколки, реже - гусеницы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Бабочки встречаются отдельными особями. В некоторых узко ограниченных местах в благоприятные годы вид обычен, в других же исчез.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Сокращение подходящих мест обитания, сплошное сенокошение, выпас скота, весенний пал травы, сильное закустаривание лугов, застройка территорий, расширение сельхозугодий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходимы запрет на добывание вида; ограждение известных местообитаний от работ, ведущих к трансформации подходящих для вида биотопов; введение повышенных штрафных санкций за причинение им вреда; пропаганда охраны вида.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Умеренная зона Евразии. В Беларуси встречается крайне локально. Известен по немногочисленным находкам в Брестской, Гродненской, Гомельской и Минской областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Средних размеров голубянка, длина переднего крыла составляет 15-18 мм. Самец сверху голубой с темной каймой по краю крыла, самка бурая со слабым голубоватым напылением у основания крыльев. Снизу крылья серые или светло-серо-бурые, передние несут ряд дуговидно расположенных крупных черных пятен, окаймленных белым, и слабо заметное срединное пятно, задние - более мелкие такие же пятна и бирюзовое напыление у основания.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_glaucopsyche_alexis <= nrel_spread: ... 
+	(*
+	-> Grodno_district; Minsk_district; Gomel_district;;
+	*);;
+
+concept_lycaenidae => nrel_inclusion: concept_glaucopsyche_alexis;;
+concept_glaucopsyche_alexis => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; short; blue;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; dark; blue;;
+*);;
+
+concept_glaucopsyche_alexis <= nrel_inclusion: 
+	15_18_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (15_mm => 18_mm);;
+*);;
+15_mm <- length_of_body; exact_value;;
+15_mm -> .millimeter: 15 (* <- number;;*);;
+18_mm <- length_of_body; exact_value;;
+18_mm -> .millimeter: 18 (* <- number;;*);;				
+
+concept_glaucopsyche_alexis <= nrel_inclusion: concept_3_protection_category;;

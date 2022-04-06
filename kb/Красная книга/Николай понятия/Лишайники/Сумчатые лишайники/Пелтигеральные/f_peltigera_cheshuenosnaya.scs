@@ -1,0 +1,126 @@
+concept_peltigera_cheshuenosnaya => nrel_main_idtf:
+[пелтигера горизонтальная](*<-lang_ru;;*);
+[concept peltigerovye](*<-lang_lat;;*);
+[пельтыгера гарызантальная](*<-lang_bel;;*);;
+concept_peltigera_cheshuenosnaya => nrel_idtf:[пельтыгера гарызантальная](*<-lang_bel;;*);;
+
+plants -> concept_peltigera_cheshuenosnaya;;
+concept_species -> concept_peltigera_cheshuenosnaya;;
+type -> concept_peltigera_cheshuenosnaya;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_peltigera_cheshuenosnaya;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_peltigera_cheshuenosnaya;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_peltigera_cheshuenosnaya <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Впервые включен в Красную книгу Беларуси. Охраняется в Польше и Литве. Включен в глобальный Красный список лишайников (IUCN Global red list of lichens).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на почве и у оснований лиственных деревьев на опушках еловых и лиственных лесов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции неизвестны. Размножается вегетативно (изидиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается отдельными особями или небольшими группами; имеет тенденцию к сокращению численности. Последние сборы были сделаны 20 лет назад в 1982 году в Мядельском р-не.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Все виды рубок леса, осушительно-мелиоративные работы, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях национальных парков "Беловежская пуща" и "Нарочанский" (на заповедной территории Голубых озер). Необходимы постоянный контроль состояния известных популяций, осуществление целенаправленного поиска новых мест произрастания вида в сходных условиях и, при необходимости, организация их охраны, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах роста и осушительно-мелиоративных работ вблизи его локалитетов, ограничение рекреационных нагрузок на живой напочвенный покров, предупреждение хозяйственной трансформации земель.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Африка, Северная Америка (США), Гренландия . В Беларуси отмечен в Брестской (Пружанский р-н ), Минской (Мядельский р-н ) и Витебской (Оршанский р-н ) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище округло-лопастное, некрупное, диаметром до 10 (20) мм, с чашечковидно вогнутыми, реже плоскими, приподнятыми, слегка утолщенными, цельными или слабо надрезанными краями лопастей. Верхняя поверхность оливково- или серо-коричневая, матовая, по краю лопастей чуть паутинистая. По всей верхней поверхности рассеяны изидии, горизонтальные, мелкие (диаметром до 0,5 мм), плоские или выпуклые, округлые, немного темнее верхней поверхности, иногда с беловатым налетом. Нижняя поверхность слоевища светлее, с ясно выраженными выпуклыми к центру темнеющими жилками. Ризины обычно косицевидные или узкопучковидные, коричневые или темно-коричневые .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_peltigera_cheshuenosnaya <= nrel_spread: ... 
+	(*
+	-> Brest_district;;
+	-> Vitebsk_district;;
+	-> Minsk_district;;
+	*);;
+
+concept_peltigerovye => nrel_inclusion: concept_peltigera_cheshuenosnaya;;
+concept_peltigera_cheshuenosnaya => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; grey; green;;
+	*);;
+
+
+concept_peltigera_cheshuenosnaya <= nrel_inclusion: 
+	5_20_mm
+	(*
+	<- interval_value;;
+	<- diameter_of_thallus;;
+	=> nrel_measurement: (5_mm => 20_mm);;	
+	*);;			
+
+concept_peltigera_cheshuenosnaya <= nrel_inclusion: concept_2_protection_category;;
+

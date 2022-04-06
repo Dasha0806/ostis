@@ -1,0 +1,142 @@
+concept_tuber_borchii_vitad=> nrel_main_idtf: [трюфель Борха](*<- lang_ru;;*); [tuber borchii](*<- lang_lat;;*); [труфля Борха](*<- lang_bel;;*);;
+
+concept_tuber_borchii_vitad<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (трюфель Борха)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_tuber_borchii_vitad.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_tuber_borchii_vitad;;
+concept_species -> concept_tuber_borchii_vitad;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_tuber_borchii_vitad;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_tuber_borchii_vitad;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_tuber_borchii_vitad <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает в смешанных и хвойных лесах на богатых гумусом почвах. Растет и плодоносит в верхнем слое почвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Образует микоризу с широколиственными породами деревьев. Плодовые тела созревают в августе - сентябре.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В известном местонахождении численность вида крайне мала. Встречается единичными экземплярами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение условий роста под воздействием антропогенных факторов (уплотнение и загрязнение почвы, вырубка лесов и т.д.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо предупреждение изменения экологического режима в местах произрастания (запретить все виды рубок леса и хозяйственную трансформацию земель, ограничить рекреационные нагрузки). Следует проводить периодический контроль состояния известной популяции, осуществлять поиск новых мест роста и, при необходимости, организовывать их охрану.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический лесной недостаточно изученный вид с дизъюнктивным ареалом . В Беларуси известно одно местонахождение: Могилёвская обл., Осиповичский р-н, Жорновская лесная опытная станция .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Плодовое тело клубневидное, диаметром до 5,5 см, плотномясистое, с неровной поверхностью. Перидий тонкий, гладкий, грязновато-белый. Глеба белая, плотная; наружные вены очень тонкие, извилистые, кремово-буроватые. Сумки в глебе размещаются группами, почти шаровидные или грушевидные, с 1-2, реже 3 спорами. Споры вначале бесцветные, почти шаровидные, оболочка с сетчатой скульптурой, зрелые - овальные, жёлто-бурые, с рельефной сеткой и длинными шипами по углам ячеек, размером 41-50 26-29 мкм .
+
+](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_tuber_borchii_vitad <= nrel_spread: ... 
+	(*
+	->  Asipovichi_district;;
+	*);;
+
+concept_truffle => nrel_inclusion: concept_tuber_borchii_vitad;;
+concept_tuber_borchii_vitad => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; tuberoid; dense_fleshy;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_peridion; thin; smooth; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_gleb; white; dense;;
+	*);;
+concept_tuber_borchii_vitad <= nrel_inclusion: 
+	[5-5.5 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([5 см] => [5.5 см]);;	
+	*);;
+	
+	[5 см] <- length_of_body; exact_value;;
+	[5 см] -> .centimeter: 5 (* <- number;;*);;
+	[5.5 см] <- length_of_body; exact_value;;
+	[5.5 см] -> .centimeter: 5.5 (* <- number;;*);;
+
+concept_tuber_borchii_vitad <= nrel_inclusion: concept_2_protection_category;;

@@ -1,0 +1,75 @@
+Lubanski_area<-concept_area;;
+Lubanski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Lubanski_area=>nrel_administrative_center_of_the_area:Luban;;
+Luban<-concept_city;;
+
+//самая высокая точка
+Lubanski_area=>nrel_highest_point:190_m;;
+190_m<-concept_number;;
+
+//площадь района
+Lubanski_area=>nrel_area_of_the_district:1913_km;;
+1913_km<-concept_number;;
+
+//население района
+Lubanski_area=>nrel_population_of_region:31163_m;;
+31163_m<-concept_number;;
+
+//используемые константы
+Lubanski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Любанский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Любанский район — административная единица на юге Минской области.](* <- lang_ru;; *);;
+*);;
+	*);;
+//утверждения
+Lubanski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(территори, район)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится Любанский музей партизанской Славы](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Lubanski_area;;
+Lubanski_area => nrel_main_idtf:
+[Любанский район](* <-lang_ru;; *);
+[Lubanski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Luban;;
+Luban=> nrel_main_idtf:
+[Любань](* <-lang_ru;; *);
+[Luban](* <- lang_en;; *);;
+
+sc_node_not_relation ->190_m;;
+190_m=> nrel_main_idtf:
+[190 м](* <-lang_ru;; *);
+[190 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1913_km;;
+1913_km=> nrel_main_idtf:
+[1913 км^2](* <-lang_ru;; *);
+[1913 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->31163_m;;
+31163_m=> nrel_main_idtf:
+[31163 человек](* <-lang_ru;; *);
+[31163 m](* <- lang_en;; *);;

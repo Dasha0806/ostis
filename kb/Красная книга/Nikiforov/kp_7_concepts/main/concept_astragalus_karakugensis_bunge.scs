@@ -1,0 +1,55 @@
+concept_astragalus_karakugensis_bunge => nrel_main_idtf:
+[Астрагал каракугинекий](*<-lang_ru;;*);
+[Astragalus karakugensis Bunge](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_karakugensis_bunge;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_astragalus_karakugensis_bunge;;
+
+Red_list_ru -> concept_astragalus_karakugensis_bunge;;
+
+//пояснения
+concept_astragalus_karakugensis_bunge <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В Дагестане на бархане Сарыкум численность составляет не более 500 экз. В других местонахождениях она еще ниже. Самая низкая численность (до 10 особей) наблюдалась в урочище Степан-бугор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красную книгу РСФСР (1988). Вид включен в Красные книги Республики Дагестан (1998) и Ставропольского края (2002). Произрастает на территории вновь созданного заказника «Ногайский» и участка «Бархан Сарыкум» заповедника «Дагестанский».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: На территории России вид известен из нескольких местонахождений в Восточном Предкавказье. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Стержнекорневой сильноветвистый полукустарник, хамефит, с короткими стволиками, мощным каудексом и моноподиально нарастающими побегами до 50-60 см выс. Листья непарноперистосложные, состоящие обычно из 5 листочков.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_3_protection_category;;

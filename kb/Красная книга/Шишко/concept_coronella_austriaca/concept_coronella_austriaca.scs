@@ -1,0 +1,161 @@
+concept_coronella_austriaca => nrel_main_idtf: [медянка](*<- lang_ru;;*); [coronella austriaca](*<- lang_lat;;*); [мядзянка](*<- lang_bel;;*);;
+concept_coronella_austriaca => nrel_idtf: [мядзянка](*<- lang_bel;;*);;
+
+concept_coronella_austriaca <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (медянка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_coronella_austriaca.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_coronella_austriaca;;
+concept_species -> concept_coronella_austriaca;;
+subject_domain_of_reptilia -> rrel_maximum_studied_object_class: concept_coronella_austriaca;;
+/*nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_coronella_austriaca;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1768 (*<- number;;*);;*);;
+	*);;*/
+
+//пояснения
+concept_coronella_austriaca <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Приложение II Бернской конвенции, Красные книги Латвии, Литвы, Украины.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Неядовитая змея средних размеров. Длина тела с хвостом до 80 см, масса до 110 г. Самцы несколько мельче самок. Окраска верхней поверхности тела буровато-коричневая, бежевая или серая с 2-4 продольными рядами более темных мелких пятен.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: В пределах ареала в Беларуси, как и на большей части ареала, обитает подвид, распространенный повсеместно, однако крайне спорадично. В юж. части встречается значительно чаще, чем в сев. регионах.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Стенотопный вид, населяющий узкий спектр местообитаний. Предпочитает холмистые ландшафты и сухие мозаичные леса. Встречается на освещенных участках полян, зарастающих вырубок и опушек сухих сосняков (вересковых, лишайниковых, орляковых). ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: В отличие от других широко распространенных в республике видов змей (ужа и гадюки) для медянки характерен территориальный консерватизм. Большинство особей в течение ряда лет придерживается границ небольшого индивидуального участка, площадь которого не превышает 0,5-1 га.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: На протяжении прошлого столетия и в настоящее время медянка была и остается одним из самых редких представителей герпетофауны . По последним данным в республике она встречается лишь в 1,4% лесных экосистем. Приблизительная численность этого вида составляет 2-3 тыс. экз. ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Губительное воздействие на популяцию оказывают сплошная вырубка лесов, автотранспортная нагрузка и лесные пожары. Прямое уничтожение животных людьми не играет существенной роли из-за их низкой численности и скрытного образа жизни. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесен во 2 издание Красной книги Республики Беларусь. Основная охраняемая группировка медянки расположена на территории Национального парка «Припятский». ](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_coronella_austriaca <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Republic_of_Belarus;;
+		*);;
+	*);;
+//части тела
+concept_coronella_austriaca => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; brown;;
+	*);;
+	
+//размеры
+concept_coronella_austriaca <= nrel_inclusion: 
+	[0-80 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [80 см]);;	
+	*);
+	[0-0.11 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [0.11 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[80 см] <- length_of_body; exact_value;;
+	[80 см] -> .centimeter: 80 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[0.11 кг] <- weight; exact_value;;
+	[0.11 кг] -> .kilogram: 0.11 (* <- number;;*);;
+
+//категория охраны и количество
+concept_coronella_austriaca <= nrel_inclusion: concept_3_protection_category;;
+concept_coronella_austriaca <= nrel_strength: [3000 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 3000 (* <- number;;*);;
+		*);;	
+	*);;
+
+

@@ -1,0 +1,42 @@
+
+nrel_growth => nrel_idtf: [nrel_growth];;
+nrel_growth => nrel_main_idtf: [рост*](*<- lang_ru;;*);;
+nrel_growth => nrel_main_idtf: [growth*](*<- lang_en;;*);;
+
+definition->..a;;
+..a->rrel_key_sc_element: nrel_growth;;
+..a => nrel_main_idtf: [Опр. рост](* <-lang_ru;; *);;
+..a =>nrel_using_constants:{ nrel_weight; nrel_measurement; concept_living_organism};;
+..b=>nrel_sc_text_translation:..a;;
+..b->rrel_example: [Рост — увеличение массы и размеров особи за счёт процессов биосинтеза](*<-lang_ru;;*);;
+
+statement->..m;;
+..m-> rrel_key_sc_element: nrel_growth;;
+..m=> nrel_main_idtf: [Утв. Об росте](*<-lang_ru;;*);;
+..n=>nrel_sc_text_translation:..m;;
+..n->rrel_example: [Рост живых организмов происходит за счёт деления клеток тела.](*<-lang_ru;;*);;
+
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation -> nrel_growth;;
+binary_relation => nrel_measurement: 2;;
+number -> 2;;
+
+nrel_growth=> nrel_first_domain: concept_living_organism;;
+nrel_growth=> nrel_second_domain: value;;
+...k<=nrel_combination:{concept_living_organism; value};;
+nrel_growth=>nrel_definitional_domain: ...k;;
+
+
+relation => nrel_inclusion: oriented_relation;;
+relation => nrel_inclusion: binary_relation;;
+
+binary_relation => nrel_inclusion: antireflexive_relation;;
+binary_relation => nrel_inclusion: transitive_relation;;
+binary_relation => nrel_inclusion: antisymetric_relation;;
+
+antireflexive_relation -> nrel_growth;;
+transitive_relation -|> nrel_growth;;
+antisymetric_relation -> nrel_growth;;
+
+oriented_relation -> nrel_growth;;

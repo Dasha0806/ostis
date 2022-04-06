@@ -1,0 +1,38 @@
+concept_orthoptera=> nrel_main_idtf:
+[прямокрылые](*<-lang_ru;;*);
+[orthoptera](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_orthoptera<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(прямокрылые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Прямокрылые -древнейший отряд новокрылых насекомых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_insecta =>nrel_inclusion: concept_orthoptera;;
+concept_orthoptera => nrel_inclusion:
+concept_acrididae; 
+concept_tettigoniidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Прямокрылые - беспозвоночные животные, у которых передние крылья длинные и прямые. Насекомые с неполным превращением, включающий кузнечиков, сверчков и саранчу.](* <- lang_ru;;*);;
+		*);;
+*);;

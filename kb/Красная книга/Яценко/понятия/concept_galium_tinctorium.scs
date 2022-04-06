@@ -1,0 +1,168 @@
+concept_galium_tinctorium => nrel_main_idtf: [подмаренник красильный](*<- lang_ru;;*); [galium tinctorium (l.) scop. (=asperula tinctoria l.)](*<- lang_lat;;*); [павiлiца (маруна) фарбавальная](*<- lang_bel;;*);;
+concept_galium_tinctorium => nrel_idtf: [павiлiца (маруна) фарбавальная](*<- lang_bel;;*);;
+
+concept_species -> concept_galium_tinctorium;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_galium_tinctorium;;
+
+concept_galium_tinctorium  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (подмаренник красильный)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_galium_tinctorium.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_galium_tinctorium;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 2006 (*<- number;;*);;*);;
+	*);;
+
+concept_galium_tinctorium <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: В Красную книгу 
+Беларуси включен 
+впервые. 
+Охраняется 
+в Латвии.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 25-50 см с тонко-шнуровидным ветвистым ползучим корневищем. Стебель одиночный, иногда от самого основания ветвистый, прямой, голый, 4-гранный, с длинными междоузлиями. Листья линейные, длиной 1,5-4(5) см и шириной до 2 мм, острые или туповатые, с несколько завороченным книзу краем, в мутовках, нижние - по 6, верхние - чаще по 4. Цветки в полузонтиках, собранных на концах стебля и ветвей в негустое метельчатое соцветие с непарными ветвями; прицветники овально-яйцевидные. Венчик сначала почти белый, впоследствии розоватый, воронковидный, длиной 3-4 мм, почти до половины надрезанный на 3, реже 4 овальные тупые лопасти, снаружи голый, гладкий. Плоды длиной до 2 мм, крупно-морщинистые, голые, лоснящиеся](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Европейско-западносибирский вид, распространенный в Скандинавии, Атлантической, Средней и Восточной Европе и Западной Сибири . В Беларуси находится в изолированных местонахождениях в пределах ареала. Известен в Гродненском  и Мозырском  р-нах. Приводится для Могилевской губернии (без точного указания местонахождения), а также для Мозыря и Гродно .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Встречается в сосновых борах на южных склонах холмов, обрывистых береговых склонах, суходольных лугах, в разреженных пойменных дубравах; на карбонатной почве.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в конце мая - июне. Энтомофил. Плодоносит в конце июня - июле. Размножается вегетативно и семенами. Автобарохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В Мозыр­ском р-не встречается небольшими группами на общей площади до 0,5 га.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  рубки леса главного пользования, хозяйственная трансформация земель, выпас скота и чрезмерные рекреационные нагрузки (вытаптывание).](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Выращивается в Республиканском экологическом центре учащихся и молодeжи в Минске. Необходимы постоянный контроль состояния популяций, организация специализированных ботанических заказников во всех известных местах произрастания с запрещением или ограничением в местах роста антропогенных воздействий (допускаются выборочные санитарные рубки и рубки ухода, проводимые в зимнее время), поиск новых мест произрастания; целесообразно сохранение генофонда вида в условиях культуры в ботаниче­ских садах и расселение в природные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_galium_tinctorium <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Grodno_district;;->Mozyr_district;;
+		*);;
+*);;
+
+concept_galium_tinctorium => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; single;branched;direct;naked;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thin_threadlike;branched;creeping;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; linear;sharp;blunt;;
+*);
+...
+(*
+<= nrel_inclusion: flower; semiumbels;white;pinkish;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; sparse;paniculate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; sparse;paniculate;;
+*);;
+
+concept_galium_tinctorium <= nrel_inclusion: 
+[25-50 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([25 см] => [50 см]);; 
+*); 
+[0.4-0.6 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([0.4 см] => [0.6 см]);; 
+*);;
+
+[25 см] <- length_of_inflorscence; exact_value;;
+[25 см] -> .centimeter: 25 (* <- number;;*);;
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[0.4 см] <- length_of_inflorscence; exact_value;;
+[0.4 см] -> .centimeter: 0.4 (* <- number;;*);;
+[0.6 см] <- length_of_inflorscence; exact_value;;
+[0.6 см] -> .centimeter: 0.6 (* <- number;;*);;
+ 
+
+concept_galium_tinctorium <= nrel_inclusion: concept_2_protection_category;;

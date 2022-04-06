@@ -1,0 +1,144 @@
+concept_oligoporus_caesius_domunculas_luci => nrel_main_idtf:
+[гигроцибе багряная](*<-lang_ru;;*);
+[oligoporus caesius domunculas luci](*<-lang_lat;;*);
+[гiгроцыбе барвовая](*<-lang_bel;;*);;
+concept_oligoporus_caesius_domunculas_luci => nrel_idtf:[гiгроцыбе барвовая](*<-lang_bel;;*);;
+
+plants -> concept_oligoporus_caesius_domunculas_luci;;
+concept_species -> concept_oligoporus_caesius_domunculas_luci;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_oligoporus_caesius_domunculas_luci;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_oligoporus_caesius_domunculas_luci;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_oligoporus_caesius_domunculas_luci <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: В Красную книгу Беларуси включен впервые. Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: На лесных опушках и полянах, лугах, на почве среди трав.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Плодоносит в июне - октябре. Гумусовый сапротроф. Съедобный вид.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Плодовые тела встречаются единичными экземплярами или небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Определяющий - антропогенный: уплотнение и загрязнение почвы, изменение состояния лугов (сенокошение, выпас скота и др.), сбор и повреждение плодовых тел.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Необходимо создание в местах роста вида специализированных микологических заказников, ограничение рекреационных нагрузок, запрещение несанкционированного сбора плодовых тел. Следует периодически проводить ревизию и эколого-биологический контроль состояния известных популяций, осуществлять поиск новых местонахождений.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Голарктический вид с мультизональным ареалом, охватывающим Европу, Азию, Северную Америку . В Беларуси известны местонахождения в Россонском р-не Витебской обл. (окрестности д. Тофели), в Минском (окрестности д. Сухорукие и железнодорожной станции «Колодищи») и Мядельском (окрестности санатория "Боровое") р-нах Минской обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Шляпка диаметром 2-4 (6) см, полушаровидная, тупоконическая, с подвернутым краем, голая, гладкая, лоснящаяся, алая, киноварно- или кроваво-красная. Пластинки широко приросшие, толстые, в основании с венозными прожилками, желтые, оранжево-красные до кровяно-красных, но всегда со светло-желтым краем. Ножка 3-7 x 0,3-0,8 см, обычно одинаковой толщины по всей длине, полая, влажная или лоснящаяся, но не клейкая, одного цвета со шляпкой, в основании желтоватая. Мякоть красноватая или оранжевая, восковидная, ломкая, без особого запаха и вкуса. Споры размером 7-10 x 4-5 мкм, эллипсоидальные .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_puellae_fungus_umbrella <= nrel_spread: ... 
+	(*
+	-> Minsk_district; Vitebsk_district;;
+	*);;
+
+concept_hygrophoraceae => nrel_inclusion: concept_oligoporus_caesius_domunculas_luci;;
+concept_oligoporus_caesius_domunculas_luci => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_cap; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_plates; yellow; red;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_stipe; white; red;;
+	*);;
+
+concept_oligoporus_caesius_domunculas_luci <= nrel_inclusion: 
+	0.3_0.8_cm
+	(*
+	<- interval_value;;
+	<- length_of_stipe;;
+	=> nrel_measurement: (0.3_cm => 0.8_cm);;	
+	*);
+	2_4_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_a_cap;;
+	=> nrel_measurement: (2_cm => 4_cm);;	
+	*);;
+	0.3_cm <- length_of_stipe; exact_value;;
+	0.3_cm -> .centimeter: 0.3 (* <- number;;*);;
+	0.8_cm <- length_of_stipe; exact_value;;
+	0.8_cm -> .centimeter: 0.8 (* <- number;;*);;
+	2_cm <- diameter_of_a_cap; exact_value;;
+	2_cm -> .centimeter: 2 (* <- number;;*);;
+	4_cm <- diameter_of_a_cap; exact_value;;
+	4_cm -> .centimeter: 4 (* <- number;;*);;				
+
+concept_oligoporus_caesius_domunculas_luci <= nrel_inclusion: concept_3_protection_category;;
+

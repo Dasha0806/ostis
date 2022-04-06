@@ -1,0 +1,166 @@
+concept_potentilla_rupestris_l => nrel_main_idtf: [лапчатка скальная](*<- lang_ru;;*); [potentilla rupestris l.](*<- lang_lat;;*); [дуброўка скальная](*<- lang_bel;;*);;
+concept_potentilla_rupestris_l => nrel_idtf: [дуброўка скальная](*<- lang_bel;;*);;
+
+concept_species -> concept_potentilla_rupestris_l;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_potentilla_rupestris_l;;
+
+concept_potentilla_rupestris_l  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (лапчатка скальная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_potentilla_rupestris_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_potentilla_rupestris_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_potentilla_rupestris_l <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен в Красную книгу Беларуси 2го издания (1993).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с толстым деревянистым корневищем. Стебель прямостоячий, бороздчатый, в верхней части краснеющий, сильноветвистый, высотой 30-60 см. Прикорневые листья малочисленные, 5-7 перисто-раздельные, длиной 6-12 см. Прилистники с короткими яйцевидными ушками. Верхние листья короткочерешковые, тройчатые. Все листочки снизу по жилкам усеяны мохнатыми волосками и железками, по краю реснитчатые. Цветки белые, собраны в многоцветковые метельчатые соцветия. Лепестки белые, длиной 7-11 мм. Плод – многоорешек .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Скандинавия (юг), Средняя и Восточная (Калиниградская обл., Беларусь, ранние упоминания для Буковины и пограничной Румынской Молдовы), Европе, Средиземноморье, Западная Сибирь (западные низкогорья Алтая) . Реликтовый, по происхождению среднеевропейский горный вид, находящийся в Беларуси в отдельном локалитете за восточной границей ареала:  в окрестностях д. Поречье Слонимского р-на Гродненской обл. . Впервые это местонахождение обнаружено в 19-ом веке  и продолжает сохраняться до настоящего времени.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Опушка дубравы орляковой на склоне моренного холма Слонимской возвышенности.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в мае-июне. Зацветает на второй год. Энтомофил. Плодоносит в июле-августе. Размножение семенное.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: В единственном известном местонахождении  встречается отдельными особями и небольшими группами; всего выявлено несколько десятков цветущих и плодоносящих растений.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Антропогенные:  хозяйственная трансформация земель, все виды рубок леса с нарушением напочвенного покрова, пожары, чрезмерные рекреационные нагрузки (вытаптывание и сбор цветущих растений), пастьба скота.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Выращивается в Центральном ботаническом саду НАН Беларуси  и Ботаническом саду БГУ. Необходимы организация охраны популяции в Слонимском р-не и периодический контроль ее состояния, предупреждение в местах произрастания лапчатки негативных антропогенных воздействий, поиск новых мест произрастания, более широкое введение вида в культуру в качестве декоративного растения, его расселение в соответствующие естественные экотопы.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_potentilla_rupestris_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Slonimsky_district;;
+		*);;
+*);;
+
+concept_potentilla_rupestris_l => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;striated;blushing;silnovetvistye;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; thick;woody ;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; small;peristo_separate;short;trifoliate;ciliated;;
+*);
+...
+(*
+<= nrel_inclusion: flower; white;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; many;paniculate;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; mnogooreshek;;
+*);;
+
+concept_potentilla_rupestris_l <= nrel_inclusion: 
+[30-60]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([30 см] => [60 см]);; 
+*);;
+
+concept_potentilla_rupestris_l <= nrel_inclusion: 
+[2-4 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([2 см] => [4 см]);; 
+*);;
+
+[30 см] <- length_of_inflorscence; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+[60 см] <- length_of_inflorscence; exact_value;;
+[60 см] -> .centimeter: 60 (* <- number;;*);;
+[2 см] <- length_of_inflorscence; exact_value;;
+[2 см] -> .centimeter: 2 (* <- number;;*);;
+[4 см] <- length_of_inflorscence; exact_value;;
+[4 см] -> .centimeter: 4 (* <- number;;*);;
+ 
+
+concept_potentilla_rupestris_l <= nrel_inclusion: concept_1_protection_category;;

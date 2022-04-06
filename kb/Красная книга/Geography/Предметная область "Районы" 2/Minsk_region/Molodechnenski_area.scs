@@ -1,0 +1,75 @@
+Molodechnenski_area<-concept_area;;
+Molodechnenski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Molodechnenski_area=>nrel_administrative_center_of_the_area:Molodechno;;
+Molodechno<-concept_city;;
+
+//самая высокая точка
+Molodechnenski_area=>nrel_highest_point:320_m;;
+320_m<-concept_number;;
+
+//площадь района
+Molodechnenski_area=>nrel_area_of_the_district:1392_km;;
+1392_km<-concept_number;;
+
+//население района
+Molodechnenski_area=>nrel_population_of_region:137000_m;;
+137000_m<-concept_number;;
+
+//используемые константы
+Molodechnenski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Молодечненский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Молодечненский район — административная единица на северо-западе Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Molodechnenski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, деревня)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится деревня Вязынка — родина поэта Янки Купалы](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Molodechnenski_area;;
+Molodechnenski_area => nrel_main_idtf:
+[Молодечненский район](* <-lang_ru;; *);
+[Molodechnenski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Molodechno;;
+Molodechno=> nrel_main_idtf:
+[Молодечно](* <-lang_ru;; *);
+[Molodechno](* <- lang_en;; *);;
+
+sc_node_not_relation ->320_m;;
+320_m=> nrel_main_idtf:
+[320 м](* <-lang_ru;; *);
+[320 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1392_km;;
+1392_km=> nrel_main_idtf:
+[1392 км^2](* <-lang_ru;; *);
+[1392 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->137000_m;;
+137000_m=> nrel_main_idtf:
+[137000 человек](* <-lang_ru;; *);
+[137000 m](* <- lang_en;; *);;

@@ -1,0 +1,178 @@
+concept_otus_scops=> nrel_main_idtf: [сплюшка](*<- lang_ru;;*); [otus scops](*<- lang_lat;;*); [соўка-сплюшка](*<- lang_bel;;*);;
+concept_otus_scops => nrel_idtf: [сплюшка](*<- lang_bel;;*);;
+
+concept_otus_scops <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (сплюшка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_otus_scops.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_otus_scops;;
+concept_species -> concept_otus_scops;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_otus_scops;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_otus_scops;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_otus_scops <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Приложение II Бернской конвенции, отнесен к SPEC 2.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Одна из самых мелких сов (размером со скворца). Длина тела 19-22 см, размах крыльев 49,0-54,5 см. Масса самца 60-125 г, самки 64-135 г. На голове хорошо заметны перьевые «ушки». Общая окраска оперения буровато-серая, с многочисленными бурыми, а на крыльях и спине - также белыми пестринами. Ноги оперены до пальцев, оперение здесь ржавчато-белое с серыми пестринами. Когти темно-бурые, клюв бурый, радужина глаза желтая.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Номинативный подвид, обитающий в Беларуси, преимущественно распространен в Европе (за исключением северной), доходя до Малой Азии и северной части Африки. Беларусь целиком лежит в пределах ареала вида, но распространение, судя по имеющимся фрагментарным данным, носит крайне спорадический характер. Гнездование в Беларуси доказано единственной находкой гнезда с одним свежим яйцом 15.5.1984 г. в Верхнедвинском р-не Витебской обл. . В гнездовой период птицы, в том числе вокализирующие самцы, были выявлены в Пинском , Лиозненском , Витебском Гомельском р-нах. Места зимовок европейских популяций расположены в тропической Африке.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Населяет преимущественно лиственные и смешанные леса, предпочитая разреженные древостои, нередко расположенные вблизи водоемов. Поселяется на лесных опушках и окраинах лесных гарей, а также в старых парках и садах, аллеях и придорожных насаждениях. Обычно выбирает места, изобилующие крупными насекомыми.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Гнездящийся перелетный вид. Скрытная птица, активна в темное время суток. День проводит, сидя на ветвях в кронах деревьев. В период размножения выдает свое присутствие высоким меланхоличным посвистом «сплюю». Данные о времени весенней и осенней миграций в Беларуси отсутствуют; прилетает, видимо, в конце апреля. Гнездится в дуплах, выдолбленных дятлами, и естественных пустотах, искусственных гнездовьях (скворечниках, гоголятниках), в полостях пустующих строений, а также в старых сорочьих гнездах. В мае откладывает 3-6 белых яиц размерами в среднем 31,5 - 27,1 мм. Насиживает только самка, 24 дня, самец все это время снабжает ее кормом. Птенцы покидают гнездо в трехнедельном возрасте, еще плохо умея летать. Основу питания составляют крупные насекомые и мелкие грызуны, поедает также дождевых червей, пауков, мелких птиц.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Численность, возможно, флуктуирует или сокращается. Примерная ее оценка 10-100 пар.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Факторы, ограничивающие численность вида в Беларуси не выяснены по причине полного отсутствия данных о характере местообитаний и динамике популяции вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид занесен в Красную книгу Республики Беларусь с 1981 г. Для принятия действенных мер охраны требуется специальное изучение распространения, численности и особенностей экологии вида в Беларуси. Вероятно, эффективной будет развеска искусственных гнездовий в местах обнаружения вида.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_otus_scops <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Baranavichy_district; Rosson_district; Liozno_district; Slavgorod_district;;
+		*);;
+	*);;
+//части тела
+concept_otus_scops => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_short; concept_sharp; concept_beak; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; grey; white;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; concept_striped; black; white; grey; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_stomach; concept_striped; black; white; grey; yellow;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_wings; concept_striped; black; white; grey; yellow;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_legs; concept_striped; black; white; grey; yellow;;
+	*);	
+	...
+	(*
+	<= nrel_inclusion: concept_tail; concept_striped; black; white; grey; yellow;;
+	*);;
+//размеры и вес
+concept_otus_scops <= nrel_inclusion: 
+	[58-78 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([58 см] => [78 см]);;	
+	*);
+	[1.6-3.2 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([1.6 кг] => [3.2 кг]);;	
+	*);;
+	[58 см] <- length_of_body; exact_value;;
+	[58 см] -> .centimeter: 58 (* <- number;;*);;
+	[78 см] <- length_of_body; exact_value;;
+	[78 см] -> .centimeter: 78 (* <- number;;*);;
+	[1.6 кг] <- weight; exact_value;;
+	[1.6 кг] -> .kilogram:1.6 (* <- number;;*);;
+	[3.2 кг] <- weight; exact_value;;
+	[3.2 кг] -> .kilogram: 3.2 (* <- number;;*);;
+//категория охраны и количество
+concept_otus_scops <= nrel_inclusion: concept_2_protection_category;;
+concept_otus_scops <= nrel_strength: [900 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 900 (* <- number;;*);;
+		*);;	
+	*);;
+

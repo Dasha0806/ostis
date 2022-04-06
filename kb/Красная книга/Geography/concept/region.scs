@@ -1,0 +1,96 @@
+sc_node_not_relation -> concept_region;;
+concept_region=>nrel_main_idtf:
+[область](* <-lang_ru;; *);
+	[region](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_geography;;
+concept_geography => nrel_main_idtf:
+[география](* <-lang_ru;; *);
+	[geography](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_norole_relation -> belarus;;
+belarus=>nrel_main_idtf:
+[Беларусь](* <-lang_ru;; *);
+	[Belarus](* <- lang_en;; *);;
+
+sc_node_norole_relation -> brest_region;;
+brest_region=>nrel_main_idtf:
+[Брестская область](* <-lang_ru;; *);
+	[Brest region](* <- lang_en;; *);;
+
+sc_node_norole_relation -> gomel_region;;
+gomel_region=>nrel_main_idtf:
+[Гомельская область](* <-lang_ru;; *);
+	[Gomel region](* <- lang_en;; *);;
+
+sc_node_norole_relation -> grodno_region;;
+grodno_region=>nrel_main_idtf:
+[Гродненская область](* <-lang_ru;; *);
+	[Grodno region](* <- lang_en;; *);;
+
+sc_node_norole_relation -> mogilev_region;;
+mogilev_region=>nrel_main_idtf:
+[Могилёвская область](* <-lang_ru;; *);
+	[Mogilev region](* <- lang_en;; *);;
+
+sc_node_norole_relation -> vitebsk_region;;
+vitebsk_region=>nrel_main_idtf:
+[Витебская область](* <-lang_ru;; *);
+	[Vitebsk region](* <- lang_en;; *);;
+
+sc_node_not_relation -> nrel_administrative_territorial_unit;;
+nrel_administrative_territorial_unit => nrel_main_idtf:
+[административно-территориальная единица*](* <-lang_ru;; *);
+	[administrative-territorial_unit*](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+//определение 
+concept_region <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(область)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Область - это административно-территориальная единица Беларуси](* <- lang_ru;; *);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->belarus;;
+    ->nrel_administrative_territorial_unit;;
+*);;
+*);;
+
+
+//пример
+illustration -> ...
+	(*
+	-> rrel_key_sc_element:concept_region;;
+ 	<= nrel_sc_text_translation: ...
+		(*
+		->"file://region.png";;
+		*);;
+	*);;
+
+concept_region -> Minsk_region;;
+concept_region -> Brest_region;;
+concept_region -> Vitebsk_region;;
+concept_region -> Mogilev_region;; 
+concept_region -> Gomel_region;; 
+concept_region -> Grodno_region;;

@@ -1,0 +1,25 @@
+concept_pollen=> nrel_main_idtf:
+[пыльца](*<-lang_ru;;*);
+[pollen](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_pollen<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(пыльца)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_coleoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Пыльца-скопление пыльцевых зёрен семенных растений.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+

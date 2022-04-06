@@ -1,0 +1,61 @@
+scp_program -> proc_for_finding_species_by_region (*
+-> rrel_params: .proc_for_finding_species_by_region_params (*
+		-> rrel_1: rrel_in: _param;;
+		-> rrel_2: rrel_in: _answer;;
+	*);;
+-> rrel_operators: ..proc_for_finding_species_by_region_operator_set (*
+	-> rrel_init: ..test_start (*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _some;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _new_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+			->rrel_set_1: rrel_assign: rrel_scp_var: _sets_of_sets;;
+				
+	=>nrel_then: ..search_in_set;;
+	=>nrel_else: ..proc_for_finding_species_by_region_return;;
+		*);;
+	
+	->..search_in_set (*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _sets_of_sets;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _param_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _set_region;;
+				
+	=>nrel_then: ..delete_set_arc;;
+	=>nrel_else: ..proc_for_finding_species_by_region_return;;
+		*);;
+	 -> ..delete_set_arc (*
+		<-eraseEl;;
+
+		->rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _param_arc;;
+
+		=>nrel_goto: ..search_specie;;
+	*);;
+
+	->..search_specie (*
+		<- searchSetStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _set_region;;
+		-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _tospecie;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _found_specie;;
+		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _tospread;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_spread;;
+	=>nrel_then: ..add_species_to_set;;
+	=>nrel_else: ..search_in_set;;
+		*);;
+	
+	-> ..add_species_to_set (*
+			<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_set;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _found_specie;;
+
+	=>nrel_goto: ..search_in_set;;
+		*);;
+	
+	
+	
+	-> ..proc_for_finding_species_by_region_return (*
+			<- return;;
+	*);;
+*);;
+*);;

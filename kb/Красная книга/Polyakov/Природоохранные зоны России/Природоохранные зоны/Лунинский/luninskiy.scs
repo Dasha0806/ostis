@@ -1,0 +1,79 @@
+sc_node_not_relation -> luninskiy;;
+
+luninskiy => nrel_main_idtf: [заказник Лунинский] (* <- lang_ru;; *);
+				     [Luninskiy] (* <- lang_en;; *);;
+
+luninskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Лунинский)](*<-lang_ru;;*);
+		[Pic. (Luninskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+luninskiy<-concept_sanctuary;;
+
+luninskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лунинский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Лунинский был создан в 1997 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							luninskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1997(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+luninskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Лунинский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Лунинский составляет 9283 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							luninskiy=>nrel_square:[9283 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[9283](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+luninskiy => nrel_area_location: Brest_area;;
+luninskiy => nrel_flora: ...(*
+<-concept_cypripedium_calceolus_l;concept_lilium_martagon_l;concept_allium_ursinum_l;concept_cephalanthera_rubra_l_rich;;*);;
+
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: luninskiy;;

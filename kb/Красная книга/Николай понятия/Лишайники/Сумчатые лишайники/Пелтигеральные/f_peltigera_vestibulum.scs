@@ -1,0 +1,126 @@
+concept_peltigera_vestibulum => nrel_main_idtf:
+[пелтигера горизонтальная](*<-lang_ru;;*);
+[concept peltigerovye](*<-lang_lat;;*);
+[пельтыгера гарызантальная](*<-lang_bel;;*);;
+concept_peltigera_vestibulum => nrel_idtf:[пельтыгера гарызантальная](*<-lang_bel;;*);;
+
+plants -> concept_peltigera_vestibulum;;
+concept_species -> concept_peltigera_vestibulum;;
+type -> concept_peltigera_vestibulum;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_peltigera_vestibulum;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_peltigera_vestibulum;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_peltigera_vestibulum <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет во влажных местах еловых и черноольховых лесов у основания стволов деревьев, на почве обычно среди мхов и папоротников.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается аскоспорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Обычно встречается отдельными особями, реже небольшими группами. Последний раз отмечался в сборах в 1987 году.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вырубка старовозрастных еловых и черноольховых лесов, осушительная мелиорация.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в Национальном парке "Беловежская пуща". Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест роста вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого требуется запрет любой лесохозяйственной деятельности в местах произрастания и осушительно-мелиоративных работ вблизи его локалитетов, предотвращение чрезмерных рекреационных нагрузок на живой напочвенный покров.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия (Китай, Япония), северная и тропическая Африка, Северная Америка (США, Канада), Ньюфаундленд, Тасмания . Очень редкий представитель реликтового комплекса субарктического периода , произрастающий в лесных поясах гор и на равнине. В Беларуси найден в Гомельской (Лельчицкий р-н ), Гродненской (Свислочский р-н ) и Минской (Логойский р-н ) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище листоватое крупнолопастное, длиной до 150 мм, иногда образует округлые розетки. Лопасти шириной 10-30 мм, с закругленными концами и приподнимающимися ровными волнистыми краями. Верхняя поверхность слоевища гладкая, блестящая, голубовато- или коричневато-серая, оливковая; нижняя - по краю беловатая, в средней части и к центру обычно пестрая от сети широких коричневатых свисающих жилок, сливающихся в почти сплошной войлочек. Ризины обычно расположены пучками, реже в виде щеточек или узких косиц. Апотеции широкоэллиптические, горизонтальные, расположены на концах лопастей . Споры по 8 в сумке, четырехклеточные .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_peltigera_vestibulum <= nrel_spread: ... 
+	(*
+	-> Grodno_district;;
+	-> Gomel_district;;
+	-> Minsk_district;;
+	*);;
+
+concept_peltigerovye => nrel_inclusion: concept_peltigera_vestibulum;;
+concept_peltigera_vestibulum => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; grey; green;;
+	*);;
+
+
+concept_peltigera_vestibulum <= nrel_inclusion: 
+	10_150_mm
+	(*
+	<- interval_value;;
+	<- length_of_thallus;;
+	=> nrel_measurement: (10_mm => 150_mm);;	
+	*);;			
+
+concept_peltigera_vestibulum <= nrel_inclusion: concept_2_protection_category;;
+

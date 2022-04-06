@@ -1,0 +1,20 @@
+concept_vespertilionidae => nrel_main_idtf:
+[гладконосые летучие мыши](*<-lang_ru;;*);
+[vespertilionidae](*<-lang_lat;;*);;
+
+concept_family -> concept_vespertilionidae;;
+
+//определение и пояснения
+concept_vespertilionidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гладконосые летучие мыши - семейство млекопитающих отряда рукокрылых. Мелкие и средние летучие мыши: длина тела 3,2—10,5 см, размах крыльев 17—50 см, весят от 5 до 76 г. Это типичные, неспециализированные летучие мыши без каких-либо броских внешних признаков.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_vespertilionidae;;

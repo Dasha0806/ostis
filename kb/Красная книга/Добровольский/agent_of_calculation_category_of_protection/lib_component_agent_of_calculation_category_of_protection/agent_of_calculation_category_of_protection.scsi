@@ -1,0 +1,266 @@
+agent_of_calculation_category_of_protection
+=> nrel_main_idtf:
+[агентная scp-программа расчёта категории охраны] (* <- lang_ru;; *);
+[agent scp-program of calculation category of protection] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+
+scp_program -> agent_of_calculation_category_of_protection
+(*
+	-> rrel_params : ..agent_of_calculation_category_of_protection_params
+		(*
+			-> rrel_1: rrel_in: _event;;
+			-> rrel_2: rrel_in: _input_arc;;
+		*);;
+	-> rrel_operators : ..agent_of_calculation_category_of_protection_operators
+		(*
+			-> rrel_init: ..agent_of_calculation_category_of_protection_operator1
+				(*
+					<- searchElStr3;;
+
+					-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+	
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator2;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);; 
+			-> ..agent_of_calculation_category_of_protection_operator2
+				(*
+					<- searchElStr3;;			
+
+					-> rrel_1: rrel_fixed: rrel_scp_const: question_of_calculation_category_of_protection;;
+					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator3;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);;
+			-> ..agent_of_calculation_category_of_protection_operator3
+				(*
+					<- searchElStr3;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_not_relation: _param;;
+		
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator4;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);;
+			-> ..agent_of_calculation_category_of_protection_operator4 // проверка входного аргумента
+				(*
+					<- searchElStr5;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com1;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_category_of_protection ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator_return;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator5;;
+				*);;					
+			-> ..agent_of_calculation_category_of_protection_operator5 // генерация множества ответа
+				(*
+					<- genEl ;;
+
+					-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator6 ;;
+				*);;
+			-> ..agent_of_calculation_category_of_protection_operator6
+				(*
+					<- searchElStr5;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com2;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _number;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_number_of_individuals ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator6A;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);;	
+				-> ..agent_of_calculation_category_of_protection_operator6A
+				(*
+					<- searchElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_const: rrel_not_relation: number ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _number ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator7 ;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator7
+				(*
+					<- searchElStr5;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _number ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com3;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _value;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: nrel_main_idtf ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator8;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);;	
+				-> ..agent_of_calculation_category_of_protection_operator8
+				(*
+					<- ifGr;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [100] ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator9 ;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator11 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator9
+				(*
+					<- ifGr;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [1000] ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator10 ;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator12 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator10
+				(*
+					<- ifGr;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _value;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [10000] ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator14 ;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator13 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator11
+				(*
+					<- genElStr5;;
+				
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com4 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: rrel_const: rrel_node: 1 ;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator11 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator12
+				(*
+					<- genElStr5;;
+				
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const:  _com5 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: rrel_const: rrel_node: 2 ;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc6 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator15 ;;
+				*);; 
+				-> ..agent_of_calculation_category_of_protection_operator13
+				(*
+					<- genElStr5;;
+				
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com6 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: rrel_const: rrel_node: 3 ;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc7 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator15 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator14
+				(*
+					<- genElStr5;;
+				
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com7 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: rrel_const: rrel_node: 4 ;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc8 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator15 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator15
+				(*
+					<- searchElStr5;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com8;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc9 ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_then: ..agent_of_calculation_category_of_protection_operator16;;
+					=> nrel_else: ..agent_of_calculation_category_of_protection_operator8;;
+				*);;					
+				-> 	..agent_of_calculation_category_of_protection_operator16
+				(*
+					<- genElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_not_relation: _param ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator17 ;;
+				*);;
+				-> 	..agent_of_calculation_category_of_protection_operator17
+				(*
+					<- genElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_common: _com8 ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator18 ;;
+				*);;
+				-> 	..agent_of_calculation_category_of_protection_operator18
+				(*
+					<- genElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _node ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator19 ;;
+				*);;
+				-> 	..agent_of_calculation_category_of_protection_operator19
+				(*
+					<- genElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_const: _arc9 ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator20 ;;
+				*);;
+				-> 	..agent_of_calculation_category_of_protection_operator20
+				(*
+					<- genElStr3 ;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _answer ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc10 ;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: rrel_norole_relation: rrel_const: nrel_category_of_protection ;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator21 ;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator21
+				(*
+					<- genElStr5;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _com9;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+					-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc11;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+					=> nrel_goto: ..agent_of_calculation_category_of_protection_operator_return;;
+				*);;
+				-> ..agent_of_calculation_category_of_protection_operator_return
+				(*
+					<- return ;;
+				*);;
+			*);;
+		*);;

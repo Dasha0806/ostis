@@ -1,0 +1,45 @@
+concept_astragalus_olchonesis => nrel_main_idtf:
+[Астрагал ольхонский](*<-lang_ru;;*);
+[Astragalus olchonensis](*<-lang_lat;;*);;
+
+concept_species -> concept_astragalus_olchonesis;;
+
+
+Red_list_ru -> concept_astragalus_olchonesis;;
+
+//пояснения
+concept_astragalus_olchonesis <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Красную книгу Иркутской обл. (2001). Все известные местонахождения находятся в Прибайкальском НП.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России в Иркутской обл., на о. Ольхон у западного побережья оз. Байкал: бухты Песчаная, Харалдай и Нюргонская.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с мощным каудексом. Стебли внизу распростертые, 12-20 см выс., опушены короткими белыми волосками. Цветет в конце июня и первой половине июля, плодоносит в конце июля и начале августа. Размножается семенами. Семейство Бобовые.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_astragalus_olchonesis <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,27 @@
+concept_violaceae => nrel_main_idtf:
+[фиалковые](*<-lang_ru;;*);
+[violaceae](*<-lang_lat;;*);;
+
+concept_order -> concept_violaceae;;
+
+concept_violaceae <= nrel_subdividing:
+	...
+ (*
+	=> nrel_idtf: [Разбиение на виды, входящие в красную книгу РБ.];;
+    -> concept_viola_montana; concept_viola_uliginosa;;
+	*);;
+
+//определение и пояснения
+concept_violaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фиалковые - семейство растений порядка фиалкоцветные.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_violaceae;;

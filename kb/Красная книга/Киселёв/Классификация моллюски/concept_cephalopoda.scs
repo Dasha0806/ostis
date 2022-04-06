@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_cephalopoda;;
+
+concept_cephalopoda=> nrel_main_idtf: 
+ [головоногие](*<- lang_ru;;*); 
+ [cephalopoda](*<- lang_lat;;*);;
+
+concept_class -> concept_cephalopoda;;
+
+
+concept_cephalopoda <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представители класса головоногие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cephalopoda.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_cephalopoda <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Класс моллюсков, характеризующийся двусторонней симметрией и 8, 10 или большим количеством щупалец вокруг головы, развившихся из «ноги» моллюсков. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Подавляющее большинство современных головоногих, в отличие от большинства других моллюсков, не имеют наружной раковины. Туловище со всех сторон одето мантией. По бокам головы расположена пара очень крупных глаз. Вокруг рта венцом расположены щупальца. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Подвижные животные, хорошо передвигающиеся или по дну или в толще воды. Все головоногие—хищники. Питаются они, захватывая жертву руками и «расклевывая» ее мощнымч челюстями, в виде птичьего клюва. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

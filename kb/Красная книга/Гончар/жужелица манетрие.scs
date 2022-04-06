@@ -1,0 +1,146 @@
+concept_carabus_menetriesi_hummel=> nrel_main_idtf:
+[жужелица манетрие](*<-lang_ru;;*);
+[carabus menetriesi hummel](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_menetriesi_hummel;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_menetriesi_hummel;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_menetriesi_hummel;;
+	-> rrel_number_of_year: 1827 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_menetriesi_hummel <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Вид включен в Краснуюкнигу России.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Приурочен к переувлажненным местам обитания (низинные болота, влажные пойменные луга, заболоченные леса). Торфяные болота, понижения, заболоченные берега рек и озер.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Встречается с мая по октябрь. Хищник-полифаг. Питается беспозвоночными. Жуки активны ночью.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: В отдельных местах, особенно в заповедниках, численность довольно высокая. Снижается на мелиорированных территориях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение площадей болот в результате мелиорации.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). В Березинском биосферном заповеднике находится под охраной заповедного режима. Необходимо вести контроль за состоянием популяций.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Центральноевропейский гигрофильный вид . На территории Беларуси встречается повсюду, но приурочен к болотам .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 16-19 мм. Верх бронзовый, иногда с зеленым блеском. Надкрылья сплющенные. Усики короткие, у самцов только немного заходят за основание надкрылий. На основании надкрылий между шовным килем и первым рядом бугорков имеется короткий зачаток киля.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_menetriesi_hummel <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_menetriesi_hummel;;
+concept_carabus_menetriesi_hummel => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; green; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; bronze; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; bronze; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; bronze; oblate;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; short;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; bronze;;
+	*);;
+
+concept_carabus_menetriesi_hummel <= nrel_inclusion: 
+	16_19_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (16_mm => 19_mm);;	
+	*);;
+	16_mm <- length_of_body; exact_value;;
+	16_mm -> .millimeter: 16 (* <- number;;*);;
+	19_mm <- length_of_body; exact_value;;
+	19_mm -> .millimeter: 19 (* <- number;;*);;	
+
+concept_carabus_menetriesi_hummel <= nrel_inclusion: concept_3_protection_category;;

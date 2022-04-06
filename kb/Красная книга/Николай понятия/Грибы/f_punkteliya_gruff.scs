@@ -1,0 +1,128 @@
+punkteliya_gruff => nrel_main_idtf:
+[пункелия грубоватая](*<-lang_ru;;*);
+[punkteliya gruff](*<-lang_lat;;*);
+[пунктэлiя грубаватая](*<-lang_bel;;*);;
+punkteliya_gruff => nrel_idtf:[пунктэлiя грубаватая](*<-lang_bel;;*);;
+
+plants -> punkteliya_gruff;;
+concept_species -> punkteliya_gruff;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: punkteliya_gruff;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: punkteliya_gruff;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+punkteliya_gruff <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Польше. В Литве считается, по-видимому, исчезнувшим видом.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Растет на стволах ольхи черной, ивы ломкой и других лиственных деревьев в черноольховых лесах и прибрежных ивняках.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Апотеции образуются очень редко. Размножается преимущественно вегетативно (соредиями).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается единичными особями.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушительная мелиорация, все виды рубок леса, хозяйственная трансформация земель.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в Национальном парке "Беловежская пуща". Необходимы постоянный контроль состояния известных популяций и организация целенаправленного поиска новых мест произрастания вида в сходных условиях, сохранение мест обитания, отвечающих требованиям вида. Для этого необходим запрет любой лесохозяйственной деятельности в местах произрастания и запрет осушительно-мелиоративных мероприятий вблизи его локалитетов.
+
+](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Европа, Азия, Африка, Северная и Южная Америка, Новая Зеландия, Тасмания, Австралия . Реликт неморальной флоры атлантического периода голоцена . В Беларуси отмечен в Брестской (Каменецкий и Барановичский р-ны) и Гомельской (Мозырский р-н ) областях.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Слоевище листоватое, розетковидное или неправильной формы, диаметром 3-10 см, состоящее из тесно прилегающих или реже частично налегающих друг на друга своими краями лопастей. Лопасти шириной до 6 мм, слегка вогнутые, с округло вырезанными и немного изогнутыми краями. Верхняя поверхность гладкая или слегка складчато-сморщенная, голубовато-зеленовато-серая, матовая или слегка блестящая, с белыми псевдоцифеллами и соредиями точкообразной или шарообразной формы, с обильно растущими в центре, а иногда и по краям лопастей соралями. Нижняя поверхность слоевища бледно-коричневая, с редкими (такого же цвета) ризинами .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+punkteliya_gruff <= nrel_spread: ... 
+	(*
+	-> Gomel_district; Brest_district;;
+	*);;
+
+concept_kollemovye => nrel_inclusion: punkteliya_gruff;;
+punkteliya_gruff => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; leafy; grey; green;;
+	*);;
+
+punkteliya_gruff <= nrel_inclusion: 
+	3_10_cm
+	(*
+	<- interval_value;;
+	<- diameter_of_thallus;;
+	=> nrel_measurement: (3_cm => 10_cm);;	
+	*);;
+	3_cm <- diameter_of_thallus; exact_value;;
+	3_cm -> .centimeter: 3 (* <- number;;*);;
+	10_cm <- diameter_of_thallus; exact_value;;
+	10_cm -> .centimeter: 10 (* <- number;;*);;				
+
+punkteliya_gruff <= nrel_inclusion: concept_1_protection_category;;
+

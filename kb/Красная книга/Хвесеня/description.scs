@@ -1,0 +1,374 @@
+sc_node_not_relation -> lenght_of_leg;;
+lenght_of_leg=>nrel_main_idtf:
+[длина ножки](* <-lang_ru;; *);
+	[lenght of leg](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> cap_diameter;;
+cap_diameter=>nrel_main_idtf:
+[диаметр шляпки](* <-lang_ru;; *);
+	[cap diameter](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> body_diameter;;
+body_diameter=>nrel_main_idtf:
+[диаметр тела](* <-lang_ru;; *);
+	[body diameter](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> rounded_tuberoid;;
+rounded_tuberoid=>nrel_main_idtf:
+[округло-клубневидное](* <-lang_ru;; *);
+	[rounded tuberoid](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////
+sc_node_not_relation -> winding_folded;;
+winding_folded=>nrel_main_idtf:
+[извилисто-складчатый](* <-lang_ru;; *);
+	[winding folded](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> smooth;;
+smooth=>nrel_main_idtf:
+[гладкий](* <-lang_ru;; *);
+	[smooth](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> tuberoid;;
+tuberoid=>nrel_main_idtf:
+[клубневидное](* <-lang_ru;; *);
+	[tuberoid](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> dense_fleshy;;
+dense_fleshy=>nrel_main_idtf:
+[плотномясистое](* <-lang_ru;; *);
+	[dense fleshy](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////
+sc_node_not_relation -> thin;;
+thin=>nrel_main_idtf:
+[тонкий](* <-lang_ru;; *);
+	[thin](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> dense;;
+dense=>nrel_main_idtf:
+[плотное](* <-lang_ru;; *);
+	[dense](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> inseparable;;
+inseparable=>nrel_main_idtf:
+[неотделимый](* <-lang_ru;; *);
+	[inseparable](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> large_warty;;
+large_warty=>nrel_main_idtf:
+[крупнобородавчатый](* <-lang_ru;; *);
+	[large-warty](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////
+sc_node_not_relation -> black_brown;;
+black_brown=>nrel_main_idtf:
+[черно-бурый](* <-lang_ru;; *);
+	[black-brown](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////
+sc_node_not_relation -> yellow_brown;;
+yellow_brown=>nrel_main_idtf:
+[желто-бурый](* <-lang_ru;; *);
+	[yellow-brown](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> convex;;
+convex=>nrel_main_idtf:
+[выпуклый](* <-lang_ru;; *);
+	[convex](* <- lang_en;; *);;
+////////////////////////////////////////////////////////////////
+sc_node_not_relation ->purple_brown;;
+purple_brown=>nrel_main_idtf:
+[фиолетово-коричневый](* <-lang_ru;; *);
+	[purple-brown](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> free;;
+free=>nrel_main_idtf:
+[свободный](* <-lang_ru;; *);
+	[free](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////
+sc_node_not_relation -> rounded;;
+rounded=>nrel_main_idtf:
+[округлый](* <-lang_ru;; *);
+	[rounded](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> wide_bell;;
+wide_bell=>nrel_main_idtf:
+[ширококолокольчатый](* <-lang_ru;; *);
+	[wide bell](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> cylindrical;;
+cylindrical=>nrel_main_idtf:
+[цилиндрический](* <-lang_ru;; *);
+	[ cylindrical](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> hollow;;
+hollow=>nrel_main_idtf:
+[полый](* <-lang_ru;; *);
+	[ hollow](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> funnel_shaped;;
+funnel_shaped=>nrel_main_idtf:
+[воронковидный](* <-lang_ru;; *);
+	[ funnel-shaped](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> light_refracting;;
+light_refracting=>nrel_main_idtf:
+[светопреломляющий](* <-lang_ru;; *);
+	[ light refracting](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> dark_yellow;;
+dark_yellow=>nrel_main_idtf:
+[тёмно жёлтый](* <-lang_ru;; *);
+	[ dark yellow](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> spherical;;
+spherical=>nrel_main_idtf:
+[сферический](* <-lang_ru;; *);
+	[ spherical](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> coral;;
+coral=>nrel_main_idtf:
+[коралловидный](* <-lang_ru;; *);
+	[ coral](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> large;;
+large=>nrel_main_idtf:
+[крупное](* <-lang_ru;; *);
+	[ large](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> fragile;;
+fragile=>nrel_main_idtf:
+[хрупкий](* <-lang_ru;; *);
+	[ fragile](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> open;;
+open=>nrel_main_idtf:
+[распростертое](* <-lang_ru;; *);
+	[ open](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> cream;;
+cream=>nrel_main_idtf:
+[кремовое](* <-lang_ru;; *);
+	[ cream](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> lumpy;;
+lumpy=>nrel_main_idtf:
+[бугорчатый](* <-lang_ru;; *);
+	[ lumpy](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> annual;;
+annual=>nrel_main_idtf:
+[однолетний](* <-lang_ru;; *);
+	[ annual](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> branching;;
+branching=>nrel_main_idtf:
+[ветвящий](* <-lang_ru;; *);
+	[ branching](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> ocher_brown;;
+ocher_brown=>nrel_main_idtf:
+[охряно-бурый](* <-lang_ru;; *);
+	[ ocher brown](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////
+sc_node_not_relation -> wide;;
+wide=>nrel_main_idtf:
+[широкий](* <-lang_ru;; *);
+	[ wide](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> broadly_ellipsoidal;;
+broadly_ellipsoidal=>nrel_main_idtf:
+[широкоэллипсоидальный](* <-lang_ru;; *);
+	[ broadly ellipsoidal](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////
+sc_node_not_relation -> pubescent;;
+pubescent=>nrel_main_idtf:
+[опушенная](* <-lang_ru;; *);
+	[ pubescent](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////
+sc_node_not_relation -> cinnabar_orange;;
+cinnabar_orange=>nrel_main_idtf:
+[киноварно-оранжевая](* <-lang_ru;; *);
+	[ cinnabar_orange](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> perennial;;
+perennial=>nrel_main_idtf:
+[многолетние](* <-lang_ru;; *);
+	[ perennial](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> sedentary;;
+sedentary=>nrel_main_idtf:
+[сидячие](* <-lang_ru;; *);
+	[ sedentary](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> hoofed;;
+hoofed=>nrel_main_idtf:
+[копытообразные](* <-lang_ru;; *);
+	[ hoofed](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> furrowed;;
+furrowed=>nrel_main_idtf:
+[бороздчатая](* <-lang_ru;; *);
+	[ furrowed](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> hyaline;;
+hyaline=>nrel_main_idtf:
+[гиалиновые](* <-lang_ru;; *);
+	[ hyaline](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> small;;
+small=>nrel_main_idtf:
+[маленькие](* <-lang_ru;; *);
+	[ small](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> light_ocher;;
+light_ocher=>nrel_main_idtf:
+[ светло-охряная](* <-lang_ru;; *);
+	[ light ocher](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> cupped;;
+cupped=>nrel_main_idtf:
+[чашевидные](* <-lang_ru;; *);
+	[ cupped](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> fleshy;;
+fleshy=>nrel_main_idtf:
+[мясистые](* <-lang_ru;; *);
+	[ fleshy](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> solitary;;
+solitary=>nrel_main_idtf:
+[одиночные](* <-lang_ru;; *);
+	[ solitary](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> swollen;;
+swollen=>nrel_main_idtf:
+[вздутые](* <-lang_ru;; *);
+	[ swollen](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> warty;;
+warty=>nrel_main_idtf:
+[бородавчатые](* <-lang_ru;; *);
+	[ warty](* <- lang_en;; *);;
+/////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> brownish;;
+brownish=>nrel_main_idtf:
+[буроватые](* <-lang_ru;; *);
+	[ brownish](* <- lang_en;; *);;
+////////////////////////////////////////////////////////////////////
+sc_node_not_relation -> leafy;;
+leafy=>nrel_main_idtf:
+[листоватое](* <-lang_ru;; *);
+	[ leafy](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> concave;;
+concave=>nrel_main_idtf:
+[вогнутые](* <-lang_ru;; *);
+	[ concave](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> symmetric;;
+symmetric=>nrel_main_idtf:
+[симметричные](* <-lang_ru;; *);
+	[ symmetric](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> rod_shaped;;
+rod_shaped=>nrel_main_idtf:
+[палочковидные](* <-lang_ru;; *);
+	[ rod-shaped](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation ->three_beam;;
+three_beam=>nrel_main_idtf:
+[трехлучевые](* <-lang_ru;; *);
+	[three-beam](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> rosette;;
+rosette=>nrel_main_idtf:
+[розетковидное](* <-lang_ru;; *);
+	[ rosette](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> narrow;;
+narrow=>nrel_main_idtf:
+[узкие](* <-lang_ru;; *);
+	[ narrow](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> matte;;
+matte=>nrel_main_idtf:
+[матовый](* <-lang_ru;; *);
+	[ matte](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> brilliant;;
+brilliant=>nrel_main_idtf:
+[блестящий](* <-lang_ru;; *);
+	[ brilliant](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> dissected_lobed;;
+dissected_lobed=>nrel_main_idtf:
+[рассеченно-лопастное](* <-lang_ru;; *);
+	[ dissected-lobed](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> fan_shaped;;
+fan_shaped=>nrel_main_idtf:
+[веерообразные](* <-lang_ru;; *);
+	[ fan-shaped](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> dry;;
+dry=>nrel_main_idtf:
+[сухой](* <-lang_ru;; *);
+	[ dry](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> downy;;
+downy=>nrel_main_idtf:
+[низбегающие](* <-lang_ru;; *);
+	[ downy](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> rare;;
+rare=>nrel_main_idtf:
+[редкий](* <-lang_ru;; *);
+	[ rare](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> buffy;;
+buffy=>nrel_main_idtf:
+[охристые](* <-lang_ru;; *);
+	[ buffy](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> flat;;
+flat=>nrel_main_idtf:
+[ровная](* <-lang_ru;; *);
+	[ flat](* <- lang_en;; *);;
+///////////////////////////////////////////////////////////////////
+sc_node_not_relation -> velvety;;
+velvety=>nrel_main_idtf:
+[бархатистая](* <-lang_ru;; *);
+	[ velvety](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> fibrous;;
+fibrous=>nrel_main_idtf:
+[волокнистая](* <-lang_ru;; *);
+	[ fibrous](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> loose;;
+loose=>nrel_main_idtf:
+[свободные](* <-lang_ru;; *);
+	[ loose](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> club_shaped;;
+club_shaped=>nrel_main_idtf:
+[булавовидная](* <-lang_ru;; *);
+	[ club-shaped](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> pressed_spherical;;
+pressed_spherical=>nrel_main_idtf:
+[прижато-шаровидные](* <-lang_ru;; *);
+	[ pressed-spherical](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> semi_underground;;
+semi_underground=>nrel_main_idtf:
+[полуподземные](* <-lang_ru;; *);
+	[ semi-underground](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> underground;;
+underground=>nrel_main_idtf:
+[подземные](* <-lang_ru;; *);
+	[ underground](* <- lang_en;; *);;
+//////////////////////////////////////////////////////////////////
+sc_node_not_relation -> globular;;
+globular=>nrel_main_idtf:
+[шаровидные](* <-lang_ru;; *);
+	[ globular](* <- lang_en;; *);;

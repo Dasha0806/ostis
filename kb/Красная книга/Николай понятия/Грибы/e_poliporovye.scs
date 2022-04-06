@@ -1,0 +1,27 @@
+sc_node_not_relation ->  concept_poliporovye;;
+concept_poliporovye => nrel_main_idtf:
+[полипоровые](*<-lang_ru;;*);
+[poliporovye](*<-lang_en;;*);;
+
+//
+concept_poliporovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(полипоровые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка пориальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_porialnye;;
+	*);;	
+*);;
+
+//
+concept_poliporovye => nrel_inclusion:
+    concept_polyporus_umbrella;;

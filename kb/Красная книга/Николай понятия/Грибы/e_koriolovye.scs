@@ -1,0 +1,29 @@
+sc_node_not_relation ->  concept_koriolovye;;
+concept_koriolovye => nrel_main_idtf:
+[кориоловые](*<-lang_ru;;*);
+[koriolovye](*<-lang_en;;*);;
+
+//
+concept_koriolovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(кориоловые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка пориальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_porialnye;;
+	*);;	
+*);;
+
+//
+concept_koriolovye => nrel_inclusion:
+    concept_grifola_mnogoshlyapochnaya;
+    concept_puknoporus_minio_ruber;
+    concept_andrea_fomitopsis;;

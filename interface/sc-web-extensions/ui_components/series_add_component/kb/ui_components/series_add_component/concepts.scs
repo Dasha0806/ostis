@@ -1,0 +1,24 @@
+nrel_creation_year <- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[год создания* ]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [year of creation* ]
+(* <- lang_en;; *);;
+
+nrel_number_of_seasons <- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[количество сезонов* ]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [number of seasons* ]
+(* <- lang_en;; *);;
+
+nrel_description <- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[описание* ]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+        [description* ]
+(* <- lang_en;; *);;
+

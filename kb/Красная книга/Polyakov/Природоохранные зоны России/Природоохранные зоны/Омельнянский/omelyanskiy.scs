@@ -1,0 +1,77 @@
+sc_node_not_relation -> omelyanskiy;;
+
+omelyanskiy => nrel_main_idtf: [заказник Омельнянский] (* <- lang_ru;; *);
+				     [Omelnyanskiy] (* <- lang_en;; *);;
+
+omelyanskiy <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Омельнянский)](*<-lang_ru;;*);
+		[Pic. (Omelnyanskiy)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://ris.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+omelyanskiy<-concept_sanctuary;;
+
+omelyanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Омельянский, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Республиканский биологический заказник Омельнянский был создан в 2007 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							omelyanskiy=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:2007(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+omelyanskiy <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Омельнянский, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь заказника Омельнянский составляет 2011,57 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							omelyanskiy=>nrel_square:[2011,57 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:[2011,57](*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+omelyanskiy => nrel_area_location: Minsk_area;;
+omelyanskiy => nrel_flora: ...(*
+<-Oxycoccus;;*);;
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: omelyanskiy;;

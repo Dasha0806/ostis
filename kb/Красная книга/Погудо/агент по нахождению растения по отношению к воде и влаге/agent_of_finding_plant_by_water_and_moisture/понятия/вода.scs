@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_water;;
+
+nrel_water => nrel_main_idtf: [отношошение к воде*] (* <- lang_ru;; *);
+				     [water] (* <- lang_en;; *);;

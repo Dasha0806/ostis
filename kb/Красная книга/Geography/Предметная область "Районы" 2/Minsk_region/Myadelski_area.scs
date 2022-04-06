@@ -1,0 +1,75 @@
+Myadelski_area<-concept_area;;
+Myadelski_area<=inclusion:Minsk_region;;
+
+//адм центр
+Myadelski_area=>nrel_administrative_center_of_the_area:Myadel;;
+Myadel<-concept_city;;
+
+//самая высокая точка
+Myadelski_area=>nrel_highest_point:235_m;;
+235_m<-concept_number;;
+
+//площадь района
+Myadelski_area=>nrel_area_of_the_district:1964_km;;
+1964_km<-concept_number;;
+
+//население района
+Myadelski_area=>nrel_population_of_region:26448_m;;
+26448_m<-concept_number;;
+
+//используемые константы
+Myadelski_area <- rrel_key_sc_element:...
+(*
+<-definition;;
+<=nrel_using_constants:...
+(*
+->concept_administrative_unit;;
+->concept_region;;
+->Minsk_region;;
+*);;
+
+=> nrel_main_idtf: [(Опр.Мядельский район)]  (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Мядельский район — административная единица на северо-западе Минской области.](* <- lang_ru;; *);;
+*);;
+*);;
+//утверждения
+Myadelski_area <- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-concept_statement_of_general_type;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(район, территория, озеро, Беларусь)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[На территории района находится озеро Нарочь, являющийся самым большим озером в Беларуси](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;
+
+sc_node_not_relation -> Myadelski_area;;
+Myadelski_area => nrel_main_idtf:
+[Мядельский район](* <-lang_ru;; *);
+[Myadelski area](* <- lang_en;; *);;
+
+sc_node_not_relation ->Myadel;;
+Myadel=> nrel_main_idtf:
+[Мядель](* <-lang_ru;; *);
+[Myadel](* <- lang_en;; *);;
+
+sc_node_not_relation ->235_m;;
+235_m=> nrel_main_idtf:
+[235 м](* <-lang_ru;; *);
+[235 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->1964_km;;
+1964_km=> nrel_main_idtf:
+[1964 км^2](* <-lang_ru;; *);
+[1964 m](* <- lang_en;; *);;
+
+sc_node_not_relation ->26448_m;;
+26448_m=> nrel_main_idtf:
+[26448 человек](* <-lang_ru;; *);
+[26448 m](* <- lang_en;; *);;

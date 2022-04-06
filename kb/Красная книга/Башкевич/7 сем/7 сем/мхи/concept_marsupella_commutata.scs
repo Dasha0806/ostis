@@ -1,0 +1,163 @@
+concept_marsupella_commutata => nrel_main_idtf:
+[марсупелла изменчивая](*<-lang_ru;;*);
+[marsupella commutata](*<-lang_lat;;*);;
+
+
+concept_species -> concept_marsupella_commutata;;
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_marsupella_commutata;;
+
+//пояснения
+concept_marsupella_commutata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Категория и статус: 4 - неопределенный по статусу вид с дизъюнктивным ареалом (1).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Краткая характеристика. Растения мелкие, до 1 см дл. и 0,2 мм шир., от темно- до красновато-коричневых, в плотных или рыхлых дерновинках или рассеяно в куртинах других печеночников. Листья двухлопастные, край листа более или менее четко отвернут, клетки очень мелкие с характерными очень крупными сливающимися и поэтому часто четырехугольными утолщениями стенок, сопоставимых по размеру с клетками, отчего поверхность листа местами напоминает шахматную доску. Двудомное, гаметангии терминальные, периантий отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение. В России известен из Чукотского АО: басс. р. Анадырь, низовья р. Куйвивеемкей (2); Корякского АО: западное побережье оз. Пекульнейского (3); Хабаровского края: Буреинский заповедник, верховья Левой Буреи (4); Приморского края: Сихотэ-Алинский заповедник, хр. Дальний, г. Острая (5). Во всех известных в России точках собран однократно. За пределами России встречается в Центральной Европе, Исландии, Гренландии, Северной Америке, Японии, Китае (1).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Особенности экологии и фитоценологии. В сырых трещинах в скалах, на заливаемых камнях по берегам ручьев и ключей, в басс. р. Анадырь на суглинистом пятне на шлейфе.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+		(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность. Во всех известных местонахождениях найдены небольшие дерновинки, размером 1-3 см2.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+			(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Состояние локальных популяций. Неизвестно, местонахождения после первоначального выявления не обследовалось, специальные целенаправленные поиски их не предпринимались.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Лимитирующие факторы. Особенности биологии (редкая продукция спорофитов) и распространения-реликтовый ареал.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Принятые меры охраны. Два местонахождения вида находятся на территориях Сихотэ-Алинского и Буреинского заповедников.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Необходимые меры охраны. Обследование известных мест произрастания вида, поиск новых местонахождений и подготовка предложений по созданию ООПТ в местах находок вида.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Возможности культивирования. Не изучены](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_marsupella_commutata <= nrel_spread: ...
+(*
+<= nrel_combination: ...
+(*
+-> Vitebsk_city;;
+*);;
+*);;
+
+						concept_perennial => nrel_inclusion: concept_marsupella_commutata;;
+						concept_marsupella_commutata => nrel_part: 
+							...
+							(*
+							<= nrel_inclusion: concept_stem; ribbed;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_rhizome; thick; short ;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: concept_leaf; large; round;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: flower; grey; purple;;
+							*);
+							...
+							(*
+							<= nrel_inclusion: fruit; multisweated;;
+							*);;
+
+
+	concept_marsupella_commutata <= nrel_inclusion: 
+	10_35_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (10_cm => 35_cm);;
+	*);;
+
+	
+	10_cm <- length_of_stem; exact_value;;
+	10_cm -> nrel_cm: 10 (* <- number;;*);;
+	35_cm <- length_of_stem; exact_value;;
+	35_cm -> nrel_cm: 35 (* <- number;;*);;					
+
+concept_marsupella_commutata <= nrel_inclusion: concept_4_protection_category;;

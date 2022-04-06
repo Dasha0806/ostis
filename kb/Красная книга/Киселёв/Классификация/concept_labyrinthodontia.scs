@@ -1,0 +1,57 @@
+sc_node_not_relation ->  concept_labyrinthodontia;;
+
+concept_labyrinthodontia=> nrel_main_idtf: 
+ [лабиринтодонты](*<- lang_ru;;*); 
+ [labyrinthodontia](*<- lang_lat;;*);;
+
+concept_subclass -> concept_labyrinthodontia;;
+
+
+
+concept_labyrinthodontia <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель подкласса лабиринтодонты)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_labyrinthodontia.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+concept_labyrinthodontia => nrel_inclusion: concept_ichthyostegalia; concept_temnospondyli ; concept_anthracosauria;;
+
+
+//определение и пояснения
+concept_labyrinthodontia <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Подкласс вымерших амфибий, основная часть которых обитала на Земле в палеозойскую и мезозойскую эры (390—150 миллионов лет назад).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные отличительные черты: Сильно изогнутая поверхность зубов, массивная крышка черепа, ушные выемки за каждым глазом в задней части черепа, сложные позвонки, состоящие из четырёх элементов. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+concept_subclass => nrel_main_idtf: 
+[подкласс](*<-lang_ru;;*);
+[subclass](*<-lang_eng;;*);;
+

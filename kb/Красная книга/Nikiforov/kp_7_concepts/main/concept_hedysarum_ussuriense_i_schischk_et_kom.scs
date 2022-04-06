@@ -1,0 +1,55 @@
+concept_hedysarum_ussuriense_i_schischk_et_kom => nrel_main_idtf:
+[Копеечник уссурийский](*<-lang_ru;;*);
+[Hedysarum ussuriense I. Schischk. et Kom](*<-lang_lat;;*);;
+
+concept_species -> concept_hedysarum_ussuriense_i_schischk_et_kom;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_hedysarum_ussuriense_i_schischk_et_kom;;
+
+Red_list_ru -> concept_hedysarum_ussuriense_i_schischk_et_kom;;
+
+//пояснения
+concept_hedysarum_ussuriense_i_schischk_et_kom <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Приблизительно общая численность до 1000 особей (кустов).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978,1984) и РСФСР (1988).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России. Растет на самом юге Приморского края (окр. пос. Находка). Известен из небольшого числа местонахождений: с хр. Лозовой и с невысоких гор Брат и Сестра в басс. р. Партизанской. ](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Травянистый многолетник до 50(60) см выс., с толстым, деревянистым, длинностержневым корнем и многочисленными стеблями, образующими куст. Цветет в июле, плоды созревают в августе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

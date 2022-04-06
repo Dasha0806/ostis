@@ -1,0 +1,42 @@
+concept_insecta=> nrel_main_idtf:
+[насекомые](*<-lang_ru;;*);
+[insecta](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_insecta <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(насекомые)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_class;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Насекомые - класс беспозвоночных членистоногих животных.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_animalia =>nrel_inclusion: concept_insecta;;
+concept_insecta => nrel_inclusion: 
+concept_coleoptera;
+concept_hymenoptera;
+concept_ephemeroptera;
+concept_heteroptera;
+concept_orthoptera;
+concept_odonata;
+concept_lepidoptera;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Насекомые - самый многочисленный класс живых существ на Земле, занимающий всевозможные экологические ниши.](* <- lang_ru;;*);;
+		*);;
+*);;

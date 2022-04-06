@@ -1,0 +1,9 @@
+concept_shiloxvos<-concept_plant;;
+concept_shiloxvos=>nrel_water:concept_gigrofit;; 
+concept_shiloxvos=>nrel_moisture:concept_acidofil;;
+concept_acidofil<-concept_organic;;
+
+
+concept_shiloxvos=> nrel_main_idtf:
+[шилохвос](*<-lang_ru;;*);
+[shiloxvos](*<-lang_lat;;*);;

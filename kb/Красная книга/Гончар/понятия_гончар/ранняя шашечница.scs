@@ -1,0 +1,138 @@
+concept_euphydryas_maturna => nrel_main_idtf:
+[ранняя шашечница](*<-lang_ru;;*);
+[euphydryas maturna](*<-lang_lat;;*);
+[ранняя шашачніца](*<-lang_bel;;*);;
+concept_euphydryas_maturna => nrel_idtf:[ранняя шашачніца](*<-lang_bel;;*);;
+
+concept_species -> concept_euphydryas_maturna;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: euphydryas_maturna;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_euphydryas_maturna;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1758 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_euphydryas_maturna <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Вид включен в Красный Список МСОП (категория - DD, ver. 2.3, 1994), в Красную книгу Европейских дневных бабочек (SPEC 3, категория - VU), в приложение II Бернской конвенции.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Сырые луга вдоль русел небольших рек, открытые участки вдоль низинных и переходных болот.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Развивается в одном поколении. Лёт наблюдается в течение июня, однако в холодные годы растягивается до середины июля. Самка откладывает до 200 яиц, обычно по 30-40 штук на нижнюю сторону листьев кормовых растений. До зимовки гусеницы питаются листьями кустарников и подроста ясеня, тополя, осины и ивы, после зимовки переходят на различные виды травянистых растений (чаще из семейства губоцветных). В младшем возрасте гусеницы держатся группой, скелетируя верхушечные листья. Зимуют вместе в сплетении листьев кормовых растений. После зимовки ведут одиночный образ жизни.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Численность вида может быть довольно высокой, однако с увеличением антропогенной нагрузки на места обитания резко сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Осушительная мелиорация, спрямление русел малых рек, интенсивное сенокошение, перевыпас скота, весенние палы травянистой растительности, застройка территорий, расширение сельскохозяйственных угодий.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Необходим запрет на добывание вида, ограничение осушительной мелиорации, рекреационной нагрузки, сплошного сенокошения.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:От Центральной Европы до Забайкалья и Монголии. В Беларуси распространен по всей территории, но локально .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Одна из наиболее крупных шашечниц в Беларуси, длина переднего крыла 19-26 мм. Верх крыльев бурый с несколькими рядами охристо-оранжевых пятен, из которых ряд, расположенный в прикраевом поле, красно-оранжевый. Обратная сторона крыльев оранжевая или красно-оранжевая с желтоватыми перевязями в черных окантовках. Половой диморфизм выражается в отличиях окраски и формы крыльев (самки крупнее, с более развитым светлым рисунком и более широкими и округлыми крыльями).](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_euphydryas_maturna <= nrel_spread: ... 
+	(*
+	-> Grodno_district; Brest_district;;
+	*);;
+
+concept_nymphalidae => nrel_inclusion: concept_euphydryas_maturna;;
+concept_euphydryas_maturna => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; black; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; orange; black; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_antennae; black; brown;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; orange; black; brown;;
+*);;
+
+
+concept_euphydryas_maturna <= nrel_inclusion: 
+	
+19_26_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (19_mm => 26_mm);;
+*);;
+19_mm <- length_of_body; exact_value;;
+19_mm -> .millimeter: 19 (* <- number;;*);;
+26_mm <- length_of_body; exact_value;;
+26_mm -> .millimeter: 26 (* <- number;;*);;			
+
+concept_euphydryas_maturna <= nrel_inclusion: concept_3_protection_category;;

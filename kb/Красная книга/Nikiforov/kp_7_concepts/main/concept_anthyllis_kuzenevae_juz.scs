@@ -1,0 +1,55 @@
+concept_anthyllis_kuzenevae_juz => nrel_main_idtf:
+[Язвенник Кузеневой](*<-lang_ru;;*);
+[Anthyllis kuzenevae Juz](*<-lang_lat;;*);;
+
+concept_species -> concept_anthyllis_kuzenevae_juz;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_anthyllis_kuzenevae_juz;;
+
+Red_list_ru -> concept_anthyllis_kuzenevae_juz;;
+
+//пояснения
+concept_anthyllis_kuzenevae_juz <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Сведений нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был занесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Красную книгу Мурманской обл. (2003). Необходимые меры охраны. Поиск популяций вида и в случае обнаружения - создание ООПТ для его охраны.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России отмечался только на Кольском п-ове, в Мурманской обл.: Хибинские горы - юго-восточный склон г. Юкспор, и Кандалакшские горы - без указания конкретной точки. Вне России - горы Скандинавии, севера Ирландии и Шотландии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Вегетативно-неподвижный короткокорневищный травянистый двулетник (малолетник). Цветет в июле, плодоносит в августе-сентябре. Размножение семенное.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;

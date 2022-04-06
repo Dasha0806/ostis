@@ -1,0 +1,141 @@
+concept_tuber_aestivum_vitad=> nrel_main_idtf: [трюфель летний](*<- lang_ru;;*); [tuber aestivum](*<- lang_lat;;*); [труфля летняя](*<- lang_bel;;*);;
+
+concept_tuber_aestivum_vitad<-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (трюфель летний)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_tuber_aestivum_vitad.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_plant -> concept_tuber_aestivum_vitad;;
+concept_species -> concept_tuber_aestivum_vitad;;
+subject_domain_of_fungos -> rrel_not_maximum_studied_object_class: concept_tuber_aestivum_vitad;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_tuber_aestivum_vitad;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1984 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_tuber_aestivum_vitad <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Включен в Красную книгу Беларуси 2-го издания (1993), Красную книгу СССР (1984). Охраняется в Польше и Украине.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Произрастает в лесах с лиственными деревьями - дубом, буком, грабом, орешником, на богатых гумусом почвах. Растет и плодоносит в верхнем слое почвы, в одних и тех же местах - “трюфельниках”.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Образует микоризу с широколиственными породами деревьев. Плодовые тела созревают в июне - августе. Ценный съедобный гриб.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Вид всюду редок, численность его невелика.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Изменение условий роста под воздействием антропогенных факторов (уплотнение и загрязнение почвы, вырубка лесов и т.д.).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Растет на территории Национального парка «Припятский». Необходимо предупреждение изменения экологического режима в местах произрастания (запретить все виды рубок леса и хозяйственную трансформацию земель, ограничить рекреационные нагрузки). Следует осуществить ревизию местонахождения вида в Беловежской пуще, проводить периодический контроль состояния известных популяций, осуществлять поиск новых мест роста и, при необходимости, организовывать их охрану. Рекомендуется введение вида в культуру (есть сведения об успешном культивировании данного гриба в Италии и Франции ).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Неморальный лесной вид. Ареал охватывает Европу и Азию . В Беларуси известны два местонахождения: в Беловежской пуще и окрестностях д. Семурадцы Житковичского р-на Гомельской обл. .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плодовое тело диаметром 2-8 см, округлое или клубневидное. Перидий неотделимый, крупнобородавчатый, черно-бурый. Бородавки твердые, тупопирамидальные, диаметром 0,2-1 см. Глеба плотно-мясистая, со слабым грибным запахом, изначально белая, при созревании становится желто-бурой, на разрезе с мраморным рисунком от чередования светлых (внешние вены) и тёмных извилистых (внутренние вены) жилок. Аски (сумки) эллипсовидные, размером 60-70 50-65 мкм, 1-6-споровые. Споры эллипсовидные, коричневые, с сетчатой оболочкой, в 6-споровых асках их размер 24 17 мкм, а в 1-споровых асках - 45 30 мкм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_tuber_aestivum_vitad <= nrel_spread: ... 
+	(*
+	->  Belovezhskaya_pushcha;;
+	->  Zhytkavichy_district;;
+	*);;
+
+concept_truffle => nrel_inclusion: concept_tuber_aestivum_vitad;;
+concept_tuber_aestivum_vitad => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_sporocarp; rounded_tuberoid;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_peridion; inseparable; large_warty; black_brown;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_gleb; white; yellow_brown; dense_fleshy;;
+	*);;
+concept_tuber_borchii_vitad <= nrel_inclusion: 
+	[2-8 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([2 см] => [8 см]);;	
+	*);;
+	
+	[2 см] <- length_of_body; exact_value;;
+	[2 см] -> .centimeter: 2 (* <- number;;*);;
+	[8 см] <- length_of_body; exact_value;;
+	[8 см] -> .centimeter: 8(* <- number;;*);;
+
+concept_tuber_borchii_vitad <= nrel_inclusion: concept_2_protection_category;;

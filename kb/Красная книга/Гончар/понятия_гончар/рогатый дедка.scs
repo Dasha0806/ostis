@@ -1,0 +1,132 @@
+concept_ophiogomphus_cecilia => nrel_main_idtf:
+[рогатый дедка](*<-lang_ru;;*);
+[ophiogomphus cecilia](*<-lang_lat;;*);
+[рагаты дзедка](*<-lang_bel;;*);;
+concept_ophiogomphus_cecilia => nrel_idtf:[рагаты дзедка](*<-lang_bel;;*);;
+
+concept_species -> concept_ophiogomphus_cecilia;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: ophiogomphus_cecilia;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_ophiogomphus_cecilia;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1785 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_ophiogomphus_cecilia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость:Включен в Красную книгу Литвы. Охраняется в Европе (приложение II Бернской конвенции)](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание:Встречается вдоль рек и ручьев. Может отлетать на расстояние до 500 м (по другим данным более 800 м) от места выхода имаго.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология:Взрослые насекомые - активные хищники. Лёт и размножение в мае-июне. Самки откладывают яйца в скопления растений или растительные остатки. Цикл развития - 2 года. Личинки встречаются в густой водной растительности.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:Очень редок. Данных по изменению численности нет.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы:Загрязнение водоемов.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Выявление мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение:Транспалеарктический вид. Известны единичные находки по всей территории Беларуси .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание:Стрекоза средней величины. Длина брюшка 37-39 мм. Задние крылья в основании заметно шире передних. Длина заднего крыла 30-35 мм. Глаза не соприкасаются друг с другом. Край затылка у самки с двумя выростами, задняя сторона головы за глазами со светлыми пятнами. Голова и грудь желто-зеленые, с черными полосами. Брюшко в основании широкое, черное, с желтыми пятнами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_ophiogomphus_cecilia <= nrel_spread: ... 
+	(*
+	-> Minsk_district;;
+	*);;
+
+concept_gomphidae => nrel_inclusion: concept_ophiogomphus_cecilia;;
+concept_ophiogomphus_cecilia => nrel_part: 
+	...
+	(*
+<= nrel_inclusion: concept_head; bronze; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_back; green;;
+*);
+...
+(*
+<= nrel_inclusion: concept_wings; transparent;;
+*);;
+
+concept_ophiogomphus_cecilia <= nrel_inclusion: 
+	37_39_mm
+(*
+<- interval_value;;
+<- length_of_body;;
+=> nrel_measurement: (37_mm => 39_mm);;
+*);;
+37_mm <- length_of_body; exact_value;;
+37_mm -> .millimeter: 37 (* <- number;;*);;
+39_mm <- length_of_body; exact_value;;
+39_mm -> .millimeter: 39 (* <- number;;*);;				
+
+concept_ophiogomphus_cecilia <= nrel_inclusion: concept_4_protection_category;;

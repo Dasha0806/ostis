@@ -1,0 +1,20 @@
+concept_bovidae => nrel_main_idtf:
+[полорогие](*<-lang_ru;;*);
+[bovidae](*<-lang_lat;;*);;
+
+concept_family -> concept_bovidae;;
+
+//определение и пояснения
+concept_bovidae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупное семейство жвачных парнокопытных. К нему относятся буйволы, бизоны, антилопы, газели, быки, бараны и козлы. Важным отличием являются рога: их почти всегда одна пара (исключением является род четырёхрогих антилоп), а длина может составлять от 2 см до 1,5 метра.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_mammalia -> rrel_not_maximum_studied_object_class: concept_bovidae;;

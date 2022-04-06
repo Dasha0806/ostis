@@ -1,0 +1,37 @@
+sc_node_not_relation ->  concept_basidiomycetes;;
+concept_basidiomycetes => nrel_main_idtf:
+[базидиомицеты](*<-lang_ru;;*);
+[basidiomycetes](*<-lang_en;;*);;
+
+//
+concept_basidiomycetes <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(базидиомицеты)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[класс в отделе базидиомикота, представляющий собой высшие грибы с многоклеточным мицелием](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_magnoliophyta;;
+	*);;	
+*);;
+
+//
+concept_basidiomycetes => nrel_inclusion:
+    concept_agarikalnye;
+    concept_kantarellalnye;
+    concept_fistulialnye;
+    concept_ganodermalnye;
+    concept_geritsialnye;
+    concept_lahnokladialnye;
+    concept_likoperdalnye;
+    concept_porialnye;
+    concept_sterealnye;
+    concept_teleforalnye;;
+

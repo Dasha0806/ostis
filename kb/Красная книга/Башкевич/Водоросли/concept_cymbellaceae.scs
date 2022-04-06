@@ -1,0 +1,30 @@
+concept_cymbellaceae => nrel_main_idtf:
+[цимбелловые](*<-lang_ru;;*);
+[cymbellaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_cymbellaceae;;
+
+concept_cymbellaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_cymbella_ancyli;;
+	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_cymbellaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Семейство цимбелловые является частью порядка шовные.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_cymbellaceae;;

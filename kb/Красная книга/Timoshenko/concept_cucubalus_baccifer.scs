@@ -1,0 +1,131 @@
+concept_cucubalus_baccifer => nrel_main_idtf:
+[волдырник ягодный](*<-lang_ru;;*);
+[cucubalus baccifer](*<-lang_lat;;*);
+[пухiрнiк ягадны](*<-lang_bel;;*);;
+
+concept_species -> concept_cucubalus_baccifer;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_cucubalus_baccifer;;
+
+//пояснения
+concept_cucubalus_baccifer <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее травянистое растение с сильно ветвистым стеблем высотой 60-150 см. Листья цельные, яйцевидно-ланцетные, супротивные. Цветки с 5-ю зеленовато-белыми двулопастными лепестками и 5-ю сросшимися чашелистиками. Плод - черная шаровидная сухая ягода (с остающейся в основании чашечкой) с блестящими почковидными семенами; не характерен для семейства гвоздичных .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Пребореальный реликтовый вид с дизъюнктивным евразийским ареалом. Распространен в Скандинавии, Атлантической, Средней и Восточной Европе, в Средиземноморье, на Кавказе, в Малой Азии, Иране, Западной Сибири (Казахстан) . В Беларуси находится в пределах ареала . Отмечен в Дрогичинском, Каменецком и Кобринском р-нах Брестской обл., в Верхнедвинском, Витебском, Миорском, Полоцком и Шарковщинском р-нах Витебской обл., в Гродненском, Кореличском и Новогрудском р-нах Гродненской обл., в Воложинском и Минском р-нах Минской обл., в Мстислав­ском р-не Могилевской обл. . Ранее приводился для окрестностей Гродно .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Растет в кустарниках по оврагам и обрывистым берегам рек.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в июне - августе. Зацветает на второй год. Преимущественно энтомофил. Плодоносит в августе. Размножение семенное. В распространении плодов, возможно, участвуют птицы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Растет одиночными экземплярами и небольшими группами на ограниченных площадях. В культуре неустойчив. Выращивался в Центральном ботаническом саду НАН Беларуси .](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная трансформация земель, спрямление рек, раскорчевка кустарников.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется в ландшафтном заказнике «Прилукский» (Минский р-н), биологическом заказнике «Тростяница» (Каменецкий р-н) и ботаническом заказнике «Чертова борода» (Витебский р-н); растет на территории проектируемого заказника «Графская пуща» (Новогрудский и Кореличский р-ны). Необходимы периодический контроль состояния известных популяций, поиск новых местонахождений и, при необходимости, организация их охраны, предотвращение в местах произрастания волдырника негативных антропогенных воздействий; рекомендуется организация биологического заказника в Мстиславском р-не, где данный вид произрастает в комплексе с другими редкими видами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_cucubalus_baccifer <= nrel_spread: ... 
+	(*
+	-> Drogichin_district; Kamenec_district; Kobrin_district; Verhnedvinsky_district; Vitebsky_district; Miorsky_district; Polotski_district; Sharkovshinsky_district; Grodno_district; Karelichi_district; Novogrudok_district; Volozhinsky_district; Mstislavsky_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_cucubalus_baccifer;;
+						concept_cucubalus_baccifer => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; branched;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; ovoid;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; green; white;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; black; globular; dry; berry;;
+							*);;
+
+concept_cucubalus_baccifer <= nrel_inclusion: 
+
+	60_150_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (60_cm => 150_cm);;
+	*);;
+
+	60_cm <- length_of_stem; exact_value;;
+	60_cm -> nrel_cm: 60 (* <- number;;*);;
+	150_cm <- length_of_stem; exact_value;;
+	150_cm -> nrel_cm: 150 (* <- number;;*);;					
+
+concept_cucubalus_baccifer <= nrel_inclusion: concept_4_protection_category;;

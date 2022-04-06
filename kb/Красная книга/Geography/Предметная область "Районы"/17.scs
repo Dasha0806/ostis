@@ -1,0 +1,50 @@
+//синонимы
+concept_gross_domestic_product<-concept_index;;
+concept_gross_domestic_product=>nrel_main_idtf:[внутренний валовой продукт] (* <- lang_ru;; *);;
+concept_gross_domestic_product=>nrel_identifier:[множество внутренних валовых продуктов] (* <- lang_ru;; *);;
+concept_gross_domestic_product=>nrel_identifier:[gross domestic product] (* <- lang_en;; *);;
+
+//используемые константы
+concept_gross_domestic_product<- rrel_key_sc_element:...
+(*
+<-sc_definition;;
+<=nrel_using_constants:...
+(*
+->concept_index;;
+->nrel_value;;
+->nrel_industry;;
+->nrel_accumulation;;
+->nrel_export;;
+->nrel_addiction;;
+->nrel_consumption;;
+->nrel_factor_of_production;;
+->nrel_belonging;;
+->concept_product;;
+->concept_service;;
+->concept_year;;
+->concept_economy;;
+->concept_territory;;
+->concept_state;;
+*);;
+*);;
+concept_gross_domestic_product=> nrel_main_idtf: [Опр.(внутренний валовой продукт)]  (* <- lang_ru;; *);;
+concept_gross_domestic_product<= nrel_sc_text_translation:...
+(*
+->rrel_example:[Внутренний валовой продукт - макроэкономический показатель, отражающий рыночную стоимость всех конечных товаров и услуг, произведённых за год во всех отраслях экономики на территории государства для потребления, экспорта и накопления, вне зависимости от национальной принадлежности использованных факторов производства.](* <- lang_ru;; *);;
+*);;
+	
+//утверждения
+
+concept_gross_domestic_product<- rrel_key_sc_element:...
+(*
+<-sc_statement;;
+<-sc_definition_statement;;
+<-rrel_theorem:subject_domain_of_country_and_area;;
+=> nrel_main_idtf: [Утв.(внутренний валовой продукт,стоимость*,товар,услуга,территория,страна,год)] (* <- lang_ru;; *);;
+<= nrel_sc_text_translation:...
+(*
+-> rrel_example:
+[Валовой внутренний продукт — это общая рыночная стоимость всех готовых товаров и услуг, произведённых на территории страны в течение года.](* <- lang_ru;; *);;
+*);;
+*);;
+subject_domain_of_country_and_area<-concept_subject_domain;;

@@ -1,0 +1,33 @@
+concept_pollination_type => nrel_main_idtf:
+[тип опыления](*<-lang_ru;;*);
+[pollination type](*<-lang_en;;*);;
+
+//определение и пояснения
+concept_pollination_type <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Тип опыления - способ опыления растения в зависимости от агента и типа адаптации самого растения.](* <- lang_ru;; 	*);;
+		*);;
+*);;
+
+subject_domain_of_plantae_vasculares -> rrel_not_maximum_studied_object_class: concept_pollination_type;;
+                                                                                      
+concept_autogamy=> nrel_main_idtf: [автогамия](*<- lang_ru;;*); [autogamy](*<- lang_lat;;*);;
+concept_entomophilia=> nrel_main_idtf: [энтомофилия](*<- lang_ru;;*); [entomophilia](*<- lang_lat;;*);;
+concept_zoophilia=> nrel_main_idtf: [зоофилия](*<- lang_ru;;*); [zoophilia](*<- lang_lat;;*);;
+concept_anthropophilia=> nrel_main_idtf: [антропофилия](*<- lang_ru;;*); [anthropophilia](*<- lang_lat;;*);;
+concept_anemophilia=> nrel_main_idtf: [анемофилия](*<- lang_ru;;*); [anemophilia](*<- lang_lat;;*);;
+concept_hydrophilia=> nrel_main_idtf: [гидрофилия](*<- lang_ru;;*); [hydrophilia](*<- lang_lat;;*);;
+//=> nrel_main_idtf: [](*<- lang_ru;;*); [](*<- lang_lat;;*);;
+
+concept_pollination_type => nrel_inclusion: concept_autogamy;
+			concept_entomophilia;
+			concept_zoophilia;
+			concept_anthropophilia;
+			concept_anemophilia;
+			concept_hydrophilia;;

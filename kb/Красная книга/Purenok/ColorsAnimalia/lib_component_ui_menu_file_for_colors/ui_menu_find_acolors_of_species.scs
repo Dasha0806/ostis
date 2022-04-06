@@ -1,0 +1,16 @@
+ui_menu_find_colors_of_species  <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_colors_of_species  => nrel_main_idtf: [Найти виды по цвету (животные)] (* <- lang_ru;; *);;
+ui_menu_find_colors_of_species  => nrel_main_idtf: [Find types by color] (* <- lang_en;; *);;
+ui_menu_find_colors_of_species  => ui_nrel_command_template:
+	[*
+		question_scp_find_colors_of_species _-> ._question_scp_find_colors_of_species_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;				
+			*);;
+		._question_scp_find_colors_of_species_instance _<- question;;
+
+	*];;
+
+ui_menu_find_colors_of_species  => ui_nrel_command_lang_template: [Найденные виды] (* <- lang_ru;; *);;
+ui_menu_find_colors_of_species  => ui_nrel_command_lang_template: [Types] (* <- lang_en;; *);;

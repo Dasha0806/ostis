@@ -1,0 +1,102 @@
+concept_cladonia
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[кладония]
+	(*<-lang_ru;;*);
+	[cladonia]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[кладония]
+	(*<-lang_ru;;*);
+	[cladonia]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (кладония) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[кладония — род лишайников включающий в себя около 300 видов. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+ <- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о кладония) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Первичное слоевище состоит из чешуек различной формы и величины ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+concept_bushy -> concept_cladonia;;
+concept_genus -> concept_cladonia;;
+concept_cladonia => nrel_inclusion: concept_cladonia_graciliformis;;
+concept_cladonia => nrel_inclusion: concept_cladonia_favillicola;;
+concept_cladonia => nrel_inclusion: concept_cladonia_vulcani;;
+
+//предметная область
+subject_domain_of_lichen -> rrel_not_maximum_studied_object_class: concept_cladonia;;
+
+
+
+//Рисунок
+concept_cladonia <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (род кладония)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_cladonia.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+	
+concept_cladonia <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Слоевища темно-зеленые, оливково-коричневые, преимущественно кустистые.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+    ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Апотеции леканорового типа, рыжие. Споры бесцветные   ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+//место обитания
+concept_cladonia <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+            -> Russian_Federation;;
+		*);;
+	*);;
+
+//Части тела
+
+
+//описание длин
+//concept_cladonia <= nrel_inclusion: 
+//    [0-3.6 кг]
+//    (*
+//        <- interval_value;;
+//        <- weight;;
+//        => nrel_measurement: ([0 кг] => [3.6 кг]);;
+//    *);;
+//    [0 кг] <- length_of_life; exact_value;;
+//	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+//	[3.6 кг] <- length_of_life; exact_value;;
+//	[3.6 кг] -> .kilogram: 3.6 (* <- number;;*);;

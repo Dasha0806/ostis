@@ -1,0 +1,168 @@
+concept_pedicularis_kaufmannii_pinzg => nrel_main_idtf: [мытник кауфманна](*<- lang_ru;;*); [pedicularis kaufmannii pinzg.](*<- lang_lat;;*); [увярэднiк кауфмана](*<- lang_bel;;*);;
+concept_pedicularis_kaufmannii_pinzg => nrel_idtf: [увярэднiк кауфмана](*<- lang_bel;;*);;
+
+concept_species -> concept_pedicularis_kaufmannii_pinzg;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_pedicularis_kaufmannii_pinzg;;
+
+concept_pedicularis_kaufmannii_pinzg  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (мытник кауфманна)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_pedicularis_kaufmannii_pinzg.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_pedicularis_kaufmannii_pinzg;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_pedicularis_kaufmannii_pinzg <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+в Красную книгу Беларуси 
+2-го издания (1993). Находится под государственной охраной 
+в Литве (возможно, исчез) 
+и Латвии (возможно, исчез).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение с прямостоячим стеблем высотой до 50 см и веретеновидно утолщенными корневыми клубнями. Листья простые, продолговатые или ланцетовидные длиной до 25 см (стеблевые более мелкие), перисторассеченные на перистораздельные сегменты. Цветки двугубые, желтоватые, длиной 2,5-3 см, собраны в соцветие кисть. Плод - коробочка.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Средняя (Польша) и Восточная Европа, Европа, Кавказ (Предкавказье), Западная Сибирь и Средняя Азия (северный Казахстан) . Реликтовый, по происхождению лесостепной вид в Беларуси находится на северо-западной границе ареала. В настоящее время известно два местонахождения:  в Городокском р-не Витебской обл.  и Дрибинском р-не Могилевской обл. . По гербарным данным ранее отмечался в окрест­ностях г. Горки Горецкого р-на Могилевской обл. (сборы 1894 г.) .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: В достоверно известных местах роста произрастает на суходольных остепненных лугах в полосе отчуждения железной дороги.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Факультативное полупаразитное растение. Цветет со второй половины мая до второй декады июня. Энтомофил. Размножается преимущественно семенами. Семена созревают в конце июня - июле. Баллист, антропохор (эргазиохор).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Встречается небольшими группами и единичными особями. Популяция в Городокском р-не занимает площадь не более 0,5 га, численность в 2002 г. составила около 100 растений. В Дрибинском р-не произрастает на площади около 500 м2. Обе популяции чрезвычайно уязвимы, так как расположены в полосе отчуждения железной дороги.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Преимущественно антропогенные:  земляные и ремонтно-строительные работы на железной дороге, выжигание травы, рекреационные нагрузки (вытаптывание), сбор и коллекционирование растений, прогон скота.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Необходимо запрещение земляных работ и других видов хозяйственной деятельности в местах произрастания, огораживание и организация специализированных заказников, регулярный контроль за состоянием популяций, искусственное расселение в подходящие экотопы, ревизия местонахождения в Горецком р-не Могилевской области. Следует выяснить возможность и способы выращивания мытника Кауфманна в культуре в качестве декоративного растения.](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_pedicularis_kaufmannii_pinzg <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Gorodok_district;;->Dribin_district;;
+		*);;
+*);;
+
+concept_pedicularis_kaufmannii_pinzg => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome; fusiform;thickened;tubers;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; simple;oblong;lanceolate;pinnate;;
+*);
+...
+(*
+<= nrel_inclusion: flower; bilabiate;yellowish;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence; brush;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; box;;
+*);;
+
+concept_pedicularis_kaufmannii_pinzg <= nrel_inclusion: 
+[30-50 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([30 см] => [50 см]);; 
+*); 
+[2.5-3 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([2.5 см] => [3 см]);; 
+*);;
+
+[30 см] <- length_of_inflorscence; exact_value;;
+[30 см] -> .centimeter: 30 (* <- number;;*);;
+[50 см] <- length_of_inflorscence; exact_value;;
+[50 см] -> .centimeter: 50 (* <- number;;*);;
+[2.5 см] <- length_of_inflorscence; exact_value;;
+[2.5 см] -> .centimeter: 2.5 (* <- number;;*);;
+[3 см] <- length_of_inflorscence; exact_value;;
+[3 см] -> .centimeter: 3 (* <- number;;*);;
+ 
+
+concept_pedicularis_kaufmannii_pinzg <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,25 @@
+sc_node_not_relation ->  concept_klavariadelfovye;;
+concept_klavariadelfovye => nrel_main_idtf:
+[клавариадельфовые](*<-lang_ru;;*);
+[klavariadelfovye](*<-lang_en;;*);;
+
+//
+concept_klavariadelfovye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(клавариадельфовые)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[семейство порядка кантареллальные](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_kantarellalnye;;
+	*);;	
+*);;
+
+//

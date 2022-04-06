@@ -1,0 +1,60 @@
+sc_node_not_relation -> concept_language_composiion;;
+concept_language_composition=>nrel_main_idtf:
+[языковой состав](* <-lang_ru;; *);
+	[language composition](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_geography;;
+concept_geography => nrel_main_idtf:
+[география](* <-lang_ru;; *);
+	[география](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_russian_language;;
+concept_russian_language => nrel_main_idtf:
+[Русский язык](* <-lang_ru;; *);
+	[Russian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_belarussian_language;;
+concept_belarussian_language => nrel_main_idtf:
+[Белорусский язык](* <-lang_ru;; *);
+	[Belarussian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_polish_language;;
+concept_polish_language => nrel_main_idtf:
+[Польский язык](* <-lang_ru;; *);
+	[Polish language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_ukrainian_language;;
+concept_ukrainian_language => nrel_main_idtf:
+[Украинский](* <-lang_ru;; *);
+	[Ukrainian language](* <- lang_en;; *);;
+
+sc_node_not_relation -> concept_statement_of_general_form;;
+concept_statement_of_general_form=>nrel_main_idtf:
+[утверждение общего вида](* <-lang_ru;; *);
+	[statement of general form](* <- lang_en;; *);;
+
+sc_node_norole_relation -> nrel_intersection;;
+nrel_intersection => nrel_main_idtf:
+[разбиение*](* <- lang_ru;; *);
+	[intersection*](* <- lang_en;; *);;
+
+//определение 
+concept_language_composition <-rrel_key_sc_element:...
+(*
+    <-definition;;
+    => nrel_main_idtf: 
+    [Опр.(языковой состав)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		  ->rrel_example::
+		 [Языковой состав - перечень языков используемых на данной территории.](* <- lang_ru;; *);;
+		*);;
+
+<=nrel_using_constants:...
+(*
+    ->concept_territory;;
+*);;
+*);;
+
+concept_language_composition <= nrel_intersection: ...(* -> concept_russian_language;; -> concept_belarussian_language;; -> concept_ukrainian_language;;  -> concept_polish_language;; => nrel_idtf: [Разбиение по признаку используемого языка](* <- concept_russian_language;; *);; *);;
+

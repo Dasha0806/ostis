@@ -1,0 +1,123 @@
+concept_tadorna_cristata=> nrel_main_idtf: [хохлатая пеганка](*<- lang_ru;;*); 
+[tadorna cristata](*<- lang_lat;;*); 
+[чубатую пеганка](*<- lang_bel;;*);;
+
+concept_tadorna_cristata <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (хохлатая пеганка)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_tadorna_cristata.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+concept_animalia -> concept_tadorna_cristata;;
+concept_species -> concept_tadorna_cristata;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_tadorna_cristata;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list_ru;; 
+	-> rrel_2: concept_tadorna_cristata;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1917 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_tadorna_cristata <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Юг Приморского края и Корейский п-ов. В р-не Владивостока добыта самка 6 апреля 1877 г., 16 мая 1964 г. у о-вов Римского-Корсакова (зал. Петра Великого) встречена группа из 1 самца и 2 самок  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Не изучены. В гнездовой период, вероятнее всего - скалистые берега моря и долины речек в горных р-нах. Моногам. Гнезда на земле или в расщелинах скал. Насиживает только самка. Во внегнездовое время держится небольшими группами (до 6 птиц) или парами  ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения:  Достоверно известно не более 40 встреч и рисунков, из них около 20 - в XX в. [2]. Информация о находке птиц в начале 80-х гг. в КНДР [6] не подтверждена. Вероятнее всего, происходит процесс естественного вымирания реликтового вида, усугубленный интенсивным освоением мест его обитания.  ](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Занесена в Красный список МСОП-96, Приложение 2 Боннской Конвенции, Приложение соглашения, заключенного Россией с Республикой Корея об охране мигрирующих птиц. В 1982-1983 гг. в Приморском крае, в Корее, вост. Китае и в Японии по инициативе Немецкого союза охраны птиц были распространены иллюстрированные листовки, однако достоверных сведений о встречах птиц и современных местах гнездования не получено. Необходима интенсификация поиска сохранившихся особей в природе, их отлов и работы по искусственному разведению птиц в неволе.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//характеристики
+concept_tadorna_cristata <= nrel_spread: ... 
+	(*
+    <= nrel_combination: ... 
+		(*
+		-> Russian_Federation;;
+		*);;
+	*);;
+//части тела
+concept_tadorna_cristata => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_head; concept_beak; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back;  black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; yellow;;
+	*);;
+//размеры и вес
+concept_tadorna_cristata <= nrel_inclusion: 
+	[0-60 см]
+	(*
+	<- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: ([0 см] => [60 см]);;	
+	*);
+	[0-1.65 кг]
+	(*
+	<- interval_value;;
+	<- weight;;
+	=> nrel_measurement: ([0 кг] => [1.65 кг]);;	
+	*);;
+	[0 см] <- length_of_body; exact_value;;
+	[0 см] -> .centimeter: 0 (* <- number;;*);;
+	[60 см] <- length_of_body; exact_value;;
+	[60 см] -> .centimeter: 60 (* <- number;;*);;
+	[0 кг] <- weight; exact_value;;
+	[0 кг] -> .kilogram: 0 (* <- number;;*);;
+	[1.65 кг] <- weight; exact_value;;
+	[1.65 кг] -> .kilogram: 1.65 (* <- number;;*);;
+//категория охраны и количество
+concept_tadorna_cristata <= nrel_inclusion: concept_1_protection_category;;
+concept_tadorna_cristata <= nrel_strength: [50 шт]
+	(*
+	<- value;;
+	<= nrel_value: ...
+		 (*
+		-> nrel_wm: 50 (* <- number;;*);;
+		*);;	
+	*);;
+

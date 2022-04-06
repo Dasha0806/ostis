@@ -1,0 +1,168 @@
+concept_peucedanum_cervaria => nrel_main_idtf: [горичник олений](*<- lang_ru;;*); [peucedanum cervaria (l.) lapeyr. (=сervaria rivinii gaertn.)](*<- lang_lat;;*); [дзiкая пятрушка аленевая](*<- lang_bel;;*);;
+concept_peucedanum_cervaria => nrel_idtf: [дзiкая пятрушка аленевая](*<- lang_bel;;*);;
+
+concept_species -> concept_peucedanum_cervaria;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_peucedanum_cervaria;;
+
+concept_peucedanum_cervaria  <- rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (горичник олений)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation: ...
+(*
+->"file://concept_peucedanum_cervaria.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_peucedanum_cervaria;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+concept_peucedanum_cervaria <- rrel_key_sc_element:
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Международная значимость: Включен 
+во 2е издание Красной книги 
+Беларуси (1993). Включен 
+в Красную книгу 
+Латвии (0 категория).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Описание: Многолетнее травянистое растение высотой 70-100 см. Стебель прямоcтоячий, голый, бороздчатый, почти безлистный, внизу с темными волосовидными остатками от старых черешков листьев. Прикорневые листья в очертании широкотреугольные, дважды-трижды перисторассеченные, длинночерешковые; черешки очень жесткие. Листочки треугольно-яйцевидные, плотные, почти кожистые, сизые, по краю шиповидно-зубчатые, на верхушке заостренные. Зонтики крупные, 20-30-лучевые, с оберткой и оберточкой. Цветки белые, лепестки с загнутой верхушкой. Плоды - округлые вислоплодники, сильно сжатые со спинки, с крылатыми краевыми ребрами .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Распространиение: Средиземноморье, Средняя и южные и центральные районы Восточной Европы . Реликтовый, по происхождению среднеевропейский лесостепной вид, встречающийся в Беларуси в отдельных локалитетах на северной границе ареала. Известен в виде немногочисленных и очень разрозненных местонахождений, сосредоточенных в основном в пределах Белорусского Полесья, где несколько чаще отмечается в юго-восточных районах. Выявлен в Брестском р-не Брестской обл. , в Буда-Кошелевском , Ветковском , Гомельском , Добрушском , Лоевском , Мозырском  и Хойникском  р-нах Гомельской обл. По литературным и гербарным данным отмечался в Житковичском , Калинковичском , Рогачевском  и Хойникском  р-нах Гомельской обл., в Пинском р-не  Брестской обл., в окрестностях г. Гродно и Беловежской Пуще .](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Местообитания: Произрастает по открытым или закустаренным коренным берегам рек, высоким гривам с мелколесьем из дуба в поймах рек, в сосновых и сосново-дубовых лесах орлякового типа. Тяготеет к долинам крупных рек, предпочитает свежие рыхлые богатые гумусом почвы. Кальцефильный вид. Светолюбивое растение.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Биология: Цветет в июне - августе (зацветает на второй год жизни). Энтомофил. Размножается исключительно семенами. Семена созревают в августе-сентябре. Баллист-анемохор.](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Численность и тенденция ее изменения: Встречается одиночно и небольшими группами на ограниченной площади. В ряде местонахождений (окрестности г. Гродно, д. Юровичи Калинковичского р-на, г. Рогачев) повторно не обнаруживается (вероятно, исчез).](* <- lang_ru;; *);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Основные факторы угрозы: Определяющий – антропогенный:  вырубка лесов, коренная трансформация земель, повышенные рекреационные нагрузки, пастьба скота, смыв ядохимикатов из окружающих сельхозугодий. Косвенный – природный:  сукцессионные смены растительности.](*<- lang_ru;;*);;
+*);;
+*);
+...
+(*
+<- explanation;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Меры охраны: Растет на территориях Национального парка “Припятский”, ландшафтного заказника “Бугский” (Брестский р-н) и биологического заказника “Шабринский” (Добрушский р-н). Необходимы периодический эколого-биологический контроль состояния известных популяций и поиск новых местонахождений, в местах произрастания горичника в комплексе с другими редкими и охраняемыми растениями целесообразна организация ботанических заказников (в Ветковском, Калинковичском, Лоевском и Мозырском р-нах) с запрещением или ограничением в местах роста антропогенных воздействий (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимний период).](*<- lang_ru;; *);;
+*);;
+*);;
+
+concept_peucedanum_cervaria <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Brest_district;;->Buda_Koshelevo_district;;->Vetka_district;;->Gomel_district;;->Dobrush_district;;->Loev_district;;->Mozyr_district;;->Khoiniki_district;;->Zhitkovichi_district;;->Kalinkovichi_district;;->Rogachev_district;;->Khoiniki_district;;->Pinsky_district;;->Belovezhskaya_Pushcha_district;;
+		*);;
+*);;
+
+concept_peucedanum_cervaria => nrel_part: ...
+(*
+<= nrel_inclusion: concept_stem; erect;naked;grooved;leafless;;
+*);
+...
+(*
+<= nrel_inclusion: concept_rhizome;;
+*);
+...
+(*
+<= nrel_inclusion: concept_leaf; wide_triangular;pinnate;long;hard;triangular_ovate;dense;leathery;SIZ;spinous_toothed;pointed;;
+*);
+...
+(*
+<= nrel_inclusion: flower; white;bent_tip;;
+*);
+...
+(*
+<= nrel_inclusion: inflorscence;;
+*);
+...
+(*
+<= nrel_inclusion: fruit; rounded;visioplaine;winged_edge;kraevedenie_edge;;
+*);;
+
+concept_peucedanum_cervaria <= nrel_inclusion: 
+[70-100 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([70 см] => [100 см]);; 
+*); 
+[5-9 см]
+(*
+<- interval_value;;
+<- length_of_inflorscence;;
+=> nrel_measurement: ([5 см] => [9 см]);; 
+*);;
+
+[70 см] <- length_of_inflorscence; exact_value;;
+[70 см] -> .centimeter: 70 (* <- number;;*);;
+[100 см] <- length_of_inflorscence; exact_value;;
+[100 см] -> .centimeter: 100 (* <- number;;*);;
+[5 см] <- length_of_inflorscence; exact_value;;
+[5 см] -> .centimeter: 5 (* <- number;;*);;
+[9 см] <- length_of_inflorscence; exact_value;;
+[9 см] -> .centimeter: 9 (* <- number;;*);;
+ 
+
+concept_peucedanum_cervaria <= nrel_inclusion: concept_3_protection_category;;

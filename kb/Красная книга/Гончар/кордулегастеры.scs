@@ -1,0 +1,36 @@
+concept_cordulegasteridae=> nrel_main_idtf:
+[кордулегастеры](*<-lang_ru;;*);
+[cordulegasteridae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_cordulegasteridae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(кордулегастеры)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_odonata;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Кордулегастеры - семейство разнокрылых насекомых в составе отряда стрекоз.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_odonata =>nrel_inclusion: concept_cordulegasteridae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Крупные стрекозы с преимущественно чёрно-жёлтой окраской тела. Яйцеклад самок очень длинный, однако, яйца откладываются на лету в грунт, на небольшую глубину водоёмов и без сопровождения самца. Личинки обитают в проточных водоёмах.](* <- lang_ru;;*);;
+		*);;
+*);;

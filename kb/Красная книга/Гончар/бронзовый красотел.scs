@@ -1,0 +1,138 @@
+concept_calosoma_inquisitor=> nrel_main_idtf:
+[бронзовый красотел](*<-lang_ru;;*);
+[calosoma inquisitor](*<-lang_lat;;*);;
+
+concept_species -> concept_calosoma_inquisitor;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_calosoma_inquisitor;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_calosoma_inquisitor;;
+	-> rrel_number_of_year: 1758 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_calosoma_inquisitor <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен в Красную книгу Литвы.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Лиственные леса (дубравы и черноольшаники).](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Вид с весенне-летним типом размножения, зимует имаго. Наибольшая активность отмечена в мае. Личинка линяет 2 раза, живет около 24 суток, в конце лета окукливается, и через 8-10 суток появляются взрослые жуки, которые остаются в почве до следующей весны. Питается, главным образом, гусеницами пядениц, непарного шелкопряда, златогузки.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Вид приурочен к угрожаемым биоценозам. В типовых местах обитания (пойменные дубравы) иногда обычен.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Сокращение типовых мест обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). Выявление новых мест обитания вида и их охрана.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Западно-палеарктический мезофильный вид. В Беларуси чаще встречается в южных районах .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Верх жука (16-24 мм) темно-бронзовый или черно-зеленый, иногда медно-зеленый или синий, боковые края переднеспинки и надкрылий обычно более яркие. Окраска всегда с металлическим отливом.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_calosoma_inquisitor <= nrel_spread: ... 
+	(*
+	-> Gomel_district; Minsk_district; Mikashevichi_district;;
+	*);;
+
+concept_calosoma => nrel_inclusion: concept_calosoma_inquisitor;;
+concept_calosoma_inquisitor => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; green; black; bright;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; black; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; black;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; black; green; bright;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; black;;
+	*);;
+
+concept_calosoma_inquisitor <= nrel_inclusion: 
+	16_24_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (16_mm => 24_mm);;	
+	*);;
+	16_mm <- length_of_body; exact_value;;
+	16_mm -> .millimeter: 16 (* <- number;;*);;
+	24_mm <- length_of_body; exact_value;;
+	24_mm -> .millimeter: 24 (* <- number;;*);;	
+
+concept_calosoma_inquisitor <= nrel_inclusion: concept_3_protection_category;;

@@ -1,0 +1,25 @@
+concept_division => nrel_main_idtf:
+[отдел](*<-lang_ru;;*);;
+
+concept_class => nrel_main_idtf:
+[класс](*<-lang_ru;;*);;
+
+concept_order => nrel_main_idtf:
+[порядок](*<-lang_ru;;*);;
+
+concept_family => nrel_main_idtf:
+[семейство](*<-lang_ru;;*);;
+
+concept_species => nrel_main_idtf:
+[вид](*<-lang_ru;;*);;
+
+sc_node_norole_relation -> nrel_part;;
+nrel_part => nrel_main_idtf:
+[часть тела*](*<-lang_ru;;*);;
+
+//sc_node_norole_relation -> nrel_spread;;
+//nrel_spread => nrel_main_idtf:
+//[распространение*](*<-lang_ru;;*);;
+
+
+

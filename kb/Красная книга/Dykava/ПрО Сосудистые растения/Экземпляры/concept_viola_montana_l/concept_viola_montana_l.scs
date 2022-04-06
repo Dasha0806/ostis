@@ -1,0 +1,195 @@
+concept_viola_montana_l=> nrel_main_idtf: [фиалка горная](*<- lang_ru;;*); [viola montana l](*<- lang_lat;;*);;
+
+//изображение
+concept_viola_montana_l <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (фиалка горная)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_viola_montana_l.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+//предметная область, вид, растение
+subject_domain_of_plantae_vasculares-> rrel_not_maximum_studied_object_class: concept_viola_montana_l;;
+concept_species -> concept_viola_montana_l;;
+concept_plantae-> concept_viola_montana_l;;
+
+//категория охраны
+concept_viola_montana_l <= nrel_inclusion: concept_1_protection_category;;
+
+//дата включения в кк
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_viola_montana_l;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1993 (*<- number;;*);;*);;
+	*);;
+
+//распространение
+concept_viola_montana_l <= nrel_spread: ... 
+(*
+    <= nrel_combination: ... 
+		(*
+		-> Slonim_district;;->Grodno_district;;->Vitebsk_district;;
+		*);;
+*);;
+
+//описание
+concept_perennial => nrel_inclusion:: concept_viola_montana_l;; //многолетнее
+
+concept_viola_montana_l => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_stem; concept_straight;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; concept_sharp;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; white; blue;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box;;
+							*);;
+
+concept_viola_montana_l <= nrel_inclusion: 
+[15-50 см]
+(*
+<- interval_value;;
+<- length_of_stem;;
+=> nrel_measurement: ([15 см] => [50 см]);; 
+*); 
+[8-10 см]
+(*
+<- interval_value;;
+<- length_of_leaf;;
+=> nrel_measurement: ([8 см] => [10 см]);; 
+*);;
+
+[15 см] <- length_of_stem; exact_value;;
+[15 см] -> .centimeter: 5 (* <- number;;*);;
+[50 см] <- length_of_stem; exact_value;;
+[50 см] -> .centimeter: 15 (* <- number;;*);;
+
+[8 см] <- length_of_leaf; exact_value;;
+[8 см] -> .centimeter: 8 (* <- number;;*);;
+[10 см] <- length_of_leaf; exact_value;;
+[10 см] -> .centimeter: 10 (* <- number;;*);;
+
+//биология
+concept_viola_montana_l => nrel_flowering_period: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> May;;->June;;
+		*);;
+*);;
+
+concept_viola_montana_l => nrel_fruit_ripening_period:{July};;
+
+concept_viola_montana_l => nrel_pollination_type: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_entomophilia;; -> concept_autogamy;;
+		*);;
+*);;
+
+concept_viola_montana_l => nrel_dissemination_method: ...
+(*
+    <= nrel_combination: ... 
+		(*
+		-> concept_autochoria;; -> concept_zoochory;;
+		*);;
+*);;
+
+concept_viola_montana_l => nrel_propagation_type:{concept_seed_propagation};;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////пояснения
+concept_viola_montana_l <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Включен во 2-е издание Красной книги Беларуси (1993). Находится под охраной в Литве и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Многолетнее коротко прижато-опушенное травянистое растение с прямостоячим стеблем высотой 15-50 см. Листья продолговато-ланцетные, по краю выемчато-пильчатые, с узко-крылатыми черешками длиной 8-10 см. Прилистники очень крупные, листовидные, ланцетные или яйцевидно-ланцетные, обычно превышающие черешок листа, особенно в верхней части стебля. Цветки светло-синие или бледно-голубые, с прямым шпорцем, беловатым зевом и темными полосками на лепестках. Чашелистики ланцетные, острые. Плод - сухая коробочка с выступающими ребрами и остроконечной верхушкой.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Скандинавия, Атлантическая, Средняя и Восточная Европа, Средиземноморье, Кавказ, Западная Сибирь, Средняя Азия . Лесостепной реликтовый вид, находящийся в Беларуси в отдельных локалитетах за северо-западной границей ареала . Впервые приводился во второй половине 19-го столетия для Могилевской губернии , но данные указания являются ошибочными . Позднее отмечался для окрестностей Гродно и Слонима . Спустя более 80 лет (в 1981 г.) найден в Витебском р-не , где наблюдается до сих пор .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Деградированная пойменная дубрава, заросли кустарников. Предпочитает полутеневые условия.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в мае - июне, плодоносит в июле. Энтомофил, автогам. Размножение семенное. Автомеханохор, зоохор (мирмекохор).](* <- lang_ru;; *);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: В единственном достоверно известном в настоящее время местонахождении встречается отдельными экземплярами и небольшими группами на общей площади приблизительно в 1 га.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Рубки леса главного пользования, хозяйственная трансформация земель, раннее сенокошение, чрезмерные рекреационные нагрузки (вытаптывание, срыв цветущих растений, организация свалок).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Охраняется на территории ботанического заказника “Придвинье” (Витебский р-н). Необходимо проводить постоянный контроль состояния известной популяции и поиск новых мест произрастания. В местах роста следует запретить или ограничить антропогенное воздействие (допустимы выборочные санитарные рубки и рубки ухода, проводимые в зимнее время; сенокошение рекомендутся осуществлять во второй половине лета после созревания семян – не раньше июля); целесообразно сохранение генофонда вида в условиях культуры.](*<- lang_ru;;	*);;
+		*);;
+	*);;

@@ -1,0 +1,22 @@
+concept_falconiformes => nrel_main_idtf:
+[соколообразные](*<-lang_ru;;*);
+[falconiformes](*<-lang_lat;;*);;
+
+concept_order -> concept_falconiformes;;
+
+concept_falconiformes => nrel_inclusion: concept_accipitridae; concept_pandionidae; concept_falconidae;;
+
+//определение и пояснения
+concept_falconiformes <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Соколообразные - отряд птиц. Длина и масса тела от 15 см и 35 г (сокол-крошка) до 110 см и 15 кг (кондоры). Клюв крепкий, загнутый крючком. Его основание одето голой ярко окрашенной восковицей, в которую открываются наружные отверстия ноздрей. Ноги сильные с длинными и острыми когтями. Пальцы относительно длинные с подушечками на подошвенной стороне для удержания добычи. Телосложение плотное, оперение жёсткое, плотно прилегающее к телу. Окраска неяркая с преобладанием серых и бурых тонов. У некоторых видов, кормящихся падалью, голова и часть шеи неоперённые.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_falconiformes;;

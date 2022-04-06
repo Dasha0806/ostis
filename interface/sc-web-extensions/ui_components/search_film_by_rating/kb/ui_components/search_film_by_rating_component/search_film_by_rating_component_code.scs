@@ -1,0 +1,27 @@
+format_search_film_by_rating_json
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат film search (json)] 
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format film search (json)] 
+	(* 
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/json];;
+
+search_film_by_rating_code <- ui_external_languages;
+=> nrel_main_idtf: 
+	[Поиск фильмов по оценке]
+	(* 
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf: 
+	[Find films by rating] 
+	(* 
+	<- lang_en;;
+	*);;

@@ -1,0 +1,36 @@
+concept_arctiidae=> nrel_main_idtf:
+[медведицы](*<-lang_ru;;*);
+[arctiidae](*<-lang_lat;;*);;
+
+
+//определение и пояснение
+concept_arctiidae<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(медведицы)]  (* <- lang_ru;;*);;
+	<- defenition;;
+	<= nrel_using_constants: ... 
+		(*
+          -> concept_detachment;;
+          -> concept_insecta;;
+          -> concept_lepidoptera;;	
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+			[Медведицы - насекомые семейства чешуекрылых.](* <- lang_ru;;*);;
+		*);;
+*);;
+
+concept_lepidoptera =>nrel_inclusion: concept_arctiidae;
+
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Бабочки часто с яркой и пестрой окраской, мохнатые, с толстым туловищем. Усики короткие, у самцов часто гребенчатые, глаза голые, реже покрыты мелкими ресничками, ноги относительно короткие.](* <- lang_ru;;*);;
+		*);;
+*);;

@@ -1,0 +1,135 @@
+concept_salix_myrtolloides => nrel_main_idtf:
+[борец обыкновенный](*<-lang_ru;;*);
+[aconitum lycoctonum](*<-lang_lat;;*);
+[боцiкi звычайныя](*<-lang_bel;;*);;
+
+concept_species -> concept_salix_myrtolloides;;
+subject_domain_of_plantae -> rrel_not_maximum_studied_object_class: concept_salix_myrtolloides;;
+
+//пояснения
+concept_salix_myrtolloides <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен в Красную книгу Беларуси 2-го издания (1993). Охраняется в Польше, Литве, Украине и Латвии.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Кустарник с восходящими стволами высотой 30-80 см с серой корой. Побеги желто-бурые или красно-бурые, в верхней части пушистые. Листья мелкие, эллиптические или продолговато-яйцевидные, цельнокрайние, голые, сверху матово-зеленые, снизу сизые, на очень коротких черешках. Цветки мелкие, без прицветников, собраны в рыхлые сережки. Плод – узкая одногнездная двустворчатая коробочка .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространиение: Ареал охватывает лесотундровую и таежную зоны Севера, Центральной и Восточной Европы, почти всю Сибирь до берегов Охотского и Японского морей. Встречается в северной части Украины, на Средней Волге . Реликтовый бореальный вид, находящийся в Беларуси в отдельных локалитетах вблизи южной границы ареала . Встречается в Брестской (Брестский, Ивацевичский, Кобринский, Малоритский, Столинский р-ны), Витебской (Браславский, Докшицкий, Лепельский, Лиозненский, Россонский, Шумилинский р-ны), Минской (Борисовский, Вилейский, Воложинский, Крупский, Минский, Мядельский р-ны), Гомельской (Калинковичский и Мозырский р-ны) и Могилевской (Бобруйский, Кировский, Кличевский р-ны) обл. . Ранее отмечался для Гродно, Турова, Жлобина, д. Симоновичи (Глусского р-на) и территории Кличевского и Лельчицкого р-нов .](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитания: Мезотрофные осоково-сфагновые болота с преобладанием в травяном покрове осок топяной и волосистоплодной.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Цветет в начале мая (сережки распускаются одновременно с появлением листьев). Анемофил. Размножение преимущественно семенное. Плодоносит в июне. Анемохор.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Обычно растет отдельными экземплярами и небольшими группами.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Осушение болот и хозяйственная трансформация земель.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет на территориях Национального парка “Нарочанский” и Березинского биосферного заповедника, ряда заказников в Брестской (“Бусловка”, “Дикое”, “Выгонощанское”) и Витебской (“Козьянский”) обл., а также в охраняемых болотных массивах. Необходимы периодический контроль состояния известных популяций и поиск новых, организация охраны всех местонахождений с запрещением в местах роста ивы черничной негативных антропогенных воздействий.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_salix_myrtolloides <= nrel_spread: ... 
+	(*
+	-> Brest_district; Ivacevichsky_district; Malorita_district; Kobrin_district; Stolinsky_district; Vitebsk_district; Minsk_district; Gomel_district;;
+	*);;
+
+						concept_perennial => nrel_inclusion:: concept_salix_myrtolloides;;
+						concept_salix_myrtolloides => nrel_part:: 
+							...
+							(*
+							<= nrel_inclusion:: concept_rhizome; grey;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: concept_leaf; naked; round; green;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: sepal; cone;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: flower; small;;
+							*);
+							...
+							(*
+							<= nrel_inclusion:: fruit; box;;
+							*);;
+
+concept_salix_myrtolloides <= nrel_inclusion: 
+
+	30_80_cm
+	(*
+	<- interval_value;;
+	<- length_of_stem (*<-parameter;;*);;
+	=> nrel_measurement: (30_cm => 80_cm);;
+	*);;
+
+	30_cm <- length_of_stem; exact_value;;
+	30_cm -> nrel_cm: 0 (* <- number;;*);;
+	80_cm <- length_of_stem; exact_value;;
+	80_cm -> nrel_cm: 80 (* <- number;;*);;					
+
+concept_salix_myrtolloides <= nrel_inclusion: concept_3_protection_category;;

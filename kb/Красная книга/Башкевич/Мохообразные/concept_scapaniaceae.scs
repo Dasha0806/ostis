@@ -1,0 +1,29 @@
+concept_scapaniaceae => nrel_main_idtf:
+[скапаниевые](*<-lang_ru;;*);
+[scapaniaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_scapaniaceae;;
+
+concept_scapaniaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_scapania_apiculata_spruce;;
+	    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_scapaniaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[ Семейство скапаниевые - одно- и двудомные листостебельные растения, образующие дерновинки или встречающиеся рассеянно среди других мхов. Стебли 0,5-25 см длиной, стелющиеся или восходящие, с обильными ризоидами, без амфигастриев. Листья косо расположенные, сбегающие, двурядные, двулопастные и сложенные вдоль, килеватые; верхняя лопасть всегда меньше нижней. Перианций большей частью сплющенный в передне-заднем направлении, нередко складчатый, с широким и усеченным устьем. Спорогоний на конце главного стебля. Ножка длинная. Коробочка яйцевидная.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_bryophyta -> rrel_not_maximum_studied_object_class: concept_scapaniaceae;;

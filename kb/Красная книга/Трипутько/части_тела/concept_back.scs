@@ -1,0 +1,35 @@
+concept_back
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[Спина]
+	(*<-lang_ru;;*);
+	[back]
+ 	(*<-lang_en;;*);
+=> nrel_idtf :
+	[Спинной аппарат]
+	(*<-lang_ru;;*);
+	[back]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (Спина) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Спина - задняя сторона туловища, простирающаяся от нижней части шеи до поясницы. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);
+
+<- rrel_key_sc_element: ... (*
+	<-explanation;;
+	=>nrel_main_idtf:
+	[Утв. (о спине) ] (*<-lang_ru;;*);;
+	<=nrel_sc_text_translation: ... (*
+	->rrel_example:
+[  Спина образуется позвоночником. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+
+	

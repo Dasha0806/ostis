@@ -1,0 +1,130 @@
+concept_henoteka_valliculas_pallore => nrel_main_idtf:
+[хенотека зеленоватая](*<-lang_ru;;*);
+[concept_henoteka_valliculas_pallore](*<-lang_lat;;*);
+[хенатэка зеленаватая](*<-lang_bel;;*);;
+concept_henoteka_valliculas_pallore => nrel_idtf:[хенатэка зеленаватая](*<-lang_bel;;*);;
+
+plants -> concept_henoteka_valliculas_pallore;;
+concept_species -> concept_henoteka_valliculas_pallore;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_henoteka_valliculas_pallore;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_henoteka_valliculas_pallore;;
+	-> rrel_3: ... (*-> rrel_number_of_year: 1981 (*<- number;;*);;*);;
+	*);;
+
+//пояснения
+concept_henoteka_valliculas_pallore <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная занчимость: Включен во 2-е издание Красной книги Беларуси (1993). Охраняется в Литве и Польше.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Встречается в еловых, елово-широколиственных, дубовых и черноольховых лесах, где произрастает на коре или в трещинах коры стволов лиственных деревьев, а также на обнаженной древесине стволов и пней в лесах с повышенной влажностью воздуха.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Размножается вегетативно и аскоспорами.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Встречается группами, иногда образует сплошной покров.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Вырубка лесов, мелиорация и другие хозяйственные мероприятия, изменяющие гидрологический режим места обитания.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Растет в национальных парках "Беловежская пуща", "Нарочанский" (на заповедной территории Голубых озер) и "Припятский", а также в Березинском биосферном заповеднике. Необходимы периодический контроль состояния известных популяций, организация охраны местонахождений в Пинском и Россонском р-нах, поиск новых мест произрастания и, при необходимости, организация их охраны с запрещением антропогенных воздействий.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Средняя и Антлантическая Европа, Америка, Новая Земля и Австралия . В Беларуси встречается в Брестской (Каменецкий, Пинский и Пружанский р-ны), Витебской (Россонский и Лепельский р-ны), Гомельской (Житковичский и Наровлянский р-ны), Гродненской (Свислочский р-н) и Минской (Мядельский р-н) областях .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Cлоевище лепрозное (порошковидное), зернистое или бородав-чатое, зеленовато- или сизовато-серое. Апотеции на черных или коричневато-черных ножках (длиной 0,8-1,0 мм и толщиной 0,09 мм), покрытых густым бледно-золотистым или зеленовато-желтым налетом. Головки черные, круглые, с золотисто-зеленым налетом, диаметром 0,2 мм .](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+concept_henoteka_valliculas_pallore <= nrel_spread: ... 
+	(*
+	-> Brest_district; Vitebsk_district; Gomel_district; Grodno_district; Minsk_district;;
+	*);;
+
+concept_kalitsievye => nrel_inclusion: concept_henoteka_valliculas_pallore;;
+concept_henoteka_valliculas_pallore => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_thallus; green; grey; granular;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_apothecia; black; brown;;
+	*);;
+
+concept_henoteka_valliculas_pallore <= nrel_inclusion: 
+	0.8_1_mm
+	(*
+	<- interval_value;;
+	<- length_of_apothecia;;
+	=> nrel_measurement: (0.8_mm => 1_mm);;	
+	*);;
+	0.8_mm <- length_of_apothecia; exact_value;;
+	0.8_mm -> .milimeter: 0.8 (* <- number;;*);;
+	1_mm <- length_of_apothecia; exact_value;;
+	1_mm -> .milimeter: 1 (* <- number;;*);;			
+
+concept_henoteka_valliculas_pallore <= nrel_inclusion: concept_3_protection_category;;
+

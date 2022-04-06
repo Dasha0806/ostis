@@ -1,0 +1,45 @@
+concept_cancrinia_krasnoborovii_v_khan => nrel_main_idtf:
+[Канкриния Красноборова](*<-lang_ru;;*);
+[Cancrinia krasnoborovii V. Khan.](*<-lang_lat;;*);;
+
+concept_species -> concept_cancrinia_krasnoborovii_v_khan;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_cancrinia_krasnoborovii_v_khan;;
+
+Red_list_ru -> concept_cancrinia_krasnoborovii_v_khan;;
+
+//пояснения
+concept_cancrinia_krasnoborovii_v_khan <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был включен в Красную книгу РСФСР (1988). Вид занесен в Красную книгу Республики Тыва (1999). Охраняется в биосферном заповеднике «Убсунурская котловина».](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Вид известен только в России в Республике Тыва, по единственному сбору в Монгун-Тайгинском р-не на хр. Чихач2ва, по южному склону г. Эрен-Карагач, в басс. р. Аспайты, откуда и описан. Возможно нахождение в сходном малодоступном районе Монголии.](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Подушковидный полукустарничек до 5 см. в диам. и 3,5 см выс., со стержневым корнем, обильно опушен, образует густые дерновинки. Стебли немногочисленные прямостоячие. Пластинки листьев перистораздельные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_1_protection_category;;

@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_solenogastres;;
+
+concept_solenogastres=> nrel_main_idtf: 
+ [бороздчатобрюхие](*<- lang_ru;;*); 
+ [solenogastres](*<- lang_lat;;*);;
+
+concept_class -> concept_solenogastres;;
+
+
+concept_solenogastres <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса бороздчатобрюхие)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_solenogastres.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_solenogastres <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Высокоспециализированный класс, представители которой имеют червеобразное тело и обитают на гидроидных и коралловых полипах. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Тело почти полностью обрастает мантией. На брюшной стороне имеется бороздка (отсюда и название класса), в которой расположен покрытый ресничным эпителием валик (рудимент ноги). Раковина отсутствует, но в наружных покровах тела есть маленькие известковые спикулы. Развитие у большинства с метаморфозом. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Медлительные организмы, либо ползают по выделяемой слизи, либо роются в донных осадках. Многие виды обитают на колониях коралловых и гидроидных полипов, которыми некоторые хищные представители также и питаются. ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

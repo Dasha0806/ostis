@@ -1,0 +1,28 @@
+sc_node_not_relation ->  concept_kantarellalnye;;
+concept_kantarellalnye => nrel_main_idtf:
+[кантареллальные](*<-lang_ru;;*);
+[kantarellalnye](*<-lang_en;;*);;
+
+//
+concept_kantarellalnye <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(кантареллальные)]  (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example:
+			[порядок в классе базидиомицеты, включающий все непластинчатые грибы с мясистыми плодовыми телами и с лопастными воронковидными шляпками на центральной или же эксцентрической ножке, а в зрелом возрасте их плодовые тела полуразомкнуты, с отдельной ножкой, которая плавно переходит в шляпку](* <- lang_ru;; 	*);;
+	*);;
+	<= nrel_using_constants:
+	...
+	(*
+	-> concept_basidiomycetes;;
+	*);;	
+*);;
+
+//
+concept_kantarellalnye => nrel_inclusion:
+    concept_klavariadelfovye;
+    concept_sparassisovye;;

@@ -1,0 +1,30 @@
+concept_dinobryonaceae => nrel_main_idtf:
+[динобриовые](*<-lang_ru;;*);
+[dinobryonaceae](*<-lang_lat;;*);;
+
+concept_family -> concept_dinobryonaceae;;
+
+concept_dinobryonaceae <= nrel_subdividing:
+	...
+ (*
+	
+	-> concept_chrysolycos_planktonicus;;
+	-> concept_chrysolycos_angulatus;;	
+    
+	*);
+=>nrel_idtf:[Разбиение в рамках Красной книги](* <- lang_ru;; *);;
+
+//определение и пояснения
+concept_dinobryonaceae <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Семейство динобриовые входит в класс хризофитовые.](* <- lang_ru;; *);;
+		*);;
+*);;
+
+subject_domain_of_algae -> rrel_not_maximum_studied_object_class: concept_dinobryonaceae;;

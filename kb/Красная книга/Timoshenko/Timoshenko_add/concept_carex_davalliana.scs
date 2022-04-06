@@ -1,0 +1,45 @@
+concept_carex_davalliana => nrel_main_idtf:
+[Осока Дэвелла](*<-lang_ru;;*);
+[Carex davalliana](*<-lang_lat;;*);;
+
+concept_species -> concept_carex_davalliana;;
+
+
+Red_list_ru -> concept_carex_davalliana;;
+
+//пояснения
+concept_carex_davalliana <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Был внесен в Красные книги СССР (1978, 1984) и РСФСР (1988). Вид включен в Красную книгу природы Ленинградской обл. (2000) и список охраняемых растений Псковской обл. (1979).](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: В России известно местонахождение в Ленинградской обл.: в парке «Зверинец» на северной окраине города Гатчина. Вид указан также для Псковской обл. (Псково-Изборский р-н).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Плотнодерновинное двудомное растение 10-40(50) см выс., с одним верхушечным тычиночным или пестичным колоском. Цветет в апреле-мае, плодоносит в мае-июле. Размножается семенами.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_davalliana <= nrel_inclusion: concept_1_protection_category;;

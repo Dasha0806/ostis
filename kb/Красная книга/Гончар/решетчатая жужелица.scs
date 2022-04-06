@@ -1,0 +1,146 @@
+concept_carabus_cancellatus_illiger=> nrel_main_idtf:
+[решетчатая жужелица](*<-lang_ru;;*);
+[carabus cancellatus illiger](*<-lang_lat;;*);;
+
+concept_species -> concept_carabus_cancellatus_illiger;;
+subject_domain_of_aves -> rrel_not_maximum_studied_object_class: concept_carabus_cancellatus_illiger;;
+nrel_upload_date -> ...
+	(*
+	-> rrel_1: Red_list;; 
+	-> rrel_2: concept_carabus_cancellatus_illiger;;
+	-> rrel_number_of_year: 1798 (*<- number;;*);;
+	*);;
+
+//РїРѕСЏСЃРЅРµРЅРёСЏ
+concept_carabus_cancellatus_illiger <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Международная значимость: Отсутствует.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Местообитание: Хвойные и лиственные леса, поля, луга, реже заболоченные места и мелколиственные леса.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Биология: Весенний вид. Встречается с апреля по сентябрь. Яйца откладывает в июне-июле. Через 2 месяца появляются молодые жуки. Зимует имаго. Жуки поедают дождевых червей, слизней, насекомых и их личинок, гусениц чешуекрылых.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция её изменения: Иногда жужелица многочисленна, но численность ее сокращается.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Основные факторы угрозы: Хозяйственная деятельность на полях.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны: Вид включен во 2-е издание Красной книги Республики Беларусь (II категория). В Березинском биосферном заповеднике и Беловежской пуще находится под охраной заповедного режима. Необходима пропаганда охраны вида и контроль за состоянием популяций.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Евробайкальский мезофильный вид. Встречается по всей территории, но реже в Полесье .](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Длина жука 20-28 мм. Надкрылья выпуклые, с цепочками бугорков и ребрышками. Между каждыми двумя продольными рядами ямок на надкрыльях различимы не более 5 промежутков. Надкрылья у самца с заметной, у самки с сильной вырезкой перед вершиной. Верх медный или бронзовый, редко темно-синий, темно-зеленый или бронзово-черный, 1-й членик усиков и часто бедра красные.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//СЂР°Р·РЅРѕРµ
+concept_carabus_cancellatus_illiger <= nrel_spread: ... 
+	(*
+	-> Belarus_district;;
+	*);;
+
+concept_carabidae => nrel_inclusion: concept_carabus_cancellatus_illiger;;
+concept_carabus_cancellatus_illiger => nrel_part: 
+	...
+	(*
+	<= nrel_inclusion: concept_pronotum; bronze; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_head; green; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_back; green; dark;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_elytra; bronze; convex;;
+	*);
+     ...
+	(*
+	<= nrel_inclusion: concept_abdomen; black;;
+	*);
+ ...
+	(*
+	<= nrel_inclusion: concept_antennae; red;;
+	*);
+	...
+	(*
+	<= nrel_inclusion: concept_legs; dark; bronze;;
+	*);;
+
+concept_carabus_cancellatus_illiger <= nrel_inclusion: 
+	20_28_mm
+	(*
+     <- interval_value;;
+	<- length_of_body;;
+	=> nrel_measurement: (20_mm => 28_mm);;	
+	*);;
+	20_mm <- length_of_body; exact_value;;
+	20_mm -> .millimeter: 20 (* <- number;;*);;
+	28_mm <- length_of_body; exact_value;;
+	28_mm -> .millimeter: 28 (* <- number;;*);;	
+
+concept_carabus_cancellatus_illiger <= nrel_inclusion: concept_4_protection_category;;

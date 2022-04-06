@@ -1,0 +1,63 @@
+sc_node_not_relation ->  concept_tentaculita;;
+
+concept_tentaculita=> nrel_main_idtf: 
+ [тентакулиты](*<- lang_ru;;*); 
+ [tentaculitascs](*<- lang_lat;;*);;
+
+concept_class -> concept_tentaculita;;
+
+
+concept_tentaculita <-rrel_key_sc_element:...
+(*
+<-illustration;;
+=>nrel_main_idtf:
+[Рис. (представитель класса тентакулиты)](*<-lang_ru;;*);;
+<=nrel_sc_text_translation:...
+(*
+->"file://concept_tentaculita.jpg"(*=>nrel_format:format_jpg;;*);;
+*);;
+*);;
+
+
+//определение и пояснения
+concept_tentaculita <- rrel_key_sc_element:
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Определение: Класс вымерших морских моллюсков. Существовали в силуре — девоне. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Отличительные черты: Представители обладали коническими известковыми раковинами. Снаружи раковины несли либо поперечные рёбра, либо крупные пережимы. ](* <- lang_ru;; 	*);;
+		*);;
+	*);
+
+        ...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Образ жизни: Предположительно, вели бентопелагический образ жизни.  ](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+	
+
+
+
+

@@ -1,0 +1,87 @@
+
+sc_node_not_relation -> dolgoe;;
+
+dolgoe => nrel_main_idtf: [заказник Долгое] (* <- lang_ru;; *);
+				     [dolgoe] (* <- lang_en;; *);;
+
+
+dolgoe <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (заказник Долгое)](*<-lang_ru;;*);
+		[Pic. (dolgoe)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://16.jpg!300!200!reduce.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+dolgoe<-concept_sanctuary;;
+
+dolgoe <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Долгое, год основания*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_create_year;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заказник Долгое был создан в 1979 году.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							dolgoe=>nrel_create_year:
+							...
+							(*<-rrel_number_of_year:1979(*<-concept_number;;*);; *);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+dolgoe <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Утв.(заказник Долгое, площадь*)] (* <- lang_ru;; *);;
+	<- statement;;
+	->rrel_key_sc_element:nrel_square;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Площадь Долгое составляет 644 га.]
+				(* 
+				<- lang_ru;;
+				<- rrel_example:...
+					(*
+					<= nrel_sc_text_translation:
+						[*
+							dolgoe=>nrel_square:[644 га](*
+							<-value;;
+							<=nrel_measurement:...(*
+								->rrel_ga:644(*<-concept_number;;*);;
+								*);;
+							*);;
+						*];;
+					*);;
+				*);;
+		*);;
+	*);;
+
+dolgoe => nrel_area_location: Vitebsk_area;;
+
+
+
+sc_node_role_relation->rrel_ga;;
+rrel_ga => nrel_main_idtf:
+[га'](*<-lang_ru;;*);
+	[ga'](*<-lang_en;;*);;
+
+subject_domain_of_protected_areas -> rrel_not_maximum_studied_object_class: dolgoe;;

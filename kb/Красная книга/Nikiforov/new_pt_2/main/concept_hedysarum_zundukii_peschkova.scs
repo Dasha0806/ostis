@@ -1,0 +1,55 @@
+concept_hedysarum_zundukii_peschkova => nrel_main_idtf:
+[Копеечник зундукский](*<-lang_ru;;*);
+[Hedysarum zundukii Peschkova](*<-lang_lat;;*);;
+
+concept_species -> concept_hedysarum_zundukii_peschkova;;
+subject_domain_of_monocotyledones -> rrel_not_maximum_studied_object_class: concept_hedysarum_zundukii_peschkova;;
+
+Red_list_ru -> concept_hedysarum_zundukii_peschkova;;
+
+//пояснения
+concept_hedysarum_zundukii_peschkova <- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Численность и тенденция ее изменения: Не более 1000 экз. Особи вида встречаются одиночно: на площади 4 м2 отмечено в среднем 9 взрослых растений, ювенильных и вегетативных — 5.](* <- lang_ru;; 	*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Меры охраны:Был включен в Красные книги СССР (1978,1984) и РСФСР (1988). Вид включен в Красную книгу Иркутской обл. (2001). Находится на территории Прибайкальского НП.](* <- lang_ru;; 	*);;
+		*);;
+*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Распространение: Встречается только в России в Иркутской обл. на склонах Приморского хр., обращенных к акватории оз. Байкал между мысами Отто-Хушун и Зама. Описан с мыса Зундук (Зугдук).](*<- lang_ru;;*);;
+		*);;
+	*);
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Описание: Бесстебельный приземистый (5-12 см выс.) дерновинный многолетник, беловато-серебристый от густого опушения. Цветет во второй половине июня.](*<- lang_ru;;	*);;
+		*);;
+	*);;
+
+//разное
+
+concept_carex_capillaris_l <= nrel_inclusion: concept_2_protection_category;;
